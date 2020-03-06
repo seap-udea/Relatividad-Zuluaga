@@ -31,3 +31,13 @@
 		* `eq:Bz_tg`
 		* `eq:Ey_tg`
 		* `eq:trans_lorentz_x`
+- Labels for '01.02.01.00.RelatividadEspecial.TransformacionesLorentzEinstein.Propiedades.ipynb':
+	- Labels for 'section':
+		* `#unidades_luz`
+		* `#TLE_rotacion_hiperbolica`
+		* `#notacion_einstein`
+		* `#TLE_generales`
+		* `#valor_gama`
+		* `#TLE_mapas`
+	- Labels for 'code':
+		* `code:TLE`
