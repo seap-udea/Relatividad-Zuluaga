@@ -11,4 +11,23 @@
 - Labels for '01.02.00.00.RelatividadEspecial.TransformacionesLorentzEinstein.ipynb':
 	- Labels for 'section':
 		* `#transformaciones_einstein`
-		* `#perspectiva_geometrica`
+	- Labels for 'equation':
+		* `eq:tg_t`
+		* `eq:tg_x`
+		* `eq:tg_t_sim`
+		* `eq:tg_x_sim`
+		* `eq:dtg_t`
+		* `eq:dtg_x`
+		* `eq:dtg_y`
+		* `eq:dtg_z`
+		* `eq:LF_z`
+		* `eq:Bz_LF`
+		* `eq:Ey_LF`
+		* `eq:LAM_y`
+		* `eq:Bz_LAM`
+		* `eq:Ey_LAM`
+		* `eq:Bzp_tg`
+		* `eq:Eyp_tg`
+		* `eq:Bz_tg`
+		* `eq:Ey_tg`
+		* `eq:trans_lorentz_x`

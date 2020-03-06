@@ -13093,57 +13093,65 @@ div#notebook {
 
 </div>
 </div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Para ello asumamos que existe una familia de transformaciones más generales que relacionan las coordenadas.</p>
-$$
-\begin{array}{rcl}
-t' &amp; = &amp; a_{tt} t + a_{tx} x \\
-x' &amp; = &amp; a_{xt} t + a_{xx} x \\
-\end{array}
-$$
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>La linealidad es consecuencia de o bien la homogeneidad e isotropía o de la inercialidad de los observadores.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Apliquemos estas transformaciones a las leyes de Faraday y Ampere:</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>De donde se prueban dos cosas:</p>
-
-</div>
-</div>
 </div><div class="box_theorem">
     	 
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Proposición: Transformaciones de Einstein.</strong><a id=''></a> Las transformaciones de coordenadas que dejan invariantes las leyes de la física ante cambios de observador inercial son:</p>
+<p><strong>Postulado: Covarianza manifiesta de las ecuaciones de Maxwell.</strong><a id=''></a> Las ecuaciones de Maxwell son <em>manifiestamente</em> covariantes, es decir, la forma en la que fueron escritas originalmente por Maxwell es covariante para observadores inerciales.</p>
+
+</div>
+</div>
+</div>
+    </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Este postulado es fuerte en el sentido en el que da mucha confianza a un conjunto de ecuaciones que esencialmente se obtienen a partir de experimentos.  Esta es una prueba de la confianza que tenían los Einstein en el electromagnetismo incluso sobre</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Como ya vimos que las ecuaciones no son covariantes bajo las transformaciones de Galileo-Newton, debemos encontrar un conjunto nuevo de transformaciones con las cuales las ecuaciones de Maxwell si son covariantes.  Para ello asumamos que existe una familia de transformaciones lineal más generales que relacionan las coordenadas.</p>
 \begin{eqnarray}
-t' &amp; = &amp; \gamma \left( t - \frac{v}{c^2} x \right)\\
-x' &amp; = &amp; \gamma \left( -vt + x \right)
-\end{eqnarray}<blockquote><p>donde:
-\begin{equation}
-\gamma\equiv\frac{1}{\sqrt{1-v^2/c^2}}
-\end{equation}
-se conocerá en lo sucesivo como el <strong>factor de Einstein</strong>.</p>
+\label{eq:tg_t}
+t' &amp; = &amp; a_{tt} t + a_{tx} x \\
+\label{eq:tg_x}
+x' &amp; = &amp; a_{xt} t + a_{xx} x \\
+\end{eqnarray}<p>donde los coeficientes $a_{tt}$, $a_{tx}$, $a_{xt}$, $a_{xx}$ son cantidades que no dependen de la posición, ni del tiempo y a lo sumo pueden depender de la velocidad relativa $u$ entre los sistemas coordenados:</p>
+$$
+a_{\mu \nu}=a_{\mu \nu}(u)
+$$<p>donde $\mu:t,x$.</p>
+
+</div>
+</div>
+</div><div style="background:white;border:solid black 2px;pad:10px;margin-left:7em;margin-top:1em;margin-bottom:1em;">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Nota: Las transformaciones entre sistemas inerciales son lineales.</strong><a id=''></a> En principio las transformaciones entre las variables de dos sistemas de referencia podrían tener una forma funcional arbitraria:</p>
+$$
+\begin{array}{rcl}
+t' &amp; = &amp; t'(t,x) \\
+x' &amp; = &amp; x'(t,x) \\
+\end{array}
+$$<blockquote><p>sin embargo la definición misma de observador inercial, sumado al principio de homogeneidad e isotropía, restringen el número posible de funciones.</p>
+<p>Por la definición de sistema de referencia inercial, debe cumplirse que si el observador $O$ observa una partícula que se mueve con velocidad constante $v=\mathrm{d}x/\mathrm{d}t$ constante (no actúa ninguna fuerza sobre ella), también el observador $O'$ debe medir $v'=\mathrm{d}x'/\mathrm{d}t'$ constante. Para calcular esta última cantidad primero podemos determinar los diferenciales:</p>
+</blockquote>
+\begin{eqnarray}
+\mathrm{d}x' &amp;=&amp; \mathrm{d}t\left(\frac{\partial x'}{\partial x}v+\frac{\partial x'}{\partial t}\right)\\
+\mathrm{d}t' &amp;=&amp; \mathrm{d}t\left(\frac{\partial t'}{\partial x}v+\frac{\partial t'}{\partial t}\right)\\
+\end{eqnarray}<blockquote><p>de donde se sigue que:</p>
+</blockquote>
+$$
+v'=\frac{\mathrm{d}x'}{\mathrm{d}t'}=
+\frac{v\partial x'/\partial x+\partial x'/\partial t}
+{v\partial t'/\partial t+\partial t'/\partial t}
+$$<blockquote><p>de esta última expresión se ve que solo si las derivadas parciales respecto al espacio y el tiempo de las reglas de transformación son constantes, es decir, solo si las transformaciones son líneales, entonces $v$ constante implicará $v'$ constante y viceversa.</p>
 </blockquote>
 
 </div>
@@ -13153,7 +13161,183 @@ se conocerá en lo sucesivo como el <strong>factor de Einstein</strong>.</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Y una interesante conclusión adicional:</p>
+<p>Sin necesidad de conocer la forma funcional de los coeficientes de las transformaciones generales, es posible encontrar algunas propiedades básicas que nos permiten simplificar mucho la búsqueda de sus valores.  Así por ejemplo:</p>
+<ol>
+<li><p>Por la definición misma de observador inercial sabemos que el origen del sistema $O'$ esta localizado en $x'=0$ según su propio sistema de referencia, mientras que en el sistema $O$ se encuentra ubicado en $x=ut$.  Reemplazando estas dos condiciones en la Ec. (<a href="#mjx-eqn-eqtg_x">tg_x</a>) obtenemos:</p>
+<p>$$
+0=a_{xt} t + a_{xx} u t
+$$</p>
+<p>Para $t&gt;0$ esta condición implica que $a_{xt}=-u a_{xx}$ con lo que la Ec. (<a href="#mjx-eqn-eqtg_x">tg_x</a>) se escribe:</p>
+<p>\begin{eqnarray}
+x' = a_{xx} ( -ut + x ) \\
+\end{eqnarray}</p>
+</li>
+</ol>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ol>
+<li><p>Un razonamiento similar pero aplicado al origen del sistema $O$ para el cual $x=0$ y $x'=-u t'$ conduce a las condiciones:</p>
+<p>$$
+\begin{array}{rcl}
+t' &amp; = &amp; a_{tt} t \\
+-ut' &amp; = &amp; -u a_{xx} t \\
+\end{array}
+$$</p>
+<p>Para $t&gt;0$, $t'&gt;0$ lo que implica: 1) $a_{tt}&gt;0$ y 2) dividiendo término a término las ecuaciones anteriores obtenemos:</p>
+<p>$$
+a_{tt}=a_{xx}\equiv\gamma(u)&gt;0
+$$
+donde hemos introducido la función $\gamma(u)$.</p>
+</li>
+</ol>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ol>
+<li><p>Si introducimos un tercer observador $O''$ que se mueve con velocidad $-u$ (en dirección del eje $x$ respecto de $O$, el tiempo de eventos en el origen de coordenadas de $O$ registrados por $O''$ será:</p>
+<p>$$t'' = \gamma(-u) t$$</p>
+<p>Ahora bien, por la postulado de isotropía, un obervador que se dirige hacia $+x$ y uno que se dirije hacia $-x$ deben producir las mismas medidas de un evento en el lugar común $x=0$, es decir para este evento $t''=t'$ y por lo tanto:</p>
+<p>$$\gamma(-u) = \gamma(u)$$</p>
+</li>
+</ol>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Con estas propiedades, la transformación general de coordenadas entre observadores inerciales que satisfacen el postulado de homogeneidad e isotropía se pueden escribir como:</p>
+\begin{eqnarray}
+\label{eq:tg_t_sim}
+t' &amp; = &amp; \gamma(u)( t + b x)\\
+\label{eq:tg_x_sim}
+x' &amp; = &amp; \gamma(u)(-u t + x) \\
+\end{eqnarray}<p>donde hemos definido $b\equiv a_{tx}/\gamma$.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>No es difícil mostrar que las derivadas parciales respecto a las variables espacio-temporales serán entonces:</p>
+\begin{eqnarray}
+\label{eq:dtg_t}
+\partial_{t} &amp; = &amp; \gamma(\partial_{t'}-u\partial_{x'})\\
+\label{eq:dtg_x}
+\partial_{x} &amp; = &amp; \gamma(b\partial_{t'}+\partial_{x'})\\
+\label{eq:dtg_y}
+\partial_{y} &amp; = &amp; \partial_{y'}\\
+\label{eq:dtg_z}
+\partial_{z} &amp; = &amp; \partial_{z'}
+\end{eqnarray}
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>El reto consiste en encontrar las cantidades $\gamma$ y $b$ de la transformación tal que las ecuaciones de Maxwell sean covariantes.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>La componente $z$ de la ley de Faraday:</p>
+$$
+\frac{1}{c}\partial_t \vec B=-\vec\nabla\times \vec E
+$$<p>es:
+\begin{equation}
+\label{eq:LF_z}
+\frac{1}{c}\partial_{t}B_z=\partial_z E_x-\partial_{x}E_y
+\end{equation}</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Escrita después de aplicar las transformaciones de las derivadas será:</p>
+$$
+\frac{1}{c}\gamma(\partial_{t'}-u\partial_{x'})B_z=\partial_z E_x-\gamma(b\partial_{t'}+\partial_{x'})E_y
+$$<p>reuniendo términos semejantes:</p>
+$$
+\frac{1}{c'}\partial_{t'}\left[\gamma\left(\frac{c'}{c}B_z+bc E_y\right)\right]=\partial_z E_x-\partial_{x'}\left[\gamma\left(E_y-\frac{u}{c} B_z\right)\right]
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Para que la ley de Faraday sea covariante y la ecuación anterior tenga la misma forma que la Ec. (<a href="#mjx-eqn-eqLF_z">LF_z</a>) se debe cumplir que:</p>
+\begin{eqnarray}
+\label{eq:Bz_LF}
+B_z'&amp;=&amp;\gamma\left(\frac{c'}{c}B_z+bc E_y\right)\\
+\label{eq:Ey_LF}
+E_y'&amp;=&amp;\gamma\left(E_y-\frac{u}{c} B_z\right)
+\end{eqnarray}
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Por otro lado, la componente $y$ de la ley de Ampere-Maxwell:</p>
+$$
+\frac{1}{c}\partial_t \vec E=\vec\nabla\times \vec B
+$$<p>es:
+\begin{equation}
+\label{eq:LAM_y}
+\frac{1}{c}\partial_{t}E_y=\partial_y B_x-\partial_{x}B_z
+\end{equation}</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Aplicando un procedimiento análogo obtenemos que para que esta ecuación sea covariante bajo la transformación lineal general definida antes, la regla de transformación de las componentes $z$ y $y$ de los campos debería ser:</p>
+\begin{eqnarray}
+\label{eq:Bz_LAM}
+B_z'&amp;=&amp;\gamma\left(B_z-\frac{u}{c} E_y\right)\\
+\label{eq:Ey_LAM}
+E_y'&amp;=&amp;\gamma\left(\frac{c'}{c}E_y+bc B_z\right)
+\end{eqnarray}
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Es claro que para que las Ecs. (<a href="#mjx-eqn-eqBz_LF">Bz_LF</a>),(<a href="#mjx-eqn-eqEy_LF">Ey_LF</a>) y (<a href="#mjx-eqn-eqBz_LAM">Bz_LAM</a>),(<a href="#mjx-eqn-eqEy_LAM">Ey_LAM</a>) correspondan al mismo conjunto de ecuaciones, sin importar cuál es el valor de los campos se debe cumplir que:</p>
+$$
+c'=c
+$$<p>y</p>
+$$
+b=-\frac{u}{c^2}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>De donde obtenemos nuestro primer resultado significativo:</p>
 
 </div>
 </div>
@@ -13173,11 +13357,116 @@ $$
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="1.7.-Una-perspectiva-geo-m&#233;trica">1.7. Una perspectiva geo-m&#233;trica<a class="anchor-link" href="#1.7.-Una-perspectiva-geo-m&#233;trica">&#182;</a></h2><p><a id='perspectiva_geometrica'></a></p>
+<p>Esta conclusión es muy interesante y contraintuitiva.  La velocidad de propagación de la luz juega un papel central en la relatividad y en la física en general.  Lograr que su valor sea una cantidad constante independiente del observador inercial es significativo.  No era para menos puesto que sabemos que la cantidad en la teoría electromagnética deènde de dos constantes de la naturaleza:</p>
+$$
+c=\frac{1}{\sqrt{\mu_0 \epsilon_0}}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>En la versión original de la teoría presentada por los Einstein, la constancia de la velocidad de la luz aparece como una hipótesis sin ninguna justificación. La aproximación utilizada aquí, por lo menos, obtiene este resultado como consecuencia de la covarianza de las ecuaciones de Maxwell, es decir es un teorema que se deriva de un postulado muy razonable, a saber que las ecuaciones de Maxwell del electromagnetismo son <em>manifiestamente covariantes</em>.</p>
 
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Adicionalmente encontramos la manera como se relacionan las componentes $y$ y $z$ de los campos eléctrico y magnético:</p>
+\begin{eqnarray}
+\label{eq:Bzp_tg}
+B_z'&amp;=&amp;\gamma\left(B_z-\frac{u}{c} E_y\right)\\
+\label{eq:Eyp_tg}
+E_y'&amp;=&amp;\gamma\left(E_y-\frac{u}{c}B_z\right)
+\end{eqnarray}
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Solo nos queda una cuestión por resolver: ¿cuánto vale $\gamma$?.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>La inversa de las transformaciones en las Ecs. (<a href="#mjx-eqn-eqBz_tg">Bz_tg</a>) y (<a href="#mjx-eqn-eqEy_tg">Ey_tg</a>) se puede obtener cambiando $u$ por $-u$:</p>
+\begin{eqnarray}
+\label{eq:Bz_tg}
+B_z&amp;=&amp;\gamma\left(B'_z+\frac{u}{c}E'_y\right)\\
+\label{eq:Ey_tg}
+E_y&amp;=&amp;\gamma\left(E'_y+\frac{u}{c}B'_z\right)
+\end{eqnarray}<p>donde hemos usado el hecho que $\gamma(-u)=\gamma(u)$.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Las 4 ecuaciones anteriores son completamente independientes.  Conociendo el valor de $\gamma$ y $u$, podrían usarse para encontrar el valor de cualquier componente del campo en función de las demás.  Pero una característica curiosa que tienen es que pueden usarse también para encontrar el valor de gamma.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Si reemplazamos el $B_z$ de la Ec. (<a href="#mjx-eqn-eqBz_tg">Bz_tg</a>) y el $E_y$ de la Ec. (<a href="#mjx-eqn-eqEy_tg">Ey_tg</a>) en la ecuación para $B'_z$ (Ec. <a href="#mjx-eqn-eqBpz_tg">Bpz_tg</a>) obtenemos:</p>
+$$
+B_z'=
+\gamma
+\left[
+\gamma\left(B'_z+\frac{u}{c}E'_y\right)-
+\frac{u}{c}\gamma\left(E'_y+\frac{u}{c}B'_z\right)
+\right]
+$$<p>y reunimos los términos comunes obtenemos:</p>
+$$
+\left[1-\gamma^2\left(1-\frac{u^2}{c^2}\right)\right] B'_z=0
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Puesto que suponemos que esta relación es válida para cualquier campo magnético, entonces:</p>
+$$
+\gamma=\frac{1}{\sqrt{1-u^2/c^2}}
+$$
+</div>
+</div>
+</div><div class="box_theorem">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Proposición: Transformaciones de Lorentz-Einstein (TLE).</strong><a id=''></a> Las transformaciones de coordenadas que dejan covariantes las leyes de la física ante cambios de observador inercial con velocidad relativa $u$ son:</p>
+\begin{equation}
+\label{eq:trans_lorentz_x}
+\begin{array}{rcl}
+t' &amp; = &amp; \gamma \left( t - ux/c^2 \right)\\
+x' &amp; = &amp; \gamma \left( -ut + x \right)\\
+y' &amp; = &amp; y\\
+z' &amp; = &amp; z\\
+\end{array}
+\end{equation}<blockquote><p>donde:
+\begin{equation}
+\gamma\equiv\frac{1}{\sqrt{1-u^2/c^2}}
+\end{equation}
+se conocerá en lo sucesivo como el <strong>factor de Lorentz</strong> o <strong>factor de Einstein</strong>.</p>
+</blockquote>
+
+</div>
+</div>
+</div>
+    </div>
     </div>
   </div>
 </body>
