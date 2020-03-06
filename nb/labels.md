@@ -26,8 +26,8 @@
 		* `eq:LAM_y`
 		* `eq:Bz_LAM`
 		* `eq:Ey_LAM`
-		* `eq:Bzp_tg`
-		* `eq:Eyp_tg`
+		* `eq:Bpz_tg`
+		* `eq:Epy_tg`
 		* `eq:Bz_tg`
 		* `eq:Ey_tg`
 		* `eq:trans_lorentz_x`
