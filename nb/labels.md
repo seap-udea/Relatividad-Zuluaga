@@ -33,6 +33,7 @@
 		* `eq:trans_lorentz_x`
 - Labels for '01.02.01.00.RelatividadEspecial.TransformacionesLorentzEinstein.Propiedades.ipynb':
 	- Labels for 'section':
+		* `#propiedades_tle`
 		* `#unidades_luz`
 		* `#TLE_rotacion_hiperbolica`
 		* `#notacion_einstein`
@@ -41,3 +42,16 @@
 		* `#TLE_mapas`
 	- Labels for 'code':
 		* `code:TLE`
+		* `code:mapa_TLE`
+- Labels for '01.02.02.00.RelatividadEspecial.TransformacionesLorentzEinstein.Consecuencias.ipynb':
+	- Labels for 'section':
+		* `#consecuencias_tle`
+		* `#transformacion_intervalos`
+		* `#dilatacion_temporal`
+		* `#postulado_relojes`
+		* `#contraccion_longitudes`
+		* `#adicion_velocidades`
+		* `#transformacion_aceleraciones`
+- Labels for '01.03.00.00.RelatividadEspecial.ProblemasSeleccionados.ipynb':
+	- Labels for 'section':
+		* `#especial_problemas`
