@@ -52,6 +52,11 @@
 		* `#contraccion_longitudes`
 		* `#adicion_velocidades`
 		* `#transformacion_aceleraciones`
-- Labels for '01.03.00.00.RelatividadEspecial.ProblemasSeleccionados.ipynb':
+- Labels for '01.03.00.00.RelatividadEspecial.Minkowski.ipynb':
+	- Labels for 'section':
+		* `#minkowski`
+		* `#norma_minkowski`
+		* `#metrica_minkowski`
+- Labels for '01.04.00.00.RelatividadEspecial.ProblemasSeleccionados.ipynb':
 	- Labels for 'section':
 		* `#especial_problemas`

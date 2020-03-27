@@ -37,16 +37,17 @@ def Lambda_TLE(u):
     return Lambda
 
 
-def mapa_TLE(ux=0.0,uy=0.0,uz=0.0):
+def mapa_TLE(ux=0.0,uy=0.0,uz=0.0,
+             rmax=10,ngrid=10,nticks=10,
+             interact=False):
     from numpy import array
     u=array([ux,uy,uz])
     Lambda=Lambda_TLE(-u)
 
     #Escoge valores de x:
     from numpy import linspace
-    rmax=10
-    xs=linspace(0,rmax,rmax+1,endpoint=True)
-    ts=linspace(0,rmax,rmax+1,endpoint=True)
+    xs=linspace(0,rmax,ngrid+1,endpoint=True)
+    ts=linspace(0,rmax,ngrid+1,endpoint=True)
 
     #Calcula valores de t' y x' usando la matriz:
     from numpy import zeros_like
@@ -62,23 +63,24 @@ def mapa_TLE(ux=0.0,uy=0.0,uz=0.0):
     for t in xs:
         for i,x in enumerate(xs):
             tps[i],xps[i],yp,zp=matmul(Lambda,[t,x,0,0])
-        ax.plot(tps,xps,'r-')
+        ax.plot(tps,xps,'r-',alpha=0.5)
 
     for x in xs:
         for i,t in enumerate(ts):
             tps[i],xps[i],yp,zp=matmul(Lambda,[t,x,0,0])
-        ax.plot(tps,xps,'r-')
+        ax.plot(tps,xps,'r-',alpha=0.5)
 
     #Decoración
-    ax.set_xticks(xs)
-    ax.set_yticks(xs)
+    ax.set_xticks(linspace(0,rmax,nticks+1,endpoint=True))
+    ax.set_yticks(linspace(0,rmax,nticks+1,endpoint=True))
     ax.set_xlabel("$t$")
     ax.set_ylabel("$x$")
     ax.set_xlim((0,rmax))
     ax.set_ylim((0,rmax))
     ax.grid()
     fig.tight_layout()
-    return fig
+    if not interact:
+        return fig
 
 
 # ########################################
