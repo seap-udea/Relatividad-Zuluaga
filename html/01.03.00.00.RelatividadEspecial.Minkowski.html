@@ -13218,7 +13218,7 @@ div#notebook {
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Si usamos la <em>fórmula clásica</em> de la longitud (también llamada <em>norma euclidiana</em>), la distancia en el espacio-tiemp $\Delta s$ entre los eventos sería:</p>
 $$
-\Delta s_\mathrm{Euclidiana}^2=\Delta t^2+\Delta x_L^2+\Delta y_L^2+\Delta z_L^2
+\Delta s_\mathrm{L,Euclidiana}^2=\Delta t^2+\Delta x_L^2+\Delta y_L^2+\Delta z_L^2
 $$<p>obtenemos:</p>
 
 </div>
@@ -13275,13 +13275,23 @@ Ds^2 euclidian (Viajero) = 30.0625
 
 </div>
 </div>
+</div><div style="background:white;border:solid black 2px;pad:10px;margin-left:7em;margin-top:1em;margin-bottom:1em;">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Nota: Unidades de $\mathrm{d}s$.</strong><a id=''></a> Como vemos las unidades de la amétrica $\mathrm{d}s$ son las mismas unidades que escojamos usar para $t$ o para $x$.  En la elección que hemos hecho en este libro, es decir, en unidades luz en el que el tiempo se mide en segundos y las distancias en segundos-luz, la métrica se escribe $\mathrm{d}s_L$ tiene unidades de tiempo.</p>
+
 </div>
+</div>
+</div>
+    </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Herman Minkowski encontró la solución a este problema, mostrando que la norma en el espacio-tiempo debía ser distinta:</p>
 $$
-\Delta s_\mathrm{Minkowski}^2=\Delta t^2-(\Delta x_L^2+\Delta y_L^2+\Delta z_L^2)
+\Delta s_\mathrm{L,Minkowski}^2=\Delta t^2-(\Delta x_L^2+\Delta y_L^2+\Delta z_L^2)
 $$
 </div>
 </div>
@@ -13350,8 +13360,8 @@ Ds euclidian (Viajero) = 19.9375
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Proposición: Norma de Minkowski.</strong><a id=''></a> La distancia espacio temporal entre dos eventos infinitesimalmente cercanos en el espacio-tiempo en un sistema de referencia inercial es:</p>
-<blockquote>$$\mathrm{d}s^2=\mathrm{d}t^2-\mathrm{d}l_L^2$$<p>donde $\mathrm{d}l$ es la norma euclidiana (en coordenadas cartesianas $\mathrm{d}l_L=\sqrt{\mathrm{d}x_L^2+\mathrm{d}y_L^2+\mathrm{d}z_L^2}$.</p>
+<p><strong>Proposición: Norma de Minkowski.</strong><a id=''></a> La distancia entre dos eventos infinitesimalmente cercanos en el espacio-tiempo en un sistema de referencia inercial es:</p>
+<blockquote>$$\mathrm{d}s_L^2=\mathrm{d}t^2-\mathrm{d}l_L^2$$<p>donde $\mathrm{d}l_L$ es la norma euclidiana que en coordenadas cartesianas $\mathrm{d}l_L=\sqrt{\mathrm{d}x_L^2+\mathrm{d}y_L^2+\mathrm{d}z_L^2}$.</p>
 </blockquote>
 
 </div>
@@ -13419,15 +13429,14 @@ Ds euclidian (Viajero) = 19.9375
 <p>El espacio métrico mejor conocido es el espacio euclidiano ${\rm I\!R}^3$, cuyos elements podemos denotar como $p:(x_p,y_p,z_p)$ y que tiene métrica:</p>
 $$
 g(p,q)=(x_p-x_q)^2+(y_p-y_q)^2+(z_p-z_q)^2
-$$<p>Este tipo de métrica además se conoce como una <em>forma bilineal cuadrática</em>.</p>
-
+$$
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Los conceptos de espacio métrico y métrica se pueden generalizar para construir unn conjunto de definiciones más generales que se presentan a continuación de manera <em>intuitiva</em> (definiciones más rigurosas pueden encontrarse en textos de geometría diferencial):</p>
+<p>Los conceptos de espacio métrico y métrica se pueden generalizar para construir un conjunto de definiciones que se presentan a continuación de manera <em>intuitiva</em> (definiciones más rigurosas pueden encontrarse en textos de geometría diferencial):</p>
 
 </div>
 </div>
@@ -13438,7 +13447,7 @@ $$<p>Este tipo de métrica además se conoce como una <em>forma bilineal cuadrá
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Definición 1.11. Conceptos de Variedad</strong>. Una <strong>variedad.</strong><a id=''></a> es una <em>estructura matemática</em> (un conjunto y unas reglas para definir la distancia entre los puntos, es decir, una métrica), que en terminos intuitivos generaliza a n-dimensiones los conceptos de curva (1-variedad) y  superficie (2-variedad).  El espacio euclidiano ${\rm I\!R}^3$ es una 3-variedad (<em>trivariedad</em>).  El espacio-tiempo es una 4-variedad (<em>cuadrivariedad</em>).</p>
 <blockquote><p>Una <strong>variedad diferenciable</strong> es aquella sobre la que podemos definir funciones (campos escalares, campos vectoriales y campos tensoriales) y la operación de derivación.  Es decir, sobre una variedad diferenciable se pueden definir y realizar las operaciones propias del cálculo.  Así mismo, y usando el mismo cálculo, sobre una variedad diferenciable se puede definir el concepto de longitud de arco.</p>
-<p>Alrededor de cada punto de una variedad diferenciable se puede definir un <strong>espacio tangente</strong> que es una subvairedad con una dimensión una unidad menor que la variedad en la que está embebida.</p>
+<p>Alrededor de cada punto de una variedad diferenciable se puede definir un <strong>espacio tangente</strong> que es una variedad euclidiana que comparte con la variedad original un solo punto.  Así por ejemplo: sobre la superficie de una esfera (2-variedad) podemos definir un plano tangente.</p>
 <p>Una <strong>variedad de Riemann</strong> es una variedad diferenciable que localmente es <em>similar</em> (homeomórfica) al espacio euclidiano.  Un ejemplo de una variedad de Riemann es la superficie de una esfera (2-variedad) que tiene una métrica muy específica.  Localmente esta superficie es <em>similar</em> a un plano (2-variedad).</p>
 <p>Una <strong>pseudo variedad de Riemann</strong> es una variedad diferenciable en la que la función métrica no necesariamente satisface la condición de ser positiva.  Localmente una pseudo variedad de Riemann no es <em>similar</em> al espacio ecuclidiano, sino al que se conoce como el espacio pseudo euclidiano, que es aquel en el que la función métrica se escribe de forma general como:</p>
 $$ 
@@ -13499,16 +13508,374 @@ g_{\mu\nu}=\eta_{\mu\nu}\equiv
 $$
 </div>
 </div>
-</div>
+</div><div class="box_theorem">
+    	 
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<blockquote><p><strong>Proposición: La métrica es un tensor</strong>. La métrica $g_{\mu\nu}$ es un campo tensorial covariante de segundo orden, es decir, al hacer un cambio de coordenadas $x^{\mu'}(x^{\nu})$ la métrica transforma como:</p>
-$$
+<p><strong>Proposición: La métrica es un tensor.</strong><a id=''></a> La métrica $g_{\mu\nu}$ es un campo tensorial covariante de segundo orden, es decir, al hacer un cambio de coordenadas $x^{\mu'}(x^{\nu})$ la métrica transforma como:</p>
+<blockquote>$$
   g_{\mu'\nu'}=\frac{\partial x^\alpha}{\partial x^{\mu'}}\frac{\partial x^\beta}{\partial x^{\nu'}}g_{\alpha\beta}
   $$
 </blockquote>
 
+</div>
+</div>
+</div>
+    </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>El espacio-tiempo entonces es una variedad diferenciable pseudo-euclidiana con una métrica de signatura $(1,3)$, que llamamos de forma más específica en el contexto de la física, la métrica de Minkowski.  Pero más allá de lo rimbombante que estas afirmaciones pueda sonar ¿qué implicaciones tiene todo esto para la relatividad en particular y para la física en general?.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="1.9.3.-M&#233;trica-y-tipos-de-intervalos">1.9.3. M&#233;trica y tipos de intervalos<a class="anchor-link" href="#1.9.3.-M&#233;trica-y-tipos-de-intervalos">&#182;</a></h3><p><a id='metrica_intervalos'></a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Usando la métrica de Minskowski podemos definir los tipos de intervalos así:</p>
+<ul>
+<li><p><strong>Intervalo temporaloide</strong>. Este tipo de intervalos se definieron como aquellos en los que se puede encontrar un sistema de referencia en el que los eventos límite ocurran en el mismo lugar del espacio.  En otros términos, son intervalos para los cuales se puede encontrar una partícula física que viaje entre ellos.  Como sabemos que las partículas viajan con velocidad $u_L&lt;1$ entonces $\mathrm{d}l_L^2&lt;\mathrm{d}t^2$ y por lo tanto:</p>
+<p>$$\mathrm{d}s^2&gt;0$$</p>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li><p><strong>Intervalo espacialoide</strong>. Este tipo de intervalos se definieron como aquellos en los que <em>no</em> se puede encontrar un sistema de referencia en el que los eventos límite ocurran en el mismo lugar del espacio.  En otros términos, son intervalos para los cuales <em>no</em> existe una partícula física que viaje entre ellos.  Como sabemos que las partículas viajan con velocidad $u_L&lt;1$ entonces $\mathrm{d}l_L^2&gt;\mathrm{d}t^2$ y por lo tanto:</p>
+<p>$$\mathrm{d}s^2&lt;0$$</p>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li><p><strong>Intervalo luminoide</strong>. Este tipo de intervalos se definieron como aquellos en los que <em>no</em> se puede encontrar un sistema de referencia en el que los eventos límite ocurran en el mismo lugar del espacio, y tampoco en el mismo lugar del tiempo (eventos simultáneos).  Solo es posible encontrar rayos de luz que viajen entre ellos, es decir: $\mathrm{d}l_L^2=\mathrm{d}t^2$ y por lo tanto:</p>
+<p>$$\mathrm{d}s^2=0$$</p>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="1.9.4.-M&#233;trica-y-tiempo-propio">1.9.4. M&#233;trica y tiempo propio<a class="anchor-link" href="#1.9.4.-M&#233;trica-y-tiempo-propio">&#182;</a></h3><p><a id='tiempo_propio_minkowski'></a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>En un sistema de referencia en el que dos eventos (con un intervalo temporaloide) separados en el sistema de referencia del Observador por una distancia $\mathrm{d}\vec{r}_L$, ocurren en el mismo lugar del espacio, la distancia espacio-temporal es simplemente:</p>
+$$
+\mathrm{d}s_L^2 = \mathrm{d}\tau^2-0^2
+$$<p>o bien</p>
+$$
+\mathrm{d}s_L = \mathrm{d}\tau
+$$<p>donde hemos usado de una vez $\tau$ para representar el hecho de que en este sistema de referencia y como se explico en sesiones anteriores, este tiempo es el tiempo propio entre los eventos.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Dada la invarianza de la métrica para todos los observadores podemos concluir que <strong>en el caso de intervalos temporaloides y en unidades luz</strong> la métrica (la distancia espacio-temporal entre eventos) no es otra cosa que el tiempo propio entre esos eventos.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Si por el contrario tenemos eventos espacialoides, podemos siempre encontrar un sistema de referencia en el que los eventos límite ocurren en el mismo momento del tiempo, es decir su separación esta relacionada es con la distancia propia entre esos eventos:</p>
+$$
+\mathrm{d}s_L^2 = 0^2-\mathrm{d}\lambda_L^2
+$$<p>que se podría escribir como:</p>
+$$
+\sqrt{-\mathrm{d}s_L^2}=\lambda_L
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Dada la invarianza de la métrica para todos los observadores podemos concluir que <strong>en el caso de intervalos espacialoides y en unidades luz</strong> la métrica (la distancia espacio-temporal entre eventos) esta relacionada con la distancia propia entre esos eventos.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="1.9.5.-M&#233;trica,-dilataci&#243;n-del-tiempo-y-contracci&#243;n-de-longitudes">1.9.5. M&#233;trica, dilataci&#243;n del tiempo y contracci&#243;n de longitudes<a class="anchor-link" href="#1.9.5.-M&#233;trica,-dilataci&#243;n-del-tiempo-y-contracci&#243;n-de-longitudes">&#182;</a></h3><p><a id='metrica_dilatacion_contraccion'></a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Con las definiciones del aparte anterior se puede entender de forma inmediata la dilatación del tiempo y la contracción de longitudes.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Consideremos por ejemplo un fenómeno limitado por dos eventos y un intervalo temporaloide.  La distancia entre los eventos será:</p>
+$$
+\mathrm{d}\tau^2=\mathrm{d}t^2- \mathrm{d}l_L^2
+$$<p>donde de una vez hemos usado el hecho que $\mathrm{d}s_L^2=\mathrm{d}\tau^2$.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Si reconocemos que $\mathrm{d}l_L/\mathrm{d}t=v_L$ es simplemente la velocidad del Viajero, llegamos a la relación conocida:</p>
+$$
+\mathrm{d}\tau=\frac{1}{\gamma}\mathrm{d}t
+$$<p>es decir, la dilatación del tiempo es la manifestación directa de la métrica de Minkowski.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>El caso de la contracción de longitudes es un poco más truculento.  Para definir la longitud de un objeto que esta en reposo para el Viajero, es necesario tomar dos eventos asociados al objeto que ocurren simultáneamente en el sistema del Observador.  Para estos dos eventos la distancia medida en los dos sistemas de referencia serán:</p>
+$$
+-\mathrm{d}x_L^2=\mathrm{d}t'^2-\mathrm{d}\lambda^2
+$$<p>Aquí hay que tener en cuentra que en el sistema del viajero los dos eventos no ocurren simultáneamente sino que ocurren separados por un tiempo $\mathrm{d}t'=u_L \mathrm{d}\lambda$, de allí que:</p>
+$$
+\mathrm{d}x_L=\frac{1}{\gamma}\mathrm{d}\lambda
+$$<p>que ya habíamos obtenido.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="1.9.6.-Vectores-y-c&#225;lculo-en-el-espacio-de-Minkowski">1.9.6. Vectores y c&#225;lculo en el espacio de Minkowski<a class="anchor-link" href="#1.9.6.-Vectores-y-c&#225;lculo-en-el-espacio-de-Minkowski">&#182;</a></h3><p><a id='vectores_minkowski'></a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Posiblemente la más importante de las consecuencias de la <em>geometrización</em> de la relatividad, es la idea de que las leyes de la física pueden escribirse en términos de vectores y tensores en el espacio-tiempo y al hacerlo tener la covariancia que esperamos de ellas de acuerdo con el <strong>postulado de relatividad</strong>.  Veamos porque.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>En el espacio métrico de Minkowski, el vector prototipo es el vector intervalo.  Este vector transforma de acuerdo con las TLE como:
+$$
+\mathrm{d}x^{\mu'}=\frac{\partial x^{\mu'}}{\partial x^{\nu}}\mathrm{d}x^\nu
+$$</p>
+<p>Habíamos explicado antes que esta transformación es el equivalente a una rotación hiperbólica en el espacio-tiempo.  Savemos que este vector que transforma de esta manera tiene una propiedad geométria, su norma, que es invariante bajo TLE:</p>
+$$
+\mathrm{d}s^2=|\mathrm{d}x^\mu|^2=\mathrm{d}t^2-\mathrm{d}x_L^2-\mathrm{d}y_L^2-\mathrm{d}z_L^2
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Podríamos generalizar este resultado para decir que cualquier otro vector que transforme de la manera en la que lo hace el vector intervalo tiene la misma propiedad.  Así si una cantidad $A^\mu:(A^0,A^1,A^2,A^3)$ es tal que:
+$$
+A^{\mu'}=\frac{\partial x^{\mu'}}{\partial x^{\nu}}A^\nu
+$$
+entonces</p>
+$$
+|A^\mu|^2=(A^0)^2-(A^1)^2-(A^2)^2-(A^3)^2
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Una manera más interesante de generalizar lo que sabemos de vectores en el espacio euclidiano a vectores en el espacio de Minkowski es introducir el producto punto o producto interior, que para el vector prototipo (el vector desplazamiento es:</p>
+$$
+\mathrm{d}s^2=\mathrm{d}x^\mu\cdot \mathrm{d}x^\nu\equiv g_{\mu\nu}dx^\mu dx^\nu
+$$<p>y que se puede generalizar para cualquier par de vectores como:</p>
+$$
+A^\mu\cdot B^\nu\equiv g_{\mu\nu}A^\mu B^\nu
+$$<p>o en términos explícitos:</p>
+$$
+A^\mu\cdot B^\nu=A^0 B^0 - (A_L^1 B_L^1 + A_L^2 B_L^2 + A_L^2 B_L^2)
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>La suma de vectores y la multiplicación por un escalar están igualmente definidas en el espacio de Minkowski.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Como sucede en el espacio euclidiano cualquier expresión matemática que escribamos en términos vectoriales, así por ejemplo</p>
+$$
+\vec A + \lambda \vec B
+$$<p>definirá en sí misma un vector, que transforma como el vector desplazamiento y por lo tando es covariante bajo las TLE.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>El <strong>postulado de relatividad</strong> o postulado de covariancia de las leyes de la naturaleza se puede formular ahora como una proposición:</p>
+
+</div>
+</div>
+</div><div class="box_theorem">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Proposición: Leyes físicas y tensores.</strong><a id=''></a> Todas las leyes físicas que se expresan en términos de cuadrivectores o tensores de rango superior son covariantes.</p>
+
+</div>
+</div>
+</div>
+    </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Podemos definir una función escalar de variable real $f(s)$ como es usual (usaremos $s$ como letra para la variable independiente en lugar de $x$), una función tensorial de variable real $F^\mu(s)$ o $g_{\mu\nu}(s)$, una función escalar o tensorial de variable cuadrivectorial (normalmente de la cuadriposición) $f(x^\mu)$ o $F^\mu(x^\mu)$ o $g_{\mu\nu}(x^\mu)$.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Los conceptos regulares del cálculo también están definidos, tales como la derivación:</p>
+$$
+\frac{\mathrm{d}}{\mathrm{d}s} x^\mu(s):\left(
+\frac{\mathrm{d}}{\mathrm{d}s} t(s),
+\frac{\mathrm{d}}{\mathrm{d}s} \vec r_L(s),
+\right)
+$$<p>donde $x^\mu(s)$ describe por ejemplo una línea de universo en el espacio-tiempo y $s$ puede entenderse como un parámetro que distingue cada punto en el espacio.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>La integración:</p>
+$$
+F(s)=\int_0^{s} f(s') \mathrm{d}s'
+$$<p>o bien</p>
+$$
+W=\int_0^{s} F^\mu(s')\cdot \mathrm{d}x^\mu(s')
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="1.9.7.-Minkowski-y-el-postulado-de-los-relojes">1.9.7. Minkowski y el postulado de los relojes<a class="anchor-link" href="#1.9.7.-Minkowski-y-el-postulado-de-los-relojes">&#182;</a></h3><p><a id='minkowski_postulado_relojes'></a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>De la misma manera que definimos cualquier integral podemos definir la integral de línea fundamental:</p>
+$$
+\tau=\int_0^{s'} \mathrm{d}s
+$$<p>donde los $\mathrm{d}s$ son temporaloides.  Esta es s la longitud de una curva arbitraria en el espacio tiempo.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Por el postulado de los relojes esta integral es también el tiempo propio de esa línea de universo.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="1.9.8.-Transformaci&#243;n-general-de-cuadrivectores">1.9.8. Transformaci&#243;n general de cuadrivectores<a class="anchor-link" href="#1.9.8.-Transformaci&#243;n-general-de-cuadrivectores">&#182;</a></h3><p><a id='transformacion_cuadrivectores'></a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Hemos visto que cualquier cantidad que transforme como</p>
+$$
+A^{\mu'}=\frac{\partial x^{\mu'}}{\partial x^{\nu}}A^\nu
+$$<p>es un cuadrivector.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>En secciones anteriores habíamos visto una forma general de las transformaciones de Lorentz-Einstein para el cuadrivector posición $x^\mu:(t,\vec{r}_L$):</p>
+\begin{eqnarray}
+t' &amp; = &amp; \gamma\left(t-\vec{u}_L\cdot \vec{r}_L\right) \\
+\vec{r}'_L &amp; = &amp; \vec{r}_L+\left(\frac{\gamma-1}{u_L^2} \vec{u}_L\cdot \vec{r}_L - \gamma t\right)\vec u_L
+\end{eqnarray}
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Estas relaciones pueden extenderse a cualquier cuadrivector $A^\mu:(A^0,\vec A)$:</p>
+\begin{eqnarray}
+A^{0'} &amp; = &amp; \gamma\left(A^0-\vec{u}_L\cdot \vec{A}_L\right) \\
+\vec{A}'_L &amp; = &amp; \vec{A}_L+\left(\frac{\gamma-1}{u_L^2} \vec{u}_L\cdot \vec{A}_L - \gamma A^0\right)\vec u_L
+\end{eqnarray}
 </div>
 </div>
 </div><div style="background:lightgray">

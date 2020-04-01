@@ -57,6 +57,12 @@
 		* `#minkowski`
 		* `#norma_minkowski`
 		* `#metrica_minkowski`
+		* `#metrica_intervalos`
+		* `#tiempo_propio_minkowski`
+		* `#metrica_dilatacion_contraccion`
+		* `#vectores_minkowski`
+		* `#minkowski_postulado_relojes`
+		* `#transformacion_cuadrivectores`
 - Labels for '01.04.00.00.RelatividadEspecial.ProblemasSeleccionados.ipynb':
 	- Labels for 'section':
 		* `#especial_problemas`
