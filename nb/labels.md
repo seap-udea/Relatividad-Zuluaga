@@ -63,6 +63,29 @@
 		* `#vectores_minkowski`
 		* `#minkowski_postulado_relojes`
 		* `#transformacion_cuadrivectores`
-- Labels for '01.04.00.00.RelatividadEspecial.ProblemasSeleccionados.ipynb':
+- Labels for '01.04.00.00.RelatividadEspecial.OpticaRelativista.ipynb':
+	- Labels for 'section':
+		* `#optica_relativista`
+		* `#doppler_relativista`
+		* `#aberración`
+		* `#enfoque_relativista`
+	- Labels for 'figure':
+		* `fig:Figure_9`
+- Labels for '01.05.00.00.RelatividadEspecial.CinematicaRelativista.ipynb':
+	- Labels for 'section':
+		* `#cinematica_relativistica`
+		* `#cuadrivelocidad`
+		* `#cuadriaceleracion`
+		* `#cuadriaceleracion_constante`
+		* `#nave_interestelar`
+- Labels for '01.06.00.00.RelatividadEspecial.MecanicaRelativista.ipynb':
+	- Labels for 'section':
+		* `#mecanica_relativista`
+		* `#masa_invariante`
+		* `#momentum_relativista`
+		* `#cuadrimomentum`
+		* `#magnitud_cuadrimomentum`
+		* `#cuadrimomentum_minkowski`
+- Labels for '01.07.00.00.RelatividadEspecial.ProblemasSeleccionados.ipynb':
 	- Labels for 'section':
 		* `#especial_problemas`
