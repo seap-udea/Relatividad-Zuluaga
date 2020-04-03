@@ -77,7 +77,11 @@
 		* `#cuadrivelocidad`
 		* `#cuadriaceleracion`
 		* `#cuadriaceleracion_constante`
+		* `#velocidad_limite`
 		* `#nave_interestelar`
+	- Labels for 'figure':
+		* `fig:cuadriaceleracion`
+		* `fig:Figure_15`
 - Labels for '01.06.00.00.RelatividadEspecial.MecanicaRelativista.ipynb':
 	- Labels for 'section':
 		* `#mecanica_relativista`
