@@ -2,7 +2,7 @@
 
 ## Teoría, algoritmos y problemas
 
-### Jorge I. Zuluaga, Profesor titular de Astronomía y Física, Instituto de Física, Universidad de Antioquia
+### Jorge I. Zuluaga, Profesor titular de Astronomía y Física, Instituto de Física, Facultad de Ciencias Exactas y Naturales
 
 Para obtener una copia de este libro clone el repositorio:
 

@@ -82,14 +82,24 @@
 	- Labels for 'figure':
 		* `fig:cuadriaceleracion`
 		* `fig:Figure_15`
-- Labels for '01.06.00.00.RelatividadEspecial.MecanicaRelativista.ipynb':
+- Labels for '01.06.00.00.RelatividadEspecial.DinamicaRelativista.ipynb':
 	- Labels for 'section':
-		* `#mecanica_relativista`
+		* `#dinamica_relativista`
 		* `#masa_invariante`
 		* `#momentum_relativista`
 		* `#cuadrimomentum`
 		* `#magnitud_cuadrimomentum`
 		* `#cuadrimomentum_minkowski`
-- Labels for '01.07.00.00.RelatividadEspecial.ProblemasSeleccionados.ipynb':
+		* `#cuadrifuerza`
+		* `#transformacion_fuerza`
+		* `#fuerza_lorentz`
+		* `#movimiento_circular`
+		* `#edm_relativista`
+- Labels for '01.07.00.00.RelatividadEspecial.SintesisMecanicaRelativista.ipynb':
+	- Labels for 'section':
+		* `#sintesis_mecanica`
+		* `#sintesis_cinematica`
+		* `#sintesis_dinamica`
+- Labels for '01.08.00.00.RelatividadEspecial.ProblemasSeleccionados.ipynb':
 	- Labels for 'section':
 		* `#especial_problemas`
