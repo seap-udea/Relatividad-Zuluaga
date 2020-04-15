@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
-<title>01.08.00.00.RelatividadEspecial.ProblemasSeleccionados</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>01.06.03.00.RelatividadEspecial.DinamicaRelativista.Cuadrifuerza</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 <style type="text/css">
@@ -13072,7 +13072,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><a href="index.html">Indice</a> | Previo: <a href="01.07.00.00.RelatividadEspecial.SintesisMecanicaRelativista.html">RelatividadEspecial.SintesisMecanicaRelativista</a> |</p>
+<p><a href="index.html">Indice</a> | Previo: <a href="01.06.02.00.RelatividadEspecial.DinamicaRelativista.ColisionesRelativistas.html">RelatividadEspecial.DinamicaRelativista.ColisionesRelativistas</a> | Siguiente: <a href="01.06.04.00.RelatividadEspecial.DinamicaRelativista.FuerzaDeLorentz.html">RelatividadEspecial.DinamicaRelativista.FuerzaDeLorentz</a></p>
 
 </div>
 </div>
@@ -13081,7 +13081,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="1.16.-Problemas-Seleccionados">1.16. Problemas Seleccionados<a class="anchor-link" href="#1.16.-Problemas-Seleccionados">&#182;</a></h2><p><a id='especial_problemas'></a></p>
+<h2 id="1.14.-Cuadrifuerza">1.14. Cuadrifuerza<a class="anchor-link" href="#1.14.-Cuadrifuerza">&#182;</a></h2><p><a id='cuadrifuerza'></a></p>
 
 </div>
 </div>
@@ -13089,10 +13089,111 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p>Uno de los conceptos más complicados de la mecánica Newtoniana es el concepto de fuerza.  Podría decirse que, incluso en el siglo xxi las discusiones alrededor de este concepto han sido difícilmente resueltas.  No es la excepción para el mismo concepto pero en el contexto de la dinámica relativista.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>En la mecánica newtoniana la <em>fuerza resultante</em> se define como:</p>
+$$
+\vec{\cal F} \equiv \frac{\mathrm{d}\vec p}{\mathrm{d}t}=\frac{\mathrm{d}(m\vec v)}{\mathrm{d}t}
+$$<p>es decir, entendemos por fuerza la manifestación de cualquier cambio en el momento lineal de una partícula.  Una cosa muy diferente es cuál es el origen de ese cambio.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Independientemente se postula la existencia de fenómenos que se manifiestan a través de lo que podemos llamar <em>fuerzas aplicadas</em> $\vec F$.  Así por ejemplo la fricción de dos superficies en el movimiento de cuerpos macroscópicos se describe con una fuerza aplicada efectiva que llamamos <em>fuerza de fricción</em> y que se modela de formas muy diversas.  La atracción evidente entre cuerpos con masa se modela también con una fuerza aplicada conocida, la fuerza gravitacional, y el caso de una partícula cargada que se mueve en un campo eléctrico y magnético, también puede modelarse usando una fuerza aplicada (la fuerza de Lorentz).</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>El postulado de fuerza Newtoniano se puede formular diciendo que la fuerza aplicada (cualquiera de las anteriores) es igual a la fuerza resultante:</p>
+$$
+\vec{\cal F}=\vec{F}
+$$<p>o en otros términos:</p>
+$$
+\frac{\mathrm{d}\vec p}{\mathrm{d}t}=\vec{F}
+$$<p>que es la que llamamos también la <em>segunda ley de Newton</em>.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>La pregunta de la relatividad sería ¿cuál es la versión covariante de esta ley? ¿se reduce la versión covariante del postulado de fuerzas a la versión relativista a bajas velocidades?</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Previamente habíamos definido el trimomentum como:</p>
+$$
+\vec p \equiv \gamma(v) m\vec v
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Mostramos que esta cantidad se conserva en las colisiones.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>De aquí podemos definir la trifuerza aplicada como:</p>
+$$
+\vec{\cal F}\equiv\frac{\mathrm{d}\vec p}{\mathrm{d}t}=\frac{\mathrm{d}(\gamma m\vec v)}{\mathrm{d}t}
+$$<p>esta cantidad es la que esta implicada en los procesos de interacción reales (covariantes), aquella que se relaciona con la conservación del trimomentum.  Nótese la diferencia entre esta definición y la definición clásica, en tanto en esta definición esta presente el factor de Lorentz-Einstein.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Curiosamente, el desarrollo del lado derecho de la ecuación anterior no conduce a ninguna expresión relevante o simple (aunque naturalmente puede hacerse).  Solo la introducción de una cantidad más general puede darnos luz sobre la verdadera interpretación de esta cantidad.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>De la misma manera como definimos el cuadrimomentum podemos definir ahora la cuadrifuerza en analogía:</p>
+$$
+f^\mu\equiv \frac{\mathrm{d}P^\mu}{\mathrm{d}\tau}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Esta ecuación puede escribirse de dos maneras diferentes:</p>
 <ol>
-<li><p><strong>Demostración de las derivadas</strong>. Demostrar que las derivadas parciales respecto a las coordenadas del espacio-tiempo transforman como:</p>
+<li><p>Como una forma generalizada de la <em>segunda ley de Newton</em> en el espacio-tiempo:</p>
 <p>$$
-\frac{\partial}{\partial x^{\mu'}}=\Lambda^{\nu}_{\mu'} \frac{\partial}{\partial x^{\nu}}
+f^\mu=m A^\mu
+$$</p>
+<p>de donde podemos obtener las componentes de la cuadrifuerza usando aquellas que dedujimos para la cuadriaceletación:</p>
+<p>$$
+f_L^\mu:\gamma^4 (m \vec{a}_L\cdot \vec{v}_L,m\vec{a}_L)
 $$</p>
 </li>
 </ol>
@@ -13104,39 +13205,30 @@ $$</p>
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ol>
-<li><p><strong>Invariancia de la norma de Minkowski</strong>. Demostrar que la norma de Minkowski:</p>
+<li><p>Derivando explícitamente las componentes del cuadrimomentum obtenemos:</p>
 <p>$$
-\mathrm{d}s^2=\mathrm{d}t^2-\mathrm{d}x_L^2-\mathrm{d}y_L^2-\mathrm{d}z_L^2
+f_L^\mu:\left(\gamma\frac{\mathrm{d}E_L}{\mathrm{d}t},\gamma\vec{\cal F}_L\right)
+$$</p>
+<p>La componente temporal de este cuadrivector es, como la trifuerza truculenta de calcular.  Sin embargo si usamos la propiedad de ortogonalidad $A^\mu \cdot U^\nu=0$ y sabemos que $f^\mu\propto A^\mu$, podemos decir que:</p>
+<p>$$
+f_L^0 U_L^0 = \vec{f}_L\cdot \vec{U}_L
 $$
-es invariante bajo transformaciones de Lorentz-Einstein.</p>
-</li>
-</ol>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<ol>
-<li><p><strong>Invariancia de la norma de Minkowski</strong>. Demostrar que la métrica $g_{\mu\nu}$ definida como:</p>
+de donde obtenemos:</p>
 <p>$$
-\mathrm{d}s^2=g_{\mu\nu}dx^\mu dx^\nu
+f_L^0 = \vec{f}_L\cdot \vec{v}_L
+$$</p>
+<p>Finalmente las componentes de la cuadrifuerza se pueden escribir como:</p>
+<p>$$
+f_L^\mu:\gamma(\vec{\cal F}_L\cdot\vec{v}_L,\vec{\cal F}_L)
+$$</p>
+<p>De esta última expresión derivamos la importante relación:
 $$
-dond $\mathrm{d}s^2$ es un invariante, es un tensor covariante de rango 2.</p>
-</li>
-</ol>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<ol>
-<li><p><strong>Componentes de la cuadriaceleración</strong>. Partiendo de la definición de cuadrivelocidad demostrar que las componentes de la cuadriaceleración son:</p>
+\frac{\mathrm{d}E_L}{\mathrm{d}t}=\vec{\cal F}_L\cdot\vec{v}_L
+$$
+que es idéntica a su análoga newtoniana pero con la energía cinética.</p>
+<p>Como sabemos que $E_L=\gamma m$ esta relación puede también escribirse como:</p>
 <p>$$
-A^\mu_L : \gamma^4 (\vec{a}_L\cdot \vec{v}_L,\vec{a}_L)
+\frac{\mathrm{d}(\gamma m)}{\mathrm{d}t}=\vec{\cal F}_L\cdot\vec{v}_L
 $$</p>
 </li>
 </ol>
@@ -13147,18 +13239,102 @@ $$</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<ol>
-<li><p><strong>Transformación de la fuerza</strong>. Dado que la componente espacial de la fuerza transforma como:</p>
-<p>$$\gamma_v \vec{F}_L =  \gamma_{v'}\vec{F}'_L+\left(\frac{\gamma_u-1}{u_L^2} \vec{u}_L\cdot \gamma_{v'}\vec{F}'_L + \gamma_u \gamma_{v'}\vec{\cal F}'_L\cdot\vec{v}'_L\right)\vec u_L$$</p>
-<p>mostrar que si la velcidad de la partícula es paralela a la velocidad relativa de los sistemas de referencia, las componentes paralela y perpendicular de la fuerza transforman como:</p>
-<p>\begin{eqnarray}
+<blockquote><p><strong>Nota: Unidades luz de la trifuerza</strong>.  Por la definición misma de la trifuerza, $\vec{\cal F}=\mathrm{d}\vec p/\mathrm{d}t$ la relación entre la fuerza en unidades luz y la fuerza en unidades convencionales sería:</p>
+</blockquote>
+$$
+\vec F = c \vec F_L
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Volviendo a la definición de trifuerza:</p>
+$$
+\vec{\cal F}_L=
+\frac{\mathrm{d}(\gamma m\vec{v}_L)}{\mathrm{d}t}=
+\frac{\mathrm{d}(\gamma m)}{\mathrm{d}t}\vec{v}_L + \gamma m \vec{a}_L
+$$<p>y usando la relación recien obtenida obtenemos:</p>
+$$
+\vec{\cal F}_L=\gamma m \vec{a}_L+(\vec{\cal F}_L\cdot\vec{v}_L)\vec{v}_L
+$$
+</div>
+</div>
+</div><div class="box_theorem">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Proposición: Ley de fuerza relativista.</strong><a id=''></a> Si sobre una partícula (masa invariante constante $m$) actua una fuerza aplicada $\vec{F}_L$, entonces la aceleración espacial experimentada por la partícula esta dada por:</p>
+<blockquote>$$\vec{a}_L=\frac{1}{\gamma m}[\vec{F}_L-(\vec{F}_L\cdot \vec{v}_L)\vec{v}_L]$$
+</blockquote>
+
+</div>
+</div>
+</div>
+    </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Es interesante notar que a diferencia de la aceleración newtoniana, la aceleración relativista $\vec{a}_L$ no es necesariamente paralela a la fuerza aplicada.  La ley de fuerza relativista muestra que los tres vectores residen sobre el mismo plano, pero no necesariamente son paralelos unos a tros.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Una manera alternativa de escribir la ley de fuerza relativista sería descomponer la aceleración y la fuerza en componentes paralelas y perpendiculares a la velocidad:</p>
+$$
+\gamma m(\vec{a}_{L\parallel}+\vec{a}_{L\perp})=
+\vec{F}_{L\parallel}+\vec{F}_{L\parallel}-\vec{F}_{L\parallel} v_L^2
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>igualando componente a componente, podemos reescribir la ley como:</p>
+\begin{eqnarray}
 \nonumber
-F_\parallel &amp; = &amp; \frac{F'_{L\parallel}+\vec u_L\cdot\vec{F}_L}{1+\vec{v}'_L\cdot \vec{u}_L}\\
-\nonumber    
-F_\perp &amp; = &amp; \frac{\gamma_u^{-1}F'_{L\perp}}{1+\vec{v}'_L\cdot \vec{u}_L}\\
-\end{eqnarray}</p>
-</li>
-</ol>
+{a}_{L\parallel} &amp; = &amp; \frac{1}{\gamma^3 m}{F}_{L\parallel}\\
+\nonumber
+{a}_{L\perp} &amp; = &amp; \frac{1}{\gamma m}{F}_{L\perp}
+\end{eqnarray}
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>En unidades convencionales:</p>
+\begin{eqnarray}
+\nonumber
+{a}_{\parallel} &amp; = &amp; \frac{1}{\gamma^3 m}{F}_{\parallel}\\
+\nonumber
+{a}_{\perp} &amp; = &amp; \frac{1}{\gamma m}{F}_{\perp}
+\end{eqnarray}
+</div>
+</div>
+</div><div style="background:lightgray;border:solid black 2px;pad:10px;margin-left:7em;margin-top:1em;margin-bottom:1em;">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Definición 1.13. Inercia direccional</strong>.  Definimos la <strong>inercia.</strong><a id=''></a> de una partícula en una dirección $\hat v$, ${\cal I}_v$, como el cociente entre la componente de la fuerza aplicada en esa dirección y la componente de la aceleración experimentada en la misma dirección:</p>
+<blockquote>$$\cal I_v \equiv \frac{\vec F\cdot \hat v}{\vec a\cdot \hat v}$$
+</blockquote>
+
+</div>
+</div>
+</div>
+    </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>De forma interesante la ley de fuerza relativista muestra que una partícula tiene una inercia diferente en distintas direcciones relativas a su velocidad.  Así, en dirección perpendicular a la velocidad la inercia de una partícula es $\cal I_\perp = \gamma m$ mientras que en dirección paralela es $\cal I_\parallel = \gamma^3 m$.</p>
 
 </div>
 </div>
@@ -13166,16 +13342,98 @@ F_\perp &amp; = &amp; \frac{\gamma_u^{-1}F'_{L\perp}}{1+\vec{v}'_L\cdot \vec{u}_
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<ol>
-<li><p><strong>Transformación de la fuerza</strong>. Demostrar que la ley de atracción gravitacional de Newton:</p>
-<p>$$\vec F=\frac{G M m}{R^3}\vec{R}$$</p>
-<p>no tranforma de acuerdo a las reglas de transformación de Lorentz-Einstein para la trifuerza y por lo tanto no puede usarse en dinámica relativista.</p>
-</li>
-</ol>
+<h3 id="1.14.1.-Reglas-de-transformaci&#243;n-de-la-fuerza">1.14.1. Reglas de transformaci&#243;n de la fuerza<a class="anchor-link" href="#1.14.1.-Reglas-de-transformaci&#243;n-de-la-fuerza">&#182;</a></h3><p><a id='transformacion_fuerza'></a></p>
 
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Una interesante consecuencia de los desarrollos anteriores alrededor de los conceptos de fuerza en la dinámica relativista es entender que a diferencia de lo que pasa en la física newtoniana, en la relatividad la fuerza no es la misma cuando es medida por distintos observadores inerciales.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>La cuadrifuerza transforma de acuerdo a las TLE:</p>
+$$
+f^\mu = \Lambda^\mu_{\nu'} f^{\nu'}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>De allí se deduce que la trifuerza resultante $\vec{\cal F}$ debe transformar como lo hace la componente espacial de cualquier cuadrivector:</p>
+$$
+\gamma_v \vec{F}_L =  \gamma_{v'}\vec{F}'_L+\left(\frac{\gamma_u-1}{u_L^2} \vec{u}_L\cdot \gamma_{v'}\vec{F}'_L + \gamma_u \gamma_{v'}\vec{\cal F}'_L\cdot\vec{v}'_L\right)\vec u_L
+$$<p>o su inversa:</p>
+$$
+\gamma_{v'} \vec{F}'_L =  \gamma_{v}\vec{F}_L+\left(\frac{\gamma_u-1}{u_L^2} \vec{u}_L\cdot \gamma_{v}\vec{F}_L - \gamma_u \gamma_{v}\vec{\cal F}_L\cdot\vec{v}_L\right)\vec u_L
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Aquí es importante aclarar que en la expresión aparecen dos velocidades: la velocidad relativa entre los sistemas de referencia $\vec u$ y la velocidad de la partícula sobre la que actúa la fuerza $\vec v$.  Por la misma razón aparecen también dos $\gamma$ diferentes, uno para cada velocidad.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Una primera consecuencia de esta relación es que si en un sistema de referencia una partícula esta en equilibrio $\vec F=\vec o$, también lo estará en el otro sistema de referencia.  Es decir, el equilibrio es invariante.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Si descomponemos la fuerza en una componente paralela a la velocidad y una perpendicular a ella</p>
+$$
+\vec F = \vec F_{\parallel} + \vec F_{\perp}
+$$<p>y asumimos que la partícula se mueve instantáneamente en la misma dirección relativa de los sistemas de referencia, es decir $\vec{v}\parallel\vec{u}$, entonces las dos componentes transformaran de acuerdo con las ecuaciones (ver Problemas al final del capítulo):</p>
+\begin{eqnarray}
+F_\parallel &amp; = &amp; \frac{F'_{L\parallel}+\vec u_L\cdot\vec{F}'_L}{1+\vec{v}'_L\cdot\vec{u}_L}\\
+F_\perp &amp; = &amp; \frac{\gamma_u^{-1}F'_{L\perp}}{1+\vec{v}'_L\cdot\vec{u}_L}\\
+\end{eqnarray}
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Un hecho interesante que se deriva de estas relaciones es que la trifuerza relativista no puede tener cualquier forma, sino solo aquella que transforme de acuerdo con las anteriores condiciones.  En particular vemos que la trifuerza relativista depende de la velocidad de una forma no trivial.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Una fuerza que no cumple esa condición es la fuerza de atracción gravitacional de Newton que puede probarse fácilmente, no transforma de acuerdo a las reglas anteriores.  Es decir la fuerza gravitacional no es una fuerza compatible con la dinámica relativista.  Si queremos modelar la gravedad será necesario que desarrollemos una teoría nueva sobre esta fuerza.  Ese es justamente el propósito de la <strong>teoría general de la relatividad</strong>.</p>
+
+</div>
+</div>
+</div><div style="background:lightgray">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a href="index.html">Indice</a> | Previo: <a href="01.06.02.00.RelatividadEspecial.DinamicaRelativista.ColisionesRelativistas.html">RelatividadEspecial.DinamicaRelativista.ColisionesRelativistas</a> | Siguiente: <a href="01.06.04.00.RelatividadEspecial.DinamicaRelativista.FuerzaDeLorentz.html">RelatividadEspecial.DinamicaRelativista.FuerzaDeLorentz</a></p>
+
+</div>
+</div>
+</div>
+    </div>
     </div>
   </div>
 </body>

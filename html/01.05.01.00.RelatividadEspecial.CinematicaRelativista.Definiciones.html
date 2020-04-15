@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
-<title>01.08.00.00.RelatividadEspecial.ProblemasSeleccionados</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>01.05.01.00.RelatividadEspecial.CinematicaRelativista.Definiciones</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 <style type="text/css">
@@ -13072,7 +13072,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><a href="index.html">Indice</a> | Previo: <a href="01.07.00.00.RelatividadEspecial.SintesisMecanicaRelativista.html">RelatividadEspecial.SintesisMecanicaRelativista</a> |</p>
+<p><a href="index.html">Indice</a> | Previo: <a href="01.04.00.00.RelatividadEspecial.OpticaRelativista.html">RelatividadEspecial.OpticaRelativista</a> | Siguiente: <a href="01.05.02.00.RelatividadEspecial.CinematicaRelativista.AceleracionPropiaConstante.html">RelatividadEspecial.CinematicaRelativista.AceleracionPropiaConstante</a></p>
 
 </div>
 </div>
@@ -13081,7 +13081,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="1.16.-Problemas-Seleccionados">1.16. Problemas Seleccionados<a class="anchor-link" href="#1.16.-Problemas-Seleccionados">&#182;</a></h2><p><a id='especial_problemas'></a></p>
+<h2 id="1.11.-Cinem&#225;tica-relativistica">1.11. Cinem&#225;tica relativistica<a class="anchor-link" href="#1.11.-Cinem&#225;tica-relativistica">&#182;</a></h2><p><a id='cinematica_relativistica'></a></p>
 
 </div>
 </div>
@@ -13089,13 +13089,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<ol>
-<li><p><strong>Demostración de las derivadas</strong>. Demostrar que las derivadas parciales respecto a las coordenadas del espacio-tiempo transforman como:</p>
-<p>$$
-\frac{\partial}{\partial x^{\mu'}}=\Lambda^{\nu}_{\mu'} \frac{\partial}{\partial x^{\nu}}
-$$</p>
-</li>
-</ol>
+<p>Usando lo que vimos en la sección anterior, podemos reconstruir una cinemática en el espacio-tiempo.</p>
 
 </div>
 </div>
@@ -13103,14 +13097,18 @@ $$</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<ol>
-<li><p><strong>Invariancia de la norma de Minkowski</strong>. Demostrar que la norma de Minkowski:</p>
-<p>$$
-\mathrm{d}s^2=\mathrm{d}t^2-\mathrm{d}x_L^2-\mathrm{d}y_L^2-\mathrm{d}z_L^2
+<h3 id="1.11.1.-Cuadrivelocidad">1.11.1. Cuadrivelocidad<a class="anchor-link" href="#1.11.1.-Cuadrivelocidad">&#182;</a></h3><p><a id='cuadrivelocidad'></a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Definimos la cuadrivelocidad media de una partícula que se mueve entre dos eventos separados por un intervalo temporaloide como:</p>
 $$
-es invariante bajo transformaciones de Lorentz-Einstein.</p>
-</li>
-</ol>
+\bar{U_L}^\mu=\frac{\Delta x_L^\mu}{\Delta \tau}
+$$<p>donde $\Delta\tau$ es el tiempo propio entre los eventos.</p>
 
 </div>
 </div>
@@ -13118,14 +13116,54 @@ es invariante bajo transformaciones de Lorentz-Einstein.</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<ol>
-<li><p><strong>Invariancia de la norma de Minkowski</strong>. Demostrar que la métrica $g_{\mu\nu}$ definida como:</p>
-<p>$$
-\mathrm{d}s^2=g_{\mu\nu}dx^\mu dx^\nu
+<p>Usando el mismo método de la mecánica convencional podemos extender este concepto al de cuadrivelocidad instantánea:</p>
 $$
-dond $\mathrm{d}s^2$ es un invariante, es un tensor covariante de rango 2.</p>
-</li>
-</ol>
+U^\mu=\lim_{\Delta \tau\rightarrow 0}\frac{\Delta x_L^\mu}{\Delta \tau}=\frac{\mathrm{d}x_L^\mu}{\mathrm{d}\tau}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>En términos de componentes explícitas:</p>
+$$
+U_L^\mu:\left(\frac{\mathrm{d}t}{\mathrm{d}\tau},\frac{\mathrm{d}\vec{r}_L}{\mathrm{d}\tau}\right)
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Usando el hecho que $\mathrm{d}\tau=\mathrm{d}t/\gamma$, donde $\gamma=(1-v_L^2)^{1/2}$ con:</p>
+$$
+\vec{v}_L=\frac{\mathrm{d}x_L^\mu}{\mathrm{d}t}
+$$<p>la cuadrivelocidad queda:</p>
+$$
+U_L^\mu:\gamma\left(1,\vec{v}_L\right)
+$$
+</div>
+</div>
+</div><div class="box_theorem">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Proposición: Cuadrirapidez.</strong><a id=''></a> Todas las partículas del universo ($v_L&lt;1$) tienen siempre cuadrirapidez unitaria:</p>
+<blockquote>$$
+  |U_L^\mu|=1
+  $$
+</blockquote>
+
+</div>
+</div>
+</div>
+    </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Naturalmente esto es en unidades luz.  En unidades convencionales la cuadrirapidez sería igual a $c$.</p>
 
 </div>
 </div>
@@ -13133,49 +13171,205 @@ dond $\mathrm{d}s^2$ es un invariante, es un tensor covariante de rango 2.</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<ol>
-<li><p><strong>Componentes de la cuadriaceleración</strong>. Partiendo de la definición de cuadrivelocidad demostrar que las componentes de la cuadriaceleración son:</p>
-<p>$$
+<p>Un gráfico de todas las cuadrivelocidades de todas las partículas en el universo son:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">matplotlib</span> inline
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">numpy</span> <span class="k">import</span> <span class="n">linspace</span>
+<span class="n">vl</span><span class="o">=</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mf">0.95</span><span class="p">)</span>
+<span class="n">gamma</span><span class="o">=</span><span class="mi">1</span><span class="o">/</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">vl</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">**</span><span class="mf">0.5</span>
+<span class="n">U0</span><span class="o">=</span><span class="n">gamma</span>
+<span class="n">Ux</span><span class="o">=</span><span class="n">gamma</span><span class="o">*</span><span class="n">vl</span>
+
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="n">fig</span><span class="o">=</span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
+<span class="n">ax</span><span class="o">=</span><span class="n">fig</span><span class="o">.</span><span class="n">gca</span><span class="p">()</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">U0</span><span class="p">,</span><span class="n">Ux</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span><span class="mi">3</span><span class="p">))</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span><span class="mi">3</span><span class="p">))</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span><span class="mi">3</span><span class="p">],[</span><span class="mi">0</span><span class="p">,</span><span class="mi">3</span><span class="p">],</span><span class="s1">&#39;k--&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;$U_L^0$&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;$U_</span><span class="si">{L}</span><span class="s2">^</span><span class="si">{x}</span><span class="s2">$&quot;</span><span class="p">)</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+
+<div class="output_png output_subarea ">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAWAAAAFgCAYAAACFYaNMAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAADh0RVh0U29mdHdhcmUAbWF0cGxvdGxpYiB2ZXJzaW9uMy4xLjEsIGh0dHA6Ly9tYXRwbG90bGliLm9yZy8QZhcZAAAgAElEQVR4nO3deVzVVf7H8ddHQFEwRSE0c9+S1FJxadESJJcslywtc8ktTaespl/WNGk22mTl/Ez7TVoulHtSuWQagk1a44ImKpD7ipq4ISI75/cH1JjjwnLv/d7l83w8eMS998s5b2/w4XC+53u+YoxBKaWU45WxOoBSSnkqLcBKKWURLcBKKWURLcBKKWURLcBKKWURLcBKKWURhxdgEfEVkS0iEi8iCSLy1jWOKSciS0Rkv4hsFpE6js6plFL2ZsUIOAsIM8bcBdwNdBGRdlcdMxQ4b4xpAPwDeNfBGZVSyu4cXoBNgUuFD30KP66+GqQHEFn4+TIgXETEQRGVUsohvK3oVES8gG1AA+AjY8zmqw6pARwDMMbkikgqUBU4c1U7I4ARAH5+fq3uuOMOe0dXSqk/yM7OZteuXWeMMUHF/VpLCrAxJg+4W0QqA1+JSFNjzO4StDMLmAUQGhpq4uLibJxUKaWuLTk5mRo1agAgIkdK0oalqyCMMReA9UCXq15KBmoCiIg3UAk469h0Sil1bZGRkdSvX58NGzaUqh0rVkEEFY58EZHyQATwy1WHrQAGFX7eB4g1umuQUsoJLFq0iCFDhtChQwdat25dqrasmIKoDkQWzgOXAZYaY1aJyEQgzhizApgNfC4i+4FzQD8Lciql1B9ERUUxYMAA2rdvz9dff42vr2+p2hN3GVjqHLBSyp7i4+MJDQ2lTZs2rF27Fn9//99fE5FtxpjQ4rapV8IppVQRNG/enPfff5/Vq1f/ofiWhhZgpZS6gX/961/s27cPEeGFF16gUqVKNmtbC7BSSl3Hhg0b6NatG2PGjLFL+1qAlVLqGjZt2kS3bt2oVasWn332mV360AKslFJX2bZtG126dKFatWrExMQQHBxsl360ACul1FXeeustAgICiI2N5bbbbrNbP5ZciqyUUs5s4cKFnDt3jpo1a9q1Hx0BK6UUsHfvXvr27UtaWhr+/v7UqlXL7n3qCFgp5fEOHjxIWFgY2dnZnDx5kooVKzqkXy3ASimPdvToUcLCwsjIyGD9+vU0atTIYX1rAVZKeazk5GTCwsJITU0lJiaG5s2bF7uNRVuOlrh/nQNWSnmstLQ0vL29WbNmDS1btiz216/ZfZK/fLWrxP3rCFgp5XEuXbqEn58fd9xxBwkJCXh5eRW7jZ8OnOH5RTu4u2ZlDpUwh46AlVIe5dy5c9x///2MGzcOoETFd3dyKiM+20btqhWYM7jkewJrAVZKeYzU1FQ6d+5MUlISYWFhJWrj8Jl0Bs/dQqXyPnw2tA2VK5QtcR6dglBKeYS0tDS6du1KfHw8X375JZ07dy52G6cvZjJgzmbyDXw2tA3VK5UvVSYtwEopt2eMoVevXmzZsoWlS5fSvXv3YreRmpHDwDlbOHspm0XD21E/qPR7AusUhFLK7YkIY8aMYf78+fTu3bvYX5+Zk8fwyDgOpFxi5oBW3FWzsk1y6QhYKeW2srKy2Lx5Mx06dKBnz54laiM3L58xC39m65FzTH+yBe0bBtksn46AlVJuKScnhyeeeILw8HAOHSrZQjFjDK99uYt1Sb8y8dE76d7ctjuj6QhYKeV2cnNzeeqpp1ixYgUzZsygbt26JWrn3TV7+GLbcV4Ib8iAe+rYNiQ6AlZKuZm8vDwGDRrEsmXL+OCDDxg9enSJ2vnkh4N8/K8DPN2uFmM7NbRxygJagJVSbiUqKoqFCxcyefJkXnrppRK1sWzbcSatTuLhZtV569GmiIiNUxbQKQillFt5/PHHqVq1KuHh4SX6+pikX3k1aif3Nwhkat+78Cpjn+ILOgJWSrkBYwwTJkwgISEBESlx8d16+BzPLdjOnbfdwscDWlHOu/iXKReHFmCllEszxvDqq6/y1ltvsWTJkhK388upiwydt5Ualcszd3Br/MvZf4JAC7BSyqWNHz+e9957j1GjRvHWW2+VqI1j5y4zcPYWypf14rOhbajqX87GKa9N54CVUi5r0qRJvP322wwdOpQZM2aU6GTZmUtZDJyzhazcfL4YeQ+3B1SwQ9Jr0xGwUsol5eTkEBMTw9NPP83MmTMpU6b45SwtM4fBc7dwMjWDOYNDaRTsmHvB/UZHwEopl5Obm4uPjw/ffPMNPj4+JdrTNys3j2c/30bSyTQ+HRhKq9pV7JD0xnQErJRyKbNmzeKBBx4gNTWV8uXL4+1d/HFkXr7hxSU7+OnAWd7r05yOd9xqh6Q3pwVYKeUyIiMjGTlyJJUrV8bX17dEbRhj+Ovy3azedYo3Hm5C75a32zhl0WkBVkq5hEWLFjFkyBDCw8OJioqiXLmSrVT4x7p9LNx8lFEP1mdY+3o2Tlk8WoCVUk5v+fLlDBgwgPbt27N8+fISj34jfzrMhzH7eCL0dv6nc2Mbpyw+LcBKKafXtGlT+vTpw6pVq6hQoWTLxFbEn2DCygQiQoKZ3KuZ3fZ3KA4twEopp5WYmIgxhvr167N48WL8/Ut2G6Af9qbw8tIdtK5ThelPtsDbyzlKn3OkUEqpq8TGxtKqVSvefffdUrWz49gFRs7fRoNbK/LpoFB8fey7v0NxaAFWSjmdDRs28Mgjj9CgQQOGDRtW4nb2n77EM3O3EOhfjsghrbnF18eGKUtPC7BSyqls2rSJbt26UbNmTdatW0dgYGCJ2jmZmsHA2ZvxKlOGz4e24daKJTtxZ09agJVSTiM9PZ0ePXoQHBxMTEwMwcHBJWon9XIOA2dvIS0zl3nPtKZ2VT8bJ7UNvRRZKeU0/Pz8mD9/Po0bN6ZGjRolaiMzJ49hn23lyNnLzBvSmqY1Ktk4pe04dAQsIjVFZL2IJIpIgoi8cI1jHhSRVBHZUfjxpiMzKqUcLzEx8fe9fCMiIqhVq1aJ2snLN7yw+Gfijpxnat+7uLd+yaYvHMXRI+Bc4GVjzHYRqQhsE5FoY0ziVcdtMMZ0d3A2pZQF9u7dS3h4OF5eXnTv3h0/v5JNFxhjmLAigbUJv/Jm9xCb30LeHhw6AjbGnDTGbC/8PA1IAkr2d4ZSyuUdOHCAsLAw8vLyiI6OLnHxBfi/7w/w+aYjPNuhHkPuL9lt6B3NspNwIlIHaAFsvsbL94hIvIh8KyJ33qCNESISJyJxKSkpdkqqlLKHI0eOEBYWRkZGBuvWraNJkyYlbmtp3DHeW7uHXi1q8GqXO2yY0r4sKcAi4g9EAWONMRevenk7UNsYcxcwHfj6eu0YY2YZY0KNMaFBQUH2C6yUsrmvvvqKixcvEh0dTfPmzUvczvpfTvPal7to3zCQdx9rThk73sXY1sQY49gORXyAVcBaY8zUIhx/GAg1xpy50XGhoaEmLi7ONiGVUnZjjPl9H4bk5OQSr3aAgqvcnpy1ifq3+rF4xD0OuZHmtYjINmNMaHG/ztGrIASYDSRdr/iKSLXC4xCRNhRkPOu4lEope0lJSSEsLIwdO3YAlKr4HjqTzpB5WwmsWJY5DrqLsa05OvF9wABgl4jsKHzudaAWgDHmY6APMEpEcoEMoJ9x9DBdKWVz586dIyIigj179nD+/PlStXU6LZOBcwpOH302pK1TXuVWFA4twMaYjcANJ2iMMTOAGY5JpJRyhNTUVDp37kxSUhIrV66kY8eOJW7rUlYuQ+Zt5UxaNotGtKNuoHNe5VYUrjdmV0q5lLS0NLp27Up8fDxffvklDz30UInbys7NZ9T8/9xI8+6alW2Y1PF0LwillF15e3sTGBjIkiVL6N695NdX5ecbXo3ayYZ9Z3indzPLbqRpSzoCVkrZRWZmJpmZmVSuXJnly5eX+g4U7679ha9+TubPDzXiidCaNkppLR0BK6VsLisri969exMREUFubm6pi+/cHw8x818HGdCuNqM7NrBRSutpAVZK2VROTg59+/bl22+/ZcSIEXh7l+4P7VU7TzBxVSKd7wxmwqN3OsW93GxFC7BSymZyc3Pp378/y5cvZ8aMGQwfPrxU7f104AwvLYmnVa0ApvVrgZcLXeVWFFqAlVI2M27cOL744gs++OADRo8eXaq2kk5e5NnPtlGragWnu5ebrehJOKWUzfzpT3+ifv36jBo1qlTtJF/IYPDcLfiV8yZySBsqVyhro4TORUfASqlSMcawcOFC8vPzqV27dqmL74XL2Qyas4XL2XlEDmlDjcrlbZTU+WgBVkqVmDGGF198kf79+xMVFVXq9jJz8hgaGcfRs5f5ZGAojatVtEFK56VTEEqpEjHGMG7cOKZNm8bYsWPp06dPqdrLzcvnT4t+ZvvR83z0VEva1atqo6TOS0fASqkSmTBhAlOmTOG5555j6tSppVoeZozhzRUJRCf+yvjuIXRrVt2GSZ2XFmClVLEdPHiQKVOmMGzYMKZPn17qtbnTY/ezcPNRRj5Qn8H3ucbthGxBpyCUUsVWr149tmzZQkhICGXKlG4ct2TrUaZG76V3ixq82qWxjRK6Bh0BK6WK7KOPPmL27NkANGvWDC+v0q3NjUn6lde/2k2HRkG826e5W13lVhRagJVSRTJr1izGjBnDN998gy3ukbD96HlGL9xOSPVb+Gf/lvh4eV458rx/sVKq2CIjIxk5ciTdunVj0aJFpR6pHki5xNB5Wwm+xZc5g1vj54K3E7IFLcBKqRtavHgxQ4YMoVOnTkRFRVGuXLlStXf6YiaD5myhjAiRz7QhqGLp2nNlnvlrRylVZIcPH6Z9+/Z8/fXX+PqW7t5raZk5DJ67lbOXslk8oh11XPh2Qrbg8NvS24vell4p27p8+TIVKlQACraY9PHxKVV72bn5PDNvC5sOnuPTQaF0bOz6d7T4jUvcll4p5RrWrFlDvXr1+PnnnwFKXXzz8w2vLIvnx/1n+XvvZm5VfEtDC7BS6g9iYmLo1asX1atXp06dOjZp851vk1i+4wSvdG7M425yOyFb0AKslPrdhg0bePTRR2nQoAHR0dEEBASUus25Px7ikw2HGHhPbZ57sL4NUroPLcBKKQB2795Nt27dqFWrFuvWrSMwMLDUba5NOMXEVYlEhAQz/hH3up2QLWgBVkoB0KhRI4YMGUJMTAzBwcGlbm/70fM8v+hnmt9emQ/d8HZCtqDL0JTycAkJCQQHBxMYGMi0adNs0ubhM+kMi4wj+BZfZg8KpXxZ97udkC3oCFgpD5aQkMCDDz7IwIEDbdbmufRsBs/dgjGGec+0JtDfcy+0uBkdASvlofbu3Ut4eDje3t42G/lm5uQxLHIrJ1IzWTS8LfWC/G3SrrvSAqyUBzpw4ABhYWHk5+fz/fff07Bhw1K3mZdvGLt4Bz8fu8D/PdWSVrWr2CCpe9MCrJQHevbZZ8nIyGD9+vWEhITYpM1J3ySxJuEUf+0eQlcPuaNFaWkBVsoDffbZZ5w+fZrmzZvbpL3ZGw8x58dDPHNfHYbe7zl3tCgtPQmnlIc4deoUr7/+Orm5udx2223cfffdNmn3210n+ds3iXS+M5g3HrbNaNpTaAFWygOkpKQQHh7OtGnT2LNnj83a3XbkHGOX7ODumpWZpmt9i02nIJRyc+fOnSMiIoKDBw/yzTffcOedd9qk3UOFa32rV/Ll04Gh+ProWt/i0gKslBtLTU2lc+fOJCUlsWLFCsLCwmzS7tlLWQyeuwURYd4zbaiqa31LRKcglHJjv/zyCwcOHCAqKorOnTvbpM2M7DyGRsZxKjWTTweFevym6qWhI2Cl3FB+fj5lypShbdu2HDp0iEqVKtmk3bx8wwuLfyb++AX+2b8VLWuVfrc0T6YjYKXcTEZGBl26dOGjjz4CsFnxNcbw9qpEvkv8lTe7h9ClaTWbtOvJtAAr5UaysrJ47LHHWLduHRUrVrRp27M3HmLeT4cZen9dnrlP1/ragk5BKOUmcnJy6Nu3L99++y2ffPKJTTfY+WbnSf72TRJdm1bjL92a2KxdT+fQEbCI1BSR9SKSKCIJIvLCNY4REflQRPaLyE4RaenIjEq5ImMM/fv3Z/ny5cyYMYNhw4bZrO24w+d4cekOWtUO4B9976aMrvW1GUePgHOBl40x20WkIrBNRKKNMYlXHNMVaFj40Rb4Z+F/lVLXISLce++9tGvXjtGjR9us3YMplxj2WRw1KpfnE13ra3MOLcDGmJPAycLP00QkCagBXFmAewCfGWMMsElEKotI9cKvVUpdIT8/nwMHDtCwYUPGjh1r07bPXMpi8NyteIkw75nWVPEra9P2lYUn4USkDtAC2HzVSzWAY1c8Pl743LXaGCEicSISl5KSYo+YSjktYwyjR4+mZcuWHDlyxKZtX87OZei8rZxOK1jrW7uqrvW1B0sKsIj4A1HAWGPMxZK2Y4yZZYwJNcaEBgUF2S6gUk7OGMOLL77Ixx9/zOjRo6lVq5bN2s7LNzy/aAc7k1P5sF8LWuhaX7txeAEWER8Kiu8CY8yX1zgkGah5xePbC59TSlFQfMeNG8e0adMYO3Ys77zzjs3uNmyMYeLKBNYl/cqER+7koTt1ra89OXoVhACzgSRjzNTrHLYCGFi4GqIdkKrzv0r9x5IlS5gyZQqjRo1i6tSpNr3V+5wfDxP57yMMb1+XQffWsVm76tocvQriPmAAsEtEdhQ+9zpQC8AY8zGwGugG7AcuA884OKNSTu2xxx7jk08+YciQITYtvtGJv/6+r+9rXXWtryNIwWID1xcaGmri4uKsjqGU3cydO5euXbtSrZrtpwV2HU/liZn/plGwP4tH3KO3kS8mEdlmjAkt7tfppchKuYDp06czZMgQpk693sxdyZ24kMHQyK1U8SvLJ4NCtfg6kBZgpZzcrFmzeP755+nVqxeTJk2yaduXsnIZMm8rGdl5zBncmlsr+tq0fXVjuheEUk4sMjKSkSNH8vDDD7N48WJ8fHxs1nZuXj5jFm5n3+lLzB3cmsbVbLt5j7o5HQEr5aRycnJ4//336dSpE8uWLaNsWdtdiWaM4a2ViXy/J4W3ezSlQyNdR28FHQEr5aR8fHyIjY3Fz88PX1/bTg3M+fEwn286wogO9Xiqre0u4lDFoyNgpZzMypUr6d+/Pzk5OQQFBVGhQgWbtv9dwin+9k0iXe6sxrgud9i0bVU8WoCVciJr1qyhT58+7Nu3j4yMDJu3v+t4Ki8s3kHzGpV0a0knoAVYKScRExNDr169CAkJYe3atdxyyy02bV+XmzkfLcBKOYENGzbw6KOP0qBBA6KjowkIsO0GOLrczDlpAVbKCXh5edGsWTPWrVtHYGCgTdu+crnZR/1b6nIzJ6KrIJSy0JkzZwgMDOTee+/l3//+t033doA/Ljeb3KuZLjdzMjoCVsoi8fHxNG7cmFmzZgHYvPjCf5abPavLzZySFmClLJCYmEinTp2oUKECERERdunjyuVmr+pyM6ekBVgpB9u7dy/h4eF4e3sTGxtL3bp1bd6HLjdzDToHrJQDXbp0ifDwcPLy8vj+++9p2LChzfvQ5WauQwuwUg7k7+/PhAkTaN26NSEhITZvPz0rl6GRcWRk5/H5qLa63MzJaQFWygGSk5M5fPgw9913H0OHDrVLH/n5hhcW72DPqYvMfaaNLjdzAVqAlbKzU6dOER4eTmpqKgcPHqR8+fJ26efdtb8U3kwzhAd0uZlL0AKslB2lpKTQqVMnjh8/zpo1a+xWfL+IO8bMfx3k6Xa19GaaLkQLsFJ2cu7cOR566CEOHDjA6tWruf/+++3Sz5ZD53j9q13c3yCQ8Y/caZf1xMo+tAArZSfTp08nMTGRFStW0LFjR7v0cfTsZZ79PI6aARX46KmW+HjpylJXogVYKTt54403eOSRR2jZsqVd2r+YmcPQyK3kG5g9uDWVKtjudkXKMfTXpVI2dPnyZYYMGcLx48fx8vKyW/HNzcvnTwt/5tCZdP75dEvqBvrZpR9lX1qAlbKRzMxMevToQWRkJHFxcXbt62/fJPGvvSm83bMp99a37e5pynF0CkIpG8jKyqJ3797ExMQwb948evbsabe+5m86wryfDjP0/ro82UY32HFlWoCVKqWcnBz69u3Lt99+yyeffMLAgQPt1teP+88wfkUCHRsH8Xq3JnbrRzmGTkEoVUppaWkcPnyYGTNmMGzYMLv1czDlEqPmb6NBkD8fPtkCL91gx+XpCFipEsrLyyMvL48qVaqwZcsWypYta7e+LlzOZmhkHD5eZfh0UCgVfXXFgzvQEbBSJZCfn8/w4cN57LHHyM3NtWvxzcnL57kF20k+n8HMAa2oWcW2t6lX1tECrFQxGWMYPXo0c+fOpVWrVnh72+8PSWMM41ck8NOBs/z9sWaE1qlit76U42kBVqoYjDG8+OKLfPzxx7z66quMHz/erv199u8jLNx8lFEP1qd3y9vt2pdyPC3AShXDxIkTmTZtGmPHjuWdd96x674LP+0/w8RViXRqEswrDzW2Wz/KOnoSTqli6N69OxkZGXYvvkfOpvPcwu3UD/LjH33v0lsKuSktwEoVwb///W/uueceWrVqRatWrezaV1pmDsMiC66k+2SgrnhwZzoFodRNvP/++9x77718/fXXdu8rP9/w4pIdHDyTzv891ZLaVXWPB3emBVipG/jwww955ZVXePzxx+nevbvd+/sgeg/rkk4z/pEQ7m2gezy4Oy3ASl3HzJkzeeGFF+jZsycLFiyw63IzgBXxJ/ho/QGebFOTAe1q27Uv5Ry0ACt1Dfv27eO5556jW7duLF68GB8f+87D7jqeyv8si6d1nQDeerSp3tXCQ+hJOKWuoWHDhqxatYqOHTtSrlw5u/Z1Oi2TEZ/HUdWvHP98uhVlvXVc5Clu+n9aRLwcEUQpZxAVFUV0dDQAXbt2xdfX1679ZeXmMfLzbVy4nMOsga0I9LdvsVfOpSi/ameJSAUAEelg5zxKWWbFihX069ePv//97xhj7N6fMYa/fLWb7Ucv8METd3HnbZXs3qdyLkUpwG8Cs0Xkc6D19Q4SkfZF6VBE5ojIaRHZfZ3XHxSRVBHZUfjxZlHaVao01qxZw+OPP06LFi348ssvHTIHO+fHwyzbdpznwxvSrVl1u/ennE9RCvDbwB7AAEtvcNzjRexzHtDlJsdsMMbcXfgxsYjtKlUiMTEx9OrVi5CQENauXUulSvYfiW7cd4ZJ3yTS+c5gxoY3tHt/yjkV5STc/xhjzoiIH/AhMBRARFYAh4DtwLYitoUx5gcRqVOitErZwVdffUX9+vWJjo4mICDA7v0dO3eZMYu20/DWikx94m69zNiDFaVopgMYY9JFZMRvTxpjHhWR2kBLoB9gy4WL94hIPHAC+LMxJuFaBxXmGQFQq5beG0sVjzEGEeHDDz8kNTXVIcX3cnYuwz+LIz/fMGtgK/zK6UIkT1aUKYgTIrJHRL4AXheRHiISAGCMOWKM+coY84Yx5mEbZdoO1DbG3AVMB657/acxZpYxJtQYExoUFGSj7pUn2LZtGy1btuTQoUOUKVPGIcXXGMP/LNvJnl/T+PDJFnqZsbp5ATbGBFAwZzu/8KmngQQRWSQiNp8sM8ZcNMZcKvx8NeAjInpNprKZ+Ph4IiIiuHDhAl5ejltlOeuHg6zaeZJXOjfmwca3Oqxf5byKOm97iIL53uUAUnCK+C/A/wLP2DKQiFQDfjXGGBFpQ8EvibO27EN5rsTERDp16oSfnx+xsbEOm7rasC+Fd9f8wsPNqjPqgfoO6VM5vxJNQJmCRZJ/E5Gk4n6tiCwCHgQCReQ4MB7wKWz3Y6APMEpEcoEMoJ9xxKJM5fb2799PeHg43t7exMbGUrduXYf0e/TsZcYs/JlGwRWZ0qe5XmasfnfTAiwiLwE7gZ3GmNNXPF8OKPZlQsaYJ2/y+gxgRnHbVepmqlSpQqtWrZgyZQoNGzpm6dfl7FxGfF6wt+/MAXrSTf1RUb4bgoGXgGYi4g3sAg5QcFFGlB2zKWUTJ06coEqVKlSpUoVVq1Y5rF9jDK8s28neX9OY+0wbPemm/stNC7Ax5tXfPheRykAzoDHwpTEm2o7ZlCq15ORkOnToQKtWrVi69EbXEdnezB8O8s3Ok7za5Q4eaKSrdNR/K9bfQ8aYC8CGwg+lnNqpU6cICwsjJSWFl19+2aF9/7A3hSlrfuHh5tUZ+UA9h/atXIdOSCm3lJKSQqdOnUhOTmbNmjW0bdvWYX0fO3eZ5xcXnHR7T0+6qRvQAqzc0pNPPsmBAwdYvXo1999/v8P6zczJY9SCbeTlGz5+uhUVyuqPmLo+/e5Qbukf//gHp06domPHjg7td/zyBHYnX+TTgaHUCdSTburGdOt95TbS0tKYPXs2xhiaNWtGRESEQ/tfvOUoS+KO8aewBnQKCXZo38o1aQFWbuHy5ct0796dZ599loSEa+7dZFfxxy7w5vIE2jcMZGynRg7vX7kmnYJQLi8zM5MePXqwceNGFixYQNOmTR3a/7n0bEbN30ZQxXJ82K8FXrq9pCoiLcDKpWVlZdG7d29iYmKYN28e/fr1c2j/efmG5xf9zJn0bJaNvIcAv7IO7V+5Np2CUC5t48aNfPfdd8ycOZOBAwc6vP+p0XvYuP8Mb/e4k+a3V3Z4/8q16QhYubTw8HD27NlD/fqO32Hsu4RTfLT+AE+2qUnf1npDAFV8OgJWLicvL4+hQ4f+vq+DFcX3yNl0Xl4aT/PbKzH+kTsd3r9yD1qAlUvJz89n+PDhzJkzx5LVDlB4scX87ZQpI3z0VEt8fRy3qbtyLzoFoVyGMYbRo0czd+5cxo8fz6uvvnrzL7KDt1YmkHjyInMGh1KzSgVLMij3oCNg5RKMMYwdO5aPP/6YcePGMX78eEtyRG07zqItxxj1YH3C7tCLLVTpaAFWLiMvL4+xY8cyefJkSza42XMqjb98vYu2davwcoRebKFKT6cglNM7f/48AQEBTJ8+HcCS4nspK5dRC7bhX86H6U+2wNtLxy6q9PS7SDm1SZMm0bx5c06cOFPM7hgAABm6SURBVIGIWFJ8jTG89uUuDp9JZ/qTLbj1lmLfiUupa9ICrJzWBx98wBtvvEHHjh0JDrZuvvXzTUdYGX+Clx9qzD31q1qWQ7kfLcDKKU2fPp0///nPPPHEE8yZMwcvL2uWeu06nsrfViXRsXGQ3k5e2ZwWYOV0oqKieP755+nZsyfz58/H29uaUxUXM3MYvXA7gf5lmfrE3ZTRTXaUjWkBVk4nIiKC1157jcWLF+Pj42NJht/mfZMvZPDhky10kx1lF1qAldNYt24d6enp3HLLLUyePJly5cpZlmXhlqN8s/MkLz/UiNA6VSzLodybFmDlFKKioujSpQsTJkywOgqJJy7y1spEOjQKYmQHnfdV9qMFWFlu5cqV9OvXj7Zt21p2hdtv0rNyGbNwO5XL+zD1ibt03lfZlV6IoSy1Zs0a+vTpQ4sWLVi9ejX+/v6WZTHG8MbXuzl8Np2Fw9sR6G/dFIjyDDoCVpbJzs5m5MiRhISEsHbtWipVqmRpnmXbjvPVz8m8EN6IdvV0va+yPx0BK8uULVuWtWvXUrVqVQICAizNciDlEuNXJNCuXhXGhDWwNIvyHDoCVg63efNm3nzzTYwxNG7cmMDAQEvzZOXm8fyinynrXYb/7as31VSOowVYOdS2bdvo3LkzixYtIjU11eo4AExZs4eEExd5r89dVKuk+zwox9ECrBwmPj6ehx56iICAAGJjY6lc2fqbWK7fc5rZGw8x8J7aRITo/r7KsbQAK4dITEwkIiKCChUqEBsbS82aNa2OxOm0TP68NJ47qlXk9W5NrI6jPJCehFMOsXfvXsqXL8+6deuoW7eu1XHIzze8vDSe9OxcFj/ZTu/rpiyhI2BlV9nZ2QD07NmTPXv20LBhQ4sTFZjz4yE27DvDX7uH0DC4otVxlIfSAqzs5ujRozRt2pSvvvoKAF9f5zjBlXTyIlPW7CEiJJin2tSyOo7yYDoFoewiOTmZsLAwzpw5Q+3ata2O87vMnDzGLt5BpQo+/L13M0vusKHUb7QAK5s7deoU4eHhnD59mujoaFq2bGl1pN+9u+YX9vyaxrxnWlNVLzVWFtMCrGwqLS2NTp06cfz4cdasWUPbtm2tjvS7H/amMPfHwwy+tw4PNr7V6jhKaQFWtuXv70+PHj3o1KkT999/v9VxfncuPZuXv4inUbA/47reYXUcpQALTsKJyBwROS0iu6/zuojIhyKyX0R2iojz/P2qris1NZV9+/YhIkyaNImOHTtaHel3xhj+8tUuLlzO5n/7ttAlZ8ppWLEKYh7Q5QavdwUaFn6MAP7pgEyqFNLS0ujatSvh4eFkZmZaHee/LN9xgm93n+KliMaE3HaL1XGU+p3DpyCMMT+ISJ0bHNID+MwYY4BNIlJZRKobY046JKAqlvT0dLp3786WLVtYunSp0yw1+83J1Az+unw3rWoHMKJDPavjKPUHzrgOuAZw7IrHxwuf+y8iMkJE4kQkLiUlxSHh1H9kZGTQo0cPNm7cyPz58+ndu7fVkf7AGMP/LNtJXr5h6hN36S5nyuk4YwEuMmPMLGNMqDEmNCgoyOo4Hudvf/sbsbGxzJ07l379+lkd57/M33SEDfvO8JeHm1C7qp/VcZT6L864CiIZuHKnltsLn1NO5vXXX6ddu3Y88sgjVkf5L4fPpDNpdRIPNArSq92U03LGEfAKYGDhaoh2QKrO/zqP3Nxc3n77bdLS0vDz83PK4pufb3hlWTw+XmV497HmerWbcloOHwGLyCLgQSBQRI4D4wEfAGPMx8BqoBuwH7gMPOPojOra8vLyGDRoEAsXLqRevXr079/f6kjXNPenw2w9fJ73H9cN1pVzs2IVxJM3ed0Aox0URxVRfn4+w4YNY+HChUyaNMlpi++hM+m8t/YXwu+4lcdaXvPcrVJOwxmnIJSTMcbw3HPPMW/ePN58801ef/11qyNdU16+4ZUv4inrVYbJutGOcgHOeBJOOZlff/2VlStX8uqrrzJhwgSr41zXvJ8OE3fkPFOfuIvgW3TqQTk/LcDqugpmg6BatWrs2LGDwMBApx1VHj17mffX7iHsjlvp1UKnHpRr0CkIdV3jx4/nhRdewBhDUFCQ0xZfYwyvfbUTrzLCpF5NnTanUlfTAqyuadKkSbz99tukp6f/PhJ2VkvjjvHj/rO81u0Oqlcqb3UcpYpMC7D6L++//z5vvPEGTz/9NLNmzaJMGef9Nvn1YiZ/+yaJtnWr8GRrveBCuRbn/clSlpgxYwavvPIKjz/+OHPnzsXLy7m3bhy/PIHs3Hzefaw5ZXSvB+VitACrP6hduzZ9+/ZlwYIFeHs79zna7xJOsSbhFC90akidQN3rQbkeLcAKgGPHCjage+SRR1i8eDE+Pj4WJ7qxS1m5jF+RwB3VKjK8vW4zqVyTFmDFokWLqF+/Pt99953VUYrs/bV7OHUxk3d6N8PHS7+NlWvS71wPFxUVxYABA7j33nud6h5uNxJ/7AKR/z7MwHa1aVErwOo4SpWYFmAPtnLlSvr160fbtm1ZtWoVFSpUsDrSTeXlG974ejdB/uX4c+fGVsdRqlS0AHuoPXv20KdPH1q0aMHq1avx9/e3OlKRzN90hF3Jqfy1ewgVfZ17nlqpm9EC7KEaNWrEtGnTWLt2LZUqVbI6TpGcTsvk/bV7aN8wkO7Nq1sdR6lSc+51RsrmNm7cSOXKlWnatCkjR460Ok6xTP4miazcfCb20MuNlXvQEbAH2bRpE127dmXkyJFOf3nx1TYfPMvXO07w7AP1qKtrfpWb0ALsIbZt20aXLl0IDg5myZIlLjWCzM3LZ/yKBGpULs9zDzawOo5SNqMF2APEx8fz0EMPERAQQGxsLDVquNZ2jQs2H+WXU2n8tXsTypd17kujlSoOLcAe4N1336VChQrExsZSq5ZrbVhzLj2bD74rOPHW+c5qVsdRyqb0JJwHmDNnDqdOnaJOnTpWRym2qdF7SM/O483uIS41baJUUegI2E0dPHiQ3r17c/78eXx9fV2y+P5y6iILNx9lQLvaNAyuaHUcpWxOR8Bu6MiRI4SFhZGWlsbJkycJCHC9y3WNMby9KpFbyvswtlNDq+MoZRc6AnYzycnJhIeHk5qaSnR0NCEhIVZHKpHYX07z4/6zvNipEZUrlLU6jlJ2oSNgN3Lq1CnCw8M5ffo00dHRtGzZ0upIJZKTl8/k1UnUC/LjqbauddJQqeLQEbAbycjIwNvbm9WrV9O2bVur45TY4q3HOJCSzmtdm+hWk8qt6QjYDaSlpeHn50fdunWJj493+tsI3UhaZg7/G72XtnWr0KnJrVbHUcqudHjh4lJTUwkLC+NPf/oTgEsXX4BPNhzibHo2r3drosvOlNvTAuzC0tLS6Nq1K/Hx8XTt2tXqOKWWkpbFpxsO8nCz6txVs7LVcZSyO52CcFHp6el0796dLVu28MUXX9C9e3erI5Xa9Nh9ZOXm60brymNoAXZBxhj69u3Lxo0bWbhwIb169bI6UqkdO3eZRVuO0rd1Td3tTHkMLcAuSER4/vnn6du3L3379rU6jk18GLMPEeFPYbrbmfIcWoBdSE5ODj/88APh4eE89NBDVsexmYMpl4jafpxn7qtL9UrlrY6jlMPoSTgXkZubS//+/YmIiCApKcnqODb1Ycw+ynl7MerB+lZHUcqhtAC7gLy8PAYPHswXX3zB+++/T5MmTayOZDP7T19iRfwJBt5bm0D/clbHUcqhtAA7ufz8fIYPH86CBQuYPHkyL730ktWRbGpGbMHod0T7elZHUcrhtAA7uW+//Za5c+fy5ptv8tprr1kdx6YOnUkvGP3eU5uqOvpVHkhPwjm5hx9+mPXr1/PAAw9YHcXm/vn9fny8yjBMR7/KQ+kI2AkZY3j77bfZvn07AA8++KDbXZZ74kIGX25Ppm/rmgRV1NGv8kw6AnZCEyZMYOLEiaSlpbnslpI38+mGQwCM6KCjX+W5dATsZCZPnszEiRMZOnQof//7362OYxcXLmezeOtRHr3rNm4PqGB1HKUs4/ACLCJdRGSPiOwXkXHXeH2wiKSIyI7Cj2GOzmiVDz74gL/85S8MGDCAmTNnUqaMe/5+nL/pCJez8xjxgI5+lWdz6BSEiHgBHwERwHFgq4isMMYkXnXoEmPMGEdms1p+fj7ff/89TzzxBHPmzHH5bSWvJys3j3k/HeGBRkHcUe0Wq+MoZSlHzwG3AfYbYw4CiMhioAdwdQH2KLm5uXh7exMVFYWI4O3tvlPzK+NPcuZSFsPa17U6ilKWc/TfuDWAY1c8Pl743NUeE5GdIrJMRGo6Jpo1IiMjadu2LWfPnqVs2bL4+PhYHclujDHM3niIxsEVub9BoNVxlLKcM04yrgTqGGOaA9FA5PUOFJERIhInInEpKSkOC2grixcvZsiQIVStWhU/P/ffgjHuyHmSTl5k8H113G5ZnVIl4egCnAxcOaK9vfC53xljzhpjsgoffgq0ul5jxphZxphQY0xoUFCQzcPaU1RUFE8//TTt27fn66+/xtfX1+pIdjfvp8Pc4utNz7uv9UePUp7H0QV4K9BQROqKSFmgH7DiygNEpPoVDx8F3GvrL2Dt2rX069ePtm3bsmrVKipUcP+lWKcvZrJ29ymeCK1J+bLueYJRqeJyaAE2xuQCY4C1FBTWpcaYBBGZKCKPFh72vIgkiEg88Dww2JEZHSEkJITHH3+c1atX4+/vb3Uch1gad4zcfEP/drWtjqKU0xBjjNUZbCI0NNTExcVZHeOGdu/eTZMmTdx2idn15OUbOkxZT53ACiwY1s7qOErZnIhsM8aEFvfrnPEknFvasGEDbdu2ZcKECVZHcbiN+8+QfCGDJ9vUsjqKUk5FC7ADbNq0iW7dulGzZk3GjPGo60sAWLr1GAEVfIgICbY6ilJORQuwnW3bto0uXboQHBxMTEwMwcGeVYQuXM4mOvFXetxdg3LenjX1otTNaAG2o6ysLHr27ElAQACxsbHUqOF5y69W7jxJdl4+fVrdbnUUpZyO+17z6gTKlSvHwoULuf3226lVyzPnP7/afpzGwRW58zbd90Gpq+kI2A727t1LZGTBBXzt27enbl3P3Pfg6NnLbD96gR4tbtMr35S6Bh0B29iBAwcICwsjJyeHnj17UqlSJasjWWblzhMAPHrXbRYnUco5aQG2oSNHjhAWFkZGRgbr16/36OILsGrnSVrWqqybrit1HToFYSPJycmEhYWRmppKdHQ0zZs3tzqSpQ6dSSfp5EW6Nat+84OV8lA6AraR1atXk5KSQnR0tNvex6041uw+BUBXLcBKXZeOgEvpt0u5hw8fzp49e2jbtq3FiZzDd4mnaH57JWpULm91FKWclhbgUjh37hwdO3Zk06ZNAFSvrqM9gNNpmfx89AIRTTzrohOlikunIEooNTWVzp07s3PnTlJTU62O41S+/6Vgc/xwLcBK3ZAW4BJIS0ujS5cu7Nixgy+//JLOnTtbHcmprN9zmmq3+NKkekWroyjl1HQKopguX77Mww8/zNatW1myZAmPPPKI1ZGcSm5ePhv3n+GBRkF68YVSN6EFuJi8vb2pXr068+fPp3fv3lbHcTrxx1NJy8ylQyPXukWUUlbQKYgiysrK4tKlS1StWpXFixfr6O46ftp/BoB761e1OIlSzk9HwEWQk5ND3759eeCBB8jKytLiewM/HThLSPVbCPAra3UUpZyeFuCbyM3N5amnnmL58uWMGjWKcuXKWR3JaWXn5rP96Hna1dPRr1JFoQX4BvLy8hg0aBDLli3jgw8+YPTo0VZHcmq7T6SSlZtPm7oBVkdRyiVoAb6BCRMmsHDhQiZNmsRLL71kdRynt+3weQBa1a5icRKlXIOehLuB5557jmrVqunIt4h+PnaemlXKE1RRp2mUKgodAV/FGMP8+fPJzc2levXqWnyLYcfRC9x1e2WrYyjlMrQAX8EYw7hx4xgwYADz58+3Oo5LOXspixOpmTS/3bP3QFaqOLQAX2HChAlMmTKFUaNGMWjQIKvjuJTEkxcBaHqbFmClikoLcKHJkyczceJEhg4dyowZM3StbzH9cjINgCbV9eabShWVFmAK7mbxzjvvMGDAAGbOnEmZMvq2FNcvp9K4tWI5vQBDqWLQVRBAjRo12LJlCw0bNsTLy8vqOC5p/+k0Ggb7Wx1DKZfi0UO9WbNmMW3aNACaNGmCt7f+PioJYwwHU9KpH6QFWKni8NgCHBkZybPPPst3331Hfn6+1XFc2tn0bNKycqkb6Gd1FKVcikcW4EWLFjFkyBA6depEVFSUzvmW0pGzlwGoXVVvP69UcXhc5YmKimLAgAG0b9+e5cuX4+vra3Ukl3f8fEEBrhmgBVip4vC4Anzy5EnatWvHqlWrqFBBC4YtnLiQCcBtegdkpYrFYwpweno6AGPGjOH777/H319PGNnKrxczqejrjV85PYmpVHF4RAGOiYmhTp06v98+Xlc72NavFzO5VTfgUarY3L4Ab9iwgUcffZRq1arRoEEDq+O4pbOXsqnqrwVYqeJy6wK8adMmunXrRq1atVi3bh2BgYFWR3JL5y5nU1WvgFOq2Ny2AO/du5cuXboQHBxMTEwMwcHBVkdyW6kZOVQq72N1DKVcjtsW4Hr16jF8+HBiY2O57bbbrI7j1tIyc6joq/PqShWX2/3UJCUlUblyZapXr857771ndRy3l5dvyMzJ1xUQSpWAW42A9+7dS1hYGP369cMYY3Ucj5CZkwdAeR/dxEip4nJ4ARaRLiKyR0T2i8i4a7xeTkSWFL6+WUTqFKXdrKwswsLCyMvL45///Kfu5+sgWbkF+2iU83ar3+VKOYRDf2pExAv4COgKhABPikjIVYcNBc4bYxoA/wDeLUrbe/fuJSMjg3Xr1hEScnWTyl5y8woKsLeXFmClisvRPzVtgP3GmIPGmGxgMdDjqmN6AJGFny8DwqUIw9m8vDyio6Np3ry5TQOrG8svnOnxKqN/cShVXI4+c1IDOHbF4+NA2+sdY4zJFZFUoCpw5urGRGQEMKLwYVarVq122zyx4wRyjX+jq3jqXQKfcuH8uPj7j+a3WuOSfJFLn7o2xswCZgGISJwxJtTiSCWm+a2l+a3lDvlL8nWOnoJIBmpe8fj2wueueYyIeAOVgLMOSaeUUg7k6AK8FWgoInVFpCzQD1hx1TErgN/uCd8HiDW6pkwp5YYcOgVROKc7BlgLeAFzjDEJIjIRiDPGrABmA5+LyH7gHAVFuihm2SW042h+a2l+a3lkftHBpVJKWUMXbyqllEW0ACullEVcqgDb6zJmRylC/sEikiIiOwo/hlmR83pEZI6InBaRa663lgIfFv77dopIS0dnvJEi5H9QRFKveP/fdHTG6xGRmiKyXkQSRSRBRF64xjFO+/4XMb/Tvv8AIuIrIltEJL7w3/DWNY4pXg0yxrjEBwUn7Q4A9YCyQDwQctUxzwEfF37eD1hide5i5h8MzLA66w3+DR2AlsDu67zeDfgWEKAdsNnqzMXM/yCwyuqc18lWHWhZ+HlFYO81vn+c9v0vYn6nff8L8wngX/i5D7AZaHfVMcWqQa40ArbbZcwOUpT8Ts0Y8wMFK1OupwfwmSmwCagsItUdk+7mipDfaRljThpjthd+ngYkUXDV6JWc9v0vYn6nVvi+Xip86FP4cfUqhmLVIFcqwNe6jPnq/4F/uIwZ+O0yZmdQlPwAjxX++bhMRGpe43VnVtR/ozO7p/BPzG9F5E6rw1xL4Z+1LSgYgV3JJd7/G+QHJ3//RcRLRHYAp4FoY8x1/x8UpQa5UgH2BCuBOsaY5kA0//lNqhxjO1DbGHMXMB342uI8/0VE/IEoYKwx5qLVeYrrJvmd/v03xuQZY+6m4CreNiLStDTtuVIBdvXLmG+a3xhz1hiTVfjwU6CVg7LZSlH+HzktY8zF3/7ENMasBnxExGnu5CoiPhQUrwXGmC+vcYhTv/83y+/s7/+VjDEXgPVAl6teKlYNcqUC7OqXMd80/1XzdY9SME/mSlYAAwvPxrcDUo0xJ60OVVQiUu23+ToRaUPBz4dT/AIvzDUbSDLGTL3OYU77/hclvzO//wAiEiQilQs/Lw9EAL9cdVixapDL7IZm7HsZs90VMf/zIvIokEtB/sGWBb4GEVlEwZnqQBE5Doyn4EQExpiPgdUUnInfD1wGnrEm6bUVIX8fYJSI5AIZQD8n+gV+HzAA2FU4BwnwOlALXOL9L0p+Z37/oWAlR6QU3FiiDLDUGLOqNDVIL0VWSimLuNIUhFJKuRUtwEopZREtwEopZREtwEopZREtwEopZREtwEopZREtwEopZRGXuRBDKUcQET/g/4Bs4HtjzAKLIyk3piNg5XFEZIqI/PmKxyIiFwqLb29gmTFmOAWXgytlN1qAlSdqBuy84nFdIMUYk07BBja/bemY5+hgyrNoAVae6OoC3PyKx8cpKMKgPx/KznQOWHkUEQkAfIwxp654+soC/CUwQ0QepmB/ZqXsRguw8jTNgF1XPdccWABQOA3hTLuIKTemf2IpT9OYgpujAiAiZSjYKvEHyxIpj6UFWHmaI0BrEfEtfPw68IMx5iyAiOi0g3IYnYJQHsUY852IdAZ+EZEsYBMwEn6/WeRhy8Ipj6MbsitVSER6A5WMMXOtzqI8g05BKPUfrYBtVodQnkOnIJT6j5ZA1cJ7kn1hjPmX1YGUe9MpCKWUsohOQSillEW0ACullEW0ACullEW0ACullEW0ACullEW0ACullEW0ACullEW0ACullEX+H9PKglFrlw7ZAAAAAElFTkSuQmCC
+"
+>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a id='fig:01.05.01.00.RelatividadEspecial.CinematicaRelativista.Definiciones_11'></a><center><b>Figura 1.11.</b> </center></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Nótese que en realidad si incluímos las 3 dimensiones espaciales todas las cuadrivelocidades del universo estarían en un hiper-hiperboloide de revolución:</p>
+$$
+1 = (U_L^0)^2 - (U_L^1)^2-(U_L^2)^2-(U_L^3)^2
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Si fijas el valor de $U_L^0=\gamma$, los puntos satisfacen:</p>
+$$
+v_{Lx}^2+v_{Ly}^2+v_{Lz}^2=\mathrm{cte}
+$$<p>que son puntos sobre una esfera.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="1.11.2.-Cuadriaceleraci&#243;n">1.11.2. Cuadriaceleraci&#243;n<a class="anchor-link" href="#1.11.2.-Cuadriaceleraci&#243;n">&#182;</a></h3><p><a id='cuadriaceleracion'></a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>De la misma manera que definimos la cuadrivelocidad promedio, podemos definir la cuadriaceleración promedio:</p>
+$$
+\bar{A_L}^\mu=\frac{\Delta U_L^\mu}{\Delta \tau}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>La aceleración instantánea sería:</p>
+$$
+A_L^\mu=\lim_{\Delta \tau\rightarrow 0}\frac{\Delta U_L^\mu}{\Delta \tau}=\frac{\mathrm{d}U_L^\mu}{\mathrm{d}\tau}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Usando $\mathrm{d}\tau=\mathrm{d}t/\gamma$, donde $\gamma=(1-v_L^2)^{1/2}$ obtenemos (ver Problemas al final del capítulo):</p>
+$$
 A^\mu_L : \gamma^4 (\vec{a}_L\cdot \vec{v}_L,\vec{a}_L)
-$$</p>
-</li>
-</ol>
+$$<p>naturalmente aquí $\vec{a}_L\cdot \vec{v}_L$ es el producto punto euclidiano convencional y $\vec a_L=\mathrm{d}\vec{v}_L/\mathrm{d}t$ es la aceleración espacial clásica.</p>
 
+</div>
+</div>
+</div><div style="background:white;border:solid black 2px;pad:10px;margin-left:7em;margin-top:1em;margin-bottom:1em;">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Nota: De unidades luz a unidades convencionales.</strong><a id=''></a> Si en un problema dado obtenemos el desplazamiento, la velocidad (cuadrivelocidad) o la acelaración (cuadriaceleración) en unidades luz, podemos volver a obtener las unidades originales como:</p>
+<blockquote>$$
+  \begin{array}{rcl}
+  \Delta \vec{r} &amp; = &amp; c \Delta \vec{r}_L\\
+  \vec{v} &amp; = &amp; c \vec{v}_L\\
+  \vec{a} &amp; = &amp; c \vec{a}_L\\
+  \end{array}
+  $$<p>Con estas transformaciones, la cuadriaceleración se puede escribir como:</p>
+$$A^\mu : c\gamma^4\left(\frac{\vec{a}\cdot\vec{v}}{c^2},\frac{\vec{a}}{c}\right)$$
+</blockquote>
+
+</div>
+</div>
+</div>
+    </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Nótese que si $\vec{v}_L=\vec{o}$ entonces:</p>
+$$
+A_L^\mu:(0,\vec \alpha_L)
+$$<p>de donde vemos que el módulo cuadrado de la cuadriaceleración es espacialoide:</p>
+$$
+|A_L^\mu|^2 = -\alpha_L^2
+$$
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<ol>
-<li><p><strong>Transformación de la fuerza</strong>. Dado que la componente espacial de la fuerza transforma como:</p>
-<p>$$\gamma_v \vec{F}_L =  \gamma_{v'}\vec{F}'_L+\left(\frac{\gamma_u-1}{u_L^2} \vec{u}_L\cdot \gamma_{v'}\vec{F}'_L + \gamma_u \gamma_{v'}\vec{\cal F}'_L\cdot\vec{v}'_L\right)\vec u_L$$</p>
-<p>mostrar que si la velcidad de la partícula es paralela a la velocidad relativa de los sistemas de referencia, las componentes paralela y perpendicular de la fuerza transforman como:</p>
-<p>\begin{eqnarray}
-\nonumber
-F_\parallel &amp; = &amp; \frac{F'_{L\parallel}+\vec u_L\cdot\vec{F}_L}{1+\vec{v}'_L\cdot \vec{u}_L}\\
-\nonumber    
-F_\perp &amp; = &amp; \frac{\gamma_u^{-1}F'_{L\perp}}{1+\vec{v}'_L\cdot \vec{u}_L}\\
-\end{eqnarray}</p>
-</li>
-</ol>
+<p>Dado que esta cantidad es invariante (la misma para el Observador y el viajero) llamamos a $\alpha_L$ la aceleración propia de la partícula.</p>
 
 </div>
 </div>
-</div>
+</div><div class="box_theorem">
+    	 
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<ol>
-<li><p><strong>Transformación de la fuerza</strong>. Demostrar que la ley de atracción gravitacional de Newton:</p>
-<p>$$\vec F=\frac{G M m}{R^3}\vec{R}$$</p>
-<p>no tranforma de acuerdo a las reglas de transformación de Lorentz-Einstein para la trifuerza y por lo tanto no puede usarse en dinámica relativista.</p>
-</li>
-</ol>
+<p><strong>Proposición: La relación entre la cuadriaceleración y la cuadrivelocidad.</strong><a id=''></a> La cuadrivelocidad y la cuadriaceleración son perpendiculares:</p>
+<blockquote>$$A^\mu\cdot U^\nu = 0$$
+</blockquote>
 
 </div>
 </div>
 </div>
+    </div><div style="background:lightgray">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a href="index.html">Indice</a> | Previo: <a href="01.04.00.00.RelatividadEspecial.OpticaRelativista.html">RelatividadEspecial.OpticaRelativista</a> | Siguiente: <a href="01.05.02.00.RelatividadEspecial.CinematicaRelativista.AceleracionPropiaConstante.html">RelatividadEspecial.CinematicaRelativista.AceleracionPropiaConstante</a></p>
+
+</div>
+</div>
+</div>
+    </div>
     </div>
   </div>
 </body>
