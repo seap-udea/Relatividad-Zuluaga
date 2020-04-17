@@ -111,6 +111,10 @@
 		* `#sintesis_mecanica`
 		* `#sintesis_cinematica`
 		* `#sintesis_dinamica`
-- Labels for '01.08.00.00.RelatividadEspecial.ProblemasSeleccionados.ipynb':
+- Labels for '01.08.00.00.RelatividadEspecial.ElectrodinamicaCovariante.ipynb':
+	- Labels for 'section':
+		* `#ecuaciones_electrodinamica`
+		* `#cuadricorriente`
+- Labels for '01.09.00.00.RelatividadEspecial.ProblemasSeleccionados.ipynb':
 	- Labels for 'section':
 		* `#especial_problemas`
