@@ -114,7 +114,14 @@
 - Labels for '01.08.00.00.RelatividadEspecial.ElectrodinamicaCovariante.ipynb':
 	- Labels for 'section':
 		* `#ecuaciones_electrodinamica`
-		* `#cuadricorriente`
+		* `#continuidad`
+		* `#maxwell_inhomogeneas`
+		* `#campos_tensoriales`
+		* `#tensor_faraday`
+		* `#maxwell_faraday`
+		* `#fuerza_lorentz_covariante`
+		* `#transformacion_campos`
+		* `#sintesis`
 - Labels for '01.09.00.00.RelatividadEspecial.ProblemasSeleccionados.ipynb':
 	- Labels for 'section':
 		* `#especial_problemas`

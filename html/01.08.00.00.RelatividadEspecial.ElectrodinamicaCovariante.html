@@ -13081,7 +13081,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Electrodinamica-Covariante">Electrodinamica Covariante<a class="anchor-link" href="#Electrodinamica-Covariante">&#182;</a></h2>
+<h2 id="Electrodinamica-manifiestamente-covariante">Electrodinamica manifiestamente covariante<a class="anchor-link" href="#Electrodinamica-manifiestamente-covariante">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -13159,7 +13159,12 @@ $$</p>
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
 <li><p><strong>Ley de Lorentz</strong>:</p>
-<p>$$
+<p>Sobre una carga individual:
+$$
+\vec F = q (\vec E + \frac{1}{c}q\vec v\times \vec B)
+$$</p>
+<p>Sobre una corriente de carga:
+$$
 \vec f = \rho \vec E + \frac{1}{c}\vec J\times \vec B
 $$</p>
 </li>
@@ -13303,7 +13308,7 @@ $$</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="1.15.4.-La-cuadricorriente">1.15.4. La cuadricorriente<a class="anchor-link" href="#1.15.4.-La-cuadricorriente">&#182;</a></h3><p><a id='cuadricorriente'></a></p>
+<h3 id="1.15.4.-La-cuadricorriente">1.15.4. La cuadricorriente<a class="anchor-link" href="#1.15.4.-La-cuadricorriente">&#182;</a></h3><p><a id='continuidad'></a></p>
 
 </div>
 </div>
@@ -13351,8 +13356,474 @@ $$
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Al comparar las cantidades anteriores con el cuadrivector velocidad podemos ver que tanto $\rho$ como $\vec J$ se pueden considerar las componentes temporal y espacial del cuadrivector:</p>
 $$
-J_L^\mu=\rho_0 U_L^\mu:\gamma\rho_0(1,\vec{v}_L)
+J_L^\mu=\rho_0 U_L^\mu:\gamma\rho_0(1,\vec{v}_L):(\rho,\vec{J}_L)
+$$<p>o en unidades convencionales:</p>
 $$
+J^\mu:(c\rho,\vec{J})
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>En términos de la cuadricorriente la ecuación de continuidad o de conservación de la carga se puede escribir como:</p>
+\begin{eqnarray}
+\nonumber
+\frac{\partial\rho}{\partial t}+\vec{\nabla}\cdot\vec J&amp;=&amp;0\\
+\nonumber
+\frac{\partial\rho}{\partial t}+\sum_i\frac{\partial J_{Li}}{\partial x_{Li}}&amp;=&amp;0\\
+\nonumber
+\frac{\partial J_L^0}{\partial x^0}+\sum_i\frac{\partial J_{Li}}{\partial x^i_{L}}&amp;=&amp;0
+\end{eqnarray}<p>y usando la notación de Einstein:</p>
+$$
+\partial_\mu J^\mu=0
+$$
+</div>
+</div>
+</div><div style="background:lightgray;border:solid black 2px;pad:10px;margin-left:7em;margin-top:1em;margin-bottom:1em;">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Definición 1.14. Derivada covariante o derivada coma</strong>.  Definimos la <strong>derivada covariante</strong> o <strong>derivada coma.</strong><a id=''></a> de un campo tensorial $A^{\alpha\beta\gamma\ldots}$ como la derivada del campo respecto a una componente:</p>
+$$
+A^{\alpha\beta\gamma\ldots}{,_\mu} \equiv \partial_\mu A^{\alpha\beta\gamma\ldots}
+$$
+</div>
+</div>
+</div>
+    </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Usando la notación de la derivada coma, la ecuación de continuidad se escribe finalmente como:</p>
+$$
+J^\mu_{,\mu}=0
+$$<p>Esta es la forma <strong>manifiestamente covariante</strong> de la ecuación de continudad.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="1.15.5.-Ecuaciones-de-Maxwell-inhomog&#233;neas">1.15.5. Ecuaciones de Maxwell inhomog&#233;neas<a class="anchor-link" href="#1.15.5.-Ecuaciones-de-Maxwell-inhomog&#233;neas">&#182;</a></h3><p><a id='maxwell_inhomogeneas'></a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Habíamos escrito las ecuaciones inhomogéneas en la forma:</p>
+\begin{eqnarray}
+\nonumber
+\frac{1}{c^2}\frac{\partial^2\phi}{\partial t^2}-\vec{\nabla}^2\phi &amp; = &amp; 4\pi\rho\\
+\nonumber
+\frac{1}{c^2}\frac{\partial^2\vec A}{\partial t^2}-\vec{\nabla}^2\vec A &amp; = &amp; \frac{4\pi}{c}\vec J
+\end{eqnarray}
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>En estas ecuaciones se pueden reconocer algunas propiedades importantes para nuestro propósito:</p>
+<ul>
+<li><p>El operador diferencial en las dos ecuaciones se puede escribir en términos de la derivada covariante como:</p>
+<p>$$
+\frac{1}{c^2}\frac{\partial^2}{\partial t^2}-\vec{\nabla}^2=\partial_\mu \partial^\mu
+$$</p>
+</li>
+<li><p>El lado derecho de las dos ecuaciones son las componentes de la cuadricorriente.</p>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>De este modo las ecuaciones se pueden escribir como:</p>
+\begin{eqnarray}
+\nonumber
+\partial_\mu \partial^\mu \phi &amp; = &amp; \frac{4\pi}{c} J^0\\
+\nonumber
+\partial_\mu \partial^\mu \vec A &amp; = &amp; \frac{4\pi}{c} \vec{J}\\
+\end{eqnarray}
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Es decir si definimos la cantidad:</p>
+$$
+A^\mu:(\phi,\vec A)
+$$<p>las ecuaciones inhomogéneas de Maxwell se pueden escribir de forma manifiestamente covariantes como:</p>
+$$
+\partial_\mu \partial^\mu A^\nu = \frac{4\pi}{c} J^\nu
+$$<p>y de la naturaleza tensorial de las cantidades involucrados podemos deducir que $A^\nu$ es también un tensor que podríamos llamar el <strong>cuadripotencial</strong> electromagnético.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="1.15.6.-Los-campos-en-t&#233;rminos-tensoriales">1.15.6. Los campos en t&#233;rminos tensoriales<a class="anchor-link" href="#1.15.6.-Los-campos-en-t&#233;rminos-tensoriales">&#182;</a></h3><p><a id='campos_tensoriales'></a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>La introducción del cuadripotencial nos permite escribir los campos eléctrico y magnético en términos tensoriales, lo que será muy útil para derivar la forma de las ecuaciones de Maxwell manifiestamente covariantes.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Por definición de los potenciales:</p>
+\begin{eqnarray}
+\nonumber
+\vec B &amp; = &amp; \vec{\nabla}\times\vec A\\
+\nonumber
+\vec E &amp; = &amp; -\vec{\nabla}\phi-\frac{1}{c}\frac{\partial\vec A}{\partial t}
+\end{eqnarray}
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Si lo escribimos en términos de las componentes explícitas del cuadripotencial obtenemos:</p>
+$$
+\begin{array}{rcl}
+B^i &amp; = &amp; \sum_{j,k} \epsilon_{ijk} \partial_j A^k\\
+E^i &amp; = &amp; -\partial_i A^0-\partial_0 A^i
+\end{array}
+$$<p>donde $\epsilon_{ijk}$ es el símbolo de Levi-Civita.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Una interesante simetría se produce si escribimos las componentes explícitas:</p>
+$$
+\begin{array}{rcl}
+B^1 &amp; = &amp; \partial_2 A^3-\partial_3 A^2\\
+E^1 &amp; = &amp; -\partial_1 A^0-\partial_0 A^1
+\end{array}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="1.15.7.-El-tensor-de-Faraday">1.15.7. El tensor de Faraday<a class="anchor-link" href="#1.15.7.-El-tensor-de-Faraday">&#182;</a></h3><p><a id='tensor_faraday'></a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Si usamos las componentes contravariantes de la derivada (que implican simplemente un cambio en el signo de las componentes espaciales de las derivadas) podemos escribir:</p>
+$$
+\begin{array}{rcl}
+B^1 &amp; = &amp; -\partial^2 A^3+\partial^2 A^2\\
+E^1 &amp; = &amp; \partial^1 A^0-\partial^0 A^1
+\end{array}
+$$<p>que se puede escribir como:</p>
+$$
+\begin{array}{rcl}
+B^1 &amp; = &amp; -(\partial^2 A^3-\partial^2 A^2)\\
+E^1 &amp; = &amp; -(\partial^0 A^1-\partial^1 A^0)
+\end{array}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>De aquí, si definimos el tensor contravariante de segundo rango:</p>
+$$
+F^{\mu\nu}\equiv\partial^\mu A^\nu - \partial^\nu A^\mu
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Vemos que el campo eléctrico y el campo magnético se pueden escribir en términos de este tensor como:</p>
+$$
+\begin{array}{rcl}
+B^i &amp; = &amp; - \epsilon_{ijk} F^{jk}\\
+E^i &amp; = &amp; - F^{i0}
+\end{array}
+$$<p>donde es importante anotar que en la primera expresión no se usa la convención de suma de Einstein.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Otra manera de verlo podría ser escribir explícitamente las componentes del tensor en coordenadas cartesianas:</p>
+$$
+F^{\mu\nu}:
+\left(
+\begin{array}{cccc}
+0 &amp; -E_x &amp; -E_y &amp; -E_z\\
+E_x &amp; 0 &amp; -B_z &amp; +B_y \\
+E_y &amp; +B_z &amp; 0 &amp; -B_x \\
+E_z &amp; -B_y &amp; +B_x &amp; 0 \\
+\end{array}
+\right)
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Llamamos a $F^{\mu\nu}$ el <strong>tensor electromagnético</strong> o <strong>tensor de Faraday</strong>.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Proposición: Propiedades del tensor de Faraday.</strong><a id=''></a> El tensor de Faraday tiene las siguientes propiedades:</p>
+<blockquote><ul>
+<li><strong>Antisimetría</strong>: $F^{\mu\nu}=-F^{\nu\mu}$</li>
+<li><strong>Traza nula</strong>: $\sum_\mu F^{\mu\mu}=0$</li>
+<li><strong>Propiedad cíclica de la derivada contravariante</strong>: 
+  $$\partial^{[\alpha}F^{\mu\nu]}\equiv\partial^\alpha F^{\mu\nu}+\partial^\mu F^{\nu\alpha}+\partial^\nu F^{\alpha\mu}=0$$</li>
+<li><strong>Determinante invariante</strong>: $\det F^{\mu\nu}=(\vec E\cdot \vec B)^2$</li>
+<li><strong>Escalar</strong>: $F^{\mu\nu}F_{\mu\nu}=2(E^2-B^2)$.</li>
+</ul>
+</blockquote>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="1.15.8.-Ecuaciones-de-Maxwell-y-el-tensor-de-Faraday">1.15.8. Ecuaciones de Maxwell y el tensor de Faraday<a class="anchor-link" href="#1.15.8.-Ecuaciones-de-Maxwell-y-el-tensor-de-Faraday">&#182;</a></h3><p><a id='maxwell_faraday'></a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Las ecuaciones de Maxwell inhomogenéas las habíamos escrito como:</p>
+$$
+\partial_\nu \partial^\mu A^\nu = \frac{4\pi}{c} J^\nu
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Podemos sumar y restar $\partial_\mu\partial^\nu A^\mu$ para obtener:</p>
+$$
+\partial_\mu(\partial^\mu A^\nu-\partial^\nu A^\mu)+ \partial_\mu \partial^\nu A^\mu= \frac{4\pi}{c} J^\nu
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Ahora bien, por el gauge de Lorenz:</p>
+$$
+\frac{1}{c}\frac{\partial\phi}{\partial t}+\vec{\nabla}\cdot\vec{A}=\partial_\mu A^\mu 
+$$<p>y por lo tanto el segundo término en el lado izquierdo es cero.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Con esto las ecuaciones de Maxwell inhomogeneas se pueden escribir en términos del tensor de Faraday como:</p>
+$$
+{F^{\mu\nu}}_{,\mu}=\frac{4\pi}{c}J^\nu
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Qué es la <strong>forma manifiestamente covariante de las ecuaciones inhomogéneas de Maxwell</strong>.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>¿Y las ecuaciones de Maxwell homogéneas?.  Estas ecuaciones son:</p>
+\begin{eqnarray}
+\nonumber
+\vec{\nabla}\cdot\vec{B}&amp;=&amp;0\\
+\nonumber
+\vec{\nabla}\times\vec{E}+\frac{1}{c}\frac{\partial\vec B}{\partial t}&amp;=&amp;0\\
+\end{eqnarray}
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Vemos que se trata de 4 ecuaciones que se pueden escribir también en la forma:</p>
+$$
+\begin{array}{rcl}
+\partial_1 B_x + \partial_2 B_y + \partial_3 B_z &amp; = &amp; 0 \\
+\partial_0 B_x + \partial_2 E_z - \partial_3 E_y &amp; = &amp; 0 \\
+\partial_0 B_y + \partial_3 E_x - \partial_1 E_z &amp; = &amp; 0 \\
+\partial_0 B_z + \partial_1 E_y - \partial_2 E_x &amp; = &amp; 0 \\
+\end{array}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Reemplazando los valores del campo por las respectivas entradas del vector de Faraday estas ecuaciones se pueden escribir como:</p>
+$$
+\begin{array}{rcl}
+\partial_1 F^{32} + \partial_2 F^{13} + \partial_3 F^{21} &amp; = &amp; 0 \\
+\partial_0 F^{32} + \partial_2 F^{30} - \partial_3 F^{20} &amp; = &amp; 0 \\
+\partial_0 F^{13} + \partial_3 F^{10} - \partial_1 F^{30} &amp; = &amp; 0 \\
+\partial_0 F^{21} + \partial_1 F^{20} - \partial_2 F^{10} &amp; = &amp; 0 \\
+\end{array}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Si se cambian las derivadas covariantes por derivadas contravariantes y se reorganizan los índices, se obtienen expresiones que recuerdan una propiedad introducida antes:</p>
+$$
+\begin{array}{rcl}
+\partial^1 F^{23} + \partial^2 F^{31} + \partial^3 F^{12} &amp; = &amp; 0 \\
+\partial^0 F^{32} + \partial^3 F^{20} + \partial^2 F^{03} &amp; = &amp; 0 \\
+\partial^0 F^{13} + \partial^1 F^{30} + \partial^3 F^{10} &amp; = &amp; 0 \\
+\partial^0 F^{21} + \partial^2 F^{10} + \partial^1 F^{02} &amp; = &amp; 0 \\
+\end{array}
+$$<p>que no son otra cosa que la propiedad cíclica de la derivada contravariante del tensor de Faraday:</p>
+$$
+\partial^{[\alpha}F^{\mu\nu]}=0
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="1.15.9.-La-fuerza-de-Lorentz">1.15.9. La fuerza de Lorentz<a class="anchor-link" href="#1.15.9.-La-fuerza-de-Lorentz">&#182;</a></h3><p><a id='fuerza_lorentz_covariante'></a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>La fuerza de Lorentz para una sola partícula es:</p>
+$$
+\vec F = q \vec E + \frac{1}{c}q\vec{v}\times \vec B
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Escribiendo explícitamente la componente $x$ queda:</p>
+$$
+\frac{\mathrm{d}p_x}{\mathrm{d}t}=\frac{q}{c} (cE_x + v_y B_z - v_z B_y)
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Multiplicando por $\gamma$ a ambos lados podemos escribir:</p>
+$$
+\frac{\mathrm{d}P^1}{\mathrm{d}\tau}=\frac{q}{c} (U^0 F^{10} - U^2 F^{12} - U^3 F^{13})
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>De donde podemos proponer la generalización para calcular la cuadrifuerza:</p>
+$$
+f^\mu=\frac{q}{c}F^{\mu\nu}U_\nu
+$$<p>que llevada a un conjunto de cargas se puede escribir como:</p>
+$$
+f^\mu=F^{\mu\nu}J_\nu
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="1.15.1.-Transformaci&#243;n-de-los-campos">1.15.1. Transformaci&#243;n de los campos<a class="anchor-link" href="#1.15.1.-Transformaci&#243;n-de-los-campos">&#182;</a></h3><p><a id='transformacion_campos'></a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Llegados a este punto podemos encontrar las leyes de transformación de los campos eléctricos y magnético.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="1.15.11.-S&#237;ntesis">1.15.11. S&#237;ntesis<a class="anchor-link" href="#1.15.11.-S&#237;ntesis">&#182;</a></h3><p><a id='sintesis'></a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>En síntesis la dinámica de cargas y campos electromagnéticos clásicos se describen con:</p>
+\begin{eqnarray}
+F^{[\mu\nu,\alpha]} &amp; = &amp; 0\\
+{F^{\mu\nu}}_{,\mu} &amp; = &amp; \frac{4\pi}{c}J^\mu\\
+{J^\mu}_{,\nu} &amp; = &amp; 0\\
+f^\mu &amp; = &amp; F^{\mu\nu} J_\nu
+\end{eqnarray}<p>donde $F^{\mu\nu}\equiv\partial^\mu A^\nu-\partial^\nu A^\mu$ y el cuadripotencial cumple ${A^\mu}_{,\mu}=0$ (gauge de Lorenz).</p>
+
 </div>
 </div>
 </div><div style="background:lightgray">
