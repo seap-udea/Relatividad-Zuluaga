@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
-<title>01.06.02.00.RelatividadEspecial.DinamicaRelativista.ColisionesRelativistas</title><script src="https://unpkg.com/jupyter-js-widgets@2.0.*/dist/embed.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>01.08.01.00.RelatividadEspecial.Electrodinamica.EcuacionesClasicas</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 <style type="text/css">
@@ -13072,7 +13072,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><a href="index.html">Indice</a> | Previo: <a href="01.06.01.00.RelatividadEspecial.DinamicaRelativista.EnergiaMomentum.html">RelatividadEspecial.DinamicaRelativista.EnergiaMomentum</a> | Siguiente: <a href="01.06.03.00.RelatividadEspecial.DinamicaRelativista.Cuadrifuerza.html">RelatividadEspecial.DinamicaRelativista.Cuadrifuerza</a></p>
+<p><a href="index.html">Indice</a> | Previo: <a href="01.07.00.00.RelatividadEspecial.SintesisMecanicaRelativista.html">RelatividadEspecial.SintesisMecanicaRelativista</a> | Siguiente: <a href="01.08.02.00.RelatividadEspecial.Electrodinamica.CuadriCorrientePotencial.html">RelatividadEspecial.Electrodinamica.CuadriCorrientePotencial</a></p>
 
 </div>
 </div>
@@ -13081,7 +13081,27 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="1.13.-Colisiones-relativistas">1.13. Colisiones relativistas<a class="anchor-link" href="#1.13.-Colisiones-relativistas">&#182;</a></h2><p><a id='colisiones_relativistas'></a></p>
+<h2 id="Electrodinamica-manifiestamente-covariante">Electrodinamica manifiestamente covariante<a class="anchor-link" href="#Electrodinamica-manifiestamente-covariante">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>En la deducción de las transformaciones de Lorentz-Einstein habíamos encontrado que por ser covariantes los campos eléctrico y magnético deben transformar como:</p>
+\begin{eqnarray}
+\nonumber
+B_z'&amp;=&amp;\gamma\left(B_z-\frac{u}{c} E_y\right)\\
+\nonumber
+E_y'&amp;=&amp;\gamma\left(E_y-\frac{u}{c}B_z\right)
+\end{eqnarray}
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Esta relación es una interesante novedad en el electromagnetismo clásico en tanto propone una conexión entre los campos eléctrico y magnético (incluso estáticos) que no estaba en la teoría original de Maxwell. Nos lleva a pensar en la idea de que existe una manera alternativa y más general de escribir la teoría electromagnética consistente con los postulados de la relatividad.</p>
 
 </div>
 </div>
@@ -13089,7 +13109,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Una de las más interesantes aplicaciones que tiene la dinámica relativista, es el estudio de colisiones entre partículas de alta energía.  Estas colisiones pueden ocurrir en el Universo en el interior de estrellas agonizantes, en el Universo primitivo, en los rayos cósmicos cuando colisionan con el medio interestelar o la atmósfera de la Tierra e incluso con la radiación de fondo. Naturalmente, en la Tierra, las colisiones de alta energía se han usado por décadas para estudiar la estructura íntima de la materia y el funcionamiento de las fuerzas fundamentales.</p>
+<p>Como hemos visto antes, una manera de garantizar que las nuevas ecuaciones sean covariantes sería escribirlas en términos de escalares y tensores, o en otros términos necesitamos escribir las <strong>ecuaciones de la electrodinámica manifiestamente covariantes</strong>.</p>
 
 </div>
 </div>
@@ -13097,7 +13117,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="1.13.1.-Energ&#237;a-en-el-centro-de-masa">1.13.1. Energ&#237;a en el centro de masa<a class="anchor-link" href="#1.13.1.-Energ&#237;a-en-el-centro-de-masa">&#182;</a></h3><p><a id='energia_cm'></a></p>
+<h3 id="1.15.3.-Ecuaciones-de-la-electrodin&#225;mica">1.15.3. Ecuaciones de la electrodin&#225;mica<a class="anchor-link" href="#1.15.3.-Ecuaciones-de-la-electrodin&#225;mica">&#182;</a></h3><p><a id='ecuaciones_electrodinamica'></a></p>
 
 </div>
 </div>
@@ -13105,275 +13125,50 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Considere dos partículas idénticas que chocan.  Una de ellas esta animada de una velocidad muy grande (vista en el sistema de referencia del observador (que llamaremos aquí <strong>sistema de referencia del laboratorio</strong>) y la otra esta en reposo allí.  ¿Cómo son sus cuadrimomentos individuales? ¿cuál es su cuadrimomento total?</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Consideremos en general dos partículas de masas diferentes, $m_1$ (impactor) y $m_2$ (objetivo o <em>target</em>).  Inicialmente el impactor tiene una velocidad en el sistema de referencia del laboratorio $v^\mathrm{lab}_1$ que lo anima de un momento lineal allí $p_{L1}=\gamma_{1} m_1 v^\mathrm{lab}_{1}$.  El cuadrimomento total en el laboratorio será:</p>
-$$
-P^\mathrm{lab}_L:(E^\mathrm{lab}_{L1},p^\mathrm{lab}_{L1})+(E^\mathrm{lab}_{L2},0)
-$$
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>El módulo de este cuadrimomento será:</p>
-$$
-\begin{array}{rcl}
-M^2 &amp; = &amp; (E^\mathrm{lab}_{L1}+E^\mathrm{lab}_{L2})^2-(p^\mathrm{lab}_{L1})^2\\
-&amp; = &amp; (E^\mathrm{lab}_{L1})^2-(p^\mathrm{lab}_{L1})^2 + (E^\mathrm{lab}_{L2})^2 + 2 E^\mathrm{lab}_{L1} E^\mathrm{lab}_{L2}\\
-&amp; = &amp; m_1^2 + m_2^2 + 2 m_2 E^\mathrm{lab}_{L1} \\
-\end{array}
-$$<p>donde hemos introducido el parámetro $M$ como el módulo del cuadrimomento total.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Si nos pasamos ahora al <strong>sistema de referencia del centro de masa</strong>, es decir, aquel en el que el momento lineal total del sistema es cero:</p>
-$$
-P^\mathrm{CM}_L:(E^\mathrm{CM}_{L1},p^\mathrm{CM}_{L})+(E^\mathrm{CM}_{L2},-p^\mathrm{CM}_{L})
-$$
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>En este sistema de referencia el módulo del cuadrimomento será el mismo, pero su dependencia de las masas de las partículas individuales será diferente:</p>
-$$
-M^2 = (E^\mathrm{CM}_{L1}+E^\mathrm{CM}_{L2})^2=(E_L^\mathrm{CM,fix})^2
-$$
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>La diferencia será que esta energía esta completamente disponible para la producción de partículas. Igualando nos queda:</p>
-$$
-E_L^\mathrm{CM,fix} = \sqrt{m_1^2 + m_2^2 + 2 m_2 E^\mathrm{lab}_{L1}}
-$$
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Si asumimos que la energía de la partícula impactora es mucho mayor que su masa y la del blanco $E^\mathrm{lab}_{L1}\gg m_1, m_2$, entonces la energía del impacto en el centro de masa será:</p>
-$$
-E_L^\mathrm{CM,fix}\approx \sqrt{2 m_2 E^\mathrm{lab}_{L1}}
-$$
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>¿Qué pasa ahora si lo que tengo ahora son dos partículas que se mueven una hacia la otra con una cierta velocidad?.  EN ese caso el momento total será:</p>
-$$
-P^\mathrm{lab}_L:(E^\mathrm{lab}_{L1},p^\mathrm{lab}_{L1})+(E^\mathrm{lab}_{L2},-p^\mathrm{lab}_{L2})
-$$<p>cuyo módulo será:</p>
-$$
-\begin{array}{rcl}
-(E_L^\mathrm{CM,col})^2 &amp; = &amp; (E^\mathrm{lab}_{L1}+E^\mathrm{lab}_{L2})^2-(p^\mathrm{lab}_{L1}-p^\mathrm{lab}_{L2})^2\\
-&amp; = &amp; (E^\mathrm{lab}_{L1})^2-(p^\mathrm{lab}_{L1})^2 + (E^\mathrm{lab}_{L2})^2 -(p^\mathrm{lab}_{L1})^2 + 2( E^\mathrm{lab}_{L1} E^\mathrm{lab}_{L2}+p^\mathrm{lab}_{L1}p^\mathrm{lab}_{L2})\\
-&amp; = &amp; m_1^2 + m_2^2 + 2 (E^\mathrm{lab}_{L1}E^\mathrm{lab}_{L2}+p^\mathrm{lab}_{L1}p^\mathrm{lab}_{L2}) \\
-\end{array}
-$$
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>¿Cuál es la diferencia entre esta situación y la anterior?.  Si suponemos que $E^\mathrm{lab}_{L1},E^\mathrm{lab}_{L2}\gg m_1, m_2$ y por tanto $p^\mathrm{lab}_{L1}\approx E^\mathrm{lab}_{L1}$ y $p^\mathrm{lab}_{L2}\approx E^\mathrm{lab}_{L2}$, entonces la enegría en el centro de masa de estas colisiones será:</p>
-$$
-E_L^\mathrm{CM,col}\approx \sqrt{4 E^\mathrm{lab}_{L1}E^\mathrm{lab}_{L2}}
-$$
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Comparando las energía disponibles en el centro de masa en el caso de una colisión con un objetivo fijo y la colisión de dos haces, vemos que la energía disponible en este segundo caso es mucho mayor.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Pongámosle número a estos procesos.  Imaginemos que tenemos un acelerador que puede llevar protones hasta 7 TeV de energía (energía típica en el LHC).  ¿Cuánta energía en el centro de masa podemos conseguir si disparamos estos protones hacia protones que están en reposo?.  En unidades convencionales:</p>
-$$
-\frac{E^\mathrm{CM,fix}}{c^2}\approx \sqrt{2 m_2 \frac{E^\mathrm{lab}_{1}}{c^2}}
-$$<p>o lo que es lo mismo:</p>
-$$
-E^\mathrm{CM,fix}\approx \sqrt{2 (m_2c^2) E^\mathrm{lab}_{1}}
-$$
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>La energía en reposo de un protón $mc^2=938$ MeV$=0.938$ TeV.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Masa del protón</span>
-<span class="n">mc2</span><span class="o">=</span><span class="mf">0.938</span> <span class="c1">#TeV</span>
-<span class="n">E1_lab</span><span class="o">=</span><span class="mi">7</span> <span class="c1">#TeV</span>
-
-<span class="c1">#Energía en el centro de masa para choque fijo</span>
-<span class="n">ECM_fix</span><span class="o">=</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">mc2</span><span class="o">*</span><span class="n">E1_lab</span><span class="p">)</span><span class="o">**</span><span class="mf">0.5</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>ECM_fix = 3.6238101495525394 TeV
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>En contraposición la energía en el centro de masa obtenida si hacemos chocar dos haces de protones con 7 TeV es:</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Energía en el centro de masa para colision </span>
-<span class="n">ECM_col</span><span class="o">=</span><span class="p">(</span><span class="mi">4</span><span class="o">*</span><span class="n">E1_lab</span><span class="o">*</span><span class="n">E1_lab</span><span class="p">)</span><span class="o">**</span><span class="mf">0.5</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>ECM_col = 14.0 TeV
-ECM_col / ECM_fix = 3.86
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Es decir, con una colisión frontal es posible extraer casi 4 veces más energía de una colisión que con la colisión en reposo.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Cuánta energía necesitaría un haz de protones que choca contra un blanco fijo de protones para igualar esta energía e 14 TeV.  Igualando $E^\mathrm{CM,fix}$ con $E^\mathrm{CM,lab}$ obtenemos:</p>
-$$
-\sqrt{2 m E_L^\mathrm{lab,fix-eq}}=\sqrt{4 (E^\mathrm{lab,col}_{L})^2}
-$$<p>y despejando $E_L^\mathrm{lab,fix-eq}$ obtenemos:</p>
-$$
-E_L^\mathrm{lab,fix-eq}=\frac{2 (E^\mathrm{lab,col}_{L})^2}{m}
-$$
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>De modo que para igualar la energía en el centro de masa obtenida por una colisión de haces de protones ($mc^2=0.938$ TeV) con energía $E^\mathrm{lab,col}=1$ TeV, será:</p>
-$$
-E_L^\mathrm{lab,fix-eq}\approx 418\;\mathrm{TeV}
-$$
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Choques-con-la-luz">Choques con la luz<a class="anchor-link" href="#Choques-con-la-luz">&#182;</a></h3>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Los choques con fotones son una de las situaciones más comunes en astrofísica de altas energías.  Lo que debemos tener en cuenta cuando describimos la colisión con un fotón es que su masa invariante es cero, de modo que:</p>
-$$
-E_L^\mathrm{fotón}=p_L^\mathrm{fotón}
-$$
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Existen tres posibles resultados de la colisión con un fotón:</p>
-<ol>
-<li><p><strong>Efecto Compton</strong>.  La dispersión de un fotón de alta energía contra una partícula, de modo que la partícula recibe energía del fotón.</p>
+<p>Las ecuaciones que necesitamos escribir de forma manifiestamente covariantes son:</p>
+<ul>
+<li><p><strong>Ecuaciones de Maxwell</strong>:</p>
+<p>\begin{eqnarray}
+\vec{\nabla}\cdot\vec{E}&amp;=&amp;4\pi\rho\\
+\vec{\nabla}\cdot\vec{B}&amp;=&amp;0\\
+\vec{\nabla}\times\vec{E}+\frac{1}{c}\frac{\partial\vec B}{\partial t}&amp;=&amp;0\\
+\vec{\nabla}\times\vec{B}-\frac{1}{c}\frac{\partial\vec E}{\partial t}&amp;=&amp;\frac{4\pi}{c}\vec{J}\\  
+\end{eqnarray}</p>
 </li>
-<li><p><strong>Efecto Compton inverso</strong>.  La dispersión de una partícula de alta energía contra un fotón, de modo que el fotón recibe energía.</p>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li><p><strong>Conservación de la carga eléctrica</strong>:</p>
+<p>$$
+\frac{\partial\rho}{\partial t}=-\vec{\nabla}\cdot\vec J
+$$</p>
 </li>
-<li><p><strong>Absorción</strong>.  La absorción de un fotón de alta energía por una partícula y la producción de nuevas partículas a partir de este proceso.</p>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li><p><strong>Ley de Lorentz</strong>:</p>
+<p>Sobre una carga individual:
+$$
+\vec F = q (\vec E + \frac{1}{c}q\vec v\times \vec B)
+$$</p>
+<p>Sobre una corriente de carga:
+$$
+\vec f = \rho \vec E + \frac{1}{c}\vec J\times \vec B
+$$</p>
 </li>
-</ol>
+</ul>
 
 </div>
 </div>
@@ -13381,278 +13176,155 @@ $$
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Consideremos el último proceso.  Un caso partícular de una reacción de este tipo se produce en la radiación cósmica de fondo (RCF).  En este caso protones de alta energía pueden chocar con los fotones de la RCF produciendo la reacción:</p>
+<p>Donde las cantidades implicadas son:</p>
+<ul>
+<li><strong>Campo eléctrico ${\vec E}$</strong>. Es una cantidad fundamental.  En la teoría clásica es producido por cargas individuales (a través de la primera ecuación) o en simultánea con campos magnéticos variables (tercera ecuación). Las unidades del campo eléctrico son: $[E]=$V/m (1 V = 1 J/C).</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li><strong>Densidad de flujo magnético ${\vec B}$</strong>.  Esta relacionada con el campo magnético $\vec H$.  En el vacío $\vec H=\mu_0 \vec B$, donde $\mu_0=4\pi\times 10^{-7}$ N m A$^{-1}$ (1 A = 1 C/s).  Las unidades de la densidad de flujo magnético son: $[B]=$T (Tesla, 1 T = N m$^{-1}$ A$^{-1}$).</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li><strong>Densidad de carga eléctrica $\rho$</strong>.  La carga eléctrica es una propiedad fundamental de algunas partículas elementales en la naturaleza.  La carga de una partícula se <em>asume</em> un invariante en la relatividad.  Las unidades de densidad de carga son $[\rho]$=C m$^{-3}$.</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li><strong>Densidad de flujo de corriente $\vec J$</strong>. Cuando en el espacio hay cargas en movimiento se puede definir el clujo de carga somo la tasa a la que pasa carga eléctrica por unidad de área.  Las unidades de la densidad de flujo de corriente es $[J]$=A m$^{-2}$.</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li><p><strong>Veclocidad de la luz $c$</strong>.  Es una constante de la naturaleza $c=2.999792458\times 10^8$ m s$^{-1}$.  Se relaciona con otra constante que no aparece explícitamente en la versión de las ecuaciones escritas arriba, la permeabilidad eléctrica del vacío, $\epsilon_0=8.854\times 10^{-12}$ C$^2$ m$^{-2}$ N$^{-1}$.  Usando $\epsilon_0$, la velocidad se escribe:</p>
+<p>$$
+  c=\frac{1}{\sqrt{\mu_0\epsilon_0}}
+  $$</p>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li><p><strong>Potencial escalar eléctrico $\phi$ y vectorial magnético $\vec A$</strong>.  Las ecuaciones de Maxwell pueden escribirse también en términos de funciones potenciales, que permiten escribir los campos de forma alternativa como:</p>
+<p>\begin{eqnarray}
+  \nonumber
+  \vec B &amp; = &amp; \vec{\nabla}\times\vec A\\
+  \nonumber
+  \vec E &amp; = &amp; -\vec{\nabla}\phi-\frac{1}{c}\frac{\partial\vec A}{\partial t}
+  \end{eqnarray}</p>
+<p>Los potenciales eléctrico y magnético son cantidades auxiliares y no físicas.  Aún así con muy útiles y es bueno tenerlas en el radar.</p>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li><p><strong>Libertad Gauge</strong>.  Los potenciales pueden escogerse de una diversidad muy amplia de familias.  En particular:</p>
+<p>\begin{eqnarray}</p>
+
+<pre><code>\nonumber
+\vec A' &amp; = &amp; \vec A+\vec{\nabla}\chi\\
+\nonumber
+\phi' &amp; = &amp; \phi-\frac{1}{c}\frac{\partial \chi}{\partial t}
+\end{eqnarray}
+
+</code></pre>
+<p>también son potenciales validos.  ¿Qué funciones de potencial elegir?.</p>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li><p><strong>Gauge de Coulomb</strong>.  Si se reemplaza la definición del campo eléctrico en la primera ecuación de Maxwell se obtiene:</p>
+<p>$$
+\frac{1}{c}\frac{\partial}{\partial t}(\vec{\nabla}\cdot\vec{A})+\vec{\nabla}^2\phi=-4\pi\rho
 $$
-\gamma + p \rightarrow p + \pi^+
-$$<p>donde $m_p c^2=938$ MeV y $m_\pi c^2=140$ MeV.  ¿Cuál es la energía mínima que deber tener el protón para producir esta reacción con un fotón con una energía dada?</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Podemos calcular esta energía asumiendo que al crearse, el neutrón y el pión resultante de la reacción anterior se crean en reposo en el sistema de referencia de su centro de masa (esta sería la mínima energía).  Ahora bien, como el módulo del cuadrimomentum es el mismo en cualquier sistema de referencia de modo que:</p>
+Esta ecuación adopta la forma de la ley de Coulomb si se escoge arbitrariamente que el potencial vectorial magnético cumpla la condición:</p>
+<p>$$
+\vec{\nabla}\cdot\vec{A}=0
 $$
-\begin{array}{rcl}
-|P_{L\gamma}^\mathrm{lab}+P_{Lp}^\mathrm{lab}|^2 &amp; = &amp; |P^\mathrm{res}_{Lp}+P^\mathrm{res}_{L\pi}|^2\\
-|(E_{L\gamma}^\mathrm{lab}+E_{Lp}^\mathrm{lab},E_{L\gamma}^\mathrm{lab}-p_{Lp}^\mathrm{lab})|^2 &amp; = &amp; (m_p+n_\pi)^2\\
-2 E_{L\gamma}^\mathrm{lab} E_{Lp}^\mathrm{lab} +
-m_p^2
-+2 p_{Lp}^\mathrm{lab}E_{L\gamma}^\mathrm{lab} &amp; = &amp; (m_p+n_\pi)^2
-\end{array}
+que se conoce como <strong>gauge de Coulomb</strong>.  Esta condición sin embargo no es covariante (no involucra tensores, ni invariantes) y por lo tanto no es apropiada para la relatividad.</p>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li><p><strong>Gauge de Lorentz</strong>.  Un gauge que resulta covariante puede escribirse como:</p>
+<p>$$
+\frac{1}{c}\frac{\partial\phi}{\partial t}+\vec{\nabla}\cdot\vec{A}=0
+$$</p>
+<p>Cuando los potenciales se escriben con esta condición se dice que se usa el gauge de Lorenz.</p>
+<p>Nótese que si se usa el gauge de Lorentz la primera ecuación inhomogénea de Maxwell es equivalente a la ecuación:</p>
+<p>$$
+\frac{1}{c^2}\frac{\partial^2\phi}{\partial t^2}-\vec{\nabla}^2\phi=4\pi\rho
+$$</p>
+<p>Puede probarse, de la misma manera, que la ecuación inhomogénea del campo magnético se puede escribir de forma análoga como:</p>
+<p>$$
+\frac{1}{c^2}\frac{\partial^2\vec A}{\partial t^2}-\vec{\nabla}^2\vec A=\frac{4\pi}{c}\vec J
+$$</p>
+<p>Estas dos ecuaciones son ecuaciones de onda con fuentes $\rho$ y $\vec J$.  El gauge de Lorenz entonces, físicamente, representa la acción de los campos mediada por ondas electromagnéticas, mientras que el gauge de Coulomb representa la acción del campo a distancia, instantáneamente.</p>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li><strong>Cálculo de los potenciales</strong>.  En el Gauge de Lorenz los potenciales vectorial y escalar pueden calcularse usando las ecuaciones:</li>
+</ul>
 $$
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Si dejamos solo las propiedades del protón en un solo lado:</p>
+\vec A(\vec r,t)=\frac{\mu_0}{4\pi}\int_\Omega\frac{\vec{J}(\vec r',t')\mathrm{d}^3\vec{r}'}{|\vec{r}-\vec{r}'|}
+$$<p>y</p>
 $$
-E_{Lp}^\mathrm{lab} 
-+p_{Lp}^\mathrm{lab} = \frac{(m_p+m_\pi)^2-m_p^2}{2 E_{L\gamma}^\mathrm{lab} }
-$$<p>Usando la relación $(p_{Lp}^\mathrm{lab})^2=(E_{Lp}^\mathrm{lab})^2-m_p^2$, la energía del protón estaría determinada por:</p>
+\phi(\vec r,t)=\frac{1}{4\pi\epsilon_0}\int_\Omega\frac{\rho(\vec r',t')\mathrm{d}^3\vec{r}'}{|\vec{r}-\vec{r}'|}
+$$<p>donde el tiempo $t'$ usado en las expresiones anteriores se conoce como el tiempo retardado:</p>
 $$
-E_{Lp}^\mathrm{lab} 
-+\sqrt{(E_{Lp}^\mathrm{lab})^2-m_p^2} = \frac{m_\pi^2+2 m_\pi m_p}{2 E_{L\gamma}^\mathrm{lab} }
+t'=t-\frac{|\vec{r}-\vec{r}'|}{c}
 $$
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Una-aplicaci&#243;n:-El-l&#237;mite-GZK">Una aplicaci&#243;n: El l&#237;mite GZK<a class="anchor-link" href="#Una-aplicaci&#243;n:-El-l&#237;mite-GZK">&#182;</a></h3>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Ahora bien ¿en qué situaciones un protón de alta energía puede toparse con un fotón?  Para que esto pase la abundancia de fotones debe ser enorme.  Los fotones más energéticos en el Universo son los fotones de la radiación cósmica de fondo que tienen además una muy pequeña energía  $E_\gamma=2,5\times 10^{-10}$ MeV.  Esto implica que para producir la reacción anterior el protón debe tener una energía enorme, $E_{Lp}^\mathrm{lab}\gg m_p$.  Con esto podemos finalmente aproximar la expresión anterior como:</p>
-$$
-E_{Lp}^\mathrm{lab}\approx \frac{m_\pi^2+2 m_\pi m_p}{4 E_{L\gamma}^\mathrm{lab} }
-$$<p>que en unidades convencionales quedaría:</p>
-$$
-E_{p}^\mathrm{lab}\approx \frac{(m_\pi c^2)^2+2 (m_\pi c^2) (m_p c^2)}{4 E_{\gamma}^\mathrm{lab} }
-$$
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Usando la energía de los fotones de rayos gama obtenemos:</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">mpc2</span><span class="o">=</span><span class="mi">938</span> <span class="c1">#MeV</span>
-<span class="n">mpic2</span><span class="o">=</span><span class="mi">140</span> <span class="c1">#MeV</span>
-<span class="n">ERCF</span><span class="o">=</span><span class="mf">2.5e-10</span> <span class="c1">#MeV</span>
-
-<span class="n">Ep</span><span class="o">=</span><span class="p">((</span><span class="n">mpic2</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="o">+</span><span class="mi">2</span><span class="o">*</span><span class="n">mpic2</span><span class="o">*</span><span class="n">mpc2</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="mi">4</span><span class="o">*</span><span class="n">ERCF</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Energía límite de protones = 2.822400e+20 eV
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Llamamos a este el <em>umbral de Greisen–Zatsepin–Kuzmin</em> y corresponde a la energía máxima en la que un protón de rayos cósmicos puede viajar sin sufrir interacciones relavantes con los fotones de la radiación de fondo.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="1.13.2.-Colisiones-relativistas-interactivas">1.13.2. Colisiones relativistas interactivas<a class="anchor-link" href="#1.13.2.-Colisiones-relativistas-interactivas">&#182;</a></h3><p><a id='colisiones_interactivas'></a></p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Una excelente manera de entender las colisiones relativistas y algunos de los resultados que hemos mostrado antes es graficando el resultado de estas interacciones en diagramas espacio-tiempo.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>En el código interactivo abajo podemos ver el resultado de la colisión de dos partículas cuya naturaleza se puede modificar a voluntad y cambiar el sistema de referencia desde el que se ve la colisión.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">matplotlib</span> inline
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">colision_relativista</span><span class="p">(</span><span class="n">m1</span><span class="o">=</span><span class="mi">940</span><span class="p">,</span><span class="n">E1</span><span class="o">=</span><span class="mi">7000</span><span class="p">,</span>
-                         <span class="n">m2</span><span class="o">=</span><span class="mi">940</span><span class="p">,</span><span class="n">E2</span><span class="o">=</span><span class="mi">940</span><span class="p">,</span>
-                         <span class="n">uL</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span>
-                         <span class="n">rang</span><span class="o">=</span><span class="mi">5000</span><span class="p">,</span>
-                        <span class="p">):</span>
-    <span class="n">m1</span><span class="o">=</span><span class="nb">float</span><span class="p">(</span><span class="n">m1</span><span class="p">)</span>
-    <span class="n">m2</span><span class="o">=</span><span class="nb">float</span><span class="p">(</span><span class="n">m2</span><span class="p">)</span>
-    <span class="n">E1</span><span class="o">=</span><span class="nb">float</span><span class="p">(</span><span class="n">E1</span><span class="p">)</span>
-    <span class="n">E2</span><span class="o">=</span><span class="nb">float</span><span class="p">(</span><span class="n">E2</span><span class="p">)</span>
-    
-    <span class="c1">#Factor gama de las partículas</span>
-    <span class="k">if</span> <span class="n">m1</span><span class="o">&gt;</span><span class="mi">0</span><span class="p">:</span>
-        <span class="n">gama1</span><span class="o">=</span><span class="n">E1</span><span class="o">/</span><span class="n">m1</span>
-        <span class="n">pc1</span><span class="o">=</span><span class="p">(</span><span class="n">E1</span><span class="o">**</span><span class="mi">2</span><span class="o">-</span><span class="n">m1</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">**</span><span class="mf">0.5</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="n">pc1</span><span class="o">=</span><span class="n">E1</span>
-    <span class="k">if</span> <span class="n">m2</span><span class="o">&gt;</span><span class="mi">0</span><span class="p">:</span>
-        <span class="n">gama2</span><span class="o">=</span><span class="n">E2</span><span class="o">/</span><span class="n">m2</span>
-        <span class="n">pc2</span><span class="o">=</span><span class="p">(</span><span class="n">E2</span><span class="o">**</span><span class="mi">2</span><span class="o">-</span><span class="n">m2</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">**</span><span class="mf">0.5</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="n">pc2</span><span class="o">=</span><span class="n">E2</span>
-    
-    <span class="c1">#Componentes de los cuadrimomentos</span>
-    <span class="kn">from</span> <span class="nn">numpy</span> <span class="k">import</span> <span class="n">array</span>
-    <span class="n">P1</span><span class="o">=</span><span class="n">array</span><span class="p">([</span><span class="n">E1</span><span class="p">,</span><span class="n">pc1</span><span class="p">])</span>
-    <span class="n">P2</span><span class="o">=</span><span class="n">array</span><span class="p">([</span><span class="n">E2</span><span class="p">,</span><span class="o">-</span><span class="n">pc2</span><span class="p">])</span>
-    
-    <span class="c1">#Rotar los ejes de acuerdo a uL</span>
-    <span class="n">gamma</span><span class="o">=</span><span class="mi">1</span><span class="o">/</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">uL</span><span class="p">)</span><span class="o">**</span><span class="mf">0.5</span>
-    <span class="n">Pp1</span><span class="o">=</span><span class="n">array</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">])</span>
-    <span class="n">Pp1</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">=</span><span class="n">gamma</span><span class="o">*</span><span class="p">(</span><span class="n">P1</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">-</span><span class="n">uL</span><span class="o">*</span><span class="n">P1</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
-    <span class="n">Pp1</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">=</span><span class="n">gamma</span><span class="o">*</span><span class="p">(</span><span class="o">-</span><span class="n">uL</span><span class="o">*</span><span class="n">P1</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">+</span><span class="n">P1</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
-    <span class="n">Pp2</span><span class="o">=</span><span class="n">array</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">])</span>
-    <span class="n">Pp2</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">=</span><span class="n">gamma</span><span class="o">*</span><span class="p">(</span><span class="n">P2</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">-</span><span class="n">uL</span><span class="o">*</span><span class="n">P2</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
-    <span class="n">Pp2</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">=</span><span class="n">gamma</span><span class="o">*</span><span class="p">(</span><span class="o">-</span><span class="n">uL</span><span class="o">*</span><span class="n">P2</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">+</span><span class="n">P2</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
-
-    <span class="c1">#Cuadrimomento total</span>
-    <span class="n">PpT</span><span class="o">=</span><span class="n">Pp1</span><span class="o">+</span><span class="n">Pp2</span>
-    
-    <span class="c1">#Masa asociada</span>
-    <span class="n">M</span><span class="o">=</span><span class="p">(</span><span class="n">PpT</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">**</span><span class="mi">2</span><span class="o">-</span><span class="n">PpT</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">**</span><span class="mf">0.5</span>
-
-    <span class="c1">#Gráfica</span>
-    <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">close</span><span class="p">(</span><span class="s2">&quot;all&quot;</span><span class="p">)</span>
-    <span class="n">fig</span><span class="o">=</span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
-    <span class="n">ax</span><span class="o">=</span><span class="n">fig</span><span class="o">.</span><span class="n">gca</span><span class="p">()</span>
-    
-    <span class="n">ax</span><span class="o">.</span><span class="n">arrow</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="n">Pp1</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="n">Pp1</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;r&#39;</span><span class="p">,</span><span class="n">lw</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="n">zorder</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
-    <span class="n">ax</span><span class="o">.</span><span class="n">arrow</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="n">Pp2</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="n">Pp2</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;r&#39;</span><span class="p">,</span><span class="n">lw</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="n">zorder</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
-    <span class="n">ax</span><span class="o">.</span><span class="n">arrow</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="n">PpT</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="n">PpT</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="n">zorder</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
-    <span class="n">ax</span><span class="o">.</span><span class="n">arrow</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="n">M</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;k&#39;</span><span class="p">,</span><span class="n">lw</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="n">alpha</span><span class="o">=</span><span class="mf">0.3</span><span class="p">,</span><span class="n">zorder</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
-
-    <span class="c1">#Decoración</span>
-    <span class="n">ax</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">zorder</span><span class="o">=-</span><span class="mi">100</span><span class="p">);</span>
-    <span class="n">ax</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">((</span><span class="o">-</span><span class="mf">0.1</span><span class="p">,</span><span class="n">rang</span><span class="p">));</span>
-    <span class="n">ax</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">((</span><span class="o">-</span><span class="n">rang</span><span class="p">,</span><span class="n">rang</span><span class="p">));</span>
-    <span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="n">f</span><span class="s2">&quot;$u_L=</span><span class="si">{uL:0.2f}</span><span class="s2">$ c, $m_1 c^2=</span><span class="si">{m1}</span><span class="s2">$ MeV, $m_2 c^2=</span><span class="si">{m2}</span><span class="s2">$ MeV&quot;</span><span class="p">,</span><span class="n">fontsize</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
-    <span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="n">f</span><span class="s2">&quot;$E$ [MeV]&quot;</span><span class="p">);</span>
-    <span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="n">f</span><span class="s2">&quot;$pc$ [MeV]&quot;</span><span class="p">);</span>
-    <span class="n">fig</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">();</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">ipywidgets</span> <span class="k">import</span> <span class="n">interact</span><span class="p">,</span><span class="n">fixed</span><span class="p">,</span><span class="n">widgets</span>
-<span class="n">opciones</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">continuous_update</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-<span class="n">interact</span><span class="p">(</span><span class="n">colision_relativista</span><span class="p">,</span>
-         <span class="n">uL</span><span class="o">=</span><span class="n">widgets</span><span class="o">.</span><span class="n">FloatSlider</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span><span class="nb">min</span><span class="o">=-</span><span class="mf">0.99</span><span class="p">,</span><span class="nb">max</span><span class="o">=</span><span class="mf">0.99</span><span class="p">,</span><span class="n">step</span><span class="o">=</span><span class="mf">0.01</span><span class="p">,</span><span class="o">**</span><span class="n">opciones</span><span class="p">),</span>
-         <span class="n">rang</span><span class="o">=</span><span class="n">widgets</span><span class="o">.</span><span class="n">FloatSlider</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="mf">10000.0</span><span class="p">,</span><span class="nb">min</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span><span class="nb">max</span><span class="o">=</span><span class="mi">50000</span><span class="p">,</span><span class="n">step</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span><span class="o">**</span><span class="n">opciones</span><span class="p">),</span>
-         <span class="n">m1</span><span class="o">=</span><span class="n">widgets</span><span class="o">.</span><span class="n">Text</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="s2">&quot;940&quot;</span><span class="p">,</span><span class="o">**</span><span class="n">opciones</span><span class="p">),</span>
-         <span class="n">m2</span><span class="o">=</span><span class="n">widgets</span><span class="o">.</span><span class="n">Text</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="s2">&quot;940&quot;</span><span class="p">,</span><span class="o">**</span><span class="n">opciones</span><span class="p">),</span>
-         <span class="n">E1</span><span class="o">=</span><span class="n">widgets</span><span class="o">.</span><span class="n">Text</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="s2">&quot;1000&quot;</span><span class="p">,</span><span class="o">**</span><span class="n">opciones</span><span class="p">),</span>
-         <span class="n">E2</span><span class="o">=</span><span class="n">widgets</span><span class="o">.</span><span class="n">Text</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="s2">&quot;940&quot;</span><span class="p">,</span><span class="o">**</span><span class="n">opciones</span><span class="p">),</span>
-        <span class="p">);</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-
-
-<div class="output_png output_subarea ">
-<img src="data:image/png;base64,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
-"
->
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><a id='fig:01.06.02.00.RelatividadEspecial.DinamicaRelativista.ColisionesRelativistas_19'></a><center><b>Figura 1.19.</b> </center></p>
-
 </div>
 </div>
 </div><div style="background:lightgray">
@@ -13660,7 +13332,7 @@ $$
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><a href="index.html">Indice</a> | Previo: <a href="01.06.01.00.RelatividadEspecial.DinamicaRelativista.EnergiaMomentum.html">RelatividadEspecial.DinamicaRelativista.EnergiaMomentum</a> | Siguiente: <a href="01.06.03.00.RelatividadEspecial.DinamicaRelativista.Cuadrifuerza.html">RelatividadEspecial.DinamicaRelativista.Cuadrifuerza</a></p>
+<p><a href="index.html">Indice</a> | Previo: <a href="01.07.00.00.RelatividadEspecial.SintesisMecanicaRelativista.html">RelatividadEspecial.SintesisMecanicaRelativista</a> | Siguiente: <a href="01.08.02.00.RelatividadEspecial.Electrodinamica.CuadriCorrientePotencial.html">RelatividadEspecial.Electrodinamica.CuadriCorrientePotencial</a></p>
 
 </div>
 </div>
@@ -13671,10 +13343,6 @@ $$
 </body>
 
  
-
-<script type="application/vnd.jupyter.widget-state+json">
-{"state": {"6337aff9062046f5b8bdb79ad32e78c0": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "b32f8fc4cbfc4fc6993c3d82c1b89cb2": {"model_name": "SliderStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "SliderStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": "", "handle_color": null}}, "91abb8a9ab2e44c0af9af69ed8775987": {"model_name": "FloatSliderModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "FloatSliderModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "FloatSliderView", "continuous_update": false, "description": "uL", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_6337aff9062046f5b8bdb79ad32e78c0", "max": 0.99, "min": -0.99, "orientation": "horizontal", "readout": true, "readout_format": ".2f", "step": 0.01, "style": "IPY_MODEL_b32f8fc4cbfc4fc6993c3d82c1b89cb2", "value": 0.0}}, "fa984a37ad694efd920ce55fe019ac38": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "53a940b7e64c43378516097860b7fd70": {"model_name": "SliderStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "SliderStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": "", "handle_color": null}}, "afa349d22bec49fc8f6a958381a5de26": {"model_name": "FloatSliderModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "FloatSliderModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "FloatSliderView", "continuous_update": false, "description": "rang", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_fa984a37ad694efd920ce55fe019ac38", "max": 50000.0, "min": 1000.0, "orientation": "horizontal", "readout": true, "readout_format": ".2f", "step": 1000.0, "style": "IPY_MODEL_53a940b7e64c43378516097860b7fd70", "value": 10000.0}}, "ebb89f7744cc4845950c8147c523f026": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "1f92ac3857de4cd4983ef5f871c93073": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "429bf30bf86d4a59a799acbdff1e4c83": {"model_name": "TextModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "TextModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "TextView", "continuous_update": false, "description": "m1", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_ebb89f7744cc4845950c8147c523f026", "placeholder": "\u200b", "style": "IPY_MODEL_1f92ac3857de4cd4983ef5f871c93073", "value": "940"}}, "21f6e54636b14fe0abb95afe9a07907c": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "5a53c287fe1b4acab1b3804f7f9ae7e8": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "babb0e06a24b43cfa891327685766908": {"model_name": "TextModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "TextModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "TextView", "continuous_update": false, "description": "m2", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_21f6e54636b14fe0abb95afe9a07907c", "placeholder": "\u200b", "style": "IPY_MODEL_5a53c287fe1b4acab1b3804f7f9ae7e8", "value": "940"}}, "e27db3ec5b7140dfa2b5fe5e3fe7fe9e": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "98138c6e91784fa5bb1b668bcfcb1d25": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "ebe4c4247a5a4bcb985a901f0ca95557": {"model_name": "TextModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "TextModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "TextView", "continuous_update": false, "description": "E1", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_e27db3ec5b7140dfa2b5fe5e3fe7fe9e", "placeholder": "\u200b", "style": "IPY_MODEL_98138c6e91784fa5bb1b668bcfcb1d25", "value": "1000"}}, "0695336afc09450ca48eee00b6d33a15": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "329f7588362f474181bb37f70b7020a0": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "9bfc2b1e8ae04d3e8d3369068dae5101": {"model_name": "TextModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "TextModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "TextView", "continuous_update": false, "description": "E2", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_0695336afc09450ca48eee00b6d33a15", "placeholder": "\u200b", "style": "IPY_MODEL_329f7588362f474181bb37f70b7020a0", "value": "940"}}, "5b0ba17a5cbb4bea9096581a5c7cfbcb": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "013b2cc68a394c229bd1363cf91b97b7": {"model_name": "VBoxModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": ["widget-interact"], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "VBoxModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "VBoxView", "box_style": "", "children": ["IPY_MODEL_429bf30bf86d4a59a799acbdff1e4c83", "IPY_MODEL_ebe4c4247a5a4bcb985a901f0ca95557", "IPY_MODEL_babb0e06a24b43cfa891327685766908", "IPY_MODEL_9bfc2b1e8ae04d3e8d3369068dae5101", "IPY_MODEL_91abb8a9ab2e44c0af9af69ed8775987", "IPY_MODEL_afa349d22bec49fc8f6a958381a5de26", "IPY_MODEL_a276a1397b8c497e8c30382b7a99bb24"], "layout": "IPY_MODEL_5b0ba17a5cbb4bea9096581a5c7cfbcb"}}, "cd5eb96db2d047a1bc5236e0ef1b1aac": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "a276a1397b8c497e8c30382b7a99bb24": {"model_name": "OutputModel", "model_module": "@jupyter-widgets/output", "model_module_version": "1.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/output", "_model_module_version": "1.0.0", "_model_name": "OutputModel", "_view_count": null, "_view_module": "@jupyter-widgets/output", "_view_module_version": "1.0.0", "_view_name": "OutputView", "layout": "IPY_MODEL_cd5eb96db2d047a1bc5236e0ef1b1aac", "msg_id": "", "outputs": []}}}, "version_major": 2, "version_minor": 0}
-</script>
 
 
 </html>

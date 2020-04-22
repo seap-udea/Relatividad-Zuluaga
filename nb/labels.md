@@ -111,17 +111,29 @@
 		* `#sintesis_mecanica`
 		* `#sintesis_cinematica`
 		* `#sintesis_dinamica`
-- Labels for '01.08.00.00.RelatividadEspecial.ElectrodinamicaCovariante.ipynb':
+- Labels for '01.08.01.00.RelatividadEspecial.Electrodinamica.EcuacionesClasicas.ipynb':
 	- Labels for 'section':
 		* `#ecuaciones_electrodinamica`
+- Labels for '01.08.02.00.RelatividadEspecial.Electrodinamica.CuadriCorrientePotencial.ipynb':
+	- Labels for 'section':
 		* `#continuidad`
 		* `#maxwell_inhomogeneas`
+- Labels for '01.08.03.00.RelatividadEspecial.Electrodinamica.TensorFaraday.ipynb':
+	- Labels for 'section':
 		* `#campos_tensoriales`
 		* `#tensor_faraday`
 		* `#maxwell_faraday`
-		* `#fuerza_lorentz_covariante`
 		* `#transformacion_campos`
+		* `#fuerza_lorentz_covariante`
+		* `#geometria_F`
 		* `#sintesis`
+	- Labels for 'figure':
+		* `fig:tensor_esfuerzos`
+- Labels for '01.08.04.00.RelatividadEspecial.Electrodinamica.Ejemplos.ipynb':
+	- Labels for 'section':
+		* `#fuerza_carga_movimiento`
+		* `#campo_carga_movimiento`
+		* `#campo_alambre`
 - Labels for '01.09.00.00.RelatividadEspecial.ProblemasSeleccionados.ipynb':
 	- Labels for 'section':
 		* `#especial_problemas`
