@@ -113,6 +113,7 @@
 		* `#sintesis_dinamica`
 - Labels for '01.08.01.00.RelatividadEspecial.Electrodinamica.EcuacionesClasicas.ipynb':
 	- Labels for 'section':
+		* `#electrodinamica`
 		* `#ecuaciones_electrodinamica`
 - Labels for '01.08.02.00.RelatividadEspecial.Electrodinamica.CuadriCorrientePotencial.ipynb':
 	- Labels for 'section':
@@ -131,7 +132,6 @@
 		* `fig:tensor_esfuerzos`
 - Labels for '01.08.04.00.RelatividadEspecial.Electrodinamica.Ejemplos.ipynb':
 	- Labels for 'section':
-		* `#fuerza_carga_movimiento`
 		* `#campo_carga_movimiento`
 		* `#campo_alambre`
 - Labels for '01.09.00.00.RelatividadEspecial.ProblemasSeleccionados.ipynb':
