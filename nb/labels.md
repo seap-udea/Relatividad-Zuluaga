@@ -137,3 +137,21 @@
 - Labels for '01.09.00.00.RelatividadEspecial.ProblemasSeleccionados.ipynb':
 	- Labels for 'section':
 		* `#especial_problemas`
+- Labels for '02.00.00.00.RelatividadGeneral.ipynb':
+	- Labels for 'section':
+		* `#relatividad_general`
+		* `#rgeneral_motivacion`
+- Labels for '02.01.00.00.RelatividadGeneral.PostuladosBasicos.ipynb':
+	- Labels for 'section':
+		* `#rgeneral_postulados`
+		* `#principio_equivalencia`
+		* `#principio_galileo`
+		* `#principio_equivalencia_masas`
+		* `#principio_equivalencia_einstein`
+		* `#principio_consistencia`
+		* `#principio_covarianza`
+		* `#tensores_generales`
+- Labels for '02.02.00.00.RelatividadGeneral.TransporteParalelo.ipynb':
+	- Labels for 'section':
+		* `#transporte_paralelo`
+		* `#simbolos_christoffel`
