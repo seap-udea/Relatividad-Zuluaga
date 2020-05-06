@@ -1,147 +1,8 @@
-- Labels for '01.00.00.00.RelatividadEspecial.ipynb':
-	- Labels for 'section':
-		* `#relatividad_especial`
-		* `#respecial_motivacion`
-- Labels for '01.01.00.00.RelatividadEspecial.ConceptosBasicos.ipynb':
-	- Labels for 'section':
-		* `#respecial_conceptos`
-		* `#ppio_homogeneidad`
-		* `#relatividad_newtoniana`
-		* `#problema_electromagnetismo`
-- Labels for '01.02.00.00.RelatividadEspecial.TransformacionesLorentzEinstein.ipynb':
-	- Labels for 'section':
-		* `#transformaciones_einstein`
-	- Labels for 'equation':
-		* `eq:tg_t`
-		* `eq:tg_x`
-		* `eq:tg_t_sim`
-		* `eq:tg_x_sim`
-		* `eq:dtg_t`
-		* `eq:dtg_x`
-		* `eq:dtg_y`
-		* `eq:dtg_z`
-		* `eq:LF_z`
-		* `eq:Bz_LF`
-		* `eq:Ey_LF`
-		* `eq:LAM_y`
-		* `eq:Bz_LAM`
-		* `eq:Ey_LAM`
-		* `eq:Bpz_tg`
-		* `eq:Epy_tg`
-		* `eq:Bz_tg`
-		* `eq:Ey_tg`
-		* `eq:trans_lorentz_x`
-- Labels for '01.02.01.00.RelatividadEspecial.TransformacionesLorentzEinstein.Propiedades.ipynb':
-	- Labels for 'section':
-		* `#propiedades_tle`
-		* `#unidades_luz`
-		* `#TLE_rotacion_hiperbolica`
-		* `#notacion_einstein`
-		* `#TLE_generales`
-		* `#valor_gama`
-		* `#TLE_mapas`
-	- Labels for 'code':
-		* `code:TLE`
-		* `code:mapa_TLE`
-- Labels for '01.02.02.00.RelatividadEspecial.TransformacionesLorentzEinstein.Consecuencias.ipynb':
-	- Labels for 'section':
-		* `#consecuencias_tle`
-		* `#transformacion_intervalos`
-		* `#dilatacion_temporal`
-		* `#postulado_relojes`
-		* `#contraccion_longitudes`
-		* `#adicion_velocidades`
-		* `#transformacion_aceleraciones`
-- Labels for '01.03.00.00.RelatividadEspecial.Minkowski.ipynb':
-	- Labels for 'section':
-		* `#minkowski`
-		* `#norma_minkowski`
-		* `#metrica_minkowski`
-		* `#metrica_intervalos`
-		* `#tiempo_propio_minkowski`
-		* `#metrica_dilatacion_contraccion`
-		* `#vectores_minkowski`
-		* `#minkowski_postulado_relojes`
-		* `#transformacion_cuadrivectores`
-- Labels for '01.04.00.00.RelatividadEspecial.OpticaRelativista.ipynb':
-	- Labels for 'section':
-		* `#optica_relativista`
-		* `#doppler_relativista`
-		* `#aberración`
-		* `#enfoque_relativista`
-	- Labels for 'figure':
-		* `fig:Figure_9`
-- Labels for '01.05.01.00.RelatividadEspecial.CinematicaRelativista.Definiciones.ipynb':
-	- Labels for 'section':
-		* `#cinematica_relativistica`
-		* `#cuadrivelocidad`
-		* `#cuadriaceleracion`
-- Labels for '01.05.02.00.RelatividadEspecial.CinematicaRelativista.AceleracionPropiaConstante.ipynb':
-	- Labels for 'section':
-		* `#cuadriaceleracion_constante`
-		* `#velocidad_limite`
-		* `#nave_interestelar`
-	- Labels for 'figure':
-		* `fig:cuadriaceleracion`
-		* `fig:Figure_15`
-- Labels for '01.06.01.00.RelatividadEspecial.DinamicaRelativista.EnergiaMomentum.ipynb':
-	- Labels for 'section':
-		* `#dinamica_relativista`
-		* `#masa_invariante`
-		* `#momentum_relativista`
-		* `#cuadrimomentum`
-		* `#magnitud_cuadrimomentum`
-		* `#cuadrimomentum_minkowski`
-- Labels for '01.06.02.00.RelatividadEspecial.DinamicaRelativista.ColisionesRelativistas.ipynb':
-	- Labels for 'section':
-		* `#colisiones_relativistas`
-		* `#energia_cm`
-		* `#colisiones_interactivas`
-- Labels for '01.06.03.00.RelatividadEspecial.DinamicaRelativista.Cuadrifuerza.ipynb':
-	- Labels for 'section':
-		* `#cuadrifuerza`
-		* `#transformacion_fuerza`
-- Labels for '01.06.04.00.RelatividadEspecial.DinamicaRelativista.FuerzaDeLorentz.ipynb':
-	- Labels for 'section':
-		* `#fuerza_lorentz`
-		* `#movimiento_circular`
-		* `#edm_relativista`
-- Labels for '01.07.00.00.RelatividadEspecial.SintesisMecanicaRelativista.ipynb':
-	- Labels for 'section':
-		* `#sintesis_mecanica`
-		* `#sintesis_cinematica`
-		* `#sintesis_dinamica`
-- Labels for '01.08.01.00.RelatividadEspecial.Electrodinamica.EcuacionesClasicas.ipynb':
-	- Labels for 'section':
-		* `#electrodinamica`
-		* `#ecuaciones_electrodinamica`
-- Labels for '01.08.02.00.RelatividadEspecial.Electrodinamica.CuadriCorrientePotencial.ipynb':
-	- Labels for 'section':
-		* `#continuidad`
-		* `#maxwell_inhomogeneas`
-- Labels for '01.08.03.00.RelatividadEspecial.Electrodinamica.TensorFaraday.ipynb':
-	- Labels for 'section':
-		* `#campos_tensoriales`
-		* `#tensor_faraday`
-		* `#maxwell_faraday`
-		* `#transformacion_campos`
-		* `#fuerza_lorentz_covariante`
-		* `#geometria_F`
-		* `#sintesis`
-	- Labels for 'figure':
-		* `fig:tensor_esfuerzos`
-- Labels for '01.08.04.00.RelatividadEspecial.Electrodinamica.Ejemplos.ipynb':
-	- Labels for 'section':
-		* `#campo_carga_movimiento`
-		* `#campo_alambre`
-- Labels for '01.09.00.00.RelatividadEspecial.ProblemasSeleccionados.ipynb':
-	- Labels for 'section':
-		* `#especial_problemas`
-- Labels for '02.00.00.00.RelatividadGeneral.ipynb':
+- Labels for '01.00.00.00.RelatividadGeneral.ipynb':
 	- Labels for 'section':
 		* `#relatividad_general`
 		* `#rgeneral_motivacion`
-- Labels for '02.01.00.00.RelatividadGeneral.PostuladosBasicos.ipynb':
+- Labels for '01.01.00.00.RelatividadGeneral.PostuladosBasicos.ipynb':
 	- Labels for 'section':
 		* `#rgeneral_postulados`
 		* `#principio_equivalencia`
@@ -151,7 +12,32 @@
 		* `#principio_consistencia`
 		* `#principio_covarianza`
 		* `#tensores_generales`
-- Labels for '02.02.00.00.RelatividadGeneral.TransporteParalelo.ipynb':
+- Labels for '01.02.00.00.RelatividadGeneral.TransporteParalelo.ipynb':
 	- Labels for 'section':
 		* `#transporte_paralelo`
+		* `#gradiente_notensor`
+		* `#transporte_paralelo_explicito`
+		* `#derivada_direccional`
+	- Labels for 'figure':
+		* `fig:transporte_paralelo`
+		* `fig:transporte_paralelo_derivada`
+- Labels for '01.03.00.00.RelatividadGeneral.SimbolosChristoffel.ipynb':
+	- Labels for 'section':
 		* `#simbolos_christoffel`
+		* `#ejemplo_christoffel`
+		* `#christoffel_metrica_diagonal`
+		* `#christoffel_plano`
+		* `#christoffel_esfera`
+		* `#christoffel_general`
+		* `#christoffel_numerico`
+- Labels for '01.04.00.00.RelatividadGeneral.Geodesicas.ipynb':
+	- Labels for 'section':
+		* `#dtotal_geodesicas`
+		* `#derivada_total`
+		* `#dtotal_paralelo`
+		* `#ecuacion_geodesica`
+		* `#dtotal_ejemplos_numericos`
+		* `#tparalelo_cilindricas_numerico`
+		* `#geodesica_cilindricas_numerico`
+	- Labels for 'figure':
+		* `fig:geodesica`
