@@ -13804,7 +13804,7 @@ $$</p>
 <div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">Gamma</span><span class="p">(</span><span class="n">gfun</span><span class="p">,</span><span class="n">xmu</span><span class="p">,</span><span class="n">N</span><span class="o">=</span><span class="mi">4</span><span class="p">):</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">Gamma</span><span class="p">(</span><span class="n">xmu</span><span class="p">,</span><span class="n">gfun</span><span class="p">,</span><span class="n">gargs</span><span class="o">=</span><span class="p">(),</span><span class="n">N</span><span class="o">=</span><span class="mi">4</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Calcula todos los símbolos de Christoffel</span>
 <span class="sd">    gfun: función métrica</span>
@@ -13822,17 +13822,17 @@ $$</p>
     <span class="k">for</span> <span class="n">pi</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">N</span><span class="p">):</span>
         <span class="k">for</span> <span class="n">nu</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">N</span><span class="p">):</span>
             <span class="c1">#Inversa</span>
-            <span class="n">gpipi</span><span class="o">=</span><span class="mi">1</span><span class="o">/</span><span class="n">gfun</span><span class="p">(</span><span class="n">xmu</span><span class="p">,</span><span class="n">pi</span><span class="p">)</span> <span class="c1">#g^pipi</span>
+            <span class="n">gpipi</span><span class="o">=</span><span class="mi">1</span><span class="o">/</span><span class="n">gfun</span><span class="p">(</span><span class="n">xmu</span><span class="p">,</span><span class="n">pi</span><span class="p">,</span><span class="o">*</span><span class="n">gargs</span><span class="p">)</span> <span class="c1">#g^pipi</span>
             <span class="c1">#Coeficientes diagonales</span>
             <span class="n">xd</span><span class="o">=</span><span class="n">xmu</span><span class="p">[</span><span class="n">pi</span><span class="p">]</span> <span class="c1">#Punto en el que estoy derivando</span>
             <span class="n">dx</span><span class="o">=</span><span class="nb">max</span><span class="p">(</span><span class="mf">0.01</span><span class="p">,</span><span class="mf">0.1</span><span class="o">*</span><span class="nb">abs</span><span class="p">(</span><span class="n">xd</span><span class="p">))</span>
-            <span class="n">gnunu_pi</span><span class="o">=</span><span class="n">derivative</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span><span class="n">gfun</span><span class="p">(</span><span class="n">where</span><span class="p">(</span><span class="n">index</span><span class="o">==</span><span class="n">pi</span><span class="p">,</span><span class="n">x</span><span class="p">,</span><span class="n">xmu</span><span class="p">),</span><span class="n">nu</span><span class="p">),</span><span class="n">xd</span><span class="p">,</span><span class="n">dx</span><span class="p">)</span>
+            <span class="n">gnunu_pi</span><span class="o">=</span><span class="n">derivative</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span><span class="n">gfun</span><span class="p">(</span><span class="n">where</span><span class="p">(</span><span class="n">index</span><span class="o">==</span><span class="n">pi</span><span class="p">,</span><span class="n">x</span><span class="p">,</span><span class="n">xmu</span><span class="p">),</span><span class="n">nu</span><span class="p">,</span><span class="o">*</span><span class="n">gargs</span><span class="p">),</span><span class="n">xd</span><span class="p">,</span><span class="n">dx</span><span class="p">)</span>
             <span class="n">G</span><span class="p">[</span><span class="n">pi</span><span class="p">,</span><span class="n">nu</span><span class="p">,</span><span class="n">nu</span><span class="p">]</span><span class="o">=-</span><span class="mf">0.5</span><span class="o">*</span><span class="n">gpipi</span><span class="o">*</span><span class="n">gnunu_pi</span>
             <span class="c1">#Coeficientes mixtos</span>
             <span class="k">if</span> <span class="n">nu</span><span class="o">==</span><span class="n">pi</span><span class="p">:</span><span class="k">continue</span>
             <span class="n">xd</span><span class="o">=</span><span class="n">xmu</span><span class="p">[</span><span class="n">nu</span><span class="p">]</span> <span class="c1">#Punto en el que estoy derivando</span>
             <span class="n">dx</span><span class="o">=</span><span class="nb">max</span><span class="p">(</span><span class="mf">0.01</span><span class="p">,</span><span class="mf">0.1</span><span class="o">*</span><span class="nb">abs</span><span class="p">(</span><span class="n">xd</span><span class="p">))</span>
-            <span class="n">gpipi_nu</span><span class="o">=</span><span class="n">derivative</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span><span class="n">gfun</span><span class="p">(</span><span class="n">where</span><span class="p">(</span><span class="n">index</span><span class="o">==</span><span class="n">nu</span><span class="p">,</span><span class="n">x</span><span class="p">,</span><span class="n">xmu</span><span class="p">),</span><span class="n">pi</span><span class="p">),</span><span class="n">xd</span><span class="p">,</span><span class="n">dx</span><span class="p">)</span>
+            <span class="n">gpipi_nu</span><span class="o">=</span><span class="n">derivative</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span><span class="n">gfun</span><span class="p">(</span><span class="n">where</span><span class="p">(</span><span class="n">index</span><span class="o">==</span><span class="n">nu</span><span class="p">,</span><span class="n">x</span><span class="p">,</span><span class="n">xmu</span><span class="p">),</span><span class="n">pi</span><span class="p">,</span><span class="o">*</span><span class="n">gargs</span><span class="p">),</span><span class="n">xd</span><span class="p">,</span><span class="n">dx</span><span class="p">)</span>
             <span class="n">G</span><span class="p">[</span><span class="n">pi</span><span class="p">,</span><span class="n">pi</span><span class="p">,</span><span class="n">nu</span><span class="p">]</span><span class="o">=</span><span class="mf">0.5</span><span class="o">*</span><span class="n">gpipi</span><span class="o">*</span><span class="n">gpipi_nu</span>
             <span class="n">G</span><span class="p">[</span><span class="n">pi</span><span class="p">,</span><span class="n">nu</span><span class="p">,</span><span class="n">pi</span><span class="p">]</span><span class="o">=</span><span class="n">G</span><span class="p">[</span><span class="n">pi</span><span class="p">,</span><span class="n">pi</span><span class="p">,</span><span class="n">nu</span><span class="p">]</span>
     <span class="k">return</span> <span class="n">G</span>
@@ -13865,7 +13865,7 @@ $$</p>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">numpy</span> <span class="k">import</span> <span class="n">array</span>
-<span class="k">def</span> <span class="nf">g_cilindricas</span><span class="p">(</span><span class="n">xmu</span><span class="p">,</span><span class="n">mu</span><span class="p">):</span>
+<span class="k">def</span> <span class="nf">g_cilindricas_4d</span><span class="p">(</span><span class="n">xmu</span><span class="p">,</span><span class="n">mu</span><span class="p">,</span><span class="n">p</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Coeficiente métrico g_mumu calculados en el evento xmu </span>
 <span class="sd">    para espacio-tiempo plano con coordenadas cilíndricas.</span>
@@ -13924,7 +13924,7 @@ $$</p>
 <div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">G</span><span class="o">=</span><span class="n">Gamma</span><span class="p">(</span><span class="n">g_cilindricas</span><span class="p">,</span><span class="n">xmu</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">G</span><span class="o">=</span><span class="n">Gamma</span><span class="p">(</span><span class="n">xmu</span><span class="p">,</span><span class="n">g_cilindricas_4d</span><span class="p">,</span><span class="n">N</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
 </pre></div>
 
     </div>

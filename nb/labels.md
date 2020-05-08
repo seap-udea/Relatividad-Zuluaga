@@ -39,5 +39,6 @@
 		* `#dtotal_ejemplos_numericos`
 		* `#tparalelo_cilindricas_numerico`
 		* `#geodesica_cilindricas_numerico`
+		* `#geodesica_esfera`
 	- Labels for 'figure':
 		* `fig:geodesica`
