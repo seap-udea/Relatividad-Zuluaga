@@ -42,3 +42,14 @@
 		* `#geodesica_esfera`
 	- Labels for 'figure':
 		* `fig:geodesica`
+- Labels for '01.05.00.00.RelatividadGeneral.InerciaYGeodesicas.ipynb':
+	- Labels for 'section':
+		* `#geodesica_variacional`
+		* `#geodesicas_inercia`
+		* `#geodesicas_campo_debil`
+		* `#campo_debil_numerico`
+		* `#simetrias_conservacion`
+		* `#metrica_constante`
+		* `#vector_killing`
+		* `#ejemplo_geodesica_cilindricas`
+		* `#ejemplo_geodesica_esfera`

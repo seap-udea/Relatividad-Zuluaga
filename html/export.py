@@ -2,6 +2,169 @@
 # coding: utf-8
 
 # ########################################
+#  .//Prefacio.ipynb
+# ########################################
+
+# ########################################
+#  .//Agradecimientos.ipynb
+# ########################################
+
+# ########################################
+#  .//Introduccion.ipynb
+# ########################################
+
+def calcula_discriminante(a,b,c):
+    disc=b**2-4*a*c
+    return disc
+
+
+# ########################################
+#  .//RelatividadEspecial.ipynb
+# ########################################
+
+# ########################################
+#  .//RelatividadEspecial.ConceptosBasicos.ipynb
+# ########################################
+
+# ########################################
+#  .//RelatividadEspecial.TransformacionesLorentzEinstein.ipynb
+# ########################################
+
+# ########################################
+#  .//RelatividadEspecial.TransformacionesLorentzEinstein.Propiedades.ipynb
+# ########################################
+
+def Lambda_TLE(u):
+    from numpy import zeros
+    Lambda=zeros((4,4))
+    
+    #Factor de Lorentz
+    umag=(u[0]**2+u[1]**2+u[2]**2)**0.5
+    gamma=(1-umag**2)**(-0.5)
+    
+    #Lambda
+    Lambda[0,0]=gamma
+    Lambda[0,1:]=-u*gamma
+    Lambda[1:,0]=-u*gamma
+    for i in range(1,4):
+        for j in range(1,4):
+            dij=0
+            if i==j:dij=1
+            Lambda[i,j]=dij+(gamma-1)*u[i-1]*u[j-1]/umag**2
+    return Lambda
+
+
+def mapa_TLE(ux=0.0,uy=0.0,uz=0.0,
+             rmax=10,ngrid=10,nticks=10,
+             interact=False):
+    from numpy import array
+    u=array([ux,uy,uz])
+    Lambda=Lambda_TLE(-u)
+
+    #Escoge valores de x:
+    from numpy import linspace
+    xs=linspace(0,rmax,ngrid+1,endpoint=True)
+    ts=linspace(0,rmax,ngrid+1,endpoint=True)
+
+    #Calcula valores de t' y x' usando la matriz:
+    from numpy import zeros_like
+    tps=zeros_like(xs)
+    xps=zeros_like(xs)
+
+    from numpy import matmul
+
+    import matplotlib.pyplot as plt
+    fig=plt.figure(figsize=(5,5))
+    ax=fig.gca()
+
+    for t in xs:
+        for i,x in enumerate(xs):
+            tps[i],xps[i],yp,zp=matmul(Lambda,[t,x,0,0])
+        ax.plot(tps,xps,'r-',alpha=0.5)
+
+    for x in xs:
+        for i,t in enumerate(ts):
+            tps[i],xps[i],yp,zp=matmul(Lambda,[t,x,0,0])
+        ax.plot(tps,xps,'r-',alpha=0.5)
+
+    #Decoración
+    ax.set_xticks(linspace(0,rmax,nticks+1,endpoint=True))
+    ax.set_yticks(linspace(0,rmax,nticks+1,endpoint=True))
+    ax.set_xlabel("$t$")
+    ax.set_ylabel("$x$")
+    ax.set_xlim((0,rmax))
+    ax.set_ylim((0,rmax))
+    ax.grid()
+    fig.tight_layout()
+    if not interact:
+        return fig
+
+
+# ########################################
+#  .//RelatividadEspecial.TransformacionesLorentzEinstein.Consecuencias.ipynb
+# ########################################
+
+# ########################################
+#  .//RelatividadEspecial.Minkowski.ipynb
+# ########################################
+
+# ########################################
+#  .//RelatividadEspecial.OpticaRelativista.ipynb
+# ########################################
+
+# ########################################
+#  .//RelatividadEspecial.CinematicaRelativista.Definiciones.ipynb
+# ########################################
+
+# ########################################
+#  .//RelatividadEspecial.CinematicaRelativista.AceleracionPropiaConstante.ipynb
+# ########################################
+
+# ########################################
+#  .//RelatividadEspecial.DinamicaRelativista.EnergiaMomentum.ipynb
+# ########################################
+
+# ########################################
+#  .//RelatividadEspecial.DinamicaRelativista.ColisionesRelativistas.ipynb
+# ########################################
+
+# ########################################
+#  .//RelatividadEspecial.DinamicaRelativista.Cuadrifuerza.ipynb
+# ########################################
+
+# ########################################
+#  .//RelatividadEspecial.DinamicaRelativista.FuerzaDeLorentz.ipynb
+# ########################################
+
+# ########################################
+#  .//RelatividadEspecial.SintesisMecanicaRelativista.ipynb
+# ########################################
+
+# ########################################
+#  .//RelatividadEspecial.Electrodinamica.EcuacionesClasicas.ipynb
+# ########################################
+
+# ########################################
+#  .//RelatividadEspecial.Electrodinamica.CuadriCorrientePotencial.ipynb
+# ########################################
+
+# ########################################
+#  .//RelatividadEspecial.Electrodinamica.TensorFaraday.ipynb
+# ########################################
+
+# ########################################
+#  .//RelatividadEspecial.Electrodinamica.Ejemplos.ipynb
+# ########################################
+
+# ########################################
+#  .//RelatividadEspecial.ProblemasSeleccionados.ipynb
+# ########################################
+
+# ########################################
+#  ./build/probs/RelatividadEspecial.Problemas.ipynb
+# ########################################
+
+# ########################################
 #  .//RelatividadGeneral.ipynb
 # ########################################
 
@@ -52,7 +215,7 @@ def Gamma(xmu,gfun,gargs=(),N=4):
 
 
 from numpy import array
-def g_cilindricas_4d(xmu,mu,p=1):
+def g_cilindricas_4d(xmu,mu):
     """
     Coeficiente métrico g_mumu calculados en el evento xmu 
     para espacio-tiempo plano con coordenadas cilíndricas.
@@ -139,4 +302,30 @@ def ecuacion_geodesica(Y,s,gfun,gargs,N=4):
             for nu in range(N):
                 dYdu[N+pi]+=-G[pi,mu,nu]*dxds[mu]*dxds[nu]
     return dYdu
+
+
+# ########################################
+#  .//RelatividadGeneral.InerciaYGeodesicas.ipynb
+# ########################################
+
+from numpy import array
+def g_newtoniana_4d(xmu,mu,R=1):
+    """
+    Coeficiente métrico g_mumu calculados en el evento xmu 
+    para espacio-tiempo plano con coordenadas cilíndricas.
+    
+    g_munu=diag(A,-1,-r^2,-r^2 sin^2 teta)
+    """
+    from numpy import sin
+    t,r,fi,teta=xmu
+    A=(1-R/r)
+    if mu==0:
+        g=A
+    elif mu==1:
+        g=-1
+    elif mu==2:
+        g=-r**2
+    elif mu==3:
+        g=-r**2*sin(teta)**2
+    return g
 

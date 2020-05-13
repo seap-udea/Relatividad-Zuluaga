@@ -4,11 +4,11 @@ This is free software with ABSOLUTELY NO WARRANTY (use option --warranty)
 
 Reading mybook.bib...ok (61 entries).
 calling BibTeX...This is BibTeX, Version 0.99d (TeX Live 2015)
-The top-level auxiliary file: bib2html511931.aux
+The top-level auxiliary file: bib2htmlb1c4fd.aux
 The style file: ../..//extras/mybook.bst
 Database file #1: mybook.bib
 
-Reading bib2html511931.bbl...ok (61 entries)
+Reading bib2htmlb1c4fd.bbl...ok (61 entries)
 Sorting...ok.
 Making HTML document (mybook.html)...Unknown macro: \apj
 ok

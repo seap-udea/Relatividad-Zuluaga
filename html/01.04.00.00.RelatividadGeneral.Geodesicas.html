@@ -13072,7 +13072,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><a href="index.html">Indice</a> | Previo: <a href="01.03.00.00.RelatividadGeneral.SimbolosChristoffel.html">RelatividadGeneral.SimbolosChristoffel</a> |</p>
+<p><a href="index.html">Indice</a> | Previo: <a href="01.03.00.00.RelatividadGeneral.SimbolosChristoffel.html">RelatividadGeneral.SimbolosChristoffel</a> | Siguiente: <a href="01.05.00.00.RelatividadGeneral.InerciaYGeodesicas.html">RelatividadGeneral.InerciaYGeodesicas</a></p>
 
 </div>
 </div>
@@ -13204,7 +13204,8 @@ $$\frac{\mathrm{d}\mathbf{A}}{\mathrm{d}u}=\frac{\mathrm{d}A^\mu}{\mathrm{d}u}\h
 <p>Aplicando la regla de la cadena para calcular la tasa de cambio del vector de la base obtenemos:
 $$\frac{\mathrm{d}\mathbf{A}}{\mathrm{d}u}=\frac{\mathrm{d}A^\mu}{\mathrm{d}u}\hat{e}_\mu+A^\mu\partial_\alpha\hat{e}_\mu\frac{\mathrm{d}x^\alpha}{\mathrm{d}u}$$</p>
 <p>Las derivadas de cada vector de la base respecto a las coordenadas se pueden expresar en términos de los mismos vectores de la base:</p>
-$$\partial_\alpha\hat{e}_\mu\equiv G^\gamma_{\alpha\mu}\hat{e}_\gamma$$<p>Reemplazando queda:</p>
+$$\partial_\alpha\hat{e}_\mu\equiv G^\gamma_{\alpha\mu}\hat{e}_\gamma$$<p>donde los coeficientes $G^\gamma_{\alpha\mu}$ <em>conectan</em> las derivadas de cada componente de cada vector unitario con las componentes de los demás vectores unitarios de la base.</p>
+<p>Reemplazando queda:</p>
 $$\frac{\mathrm{d}\mathbf{A}}{\mathrm{d}u}=\frac{\mathrm{d}A^\mu}{\mathrm{d}u}\hat{e}_\mu+A^\mu G^\gamma_{\alpha\mu}\hat{e}_\gamma\frac{\mathrm{d}x^\alpha}{\mathrm{d}u}$$<p>que se puede escribir como:
 $$\frac{\mathrm{d}\mathbf{A}}{\mathrm{d}u}=\left(\frac{\mathrm{d}A^\gamma}{\mathrm{d}u}+G^\gamma_{\alpha\mu}A^\mu \frac{\mathrm{d}x^\alpha}{\mathrm{d}u}\right)\hat{e}_\gamma$$</p>
 <p>Para que el vector no varíe a lo largo de la trayectoria es necesario que $\mathrm{d}\mathbf{A}/{\mathrm{d}u}=0$ lo que implica que:</p>
@@ -13243,7 +13244,7 @@ que es justamente la forma de los símbolos de Christoffel.</p>
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Definición 1.2. Geodésica.</strong><a id=''></a> Una trayectoria en un espacio general se define como una geodésica si mantiene a todo lo largo la misma dirección, es decir si el vector tangente $t^\alpha\equiv \mathrm{d}x^\alpha/\mathrm{d}\sigma$ en cada punto es <em>paralelo</em> (en el sentido de <em>transporte paralelo</em>) al vector tangente de cualquier otro punto.  Matemáticamente:</p>
-<blockquote>$$\frac{\mathrm{D}}{\mathrm{d}\sigma}t^\alpha=0$$<p>donde $\sigma$ se conoce como el parámetro afin de la trayectoria.</p>
+<blockquote>$$\frac{\mathrm{D}}{\mathrm{d}\sigma}t^\alpha=0$$<p>donde $\sigma$ se conoce como el <strong>parámetro afin</strong> de la trayectoria.</p>
 </blockquote>
 
 </div>
@@ -13578,9 +13579,9 @@ $$
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Nos proponemos ahora a calcular la geodésica que sigue un cuerpo en el espacio plano dada una condición inicial. La ecuación de la geodésica es:</p>
-$$
+\begin{equation}
 \frac{\mathrm{d^2} x^\mu}{\mathrm{d}\sigma^2} + \Gamma^\mu_{\alpha\gamma} \frac{\mathrm{d} x^\alpha}{\mathrm{d}\sigma}\frac{\mathrm{d} x^\gamma}{\mathrm{d}\sigma}=0
-$$
+\end{equation}
 </div>
 </div>
 </div>
@@ -13965,7 +13966,17 @@ $$
 
 </div>
 </div>
+</div><div style="background:lightgray">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a href="index.html">Indice</a> | Previo: <a href="01.03.00.00.RelatividadGeneral.SimbolosChristoffel.html">RelatividadGeneral.SimbolosChristoffel</a> | Siguiente: <a href="01.05.00.00.RelatividadGeneral.InerciaYGeodesicas.html">RelatividadGeneral.InerciaYGeodesicas</a></p>
+
 </div>
+</div>
+</div>
+    </div>
     </div>
   </div>
 </body>
