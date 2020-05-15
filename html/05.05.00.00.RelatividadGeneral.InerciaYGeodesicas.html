@@ -13072,7 +13072,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><a href="index.html">Indice</a> | Previo: <a href="05.04.00.00.RelatividadGeneral.Geodesicas.html">RelatividadGeneral.Geodesicas</a> |</p>
+<p><a href="index.html">Indice</a> | Previo: <a href="05.04.00.00.RelatividadGeneral.Geodesicas.html">RelatividadGeneral.Geodesicas</a> | Siguiente: <a href="05.06.00.00.RelatividadGeneral.Curvatura.html">RelatividadGeneral.Curvatura</a></p>
 
 </div>
 </div>
@@ -14225,6 +14225,126 @@ $$<p>que es la ecuación de un plano que pasa por el origen de coordenadas y cuy
 
 </div>
 </div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="5.8.5.-Ejemplo:-geod&#233;sicas-en-la-m&#233;trica-de-Newton">5.8.5. Ejemplo: geod&#233;sicas en la m&#233;trica de Newton<a class="anchor-link" href="#5.8.5.-Ejemplo:-geod&#233;sicas-en-la-m&#233;trica-de-Newton">&#182;</a></h3><p><a id='ejemplo_geodesica_newton'></a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Estudiemos ahora el caso físico de la métrica de Newton:</p>
+$$
+\mathrm{d}s^2=A\;\mathrm{d}t_L^2-\;\mathrm{d}\vec{l}^2
+$$<p>donde</p>
+$$
+A\equiv\left(1+\frac{2\Phi}{c^2}\right)
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ol>
+<li><p><strong>Constancia de la métrica</strong>:  En este caso el parametro afin es $D=c$:</p>
+<p>$$
+ \sqrt{g_{\mu\nu}\dot{x}^\mu\dot{x}^\nu}=c
+ $$</p>
+<p>que se escribe explícitamente como:</p>
+<p>$$
+ A\left(c\frac{\mathrm{d} t}{\mathrm{d} \tau}\right)^{2}-\left(\frac{\mathrm{d}\vec{l}}{\mathrm{d} \tau}\right)^{2}=c^2
+ $$</p>
+</li>
+</ol>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ol>
+<li><p><strong>Variables cíclicas</strong>: En este caso $t$ no aparece en la métrica y por lo tanto el vector de Killing es $\xi^\mu:(1,0,0,0)$, de allí que la siguiente cantidad sea constante:</p>
+<p>$$
+A\frac{\mathrm{d} (ct)}{\mathrm{d} \tau}=\kappa
+$$</p>
+</li>
+</ol>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Elevando al cuadrado la última ecuación y dividiendo la primera por el resultado obtenemos:</p>
+$$
+\frac{1}{A}-\frac{1}{c^2 A^2}\left(\frac{\mathrm{d}\vec{l}}{\mathrm{d}t}\right)^{2}=\frac{c^2}{
+\kappa^2}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Si identificamos $v=\mathrm{d}\vec{l}/\mathrm{d}t$ y expandimos:</p>
+$$
+\frac{1}{A}=1-\frac{2\Phi}{c^2}
+$$<p>y 
+$$
+\frac{1}{A^2}=1-\frac{4\Phi}{c^2}
+$$</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>La siguiente relación resulta:</p>
+$$
+1-\frac{2\Phi}{c^2}-\frac{v^2}{c^2}\left(1-\frac{4\Phi}{c^2}\right)=\frac{c^2}{
+\kappa^2}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Si multiplicamos a ambos lados por $c^2$ y dividimos por 2 y despreciamos el término $\Phi/c^2$:</p>
+$$
+\frac{v^2}{2}+\Phi=\frac{c^2}{2}\left(1-\frac{c^2}{k^2}\right)
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Multiplicando a ambos lados por la masa de la partícula obtenemos:</p>
+$$
+\frac{1}{2}mv^2+U=E
+$$<p>donde</p>
+$$
+E\equiv\frac{mc^2}{2}\left(1-\frac{c^2}{k^2}\right)
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Ya sabíamos en la física Newtoniana de esta cuadratura.</p>
+
+</div>
+</div>
 </div><div style="font-size:0.8em;border-top:solid black 1px">
     	 
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
@@ -14235,6 +14355,16 @@ $$<p>que es la ecuación de un plano que pasa por el origen de coordenadas y cuy
 <ol start='1'>
 <li>El nombre de vector de Killing viene del matemático alemán Wilhelm Killing (1847-1923) y no de que sea un vector con una acción <em>asesina</em>.</li>
 </ol>
+
+</div>
+</div>
+</div>
+    </div><div style="background:lightgray">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a href="index.html">Indice</a> | Previo: <a href="05.04.00.00.RelatividadGeneral.Geodesicas.html">RelatividadGeneral.Geodesicas</a> | Siguiente: <a href="05.06.00.00.RelatividadGeneral.Curvatura.html">RelatividadGeneral.Curvatura</a></p>
 
 </div>
 </div>

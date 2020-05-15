@@ -228,3 +228,13 @@
 		* `#vector_killing`
 		* `#ejemplo_geodesica_cilindricas`
 		* `#ejemplo_geodesica_esfera`
+		* `#ejemplo_geodesica_newton`
+- Labels for '05.06.00.00.RelatividadGeneral.Curvatura.ipynb':
+	- Labels for 'section':
+		* `#propiedades_riemann`
+		* `#riemann_diagonal`
+		* `#desviacion_geodesica`
+		* `#riemann_numerico`
+	- Labels for 'figure':
+		* `fig:Figure_38`
+		* `fig:Figure_39`
