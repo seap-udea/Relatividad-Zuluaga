@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
-<title>01.00.00.00.Prefacio</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>04.08.03.00.RelatividadEspecial.Electrodinamica.TensorFaraday</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 <style type="text/css">
@@ -13067,306 +13067,775 @@ div#notebook {
 <body>
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
-
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="1.-Prefacio">1. Prefacio<a class="anchor-link" href="#1.-Prefacio">&#182;</a></h1><p><a id='prefacio'></a></p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>En 2019 celebramos el centenario de la histórica observación de un eclipse total de Sol, liderada por <em>Sir Arthur Eddington</em> y que permitió la primera confirmación experimental de las predicciones de la teoría general de la relatividad.  El primer día de ese mismo año, una nave espacial, la sonda <strong>New Horizons</strong>, sobrevoló el cuerpo astronómico más remoto fotografiado por nuestra especie, el objeto transneptuniano <strong>(486958) Arrokoth</strong>; la misma sonda, cinco años antes, había pasado "rozando" la superficie de Plutón, enviándonos imágenes inesperadas de un mundo sorprendente. Muy lejos de allí, y también en 2019, dos naves espaciales, una japonesa, la sonda <strong>Hayabusa 2</strong> y la otra estaudinense, <strong>OSIRIS-REx</strong>, transmitieron imágenes impactantes desde la superficie de dos pequeños asteroides cercanos a la Tierra, cuerpos que visitaron con el objeto de traer muestras a la Tierra.  Lo que aprendamos de esas muestras podría ayudarnos a evitar un impacto catastrófico futuro.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><a id='fig:utlima_thule'></a><img src="./figures/horizontal_ultima_thule.png" alt="Imagen procesada de Arrokoth, el objeto transneptuniano sobrevolado por la sonda New Horizons el 1 de enero 2019 (crédito: NASA/Johns Hopkins University Applied Physics Laboratory/Southwest Research Institute/Roman Tkachenko.)" width="70.0%"></p>
-<center><b>Figura 1.1</b>. Imagen procesada de Arrokoth, el objeto transneptuniano sobrevolado por la sonda New Horizons el 1 de enero 2019 (crédito: NASA/Johns Hopkins University Applied Physics Laboratory/Southwest Research Institute/Roman Tkachenko.)</center>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Todas estas hazañas de exploración y conocimiento fueron posibles, entre otras, gracias a la <strong>Mecánica Celeste</strong>. Esta disciplina científica, combinación asombrosa de astronomía, física y matemáticas, comenzó con el trabajo teórico pionero de <em>Johanes Kepler</em> a principios de los 1600<a href="05.05.00.00.RelatividadGeneral.InerciaYGeodesicas.html#notaspie_1">$^1$</a>(03.00.00.00.Introduccion.html#introduccion) haremos claridad sobre la nomenlatura usada en el libro para referirnos a los siglos y decenios.]; se estableció con la obra cumbre de <em>Sir Isaac Newton</em>, los <em>Principios Matemáticos de la Filosofía Natural</em> <cite data-cite="Newton1780Principia"><a href="mybook.html#Newton1780Principia">(Newton, 1780)</a></cite>, publicada a finales de los 1600; y alcanzó su apogeo entre los 1700 y los 1800 con los trabajos de matemáticos y astrónomos como <em>Edmund Halley</em>, <em>Leonhard Euler</em>, <em>Pierre-Simon Laplace</em>, <em>Joseph-Louis Lagrange</em>, <em>William Rowan Hamilton</em> y <em>Henri Poincaré</em> (entre muchos otros que mencionaremos en este libro).</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Este libro presenta una visión panorámica de la <strong>mecánica celeste</strong> y en general de la <strong>mecánica analítica</strong> o <strong>mecánica clásica</strong>, que se desarrollo de forma paralela a la primera, inspirada, en muchos casos, por sus problemas. El texto esta dirigido especialmente a quiénes, por su formación o trabajo, están interesados en la aplicación de la mecánica celeste en astronomía o en ingeniería aeroespacial.  Su extensión, énfasis y nivel de profundidad lo hace especialmente adecuado para <strong>estudiantes de pregrado</strong> (licenciatura o bachillerato, dependiendo del país) de cualquier programa científico o técnico, especialmente astronomía, física o ingeniería aeroespacial. Su enfoque computacional, lo podría hacer, además, útil como material de referencia para profesionales de estas disciplinas.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="1.1.-&#191;Otro-libro-de-mec&#225;nica-celeste?">1.1. &#191;Otro libro de mec&#225;nica celeste?<a class="anchor-link" href="#1.1.-&#191;Otro-libro-de-mec&#225;nica-celeste?">&#182;</a></h2><p><a id='otro_libro'></a></p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Al escribir este libro, no pretendo hacer un compendio exhaustivo de los problemas de la Mecánica Celeste, que, durante más de 400 años de historia se ha convertido en una disciplina científica basta y en constante desarrollo.</p>
-<p>Muchos textos en la materia han sido escritos desde los tiempos de Newton, la mayoría en las últimas décadas. Algunos presentan detallados y rigurosos desarrollos matemáticos. Otros están orientados específicamente al Sistema Solar o al movimiento de satélites y vehículos espaciales. Muchos más son buenos libros de texto, la mayoría dirigidos a estudiantes de posgrado (la mecánica celeste es considerada una línea de profundización, tanto en física como en astronomía.)  También se han escrito algunos libros divulgativos y al alcance de aficionados.</p>
-<p>La bibliografía de este libro recoge apenas una muestra de referencias en la materia, que serán citados a lo largo de sus capítulos, y que, de antemano, invito a los lectores a explorar con curiosidad para no quedarse con la punta de el inmenso <em>iceberg</em> que apenas alcanzará a asomarse en estas páginas.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="1.2.-Mec&#225;nica-celeste-en-la-era-de-la-informaci&#243;n">1.2. Mec&#225;nica celeste en la era de la informaci&#243;n<a class="anchor-link" href="#1.2.-Mec&#225;nica-celeste-en-la-era-de-la-informaci&#243;n">&#182;</a></h2><p><a id='celeste_era_informacion'></a></p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Un ingrediente adicional hace a este libro diferente.  Me refiero al enfásis especial que daremos a los algoritmos de la mecánica celeste a través de todo el libro.</p>
-<p>Es un hecho reconocido que la complejidad de muchos problemas de mecánica celeste, en particular aquellos con un interés práctico tales como el diseño de trayectorias de vehículos espaciales, la predicción de la posición precisa de asteroides y cometas que pueden amenazar nuestro planeta o la predicción a largo plazo de la posición de los cuerpos del sistema solar y otros sistema planetarios, ha exigido, casi desde los tiempos de Kepler, el desarrollo y aplicación de métodos numéricos y, más recientemente, su implementación en calculadores y computadores.</p>
-<p>En este sentido, la relación de la mecánica celeste con <em>algoritmos</em> de toda clase, no es comparable con la relación, principalmente utilitaria, que tienen la mayoría de las área de la física con la computación.  Podría decirse, que hoy, es casi impensable saber de mecánica celeste, sin estar familiarizado también con sus algoritmos.</p>
-<p>Pensando en esto, todo el contenido del libro ha sido elaborado usando <em>libretas</em> o <em>notebooks</em> del <a href="https://jupyter.org">Proyecto <code>Jupyter</code></a>. Estas libretas pueden ser obtenidas y usadas por el lector para interactuar con y modificar los algoritmos (el material electrónico esta disponible en el <a href="http://github.com/seap-udea/Relatividad-Zuluaga">sitio en línea</a> del libro).  Estos medios tecnológicos permiten además aprovechar gráficos interactivos y animaciones para entender mejor conceptos que pueden ser difíciles.</p>
-<p>En la versión impresa, los algoritmos se presentarán en cajas especiales de texto como esta:</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
-<span class="n">e</span><span class="o">=</span><span class="mf">0.3</span>
-<span class="n">M</span><span class="o">=</span><span class="mf">0.5</span>
-<span class="n">E</span><span class="o">=</span><span class="n">M</span>
-<span class="n">Eo</span><span class="o">=</span><span class="mi">2</span><span class="o">*</span><span class="n">M</span>
-<span class="k">while</span> <span class="nb">abs</span><span class="p">(</span><span class="n">E</span><span class="o">-</span><span class="n">Eo</span><span class="p">)</span><span class="o">&gt;</span><span class="mf">0.01</span><span class="p">:</span>
-    <span class="n">Eo</span><span class="o">=</span><span class="n">E</span>
-    <span class="n">E</span><span class="o">=</span><span class="n">M</span><span class="o">+</span><span class="n">e</span><span class="o">*</span><span class="n">math</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">E</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;E = &quot;</span><span class="p">,</span><span class="n">E</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>E =  0.6886561865220447
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>¿Puede el lector adivinar qué hace este algoritmo?.  Si no lo hace, espero que sepa en qué lenguaje de programación está escrito.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="1.3.-Mec&#225;nica-celeste-en-Python">1.3. Mec&#225;nica celeste en Python<a class="anchor-link" href="#1.3.-Mec&#225;nica-celeste-en-Python">&#182;</a></h2><p><a id='celeste_python'></a></p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Es casi imposible escribir un libro con algoritmos sin comprometerse con un lenguaje de programación específico (especialmente si queremos que los algoritmos funcionen.)  En el caso de esta edición del libro, el lenguaje elegido es <code>Python</code>.</p>
-<p>Esta siempre será una apuesta arriesgada.  Aunque la mecánica celeste y sus algoritmos no pasarán de "moda", los lenguajes de programación "van y vienen". Es un hecho (poco reconocido) que cientos de libros científicos acumulan polvo por haber comprometido su contenido con lenguajes de programación que hoy no son tan populares (<code>BASIC</code> o  <code>Pascal</code> por ejemplo).</p>
-<p>No sabemos si <code>Python</code> y este libro sufrirán a la larga la misma suerte.  Pero hay tres hechos que <em>sugieren</em> que la popularidad de este lenguaje podría durar más de lo esperado (o al menos esa es mi esperanza).</p>
-<p>El primero es que su sintaxis es muy similar a la del "lenguaje natural".  Considere, por ejemplo, el algoritmo presentado antes (que ya lo sabe, esta escrito en <code>Python</code>) o el siguiente algoritmo, aún más simple:</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">math</span> <span class="k">import</span> <span class="n">pi</span>
-<span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">5</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;pi a la&quot;</span><span class="p">,</span><span class="n">n</span><span class="p">,</span><span class="s2">&quot;es&quot;</span><span class="p">,</span><span class="n">pi</span><span class="o">**</span><span class="n">n</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>pi a la 1 es 3.141592653589793
-pi a la 2 es 9.869604401089358
-pi a la 3 es 31.006276680299816
-pi a la 4 es 97.40909103400242
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Es difícil que estos algoritmos se escriban de manera tan natural en casi cualquier otro lenguaje de programación popular en ciencia (<code>C</code>, <code>FORTRAN</code> o <code>Java</code>) como se pueden escribir en <code>Python</code>.  Este hecho, no solo facilita el aprendizaje del lenguaje, sino también la legibilidad de los algoritmos.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>El segundo hecho que demuestra el promisorio futuro de <code>Python</code> como lenguaje de la computación científica, es la creciente cantidad paquetes, en todas las disciplinas de la ciencia y la técnica, que se escriben permanentemente en este lenguaje y que están disponibles en <a href="https://pypi.org/project/IPy">repositorios públicos</a>. Además, herramientas informáticas muy conocidas (bibliotecas de rutinas, bases de datos, sistemas de información, etc.) escritas originalmente en otros lenguajes, han sido ahora traducidas a <code>Python</code> (<em>pythonizadas</em> si quieren) con el único propósito de que puedan ser usadas por la creciente comunidad de desarrolladores en este lenguaje.</p>
-<p><code>Python</code> se esta convirtiendo, y esta es una conjetura mía, en depositario de décadas de experiencia en ciencia computacional. ¿Cambiará esta tendencia pronto? Lo dudo (o al menos así lo espero, por el bien de este libro).</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Una última razón, pero no por ello, menos importante, para elegir <code>Python</code> como el idioma oficial de los algoritmos en este libro es la existencia de una biblioteca gráfica, robusta y bien documentada, escrita para este lenguaje.  Me refiero por supuesto a <a href="https://matplotlib.org/"><code>matplotlib</code></a>.</p>
-<p>Con la excepción de paquetes científicos que incluyen avanzadas facilidades de graficación, tales como <code>Mathematica</code>, <code>Matlab</code>, o <code>IDL</code> (todos ellos sujetos a algún tipo de pago), la mayoría de los lenguajes de programación dependen, a veces, de complejas bibliotecas gráficas o programas de terceros para hacer, hasta los más sencillos gráficos.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>En <code>Python</code>, hacer un gráfico elemental, es tan simple como escribir:</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">matplotlib</span> inline
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">matplotlib.pyplot</span> <span class="k">import</span> <span class="n">plot</span>
-<span class="n">plot</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">],[</span><span class="mi">1</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">16</span><span class="p">]);</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-
-
-<div class="output_png output_subarea ">
-<img src="data:image/png;base64,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
-"
->
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><a id='fig:01.00.00.00.Prefacio_2'></a><center><b>Figura 1.2.</b> </center></p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Jorge I. Zuluaga</strong></p>
-<p><em>Mes X de 20YY</em></p>
-
-</div>
-</div>
-</div><div style="font-size:0.8em;border-top:solid black 1px">
+<div style="background:lightgray">
     	 
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>NOTAS AL PIE:</strong></p>
-<p><a id='notaspie_1'></a></p>
-<ol start='1'>
-<li>En la [Introducción</li>
-</ol>
+<p><a href="index.html">Indice</a> | Previo: <a href="04.08.02.00.RelatividadEspecial.Electrodinamica.CuadriCorrientePotencial.html">RelatividadEspecial.Electrodinamica.CuadriCorrientePotencial</a> | Siguiente: <a href="04.08.04.00.RelatividadEspecial.Electrodinamica.Ejemplos.html">RelatividadEspecial.Electrodinamica.Ejemplos</a></p>
 
 </div>
 </div>
 </div>
-    </div><div style="background:lightgray">
+    </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="4.16.4.-Los-campos-en-t&#233;rminos-tensoriales">4.16.4. Los campos en t&#233;rminos tensoriales<a class="anchor-link" href="#4.16.4.-Los-campos-en-t&#233;rminos-tensoriales">&#182;</a></h3><p><a id='campos_tensoriales'></a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>La introducción del cuadripotencial nos permite escribir los campos eléctrico y magnético en términos tensoriales, lo que será muy útil para derivar la forma de las ecuaciones de Maxwell manifiestamente covariantes.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Por definición de los potenciales:</p>
+\begin{eqnarray}
+\nonumber
+\vec B &amp; = &amp; \vec{\nabla}\times\vec A\\
+\nonumber
+\vec E &amp; = &amp; -\vec{\nabla}\phi-\frac{1}{c}\frac{\partial\vec A}{\partial t}
+\end{eqnarray}
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Si lo escribimos en términos de las componentes explícitas del cuadripotencial obtenemos:</p>
+$$
+\begin{array}{rcl}
+B^i &amp; = &amp; \sum_{j,k} \epsilon_{ijk} \partial_j A^k\\
+E^i &amp; = &amp; -\partial_i A^0-\partial_0 A^i
+\end{array}
+$$<p>donde $\epsilon_{ijk}$ es el símbolo de Levi-Civita.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Una interesante simetría se produce si escribimos las componentes explícitas:</p>
+$$
+\begin{array}{rcl}
+B^1 &amp; = &amp; \partial_2 A^3-\partial_3 A^2\\
+E^1 &amp; = &amp; -\partial_1 A^0-\partial_0 A^1
+\end{array}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="4.16.5.-El-tensor-de-Faraday">4.16.5. El tensor de Faraday<a class="anchor-link" href="#4.16.5.-El-tensor-de-Faraday">&#182;</a></h3><p><a id='tensor_faraday'></a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Si usamos las componentes contravariantes de la derivada (que implican simplemente un cambio en el signo de las componentes espaciales de las derivadas) podemos escribir:</p>
+$$
+\begin{array}{rcl}
+B^1 &amp; = &amp; -\partial^2 A^3+\partial^2 A^2\\
+E^1 &amp; = &amp; \partial^1 A^0-\partial^0 A^1
+\end{array}
+$$<p>que se puede escribir como:</p>
+$$
+\begin{array}{rcl}
+B^1 &amp; = &amp; -(\partial^2 A^3-\partial^2 A^2)\\
+E^1 &amp; = &amp; -(\partial^0 A^1-\partial^1 A^0)
+\end{array}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>De aquí, si definimos el tensor contravariante de segundo rango:</p>
+$$
+F^{\mu\nu}\equiv\partial^\mu A^\nu - \partial^\nu A^\mu
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Vemos que el campo eléctrico y el campo magnético se pueden escribir en términos de este tensor como:</p>
+$$
+\begin{array}{rcl}
+B^i &amp; = &amp; - \epsilon_{ijk} F^{jk}\\
+E^i &amp; = &amp; - F^{0i}
+\end{array}
+$$<p>donde es importante anotar que en la primera expresión no se usa la convención de suma de Einstein.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Otra manera de verlo podría ser escribir explícitamente las componentes del tensor en coordenadas cartesianas:</p>
+$$
+F^{\mu\nu}:
+\left(
+\begin{array}{cccc}
+0 &amp; -E_x &amp; -E_y &amp; -E_z\\
+E_x &amp; 0 &amp; -B_z &amp; +B_y \\
+E_y &amp; +B_z &amp; 0 &amp; -B_x \\
+E_z &amp; -B_y &amp; +B_x &amp; 0 \\
+\end{array}
+\right)
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Llamamos a $F^{\mu\nu}$ el <strong>tensor electromagnético</strong> o <strong>tensor de Faraday</strong>.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Proposición: Propiedades del tensor de Faraday.</strong><a id=''></a> El tensor de Faraday tiene las siguientes propiedades:</p>
+<blockquote><ul>
+<li><strong>Antisimetría</strong>: $F^{\mu\nu}=-F^{\nu\mu}$</li>
+<li><strong>Traza nula</strong>: $\sum_\mu F^{\mu\mu}=0$</li>
+<li><strong>Propiedad cíclica de la derivada contravariante</strong>: 
+  $$\partial^{[\alpha}F^{\mu\nu]}\equiv\partial^\alpha F^{\mu\nu}+\partial^\mu F^{\nu\alpha}+\partial^\nu F^{\alpha\mu}=0$$</li>
+<li><strong>Determinante invariante</strong>: $\det F^{\mu\nu}=(\vec E\cdot \vec B)^2$</li>
+<li><strong>Escalar</strong>: $F^{\mu\nu}F_{\mu\nu}=2(E^2-B^2)$.</li>
+</ul>
+</blockquote>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="4.16.6.-Ecuaciones-de-Maxwell-y-el-tensor-de-Faraday">4.16.6. Ecuaciones de Maxwell y el tensor de Faraday<a class="anchor-link" href="#4.16.6.-Ecuaciones-de-Maxwell-y-el-tensor-de-Faraday">&#182;</a></h3><p><a id='maxwell_faraday'></a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Las ecuaciones de Maxwell inhomogenéas las habíamos escrito como:</p>
+$$
+\partial_\nu \partial^\mu A^\nu = \frac{4\pi}{c} J^\nu
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Podemos sumar y restar $\partial_\mu\partial^\nu A^\mu$ para obtener:</p>
+$$
+\partial_\mu(\partial^\mu A^\nu-\partial^\nu A^\mu)+ \partial_\mu \partial^\nu A^\mu= \frac{4\pi}{c} J^\nu
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Ahora bien, por el gauge de Lorenz:</p>
+$$
+\frac{1}{c}\frac{\partial\phi}{\partial t}+\vec{\nabla}\cdot\vec{A}=\partial_\mu A^\mu 
+$$<p>y por lo tanto el segundo término en el lado izquierdo es cero.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Con esto las ecuaciones de Maxwell inhomogeneas se pueden escribir en términos del tensor de Faraday como:</p>
+$$
+{F^{\mu\nu}}_{,\mu}=\frac{4\pi}{c}J^\nu
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Qué es la <strong>forma manifiestamente covariante de las ecuaciones inhomogéneas de Maxwell</strong>.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>¿Y las ecuaciones de Maxwell homogéneas?.  Estas ecuaciones son:</p>
+\begin{eqnarray}
+\nonumber
+\vec{\nabla}\cdot\vec{B}&amp;=&amp;0\\
+\nonumber
+\vec{\nabla}\times\vec{E}+\frac{1}{c}\frac{\partial\vec B}{\partial t}&amp;=&amp;0\\
+\end{eqnarray}
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Vemos que se trata de 4 ecuaciones que se pueden escribir también en la forma:</p>
+$$
+\begin{array}{rcl}
+\partial_1 B_x + \partial_2 B_y + \partial_3 B_z &amp; = &amp; 0 \\
+\partial_0 B_x + \partial_2 E_z - \partial_3 E_y &amp; = &amp; 0 \\
+\partial_0 B_y + \partial_3 E_x - \partial_1 E_z &amp; = &amp; 0 \\
+\partial_0 B_z + \partial_1 E_y - \partial_2 E_x &amp; = &amp; 0 \\
+\end{array}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Reemplazando los valores del campo por las respectivas entradas del vector de Faraday estas ecuaciones se pueden escribir como:</p>
+$$
+\begin{array}{rcl}
+\partial_1 F^{32} + \partial_2 F^{13} + \partial_3 F^{21} &amp; = &amp; 0 \\
+\partial_0 F^{32} + \partial_2 F^{30} - \partial_3 F^{20} &amp; = &amp; 0 \\
+\partial_0 F^{13} + \partial_3 F^{10} - \partial_1 F^{30} &amp; = &amp; 0 \\
+\partial_0 F^{21} + \partial_1 F^{20} - \partial_2 F^{10} &amp; = &amp; 0 \\
+\end{array}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Si se cambian las derivadas covariantes por derivadas contravariantes y se reorganizan los índices, se obtienen expresiones que recuerdan una propiedad introducida antes:</p>
+$$
+\begin{array}{rcl}
+\partial^1 F^{23} + \partial^2 F^{31} + \partial^3 F^{12} &amp; = &amp; 0 \\
+\partial^0 F^{32} + \partial^3 F^{20} + \partial^2 F^{03} &amp; = &amp; 0 \\
+\partial^0 F^{13} + \partial^1 F^{30} + \partial^3 F^{10} &amp; = &amp; 0 \\
+\partial^0 F^{21} + \partial^2 F^{10} + \partial^1 F^{02} &amp; = &amp; 0 \\
+\end{array}
+$$<p>que no son otra cosa que la propiedad cíclica de la derivada contravariante del tensor de Faraday:</p>
+$$
+\partial^{[\alpha}F^{\mu\nu]}=0
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="4.16.7.-Transformaci&#243;n-de-los-campos">4.16.7. Transformaci&#243;n de los campos<a class="anchor-link" href="#4.16.7.-Transformaci&#243;n-de-los-campos">&#182;</a></h3><p><a id='transformacion_campos'></a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Llegados a este punto podemos encontrar las leyes de transformación de los campos eléctricos y magnético.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Siendo el tensor de Faraday, un tensor, al pasar de un sistema de referencia inercial a otro  a través de las transformaciones de Lorentz-Einstein $\Lambda^{\mu'}_\nu$ el tensor transforma como:</p>
+$$
+F^{\mu'\nu'}=\Lambda^{\mu'}_\alpha \Lambda^{\nu'}_\beta F^{\alpha\beta}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>¿Cómo puede calcularse esta operación matricialmente? El producto de dos matrices $A$ y $B$ se puede escribir como:</p>
+$$
+(AB)_{ij}=\sum_n A_{in}B_{nj}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Si definimos la matriz $\bar{F}$ como:</p>
+$$
+\bar{F}^{\mu'\beta}=\sum_\alpha \Lambda^{\mu'}_\alpha F^{\alpha\beta}
+$$<p>o bien:</p>
+$$
+\bar{F} = \Lambda F
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Entonces:</p>
+$$
+F^{\mu'\nu'}=\bar{F}^{\mu'\beta} \Lambda^{\nu'}_\beta 
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Por la simetría de la transformación de Lorentz-Einstein:</p>
+$$
+F^{\mu'\nu'}=\bar{F}^{\mu'\beta} (\Lambda^\mathrm{T})^{\beta}_{\nu'} 
+$$<p>que en términos matriciales se puede escribir como:</p>
+$$
+F'=\Lambda F \Lambda^\mathrm{T}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Así es como transforman las componentes de un tensor de segundo rango.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Si usamos la configuración estándar:</p>
+$$
+\Lambda=
+\gamma
+\left(
+\begin{array}{cccc}
+1 &amp; -u_L &amp; 0 &amp; 0 \\
+-u_L &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0\\
+0 &amp; 0 &amp; 0 &amp; 1
+\end{array}
+\right)
+$$<p>puede probarse (ver Problemas al final del capítulo) que las reglas de transformación de los campos eléctricos se pueden escribir como:</p>
+$$
+\begin{array}{rcl}
+E'_x &amp; = &amp; E_x\\
+E'_y &amp; = &amp; \gamma(E_y - u_L B_z)\\
+E'_z &amp; = &amp; \gamma(E_z - u_L B_y)\\
+\end{array}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Y las del campo magnético:</p>
+$$
+\begin{array}{rcl}
+B'_x &amp; = &amp; B_x\\
+B'_y &amp; = &amp; \gamma(B_y + u_L E_z)\\
+B'_z &amp; = &amp; \gamma(B_z - u_L E_y)\\
+\end{array}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Las componentes $E_y$ y $B_z$ de esta transformación coinciden con las que habíamos obtenido en la deducción de las transformaciones de Lorentz-Einstein, con lo que la teoría es completamente consistente.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Es posible mostrar que para una configuración general, la transformación de los campos sería:</p>
+$$
+\begin{array}{rcl}
+\vec{E} &amp; = &amp; \vec{E}' + (\gamma-1)\vec{E}_\perp - \gamma \vec{u}_L\times\vec B\\
+\vec{B} &amp; = &amp; \vec{B}' + (\gamma-1)\vec{B}_\perp + \gamma \vec{u}_L\times\vec E\\
+\end{array}
+$$<p>donde $\vec{E}_\perp$ y  $\vec{B}_\perp$ son los vectores de campo eléctrico y magnético perpendiculares a la velocidad relativa del sistema de referencia.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="4.16.8.-La-fuerza-de-Lorentz">4.16.8. La fuerza de Lorentz<a class="anchor-link" href="#4.16.8.-La-fuerza-de-Lorentz">&#182;</a></h3><p><a id='fuerza_lorentz_covariante'></a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Si bien en la teoría electromagnética clásica, la fuerza de Lorentz se postula, en realidad esta resultad de las transformaciones del tensor de Faraday que vimos en la sección anterior.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Para ello considere por ejemplo el caso de una carga que se mueve en un campo magnético estático $\vec B$.  En el sistema de referencia de la carga ($\vec{u}_L=\vec{v}_L$):</p>
+$$
+\vec{E}' = \gamma_v \vec{v}_L\times\vec B\\
+$$<p>y si postulamos que la fuerza es simplemente $\vec F'=q\vec E'$ la fuerza será:</p>
+$$
+\vec{F}' = \gamma_v q \vec{v}_L\times\vec B\\
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Ahora bien, sabemos de las reglas de transformación de la fuerza que la componente perpendicular transforma como:</p>
+$$
+\vec F_\perp = \frac{\gamma_u^{-1}}{1+\vec{u}_l\cdot\vec{v}'_L} F'_\perp
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Dado que en el sistema de referencia de la carga $\vec v'_L=\vec o$ y que $\vec u_L=\vec v_L$ la fuerza sobre la carga en el sistema de referencia del observador será:</p>
+$$
+\vec F=q \vec{v}_L\times\vec B\\
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Si además hay un campo eléctrico en el sistema del observador (donde la partícula se mueve) la fuerza será entonces:</p>
+$$
+\vec F = q \vec E + \frac{1}{c}q\vec{v}\times \vec B
+$$
+</div>
+</div>
+</div><div style="background:lightgray;border:solid black 2px;pad:10px;margin-left:7em;margin-top:1em;margin-bottom:1em;">
     	 
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><a href="index.html">Indice</a> | Siguiente: <a href="02.00.00.00.Agradecimientos.html">Agradecimientos</a></p>
+<p><strong>Nota 5.16. La fuerza de Lorentz y la rotación del campo de Faraday.</strong><a id=''></a> Una manera e interpretar el resultado anterior y el origen en general de la fuerza de Lorentz podría ser la de pensar de la siguiente manera.  El campo de Faraday cuando solo hay campo magnético tiene solo componentes espaciales.  Cuando una carga eléctrica está en movimiento es como si el campo de Faraday se rotará.  Al rotarse aparecen componentes temporales del campo de Faraday que la carga percibe como campo eléctrico y de allí que experimente una fuerza.</p>
+
+</div>
+</div>
+</div>
+    </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Escribiendo explícitamente la componente $x$ queda:</p>
+$$
+\frac{\mathrm{d}p_x}{\mathrm{d}t}=\frac{q}{c} (cE_x + v_y B_z - v_z B_y)
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Multiplicando por $\gamma$ a ambos lados podemos escribir:</p>
+$$
+\frac{\mathrm{d}P^1}{\mathrm{d}\tau}=\frac{q}{c} (U^0 F^{10} - U^2 F^{12} - U^3 F^{13})
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>De donde podemos proponer la generalización para calcular la cuadrifuerza:</p>
+$$
+f^\mu=\frac{q}{c}F^{\mu\nu}U_\nu
+$$<p>que llevada a un conjunto de cargas se puede escribir como:</p>
+$$
+K^\mu=F^{\mu\nu}J_\nu
+$$<p>donde en esta última expresión $K^\mu$ representa una densidad de fuerza (fuerza por unidad de volumen).</p>
+
+</div>
+</div>
+</div><div style="background:white;border:solid black 2px;pad:10px;margin-left:7em;margin-top:1em;margin-bottom:1em;">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Nota: La componente temporal de la fuerza de Lorentz.</strong><a id=''></a> La generalización presentada en el párrafo anterior apareció simplemente como un ejercicio de inducción, pero no lo es estrictamente.  Si bien las componentes espaciales de la cuadrifuerza siquen la misma regla:</p>
+<blockquote>$$f^i=\frac{q}{c}F^{i\nu}U_\nu$$<p>la componente temporal no tiene porque seguirla.  ¿De dónde viene la idea de que podemos generalizarla a esta componente.  Hagamos el ejercicio uinverso e intentemos determinar en términos de cantidaes convencionales que significa esta componente:</p>
+$$f^0=\frac{q}{c}F^{0\nu}U_\nu=\frac{q}{c}(F^{01} U_1+F^{02} U_2+F^{03} U_3$$<p>Si recordamos que $E^i=-F^{i0}$ y $U_i=-U^i$ entonces:</p>
+$$f^0=\gamma\frac{q}{c}\vec E\cdot \vec v$$<p>en unidades luz y reconociendo que la trifuerza experimentada por una carga en presencia de un campo eléctrico es $\vec F=q\vec E$ obtenemos:</p>
+$$f_L^0=\gamma\vec F\cdot \vec v_L$$<p>que es justamente lo que sabíamos sobre la componente temporal de la fuerza.  Es decir la componente temporal de la fuerza de Lorentz no es otra cosa que la componente temporal de la cuadrifuerza de un campo eléctrico.</p>
+<p>Ahora bien, sabemos también que $f_L^0=\mathrm{d}E/\mathrm{d}t$, siendo $E$ en este contexto, la energía total de la partícula.  De allí que la componente cero de la fuerza de Lorentz es simplemente la potencia de la fuerza de Lorentz, la tasa a la cual se transfiere o remueve energía de la partícula.</p>
+</blockquote>
+
+</div>
+</div>
+</div>
+    </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="4.16.9.-Intrepretaci&#243;n-geom&#233;trica-del-campo-de-Faraday">4.16.9. Intrepretaci&#243;n geom&#233;trica del campo de Faraday<a class="anchor-link" href="#4.16.9.-Intrepretaci&#243;n-geom&#233;trica-del-campo-de-Faraday">&#182;</a></h3><p><a id='geometria_F'></a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Uno de los aspectos más oscuros de la teoría electromagnética es la interpretación intuitiva de cada una de las cantidades relevantes de la teoría.  Si bien la interpretación de los campos es relativamente directa, están asociados con las fuerzas que experimentan partículas y corrientes eléctricas en presencia de ellos, la interpretación de los potenciales es un poco más complicada.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Si eso pasa con la electrodinámica vectorial en tres dimensiones, la electrodinámica covariante en cuatro dimensiones no es menos sencilla.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>La fuerza de Lorentz sin embargo nos ofrece un raro vistazo a la geometría del tensor de Faraday en 4 dimensiones.  Para entenderlo mejor podemos apelar a una cantidad clásica: <strong>el tensor de esfuerzos $\sigma_{ij}$</strong>.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a id='fig:tensor_esfuerzos'></a><img src="./figures/square_tensor_esfuerzos.png" alt="Tensor de esfuerzos." width="70.0%"></p>
+<center><b>Figura 4.26</b>. Tensor de esfuerzos.</center>
+</div>
+</div>
+</div><div style="background:white;border:solid black 2px;pad:10px;margin-left:7em;margin-top:1em;margin-bottom:1em;">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Definición: Tensor de esfuerzos.</strong><a id=''></a> El tensor de esfuerzos es una cantidad clásica usada en la mecánica del continuo para calcular la <em>tracción</em> producida en cualquier punto dentro de un sólido por el material vecino.  La tracción $\vec{T}^{(\hat{n})}$ se define como la fuerza por unidad de área que experimenta el elemento de sólido en dirección de una superficie imaginaria  definida por el vector $\hat{n}$.  La tracción viene dada en términos del tensor de esfuerzos $\sigma_{ij}$ por el producto punto:</p>
+<blockquote>$$\vec{T}^{(\hat{n})}:\left(\sum_i n_i \sigma_{i1},\sum_i n_i \sigma_{i2},\sum_i n_i \sigma_{i3}\right)\equiv \hat{n}\cdot \sigma$$
+</blockquote>
+
+</div>
+</div>
+</div>
+    </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>La característica más interesante y relevante para nuestra discusión es que el producto punto de un vector (dirección) y un tensor de segundo rango (tensor de esfuerzos) produce un vector (tracción).</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Particularmente interesantes son las componentes de la tracción en dirección de los vectores coordenados:</p>
+$$
+\begin{array}{rcl}
+\vec{T}^{(e_1)} &amp; : &amp; (\sigma_{11},\sigma_{12},\sigma_{13})\\
+\vec{T}^{(e_2)} &amp; : &amp; (\sigma_{21},\sigma_{22},\sigma_{23})\\
+\vec{T}^{(e_2)} &amp; : &amp; (\sigma_{31},\sigma_{32},\sigma_{33})
+\end{array}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Escrito de esta manera, nos damos cuenta que las componentes del tensor de esfuerzo en la base $\hat{e}_1, \hat{e}_2, \hat{e}_3$ no son otra cosa que las componentes de las tracciones sobre la superficie en cada una de las direcciones.  Esto le da una interpretación geométrica concreta a la tracción.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Con el tensor de Faraday sucede una situación similar.  La cuadrifuerza de Lorentz $f^\mu$ juega aquí el papel de la tracción y el tensor de Faraday es como el tensor de esfuerzos:</p>
+$$
+f_L^\mu= q F^{\mu\nu} U_{L\nu}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>De modo que uno puede ver las componentes del tensor de Faraday como los factores por los que hace falta multiplicar la velocidad para obtener las componentes de la cuadrifuerza sobre la partícula.  En otros términos, del tensor de Faraday:</p>
+$$
+F^{\mu\nu}:
+\left(
+\begin{array}{cccc}
+0 &amp; -E_x &amp; -E_y &amp; -E_z\\
+E_x &amp; 0 &amp; -B_z &amp; +B_y \\
+E_y &amp; +B_z &amp; 0 &amp; -B_x \\
+E_z &amp; -B_y &amp; +B_x &amp; 0 \\
+\end{array}
+\right)
+$$<p>podemos pasar al cuadrivector de fuerza escrito de la forma:</p>
+$$
+\left(
+\begin{array}{c}
+\mathrm{d}E/\mathrm{d}t\\
+F_{Lx}\\
+F_{Ly}\\
+F_{Lz}
+\end{array}
+\right)
+=
+q
+\left(
+\begin{array}{cccc}
+0 &amp; (-v_{Lx})(-E_x) &amp; (-v_{Ly})(-E_y) &amp; (-v_{Lz})(-E_z)\\
+E_x &amp; 0 &amp; (-v_{Ly})(-B_z) &amp; +(-v_{Lz})B_y \\
+E_y &amp; +(-v_{Lx})B_z &amp; 0 &amp; (-v_{Lz})(-B_x) \\
+E_z &amp; (-v_{Lx})(-B_{Ly}) &amp; +(-v_{Ly})B_x &amp; 0 \\
+\end{array}
+\right)
+$$<p>donde asumimos que sumamos sobre las filas de la matriz anterior (abusando de la notación).</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Es decir, las filas del tensor de Faraday nos dan una idea de cuánto vale la fuerza electromagnética en una determinada dirección.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Ahora bien.  Si hacemos por ejemplo $\vec v:(v_x,0,0)$, la fuerza de Lorentz queda:</p>
+$$
+\left(
+\begin{array}{c}
+\mathrm{d}E/\mathrm{d}t\\
+F_{Lx}\\
+F_{Ly}\\
+F_{Lz}
+\end{array}
+\right)
+=
+q
+\left(
+\begin{array}{c}
+0 + v_x E_x \\
+E_x + 0 \\
+E_y - v_x B_z \\
+E_z + v_x B_y \\
+\end{array}
+\right)
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Es decir, si se proyecta el vector de Faraday sobre una dirección de la velocidad específica el negativo de la columna de correspondiente a la velocidad nos dará las componentes de la fuerza espacial magnética experimentada por la partícula.  Es como si la proyección espacial del tensor de Faraday produjera las fuerzas magnéticas.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Por otro lado si la partícula esta quieta $U_L^\mu:(1,0,0,0)$ entonces:</p>
+$$
+\left(
+\begin{array}{c}
+\mathrm{d}E/\mathrm{d}t\\
+F_{Lx}\\
+F_{Ly}\\
+F_{Lz}
+\end{array}
+\right)
+=
+q
+\left(
+\begin{array}{c}
+0 \\
+E_x  \\
+E_y  \\
+E_z  \\
+\end{array}
+\right)
+$$<p>de modo que podríamos interpretar la proyección temporal del vector de Faraday como relacionada con la fuerza eléctrica experimentada por la partícula.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="4.16.1.-S&#237;ntesis">4.16.1. S&#237;ntesis<a class="anchor-link" href="#4.16.1.-S&#237;ntesis">&#182;</a></h3><p><a id='sintesis'></a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>En síntesis la dinámica de cargas y campos electromagnéticos clásicos se describen con:</p>
+\begin{eqnarray}
+F^{[\mu\nu,\alpha]} &amp; = &amp; 0\\
+{F^{\mu\nu}}_{,\mu} &amp; = &amp; \frac{4\pi}{c}J^\mu\\
+{J^\mu}_{,\nu} &amp; = &amp; 0\\
+f^\mu &amp; = &amp; F^{\mu\nu} J_\nu
+\end{eqnarray}<p>donde $F^{\mu\nu}\equiv\partial^\mu A^\nu-\partial^\nu A^\mu$ y el cuadripotencial cumple ${A^\mu}_{,\mu}=0$ (gauge de Lorenz).</p>
+
+</div>
+</div>
+</div><div style="background:lightgray">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a href="index.html">Indice</a> | Previo: <a href="04.08.02.00.RelatividadEspecial.Electrodinamica.CuadriCorrientePotencial.html">RelatividadEspecial.Electrodinamica.CuadriCorrientePotencial</a> | Siguiente: <a href="04.08.04.00.RelatividadEspecial.Electrodinamica.Ejemplos.html">RelatividadEspecial.Electrodinamica.Ejemplos</a></p>
 
 </div>
 </div>

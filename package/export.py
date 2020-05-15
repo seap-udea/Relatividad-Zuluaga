@@ -180,7 +180,7 @@ def mapa_TLE(ux=0.0,uy=0.0,uz=0.0,
 #  .//RelatividadGeneral.SimbolosChristoffel.ipynb
 # ########################################
 
-def Gamma(xmu,gfun,gargs=(),N=4):
+def Gamma(xmu,gfun,gargs=(),N=4,dxmax=1e-6):
     """
     Calcula todos los símbolos de Christoffel
     gfun: función métrica
@@ -201,13 +201,13 @@ def Gamma(xmu,gfun,gargs=(),N=4):
             gpipi=1/gfun(xmu,pi,*gargs) #g^pipi
             #Coeficientes diagonales
             xd=xmu[pi] #Punto en el que estoy derivando
-            dx=max(0.01,0.1*abs(xd))
+            dx=max(dxmax,dxmax*abs(xd))
             gnunu_pi=derivative(lambda x:gfun(where(index==pi,x,xmu),nu,*gargs),xd,dx)
             G[pi,nu,nu]=-0.5*gpipi*gnunu_pi
             #Coeficientes mixtos
             if nu==pi:continue
             xd=xmu[nu] #Punto en el que estoy derivando
-            dx=max(0.01,0.1*abs(xd))
+            dx=max(dxmax,dxmax*abs(xd))
             gpipi_nu=derivative(lambda x:gfun(where(index==nu,x,xmu),pi,*gargs),xd,dx)
             G[pi,pi,nu]=0.5*gpipi*gpipi_nu
             G[pi,nu,pi]=G[pi,pi,nu]
@@ -307,6 +307,28 @@ def ecuacion_geodesica(Y,s,gfun,gargs,N=4):
 # ########################################
 #  .//RelatividadGeneral.InerciaYGeodesicas.ipynb
 # ########################################
+
+from numpy import array
+def g_newtoniana_4d(xmu,mu,R=1):
+    """
+    Coeficiente métrico g_mumu calculados en el evento xmu 
+    para espacio-tiempo plano con coordenadas cilíndricas.
+    
+    g_munu=diag(A,-1,-r^2,-r^2 sin^2 teta)
+    """
+    from numpy import sin
+    t,r,teta,fi=xmu
+    A=(1-R/r)
+    if mu==0:
+        g=A
+    elif mu==1:
+        g=-1
+    elif mu==2:
+        g=-r**2
+    elif mu==3:
+        g=-r**2*sin(teta)**2
+    return g
+
 
 from numpy import array
 def g_newtoniana_4d(xmu,mu,R=1):
