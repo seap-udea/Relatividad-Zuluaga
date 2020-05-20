@@ -175,7 +175,6 @@
 		* `#principio_galileo`
 		* `#principio_equivalencia_masas`
 		* `#principio_equivalencia_einstein`
-		* `#principio_consistencia`
 		* `#principio_covarianza`
 		* `#tensores_generales`
 - Labels for '05.02.00.00.RelatividadGeneral.TransporteParalelo.ipynb':
@@ -235,6 +234,19 @@
 		* `#riemann_diagonal`
 		* `#desviacion_geodesica`
 		* `#riemann_numerico`
+		* `#desviacion_geodesica_numerica`
 	- Labels for 'figure':
 		* `fig:Figure_38`
 		* `fig:Figure_39`
+- Labels for '05.07.00.00.RelatividadGeneral.PrincipioConsistencia.ipynb':
+	- Labels for 'section':
+		* `#principio_consistencia`
+		* `#ecuacion_campo_general`
+- Labels for '05.08.00.00.RelatividadGeneral.TensorDeMomentumEnergia.ipynb':
+	- Labels for 'section':
+		* `#tensor_momentum_energia`
+		* `#Tmunu_nube`
+		* `#Tmunu_polvo`
+		* `#Tmunu_sigma_munu`
+		* `#Tmunu_fluido_perfecto`
+		* `#conservacion_Tmunu`

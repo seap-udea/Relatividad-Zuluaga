@@ -180,7 +180,7 @@ def mapa_TLE(ux=0.0,uy=0.0,uz=0.0,
 #  .//RelatividadGeneral.SimbolosChristoffel.ipynb
 # ########################################
 
-def Gamma(xmu,gfun,gargs=(),N=4,dxmax=1e-6):
+def Gamma(xmu,gfun,gargs=(),N=4,dxmax=1e-6,alpha=-1,mu=0,nu=0):
     """
     Calcula todos los símbolos de Christoffel
     gfun: función métrica
@@ -211,7 +211,7 @@ def Gamma(xmu,gfun,gargs=(),N=4,dxmax=1e-6):
             gpipi_nu=derivative(lambda x:gfun(where(index==nu,x,xmu),pi,*gargs),xd,dx)
             G[pi,pi,nu]=0.5*gpipi*gpipi_nu
             G[pi,nu,pi]=G[pi,pi,nu]
-    return G
+    return G if alpha<0 else G[alpha,mu,nu]
 
 
 from numpy import array
@@ -421,3 +421,7 @@ def g_newtoniana_4d(xmu,mu,R=1):
         g=-r**2*sin(teta)**2
     return g
 
+
+# ########################################
+#  .//RelatividadGeneral.Curvatura.ipynb
+# ########################################

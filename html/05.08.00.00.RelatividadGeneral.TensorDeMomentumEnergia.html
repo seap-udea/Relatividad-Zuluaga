@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
-<title>05.06.00.00.RelatividadGeneral.Curvatura</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>05.08.00.00.RelatividadGeneral.TensorDeMomentumEnergia</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 <style type="text/css">
@@ -13072,7 +13072,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><a href="index.html">Indice</a> | Previo: <a href="05.05.00.00.RelatividadGeneral.InerciaYGeodesicas.html">RelatividadGeneral.InerciaYGeodesicas</a> | Siguiente: <a href="05.07.00.00.RelatividadGeneral.PrincipioConsistencia.html">RelatividadGeneral.PrincipioConsistencia</a></p>
+<p><a href="index.html">Indice</a> | Previo: <a href="05.07.00.00.RelatividadGeneral.PrincipioConsistencia.html">RelatividadGeneral.PrincipioConsistencia</a> |</p>
 
 </div>
 </div>
@@ -13081,14 +13081,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Transporte-paralelo-y-curvatura-{#tparalelo_curvatura}">Transporte paralelo y curvatura {#tparalelo_curvatura}<a class="anchor-link" href="#Transporte-paralelo-y-curvatura-{#tparalelo_curvatura}">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>En una sección anterior vimos dos situaciones diferentes en el transporte paralelo: en espacio plano y en espacio curvo (ver figuras abajo) y un hecho es notable: al recorrer una trayectoria cerrada en el espacio plano un vector transportado de forma paralela no se modifica.  Sin embargo en otro tipo de espacio (sobre la superficie de una esfera), sobre una trayectoria circular un vector transportado de forma paralela no vuelve a ser lo mismo.</p>
+<h2 id="5.11.-Tensor-de-momentum-energ&#237;a">5.11. Tensor de momentum-energ&#237;a<a class="anchor-link" href="#5.11.-Tensor-de-momentum-energ&#237;a">&#182;</a></h2><p><a id='tensor_momentum_energia'></a></p>
 
 </div>
 </div>
@@ -13096,26 +13089,17 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><a id='fig:Figure_38'></a><img src="./figures/square-tparalelo-plano.png" alt="Figura"></p>
-<center><b>Figura 5.38</b>. Figura</center>
-<a id='fig:Figure_38'></a>![Figura](./figures/square-tparalelo-esferico.png)
-
-<center><b>Figura 5.38</b>. Figura</center>
+<p>Cómo construir una cantidad tensorial $E_{\mu\nu}$ que involucre todas las posibles fuentes de energía que existen en una región del espacio-tiempo dado, tal que:</p>
+$$
+E_{00}=\rho c^2
+$$
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>¿Por qué ocurre esto? ¿de qué depende?</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Otra manera de expresar la diferencia es decir que el vector transportado de forma paralela depene del camino que se siga.  En la figura se muestra el transporte paralelo de un vector $A^\mu$ desde un punto $P$ hasta un punto $Q$ por dos caminos diferentes $\mathrm{d}x^\alpha\rightarrow \mathrm{d}x^\beta$ y $\mathrm{d}x^\beta\rightarrow \mathrm{d}x^\alpha$</p>
+<p>Cualquiera sea la cantidad que construyamos debemos satisfacer el principio de conservación de la energía: dada una región del espacio-tiempo donde hay masa-energía en movimiento, la cantidad de masa-energía debe conservarse.</p>
 
 </div>
 </div>
@@ -13123,15 +13107,13 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><a id='fig:Figure_39'></a><img src="./figures/square-diferencia-curvatura.png" alt="Figura"></p>
-<center><b>Figura 5.39</b>. Figura</center>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>La diferencia a través de los dos recorridos la hemos llamado $\mathrm{d}^2A^\mu$.</p>
+<p>Ya habíamos visto en la electrodinámica que la conservación de la carga se expresa en la forma de la ecuación de continuidad:</p>
+$$
+J^\mu_{,\mu}=0
+$$<p>donde</p>
+$$
+J^{\mu}=\rho \frac{\mathrm{d}x^\mu}{\mathrm{d}t}
+$$<p>donde $\mathrm{d}x^\mu/\mathrm{d}t$ es la velocidad de un elemento de volumen de fluído alrededor del evento en el que la densidad carga es $\rho(x^\nu)$.</p>
 
 </div>
 </div>
@@ -13139,53 +13121,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Usemos la derivada covariante para el transporte paralelo hasta los puntos intermedios $R$ y $S$:</p>
-$$
-A^\mu_{\parallel,\mathrm{R}}=A^\mu+\mathrm{D}_\beta A^\mu \mathrm{d}x^\beta
-$$
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Ror otro lado es transporte de $S$ a $Q$ es:</p>
-$$
-A^\mu_{\parallel,\mathrm{RQ}}=A^\mu_{\parallel,\mathrm{R}}+\mathrm{D}_\alpha A^\mu_{\parallel,\mathrm{R}} \mathrm{d}x^\alpha
-$$<p>reemplazando lo obtenido antes obtenemos:</p>
-$$
-A^\mu_{\parallel,\mathrm{RQ}}=A^\mu+\mathrm{D}_\beta A^\mu \mathrm{d}x^\beta+\mathrm{D}_\alpha A^\mu \mathrm{d}x^\alpha+\mathrm{D}_{\alpha\beta} A^\mu \mathrm{d}x^\alpha\mathrm{d}x^\beta
-$$
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>El recorrido por el otro recorrido es:</p>
-$$
-A^\mu_{\parallel,\mathrm{SQ}}=A^\mu+\mathrm{D}_\alpha A^\mu \mathrm{d}x^\alpha+\mathrm{D}_\beta A^\mu \mathrm{d}x^\beta+\mathrm{D}_{\beta\alpha} A^\mu \mathrm{d}x^\alpha\mathrm{d}x^\beta
-$$
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Tomando la diferencia obtenemos:</p>
-$$
-\mathrm{d}^2 A^\mu=A^\mu_{\parallel,\mathrm{SQ}}-A^\mu_{\parallel,\mathrm{RQ}}=-(\mathrm{D}_{\alpha\beta}-\mathrm{D}_{\beta\alpha}) A^\mu \mathrm{d}x^\alpha\mathrm{d}x^\beta
-$$
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Por otro lado podemos suponer que la diferencia entre el vector transportado por los dos caminos se puede expresar como:</p>
-$$
-\mathrm{d}^2 A^\mu\equiv R^\mu_{\delta\alpha\beta}A^\delta \mathrm{d}x^\alpha\mathrm{d}x^\beta
-$$<p>donde los nuevos coeficientes $R^\mu_{\delta\alpha\beta}$ juegan el papel que en el transporte paralelo convencional jugaban los coeficientes de conexión.</p>
+<p>Si tenemos un sistema formado por partículas puntuales (masa constante), la conservación de la masa se expresa de forma similar.  ¿Cómo generalizar este principio de continuidad a sistemas mecánicos mucho más generales?</p>
 
 </div>
 </div>
@@ -13193,9 +13129,42 @@ $$<p>donde los nuevos coeficientes $R^\mu_{\delta\alpha\beta}$ juegan el papel q
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Comparando encontramos que la manera de cálcular los coeficientes es:</p>
+<p>Una primera idea sería la de definir una corriente más general:</p>
 $$
-R^\mu_{\delta\alpha\beta}A^\delta=-(\mathrm{D}_{\alpha\beta}-\mathrm{D}_{\beta\alpha}) A^\mu 
+J^\mu_q\equiv q \frac{\mathrm{d}x^\mu}{\mathrm{d}t}
+$$<p>donde $q$ es la densidad una cantidad física que asumimos conservada.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>La ecuación de continuidad de la electrodinámica será entonces aquella que corresponde a la conservación de la carga:</p>
+$$
+{J^\mu_{\rho_q}}_{,\mu}=0
+$$<p>donde $Q=\rho_q$ es la densidad de carga eléctrica, mientras que la conservación de la masa será:</p>
+$$
+{J^\mu_{\rho_m}}_{,\mu}=0
+$$<p>donde $Q=\rho_m c^2$ es la densidad de masa.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Pero en mecánica conocemos otras cantidades conservadas, por ejemplo, en ausencia de fuerzas y torques, en una nube de partículas el momentum lineal y angular se conservan.  De modo que podemos definir las corrientes de estas cantidades.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Por ejemplo, la densidad de momentum se puede definir como:</p>
+$$
+{J^\mu}_{\pi_i}=\pi_{i} \frac{\mathrm{d}x^\mu}{\mathrm{d}t}
 $$
 </div>
 </div>
@@ -13203,9 +13172,59 @@ $$
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>O en la notación punto y coma de la derivada covariante:</p>
+<p>donde es importante anotar que $\pi_i$ no es el momentum convencional, sino su densidad (momentum total por unidad de volumen). Esta cantidad sin embargo no es una cantidad muy apropiadad para la relatividad puesto que involucra cantidades vectoriales y tensoriales.  Definamos de forma más general la <strong>densidad de flujo de cuadrimomentum</strong>:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 $$
-R^\mu_{\delta\alpha\beta}A^\delta=-(A^\mu_{;\alpha;\beta}- A^\mu_{;\beta;\alpha}) 
+T^{\mu\nu}\equiv J^\nu_{\pi^\mu} \equiv \pi^\mu \frac{\mathrm{d}x^\nu}{\mathrm{d}t}
+$$<p>donde $\pi^\mu(x^\alpha)$ es la densidad de cuadrimomentum en el evento $x^\alpha$ (cuadrimomentum total de un elemento de volumen por unidad de volumen).</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Esta cantidad recibe, de forma más conveniente, el nombre de <strong>tensor de momentum-energía</strong> y es la cantidad tensorial que estabamos buscando para nuestra ecuación de campo general, como demostraremos enseguida.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="5.11.1.-Tensor-de-momentum-energ&#237;a-para-una-nube-de-part&#237;culas">5.11.1. Tensor de momentum-energ&#237;a para una nube de part&#237;culas<a class="anchor-link" href="#5.11.1.-Tensor-de-momentum-energ&#237;a-para-una-nube-de-part&#237;culas">&#182;</a></h3><p><a id='Tmunu_nube'></a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Para entender mejor lo que es el tensor momentum energía, podemos calcularlo en algunos casos conocidos.  El mejor es el de una <strong>nube de partículas no interactuantes</strong>.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Cada partícula en la nube tiene masa idéntica $m$.  La densidad de número de partículas es $n$.  La velocidad de las partículas en un entorno infinitesimal alrededor de un evento $x^\alpha$ se considera idéntica e igual a $U^\mu(x^\alpha$) y cada partícula tendrá por tanto un cuadrimomentum $P^\mu(x^\alpha)=m U^\mu(x^\alpha)$.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>En estas condiciones la densidad de momentum en la dirección espacial $\mu$ se puede escribir como:</p>
+$$
+\pi^\mu(x^\alpha)=n m U^\mu(x^\alpha)=\rho U^\mu(x^\alpha)
 $$
 </div>
 </div>
@@ -13213,16 +13232,74 @@ $$
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Veamos cómo es la segunda derivada covariante:</p>
+<p>De allí que el tensor de momentum energía será:</p>
 $$
-\begin{array}{rcl}
-{A^\rho}_{;\mu;\nu} &amp; = &amp; ({A^\rho}_{;\nu,\mu})
-+[\Gamma_{\mu\sigma}^\rho {A^\sigma}_{;\nu}]
--\{\Gamma_{\mu\nu}^\lambda {A^\rho}_{;\lambda}\}\\
-&amp;=&amp;({A^\rho}_{,\nu,\mu}+\Gamma^\rho_{\nu\sigma,\mu}A^\sigma+\Gamma^\rho_{\nu\sigma}{A^\sigma}_{,\mu})+\\
-&amp; &amp; +[\Gamma_{\mu\sigma}^\rho {A^\sigma}_{,\nu}+\Gamma_{\mu\sigma}^\rho \Gamma_{\nu\lambda}^\sigma A^\lambda]+\\
-&amp; &amp; -\{\Gamma_{\mu\nu}^\lambda {A^\rho}_{,\lambda}+\Gamma_{\mu\nu}^\lambda \Gamma_{\lambda\sigma}^\rho A^\sigma\}
+T^{\mu\nu}_\mathrm{nube}(x^\alpha)=\frac{\rho}{\gamma_v} U^\mu(x^\alpha) U^\nu(x^\alpha)=\rho_0 U^\mu(x^\alpha) U^\nu(x^\alpha)
+$$<p>donde hemos usado el hecho:</p>
+$$\frac{\mathrm{d}x^\mu}{\mathrm{d}t}=\frac{1}{\gamma_v}U^\mu$$<p>
+y hemos reconocido que</p>
+$$\rho=n m = (\gamma_v n_0) m$$<p>donde $n_0$ es la densidad de número propia en el punto $x^\alpha$ en la que las partículas tienen velocidad $\vec v(x^\alpha)$.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>En síntesis podemos decir que el tensor momentum-energía para una nube de partículas no interactuantes será:</p>
+$$
+T^{\mu\nu}_\mathrm{nube}=\rho_0 U^\mu U^\nu
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Otra manera de escribirlo y como se encuentra comunmente en la literatura es:</p>
+$$
+T^{\mu\nu}_\mathrm{nube}=n\left(\frac{P^\mu P^\nu}{E/c^2}\right) 
+$$<p>donde $E=\gamma m c^2$.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Una componente de interés es la componente temporal que será:</p>
+$$
+T^{00}_\mathrm{nube}= \rho_0 U^0 U^0 = n_0 m \gamma^2 c^2 = (\gamma n_0)(\gamma m c^2)\equiv\varepsilon
+$$<p>donde $\varepsilon\equiv n(\gamma m c^2)$ es la densidad de energía.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>También podemos escribir como:</p>
+$$
+T^{00}_\mathrm{nube}=\gamma \rho c^2
+$$<p>donde $\rho=n m$.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Podemos finalmente escribir explícitamente las componentes del tensor momentum energía:</p>
+$$
+T^{\mu\nu}_\mathrm{nube}=\gamma \rho c^2
+\left(
+\begin{array}{cccc}
+1 &amp; v_x/c &amp; v_y/c &amp; v_z/c \\
+v_x/c &amp; v_x^2/c^2 &amp; v_x v_y/c^2  &amp; v_x v_z/c^2 \\
+v_y/c &amp; v_x v_y/c^2  &amp; v_y^2/c^2 &amp; v_y v_z/c^2 \\
+v_z/c &amp; v_x v_z/c^2  &amp; v_y v_z/c^2  &amp; v_z^2/c^2 
 \end{array}
+\right)
 $$
 </div>
 </div>
@@ -13230,7 +13307,7 @@ $$
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>La derivada contraria ${A^\rho}_{;\nu;\mu}$ se obtiene intercambiando en la expresión anterior $\mu\leftrightarrow\nu$.  Es claro que los términos proporcionales a $\Gamma_{\mu\nu}^\lambda$ serán idénticos en ambas derivadas y se eliminaran.  Lo mismo pasa con los términos ${A^\rho}_{,\nu,\mu}$ y $\Gamma^\rho_{\nu\sigma}{A^\sigma}_{,\mu}$ y $\Gamma_{\mu\sigma}^\rho {A^\sigma}_{,\nu}$ que serán idénticos a los correspondientes en la derivada con los índices cambiados.</p>
+<h3 id="5.11.2.-Tensor-de-momentum-energ&#237;a-para-polvo">5.11.2. Tensor de momentum-energ&#237;a para polvo<a class="anchor-link" href="#5.11.2.-Tensor-de-momentum-energ&#237;a-para-polvo">&#182;</a></h3><p><a id='Tmunu_polvo'></a></p>
 
 </div>
 </div>
@@ -13238,124 +13315,17 @@ $$
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>De modo que nos queda:</p>
+<p>Si la nube de partículas se mueve con velocidad muy pequeña comparada con la velocidad de la luz el tensor será:</p>
 $$
-A^\sigma_{;\mu;\nu}- A^\sigma_{;\nu;\mu}=(\{\Gamma^\rho_{\nu\sigma,\mu} + \Gamma_{\mu\delta}^\rho \Gamma_{\nu\sigma}^\delta\}-\{\mu\leftrightarrow\nu\})A^\sigma
-$$<p>donde la notación $\{\mu\leftrightarrow\nu\}$ indica que lo que hay antes entre llaves se pone igual pero intercambiando los índices $\mu$ por $\nu$ y viceversa.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Volviendo a la definición de los coeficientes $R$ obtenemos entonces que ellos están dados como función de los símbolos de Christoffel y de sus derivadas en la forma más conveniente:</p>
-$$
-{R^\rho}_{\sigma\mu\nu}=\{\Gamma^\rho_{\sigma\mu,\nu} + \Gamma_{\sigma\mu}^\delta \Gamma_{\nu\delta}^\rho \}-\{\mu\leftrightarrow\nu\}
-$$
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Esta cantidad transforma como un tensor (ver Problemas al final del capítulo) y se conoce como el <strong>tensor de Riemann</strong>.</p>
-
-</div>
-</div>
-</div><div style="background:white;border:solid black 2px;pad:10px;margin-left:7em;margin-top:1em;margin-bottom:1em;">
-    	 
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Nota: El tensor de Riemann y la curvatura.</strong><a id=''></a> De acuerdo a lo que habíamos dicho antes, el tensor de Riemann establece si un espacio es curvo o no.  Esta condición puede expresarse de dos maneras:</p>
-<blockquote><ul>
-<li>Si <strong>al menos una</strong> de las componentes del tensor de Riemann es distinta de cero, <strong>el espacio es curvo</strong>.</li>
-<li>Si <strong>todas</strong> las componentes del tensor de Riemann son cero, <strong>el espacio es plano</strong>.</li>
-</ul>
-</blockquote>
-
-</div>
-</div>
-</div>
-    </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="5.8.6.-Propiedades-del-tensor-de-Riemann">5.8.6. Propiedades del tensor de Riemann<a class="anchor-link" href="#5.8.6.-Propiedades-del-tensor-de-Riemann">&#182;</a></h3><p><a id='propiedades_riemann'></a></p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>El tensor de Riemann juega un papel fundamental en la relatividad general de modo que sus propiedades son cruciales para las matemáticas del área.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>La primera propiedad y la más obvia es su antisimetría:</p>
-$$
-{R^\rho}_{\sigma\mu\nu}=-{R^\rho}_{\sigma\nu\mu}\\
-{R^\rho}_{\sigma\mu\nu}+{R^\rho}_{\sigma\nu\mu}=0
-$$<p>que podemos escribir también como:</p>
-$$
-{R^\rho}_{\sigma[\mu\nu]}=0
-$$
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>¿Cuántas componentes tiene el tensor de Riemann?</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>De la misma manera que los símbolos de Christoffel pueden ser pensados como una "pila de matrices", el tensor de Riemann es como una matriz de matrices:</p>
-$$
-{R^\rho}_{\sigma\mu\nu}=({R^\rho}_\sigma)_{\mu\nu}
-$$<p>de donde sabemos que en total el número de componentes totales será $N^4$ y para el espacio-tiempo 256 componentes.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Ahora bien, por la antisimetría de $\mu\nu$ sabemos que la diagonal:</p>
-$$({R^\rho}_\sigma)_{\mu\mu}=0$$<p>y por lo tanto cada matriz de matrices tiene por lo menos $N(N-1)/2$ componentes independientes, para un total de $N^3(N-1)/2$ que en el caso de $N=4$ corresponde a 96 componentes independientes.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>El número de términos encontrados es todavía muy grande, pero puede mostrarse que es menos si se baja el índice superior:</p>
-$$
-R_{\lambda\mu\nu\kappa}=g_{\lambda\rho}{R^{\rho}}_{\mu\nu\kappa}
-$$
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Desarrollando en detalle se puede mostrar (ver Problemas al final del capítulo) que esta versión totalmente covariante del tensor de Riemann es:</p>
-$$
-\begin{array}{rcl}
-R_{\lambda\mu\nu\kappa} &amp; = &amp; -\frac{1}{2}(g_{\mu\nu,\lambda,\kappa}-g_{\nu\lambda,\kappa,\mu}+g_{\lambda\kappa,\mu,\nu}-g_{\kappa\mu,\nu,\lambda})+\\
-&amp; &amp; +g_{\sigma\xi}(\Gamma^\sigma_{\mu\kappa}\Gamma^\xi_{\lambda\nu}-\Gamma^\sigma_{\mu\nu}\Gamma^\xi_{\lambda\kappa})
+T^{\mu\nu}_\mathrm{polvo}=
+\left(
+\begin{array}{cccc}
+\rho_0 c^2 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 
 \end{array}
+\right)
 $$
 </div>
 </div>
@@ -13363,17 +13333,7 @@ $$
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>O en notación más compacta:</p>
-$$
-R_{\lambda\mu\nu\kappa} = -\frac{1}{2} g_{\{\mu\nu,\lambda,\kappa\}}-g_{\alpha\beta}(\Gamma^\alpha_{\mu\nu}\Gamma^\beta_{\lambda\kappa}-\Gamma^\alpha_{\mu\kappa}\Gamma^\beta_{\lambda\nu})
-$$
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Es decir el tensor de Riemann es proporcional a las <strong>segundas derivadas de la métrica</strong>.</p>
+<p>Llamamos a esta situación polvo porque las partículas se mueven lentamente posiblemente debido a que son macroscópicas (galaxias, granos sólidos de polvo, estrellas, etc.)</p>
 
 </div>
 </div>
@@ -13381,19 +13341,7 @@ $$
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Con esta expresión se identifica dos propiedades:</p>
-<ol>
-<li><p>Antisimetría frente al intercambio de los primeros indices:
- $$
- R_{\alpha\beta\mu\nu}=-R_{\beta\alpha\mu\nu}
- $$</p>
-</li>
-<li><p>Simetría frente al intercambio de los pares de índices inicial y final:</p>
-<p>$$
- R_{\alpha\beta\mu\nu}=R_{\mu\nu\beta\alpha}
- $$</p>
-</li>
-</ol>
+<h3 id="5.11.3.-Tensor-$T^{\mu\nu}$-y-el-tensor-de-esfuerzos-$\sigma^{\mu\nu}$">5.11.3. Tensor $T^{\mu\nu}$ y el tensor de esfuerzos $\sigma^{\mu\nu}$<a class="anchor-link" href="#5.11.3.-Tensor-$T^{\mu\nu}$-y-el-tensor-de-esfuerzos-$\sigma^{\mu\nu}$">&#182;</a></h3><p><a id='Tmunu_sigma_munu'></a></p>
 
 </div>
 </div>
@@ -13401,16 +13349,54 @@ $$
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>De modo que tenemos una matriz antisimétrica de matrices antisimétricas.  Eso implica que hay $M=N(N-1)/2$ matrices antisimétricas de $M=N(N-1)/2$ términos, es decir $N^2(N-1)^2/4$, para $N=4$ el número de términos es $4^2(4-1)^2/4=36$ términos independientes.  Esos términos son:</p>
+<p>El tensor de momentum-energía tiene relación con un tensor clásico, el <strong>tensor de esfuerzos de Cauchy</strong>, que también miden el flujo de momentum.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Sabemos que la componente $i$ fuerza que actúa sobre un elemento de volumen es $F^i=\mathrm{d}p^i/\mathrm{d}t$, por tanto la fuerza por unidad de área o tracción $\sigma^i$ medida en la dirección de la superficie en dirección $\hat{e}_j$ será:</p>
 $$
-\begin{array}{cccccc}
-R_{0101}&amp;R_{0102}&amp;R_{0103}&amp;R_{0112}&amp;R_{0113}&amp;R_{0123}\\
-R_{0201}&amp;R_{0202}&amp;R_{0203}&amp;R_{0212}&amp;R_{0213}&amp;R_{0223}\\
-R_{0301}&amp;R_{0302}&amp;R_{0303}&amp;R_{0312}&amp;R_{0313}&amp;R_{0323}\\
-R_{1201}&amp;R_{1202}&amp;R_{1203}&amp;R_{1212}&amp;R_{1213}&amp;R_{1223}\\
-R_{1301}&amp;R_{1302}&amp;R_{1303}&amp;R_{1312}&amp;R_{1313}&amp;R_{1323}\\
-R_{2301}&amp;R_{2302}&amp;R_{2303}&amp;R_{2312}&amp;R_{2313}&amp; R_{2323}\\
+\sigma^i_j\equiv\frac{\mathrm{d}F^i}{\mathrm{d}A^j}=\frac{\mathrm{d}^2 p^i}{\mathrm{d}t\mathrm{d}A^j}
+$$<p>que es justo lo que llamamos el flujo de momentum espacial $p^i$ a través del área $A^j$.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>El tensor de esfuerzos en un medio elástico se puede escribir como:</p>
+$$
+\sigma^i_{j}=
+\left(
+\begin{array}{ccc}
+\sigma_x &amp; \tau_{xy} &amp; \tau_{xz}  \\
+\tau_{yx} &amp; \sigma_y &amp; \tau_{yz}  \\
+\tau_{zx} &amp; \tau_{zy}  &amp; \sigma_z
 \end{array}
+\right)
+$$<p>donde $\sigma_x,\sigma_y,\sigma_z$ se conocen como los resfuerzos normales y $\tau_{ij}$ se conocen como los esfuerzos cortantes.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Con esta definición podemos escribir el tensor de momentum energía mecánico como:</p>
+$$
+T^{\mu\nu}_\mathrm{mec}=
+\left(
+\begin{array}{cccc}
+T^{00} &amp; T^{01} &amp; T^{02} &amp; T^{03} \\
+T^{01} &amp; \sigma^{11} &amp; \sigma^{12} &amp; \sigma^{13} \\
+T^{02} &amp; \sigma^{12} &amp; \sigma^{22} &amp; \sigma^{23} \\
+T^{03} &amp; \sigma^{13} &amp; \sigma^{12} &amp; \sigma^{33} \\
+\end{array}
+\right)
 $$
 </div>
 </div>
@@ -13418,7 +13404,7 @@ $$
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Pero por la propiedad 2 de más arriba, este arreglo cuadrado de términos es simétrico y por lo tanto de todos estos términos hay $6(6+1)/2=21$ términos independientes.</p>
+<h3 id="5.11.4.-Tensor-de-momentum-energ&#237;a-para-flu&#237;do-perfecto">5.11.4. Tensor de momentum-energ&#237;a para flu&#237;do perfecto<a class="anchor-link" href="#5.11.4.-Tensor-de-momentum-energ&#237;a-para-flu&#237;do-perfecto">&#182;</a></h3><p><a id='Tmunu_fluido_perfecto'></a></p>
 
 </div>
 </div>
@@ -13426,43 +13412,34 @@ $$
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>La conclusión hasta ahora es que para que las componentes del tensor de Riemann que sean independientes y potencialmente distintas de 0 <strong>los primeros indíces y los últimos deben ser diferentes entre sí</strong>.  Las componentes $R_{\alpha\alpha\mu\nu}$ o $R_{\alpha\beta\mu\mu}$ son siempre iguales a cero.</p>
-
-</div>
-</div>
-</div><div class="box_theorem">
-    	 
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Proposición: Identidades de Bianchi.</strong><a id=''></a> Hay dos propiedades adicionales del tensor de Riemann que pueden llegar a ser de alguna utilidad:</p>
-<blockquote><ol>
-<li><strong>Primera identidad de Bianchi</strong>: $R_{\alpha[\beta\mu\nu]}=0$</li>
-<li><strong>Segunda identidad de Bianchi</strong>: $R^{\alpha}_{\beta[\mu\nu;\sigma]}=0$</li>
-</ol>
-</blockquote>
-
-</div>
-</div>
-</div>
-    </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="5.8.7.-Tensor-de-Riemann-para-m&#233;tricas-diagonales">5.8.7. Tensor de Riemann para m&#233;tricas diagonales<a class="anchor-link" href="#5.8.7.-Tensor-de-Riemann-para-m&#233;tricas-diagonales">&#182;</a></h3><p><a id='riemann_diagonal'></a></p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Pensemos ahora nuevamente en el caso en el que la métrica es simétrica.  En este caso el tensor de Riemann se simplifica de un general:</p>
+<p>Para un fluído perfecto (no viscosidad, es decir no hay esfuerzos cortantes) en equilibrio hidrodinámico, el tensor de esfuerzos adopta la forma:</p>
 $$
-R_{\lambda\mu\nu\kappa} = -\frac{1}{2} g_{\{\mu\nu,\lambda,\kappa\}}-g_{\alpha\beta}(\Gamma^\alpha_{\mu\nu}\Gamma^\beta_{\lambda\kappa}-\Gamma^\alpha_{\mu\kappa}\Gamma^\beta_{\lambda\nu})
-$$<p>a uno más particular:</p>
+\sigma^i_{j}=
+\left(
+\begin{array}{ccc}
+-p &amp; 0 &amp; 0 \\
+0 &amp; -p &amp; 0 \\
+0 &amp; 0 &amp; -p
+\end{array}
+\right)
+$$<p>donde $p$ es la presión en el fluído.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>El tensor de esfuerzos contravariante será:</p>
 $$
-R_{\lambda\mu\nu\kappa} = -\frac{1}{2} g_{\{\mu\nu,\lambda,\kappa\}}-g_{\alpha\alpha}(\Gamma^\alpha_{\mu\nu}\Gamma^\alpha_{\lambda\kappa}-\Gamma^\alpha_{\mu\kappa}\Gamma^\alpha_{\lambda\nu})
+\sigma^{ij}=g^{ik}\sigma^i_k=
+\left(
+\begin{array}{ccc}
+-g^{11} p &amp; 0 &amp; 0 \\
+0 &amp; -g^{22} p &amp; 0 \\
+0 &amp; 0 &amp; -g^{33} p
+\end{array}
+\right)
 $$
 </div>
 </div>
@@ -13470,19 +13447,17 @@ $$
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>De estos aquellos con $\mu=\nu$ y $\lambda\neq \kappa\neq \mu$ serán:</p>
+<p>Si nos paramos en el sistema de referencia del fluído entonces $T^{00}=\rho_0 c^2$ y $T^{0i}=0$ el tensor momentum-energía será:</p>
 $$
-R_{\lambda\mu\mu\kappa} = -\frac{1}{2} g_{\mu\mu,\lambda,\kappa}-g_{\lambda\lambda}\Gamma^\lambda_{\mu\mu}\Gamma^\lambda_{\lambda\kappa}-g_{\kappa\kappa}\Gamma^\kappa_{\mu\mu}\Gamma^\kappa_{\lambda\kappa}+g_{\mu\mu}\Gamma^\mu_{\mu\kappa}\Gamma^\mu_{\lambda\mu}
-$$
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Y aquellos con $\mu=\nu$ y $\lambda=\kappa$ serán:</p>
-$$
-R_{\lambda\mu\mu\lambda} = -\frac{1}{2} (g_{\mu\mu,\lambda,\lambda}+g_{\lambda\lambda,\mu,\mu})-g_{\alpha\alpha}\Gamma^\alpha_{\mu\mu}\Gamma^\alpha_{\lambda\lambda}+g_{\lambda\lambda}(\Gamma^\lambda_{\mu\lambda})^2+g_{\mu\mu}(\Gamma^\mu_{\mu\lambda})^2
+T^{\mu\nu}_\mathrm{perfecto}=
+\left(
+\begin{array}{cccc}
+\rho_0 c^2 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; -g^{11}p &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; -g^{22}p &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; -g^{33}p \\
+\end{array}
+\right)
 $$
 </div>
 </div>
@@ -13490,49 +13465,9 @@ $$
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Y si todos son diferentes $\mu\neq\nu\neq\lambda\neq\kappa$ entonces $R_{\lambda\mu\nu\kappa}=0$.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Esta condición nos deja un potencial de $21-6=15$ componentes del tensor.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="5.8.8.-Desviaci&#243;n-geod&#233;sica">5.8.8. Desviaci&#243;n geod&#233;sica<a class="anchor-link" href="#5.8.8.-Desviaci&#243;n-geod&#233;sica">&#182;</a></h3><p><a id='desviacion_geodesica'></a></p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Aparte de servir para darnos una idea de si un espacio es curvo o plano ¿qué otra función física tiene el tensor de Riemann per se?</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>El tensor de Riemann esta relacionado con la <strong>marea gravitacional</strong>.  El fenómeno de marea gravitacional se produce cuando en un sistema de referencia en caída libre (que se mueve sobre una geodésica) se observa que partículas dejadas en reposo en el sistema con el tiempo empiezan a separarse unas de otras.  La razón de esto es que las geodésicas tienden a diverger.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Imeginemos dos geodésicas vecinas $x^\mu(\lambda)$ y $y^\mu(\lambda)$ y calculemos el intervalo entre ellas:</p>
+<p>Si ahora observamos el fluído desde un sistema de referencia que se mueve con velocidad $\vec u$ debemos transformar el tensor de acuerdo con las reglas de transformación generales correspondientes a la métrica $g_{\mu\nu}$:</p>
 $$
-\xi^\mu(\lambda)=y^\mu(\lambda)-x^\mu(\lambda)
+T^{\mu'\nu'}_\mathrm{perfecto}={\cal G}^\mu_{\mu'} {\cal G}^\nu_{\nu'} T^{\mu\nu}_\mathrm{perfecto}
 $$
 </div>
 </div>
@@ -13540,22 +13475,9 @@ $$
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>¿Cómo evoluciona $\xi^\mu$?.  Para encontrarlo partimos del hecho de que ambas cumplen con la ecuación geodésica:</p>
-\begin{eqnarray}
-\nonumber
-\frac{\mathrm{d^2} x^\mu}{\mathrm{d}\lambda^2} + \Gamma^\mu_{\alpha\beta} \frac{\mathrm{d} x^\alpha}{\mathrm{d}\lambda}\frac{\mathrm{d} x^\beta}{\mathrm{d}\lambda} &amp; = &amp; 0\\
-\nonumber
-\frac{\mathrm{d^2} y^\mu}{\mathrm{d}\lambda^2} + \Gamma^\mu_{\alpha\beta} \frac{\mathrm{d} y^\alpha}{\mathrm{d}\lambda}\frac{\mathrm{d} y^\beta}{\mathrm{d}\lambda} &amp; = &amp; 0
-\end{eqnarray}
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Si reemplazamos $y^\mu(\lambda)=x^\mu(\lambda)+\xi^\mu(\lambda)$ en su respectiva ecuación geodésica obtenemos:</p>
+<p>Un tedioso cálculo algebraico produce como resultado:</p>
 $$
-\frac{d^{2} x^{\mu}}{d \lambda^{2}}+\frac{d^{2} \xi^{\mu}}{d \lambda^{2}}+\Gamma^{\mu}_{\alpha \beta}(x+\xi)\left(\frac{d x^{\alpha}}{d \lambda}+\frac{d \xi^{\alpha}}{d \lambda}\right)\left(\frac{d x^{\beta}}{d \lambda}+\frac{d \xi^{\beta}}{d \lambda}\right)=0
+T^{\mu\nu}_\mathrm{perfecto}=\left(\rho_0+\frac{p}{c^2}\right)U^\mu U^\nu-pg^{\mu\nu}
 $$
 </div>
 </div>
@@ -13563,1060 +13485,32 @@ $$
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Podemos expandir $\Gamma^{\mu}_{\alpha \beta}(x+\xi)$ usando una serie de Taylor y conservando solo los términos lineales en $\xi$:</p>
-$$
-\Gamma^{\mu}_{\alpha \beta}(x+\xi) \simeq \Gamma_{\alpha \beta}^{\mu}(x)+\Gamma_{\alpha \beta, \sigma}^{\mu}(x) \xi^{\sigma}
-$$
+<h3 id="5.11.5.-La-conservaci&#243;n-de-$T^{\mu\nu}$-y-la-ecuaci&#243;n-geod&#233;sica">5.11.5. La conservaci&#243;n de $T^{\mu\nu}$ y la ecuaci&#243;n geod&#233;sica<a class="anchor-link" href="#5.11.5.-La-conservaci&#243;n-de-$T^{\mu\nu}$-y-la-ecuaci&#243;n-geod&#233;sica">&#182;</a></h3><p><a id='conservacion_Tmunu'></a></p>
+
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Reemplazando obtenemos:</p>
+<p>Recordemos que una de las razones por las que dedujimos el tensor de momentum-energía era pensando justamente en que este tuviera la propiedad de conservación de otras corrientes, a saber:</p>
 $$
-\frac{d^{2} x^{\mu}}{d \lambda^{2}} +\frac{d^{2} \xi^{\mu}}{d \lambda^{2}}+\Gamma^{\mu}_{\alpha \beta} \frac{d x^{\alpha}}{d \lambda} \frac{d x^{\beta}}{d \lambda}+\Gamma_{\alpha \beta, \sigma}^{\mu} \xi^{\sigma} \frac{d x^{\alpha}}{d \lambda} \frac{d x^{\beta}}{d \lambda}+2 \Gamma_{\alpha \beta}^{\mu} \frac{d \xi^{\alpha}}{d \lambda} \frac{d x^{\beta}}{d \lambda}=0
-$$
+{T^{\mu\nu}}_{;\mu}=0
+$$<p>donde hemos escrito en lugar de la derivada "," de la ley de conservación de la cuadricorriente, la derivada covariante ";" de la relatividad general.</p>
+
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Restando término a término esta ecuación de la ecuación de la geodésica para $x^\mu$ obtenemos:</p>
+<p>Es posible partiendo del tensor momentum-energía de una nube de partículas probar que la condición anterior solo se cumple si las partículas de la nube se mueven siguiendo geodésicas (ver Lorenzo, página 295-297):</p>
 $$
-\frac{d^{2} \xi^{\mu}}{d \lambda^{2}}=-\Gamma_{\alpha \beta, \sigma}^{\mu} \xi^{\sigma} \frac{d x^{\alpha}}{d \lambda} \frac{d x^{\beta}}{d \lambda}-2 \Gamma_{\alpha \beta}^{\mu} \frac{d \xi^{\alpha}}{d \lambda} \frac{d x^{\beta}}{d \lambda}
-$$
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Por otro lado tenemos la segunda derivada total covariante de un campo tensorial (ver Problemas propuestos al final del capítulo):</p>
-\begin{eqnarray}
-\frac{D^{2} A^{\mu}}{D \lambda^{2}} &amp; = &amp; \frac{d^{2} A^{\mu}}{d \lambda^{2}} +\Gamma_{\alpha \beta}^{\mu},_{\nu} A^{\alpha} \frac{d x^{\nu}}{d \lambda} \frac{d x^{\beta}}{d \lambda}+2 \Gamma_{\alpha \beta}^{\mu} \frac{d A^{\alpha}}{d \lambda} \frac{d x^{\beta}}{d \lambda} \\
-&amp; &amp; -\Gamma_{\alpha \beta}^{\mu} \Gamma_{\kappa \lambda}^{\beta} A^{\alpha} \frac{d x^{\kappa}}{d \lambda} \frac{d x^{\lambda}}{d \lambda}+\Gamma_{\sigma \rho}^{\mu} \Gamma_{\alpha \beta}^{\sigma} A^{\alpha} \frac{d x^{\beta}}{d \lambda} \frac{d x^{\rho}}{d \lambda}
-\end{eqnarray}
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Si se reemplaza la segunda derivada convencional de la desviación geodésica se obtiene:</p>
-$$
-\frac{D^{2} \xi^{\mu}}{D \lambda^{2}}=-\left(\Gamma^{\mu}_{\beta \alpha, \sigma}-\Gamma_{\beta \sigma,\alpha}^{\mu}+\Gamma_{\beta \alpha}^{\omega} \Gamma_{\omega \sigma}^{\mu}-\Gamma_{\beta \sigma}^{\omega} \Gamma_{\omega \alpha}^{\mu}\right) \xi^{\sigma} \frac{d x^{\beta}}{d \lambda} \frac{d x^{\alpha}}{d \lambda}
-$$<p>donde reconocemos precisamente el tensor de Riemann:</p>
-$$
-\frac{D^{2} \xi^{\mu}}{D \lambda^{2}}=R_{\alpha \sigma \beta}^{\mu} \xi^{\sigma} \frac{d x^{\alpha}}{d \lambda} \frac{d x^{\beta}}{d \lambda}
+\frac{\mathrm{d^2} x^\mu}{\mathrm{d}\sigma^2} + \Gamma^\mu_{\alpha\gamma} \frac{\mathrm{d} x^\alpha}{\mathrm{d}\sigma}\frac{\mathrm{d} x^\gamma}{\mathrm{d}\sigma}=0
 $$
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>A esta última se la llama, la <strong>ecuación de desviación geodésica</strong>.</p>
-
-</div>
-</div>
-</div><div style="background:white;border:solid black 2px;pad:10px;margin-left:7em;margin-top:1em;margin-bottom:1em;">
-    	 
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Nota: Solo hay desviación geodésica en espacio curvo.</strong><a id=''></a> La consecuencia más significativa de la ecuación geodésica es probar justamente lo que habíamos intuído.  En un espacio plano en el que todas las entradasa de $R^\mu_{\alpha\sigma\beta}$ son cero, no hay desviación geodésica.  Es decir dos geodésicas se separaran entre sí a ritmo constante:</p>
-<blockquote>$$\frac{D \xi^{\mu}}{D \lambda}=\mathrm{cte}$$
-</blockquote>
-
-</div>
-</div>
-</div>
-    </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="5.8.9.-Tensor-de-Riemann-num&#233;rico">5.8.9. Tensor de Riemann num&#233;rico<a class="anchor-link" href="#5.8.9.-Tensor-de-Riemann-num&#233;rico">&#182;</a></h3><p><a id='riemann_numerico'></a></p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Con las reglas simplificadas de más arriba podemos diseñar una rutina para calcular el tensor de Riemann numérico.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">GammaRiemann</span><span class="p">(</span><span class="n">xmu</span><span class="p">,</span><span class="n">gfun</span><span class="p">,</span><span class="n">gargs</span><span class="p">,</span><span class="n">N</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span><span class="n">dxmax</span><span class="o">=</span><span class="mf">1e-6</span><span class="p">,</span><span class="n">verbose</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
-    <span class="kn">from</span> <span class="nn">scipy.misc</span> <span class="k">import</span> <span class="n">derivative</span>
-    <span class="kn">from</span> <span class="nn">numpy</span> <span class="k">import</span> <span class="n">zeros</span><span class="p">,</span><span class="n">where</span><span class="p">,</span><span class="n">arange</span>
-    <span class="n">R</span><span class="o">=</span><span class="n">zeros</span><span class="p">((</span><span class="n">N</span><span class="p">,</span><span class="n">N</span><span class="p">,</span><span class="n">N</span><span class="p">,</span><span class="n">N</span><span class="p">))</span>
-    <span class="c1">#Indices</span>
-    <span class="n">index</span><span class="o">=</span><span class="n">arange</span><span class="p">(</span><span class="n">N</span><span class="p">)</span>
-    
-    <span class="c1">#Calcula gamma</span>
-    <span class="kn">from</span> <span class="nn">export</span> <span class="k">import</span> <span class="n">Gamma</span>
-    <span class="n">G</span><span class="o">=</span><span class="n">Gamma</span><span class="p">(</span><span class="n">xmu</span><span class="p">,</span><span class="n">gfun</span><span class="p">,</span><span class="n">gargs</span><span class="p">,</span><span class="n">N</span><span class="p">)</span>
-    <span class="k">if</span> <span class="n">verbose</span><span class="p">:</span><span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s2">&quot;G = </span><span class="se">\n</span><span class="si">{G}</span><span class="s2">&quot;</span><span class="p">)</span>
-    <span class="k">for</span> <span class="n">mu</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">N</span><span class="p">):</span>
-        <span class="k">if</span> <span class="n">verbose</span><span class="p">:</span><span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s2">&quot;mu = </span><span class="si">{mu}</span><span class="s2">&quot;</span><span class="p">)</span>
-        <span class="k">for</span> <span class="n">pi</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">N</span><span class="p">):</span>
-            <span class="k">if</span> <span class="n">pi</span><span class="o">==</span><span class="n">mu</span><span class="p">:</span><span class="k">continue</span>
-            <span class="k">if</span> <span class="n">verbose</span><span class="p">:</span><span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s2">&quot;</span><span class="se">\t</span><span class="s2">pi = </span><span class="si">{pi}</span><span class="s2">&quot;</span><span class="p">)</span>
-            <span class="k">for</span> <span class="n">xi</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">N</span><span class="p">):</span>
-                <span class="k">if</span> <span class="n">xi</span><span class="o">==</span><span class="n">mu</span><span class="p">:</span><span class="k">continue</span>
-                <span class="k">if</span> <span class="n">verbose</span><span class="p">:</span><span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s2">&quot;</span><span class="se">\t\t</span><span class="s2">xi = </span><span class="si">{xi}</span><span class="s2">&quot;</span><span class="p">)</span>
-                <span class="c1">#pi = xi</span>
-                <span class="k">if</span> <span class="n">pi</span><span class="o">==</span><span class="n">xi</span><span class="p">:</span>
-                    <span class="k">if</span> <span class="n">verbose</span><span class="p">:</span><span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s2">&quot;</span><span class="se">\t\t\t</span><span class="s2">pi = xi&quot;</span><span class="p">)</span>
-                    <span class="c1">#g_mumu,pi,pi</span>
-                    <span class="n">xd</span><span class="o">=</span><span class="n">xmu</span><span class="p">[</span><span class="n">pi</span><span class="p">]</span> <span class="c1">#Punto de derivación</span>
-                    <span class="n">dx</span><span class="o">=</span><span class="nb">max</span><span class="p">(</span><span class="n">dxmax</span><span class="p">,</span><span class="n">dxmax</span><span class="o">*</span><span class="nb">abs</span><span class="p">(</span><span class="n">xd</span><span class="p">))</span>
-                    <span class="n">gmumu</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span><span class="n">gfun</span><span class="p">(</span><span class="n">where</span><span class="p">(</span><span class="n">index</span><span class="o">==</span><span class="n">pi</span><span class="p">,</span><span class="n">x</span><span class="p">,</span><span class="n">xmu</span><span class="p">),</span>
-                                        <span class="n">mu</span><span class="p">,</span><span class="o">*</span><span class="n">gargs</span><span class="p">)</span>
-                    <span class="n">gmumu_pi_pi</span><span class="o">=</span><span class="n">derivative</span><span class="p">(</span><span class="n">gmumu</span><span class="p">,</span><span class="n">xd</span><span class="p">,</span><span class="n">dx</span><span class="p">,</span><span class="n">n</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
-                    <span class="k">if</span> <span class="n">verbose</span><span class="p">:</span><span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s2">&quot;</span><span class="se">\t\t\t</span><span class="s2">g_</span><span class="si">{mu}{mu}</span><span class="s2">,</span><span class="si">{pi}</span><span class="s2">,</span><span class="si">{pi}</span><span class="s2"> = </span><span class="si">{gmumu_pi_pi}</span><span class="s2">&quot;</span><span class="p">)</span>
-                    <span class="c1">#g_pipi,mu,mu</span>
-                    <span class="n">xd</span><span class="o">=</span><span class="n">xmu</span><span class="p">[</span><span class="n">mu</span><span class="p">]</span> <span class="c1">#Punto de derivación</span>
-                    <span class="n">dx</span><span class="o">=</span><span class="nb">max</span><span class="p">(</span><span class="n">dxmax</span><span class="p">,</span><span class="n">dxmax</span><span class="o">*</span><span class="nb">abs</span><span class="p">(</span><span class="n">xd</span><span class="p">))</span>
-                    <span class="n">gpipi</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span><span class="n">gfun</span><span class="p">(</span><span class="n">where</span><span class="p">(</span><span class="n">index</span><span class="o">==</span><span class="n">mu</span><span class="p">,</span><span class="n">x</span><span class="p">,</span><span class="n">xmu</span><span class="p">),</span>
-                                        <span class="n">pi</span><span class="p">,</span><span class="o">*</span><span class="n">gargs</span><span class="p">)</span>
-                    <span class="n">gpipi_mu_mu</span><span class="o">=</span><span class="n">derivative</span><span class="p">(</span><span class="n">gpipi</span><span class="p">,</span><span class="n">xd</span><span class="p">,</span><span class="n">dx</span><span class="p">,</span><span class="n">n</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
-                    <span class="k">if</span> <span class="n">verbose</span><span class="p">:</span><span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s2">&quot;</span><span class="se">\t\t\t</span><span class="s2">g_</span><span class="si">{pi}{pi}</span><span class="s2">,</span><span class="si">{mu}</span><span class="s2">,</span><span class="si">{mu}</span><span class="s2"> = </span><span class="si">{gpipi_mu_mu}</span><span class="s2">&quot;</span><span class="p">)</span>
-                    <span class="c1">#Terminos</span>
-                    <span class="n">termino1</span><span class="o">=-</span><span class="mf">0.5</span><span class="o">*</span><span class="p">(</span><span class="n">gmumu_pi_pi</span><span class="o">+</span><span class="n">gpipi_mu_mu</span><span class="p">)</span>
-                    <span class="n">termino2</span><span class="o">=</span><span class="mi">0</span>
-                    <span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="n">arange</span><span class="p">(</span><span class="n">N</span><span class="p">):</span>
-                        <span class="k">if</span> <span class="n">verbose</span><span class="p">:</span><span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s2">&quot;</span><span class="se">\t\t\t\t</span><span class="s2">g_</span><span class="si">{a}{a}</span><span class="s2"> = {gfun(xmu,a,*gargs)}&quot;</span><span class="p">)</span>
-                        <span class="k">if</span> <span class="n">verbose</span><span class="p">:</span><span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s2">&quot;</span><span class="se">\t\t\t\t</span><span class="s2">G^</span><span class="si">{a}</span><span class="s2">_</span><span class="si">{mu}{mu}</span><span class="s2"> = </span><span class="si">{G[a,mu,mu]}</span><span class="s2">&quot;</span><span class="p">)</span>
-                        <span class="k">if</span> <span class="n">verbose</span><span class="p">:</span><span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s2">&quot;</span><span class="se">\t\t\t\t</span><span class="s2">G^</span><span class="si">{a}</span><span class="s2">_</span><span class="si">{pi}{pi}</span><span class="s2"> = </span><span class="si">{G[a,pi,pi]}</span><span class="s2">&quot;</span><span class="p">)</span>
-                        <span class="n">termino2</span><span class="o">-=</span><span class="n">gfun</span><span class="p">(</span><span class="n">xmu</span><span class="p">,</span><span class="n">a</span><span class="p">,</span><span class="o">*</span><span class="n">gargs</span><span class="p">)</span><span class="o">*</span><span class="n">G</span><span class="p">[</span><span class="n">a</span><span class="p">,</span><span class="n">mu</span><span class="p">,</span><span class="n">mu</span><span class="p">]</span><span class="o">*</span><span class="n">G</span><span class="p">[</span><span class="n">a</span><span class="p">,</span><span class="n">pi</span><span class="p">,</span><span class="n">pi</span><span class="p">]</span>
-                    <span class="n">termino3</span><span class="o">=</span><span class="n">gfun</span><span class="p">(</span><span class="n">xmu</span><span class="p">,</span><span class="n">pi</span><span class="p">,</span><span class="o">*</span><span class="n">gargs</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="o">*</span><span class="n">G</span><span class="p">[</span><span class="n">pi</span><span class="p">,</span><span class="n">pi</span><span class="p">,</span><span class="n">mu</span><span class="p">]</span><span class="o">**</span><span class="mi">2</span>
-                    <span class="n">termino4</span><span class="o">=</span><span class="n">gfun</span><span class="p">(</span><span class="n">xmu</span><span class="p">,</span><span class="n">mu</span><span class="p">,</span><span class="o">*</span><span class="n">gargs</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="o">*</span><span class="n">G</span><span class="p">[</span><span class="n">mu</span><span class="p">,</span><span class="n">mu</span><span class="p">,</span><span class="n">pi</span><span class="p">]</span><span class="o">**</span><span class="mi">2</span>
-                    <span class="k">if</span> <span class="n">verbose</span><span class="p">:</span><span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s2">&quot;</span><span class="se">\t\t\t</span><span class="s2">Termino 1 = </span><span class="si">{termino1}</span><span class="s2">&quot;</span><span class="p">)</span>
-                    <span class="k">if</span> <span class="n">verbose</span><span class="p">:</span><span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s2">&quot;</span><span class="se">\t\t\t</span><span class="s2">Termino 2 = </span><span class="si">{termino2}</span><span class="s2">&quot;</span><span class="p">)</span>
-                    <span class="k">if</span> <span class="n">verbose</span><span class="p">:</span><span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s2">&quot;</span><span class="se">\t\t\t</span><span class="s2">Termino 3 = </span><span class="si">{termino3}</span><span class="s2">&quot;</span><span class="p">)</span>
-                    <span class="k">if</span> <span class="n">verbose</span><span class="p">:</span><span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s2">&quot;</span><span class="se">\t\t\t</span><span class="s2">Termino 4 = </span><span class="si">{termino4}</span><span class="s2">&quot;</span><span class="p">)</span>
-                    <span class="n">R</span><span class="p">[</span><span class="n">pi</span><span class="p">,</span><span class="n">mu</span><span class="p">,</span><span class="n">mu</span><span class="p">,</span><span class="n">xi</span><span class="p">]</span><span class="o">=</span><span class="n">termino1</span><span class="o">+</span><span class="n">termino2</span><span class="o">+</span><span class="n">termino3</span><span class="o">+</span><span class="n">termino4</span>
-                    <span class="k">if</span> <span class="n">verbose</span><span class="p">:</span><span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s2">&quot;</span><span class="se">\t\t\t</span><span class="s2">R_</span><span class="si">{pi}{mu}{mu}{xi}</span><span class="s2"> = </span><span class="si">{R[pi,mu,mu,xi]}</span><span class="s2">&quot;</span><span class="p">)</span>
-                <span class="c1">#pi != xi</span>
-                <span class="k">else</span><span class="p">:</span>
-                    <span class="c1">#g_mumu,pi</span>
-                    <span class="k">if</span> <span class="n">verbose</span><span class="p">:</span><span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s2">&quot;</span><span class="se">\t\t\t</span><span class="s2">pi != xi&quot;</span><span class="p">)</span>
-                    <span class="k">def</span> <span class="nf">dgdxpi</span><span class="p">(</span><span class="n">xmu_local</span><span class="p">):</span>
-                        <span class="n">x1d</span><span class="o">=</span><span class="n">xmu_local</span><span class="p">[</span><span class="n">pi</span><span class="p">]</span> <span class="c1">#Punto de derivación</span>
-                        <span class="n">dx1</span><span class="o">=</span><span class="nb">max</span><span class="p">(</span><span class="n">dxmax</span><span class="p">,</span><span class="n">dxmax</span><span class="o">*</span><span class="nb">abs</span><span class="p">(</span><span class="n">x1d</span><span class="p">))</span>
-                        <span class="n">g</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span><span class="n">gfun</span><span class="p">(</span><span class="n">where</span><span class="p">(</span><span class="n">index</span><span class="o">==</span><span class="n">pi</span><span class="p">,</span><span class="n">x</span><span class="p">,</span><span class="n">xmu_local</span><span class="p">),</span>
-                                            <span class="n">mu</span><span class="p">,</span><span class="o">*</span><span class="n">gargs</span><span class="p">)</span>
-                        <span class="n">g_pi</span><span class="o">=</span><span class="n">derivative</span><span class="p">(</span><span class="n">g</span><span class="p">,</span><span class="n">x1d</span><span class="p">,</span><span class="n">dx1</span><span class="p">,</span><span class="n">n</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-                        <span class="k">return</span> <span class="n">g_pi</span>
-                    <span class="c1">#g_mumu,pi,xi</span>
-                    <span class="n">x2d</span><span class="o">=</span><span class="n">xmu</span><span class="p">[</span><span class="n">xi</span><span class="p">]</span> <span class="c1">#Punto de derivación</span>
-                    <span class="n">dx2</span><span class="o">=</span><span class="nb">max</span><span class="p">(</span><span class="n">dxmax</span><span class="p">,</span><span class="n">dxmax</span><span class="o">*</span><span class="nb">abs</span><span class="p">(</span><span class="n">x2d</span><span class="p">))</span>
-                    <span class="n">gmumu_pi</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span><span class="n">dgdxpi</span><span class="p">(</span><span class="n">where</span><span class="p">(</span><span class="n">index</span><span class="o">==</span><span class="n">xi</span><span class="p">,</span><span class="n">x</span><span class="p">,</span><span class="n">xmu</span><span class="p">))</span>
-                    <span class="n">gmumu_pi_xi</span><span class="o">=</span><span class="n">derivative</span><span class="p">(</span><span class="n">gmumu_pi</span><span class="p">,</span><span class="n">x2d</span><span class="p">,</span><span class="n">dx2</span><span class="p">,</span><span class="n">n</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-                    <span class="k">if</span> <span class="n">verbose</span><span class="p">:</span><span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s2">&quot;</span><span class="se">\t\t\t</span><span class="s2">g_</span><span class="si">{mu}{mu}</span><span class="s2">,</span><span class="si">{pi}</span><span class="s2">,</span><span class="si">{xi}</span><span class="s2"> = </span><span class="si">{gmumu_pi_xi}</span><span class="s2">&quot;</span><span class="p">)</span>
-                    <span class="c1">#Terminos</span>
-                    <span class="n">termino1</span><span class="o">=-</span><span class="mf">0.5</span><span class="o">*</span><span class="n">gmumu_pi_xi</span>
-                    <span class="n">termino2</span><span class="o">=-</span><span class="n">gfun</span><span class="p">(</span><span class="n">xmu</span><span class="p">,</span><span class="n">pi</span><span class="p">,</span><span class="o">*</span><span class="n">gargs</span><span class="p">)</span><span class="o">*</span><span class="n">G</span><span class="p">[</span><span class="n">pi</span><span class="p">,</span><span class="n">mu</span><span class="p">,</span><span class="n">mu</span><span class="p">]</span><span class="o">*</span><span class="n">G</span><span class="p">[</span><span class="n">pi</span><span class="p">,</span><span class="n">pi</span><span class="p">,</span><span class="n">xi</span><span class="p">]</span>
-                    <span class="n">termino3</span><span class="o">=-</span><span class="n">gfun</span><span class="p">(</span><span class="n">xmu</span><span class="p">,</span><span class="n">xi</span><span class="p">,</span><span class="o">*</span><span class="n">gargs</span><span class="p">)</span><span class="o">*</span><span class="n">G</span><span class="p">[</span><span class="n">xi</span><span class="p">,</span><span class="n">mu</span><span class="p">,</span><span class="n">mu</span><span class="p">]</span><span class="o">*</span><span class="n">G</span><span class="p">[</span><span class="n">xi</span><span class="p">,</span><span class="n">xi</span><span class="p">,</span><span class="n">pi</span><span class="p">]</span>
-                    <span class="n">termino4</span><span class="o">=-</span><span class="n">gfun</span><span class="p">(</span><span class="n">xmu</span><span class="p">,</span><span class="n">mu</span><span class="p">,</span><span class="o">*</span><span class="n">gargs</span><span class="p">)</span><span class="o">*</span><span class="n">G</span><span class="p">[</span><span class="n">mu</span><span class="p">,</span><span class="n">mu</span><span class="p">,</span><span class="n">pi</span><span class="p">]</span><span class="o">*</span><span class="n">G</span><span class="p">[</span><span class="n">mu</span><span class="p">,</span><span class="n">mu</span><span class="p">,</span><span class="n">xi</span><span class="p">]</span>
-                    <span class="n">R</span><span class="p">[</span><span class="n">pi</span><span class="p">,</span><span class="n">mu</span><span class="p">,</span><span class="n">mu</span><span class="p">,</span><span class="n">xi</span><span class="p">]</span><span class="o">=</span><span class="n">termino1</span><span class="o">+</span><span class="n">termino2</span><span class="o">+</span><span class="n">termino3</span><span class="o">+</span><span class="n">termino4</span>
-                <span class="c1">#print(f&quot;Filling: {pi},{mu},{mu},{xi}&quot;)</span>
-                <span class="n">R</span><span class="p">[</span><span class="n">mu</span><span class="p">,</span><span class="n">pi</span><span class="p">,</span><span class="n">mu</span><span class="p">,</span><span class="n">xi</span><span class="p">]</span><span class="o">=-</span><span class="n">R</span><span class="p">[</span><span class="n">pi</span><span class="p">,</span><span class="n">mu</span><span class="p">,</span><span class="n">mu</span><span class="p">,</span><span class="n">xi</span><span class="p">]</span>
-                <span class="n">R</span><span class="p">[</span><span class="n">mu</span><span class="p">,</span><span class="n">pi</span><span class="p">,</span><span class="n">xi</span><span class="p">,</span><span class="n">mu</span><span class="p">]</span><span class="o">=-</span><span class="n">R</span><span class="p">[</span><span class="n">pi</span><span class="p">,</span><span class="n">mu</span><span class="p">,</span><span class="n">mu</span><span class="p">,</span><span class="n">xi</span><span class="p">]</span>
-                <span class="n">R</span><span class="p">[</span><span class="n">mu</span><span class="p">,</span><span class="n">xi</span><span class="p">,</span><span class="n">mu</span><span class="p">,</span><span class="n">pi</span><span class="p">]</span><span class="o">=+</span><span class="n">R</span><span class="p">[</span><span class="n">pi</span><span class="p">,</span><span class="n">mu</span><span class="p">,</span><span class="n">mu</span><span class="p">,</span><span class="n">xi</span><span class="p">]</span>
-                <span class="n">R</span><span class="p">[</span><span class="n">xi</span><span class="p">,</span><span class="n">mu</span><span class="p">,</span><span class="n">pi</span><span class="p">,</span><span class="n">mu</span><span class="p">]</span><span class="o">=-</span><span class="n">R</span><span class="p">[</span><span class="n">pi</span><span class="p">,</span><span class="n">mu</span><span class="p">,</span><span class="n">mu</span><span class="p">,</span><span class="n">xi</span><span class="p">]</span>
-                <span class="n">R</span><span class="p">[</span><span class="n">mu</span><span class="p">,</span><span class="n">xi</span><span class="p">,</span><span class="n">pi</span><span class="p">,</span><span class="n">mu</span><span class="p">]</span><span class="o">=-</span><span class="n">R</span><span class="p">[</span><span class="n">pi</span><span class="p">,</span><span class="n">mu</span><span class="p">,</span><span class="n">mu</span><span class="p">,</span><span class="n">xi</span><span class="p">]</span>
-                <span class="n">R</span><span class="p">[</span><span class="n">xi</span><span class="p">,</span><span class="n">mu</span><span class="p">,</span><span class="n">mu</span><span class="p">,</span><span class="n">pi</span><span class="p">]</span><span class="o">=+</span><span class="n">R</span><span class="p">[</span><span class="n">pi</span><span class="p">,</span><span class="n">mu</span><span class="p">,</span><span class="n">mu</span><span class="p">,</span><span class="n">xi</span><span class="p">]</span>
-    <span class="k">return</span> <span class="n">G</span><span class="p">,</span><span class="n">R</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Probemósla con la esfera:</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">export</span> <span class="k">import</span> <span class="n">g_esfera_2d</span>
-<span class="kn">from</span> <span class="nn">numpy</span> <span class="k">import</span> <span class="n">pi</span>
-<span class="n">xmu</span><span class="o">=</span><span class="p">[</span><span class="n">pi</span><span class="o">/</span><span class="mi">6</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span>
-<span class="n">R</span><span class="o">=</span><span class="mi">1</span>
-<span class="n">N</span><span class="o">=</span><span class="mi">2</span>
-<span class="n">Gama</span><span class="p">,</span><span class="n">Riemann</span><span class="o">=</span><span class="n">GammaRiemann</span><span class="p">(</span><span class="n">xmu</span><span class="p">,</span><span class="n">g_esfera_2d</span><span class="p">,(</span><span class="n">R</span><span class="p">,),</span><span class="n">N</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>G = 
-[[[-0.          0.        ]
-  [ 0.          0.4330127 ]]
-
- [[-0.         -0.57735027]
-  [-0.57735027 -0.        ]]]
-mu = 0
-	pi = 1
-		xi = 1
-			pi = xi
-			g_00,1,1 = 0.0
-			g_11,0,0 = -1.000088900582341
-				g_00 = 1
-				G^0_00 = -0.0
-				G^0_11 = 0.4330127019169794
-				g_11 = 0.7500000000000001
-				G^1_00 = -0.0
-				G^1_11 = -0.0
-			Termino 1 = 0.5000444502911705
-			Termino 2 = 0.0
-			Termino 3 = 0.18750000002144285
-			Termino 4 = 0.0
-			R_1001 = 0.6875444503126134
-mu = 1
-	pi = 0
-		xi = 0
-			pi = xi
-			g_11,0,0 = -1.000088900582341
-			g_00,1,1 = 0.0
-				g_00 = 1
-				G^0_11 = 0.4330127019169794
-				G^0_00 = -0.0
-				g_11 = 0.7500000000000001
-				G^1_11 = -0.0
-				G^1_00 = -0.0
-			Termino 1 = 0.5000444502911705
-			Termino 2 = 0.0
-			Termino 3 = 0.0
-			Termino 4 = 0.18750000002144285
-			R_0110 = 0.6875444503126134
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">Riemann</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[3]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>array([[[[ 0.        ,  0.        ],
-         [ 0.        ,  0.        ]],
-
-        [[ 0.        , -0.68754445],
-         [ 0.68754445,  0.        ]]],
-
-
-       [[[ 0.        , -0.68754445],
-         [ 0.68754445,  0.        ]],
-
-        [[ 0.        ,  0.        ],
-         [ 0.        ,  0.        ]]]])</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Ahora probémoslo con el espacio tiempo plano:</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">export</span> <span class="k">import</span> <span class="n">g_cilindricas_4d</span>
-<span class="n">xmu</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span>
-<span class="n">N</span><span class="o">=</span><span class="mi">4</span>
-<span class="n">Gama</span><span class="p">,</span><span class="n">Riemann</span><span class="o">=</span><span class="n">GammaRiemann</span><span class="p">(</span><span class="n">xmu</span><span class="p">,</span><span class="n">g_cilindricas_4d</span><span class="p">,(),</span><span class="n">N</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>G = 
-[[[-0.   0.   0.   0. ]
-  [ 0.  -0.   0.   0. ]
-  [ 0.   0.  -0.   0. ]
-  [ 0.   0.   0.  -0. ]]
-
- [[ 0.  -0.   0.   0. ]
-  [-0.   0.  -0.  -0. ]
-  [ 0.  -0.  -2.   0. ]
-  [ 0.  -0.   0.   0. ]]
-
- [[ 0.   0.  -0.   0. ]
-  [ 0.   0.   0.5  0. ]
-  [-0.   0.5  0.  -0. ]
-  [ 0.   0.  -0.   0. ]]
-
- [[ 0.   0.   0.  -0. ]
-  [ 0.   0.   0.  -0. ]
-  [ 0.   0.   0.  -0. ]
-  [-0.  -0.  -0.   0. ]]]
-mu = 0
-	pi = 1
-		xi = 1
-			pi = xi
-			g_00,1,1 = 0.0
-			g_11,0,0 = 0.0
-				g_00 = 1
-				G^0_00 = -0.0
-				G^0_11 = -0.0
-				g_11 = -1
-				G^1_00 = 0.0
-				G^1_11 = 0.0
-				g_22 = -4
-				G^2_00 = 0.0
-				G^2_11 = 0.0
-				g_33 = -1
-				G^3_00 = 0.0
-				G^3_11 = 0.0
-			Termino 1 = -0.0
-			Termino 2 = 0.0
-			Termino 3 = 0.0
-			Termino 4 = 0.0
-			R_1001 = 0.0
-		xi = 2
-			pi != xi
-			g_00,1,2 = 0.0
-		xi = 3
-			pi != xi
-			g_00,1,3 = 0.0
-	pi = 2
-		xi = 1
-			pi != xi
-			g_00,2,1 = 0.0
-		xi = 2
-			pi = xi
-			g_00,2,2 = 0.0
-			g_22,0,0 = 0.0
-				g_00 = 1
-				G^0_00 = -0.0
-				G^0_22 = -0.0
-				g_11 = -1
-				G^1_00 = 0.0
-				G^1_22 = -2.000000000002
-				g_22 = -4
-				G^2_00 = 0.0
-				G^2_22 = 0.0
-				g_33 = -1
-				G^3_00 = 0.0
-				G^3_22 = 0.0
-			Termino 1 = -0.0
-			Termino 2 = 0.0
-			Termino 3 = 0.0
-			Termino 4 = 0.0
-			R_2002 = 0.0
-		xi = 3
-			pi != xi
-			g_00,2,3 = 0.0
-	pi = 3
-		xi = 1
-			pi != xi
-			g_00,3,1 = 0.0
-		xi = 2
-			pi != xi
-			g_00,3,2 = 0.0
-		xi = 3
-			pi = xi
-			g_00,3,3 = 0.0
-			g_33,0,0 = 0.0
-				g_00 = 1
-				G^0_00 = -0.0
-				G^0_33 = -0.0
-				g_11 = -1
-				G^1_00 = 0.0
-				G^1_33 = 0.0
-				g_22 = -4
-				G^2_00 = 0.0
-				G^2_33 = 0.0
-				g_33 = -1
-				G^3_00 = 0.0
-				G^3_33 = 0.0
-			Termino 1 = -0.0
-			Termino 2 = 0.0
-			Termino 3 = 0.0
-			Termino 4 = 0.0
-			R_3003 = 0.0
-mu = 1
-	pi = 0
-		xi = 0
-			pi = xi
-			g_11,0,0 = 0.0
-			g_00,1,1 = 0.0
-				g_00 = 1
-				G^0_11 = -0.0
-				G^0_00 = -0.0
-				g_11 = -1
-				G^1_11 = 0.0
-				G^1_00 = 0.0
-				g_22 = -4
-				G^2_11 = 0.0
-				G^2_00 = 0.0
-				g_33 = -1
-				G^3_11 = 0.0
-				G^3_00 = 0.0
-			Termino 1 = -0.0
-			Termino 2 = 0.0
-			Termino 3 = 0.0
-			Termino 4 = 0.0
-			R_0110 = 0.0
-		xi = 2
-			pi != xi
-			g_11,0,2 = 0.0
-		xi = 3
-			pi != xi
-			g_11,0,3 = 0.0
-	pi = 2
-		xi = 0
-			pi != xi
-			g_11,2,0 = 0.0
-		xi = 2
-			pi = xi
-			g_11,2,2 = 0.0
-			g_22,1,1 = -1.999733711954832
-				g_00 = 1
-				G^0_11 = -0.0
-				G^0_22 = -0.0
-				g_11 = -1
-				G^1_11 = 0.0
-				G^1_22 = -2.000000000002
-				g_22 = -4
-				G^2_11 = 0.0
-				G^2_22 = 0.0
-				g_33 = -1
-				G^3_11 = 0.0
-				G^3_22 = 0.0
-			Termino 1 = 0.999866855977416
-			Termino 2 = 0.0
-			Termino 3 = 4.000000000008001
-			Termino 4 = 0.0
-			R_2112 = 4.999866855985417
-		xi = 3
-			pi != xi
-			g_11,2,3 = 0.0
-	pi = 3
-		xi = 0
-			pi != xi
-			g_11,3,0 = 0.0
-		xi = 2
-			pi != xi
-			g_11,3,2 = 0.0
-		xi = 3
-			pi = xi
-			g_11,3,3 = 0.0
-			g_33,1,1 = 0.0
-				g_00 = 1
-				G^0_11 = -0.0
-				G^0_33 = -0.0
-				g_11 = -1
-				G^1_11 = 0.0
-				G^1_33 = 0.0
-				g_22 = -4
-				G^2_11 = 0.0
-				G^2_33 = 0.0
-				g_33 = -1
-				G^3_11 = 0.0
-				G^3_33 = 0.0
-			Termino 1 = -0.0
-			Termino 2 = 0.0
-			Termino 3 = 0.0
-			Termino 4 = 0.0
-			R_3113 = 0.0
-mu = 2
-	pi = 0
-		xi = 0
-			pi = xi
-			g_22,0,0 = 0.0
-			g_00,2,2 = 0.0
-				g_00 = 1
-				G^0_22 = -0.0
-				G^0_00 = -0.0
-				g_11 = -1
-				G^1_22 = -2.000000000002
-				G^1_00 = 0.0
-				g_22 = -4
-				G^2_22 = 0.0
-				G^2_00 = 0.0
-				g_33 = -1
-				G^3_22 = 0.0
-				G^3_00 = 0.0
-			Termino 1 = -0.0
-			Termino 2 = 0.0
-			Termino 3 = 0.0
-			Termino 4 = 0.0
-			R_0220 = 0.0
-		xi = 1
-			pi != xi
-			g_22,0,1 = 0.0
-		xi = 3
-			pi != xi
-			g_22,0,3 = 0.0
-	pi = 1
-		xi = 0
-			pi != xi
-			g_22,1,0 = 0.0
-		xi = 1
-			pi = xi
-			g_22,1,1 = -1.999733711954832
-			g_11,2,2 = 0.0
-				g_00 = 1
-				G^0_22 = -0.0
-				G^0_11 = -0.0
-				g_11 = -1
-				G^1_22 = -2.000000000002
-				G^1_11 = 0.0
-				g_22 = -4
-				G^2_22 = 0.0
-				G^2_11 = 0.0
-				g_33 = -1
-				G^3_22 = 0.0
-				G^3_11 = 0.0
-			Termino 1 = 0.999866855977416
-			Termino 2 = 0.0
-			Termino 3 = 0.0
-			Termino 4 = 4.000000000008001
-			R_1221 = 4.999866855985417
-		xi = 3
-			pi != xi
-			g_22,1,3 = 0.0
-	pi = 3
-		xi = 0
-			pi != xi
-			g_22,3,0 = 0.0
-		xi = 1
-			pi != xi
-			g_22,3,1 = 0.0
-		xi = 3
-			pi = xi
-			g_22,3,3 = 0.0
-			g_33,2,2 = 0.0
-				g_00 = 1
-				G^0_22 = -0.0
-				G^0_33 = -0.0
-				g_11 = -1
-				G^1_22 = -2.000000000002
-				G^1_33 = 0.0
-				g_22 = -4
-				G^2_22 = 0.0
-				G^2_33 = 0.0
-				g_33 = -1
-				G^3_22 = 0.0
-				G^3_33 = 0.0
-			Termino 1 = -0.0
-			Termino 2 = 0.0
-			Termino 3 = 0.0
-			Termino 4 = 0.0
-			R_3223 = 0.0
-mu = 3
-	pi = 0
-		xi = 0
-			pi = xi
-			g_33,0,0 = 0.0
-			g_00,3,3 = 0.0
-				g_00 = 1
-				G^0_33 = -0.0
-				G^0_00 = -0.0
-				g_11 = -1
-				G^1_33 = 0.0
-				G^1_00 = 0.0
-				g_22 = -4
-				G^2_33 = 0.0
-				G^2_00 = 0.0
-				g_33 = -1
-				G^3_33 = 0.0
-				G^3_00 = 0.0
-			Termino 1 = -0.0
-			Termino 2 = 0.0
-			Termino 3 = 0.0
-			Termino 4 = 0.0
-			R_0330 = 0.0
-		xi = 1
-			pi != xi
-			g_33,0,1 = 0.0
-		xi = 2
-			pi != xi
-			g_33,0,2 = 0.0
-	pi = 1
-		xi = 0
-			pi != xi
-			g_33,1,0 = 0.0
-		xi = 1
-			pi = xi
-			g_33,1,1 = 0.0
-			g_11,3,3 = 0.0
-				g_00 = 1
-				G^0_33 = -0.0
-				G^0_11 = -0.0
-				g_11 = -1
-				G^1_33 = 0.0
-				G^1_11 = 0.0
-				g_22 = -4
-				G^2_33 = 0.0
-				G^2_11 = 0.0
-				g_33 = -1
-				G^3_33 = 0.0
-				G^3_11 = 0.0
-			Termino 1 = -0.0
-			Termino 2 = 0.0
-			Termino 3 = 0.0
-			Termino 4 = 0.0
-			R_1331 = 0.0
-		xi = 2
-			pi != xi
-			g_33,1,2 = 0.0
-	pi = 2
-		xi = 0
-			pi != xi
-			g_33,2,0 = 0.0
-		xi = 1
-			pi != xi
-			g_33,2,1 = 0.0
-		xi = 2
-			pi = xi
-			g_33,2,2 = 0.0
-			g_22,3,3 = 0.0
-				g_00 = 1
-				G^0_33 = -0.0
-				G^0_22 = -0.0
-				g_11 = -1
-				G^1_33 = 0.0
-				G^1_22 = -2.000000000002
-				g_22 = -4
-				G^2_33 = 0.0
-				G^2_22 = 0.0
-				g_33 = -1
-				G^3_33 = 0.0
-				G^3_22 = 0.0
-			Termino 1 = -0.0
-			Termino 2 = 0.0
-			Termino 3 = 0.0
-			Termino 4 = 0.0
-			R_2332 = 0.0
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Todos los términos del tensor de Riemann en este caso deberían dar cero:</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">Riemann</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[5]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>array([[[[ 0.        ,  0.        ,  0.        ,  0.        ],
-         [ 0.        ,  0.        ,  0.        ,  0.        ],
-         [ 0.        ,  0.        ,  0.        ,  0.        ],
-         [ 0.        ,  0.        ,  0.        ,  0.        ]],
-
-        [[ 0.        , -0.        ,  0.        , -0.        ],
-         [ 0.        ,  0.        ,  0.        ,  0.        ],
-         [-0.        , -0.        ,  0.        ,  0.        ],
-         [ 0.        , -0.        ,  0.        ,  0.        ]],
-
-        [[ 0.        , -0.        , -0.        , -0.        ],
-         [-0.        ,  0.        , -0.        ,  0.        ],
-         [ 0.        ,  0.        ,  0.        ,  0.        ],
-         [ 0.        ,  0.        , -0.        ,  0.        ]],
-
-        [[ 0.        ,  0.        ,  0.        , -0.        ],
-         [ 0.        ,  0.        ,  0.        , -0.        ],
-         [ 0.        ,  0.        ,  0.        , -0.        ],
-         [ 0.        ,  0.        ,  0.        ,  0.        ]]],
-
-
-       [[[ 0.        , -0.        ,  0.        , -0.        ],
-         [ 0.        ,  0.        ,  0.        ,  0.        ],
-         [-0.        , -0.        ,  0.        ,  0.        ],
-         [ 0.        , -0.        ,  0.        ,  0.        ]],
-
-        [[ 0.        ,  0.        ,  0.        ,  0.        ],
-         [ 0.        ,  0.        ,  0.        ,  0.        ],
-         [ 0.        ,  0.        ,  0.        ,  0.        ],
-         [ 0.        ,  0.        ,  0.        ,  0.        ]],
-
-        [[ 0.        , -0.        , -0.        ,  0.        ],
-         [-0.        ,  0.        , -4.99986686,  0.        ],
-         [ 0.        ,  4.99986686,  0.        ,  0.        ],
-         [ 0.        , -0.        , -0.        ,  0.        ]],
-
-        [[ 0.        , -0.        ,  0.        , -0.        ],
-         [-0.        ,  0.        , -0.        , -0.        ],
-         [ 0.        , -0.        ,  0.        , -0.        ],
-         [ 0.        ,  0.        ,  0.        ,  0.        ]]],
-
-
-       [[[ 0.        ,  0.        , -0.        , -0.        ],
-         [-0.        ,  0.        , -0.        ,  0.        ],
-         [ 0.        ,  0.        ,  0.        ,  0.        ],
-         [ 0.        ,  0.        , -0.        ,  0.        ]],
-
-        [[ 0.        , -0.        , -0.        ,  0.        ],
-         [ 0.        ,  0.        , -4.99986686,  0.        ],
-         [-0.        ,  4.99986686,  0.        ,  0.        ],
-         [ 0.        , -0.        , -0.        ,  0.        ]],
-
-        [[ 0.        ,  0.        ,  0.        ,  0.        ],
-         [ 0.        ,  0.        ,  0.        ,  0.        ],
-         [ 0.        ,  0.        ,  0.        ,  0.        ],
-         [ 0.        ,  0.        ,  0.        ,  0.        ]],
-
-        [[ 0.        ,  0.        , -0.        , -0.        ],
-         [ 0.        ,  0.        , -0.        , -0.        ],
-         [-0.        , -0.        ,  0.        , -0.        ],
-         [ 0.        ,  0.        ,  0.        ,  0.        ]]],
-
-
-       [[[ 0.        , -0.        , -0.        , -0.        ],
-         [ 0.        ,  0.        ,  0.        , -0.        ],
-         [ 0.        ,  0.        ,  0.        , -0.        ],
-         [ 0.        ,  0.        ,  0.        ,  0.        ]],
-
-        [[ 0.        , -0.        ,  0.        , -0.        ],
-         [ 0.        ,  0.        ,  0.        , -0.        ],
-         [ 0.        , -0.        ,  0.        , -0.        ],
-         [-0.        ,  0.        ,  0.        ,  0.        ]],
-
-        [[ 0.        ,  0.        , -0.        , -0.        ],
-         [ 0.        ,  0.        , -0.        , -0.        ],
-         [ 0.        ,  0.        ,  0.        , -0.        ],
-         [-0.        , -0.        ,  0.        ,  0.        ]],
-
-        [[ 0.        ,  0.        ,  0.        ,  0.        ],
-         [ 0.        ,  0.        ,  0.        ,  0.        ],
-         [ 0.        ,  0.        ,  0.        ,  0.        ],
-         [ 0.        ,  0.        ,  0.        ,  0.        ]]]])</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="5.8.1.-Desviaci&#243;n-geod&#233;sica-num&#233;rica">5.8.1. Desviaci&#243;n geod&#233;sica num&#233;rica<a class="anchor-link" href="#5.8.1.-Desviaci&#243;n-geod&#233;sica-num&#233;rica">&#182;</a></h3><p><a id='desviacion_geodesica_numerica'></a></p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Podemos poner a prueba los conceptos vistos en esta sección usando la desviación geodésica.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Tomemos el caso de la métrica de Newton:</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Usemos las mismas condiciones iniciales que habíamos visto:</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Constantes</span>
-<span class="n">c</span><span class="o">=</span><span class="mf">3e8</span> <span class="c1"># m/s</span>
-<span class="n">G</span><span class="o">=</span><span class="mf">6.67e-11</span> <span class="c1"># m^3 kg^-1 s^-2</span>
-
-<span class="c1">#Propiedades del planeta</span>
-<span class="n">Mp</span><span class="o">=</span><span class="mf">5.98e24</span> <span class="c1"># kg</span>
-<span class="n">Rp</span><span class="o">=</span><span class="mf">6.371e6</span> <span class="c1"># m</span>
-<span class="n">gp</span><span class="o">=</span><span class="n">G</span><span class="o">*</span><span class="n">Mp</span><span class="o">/</span><span class="n">Rp</span><span class="o">**</span><span class="mi">2</span>
-<span class="n">R</span><span class="o">=</span><span class="mi">2</span><span class="o">*</span><span class="n">G</span><span class="o">*</span><span class="n">Mp</span><span class="o">/</span><span class="n">c</span><span class="o">**</span><span class="mi">2</span>
-
-<span class="c1">#Altura y velocidad</span>
-<span class="n">h</span><span class="o">=</span><span class="mf">100.0</span> <span class="c1"># m</span>
-<span class="n">v</span><span class="o">=</span><span class="mf">10000.0</span> <span class="c1"># m/s</span>
-<span class="kn">from</span> <span class="nn">numpy</span> <span class="k">import</span> <span class="n">sqrt</span>
-<span class="n">T</span><span class="o">=</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">h</span><span class="o">/</span><span class="n">gp</span><span class="p">)</span>
-
-<span class="c1">#Tiempo de integración</span>
-<span class="kn">from</span> <span class="nn">numpy</span> <span class="k">import</span> <span class="n">pi</span><span class="p">,</span><span class="n">linspace</span>
-<span class="n">ss</span><span class="o">=</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">T</span><span class="p">,</span><span class="mi">30</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Pero vamos a estudiar lo que pasa sobre dos geodésicas vecinas</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Condiciones iniciales</span>
-<span class="kn">from</span> <span class="nn">numpy</span> <span class="k">import</span> <span class="n">array</span><span class="p">,</span><span class="n">pi</span>
-<span class="n">Y1_0s</span><span class="o">=</span><span class="n">array</span><span class="p">([</span><span class="mf">0.0</span><span class="p">,(</span><span class="n">Rp</span><span class="o">+</span><span class="n">h</span><span class="p">)</span><span class="o">/</span><span class="n">c</span><span class="p">,</span><span class="n">pi</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="n">pi</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span>
-             <span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="o">-</span><span class="mi">0</span><span class="o">*</span><span class="n">v</span><span class="o">/</span><span class="n">Rp</span><span class="p">])</span>
-
-<span class="n">Y2_0s</span><span class="o">=</span><span class="n">array</span><span class="p">([</span><span class="mf">0.0</span><span class="p">,(</span><span class="n">Rp</span><span class="o">+</span><span class="n">h</span><span class="o">+</span><span class="mf">0.1</span><span class="p">)</span><span class="o">/</span><span class="n">c</span><span class="p">,</span><span class="n">pi</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="n">pi</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span>
-             <span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="o">-</span><span class="mi">0</span><span class="o">*</span><span class="n">v</span><span class="o">/</span><span class="n">Rp</span><span class="p">])</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Resolvamos las ecuaciones geodésicas:</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.integrate</span> <span class="k">import</span> <span class="n">odeint</span>
-<span class="kn">from</span> <span class="nn">export</span> <span class="k">import</span> <span class="n">ecuacion_geodesica</span><span class="p">,</span><span class="n">g_newtoniana_4d</span>
-<span class="n">N</span><span class="o">=</span><span class="mi">4</span>
-<span class="n">Y1s</span><span class="o">=</span><span class="n">odeint</span><span class="p">(</span><span class="n">ecuacion_geodesica</span><span class="p">,</span><span class="n">Y1_0s</span><span class="p">,</span><span class="n">ss</span><span class="p">,</span><span class="n">args</span><span class="o">=</span><span class="p">(</span><span class="n">g_newtoniana_4d</span><span class="p">,(</span><span class="n">R</span><span class="o">/</span><span class="n">c</span><span class="p">,),</span><span class="n">N</span><span class="p">))</span>
-<span class="n">Y2s</span><span class="o">=</span><span class="n">odeint</span><span class="p">(</span><span class="n">ecuacion_geodesica</span><span class="p">,</span><span class="n">Y2_0s</span><span class="p">,</span><span class="n">ss</span><span class="p">,</span><span class="n">args</span><span class="o">=</span><span class="p">(</span><span class="n">g_newtoniana_4d</span><span class="p">,(</span><span class="n">R</span><span class="o">/</span><span class="n">c</span><span class="p">,),</span><span class="n">N</span><span class="p">))</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Grafiquemos:</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">matplotlib</span> inline
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Convierte solución en coordenadas esféricas</span>
-<span class="kn">from</span> <span class="nn">numpy</span> <span class="k">import</span> <span class="n">sin</span><span class="p">,</span><span class="n">cos</span>
-<span class="c1">#Geodésica 1</span>
-<span class="n">t1s</span><span class="o">=</span><span class="n">Y1s</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span>
-<span class="n">r1s</span><span class="o">=</span><span class="n">Y1s</span><span class="p">[:,</span><span class="mi">1</span><span class="p">]</span>
-<span class="n">q1s</span><span class="o">=</span><span class="n">Y1s</span><span class="p">[:,</span><span class="mi">2</span><span class="p">]</span>
-<span class="n">f1s</span><span class="o">=</span><span class="n">Y1s</span><span class="p">[:,</span><span class="mi">3</span><span class="p">]</span>
-<span class="n">x1s</span><span class="o">=</span><span class="n">r1s</span><span class="o">*</span><span class="n">sin</span><span class="p">(</span><span class="n">q1s</span><span class="p">)</span><span class="o">*</span><span class="n">cos</span><span class="p">(</span><span class="n">f1s</span><span class="p">)</span>
-<span class="n">y1s</span><span class="o">=</span><span class="n">r1s</span><span class="o">*</span><span class="n">sin</span><span class="p">(</span><span class="n">q1s</span><span class="p">)</span><span class="o">*</span><span class="n">sin</span><span class="p">(</span><span class="n">f1s</span><span class="p">)</span>
-<span class="n">z1s</span><span class="o">=</span><span class="n">r1s</span><span class="o">*</span><span class="n">cos</span><span class="p">(</span><span class="n">q1s</span><span class="p">)</span>
-<span class="c1">#Geodésica 2</span>
-<span class="n">t2s</span><span class="o">=</span><span class="n">Y2s</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span>
-<span class="n">r2s</span><span class="o">=</span><span class="n">Y2s</span><span class="p">[:,</span><span class="mi">1</span><span class="p">]</span>
-<span class="n">q2s</span><span class="o">=</span><span class="n">Y2s</span><span class="p">[:,</span><span class="mi">2</span><span class="p">]</span>
-<span class="n">f2s</span><span class="o">=</span><span class="n">Y2s</span><span class="p">[:,</span><span class="mi">3</span><span class="p">]</span>
-<span class="n">x2s</span><span class="o">=</span><span class="n">r2s</span><span class="o">*</span><span class="n">sin</span><span class="p">(</span><span class="n">q2s</span><span class="p">)</span><span class="o">*</span><span class="n">cos</span><span class="p">(</span><span class="n">f2s</span><span class="p">)</span>
-<span class="n">y2s</span><span class="o">=</span><span class="n">r2s</span><span class="o">*</span><span class="n">sin</span><span class="p">(</span><span class="n">q2s</span><span class="p">)</span><span class="o">*</span><span class="n">sin</span><span class="p">(</span><span class="n">f2s</span><span class="p">)</span>
-<span class="n">z2s</span><span class="o">=</span><span class="n">r2s</span><span class="o">*</span><span class="n">cos</span><span class="p">(</span><span class="n">q2s</span><span class="p">)</span>
-
-<span class="c1">#Desviación geodésica</span>
-<span class="n">xi_x</span><span class="o">=</span><span class="n">x1s</span><span class="o">-</span><span class="n">x2s</span>
-<span class="n">xi_y</span><span class="o">=</span><span class="n">y1s</span><span class="o">-</span><span class="n">y2s</span>
-<span class="n">xi_z</span><span class="o">=</span><span class="n">z1s</span><span class="o">-</span><span class="n">z2s</span>
-
-<span class="c1">#Gráfico</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="n">fig</span><span class="p">,</span><span class="n">axs</span><span class="o">=</span><span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
-<span class="n">axs</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ss</span><span class="p">,</span><span class="n">c</span><span class="o">*</span><span class="n">xi_x</span><span class="p">)</span>
-<span class="n">axs</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;$\tau$&quot;</span><span class="p">)</span>
-<span class="n">axs</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;$\xi_x$&quot;</span><span class="p">)</span>
-<span class="n">axs</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ss</span><span class="p">,</span><span class="n">c</span><span class="o">*</span><span class="n">xi_y</span><span class="p">)</span>
-<span class="n">axs</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;$\tau$&quot;</span><span class="p">)</span>
-<span class="n">axs</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;$\xi_y$&quot;</span><span class="p">)</span>
-<span class="n">fig</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-
-
-<div class="output_png output_subarea ">
-<img src="data:image/png;base64,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
-"
->
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><a id='fig:05.06.00.00.RelatividadGeneral.Curvatura_40'></a><center><b>Figura 5.40.</b> </center></p>
-
-</div>
-</div>
-</div><div style="background:lightgray">
-    	 
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><a href="index.html">Indice</a> | Previo: <a href="05.05.00.00.RelatividadGeneral.InerciaYGeodesicas.html">RelatividadGeneral.InerciaYGeodesicas</a> | Siguiente: <a href="05.07.00.00.RelatividadGeneral.PrincipioConsistencia.html">RelatividadGeneral.PrincipioConsistencia</a></p>
-
-</div>
-</div>
-</div>
-    </div>
     </div>
   </div>
 </body>
