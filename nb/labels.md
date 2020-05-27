@@ -250,3 +250,12 @@
 		* `#Tmunu_sigma_munu`
 		* `#Tmunu_fluido_perfecto`
 		* `#conservacion_Tmunu`
+- Labels for '05.09.00.00.RelatividadGeneral.EcuacionCampoMetrico.ipynb':
+	- Labels for 'section':
+		* `#ecuacion_campo_metrico`
+		* `#tensor_einstein`
+		* `#ecuacion_campo_debil_general`
+		* `#ecuacion_campo_consistencia`
+		* `#ecuacion_campo_fluido_perfecto`
+		* `#termino_cosmologico`
+		* `#ecuacion_hilbert_einstein`
