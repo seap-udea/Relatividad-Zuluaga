@@ -259,3 +259,29 @@
 		* `#ecuacion_campo_fluido_perfecto`
 		* `#termino_cosmologico`
 		* `#ecuacion_hilbert_einstein`
+- Labels for '06.00.00.00.Aplicaciones.ipynb':
+	- Labels for 'section':
+		* `#aplicaciones_rgeneral`
+- Labels for '06.01.00.00.Aplicaciones.OndasGravitacionales.ipynb':
+	- Labels for 'section':
+		* `#ondas_gravitacionales`
+		* `#historia_gw`
+		* `#programa_gw`
+- Labels for '06.01.01.00.Aplicaciones.OndasGravitacionales.GravedadLinearizada.ipynb':
+	- Labels for 'section':
+		* `#gravedad_linearizada`
+		* `#inversa_metrica_linearizada`
+		* `#simbolo_christoffel_linearizado`
+		* `#riemann_gravedad_linearizado`
+		* `#riemann_linearizado`
+		* `#einstein_linearizado`
+		* `#Tmunu_linearizado`
+- Labels for '06.01.02.00.Aplicaciones.OndasGravitacionales.EcuacionOndaVacio.ipynb':
+	- Labels for 'section':
+		* `#gw_vacio`
+		* `#libertad_gauge`
+		* `#gauge_armónico`
+		* `#ecuacion_de_ondas`
+		* `#ecuacion_fuentes`
+		* `#metrica_postnewtoniana`
+		* `#analogia_electromagnetica`
