@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
-<title>index</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>01.08.03.00.RelatividadEspecial.Electrodinamica.TensorFaraday</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 <style type="text/css">
@@ -13067,38 +13067,21 @@ div#notebook {
 <body>
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
-
+<div style="background:lightgray">
+    	 
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p style="margin:3em"></p>
-<p style="text-align:center;font-size:3em;font-weight:bold">Relatividad y Gravitación</p>
-<p style="text-align:center;font-size:2em">Teoría, algoritmos y problemas</p>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="./figures/portada.png" alt="Portada"></p>
+<p><a href="index.html">Indice</a> | Previo: <a href="01.08.02.00.RelatividadEspecial.Electrodinamica.CuadriCorrientePotencial.html">RelatividadEspecial.Electrodinamica.CuadriCorrientePotencial</a> | Siguiente: <a href="01.08.04.00.RelatividadEspecial.Electrodinamica.Ejemplos.html">RelatividadEspecial.Electrodinamica.Ejemplos</a></p>
 
 </div>
 </div>
 </div>
+    </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p style="text-align:center;font-size:2em;font-weight:bold">Jorge I. Zuluaga</p>
-<p style="text-align:center;font-size:1.2em">Profesor Titular de Física y Astronomía</p>
-<p style="text-align:center;font-size:1.2em">Instituto de Física, Facultad de Ciencias Exactas y Naturales</p>
-<p style="text-align:center;font-size:1.2em">Universidad de Antioquia</p>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<hr>
+<h3 id="1.16.4.-Los-campos-en-t&#233;rminos-tensoriales">1.16.4. Los campos en t&#233;rminos tensoriales<a class="anchor-link" href="#1.16.4.-Los-campos-en-t&#233;rminos-tensoriales">&#182;</a></h3><p><a id='campos_tensoriales'></a></p>
 
 </div>
 </div>
@@ -13106,222 +13089,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p style="margin:1em"></p>
-<p style="text-align:center;font-size:2em;font-weight:bold">Tabla de Contenido</p>
-<p style="margin:1em"></p>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#205;ndice-de-materias">&#205;ndice de materias<a class="anchor-link" href="#&#205;ndice-de-materias">&#182;</a></h2><ul>
-<li><a href="01.00.00.00.RelatividadEspecial.html#relatividad_especial">Relatividad Especial</a>.<ul>
-<li><a href="01.00.00.00.RelatividadEspecial.html#respecial_motivacion">Motivación</a>.</li>
-<li><a href="01.01.00.00.RelatividadEspecial.ConceptosBasicos.html#respecial_conceptos">Conceptos básicos</a>.</li>
-<li><a href="01.01.00.00.RelatividadEspecial.ConceptosBasicos.html#ppio_homogeneidad">Principio de homogeneidad e isotropía del espacio-tiempo</a>.</li>
-<li><a href="01.01.00.00.RelatividadEspecial.ConceptosBasicos.html#relatividad_newtoniana">La relatividad Newtoniana</a>.</li>
-<li><a href="01.01.00.00.RelatividadEspecial.ConceptosBasicos.html#problema_electromagnetismo">El problema del electromagnetismo</a>.</li>
-<li><a href="01.02.00.00.RelatividadEspecial.TransformacionesLorentzEinstein.html#transformaciones_einstein">Las transformaciones de Lorentz-Einstein</a>.</li>
-<li><a href="01.02.01.00.RelatividadEspecial.TransformacionesLorentzEinstein.Propiedades.html#propiedades_tle">Propiedades de las TLE</a>.<ul>
-<li><a href="01.02.01.00.RelatividadEspecial.TransformacionesLorentzEinstein.Propiedades.html#unidades_luz">Unidades luz</a>.</li>
-<li><a href="01.02.01.00.RelatividadEspecial.TransformacionesLorentzEinstein.Propiedades.html#TLE_rotacion_hiperbolica">La TLE como una rotación hiperbólica</a>.</li>
-<li><a href="01.02.01.00.RelatividadEspecial.TransformacionesLorentzEinstein.Propiedades.html#notacion_einstein">Las TLE y la notación de Einstein</a>.</li>
-<li><a href="01.02.01.00.RelatividadEspecial.TransformacionesLorentzEinstein.Propiedades.html#TLE_generales">Las TLE generales</a>.</li>
-<li><a href="01.02.01.00.RelatividadEspecial.TransformacionesLorentzEinstein.Propiedades.html#valor_gama">El valor del factor de Lorentz-Einstein</a>.</li>
-<li><a href="01.02.01.00.RelatividadEspecial.TransformacionesLorentzEinstein.Propiedades.html#TLE_mapas">Mapas de la TLE</a>.</li>
-</ul>
-</li>
-<li><a href="01.02.02.00.RelatividadEspecial.TransformacionesLorentzEinstein.Consecuencias.html#consecuencias_tle">Consecuencias de las TLE</a>.<ul>
-<li><a href="01.02.02.00.RelatividadEspecial.TransformacionesLorentzEinstein.Consecuencias.html#transformacion_intervalos">Transformación de los intervalos y el gradiente</a>.</li>
-<li><a href="01.02.02.00.RelatividadEspecial.TransformacionesLorentzEinstein.Consecuencias.html#dilatacion_temporal">Dilatación temporal</a>.</li>
-<li><a href="01.02.02.00.RelatividadEspecial.TransformacionesLorentzEinstein.Consecuencias.html#postulado_relojes">El postulado de los relojes</a>.</li>
-<li><a href="01.02.02.00.RelatividadEspecial.TransformacionesLorentzEinstein.Consecuencias.html#contraccion_longitudes">Contracción de longitudes</a>.</li>
-<li><a href="01.02.02.00.RelatividadEspecial.TransformacionesLorentzEinstein.Consecuencias.html#adicion_velocidades">Adición de velocidades</a>.</li>
-<li><a href="01.02.02.00.RelatividadEspecial.TransformacionesLorentzEinstein.Consecuencias.html#transformacion_aceleraciones">Transformación de aceleraciones</a>.</li>
-</ul>
-</li>
-<li><a href="01.03.00.00.RelatividadEspecial.Minkowski.html#minkowski">El espacio-tiempo de Minkowski</a>.<ul>
-<li><a href="01.03.00.00.RelatividadEspecial.Minkowski.html#norma_minkowski">La norma de Minkowski</a>.</li>
-<li><a href="01.03.00.00.RelatividadEspecial.Minkowski.html#metrica_minkowski">Las variedades de Lorentz y la métrica de Minkowski</a>.</li>
-<li><a href="01.03.00.00.RelatividadEspecial.Minkowski.html#metrica_intervalos">Métrica y tipos de intervalos</a>.</li>
-<li><a href="01.03.00.00.RelatividadEspecial.Minkowski.html#tiempo_propio_minkowski">Métrica y tiempo propio</a>.</li>
-<li><a href="01.03.00.00.RelatividadEspecial.Minkowski.html#metrica_dilatacion_contraccion">Métrica, dilatación del tiempo y contracción de longitudes</a>.</li>
-<li><a href="01.03.00.00.RelatividadEspecial.Minkowski.html#vectores_minkowski">Vectores y cálculo en el espacio de Minkowski</a>.</li>
-<li><a href="01.03.00.00.RelatividadEspecial.Minkowski.html#minkowski_postulado_relojes">Minkowski y el postulado de los relojes</a>.</li>
-<li><a href="01.03.00.00.RelatividadEspecial.Minkowski.html#transformacion_cuadrivectores">Transformación general de cuadrivectores</a>.</li>
-</ul>
-</li>
-<li><a href="01.04.00.00.RelatividadEspecial.OpticaRelativista.html#optica_relativista">Óptica relativista</a>.<ul>
-<li><a href="01.04.00.00.RelatividadEspecial.OpticaRelativista.html#doppler_relativista">Efecto Doppler relativista</a>.</li>
-<li><a href="01.04.00.00.RelatividadEspecial.OpticaRelativista.html#aberración">Aberración de la luz</a>.</li>
-<li><a href="01.04.00.00.RelatividadEspecial.OpticaRelativista.html#enfoque_relativista">Enfoque relativista</a>.</li>
-</ul>
-</li>
-<li><a href="01.05.01.00.RelatividadEspecial.CinematicaRelativista.Definiciones.html#cinematica_relativistica">Cinemática relativistica</a>.<ul>
-<li><a href="01.05.01.00.RelatividadEspecial.CinematicaRelativista.Definiciones.html#cuadrivelocidad">Cuadrivelocidad</a>.</li>
-<li><a href="01.05.01.00.RelatividadEspecial.CinematicaRelativista.Definiciones.html#cuadriaceleracion">Cuadriaceleración</a>.</li>
-<li><a href="01.05.02.00.RelatividadEspecial.CinematicaRelativista.AceleracionPropiaConstante.html#cuadriaceleracion_constante">Movimiento con cuadriaceleración constante</a>.</li>
-<li><a href="01.05.02.00.RelatividadEspecial.CinematicaRelativista.AceleracionPropiaConstante.html#velocidad_limite">La velocidad límite</a>.</li>
-<li><a href="01.05.02.00.RelatividadEspecial.CinematicaRelativista.AceleracionPropiaConstante.html#nave_interestelar">Ejemplo: una nave interestelar</a>.</li>
-</ul>
-</li>
-<li><a href="01.06.01.00.RelatividadEspecial.DinamicaRelativista.EnergiaMomentum.html#dinamica_relativista">Dinámica relativista</a>.<ul>
-<li><a href="01.06.01.00.RelatividadEspecial.DinamicaRelativista.EnergiaMomentum.html#masa_invariante">Masa invariante</a>.</li>
-<li><a href="01.06.01.00.RelatividadEspecial.DinamicaRelativista.EnergiaMomentum.html#momentum_relativista">Momentum relativista</a>.</li>
-<li><a href="01.06.01.00.RelatividadEspecial.DinamicaRelativista.EnergiaMomentum.html#cuadrimomentum">Cuadrimomentum</a>.</li>
-<li><a href="01.06.01.00.RelatividadEspecial.DinamicaRelativista.EnergiaMomentum.html#magnitud_cuadrimomentum">Magnitud del cuadrimomentum y la simetría gauge</a>.</li>
-<li><a href="01.06.01.00.RelatividadEspecial.DinamicaRelativista.EnergiaMomentum.html#cuadrimomentum_minkowski">Cuadrimomentum en el espacio-tiempo</a>.</li>
-</ul>
-</li>
-<li><a href="01.06.02.00.RelatividadEspecial.DinamicaRelativista.ColisionesRelativistas.html#colisiones_relativistas">Colisiones relativistas</a>.<ul>
-<li><a href="01.06.02.00.RelatividadEspecial.DinamicaRelativista.ColisionesRelativistas.html#energia_cm">Energía en el centro de masa</a>.</li>
-<li><a href="01.06.02.00.RelatividadEspecial.DinamicaRelativista.ColisionesRelativistas.html#colisiones_interactivas">Colisiones relativistas interactivas</a>.</li>
-</ul>
-</li>
-<li><a href="01.06.03.00.RelatividadEspecial.DinamicaRelativista.Cuadrifuerza.html#cuadrifuerza">Cuadrifuerza</a>.<ul>
-<li><a href="01.06.03.00.RelatividadEspecial.DinamicaRelativista.Cuadrifuerza.html#transformacion_fuerza">Reglas de transformación de la fuerza</a>.</li>
-<li><a href="01.06.04.00.RelatividadEspecial.DinamicaRelativista.FuerzaDeLorentz.html#fuerza_lorentz">La fuerza de Lorentz</a>.</li>
-<li><a href="01.06.04.00.RelatividadEspecial.DinamicaRelativista.FuerzaDeLorentz.html#movimiento_circular">Movimiento circular bajo la fuerza de Lorentz</a>.</li>
-<li><a href="01.06.04.00.RelatividadEspecial.DinamicaRelativista.FuerzaDeLorentz.html#edm_relativista">Ecuación de movimiento relativista</a>.</li>
-</ul>
-</li>
-<li><a href="01.07.00.00.RelatividadEspecial.SintesisMecanicaRelativista.html#sintesis_mecanica">Síntesis de Mecánica Relativista</a>.<ul>
-<li><a href="01.07.00.00.RelatividadEspecial.SintesisMecanicaRelativista.html#sintesis_cinematica">Síntesis de cinemática relativista</a>.</li>
-<li><a href="01.07.00.00.RelatividadEspecial.SintesisMecanicaRelativista.html#sintesis_dinamica">Síntesis de dinámica relativista</a>.</li>
-</ul>
-</li>
-<li><a href="01.08.01.00.RelatividadEspecial.Electrodinamica.EcuacionesClasicas.html#electrodinamica">Electrodinamica manifiestamente covariante</a>.<ul>
-<li><a href="01.08.01.00.RelatividadEspecial.Electrodinamica.EcuacionesClasicas.html#ecuaciones_electrodinamica">Ecuaciones de la electrodinámica</a>.</li>
-<li><a href="01.08.02.00.RelatividadEspecial.Electrodinamica.CuadriCorrientePotencial.html#continuidad">La cuadricorriente</a>.</li>
-<li><a href="01.08.02.00.RelatividadEspecial.Electrodinamica.CuadriCorrientePotencial.html#maxwell_inhomogeneas">Ecuaciones de Maxwell inhomogéneas</a>.</li>
-<li><a href="01.08.03.00.RelatividadEspecial.Electrodinamica.TensorFaraday.html#campos_tensoriales">Los campos en términos tensoriales</a>.</li>
-<li><a href="01.08.03.00.RelatividadEspecial.Electrodinamica.TensorFaraday.html#tensor_faraday">El tensor de Faraday</a>.</li>
-<li><a href="01.08.03.00.RelatividadEspecial.Electrodinamica.TensorFaraday.html#maxwell_faraday">Ecuaciones de Maxwell y el tensor de Faraday</a>.</li>
-<li><a href="01.08.03.00.RelatividadEspecial.Electrodinamica.TensorFaraday.html#transformacion_campos">Transformación de los campos</a>.</li>
-<li><a href="01.08.03.00.RelatividadEspecial.Electrodinamica.TensorFaraday.html#fuerza_lorentz_covariante">La fuerza de Lorentz</a>.</li>
-<li><a href="01.08.03.00.RelatividadEspecial.Electrodinamica.TensorFaraday.html#geometria_F">Intrepretación geométrica del campo de Faraday</a>.</li>
-<li><a href="01.08.03.00.RelatividadEspecial.Electrodinamica.TensorFaraday.html#sintesis">Síntesis</a>.<ul>
-<li><a href="01.08.04.00.RelatividadEspecial.Electrodinamica.Ejemplos.html#campo_carga_movimiento">Campo producido por una carga en movimiento</a>.</li>
-<li><a href="01.08.04.00.RelatividadEspecial.Electrodinamica.Ejemplos.html#campo_alambre">Campo producido por un alambre recto</a>.</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="01.09.00.00.RelatividadEspecial.ProblemasSeleccionados.html#especial_problemas">Problemas Seleccionados</a>.</li>
-</ul>
-</li>
-<li><a href="02.00.00.00.RelatividadGeneral.html#relatividad_general">Relatividad General</a>.<ul>
-<li><a href="02.00.00.00.RelatividadGeneral.html#rgeneral_motivacion">Motivación</a>.</li>
-<li><a href="02.01.00.00.RelatividadGeneral.PostuladosBasicos.html#rgeneral_postulados">Principios y postulados básicos</a>.<ul>
-<li><a href="02.01.00.00.RelatividadGeneral.PostuladosBasicos.html#principio_equivalencia">Principio de Equivalencia</a>.<ul>
-<li><a href="02.01.00.00.RelatividadGeneral.PostuladosBasicos.html#principio_galileo">Principio de Galileo</a>.</li>
-<li><a href="02.01.00.00.RelatividadGeneral.PostuladosBasicos.html#principio_equivalencia_masas">Principio de igualdad de las masas</a>.</li>
-<li><a href="02.01.00.00.RelatividadGeneral.PostuladosBasicos.html#principio_equivalencia_einstein">Principio de equivalencia de Einstein</a>.</li>
-</ul>
-</li>
-<li><a href="02.01.00.00.RelatividadGeneral.PostuladosBasicos.html#principio_covarianza">Principio de covarianza general</a>.</li>
-<li><a href="02.01.00.00.RelatividadGeneral.PostuladosBasicos.html#tensores_generales">Tensores generales</a>.</li>
-</ul>
-</li>
-<li><a href="02.02.00.00.RelatividadGeneral.TransporteParalelo.html#transporte_paralelo">Transporte paralelo y derivada covariante</a>.<ul>
-<li><a href="02.02.00.00.RelatividadGeneral.TransporteParalelo.html#gradiente_notensor">El gradiente no es un tensor general</a>.</li>
-<li><a href="02.02.00.00.RelatividadGeneral.TransporteParalelo.html#transporte_paralelo_explicito">Transporte paralelo</a>.</li>
-<li><a href="02.02.00.00.RelatividadGeneral.TransporteParalelo.html#derivada_direccional">Derivada direccional general</a>.</li>
-<li><a href="02.03.00.00.RelatividadGeneral.SimbolosChristoffel.html#simbolos_christoffel">Los símbolos de Christoffel</a>.</li>
-<li><a href="02.03.00.00.RelatividadGeneral.SimbolosChristoffel.html#ejemplo_christoffel">Cálculo de los símbolos de Christoffel</a>.<ul>
-<li><a href="02.03.00.00.RelatividadGeneral.SimbolosChristoffel.html#christoffel_metrica_diagonal">Los símbolos de Christoffel de una métrica diagonal</a>.</li>
-<li><a href="02.03.00.00.RelatividadGeneral.SimbolosChristoffel.html#christoffel_plano">Símbolos de Christoffel del espacio-tiempo plano</a>.</li>
-<li><a href="02.03.00.00.RelatividadGeneral.SimbolosChristoffel.html#christoffel_esfera">Símbolos de Christoffel de una superficie esférica</a>.</li>
-<li><a href="02.03.00.00.RelatividadGeneral.SimbolosChristoffel.html#christoffel_general">Símbolos de Christoffel de una métrica general</a>.</li>
-<li><a href="02.03.00.00.RelatividadGeneral.SimbolosChristoffel.html#christoffel_numerico">Cálculo numérico</a>.</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="02.04.00.00.RelatividadGeneral.Geodesicas.html#dtotal_geodesicas">Derivada total general y geodésicas</a>.<ul>
-<li><a href="02.04.00.00.RelatividadGeneral.Geodesicas.html#derivada_total">Derivada total general</a>.</li>
-<li><a href="02.04.00.00.RelatividadGeneral.Geodesicas.html#dtotal_paralelo">Derivada total y transporte paralelo</a>.</li>
-<li><a href="02.04.00.00.RelatividadGeneral.Geodesicas.html#paralelo_bases">Transporte paralelo y bases vectoriales</a>.</li>
-<li><a href="02.04.00.00.RelatividadGeneral.Geodesicas.html#bases_componentes_vectoriales">Bases y componentes vectoriales en espacio curvo</a>.</li>
-<li><a href="02.04.00.00.RelatividadGeneral.Geodesicas.html#ejemplo_numerico_paralelo">Ejemplos numéricos de transporte paralelo</a>.<ul>
-<li><a href="02.04.00.00.RelatividadGeneral.Geodesicas.html#ejemplo_numerico_cilindricas">Transporte paralelo en coordenadas cilíndrica</a>.</li>
-<li><a href="02.04.00.00.RelatividadGeneral.Geodesicas.html#ejemplo_numerico_esfera">Transporte paralelo sobre una esfera</a>.</li>
-</ul>
-</li>
-<li><a href="02.04.00.00.RelatividadGeneral.Geodesicas.html#ecuacion_geodesica">Ecuación geodésica</a>.</li>
-<li><a href="02.04.00.00.RelatividadGeneral.Geodesicas.html#ejemplo_numerico_geodesicas">Ejemplos numéricos de geodésicas</a>.<ul>
-<li><a href="02.04.00.00.RelatividadGeneral.Geodesicas.html#geodesica_cilindricas_numerico">Geodésica en coordenadas cilíndricas</a>.</li>
-<li><a href="02.04.00.00.RelatividadGeneral.Geodesicas.html#geodesica_esfera">Geodésica sobre la superficie de una esfera</a>.</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="02.05.00.00.RelatividadGeneral.InerciaYGeodesicas.html#geodesica_variacional">La geodésica y un principio variacional</a>.</li>
-<li><a href="02.05.00.00.RelatividadGeneral.InerciaYGeodesicas.html#geodesicas_inercia">Geodésicas y movimiento inercial</a>.</li>
-<li><a href="02.05.00.00.RelatividadGeneral.InerciaYGeodesicas.html#geodesicas_campo_debil">Geodésicas en campo débil</a>.<ul>
-<li><a href="02.05.00.00.RelatividadGeneral.InerciaYGeodesicas.html#campo_debil_numerico">Un ejemplo numérico</a>.</li>
-</ul>
-</li>
-<li><a href="02.05.00.00.RelatividadGeneral.InerciaYGeodesicas.html#simetrias_conservacion">Simetrías y cantidades conservadas</a>.<ul>
-<li><a href="02.05.00.00.RelatividadGeneral.InerciaYGeodesicas.html#metrica_constante">La métrica como constante</a>.</li>
-<li><a href="02.05.00.00.RelatividadGeneral.InerciaYGeodesicas.html#vector_killing">Coordenadas cíclicas y vectores de Killing</a>.</li>
-<li><a href="02.05.00.00.RelatividadGeneral.InerciaYGeodesicas.html#ejemplo_geodesica_cilindricas">Ejemplo: geodésicas en coordenadas cilíndricas</a>.</li>
-<li><a href="02.05.00.00.RelatividadGeneral.InerciaYGeodesicas.html#ejemplo_geodesica_esfera">Ejemplo: geodésicas sobre una esfera</a>.</li>
-<li><a href="02.05.00.00.RelatividadGeneral.InerciaYGeodesicas.html#ejemplo_geodesica_newton">Ejemplo: geodésicas en la métrica de Newton</a>.</li>
-<li><a href="02.06.00.00.RelatividadGeneral.Curvatura.html#propiedades_riemann">Propiedades del tensor de Riemann</a>.</li>
-<li><a href="02.06.00.00.RelatividadGeneral.Curvatura.html#riemann_diagonal">Tensor de Riemann para métricas diagonales</a>.</li>
-<li><a href="02.06.00.00.RelatividadGeneral.Curvatura.html#desviacion_geodesica">Desviación geodésica</a>.</li>
-<li><a href="02.06.00.00.RelatividadGeneral.Curvatura.html#riemann_numerico">Tensor de Riemann numérico</a>.</li>
-<li><a href="02.06.00.00.RelatividadGeneral.Curvatura.html#desviacion_geodesica_numerica">Desviación geodésica numérica</a>.</li>
-</ul>
-</li>
-<li><a href="02.07.00.00.RelatividadGeneral.PrincipioConsistencia.html#principio_consistencia">Principio de consistencia</a>.</li>
-<li><a href="02.07.00.00.RelatividadGeneral.PrincipioConsistencia.html#ecuacion_campo_general">Una ecuación de campo general</a>.</li>
-<li><a href="02.08.00.00.RelatividadGeneral.TensorDeMomentumEnergia.html#tensor_momentum_energia">Tensor de momentum-energía</a>.<ul>
-<li><a href="02.08.00.00.RelatividadGeneral.TensorDeMomentumEnergia.html#Tmunu_nube">Tensor de momentum-energía para una nube de partículas</a>.</li>
-<li><a href="02.08.00.00.RelatividadGeneral.TensorDeMomentumEnergia.html#Tmunu_polvo">Tensor de momentum-energía para polvo</a>.</li>
-<li><a href="02.08.00.00.RelatividadGeneral.TensorDeMomentumEnergia.html#Tmunu_sigma_munu">Tensor $T^{\mu\nu}$ y el tensor de esfuerzos $\sigma^{\mu\nu}$</a>.</li>
-<li><a href="02.08.00.00.RelatividadGeneral.TensorDeMomentumEnergia.html#Tmunu_fluido_perfecto">Tensor de momentum-energía para fluído perfecto</a>.</li>
-<li><a href="02.08.00.00.RelatividadGeneral.TensorDeMomentumEnergia.html#conservacion_Tmunu">La conservación de $T^{\mu\nu}$ y la ecuación geodésica</a>.</li>
-</ul>
-</li>
-<li><a href="02.09.00.00.RelatividadGeneral.EcuacionCampoMetrico.html#ecuacion_campo_metrico">La ecuación de campo métrico</a>.<ul>
-<li><a href="02.09.00.00.RelatividadGeneral.EcuacionCampoMetrico.html#tensor_einstein">El tensor de Einstein</a>.</li>
-<li><a href="02.09.00.00.RelatividadGeneral.EcuacionCampoMetrico.html#ecuacion_campo_debil_general">Una ecuación de campo general</a>.</li>
-<li><a href="02.09.00.00.RelatividadGeneral.EcuacionCampoMetrico.html#ecuacion_campo_consistencia">La ecuación de campo y el principio de consistencia</a>.</li>
-<li><a href="02.09.00.00.RelatividadGeneral.EcuacionCampoMetrico.html#ecuacion_campo_fluido_perfecto">La ecuación de campo débil para fluido perfecto</a>.</li>
-<li><a href="02.09.00.00.RelatividadGeneral.EcuacionCampoMetrico.html#termino_cosmologico">El término cosmológico</a>.</li>
-<li><a href="02.09.00.00.RelatividadGeneral.EcuacionCampoMetrico.html#ecuacion_hilbert_einstein">La ecuación de Hilbert-Einstein</a>.</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="03.00.00.00.Aplicaciones.html#aplicaciones_rgeneral">Aplicaciones de la relatividad general</a>.<ul>
-<li><a href="03.01.00.00.Aplicaciones.OndasGravitacionales.html#ondas_gravitacionales">Ondas gravitacionales</a>.<ul>
-<li><a href="03.01.00.00.Aplicaciones.OndasGravitacionales.html#historia_gw">Historia de las ondas gravitacionales</a>.</li>
-<li><a href="03.01.00.00.Aplicaciones.OndasGravitacionales.html#programa_gw">Un programa de estudio</a>.</li>
-<li><a href="03.01.01.00.Aplicaciones.OndasGravitacionales.GravedadLinearizada.html#gravedad_linearizada">Gravedad linearizada</a>.<ul>
-<li><a href="03.01.01.00.Aplicaciones.OndasGravitacionales.GravedadLinearizada.html#inversa_metrica_linearizada">Inversa de la métrica linearizada</a>.</li>
-<li><a href="03.01.01.00.Aplicaciones.OndasGravitacionales.GravedadLinearizada.html#simbolo_christoffel_linearizado">Símbolo de Christoffel linearizado</a>.</li>
-<li><a href="03.01.01.00.Aplicaciones.OndasGravitacionales.GravedadLinearizada.html#riemann_gravedad_linearizado">El tensor de Riemann linearizado</a>.</li>
-<li><a href="03.01.01.00.Aplicaciones.OndasGravitacionales.GravedadLinearizada.html#riemann_linearizado">El tensor de Ricci linearizado</a>.</li>
-<li><a href="03.01.01.00.Aplicaciones.OndasGravitacionales.GravedadLinearizada.html#einstein_linearizado">El tensor de Einstein linearizado</a>.</li>
-<li><a href="03.01.01.00.Aplicaciones.OndasGravitacionales.GravedadLinearizada.html#Tmunu_linearizado">El tensor momentum-energía</a>.</li>
-</ul>
-</li>
-<li><a href="03.01.02.00.Aplicaciones.OndasGravitacionales.EcuacionOndaVacio.html#gw_vacio">Ecuación de campo linearizada en el vacío</a>.</li>
-<li><a href="03.01.02.00.Aplicaciones.OndasGravitacionales.EcuacionOndaVacio.html#libertad_gauge">Libertad gauge</a>.</li>
-<li><a href="03.01.02.00.Aplicaciones.OndasGravitacionales.EcuacionOndaVacio.html#gauge_armónico">El gauge armónico</a>.</li>
-<li><a href="03.01.02.00.Aplicaciones.OndasGravitacionales.EcuacionOndaVacio.html#ecuacion_de_ondas">La ecuación de campo o de ondas</a>.</li>
-<li><a href="03.01.02.00.Aplicaciones.OndasGravitacionales.EcuacionOndaVacio.html#ecuacion_fuentes">La ecuación de campo con fuentes</a>.</li>
-<li><a href="03.01.02.00.Aplicaciones.OndasGravitacionales.EcuacionOndaVacio.html#metrica_postnewtoniana">La métrica postnewtoniana</a>.</li>
-<li><a href="03.01.02.00.Aplicaciones.OndasGravitacionales.EcuacionOndaVacio.html#analogia_electromagnetica">Analogía electromagnética</a>.</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
+<p>La introducción del cuadripotencial nos permite escribir los campos eléctrico y magnético en términos tensoriales, lo que será muy útil para derivar la forma de las ecuaciones de Maxwell manifiestamente covariantes.</p>
 
 </div>
 </div>
@@ -13329,35 +13097,26 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#205;ndice-de-figuras">&#205;ndice de figuras<a class="anchor-link" href="#&#205;ndice-de-figuras">&#182;</a></h2><ul>
-<li>Figuras en <a href="01.04.00.00.RelatividadEspecial.OpticaRelativista.html">01.04.00.00.RelatividadEspecial.OpticaRelativista</a><ul>
-<li><a href="01.04.00.00.RelatividadEspecial.OpticaRelativista.html#fig:Figure_9">Figura 1.9</a>. Figura.</li>
-</ul>
-</li>
-<li>Figuras en <a href="01.05.02.00.RelatividadEspecial.CinematicaRelativista.AceleracionPropiaConstante.html">01.05.02.00.RelatividadEspecial.CinematicaRelativista.AceleracionPropiaConstante</a><ul>
-<li><a href="01.05.02.00.RelatividadEspecial.CinematicaRelativista.AceleracionPropiaConstante.html#fig:cuadriaceleracion">Figura 1.14</a>. Cambios en la cuadrivelocidad y la cuadriaceleración.</li>
-<li><a href="01.05.02.00.RelatividadEspecial.CinematicaRelativista.AceleracionPropiaConstante.html#fig:Figure_15">Figura 1.15</a>. Nave interestelar.</li>
-</ul>
-</li>
-<li>Figuras en <a href="01.08.03.00.RelatividadEspecial.Electrodinamica.TensorFaraday.html">01.08.03.00.RelatividadEspecial.Electrodinamica.TensorFaraday</a><ul>
-<li><a href="01.08.03.00.RelatividadEspecial.Electrodinamica.TensorFaraday.html#fig:tensor_esfuerzos">Figura 1.22</a>. Tensor de esfuerzos..</li>
-</ul>
-</li>
-<li>Figuras en <a href="02.02.00.00.RelatividadGeneral.TransporteParalelo.html">02.02.00.00.RelatividadGeneral.TransporteParalelo</a><ul>
-<li><a href="02.02.00.00.RelatividadGeneral.TransporteParalelo.html#fig:transporte_paralelo">Figura 2.24</a>. Transporte paralelo..</li>
-<li><a href="02.02.00.00.RelatividadGeneral.TransporteParalelo.html#fig:transporte_paralelo_derivada">Figura 2.25</a>. Derivada direccional..</li>
-</ul>
-</li>
-<li>Figuras en <a href="02.04.00.00.RelatividadGeneral.Geodesicas.html">02.04.00.00.RelatividadGeneral.Geodesicas</a><ul>
-<li><a href="02.04.00.00.RelatividadGeneral.Geodesicas.html#fig:geodesica">Figura 2.29</a>. Definición de geodésica en el espacio-tiempo plano y sobre la superficie de una esfera..</li>
-</ul>
-</li>
-<li>Figuras en <a href="02.06.00.00.RelatividadGeneral.Curvatura.html">02.06.00.00.RelatividadGeneral.Curvatura</a><ul>
-<li><a href="02.06.00.00.RelatividadGeneral.Curvatura.html#fig:Figure_34">Figura 2.34</a>. Figura.</li>
-<li><a href="02.06.00.00.RelatividadGeneral.Curvatura.html#fig:Figure_35">Figura 2.35</a>. Figura.</li>
-</ul>
-</li>
-</ul>
+<p>Por definición de los potenciales:</p>
+\begin{eqnarray}
+\nonumber
+\vec B &amp; = &amp; \vec{\nabla}\times\vec A\\
+\nonumber
+\vec E &amp; = &amp; -\vec{\nabla}\phi-\frac{1}{c}\frac{\partial\vec A}{\partial t}
+\end{eqnarray}
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Si lo escribimos en términos de las componentes explícitas del cuadripotencial obtenemos:</p>
+$$
+\begin{array}{rcl}
+B^i &amp; = &amp; \sum_{j,k} \epsilon_{ijk} \partial_j A^k\\
+E^i &amp; = &amp; -\partial_i A^0-\partial_0 A^i
+\end{array}
+$$<p>donde $\epsilon_{ijk}$ es el símbolo de Levi-Civita.</p>
 
 </div>
 </div>
@@ -13365,35 +13124,20 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#205;ndice-de-ecuaciones">&#205;ndice de ecuaciones<a class="anchor-link" href="#&#205;ndice-de-ecuaciones">&#182;</a></h2><ul>
-<li>Ecuaciones en <a href="01.02.00.00.RelatividadEspecial.TransformacionesLorentzEinstein.html">01.02.00.00.RelatividadEspecial.TransformacionesLorentzEinstein</a><ul>
-<li><a href="01.02.00.00.RelatividadEspecial.TransformacionesLorentzEinstein.html#mjx-eqn-eqtg_t">Ec. (1.1)</a>: tg_t.</li>
-<li><a href="01.02.00.00.RelatividadEspecial.TransformacionesLorentzEinstein.html#mjx-eqn-eqtg_x">Ec. (1.2)</a>: tg_x.</li>
-<li><a href="01.02.00.00.RelatividadEspecial.TransformacionesLorentzEinstein.html#mjx-eqn-eqtg_t_sim">Ec. (1.3)</a>: tg_t_sim.</li>
-<li><a href="01.02.00.00.RelatividadEspecial.TransformacionesLorentzEinstein.html#mjx-eqn-eqtg_x_sim">Ec. (1.4)</a>: tg_x_sim.</li>
-<li><a href="01.02.00.00.RelatividadEspecial.TransformacionesLorentzEinstein.html#mjx-eqn-eqdtg_t">Ec. (1.5)</a>: dtg_t.</li>
-<li><a href="01.02.00.00.RelatividadEspecial.TransformacionesLorentzEinstein.html#mjx-eqn-eqdtg_x">Ec. (1.6)</a>: dtg_x.</li>
-<li><a href="01.02.00.00.RelatividadEspecial.TransformacionesLorentzEinstein.html#mjx-eqn-eqdtg_y">Ec. (1.7)</a>: dtg_y.</li>
-<li><a href="01.02.00.00.RelatividadEspecial.TransformacionesLorentzEinstein.html#mjx-eqn-eqdtg_z">Ec. (1.8)</a>: dtg_z.</li>
-<li><a href="01.02.00.00.RelatividadEspecial.TransformacionesLorentzEinstein.html#mjx-eqn-eqLF_z">Ec. (1.9)</a>: LF_z.</li>
-<li><a href="01.02.00.00.RelatividadEspecial.TransformacionesLorentzEinstein.html#mjx-eqn-eqBz_LF">Ec. (1.10)</a>: Bz_LF.</li>
-<li><a href="01.02.00.00.RelatividadEspecial.TransformacionesLorentzEinstein.html#mjx-eqn-eqEy_LF">Ec. (1.11)</a>: Ey_LF.</li>
-<li><a href="01.02.00.00.RelatividadEspecial.TransformacionesLorentzEinstein.html#mjx-eqn-eqLAM_y">Ec. (1.12)</a>: LAM_y.</li>
-<li><a href="01.02.00.00.RelatividadEspecial.TransformacionesLorentzEinstein.html#mjx-eqn-eqBz_LAM">Ec. (1.13)</a>: Bz_LAM.</li>
-<li><a href="01.02.00.00.RelatividadEspecial.TransformacionesLorentzEinstein.html#mjx-eqn-eqEy_LAM">Ec. (1.14)</a>: Ey_LAM.</li>
-<li><a href="01.02.00.00.RelatividadEspecial.TransformacionesLorentzEinstein.html#mjx-eqn-eqBpz_tg">Ec. (1.15)</a>: Bpz_tg.</li>
-<li><a href="01.02.00.00.RelatividadEspecial.TransformacionesLorentzEinstein.html#mjx-eqn-eqEpy_tg">Ec. (1.16)</a>: Epy_tg.</li>
-<li><a href="01.02.00.00.RelatividadEspecial.TransformacionesLorentzEinstein.html#mjx-eqn-eqBz_tg">Ec. (1.17)</a>: Bz_tg.</li>
-<li><a href="01.02.00.00.RelatividadEspecial.TransformacionesLorentzEinstein.html#mjx-eqn-eqEy_tg">Ec. (1.18)</a>: Ey_tg.</li>
-<li><a href="01.02.00.00.RelatividadEspecial.TransformacionesLorentzEinstein.html#mjx-eqn-eqtrans_lorentz_x">Ec. (1.19)</a>: trans_lorentz_x.</li>
-</ul>
-</li>
-<li>Ecuaciones en <a href="02.04.00.00.RelatividadGeneral.Geodesicas.html">02.04.00.00.RelatividadGeneral.Geodesicas</a><ul>
-<li><a href="02.04.00.00.RelatividadGeneral.Geodesicas.html#mjx-eqn-eqderivada_e">Ec. (2.20)</a>: derivada_e.</li>
-<li><a href="02.04.00.00.RelatividadGeneral.Geodesicas.html#mjx-eqn-eqg_edote">Ec. (2.21)</a>: g_edote.</li>
-</ul>
-</li>
-</ul>
+<p>Una interesante simetría se produce si escribimos las componentes explícitas:</p>
+$$
+\begin{array}{rcl}
+B^1 &amp; = &amp; \partial_2 A^3-\partial_3 A^2\\
+E^1 &amp; = &amp; -\partial_1 A^0-\partial_0 A^1
+\end{array}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="1.16.5.-El-tensor-de-Faraday">1.16.5. El tensor de Faraday<a class="anchor-link" href="#1.16.5.-El-tensor-de-Faraday">&#182;</a></h3><p><a id='tensor_faraday'></a></p>
 
 </div>
 </div>
@@ -13401,22 +13145,702 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#205;ndice-de-c&#243;digos">&#205;ndice de c&#243;digos<a class="anchor-link" href="#&#205;ndice-de-c&#243;digos">&#182;</a></h2><ul>
-<li>Código en <a href="01.02.01.00.RelatividadEspecial.TransformacionesLorentzEinstein.Propiedades.html">01.02.01.00.RelatividadEspecial.TransformacionesLorentzEinstein.Propiedades</a><ul>
-<li><a href="01.02.01.00.RelatividadEspecial.TransformacionesLorentzEinstein.Propiedades.html#code:TLE">Código (1.1)</a>: TLE.</li>
-<li><a href="01.02.01.00.RelatividadEspecial.TransformacionesLorentzEinstein.Propiedades.html#code:mapa_TLE">Código (1.2)</a>: mapa_TLE.</li>
-</ul>
-</li>
-<li>Código en <a href="02.04.00.00.RelatividadGeneral.Geodesicas.html">02.04.00.00.RelatividadGeneral.Geodesicas</a><ul>
-<li><a href="02.04.00.00.RelatividadGeneral.Geodesicas.html#code:transporte_paralelo">Código (2.3)</a>: transporte_paralelo.</li>
-<li><a href="02.04.00.00.RelatividadGeneral.Geodesicas.html#code:transporte_paralelo">Código (2.4)</a>: transporte_paralelo.</li>
-</ul>
-</li>
-</ul>
+<p>Si usamos las componentes contravariantes de la derivada (que implican simplemente un cambio en el signo de las componentes espaciales de las derivadas) podemos escribir:</p>
+$$
+\begin{array}{rcl}
+B^1 &amp; = &amp; -\partial^2 A^3+\partial^2 A^2\\
+E^1 &amp; = &amp; \partial^1 A^0-\partial^0 A^1
+\end{array}
+$$<p>que se puede escribir como:</p>
+$$
+\begin{array}{rcl}
+B^1 &amp; = &amp; -(\partial^2 A^3-\partial^2 A^2)\\
+E^1 &amp; = &amp; -(\partial^0 A^1-\partial^1 A^0)
+\end{array}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>De aquí, si definimos el tensor contravariante de segundo rango:</p>
+$$
+F^{\mu\nu}\equiv\partial^\mu A^\nu - \partial^\nu A^\mu
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Vemos que el campo eléctrico y el campo magnético se pueden escribir en términos de este tensor como:</p>
+$$
+\begin{array}{rcl}
+B^i &amp; = &amp; - \epsilon_{ijk} F^{jk}\\
+E^i &amp; = &amp; - F^{0i}
+\end{array}
+$$<p>donde es importante anotar que en la primera expresión no se usa la convención de suma de Einstein.</p>
 
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Otra manera de verlo podría ser escribir explícitamente las componentes del tensor en coordenadas cartesianas:</p>
+$$
+F^{\mu\nu}:
+\left(
+\begin{array}{cccc}
+0 &amp; -E_x &amp; -E_y &amp; -E_z\\
+E_x &amp; 0 &amp; -B_z &amp; +B_y \\
+E_y &amp; +B_z &amp; 0 &amp; -B_x \\
+E_z &amp; -B_y &amp; +B_x &amp; 0 \\
+\end{array}
+\right)
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Llamamos a $F^{\mu\nu}$ el <strong>tensor electromagnético</strong> o <strong>tensor de Faraday</strong>.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Proposición: Propiedades del tensor de Faraday.</strong><a id=''></a> El tensor de Faraday tiene las siguientes propiedades:</p>
+<blockquote><ul>
+<li><strong>Antisimetría</strong>: $F^{\mu\nu}=-F^{\nu\mu}$</li>
+<li><strong>Traza nula</strong>: $\sum_\mu F^{\mu\mu}=0$</li>
+<li><strong>Propiedad cíclica de la derivada contravariante</strong>: 
+  $$\partial^{[\alpha}F^{\mu\nu]}\equiv\partial^\alpha F^{\mu\nu}+\partial^\mu F^{\nu\alpha}+\partial^\nu F^{\alpha\mu}=0$$</li>
+<li><strong>Determinante invariante</strong>: $\det F^{\mu\nu}=(\vec E\cdot \vec B)^2$</li>
+<li><strong>Escalar</strong>: $F^{\mu\nu}F_{\mu\nu}=2(E^2-B^2)$.</li>
+</ul>
+</blockquote>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="1.16.6.-Ecuaciones-de-Maxwell-y-el-tensor-de-Faraday">1.16.6. Ecuaciones de Maxwell y el tensor de Faraday<a class="anchor-link" href="#1.16.6.-Ecuaciones-de-Maxwell-y-el-tensor-de-Faraday">&#182;</a></h3><p><a id='maxwell_faraday'></a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Las ecuaciones de Maxwell inhomogenéas las habíamos escrito como:</p>
+$$
+\partial_\nu \partial^\mu A^\nu = \frac{4\pi}{c} J^\nu
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Podemos sumar y restar $\partial_\mu\partial^\nu A^\mu$ para obtener:</p>
+$$
+\partial_\mu(\partial^\mu A^\nu-\partial^\nu A^\mu)+ \partial_\mu \partial^\nu A^\mu= \frac{4\pi}{c} J^\nu
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Ahora bien, por el gauge de Lorenz:</p>
+$$
+\frac{1}{c}\frac{\partial\phi}{\partial t}+\vec{\nabla}\cdot\vec{A}=\partial_\mu A^\mu 
+$$<p>y por lo tanto el segundo término en el lado izquierdo es cero.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Con esto las ecuaciones de Maxwell inhomogeneas se pueden escribir en términos del tensor de Faraday como:</p>
+$$
+{F^{\mu\nu}}_{,\mu}=\frac{4\pi}{c}J^\nu
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Qué es la <strong>forma manifiestamente covariante de las ecuaciones inhomogéneas de Maxwell</strong>.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>¿Y las ecuaciones de Maxwell homogéneas?.  Estas ecuaciones son:</p>
+\begin{eqnarray}
+\nonumber
+\vec{\nabla}\cdot\vec{B}&amp;=&amp;0\\
+\nonumber
+\vec{\nabla}\times\vec{E}+\frac{1}{c}\frac{\partial\vec B}{\partial t}&amp;=&amp;0\\
+\end{eqnarray}
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Vemos que se trata de 4 ecuaciones que se pueden escribir también en la forma:</p>
+$$
+\begin{array}{rcl}
+\partial_1 B_x + \partial_2 B_y + \partial_3 B_z &amp; = &amp; 0 \\
+\partial_0 B_x + \partial_2 E_z - \partial_3 E_y &amp; = &amp; 0 \\
+\partial_0 B_y + \partial_3 E_x - \partial_1 E_z &amp; = &amp; 0 \\
+\partial_0 B_z + \partial_1 E_y - \partial_2 E_x &amp; = &amp; 0 \\
+\end{array}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Reemplazando los valores del campo por las respectivas entradas del vector de Faraday estas ecuaciones se pueden escribir como:</p>
+$$
+\begin{array}{rcl}
+\partial_1 F^{32} + \partial_2 F^{13} + \partial_3 F^{21} &amp; = &amp; 0 \\
+\partial_0 F^{32} + \partial_2 F^{30} - \partial_3 F^{20} &amp; = &amp; 0 \\
+\partial_0 F^{13} + \partial_3 F^{10} - \partial_1 F^{30} &amp; = &amp; 0 \\
+\partial_0 F^{21} + \partial_1 F^{20} - \partial_2 F^{10} &amp; = &amp; 0 \\
+\end{array}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Si se cambian las derivadas covariantes por derivadas contravariantes y se reorganizan los índices, se obtienen expresiones que recuerdan una propiedad introducida antes:</p>
+$$
+\begin{array}{rcl}
+\partial^1 F^{23} + \partial^2 F^{31} + \partial^3 F^{12} &amp; = &amp; 0 \\
+\partial^0 F^{32} + \partial^3 F^{20} + \partial^2 F^{03} &amp; = &amp; 0 \\
+\partial^0 F^{13} + \partial^1 F^{30} + \partial^3 F^{10} &amp; = &amp; 0 \\
+\partial^0 F^{21} + \partial^2 F^{10} + \partial^1 F^{02} &amp; = &amp; 0 \\
+\end{array}
+$$<p>que no son otra cosa que la propiedad cíclica de la derivada contravariante del tensor de Faraday:</p>
+$$
+\partial^{[\alpha}F^{\mu\nu]}=0
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="1.16.7.-Transformaci&#243;n-de-los-campos">1.16.7. Transformaci&#243;n de los campos<a class="anchor-link" href="#1.16.7.-Transformaci&#243;n-de-los-campos">&#182;</a></h3><p><a id='transformacion_campos'></a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Llegados a este punto podemos encontrar las leyes de transformación de los campos eléctricos y magnético.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Siendo el tensor de Faraday, un tensor, al pasar de un sistema de referencia inercial a otro  a través de las transformaciones de Lorentz-Einstein $\Lambda^{\mu'}_\nu$ el tensor transforma como:</p>
+$$
+F^{\mu'\nu'}=\Lambda^{\mu'}_\alpha \Lambda^{\nu'}_\beta F^{\alpha\beta}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>¿Cómo puede calcularse esta operación matricialmente? El producto de dos matrices $A$ y $B$ se puede escribir como:</p>
+$$
+(AB)_{ij}=\sum_n A_{in}B_{nj}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Si definimos la matriz $\bar{F}$ como:</p>
+$$
+\bar{F}^{\mu'\beta}=\sum_\alpha \Lambda^{\mu'}_\alpha F^{\alpha\beta}
+$$<p>o bien:</p>
+$$
+\bar{F} = \Lambda F
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Entonces:</p>
+$$
+F^{\mu'\nu'}=\bar{F}^{\mu'\beta} \Lambda^{\nu'}_\beta 
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Por la simetría de la transformación de Lorentz-Einstein:</p>
+$$
+F^{\mu'\nu'}=\bar{F}^{\mu'\beta} (\Lambda^\mathrm{T})^{\beta}_{\nu'} 
+$$<p>que en términos matriciales se puede escribir como:</p>
+$$
+F'=\Lambda F \Lambda^\mathrm{T}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Así es como transforman las componentes de un tensor de segundo rango.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Si usamos la configuración estándar:</p>
+$$
+\Lambda=
+\gamma
+\left(
+\begin{array}{cccc}
+1 &amp; -u_L &amp; 0 &amp; 0 \\
+-u_L &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0\\
+0 &amp; 0 &amp; 0 &amp; 1
+\end{array}
+\right)
+$$<p>puede probarse (ver Problemas al final del capítulo) que las reglas de transformación de los campos eléctricos se pueden escribir como:</p>
+$$
+\begin{array}{rcl}
+E'_x &amp; = &amp; E_x\\
+E'_y &amp; = &amp; \gamma(E_y - u_L B_z)\\
+E'_z &amp; = &amp; \gamma(E_z - u_L B_y)\\
+\end{array}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Y las del campo magnético:</p>
+$$
+\begin{array}{rcl}
+B'_x &amp; = &amp; B_x\\
+B'_y &amp; = &amp; \gamma(B_y + u_L E_z)\\
+B'_z &amp; = &amp; \gamma(B_z - u_L E_y)\\
+\end{array}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Las componentes $E_y$ y $B_z$ de esta transformación coinciden con las que habíamos obtenido en la deducción de las transformaciones de Lorentz-Einstein, con lo que la teoría es completamente consistente.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Es posible mostrar que para una configuración general, la transformación de los campos sería:</p>
+$$
+\begin{array}{rcl}
+\vec{E} &amp; = &amp; \vec{E}' + (\gamma-1)\vec{E}_\perp - \gamma \vec{u}_L\times\vec B\\
+\vec{B} &amp; = &amp; \vec{B}' + (\gamma-1)\vec{B}_\perp + \gamma \vec{u}_L\times\vec E\\
+\end{array}
+$$<p>donde $\vec{E}_\perp$ y  $\vec{B}_\perp$ son los vectores de campo eléctrico y magnético perpendiculares a la velocidad relativa del sistema de referencia.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="1.16.8.-La-fuerza-de-Lorentz">1.16.8. La fuerza de Lorentz<a class="anchor-link" href="#1.16.8.-La-fuerza-de-Lorentz">&#182;</a></h3><p><a id='fuerza_lorentz_covariante'></a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Si bien en la teoría electromagnética clásica, la fuerza de Lorentz se postula, en realidad esta resultad de las transformaciones del tensor de Faraday que vimos en la sección anterior.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Para ello considere por ejemplo el caso de una carga que se mueve en un campo magnético estático $\vec B$.  En el sistema de referencia de la carga ($\vec{u}_L=\vec{v}_L$):</p>
+$$
+\vec{E}' = \gamma_v \vec{v}_L\times\vec B\\
+$$<p>y si postulamos que la fuerza es simplemente $\vec F'=q\vec E'$ la fuerza será:</p>
+$$
+\vec{F}' = \gamma_v q \vec{v}_L\times\vec B\\
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Ahora bien, sabemos de las reglas de transformación de la fuerza que la componente perpendicular transforma como:</p>
+$$
+\vec F_\perp = \frac{\gamma_u^{-1}}{1+\vec{u}_l\cdot\vec{v}'_L} F'_\perp
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Dado que en el sistema de referencia de la carga $\vec v'_L=\vec o$ y que $\vec u_L=\vec v_L$ la fuerza sobre la carga en el sistema de referencia del observador será:</p>
+$$
+\vec F=q \vec{v}_L\times\vec B\\
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Si además hay un campo eléctrico en el sistema del observador (donde la partícula se mueve) la fuerza será entonces:</p>
+$$
+\vec F = q \vec E + \frac{1}{c}q\vec{v}\times \vec B
+$$
+</div>
+</div>
+</div><div style="background:lightgray;border:solid black 2px;pad:10px;margin-left:7em;margin-top:1em;margin-bottom:1em;">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Nota 3.15. La fuerza de Lorentz y la rotación del campo de Faraday.</strong><a id=''></a> Una manera e interpretar el resultado anterior y el origen en general de la fuerza de Lorentz podría ser la de pensar de la siguiente manera.  El campo de Faraday cuando solo hay campo magnético tiene solo componentes espaciales.  Cuando una carga eléctrica está en movimiento es como si el campo de Faraday se rotará.  Al rotarse aparecen componentes temporales del campo de Faraday que la carga percibe como campo eléctrico y de allí que experimente una fuerza.</p>
+
+</div>
+</div>
+</div>
+    </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Escribiendo explícitamente la componente $x$ queda:</p>
+$$
+\frac{\mathrm{d}p_x}{\mathrm{d}t}=\frac{q}{c} (cE_x + v_y B_z - v_z B_y)
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Multiplicando por $\gamma$ a ambos lados podemos escribir:</p>
+$$
+\frac{\mathrm{d}P^1}{\mathrm{d}\tau}=\frac{q}{c} (U^0 F^{10} - U^2 F^{12} - U^3 F^{13})
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>De donde podemos proponer la generalización para calcular la cuadrifuerza:</p>
+$$
+f^\mu=\frac{q}{c}F^{\mu\nu}U_\nu
+$$<p>que llevada a un conjunto de cargas se puede escribir como:</p>
+$$
+K^\mu=F^{\mu\nu}J_\nu
+$$<p>donde en esta última expresión $K^\mu$ representa una densidad de fuerza (fuerza por unidad de volumen).</p>
+
+</div>
+</div>
+</div><div style="background:white;border:solid black 2px;pad:10px;margin-left:7em;margin-top:1em;margin-bottom:1em;">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Nota: La componente temporal de la fuerza de Lorentz.</strong><a id=''></a> La generalización presentada en el párrafo anterior apareció simplemente como un ejercicio de inducción, pero no lo es estrictamente.  Si bien las componentes espaciales de la cuadrifuerza siquen la misma regla:</p>
+<blockquote>$$f^i=\frac{q}{c}F^{i\nu}U_\nu$$<p>la componente temporal no tiene porque seguirla.  ¿De dónde viene la idea de que podemos generalizarla a esta componente.  Hagamos el ejercicio uinverso e intentemos determinar en términos de cantidaes convencionales que significa esta componente:</p>
+$$f^0=\frac{q}{c}F^{0\nu}U_\nu=\frac{q}{c}(F^{01} U_1+F^{02} U_2+F^{03} U_3$$<p>Si recordamos que $E^i=-F^{i0}$ y $U_i=-U^i$ entonces:</p>
+$$f^0=\gamma\frac{q}{c}\vec E\cdot \vec v$$<p>en unidades luz y reconociendo que la trifuerza experimentada por una carga en presencia de un campo eléctrico es $\vec F=q\vec E$ obtenemos:</p>
+$$f_L^0=\gamma\vec F\cdot \vec v_L$$<p>que es justamente lo que sabíamos sobre la componente temporal de la fuerza.  Es decir la componente temporal de la fuerza de Lorentz no es otra cosa que la componente temporal de la cuadrifuerza de un campo eléctrico.</p>
+<p>Ahora bien, sabemos también que $f_L^0=\mathrm{d}E/\mathrm{d}t$, siendo $E$ en este contexto, la energía total de la partícula.  De allí que la componente cero de la fuerza de Lorentz es simplemente la potencia de la fuerza de Lorentz, la tasa a la cual se transfiere o remueve energía de la partícula.</p>
+</blockquote>
+
+</div>
+</div>
+</div>
+    </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="1.16.9.-Intrepretaci&#243;n-geom&#233;trica-del-campo-de-Faraday">1.16.9. Intrepretaci&#243;n geom&#233;trica del campo de Faraday<a class="anchor-link" href="#1.16.9.-Intrepretaci&#243;n-geom&#233;trica-del-campo-de-Faraday">&#182;</a></h3><p><a id='geometria_F'></a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Uno de los aspectos más oscuros de la teoría electromagnética es la interpretación intuitiva de cada una de las cantidades relevantes de la teoría.  Si bien la interpretación de los campos es relativamente directa, están asociados con las fuerzas que experimentan partículas y corrientes eléctricas en presencia de ellos, la interpretación de los potenciales es un poco más complicada.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Si eso pasa con la electrodinámica vectorial en tres dimensiones, la electrodinámica covariante en cuatro dimensiones no es menos sencilla.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>La fuerza de Lorentz sin embargo nos ofrece un raro vistazo a la geometría del tensor de Faraday en 4 dimensiones.  Para entenderlo mejor podemos apelar a una cantidad clásica: <strong>el tensor de esfuerzos $\sigma_{ij}$</strong>.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a id='fig:tensor_esfuerzos'></a><img src="./figures/square_tensor_esfuerzos.png" alt="Tensor de esfuerzos." width="70.0%"></p>
+<center><b>Figura 1.22</b>. Tensor de esfuerzos.</center>
+</div>
+</div>
+</div><div style="background:white;border:solid black 2px;pad:10px;margin-left:7em;margin-top:1em;margin-bottom:1em;">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Definición: Tensor de esfuerzos.</strong><a id=''></a> El tensor de esfuerzos es una cantidad clásica usada en la mecánica del continuo para calcular la <em>tracción</em> producida en cualquier punto dentro de un sólido por el material vecino.  La tracción $\vec{T}^{(\hat{n})}$ se define como la fuerza por unidad de área que experimenta el elemento de sólido en dirección de una superficie imaginaria  definida por el vector $\hat{n}$.  La tracción viene dada en términos del tensor de esfuerzos $\sigma_{ij}$ por el producto punto:</p>
+<blockquote>$$\vec{T}^{(\hat{n})}:\left(\sum_i n_i \sigma_{i1},\sum_i n_i \sigma_{i2},\sum_i n_i \sigma_{i3}\right)\equiv \hat{n}\cdot \sigma$$
+</blockquote>
+
+</div>
+</div>
+</div>
+    </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>La característica más interesante y relevante para nuestra discusión es que el producto punto de un vector (dirección) y un tensor de segundo rango (tensor de esfuerzos) produce un vector (tracción).</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Particularmente interesantes son las componentes de la tracción en dirección de los vectores coordenados:</p>
+$$
+\begin{array}{rcl}
+\vec{T}^{(e_1)} &amp; : &amp; (\sigma_{11},\sigma_{12},\sigma_{13})\\
+\vec{T}^{(e_2)} &amp; : &amp; (\sigma_{21},\sigma_{22},\sigma_{23})\\
+\vec{T}^{(e_2)} &amp; : &amp; (\sigma_{31},\sigma_{32},\sigma_{33})
+\end{array}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Escrito de esta manera, nos damos cuenta que las componentes del tensor de esfuerzo en la base $\hat{e}_1, \hat{e}_2, \hat{e}_3$ no son otra cosa que las componentes de las tracciones sobre la superficie en cada una de las direcciones.  Esto le da una interpretación geométrica concreta a la tracción.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Con el tensor de Faraday sucede una situación similar.  La cuadrifuerza de Lorentz $f^\mu$ juega aquí el papel de la tracción y el tensor de Faraday es como el tensor de esfuerzos:</p>
+$$
+f_L^\mu= q F^{\mu\nu} U_{L\nu}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>De modo que uno puede ver las componentes del tensor de Faraday como los factores por los que hace falta multiplicar la velocidad para obtener las componentes de la cuadrifuerza sobre la partícula.  En otros términos, del tensor de Faraday:</p>
+$$
+F^{\mu\nu}:
+\left(
+\begin{array}{cccc}
+0 &amp; -E_x &amp; -E_y &amp; -E_z\\
+E_x &amp; 0 &amp; -B_z &amp; +B_y \\
+E_y &amp; +B_z &amp; 0 &amp; -B_x \\
+E_z &amp; -B_y &amp; +B_x &amp; 0 \\
+\end{array}
+\right)
+$$<p>podemos pasar al cuadrivector de fuerza escrito de la forma:</p>
+$$
+\left(
+\begin{array}{c}
+\mathrm{d}E/\mathrm{d}t\\
+F_{Lx}\\
+F_{Ly}\\
+F_{Lz}
+\end{array}
+\right)
+=
+q
+\left(
+\begin{array}{cccc}
+0 &amp; (-v_{Lx})(-E_x) &amp; (-v_{Ly})(-E_y) &amp; (-v_{Lz})(-E_z)\\
+E_x &amp; 0 &amp; (-v_{Ly})(-B_z) &amp; +(-v_{Lz})B_y \\
+E_y &amp; +(-v_{Lx})B_z &amp; 0 &amp; (-v_{Lz})(-B_x) \\
+E_z &amp; (-v_{Lx})(-B_{Ly}) &amp; +(-v_{Ly})B_x &amp; 0 \\
+\end{array}
+\right)
+$$<p>donde asumimos que sumamos sobre las filas de la matriz anterior (abusando de la notación).</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Es decir, las filas del tensor de Faraday nos dan una idea de cuánto vale la fuerza electromagnética en una determinada dirección.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Ahora bien.  Si hacemos por ejemplo $\vec v:(v_x,0,0)$, la fuerza de Lorentz queda:</p>
+$$
+\left(
+\begin{array}{c}
+\mathrm{d}E/\mathrm{d}t\\
+F_{Lx}\\
+F_{Ly}\\
+F_{Lz}
+\end{array}
+\right)
+=
+q
+\left(
+\begin{array}{c}
+0 + v_x E_x \\
+E_x + 0 \\
+E_y - v_x B_z \\
+E_z + v_x B_y \\
+\end{array}
+\right)
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Es decir, si se proyecta el vector de Faraday sobre una dirección de la velocidad específica el negativo de la columna de correspondiente a la velocidad nos dará las componentes de la fuerza espacial magnética experimentada por la partícula.  Es como si la proyección espacial del tensor de Faraday produjera las fuerzas magnéticas.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Por otro lado si la partícula esta quieta $U_L^\mu:(1,0,0,0)$ entonces:</p>
+$$
+\left(
+\begin{array}{c}
+\mathrm{d}E/\mathrm{d}t\\
+F_{Lx}\\
+F_{Ly}\\
+F_{Lz}
+\end{array}
+\right)
+=
+q
+\left(
+\begin{array}{c}
+0 \\
+E_x  \\
+E_y  \\
+E_z  \\
+\end{array}
+\right)
+$$<p>de modo que podríamos interpretar la proyección temporal del vector de Faraday como relacionada con la fuerza eléctrica experimentada por la partícula.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="1.16.1.-S&#237;ntesis">1.16.1. S&#237;ntesis<a class="anchor-link" href="#1.16.1.-S&#237;ntesis">&#182;</a></h3><p><a id='sintesis'></a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>En síntesis la dinámica de cargas y campos electromagnéticos clásicos se describen con:</p>
+\begin{eqnarray}
+F^{[\mu\nu,\alpha]} &amp; = &amp; 0\\
+{F^{\mu\nu}}_{,\mu} &amp; = &amp; \frac{4\pi}{c}J^\mu\\
+{J^\mu}_{,\nu} &amp; = &amp; 0\\
+f^\mu &amp; = &amp; F^{\mu\nu} J_\nu
+\end{eqnarray}<p>donde $F^{\mu\nu}\equiv\partial^\mu A^\nu-\partial^\nu A^\mu$ y el cuadripotencial cumple ${A^\mu}_{,\mu}=0$ (gauge de Lorenz).</p>
+
+</div>
+</div>
+</div><div style="background:lightgray">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a href="index.html">Indice</a> | Previo: <a href="01.08.02.00.RelatividadEspecial.Electrodinamica.CuadriCorrientePotencial.html">RelatividadEspecial.Electrodinamica.CuadriCorrientePotencial</a> | Siguiente: <a href="01.08.04.00.RelatividadEspecial.Electrodinamica.Ejemplos.html">RelatividadEspecial.Electrodinamica.Ejemplos</a></p>
+
+</div>
+</div>
+</div>
+    </div>
     </div>
   </div>
 </body>

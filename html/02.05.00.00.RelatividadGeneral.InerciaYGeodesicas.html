@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
-<title>index</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>02.05.00.00.RelatividadGeneral.InerciaYGeodesicas</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 <style type="text/css">
@@ -13067,38 +13067,21 @@ div#notebook {
 <body>
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
-
+<div style="background:lightgray">
+    	 
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p style="margin:3em"></p>
-<p style="text-align:center;font-size:3em;font-weight:bold">Relatividad y Gravitación</p>
-<p style="text-align:center;font-size:2em">Teoría, algoritmos y problemas</p>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="./figures/portada.png" alt="Portada"></p>
+<p><a href="index.html">Indice</a> | Previo: <a href="02.04.00.00.RelatividadGeneral.Geodesicas.html">RelatividadGeneral.Geodesicas</a> | Siguiente: <a href="02.06.00.00.RelatividadGeneral.Curvatura.html">RelatividadGeneral.Curvatura</a></p>
 
 </div>
 </div>
 </div>
+    </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p style="text-align:center;font-size:2em;font-weight:bold">Jorge I. Zuluaga</p>
-<p style="text-align:center;font-size:1.2em">Profesor Titular de Física y Astronomía</p>
-<p style="text-align:center;font-size:1.2em">Instituto de Física, Facultad de Ciencias Exactas y Naturales</p>
-<p style="text-align:center;font-size:1.2em">Universidad de Antioquia</p>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<hr>
+<h2 id="2.5.-La-geod&#233;sica-y-un-principio-variacional">2.5. La geod&#233;sica y un principio variacional<a class="anchor-link" href="#2.5.-La-geod&#233;sica-y-un-principio-variacional">&#182;</a></h2><p><a id='geodesica_variacional'></a></p>
 
 </div>
 </div>
@@ -13106,222 +13089,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p style="margin:1em"></p>
-<p style="text-align:center;font-size:2em;font-weight:bold">Tabla de Contenido</p>
-<p style="margin:1em"></p>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#205;ndice-de-materias">&#205;ndice de materias<a class="anchor-link" href="#&#205;ndice-de-materias">&#182;</a></h2><ul>
-<li><a href="01.00.00.00.RelatividadEspecial.html#relatividad_especial">Relatividad Especial</a>.<ul>
-<li><a href="01.00.00.00.RelatividadEspecial.html#respecial_motivacion">Motivación</a>.</li>
-<li><a href="01.01.00.00.RelatividadEspecial.ConceptosBasicos.html#respecial_conceptos">Conceptos básicos</a>.</li>
-<li><a href="01.01.00.00.RelatividadEspecial.ConceptosBasicos.html#ppio_homogeneidad">Principio de homogeneidad e isotropía del espacio-tiempo</a>.</li>
-<li><a href="01.01.00.00.RelatividadEspecial.ConceptosBasicos.html#relatividad_newtoniana">La relatividad Newtoniana</a>.</li>
-<li><a href="01.01.00.00.RelatividadEspecial.ConceptosBasicos.html#problema_electromagnetismo">El problema del electromagnetismo</a>.</li>
-<li><a href="01.02.00.00.RelatividadEspecial.TransformacionesLorentzEinstein.html#transformaciones_einstein">Las transformaciones de Lorentz-Einstein</a>.</li>
-<li><a href="01.02.01.00.RelatividadEspecial.TransformacionesLorentzEinstein.Propiedades.html#propiedades_tle">Propiedades de las TLE</a>.<ul>
-<li><a href="01.02.01.00.RelatividadEspecial.TransformacionesLorentzEinstein.Propiedades.html#unidades_luz">Unidades luz</a>.</li>
-<li><a href="01.02.01.00.RelatividadEspecial.TransformacionesLorentzEinstein.Propiedades.html#TLE_rotacion_hiperbolica">La TLE como una rotación hiperbólica</a>.</li>
-<li><a href="01.02.01.00.RelatividadEspecial.TransformacionesLorentzEinstein.Propiedades.html#notacion_einstein">Las TLE y la notación de Einstein</a>.</li>
-<li><a href="01.02.01.00.RelatividadEspecial.TransformacionesLorentzEinstein.Propiedades.html#TLE_generales">Las TLE generales</a>.</li>
-<li><a href="01.02.01.00.RelatividadEspecial.TransformacionesLorentzEinstein.Propiedades.html#valor_gama">El valor del factor de Lorentz-Einstein</a>.</li>
-<li><a href="01.02.01.00.RelatividadEspecial.TransformacionesLorentzEinstein.Propiedades.html#TLE_mapas">Mapas de la TLE</a>.</li>
-</ul>
-</li>
-<li><a href="01.02.02.00.RelatividadEspecial.TransformacionesLorentzEinstein.Consecuencias.html#consecuencias_tle">Consecuencias de las TLE</a>.<ul>
-<li><a href="01.02.02.00.RelatividadEspecial.TransformacionesLorentzEinstein.Consecuencias.html#transformacion_intervalos">Transformación de los intervalos y el gradiente</a>.</li>
-<li><a href="01.02.02.00.RelatividadEspecial.TransformacionesLorentzEinstein.Consecuencias.html#dilatacion_temporal">Dilatación temporal</a>.</li>
-<li><a href="01.02.02.00.RelatividadEspecial.TransformacionesLorentzEinstein.Consecuencias.html#postulado_relojes">El postulado de los relojes</a>.</li>
-<li><a href="01.02.02.00.RelatividadEspecial.TransformacionesLorentzEinstein.Consecuencias.html#contraccion_longitudes">Contracción de longitudes</a>.</li>
-<li><a href="01.02.02.00.RelatividadEspecial.TransformacionesLorentzEinstein.Consecuencias.html#adicion_velocidades">Adición de velocidades</a>.</li>
-<li><a href="01.02.02.00.RelatividadEspecial.TransformacionesLorentzEinstein.Consecuencias.html#transformacion_aceleraciones">Transformación de aceleraciones</a>.</li>
-</ul>
-</li>
-<li><a href="01.03.00.00.RelatividadEspecial.Minkowski.html#minkowski">El espacio-tiempo de Minkowski</a>.<ul>
-<li><a href="01.03.00.00.RelatividadEspecial.Minkowski.html#norma_minkowski">La norma de Minkowski</a>.</li>
-<li><a href="01.03.00.00.RelatividadEspecial.Minkowski.html#metrica_minkowski">Las variedades de Lorentz y la métrica de Minkowski</a>.</li>
-<li><a href="01.03.00.00.RelatividadEspecial.Minkowski.html#metrica_intervalos">Métrica y tipos de intervalos</a>.</li>
-<li><a href="01.03.00.00.RelatividadEspecial.Minkowski.html#tiempo_propio_minkowski">Métrica y tiempo propio</a>.</li>
-<li><a href="01.03.00.00.RelatividadEspecial.Minkowski.html#metrica_dilatacion_contraccion">Métrica, dilatación del tiempo y contracción de longitudes</a>.</li>
-<li><a href="01.03.00.00.RelatividadEspecial.Minkowski.html#vectores_minkowski">Vectores y cálculo en el espacio de Minkowski</a>.</li>
-<li><a href="01.03.00.00.RelatividadEspecial.Minkowski.html#minkowski_postulado_relojes">Minkowski y el postulado de los relojes</a>.</li>
-<li><a href="01.03.00.00.RelatividadEspecial.Minkowski.html#transformacion_cuadrivectores">Transformación general de cuadrivectores</a>.</li>
-</ul>
-</li>
-<li><a href="01.04.00.00.RelatividadEspecial.OpticaRelativista.html#optica_relativista">Óptica relativista</a>.<ul>
-<li><a href="01.04.00.00.RelatividadEspecial.OpticaRelativista.html#doppler_relativista">Efecto Doppler relativista</a>.</li>
-<li><a href="01.04.00.00.RelatividadEspecial.OpticaRelativista.html#aberración">Aberración de la luz</a>.</li>
-<li><a href="01.04.00.00.RelatividadEspecial.OpticaRelativista.html#enfoque_relativista">Enfoque relativista</a>.</li>
-</ul>
-</li>
-<li><a href="01.05.01.00.RelatividadEspecial.CinematicaRelativista.Definiciones.html#cinematica_relativistica">Cinemática relativistica</a>.<ul>
-<li><a href="01.05.01.00.RelatividadEspecial.CinematicaRelativista.Definiciones.html#cuadrivelocidad">Cuadrivelocidad</a>.</li>
-<li><a href="01.05.01.00.RelatividadEspecial.CinematicaRelativista.Definiciones.html#cuadriaceleracion">Cuadriaceleración</a>.</li>
-<li><a href="01.05.02.00.RelatividadEspecial.CinematicaRelativista.AceleracionPropiaConstante.html#cuadriaceleracion_constante">Movimiento con cuadriaceleración constante</a>.</li>
-<li><a href="01.05.02.00.RelatividadEspecial.CinematicaRelativista.AceleracionPropiaConstante.html#velocidad_limite">La velocidad límite</a>.</li>
-<li><a href="01.05.02.00.RelatividadEspecial.CinematicaRelativista.AceleracionPropiaConstante.html#nave_interestelar">Ejemplo: una nave interestelar</a>.</li>
-</ul>
-</li>
-<li><a href="01.06.01.00.RelatividadEspecial.DinamicaRelativista.EnergiaMomentum.html#dinamica_relativista">Dinámica relativista</a>.<ul>
-<li><a href="01.06.01.00.RelatividadEspecial.DinamicaRelativista.EnergiaMomentum.html#masa_invariante">Masa invariante</a>.</li>
-<li><a href="01.06.01.00.RelatividadEspecial.DinamicaRelativista.EnergiaMomentum.html#momentum_relativista">Momentum relativista</a>.</li>
-<li><a href="01.06.01.00.RelatividadEspecial.DinamicaRelativista.EnergiaMomentum.html#cuadrimomentum">Cuadrimomentum</a>.</li>
-<li><a href="01.06.01.00.RelatividadEspecial.DinamicaRelativista.EnergiaMomentum.html#magnitud_cuadrimomentum">Magnitud del cuadrimomentum y la simetría gauge</a>.</li>
-<li><a href="01.06.01.00.RelatividadEspecial.DinamicaRelativista.EnergiaMomentum.html#cuadrimomentum_minkowski">Cuadrimomentum en el espacio-tiempo</a>.</li>
-</ul>
-</li>
-<li><a href="01.06.02.00.RelatividadEspecial.DinamicaRelativista.ColisionesRelativistas.html#colisiones_relativistas">Colisiones relativistas</a>.<ul>
-<li><a href="01.06.02.00.RelatividadEspecial.DinamicaRelativista.ColisionesRelativistas.html#energia_cm">Energía en el centro de masa</a>.</li>
-<li><a href="01.06.02.00.RelatividadEspecial.DinamicaRelativista.ColisionesRelativistas.html#colisiones_interactivas">Colisiones relativistas interactivas</a>.</li>
-</ul>
-</li>
-<li><a href="01.06.03.00.RelatividadEspecial.DinamicaRelativista.Cuadrifuerza.html#cuadrifuerza">Cuadrifuerza</a>.<ul>
-<li><a href="01.06.03.00.RelatividadEspecial.DinamicaRelativista.Cuadrifuerza.html#transformacion_fuerza">Reglas de transformación de la fuerza</a>.</li>
-<li><a href="01.06.04.00.RelatividadEspecial.DinamicaRelativista.FuerzaDeLorentz.html#fuerza_lorentz">La fuerza de Lorentz</a>.</li>
-<li><a href="01.06.04.00.RelatividadEspecial.DinamicaRelativista.FuerzaDeLorentz.html#movimiento_circular">Movimiento circular bajo la fuerza de Lorentz</a>.</li>
-<li><a href="01.06.04.00.RelatividadEspecial.DinamicaRelativista.FuerzaDeLorentz.html#edm_relativista">Ecuación de movimiento relativista</a>.</li>
-</ul>
-</li>
-<li><a href="01.07.00.00.RelatividadEspecial.SintesisMecanicaRelativista.html#sintesis_mecanica">Síntesis de Mecánica Relativista</a>.<ul>
-<li><a href="01.07.00.00.RelatividadEspecial.SintesisMecanicaRelativista.html#sintesis_cinematica">Síntesis de cinemática relativista</a>.</li>
-<li><a href="01.07.00.00.RelatividadEspecial.SintesisMecanicaRelativista.html#sintesis_dinamica">Síntesis de dinámica relativista</a>.</li>
-</ul>
-</li>
-<li><a href="01.08.01.00.RelatividadEspecial.Electrodinamica.EcuacionesClasicas.html#electrodinamica">Electrodinamica manifiestamente covariante</a>.<ul>
-<li><a href="01.08.01.00.RelatividadEspecial.Electrodinamica.EcuacionesClasicas.html#ecuaciones_electrodinamica">Ecuaciones de la electrodinámica</a>.</li>
-<li><a href="01.08.02.00.RelatividadEspecial.Electrodinamica.CuadriCorrientePotencial.html#continuidad">La cuadricorriente</a>.</li>
-<li><a href="01.08.02.00.RelatividadEspecial.Electrodinamica.CuadriCorrientePotencial.html#maxwell_inhomogeneas">Ecuaciones de Maxwell inhomogéneas</a>.</li>
-<li><a href="01.08.03.00.RelatividadEspecial.Electrodinamica.TensorFaraday.html#campos_tensoriales">Los campos en términos tensoriales</a>.</li>
-<li><a href="01.08.03.00.RelatividadEspecial.Electrodinamica.TensorFaraday.html#tensor_faraday">El tensor de Faraday</a>.</li>
-<li><a href="01.08.03.00.RelatividadEspecial.Electrodinamica.TensorFaraday.html#maxwell_faraday">Ecuaciones de Maxwell y el tensor de Faraday</a>.</li>
-<li><a href="01.08.03.00.RelatividadEspecial.Electrodinamica.TensorFaraday.html#transformacion_campos">Transformación de los campos</a>.</li>
-<li><a href="01.08.03.00.RelatividadEspecial.Electrodinamica.TensorFaraday.html#fuerza_lorentz_covariante">La fuerza de Lorentz</a>.</li>
-<li><a href="01.08.03.00.RelatividadEspecial.Electrodinamica.TensorFaraday.html#geometria_F">Intrepretación geométrica del campo de Faraday</a>.</li>
-<li><a href="01.08.03.00.RelatividadEspecial.Electrodinamica.TensorFaraday.html#sintesis">Síntesis</a>.<ul>
-<li><a href="01.08.04.00.RelatividadEspecial.Electrodinamica.Ejemplos.html#campo_carga_movimiento">Campo producido por una carga en movimiento</a>.</li>
-<li><a href="01.08.04.00.RelatividadEspecial.Electrodinamica.Ejemplos.html#campo_alambre">Campo producido por un alambre recto</a>.</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="01.09.00.00.RelatividadEspecial.ProblemasSeleccionados.html#especial_problemas">Problemas Seleccionados</a>.</li>
-</ul>
-</li>
-<li><a href="02.00.00.00.RelatividadGeneral.html#relatividad_general">Relatividad General</a>.<ul>
-<li><a href="02.00.00.00.RelatividadGeneral.html#rgeneral_motivacion">Motivación</a>.</li>
-<li><a href="02.01.00.00.RelatividadGeneral.PostuladosBasicos.html#rgeneral_postulados">Principios y postulados básicos</a>.<ul>
-<li><a href="02.01.00.00.RelatividadGeneral.PostuladosBasicos.html#principio_equivalencia">Principio de Equivalencia</a>.<ul>
-<li><a href="02.01.00.00.RelatividadGeneral.PostuladosBasicos.html#principio_galileo">Principio de Galileo</a>.</li>
-<li><a href="02.01.00.00.RelatividadGeneral.PostuladosBasicos.html#principio_equivalencia_masas">Principio de igualdad de las masas</a>.</li>
-<li><a href="02.01.00.00.RelatividadGeneral.PostuladosBasicos.html#principio_equivalencia_einstein">Principio de equivalencia de Einstein</a>.</li>
-</ul>
-</li>
-<li><a href="02.01.00.00.RelatividadGeneral.PostuladosBasicos.html#principio_covarianza">Principio de covarianza general</a>.</li>
-<li><a href="02.01.00.00.RelatividadGeneral.PostuladosBasicos.html#tensores_generales">Tensores generales</a>.</li>
-</ul>
-</li>
-<li><a href="02.02.00.00.RelatividadGeneral.TransporteParalelo.html#transporte_paralelo">Transporte paralelo y derivada covariante</a>.<ul>
-<li><a href="02.02.00.00.RelatividadGeneral.TransporteParalelo.html#gradiente_notensor">El gradiente no es un tensor general</a>.</li>
-<li><a href="02.02.00.00.RelatividadGeneral.TransporteParalelo.html#transporte_paralelo_explicito">Transporte paralelo</a>.</li>
-<li><a href="02.02.00.00.RelatividadGeneral.TransporteParalelo.html#derivada_direccional">Derivada direccional general</a>.</li>
-<li><a href="02.03.00.00.RelatividadGeneral.SimbolosChristoffel.html#simbolos_christoffel">Los símbolos de Christoffel</a>.</li>
-<li><a href="02.03.00.00.RelatividadGeneral.SimbolosChristoffel.html#ejemplo_christoffel">Cálculo de los símbolos de Christoffel</a>.<ul>
-<li><a href="02.03.00.00.RelatividadGeneral.SimbolosChristoffel.html#christoffel_metrica_diagonal">Los símbolos de Christoffel de una métrica diagonal</a>.</li>
-<li><a href="02.03.00.00.RelatividadGeneral.SimbolosChristoffel.html#christoffel_plano">Símbolos de Christoffel del espacio-tiempo plano</a>.</li>
-<li><a href="02.03.00.00.RelatividadGeneral.SimbolosChristoffel.html#christoffel_esfera">Símbolos de Christoffel de una superficie esférica</a>.</li>
-<li><a href="02.03.00.00.RelatividadGeneral.SimbolosChristoffel.html#christoffel_general">Símbolos de Christoffel de una métrica general</a>.</li>
-<li><a href="02.03.00.00.RelatividadGeneral.SimbolosChristoffel.html#christoffel_numerico">Cálculo numérico</a>.</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="02.04.00.00.RelatividadGeneral.Geodesicas.html#dtotal_geodesicas">Derivada total general y geodésicas</a>.<ul>
-<li><a href="02.04.00.00.RelatividadGeneral.Geodesicas.html#derivada_total">Derivada total general</a>.</li>
-<li><a href="02.04.00.00.RelatividadGeneral.Geodesicas.html#dtotal_paralelo">Derivada total y transporte paralelo</a>.</li>
-<li><a href="02.04.00.00.RelatividadGeneral.Geodesicas.html#paralelo_bases">Transporte paralelo y bases vectoriales</a>.</li>
-<li><a href="02.04.00.00.RelatividadGeneral.Geodesicas.html#bases_componentes_vectoriales">Bases y componentes vectoriales en espacio curvo</a>.</li>
-<li><a href="02.04.00.00.RelatividadGeneral.Geodesicas.html#ejemplo_numerico_paralelo">Ejemplos numéricos de transporte paralelo</a>.<ul>
-<li><a href="02.04.00.00.RelatividadGeneral.Geodesicas.html#ejemplo_numerico_cilindricas">Transporte paralelo en coordenadas cilíndrica</a>.</li>
-<li><a href="02.04.00.00.RelatividadGeneral.Geodesicas.html#ejemplo_numerico_esfera">Transporte paralelo sobre una esfera</a>.</li>
-</ul>
-</li>
-<li><a href="02.04.00.00.RelatividadGeneral.Geodesicas.html#ecuacion_geodesica">Ecuación geodésica</a>.</li>
-<li><a href="02.04.00.00.RelatividadGeneral.Geodesicas.html#ejemplo_numerico_geodesicas">Ejemplos numéricos de geodésicas</a>.<ul>
-<li><a href="02.04.00.00.RelatividadGeneral.Geodesicas.html#geodesica_cilindricas_numerico">Geodésica en coordenadas cilíndricas</a>.</li>
-<li><a href="02.04.00.00.RelatividadGeneral.Geodesicas.html#geodesica_esfera">Geodésica sobre la superficie de una esfera</a>.</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="02.05.00.00.RelatividadGeneral.InerciaYGeodesicas.html#geodesica_variacional">La geodésica y un principio variacional</a>.</li>
-<li><a href="02.05.00.00.RelatividadGeneral.InerciaYGeodesicas.html#geodesicas_inercia">Geodésicas y movimiento inercial</a>.</li>
-<li><a href="02.05.00.00.RelatividadGeneral.InerciaYGeodesicas.html#geodesicas_campo_debil">Geodésicas en campo débil</a>.<ul>
-<li><a href="02.05.00.00.RelatividadGeneral.InerciaYGeodesicas.html#campo_debil_numerico">Un ejemplo numérico</a>.</li>
-</ul>
-</li>
-<li><a href="02.05.00.00.RelatividadGeneral.InerciaYGeodesicas.html#simetrias_conservacion">Simetrías y cantidades conservadas</a>.<ul>
-<li><a href="02.05.00.00.RelatividadGeneral.InerciaYGeodesicas.html#metrica_constante">La métrica como constante</a>.</li>
-<li><a href="02.05.00.00.RelatividadGeneral.InerciaYGeodesicas.html#vector_killing">Coordenadas cíclicas y vectores de Killing</a>.</li>
-<li><a href="02.05.00.00.RelatividadGeneral.InerciaYGeodesicas.html#ejemplo_geodesica_cilindricas">Ejemplo: geodésicas en coordenadas cilíndricas</a>.</li>
-<li><a href="02.05.00.00.RelatividadGeneral.InerciaYGeodesicas.html#ejemplo_geodesica_esfera">Ejemplo: geodésicas sobre una esfera</a>.</li>
-<li><a href="02.05.00.00.RelatividadGeneral.InerciaYGeodesicas.html#ejemplo_geodesica_newton">Ejemplo: geodésicas en la métrica de Newton</a>.</li>
-<li><a href="02.06.00.00.RelatividadGeneral.Curvatura.html#propiedades_riemann">Propiedades del tensor de Riemann</a>.</li>
-<li><a href="02.06.00.00.RelatividadGeneral.Curvatura.html#riemann_diagonal">Tensor de Riemann para métricas diagonales</a>.</li>
-<li><a href="02.06.00.00.RelatividadGeneral.Curvatura.html#desviacion_geodesica">Desviación geodésica</a>.</li>
-<li><a href="02.06.00.00.RelatividadGeneral.Curvatura.html#riemann_numerico">Tensor de Riemann numérico</a>.</li>
-<li><a href="02.06.00.00.RelatividadGeneral.Curvatura.html#desviacion_geodesica_numerica">Desviación geodésica numérica</a>.</li>
-</ul>
-</li>
-<li><a href="02.07.00.00.RelatividadGeneral.PrincipioConsistencia.html#principio_consistencia">Principio de consistencia</a>.</li>
-<li><a href="02.07.00.00.RelatividadGeneral.PrincipioConsistencia.html#ecuacion_campo_general">Una ecuación de campo general</a>.</li>
-<li><a href="02.08.00.00.RelatividadGeneral.TensorDeMomentumEnergia.html#tensor_momentum_energia">Tensor de momentum-energía</a>.<ul>
-<li><a href="02.08.00.00.RelatividadGeneral.TensorDeMomentumEnergia.html#Tmunu_nube">Tensor de momentum-energía para una nube de partículas</a>.</li>
-<li><a href="02.08.00.00.RelatividadGeneral.TensorDeMomentumEnergia.html#Tmunu_polvo">Tensor de momentum-energía para polvo</a>.</li>
-<li><a href="02.08.00.00.RelatividadGeneral.TensorDeMomentumEnergia.html#Tmunu_sigma_munu">Tensor $T^{\mu\nu}$ y el tensor de esfuerzos $\sigma^{\mu\nu}$</a>.</li>
-<li><a href="02.08.00.00.RelatividadGeneral.TensorDeMomentumEnergia.html#Tmunu_fluido_perfecto">Tensor de momentum-energía para fluído perfecto</a>.</li>
-<li><a href="02.08.00.00.RelatividadGeneral.TensorDeMomentumEnergia.html#conservacion_Tmunu">La conservación de $T^{\mu\nu}$ y la ecuación geodésica</a>.</li>
-</ul>
-</li>
-<li><a href="02.09.00.00.RelatividadGeneral.EcuacionCampoMetrico.html#ecuacion_campo_metrico">La ecuación de campo métrico</a>.<ul>
-<li><a href="02.09.00.00.RelatividadGeneral.EcuacionCampoMetrico.html#tensor_einstein">El tensor de Einstein</a>.</li>
-<li><a href="02.09.00.00.RelatividadGeneral.EcuacionCampoMetrico.html#ecuacion_campo_debil_general">Una ecuación de campo general</a>.</li>
-<li><a href="02.09.00.00.RelatividadGeneral.EcuacionCampoMetrico.html#ecuacion_campo_consistencia">La ecuación de campo y el principio de consistencia</a>.</li>
-<li><a href="02.09.00.00.RelatividadGeneral.EcuacionCampoMetrico.html#ecuacion_campo_fluido_perfecto">La ecuación de campo débil para fluido perfecto</a>.</li>
-<li><a href="02.09.00.00.RelatividadGeneral.EcuacionCampoMetrico.html#termino_cosmologico">El término cosmológico</a>.</li>
-<li><a href="02.09.00.00.RelatividadGeneral.EcuacionCampoMetrico.html#ecuacion_hilbert_einstein">La ecuación de Hilbert-Einstein</a>.</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="03.00.00.00.Aplicaciones.html#aplicaciones_rgeneral">Aplicaciones de la relatividad general</a>.<ul>
-<li><a href="03.01.00.00.Aplicaciones.OndasGravitacionales.html#ondas_gravitacionales">Ondas gravitacionales</a>.<ul>
-<li><a href="03.01.00.00.Aplicaciones.OndasGravitacionales.html#historia_gw">Historia de las ondas gravitacionales</a>.</li>
-<li><a href="03.01.00.00.Aplicaciones.OndasGravitacionales.html#programa_gw">Un programa de estudio</a>.</li>
-<li><a href="03.01.01.00.Aplicaciones.OndasGravitacionales.GravedadLinearizada.html#gravedad_linearizada">Gravedad linearizada</a>.<ul>
-<li><a href="03.01.01.00.Aplicaciones.OndasGravitacionales.GravedadLinearizada.html#inversa_metrica_linearizada">Inversa de la métrica linearizada</a>.</li>
-<li><a href="03.01.01.00.Aplicaciones.OndasGravitacionales.GravedadLinearizada.html#simbolo_christoffel_linearizado">Símbolo de Christoffel linearizado</a>.</li>
-<li><a href="03.01.01.00.Aplicaciones.OndasGravitacionales.GravedadLinearizada.html#riemann_gravedad_linearizado">El tensor de Riemann linearizado</a>.</li>
-<li><a href="03.01.01.00.Aplicaciones.OndasGravitacionales.GravedadLinearizada.html#riemann_linearizado">El tensor de Ricci linearizado</a>.</li>
-<li><a href="03.01.01.00.Aplicaciones.OndasGravitacionales.GravedadLinearizada.html#einstein_linearizado">El tensor de Einstein linearizado</a>.</li>
-<li><a href="03.01.01.00.Aplicaciones.OndasGravitacionales.GravedadLinearizada.html#Tmunu_linearizado">El tensor momentum-energía</a>.</li>
-</ul>
-</li>
-<li><a href="03.01.02.00.Aplicaciones.OndasGravitacionales.EcuacionOndaVacio.html#gw_vacio">Ecuación de campo linearizada en el vacío</a>.</li>
-<li><a href="03.01.02.00.Aplicaciones.OndasGravitacionales.EcuacionOndaVacio.html#libertad_gauge">Libertad gauge</a>.</li>
-<li><a href="03.01.02.00.Aplicaciones.OndasGravitacionales.EcuacionOndaVacio.html#gauge_armónico">El gauge armónico</a>.</li>
-<li><a href="03.01.02.00.Aplicaciones.OndasGravitacionales.EcuacionOndaVacio.html#ecuacion_de_ondas">La ecuación de campo o de ondas</a>.</li>
-<li><a href="03.01.02.00.Aplicaciones.OndasGravitacionales.EcuacionOndaVacio.html#ecuacion_fuentes">La ecuación de campo con fuentes</a>.</li>
-<li><a href="03.01.02.00.Aplicaciones.OndasGravitacionales.EcuacionOndaVacio.html#metrica_postnewtoniana">La métrica postnewtoniana</a>.</li>
-<li><a href="03.01.02.00.Aplicaciones.OndasGravitacionales.EcuacionOndaVacio.html#analogia_electromagnetica">Analogía electromagnética</a>.</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
+<p>Una deducción alternativa de la ecuación geodésica se puede obtener mediante un principio variacional.</p>
 
 </div>
 </div>
@@ -13329,35 +13097,20 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#205;ndice-de-figuras">&#205;ndice de figuras<a class="anchor-link" href="#&#205;ndice-de-figuras">&#182;</a></h2><ul>
-<li>Figuras en <a href="01.04.00.00.RelatividadEspecial.OpticaRelativista.html">01.04.00.00.RelatividadEspecial.OpticaRelativista</a><ul>
-<li><a href="01.04.00.00.RelatividadEspecial.OpticaRelativista.html#fig:Figure_9">Figura 1.9</a>. Figura.</li>
-</ul>
-</li>
-<li>Figuras en <a href="01.05.02.00.RelatividadEspecial.CinematicaRelativista.AceleracionPropiaConstante.html">01.05.02.00.RelatividadEspecial.CinematicaRelativista.AceleracionPropiaConstante</a><ul>
-<li><a href="01.05.02.00.RelatividadEspecial.CinematicaRelativista.AceleracionPropiaConstante.html#fig:cuadriaceleracion">Figura 1.14</a>. Cambios en la cuadrivelocidad y la cuadriaceleración.</li>
-<li><a href="01.05.02.00.RelatividadEspecial.CinematicaRelativista.AceleracionPropiaConstante.html#fig:Figure_15">Figura 1.15</a>. Nave interestelar.</li>
-</ul>
-</li>
-<li>Figuras en <a href="01.08.03.00.RelatividadEspecial.Electrodinamica.TensorFaraday.html">01.08.03.00.RelatividadEspecial.Electrodinamica.TensorFaraday</a><ul>
-<li><a href="01.08.03.00.RelatividadEspecial.Electrodinamica.TensorFaraday.html#fig:tensor_esfuerzos">Figura 1.22</a>. Tensor de esfuerzos..</li>
-</ul>
-</li>
-<li>Figuras en <a href="02.02.00.00.RelatividadGeneral.TransporteParalelo.html">02.02.00.00.RelatividadGeneral.TransporteParalelo</a><ul>
-<li><a href="02.02.00.00.RelatividadGeneral.TransporteParalelo.html#fig:transporte_paralelo">Figura 2.24</a>. Transporte paralelo..</li>
-<li><a href="02.02.00.00.RelatividadGeneral.TransporteParalelo.html#fig:transporte_paralelo_derivada">Figura 2.25</a>. Derivada direccional..</li>
-</ul>
-</li>
-<li>Figuras en <a href="02.04.00.00.RelatividadGeneral.Geodesicas.html">02.04.00.00.RelatividadGeneral.Geodesicas</a><ul>
-<li><a href="02.04.00.00.RelatividadGeneral.Geodesicas.html#fig:geodesica">Figura 2.29</a>. Definición de geodésica en el espacio-tiempo plano y sobre la superficie de una esfera..</li>
-</ul>
-</li>
-<li>Figuras en <a href="02.06.00.00.RelatividadGeneral.Curvatura.html">02.06.00.00.RelatividadGeneral.Curvatura</a><ul>
-<li><a href="02.06.00.00.RelatividadGeneral.Curvatura.html#fig:Figure_34">Figura 2.34</a>. Figura.</li>
-<li><a href="02.06.00.00.RelatividadGeneral.Curvatura.html#fig:Figure_35">Figura 2.35</a>. Figura.</li>
-</ul>
-</li>
-</ul>
+<p>Sabemos que la longitud de un intervalo en el espacio-tiempo es:</p>
+$$
+\mathrm{d}s^2=g_{\mu\nu}\mathrm{d}x^\mu\mathrm{d}x^\nu
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>La longitud entonces de una curva hecha solo de intervalos temporaloides o luminoides, entre dos eventos $A$ y $B$ será:</p>
+$$
+S=\int_A^B \mathrm{d}s=\int_A^B \sqrt{g_{\mu\nu}(x^\alpha)\mathrm{d}x^\mu\mathrm{d}x^\nu}
+$$<p>donde $x^\alpha$ son los puntos a lo largo de la trayectoria.</p>
 
 </div>
 </div>
@@ -13365,35 +13118,37 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#205;ndice-de-ecuaciones">&#205;ndice de ecuaciones<a class="anchor-link" href="#&#205;ndice-de-ecuaciones">&#182;</a></h2><ul>
-<li>Ecuaciones en <a href="01.02.00.00.RelatividadEspecial.TransformacionesLorentzEinstein.html">01.02.00.00.RelatividadEspecial.TransformacionesLorentzEinstein</a><ul>
-<li><a href="01.02.00.00.RelatividadEspecial.TransformacionesLorentzEinstein.html#mjx-eqn-eqtg_t">Ec. (1.1)</a>: tg_t.</li>
-<li><a href="01.02.00.00.RelatividadEspecial.TransformacionesLorentzEinstein.html#mjx-eqn-eqtg_x">Ec. (1.2)</a>: tg_x.</li>
-<li><a href="01.02.00.00.RelatividadEspecial.TransformacionesLorentzEinstein.html#mjx-eqn-eqtg_t_sim">Ec. (1.3)</a>: tg_t_sim.</li>
-<li><a href="01.02.00.00.RelatividadEspecial.TransformacionesLorentzEinstein.html#mjx-eqn-eqtg_x_sim">Ec. (1.4)</a>: tg_x_sim.</li>
-<li><a href="01.02.00.00.RelatividadEspecial.TransformacionesLorentzEinstein.html#mjx-eqn-eqdtg_t">Ec. (1.5)</a>: dtg_t.</li>
-<li><a href="01.02.00.00.RelatividadEspecial.TransformacionesLorentzEinstein.html#mjx-eqn-eqdtg_x">Ec. (1.6)</a>: dtg_x.</li>
-<li><a href="01.02.00.00.RelatividadEspecial.TransformacionesLorentzEinstein.html#mjx-eqn-eqdtg_y">Ec. (1.7)</a>: dtg_y.</li>
-<li><a href="01.02.00.00.RelatividadEspecial.TransformacionesLorentzEinstein.html#mjx-eqn-eqdtg_z">Ec. (1.8)</a>: dtg_z.</li>
-<li><a href="01.02.00.00.RelatividadEspecial.TransformacionesLorentzEinstein.html#mjx-eqn-eqLF_z">Ec. (1.9)</a>: LF_z.</li>
-<li><a href="01.02.00.00.RelatividadEspecial.TransformacionesLorentzEinstein.html#mjx-eqn-eqBz_LF">Ec. (1.10)</a>: Bz_LF.</li>
-<li><a href="01.02.00.00.RelatividadEspecial.TransformacionesLorentzEinstein.html#mjx-eqn-eqEy_LF">Ec. (1.11)</a>: Ey_LF.</li>
-<li><a href="01.02.00.00.RelatividadEspecial.TransformacionesLorentzEinstein.html#mjx-eqn-eqLAM_y">Ec. (1.12)</a>: LAM_y.</li>
-<li><a href="01.02.00.00.RelatividadEspecial.TransformacionesLorentzEinstein.html#mjx-eqn-eqBz_LAM">Ec. (1.13)</a>: Bz_LAM.</li>
-<li><a href="01.02.00.00.RelatividadEspecial.TransformacionesLorentzEinstein.html#mjx-eqn-eqEy_LAM">Ec. (1.14)</a>: Ey_LAM.</li>
-<li><a href="01.02.00.00.RelatividadEspecial.TransformacionesLorentzEinstein.html#mjx-eqn-eqBpz_tg">Ec. (1.15)</a>: Bpz_tg.</li>
-<li><a href="01.02.00.00.RelatividadEspecial.TransformacionesLorentzEinstein.html#mjx-eqn-eqEpy_tg">Ec. (1.16)</a>: Epy_tg.</li>
-<li><a href="01.02.00.00.RelatividadEspecial.TransformacionesLorentzEinstein.html#mjx-eqn-eqBz_tg">Ec. (1.17)</a>: Bz_tg.</li>
-<li><a href="01.02.00.00.RelatividadEspecial.TransformacionesLorentzEinstein.html#mjx-eqn-eqEy_tg">Ec. (1.18)</a>: Ey_tg.</li>
-<li><a href="01.02.00.00.RelatividadEspecial.TransformacionesLorentzEinstein.html#mjx-eqn-eqtrans_lorentz_x">Ec. (1.19)</a>: trans_lorentz_x.</li>
-</ul>
-</li>
-<li>Ecuaciones en <a href="02.04.00.00.RelatividadGeneral.Geodesicas.html">02.04.00.00.RelatividadGeneral.Geodesicas</a><ul>
-<li><a href="02.04.00.00.RelatividadGeneral.Geodesicas.html#mjx-eqn-eqderivada_e">Ec. (2.20)</a>: derivada_e.</li>
-<li><a href="02.04.00.00.RelatividadGeneral.Geodesicas.html#mjx-eqn-eqg_edote">Ec. (2.21)</a>: g_edote.</li>
-</ul>
-</li>
-</ul>
+<p>Si suponemos que parametrizamos los eventos en la trayectoria con un parámetro $\lambda$, de modo que $x^\alpha(\lambda)$ esta espresión se puede escribir como:</p>
+$$
+S=\int_A^B\sqrt{g_{\mu\nu}(x^\alpha)\frac{\mathrm{d}x^\mu}{\mathrm{d}\lambda}\frac{\mathrm{d}x^\nu}{\mathrm{d}\lambda}}\mathrm{d}\lambda
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>La geodésica entre los eventos $A$ y $B$ será aquella curva tal que la longitud total entre ellos es <em>extremal</em>:</p>
+$$
+\delta S=0
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>El intervalo entre puntos de la geodésica lo llamaremos en lo sucesivo:</p>
+$$
+\mathrm{d}\sigma^2\equiv g_{\mu\nu}\mathrm{d}x^\mu\mathrm{d}x^\nu
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>El problema de la determinación de la geodésica es similar al problema de la mecánica clásica de la determinación de la trayectoria real de un sistema en el espacio de configuración que tiene acción $S$ y lagrangiano $L$.</p>
 
 </div>
 </div>
@@ -13401,22 +13156,1153 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#205;ndice-de-c&#243;digos">&#205;ndice de c&#243;digos<a class="anchor-link" href="#&#205;ndice-de-c&#243;digos">&#182;</a></h2><ul>
-<li>Código en <a href="01.02.01.00.RelatividadEspecial.TransformacionesLorentzEinstein.Propiedades.html">01.02.01.00.RelatividadEspecial.TransformacionesLorentzEinstein.Propiedades</a><ul>
-<li><a href="01.02.01.00.RelatividadEspecial.TransformacionesLorentzEinstein.Propiedades.html#code:TLE">Código (1.1)</a>: TLE.</li>
-<li><a href="01.02.01.00.RelatividadEspecial.TransformacionesLorentzEinstein.Propiedades.html#code:mapa_TLE">Código (1.2)</a>: mapa_TLE.</li>
-</ul>
-</li>
-<li>Código en <a href="02.04.00.00.RelatividadGeneral.Geodesicas.html">02.04.00.00.RelatividadGeneral.Geodesicas</a><ul>
-<li><a href="02.04.00.00.RelatividadGeneral.Geodesicas.html#code:transporte_paralelo">Código (2.3)</a>: transporte_paralelo.</li>
-<li><a href="02.04.00.00.RelatividadGeneral.Geodesicas.html#code:transporte_paralelo">Código (2.4)</a>: transporte_paralelo.</li>
-</ul>
-</li>
-</ul>
+<p>Aquí vemos que el papel de la acción $S$ de la mecánica clásica lo juega la longitud de arco y el papel del Lagrangiano lo juega la cantidad:</p>
+$$
+L\equiv\sqrt{g_{\mu\nu}\frac{\mathrm{d}x^\mu}{\mathrm{d}\lambda}\frac{\mathrm{d}x^\nu}{\mathrm{d}\lambda}}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Sobre la curva extremal, en general</p>
+$$\mathrm{d}\sigma^2=D \mathrm{d}\lambda^2$$<p>
+donde $D$ es una constante.</p>
 
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Sabemos por el cálculo variacional que la condición variacional es equivalente a las ecuaciones de Euler:</p>
+$$
+\left.\frac{\mathrm{d}}{\mathrm{d}\lambda}\left(\frac{\partial L}{\partial \dot x^\alpha}\right)-\frac{\partial L}{\partial x^\alpha}\right|_{\;\lambda=\sigma}=0
+$$<p>donde por brevedad hemos escrito $\dot x^\alpha\equiv\mathrm{d}x^\alpha/\mathrm{d}\lambda$</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Puede probarse que la ecuación de Euler en este caso resulta igual a:</p>
+$$
+\frac{\mathrm{d^2} x^\mu}{\mathrm{d}\sigma^2} + \Gamma^\mu_{\alpha\gamma} \frac{\mathrm{d} x^\alpha}{\mathrm{d}\sigma}\frac{\mathrm{d} x^\gamma}{\mathrm{d}\sigma}=0
+$$<p>que es justamente la ecuación de la geodésica.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Nótese que en realidad la ecuación de la geodésica puede escribirse en general como:</p>
+$$
+\frac{\mathrm{d^2} x^\mu}{\mathrm{d}\lambda^2} + \Gamma^\mu_{\alpha\gamma} \frac{\mathrm{d} x^\alpha}{\mathrm{d}\lambda}\frac{\mathrm{d} x^\gamma}{\mathrm{d}\lambda}=0
+$$<p>que es independiente de si la geodésica es temporaloide o nula.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Para el caso de partículas con masa:</p>
+$$\mathrm{d}\sigma^2=c^2 \mathrm{d}\tau^2$$<p>
+por lo tanto es posible usar como parámetro afin $\lambda=\tau$ de modo que para este caso:</p>
+$$
+\frac{\mathrm{d^2} x^\mu}{\mathrm{d}\tau^2} + \Gamma^\mu_{\alpha\gamma} \frac{\mathrm{d} x^\alpha}{\mathrm{d}\tau}\frac{\mathrm{d} x^\gamma}{\mathrm{d}\tau}=0
+$$
+</div>
+</div>
+</div><div style="background:white;border:solid black 2px;pad:10px;margin-left:7em;margin-top:1em;margin-bottom:1em;">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Nota: La geodésica y el principio de máximo envejecimiento</strong>. En el espacio Euclidiano o en otras variedades Riemanianas la geodésica representa la trayectoria de longitud mínima, el camino de menor distancia.  En un espacio Lorentziano, sin embargo, y como vimos en el capítulo de Relatividad Espacial, el camino entre dos puntos a lo largo de la geodésica es realmente el camino más largo.  A esto se lo conoce como el <strong>principio de máximo envejecimiento.</strong><a id=''></a></p>
+
+</div>
+</div>
+</div>
+    </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="2.6.-Geod&#233;sicas-y-movimiento-inercial">2.6. Geod&#233;sicas y movimiento inercial<a class="anchor-link" href="#2.6.-Geod&#233;sicas-y-movimiento-inercial">&#182;</a></h2><p><a id='geodesicas_inercia'></a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>La introducción en la sección anterior del concepto de geodésica conduce a la formulación de un principio físico nuevo en la relatividad general, a saber un principio de inercia generalizado:</p>
+
+</div>
+</div>
+</div><div class="box_postulate">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Postulado: Postulado de las geodésicas.</strong><a id=''></a> Una partícula de prueba completamente libre de fuerzas, en un espacio tiempo general caracterizado por una métrica $g_{\mu\nu}$ y símbolos de Christoffel (coeficientes conexión) asociado $\Gamma^{\alpha}_{\mu\nu}$, se mueve sobre una geodésica en el espacio-tiempo:</p>
+$$
+\frac{\mathrm{d^2} x^\mu}{\mathrm{d}\lambda^2} + \Gamma^\mu_{\alpha\gamma} \frac{\mathrm{d} x^\alpha}{\mathrm{d}\lambda}\frac{\mathrm{d} x^\gamma}{\mathrm{d}\lambda}=0
+$$
+</div>
+</div>
+</div>
+    </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Es interesante anotar que el resultado anterior vale tanto si la partícula es masiva como si no lo es, es decir, aplica en el caso de la luz o de otras partículas de prueba.  La diferencia es que en el caso de una partícula masiva en la cual los intervalos son temporaloides, el parámetro afín puede identificarse con el tiempo propio y la ecuación geodésica adopta la forma general:</p>
+$$
+\frac{\mathrm{d^2} x^\mu}{\mathrm{d}\tau^2} + \Gamma^\mu_{\alpha\gamma} \frac{\mathrm{d} x^\alpha}{\mathrm{d}\tau}\frac{\mathrm{d} x^\gamma}{\mathrm{d}\tau}=0
+$$<p>que ahora es una ecuación completamente física (todas las cantidades involucradas son físicas).</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Si despejamos $\mathrm{d^2} x^\mu/\mathrm{d}\tau^2$ obtenemos:</p>
+$$
+\frac{\mathrm{d^2} x^\mu}{\mathrm{d}\tau^2} = - \Gamma^\mu_{\alpha\gamma} \frac{\mathrm{d} x^\alpha}{\mathrm{d}\tau}\frac{\mathrm{d} x^\gamma}{\mathrm{d}\tau}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Clásicamente se puede interpretar como que un cuerpo en un espacio-tiempo con métrica general, experimenta una aceleración incluso en la ausencia de fuerzas.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<blockquote><p><strong>Nota: El principio que realmente es una proposición</strong>. El principio de las geodésicas fue propuesto por Einstein como un elemento adicional físico a la relatividad general independiente de las ecuaciones de campo.  Sin embargo, en años posteriores, Einstein y otros colegas demostraron que en realidad este resultado es producto de una propiedad intrínseca de la relatividad, a saber, el teorema de continuidad (conservación de la energía) que puede expresarse matemáticamente como:</p>
+$${T^{\mu\nu}}_{;\mu}=0$$<p>donde $T^{\mu\nu}$ es el tensor de esfuerzo-energía que introduciremos en una sección posterior.</p>
+</blockquote>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="2.7.-Geod&#233;sicas-en-campo-d&#233;bil">2.7. Geod&#233;sicas en campo d&#233;bil<a class="anchor-link" href="#2.7.-Geod&#233;sicas-en-campo-d&#233;bil">&#182;</a></h2><p><a id='geodesicas_campo_debil'></a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Una de las más interesantes aplicaciones de la ecuación de la geodésica se obtiene al aplicarla a una situación en la que el campo gravitacional es poco intenso.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Hay dos cosas que desde el punto de vista de la relatividad caracterizan a un campo gravitacional débil:</p>
+<ol>
+<li><p>En movimiento geodésico en el campo, las velocidades espaciales conseguidas por las partículas son pequeñas, i.e.</p>
+<p>$$\frac{\mathrm{d}x^i}{\mathrm{d}\tau}\ll\frac{\mathrm{d}x^0}{\mathrm{d}\tau}$$
+recordemos que en unidades luz la primera cantidad nos da la velocidad en unidades de la velocidad de la luz.  Por otro lado, en las mismas unidades la segunda cantidad nos da la diferencia entre el tiempo coordenado y el tiempo propio que en campo débil será casi idéntica.</p>
+</li>
+<li><p>En campo débil la métrica es aproximadamente igual a la métrica de Minkowski.  Podemos escribirla de la forma:</p>
+<p>$$g_{\mu\nu}=\eta_{\mu\nu}+h_{\mu\nu}$$
+donde $|h_{\mu\nu}|\ll 1$.</p>
+<p>A esta forma de escribir la métrica se la llama <em>linearización</em> de la métrica y la usaremos más adelante para describir las ondas gravitacionales.</p>
+</li>
+</ol>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Nos interesa dedicir la ecuación de movimiento de un cuerpo en caída libre en el campo gravitacional, es decir la ecuación $\mathrm{d}^2\vec{r}/\mathrm{d}t^2\approx\mathrm{d}^2 x^i/\mathrm{d}\tau^2$.  En lo sucesivo y para simplificar usaremos la notación de Newton:</p>
+$$
+\ddot{x}^\mu\equiv\frac{\mathrm{d}^2 x^\mu}{\mathrm{d}\tau^2}
+$$<p>entendiendo que el punto hace referencia a la derivada respecto del tiempo propio y no del tiempo coordenado.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>En esta notación la ecuación geodésica nos queda:</p>
+$$
+\ddot{x}^\mu = - \Gamma^\mu_{\alpha\gamma} \dot{x}^\alpha\dot{x}^\gamma
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Teniendo en cuenta la primera condición podemos escribir una versión aproximada de la ecuación para la componente espacial como:</p>
+$$
+\ddot{x}^\mu = - \Gamma^\mu_{00} (\dot{x}^0)^2
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Si usamos coordenadas ortogonales para la métrica, sabemos que:</p>
+$$
+\Gamma^\mu_{00}=-\frac{1}{2}g^{\mu\mu}g_{00,\mu}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Suponemos un campo estático, de modo que $\Gamma^0_{00}=0$ de donde se sigue que sobre la geodésica, en las condiciones propuestas 
+$$\ddot{x}^0=0$$
+de donde integrando obtenemos:</p>
+$$
+\frac{\mathrm{d} x^0}{\mathrm{d}\tau}=k
+$$<p>donde $k$ es una constante de integración a lo largo de la geodésica. Es fácil ver que dado que:</p>
+$$
+\mathrm{d}\sigma^2\equiv g_{\mu\nu}\mathrm{d}x^\mu\mathrm{d}x^\nu
+$$<p>entonces, bajo las aproximaciones podemos escribir, en unidades del sistema internacional:</p>
+$$
+c^2\approx\left(\frac{\mathrm{d} x^0}{\mathrm{d} \tau}\right)^2 
+$$<p>que es exactamente el mismo resultado:</p>
+$$
+\dot{x}^0=c
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Volviendo a la ecuación de la geodésica, la componente temporal queda:</p>
+$$
+\ddot{x}^i = - c^2\Gamma^i_{00} 
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Usando la linearización de la métrica tenemos:</p>
+$$
+\Gamma^i_{00}=-\frac{1}{2}\eta^{ii}h_{00,i}=\frac{1}{2}h_{00,i}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>De donde finalmente la ecuación de movimiento en campo gravitacional débil se puede escribir como:</p>
+$$
+\ddot{x}^i = - \frac{c^2}{2}h_{00,i}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>En la mecánica Newtoniana sabemos que:</p>
+$$
+\ddot{\vec{r}}=-\vec{\nabla}\Phi
+$$<p>donde $\phi$ es el potencial gravitacional local (energía potencial gravitacional por unidad de masa) que para la ley de gravitación universal de Newton esta dado por:</p>
+$$
+\Phi=-\frac{GM}{r}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>La comparación de estas ecuaciones muestra que podemos hacer la identificación:</p>
+$$
+h_{00}=\frac{2\Phi}{c^2}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>De allí que el coeficiente métrico temporal en campo débil sea:</p>
+$$
+g_{00}\approx 1+\frac{2\Phi}{c^2}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>De modo que el comportamiento de las partículas en un campo gravitacional Newtoniano se puede reproducir con una métrica del tipo:</p>
+$$
+\mathrm{d}s^2=\left(1+\frac{2\Phi}{c^2}\right)\;\mathrm{d}t_L^2-\;\mathrm{d}r^2-r^2\mathrm{d}\theta^2-r^2\sin^2\theta\mathrm{d}\phi^2
+$$<p>llamaremos a esta la <strong>métrica de Newton</strong>.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Una manera de parametrizar la métrica de Newton es haciendo:</p>
+$$
+{\cal R}\equiv\frac{2GM_p}{c^2}
+$$<p>la métrica se puede escribir de forma simplificada como:</p>
+$$
+\mathrm{d}s^2=\left(1-\frac{\cal R}{r}\right)\;\mathrm{d}t_L^2-\mathrm{d}r^2-r^2\mathrm{d}\theta^2-r^2\sin^2\theta\;\mathrm{d}\phi^2
+$$
+</div>
+</div>
+</div><div style="background:white;border:solid black 2px;pad:10px;margin-left:7em;margin-top:1em;margin-bottom:1em;">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Nota: El parámetro $\cal R$.</strong><a id=''></a> El parámetro $\cal R$ es una cantidad de gran relevancia en la relatvidad general.  Más adelante la obtendremos después de estudiar la métrica de Schwarzschild.  Por ahora podemos ver que es una cantidad que es proporcional a la masa de un cuerpo con una constante de proporcionalidad $2G/c^2=1.4852\times 10^{-27} m^3 kg^{-1}$ muy pequeña.  Esta cantidad solo se hace macroscópica para valores de la masa del cuerpo realmente grandes (masas planetarias).  Una manera de parametrizar este parámetro es:</p>
+<blockquote>$${\cal R}=2.954\;\mathrm{km}\;\left(\frac{M_p}{M_\odot}\right)$$
+</blockquote>
+
+</div>
+</div>
+</div>
+    </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="2.7.1.-Un-ejemplo-num&#233;rico">2.7.1. Un ejemplo num&#233;rico<a class="anchor-link" href="#2.7.1.-Un-ejemplo-num&#233;rico">&#182;</a></h3><p><a id='campo_debil_numerico'></a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Una implementación de la métrica de Newton es:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">numpy</span> <span class="k">import</span> <span class="n">array</span>
+<span class="k">def</span> <span class="nf">g_newtoniana_4d</span><span class="p">(</span><span class="n">xmu</span><span class="p">,</span><span class="n">mu</span><span class="p">,</span><span class="n">R</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Coeficiente métrico g_mumu calculados en el evento xmu </span>
+<span class="sd">    para espacio-tiempo plano con coordenadas cilíndricas.</span>
+<span class="sd">    </span>
+<span class="sd">    g_munu=diag(A,-1,-r^2,-r^2 sin^2 teta)</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="kn">from</span> <span class="nn">numpy</span> <span class="k">import</span> <span class="n">sin</span>
+    <span class="n">t</span><span class="p">,</span><span class="n">r</span><span class="p">,</span><span class="n">teta</span><span class="p">,</span><span class="n">fi</span><span class="o">=</span><span class="n">xmu</span>
+    <span class="n">A</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">R</span><span class="o">/</span><span class="n">r</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">mu</span><span class="o">==</span><span class="mi">0</span><span class="p">:</span>
+        <span class="n">g</span><span class="o">=</span><span class="n">A</span>
+    <span class="k">elif</span> <span class="n">mu</span><span class="o">==</span><span class="mi">1</span><span class="p">:</span>
+        <span class="n">g</span><span class="o">=-</span><span class="mi">1</span>
+    <span class="k">elif</span> <span class="n">mu</span><span class="o">==</span><span class="mi">2</span><span class="p">:</span>
+        <span class="n">g</span><span class="o">=-</span><span class="n">r</span><span class="o">**</span><span class="mi">2</span>
+    <span class="k">elif</span> <span class="n">mu</span><span class="o">==</span><span class="mi">3</span><span class="p">:</span>
+        <span class="n">g</span><span class="o">=-</span><span class="n">r</span><span class="o">**</span><span class="mi">2</span><span class="o">*</span><span class="n">sin</span><span class="p">(</span><span class="n">teta</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span>
+    <span class="k">return</span> <span class="n">g</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">load_ext</span> autoreload
+<span class="o">%</span><span class="k">autoreload</span> 2
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Vamos a estudiar el movimiento de un cuerpo que es lanzado horizontalmente con una velocidad $v$ a una altura $h$ ($r=R_p+h$) sobre la superficie del planeta.  Las condiciones iniciales del problema son por tanto:</p>
+\begin{eqnarray}
+x_{0L}^\mu &amp; : &amp; \left(0,\frac{R_p+h}{c},\frac{\pi}{2},0\right)\\
+\frac{\mathrm{d}x_{0L}^\mu}{\mathrm{d}\sigma} &amp; : &amp; \left(1,0.0,0,-\frac{v}{R_p}\right)
+\end{eqnarray}
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Las propiedades del cuerpo son:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Constantes</span>
+<span class="n">c</span><span class="o">=</span><span class="mf">3e8</span> <span class="c1"># m/s</span>
+<span class="n">G</span><span class="o">=</span><span class="mf">6.67e-11</span> <span class="c1"># m^3 kg^-1 s^-2</span>
+
+<span class="c1">#Propiedades del planeta</span>
+<span class="n">Mp</span><span class="o">=</span><span class="mf">5.98e24</span> <span class="c1"># kg</span>
+<span class="n">Rp</span><span class="o">=</span><span class="mf">6.371e6</span> <span class="c1"># m</span>
+<span class="n">Phip</span><span class="o">=-</span><span class="n">G</span><span class="o">*</span><span class="n">Mp</span><span class="o">/</span><span class="n">Rp</span>
+<span class="n">gp</span><span class="o">=</span><span class="n">G</span><span class="o">*</span><span class="n">Mp</span><span class="o">/</span><span class="n">Rp</span><span class="o">**</span><span class="mi">2</span>
+<span class="n">R</span><span class="o">=</span><span class="mi">2</span><span class="o">*</span><span class="n">G</span><span class="o">*</span><span class="n">Mp</span><span class="o">/</span><span class="n">c</span><span class="o">**</span><span class="mi">2</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>R = 0.008863688888888891 m
+Potencial en la superficie, Phi(Rp) = -62606498.19494586 J/kg
+Aceleración gravitacional, g(Rp) = 9.826792998735812 m/s^2
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Las condiciones iniciales serán por otro lado:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Altura y velocidad</span>
+<span class="n">h</span><span class="o">=</span><span class="mf">100.0</span> <span class="c1"># m</span>
+<span class="n">v</span><span class="o">=</span><span class="mf">10000.0</span> <span class="c1"># m/s</span>
+<span class="kn">from</span> <span class="nn">numpy</span> <span class="k">import</span> <span class="n">sqrt</span>
+<span class="n">T</span><span class="o">=</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">h</span><span class="o">/</span><span class="n">gp</span><span class="p">)</span>
+
+<span class="c1">#Condiciones iniciales</span>
+<span class="kn">from</span> <span class="nn">numpy</span> <span class="k">import</span> <span class="n">array</span><span class="p">,</span><span class="n">pi</span>
+<span class="n">Y0s</span><span class="o">=</span><span class="n">array</span><span class="p">([</span><span class="mf">0.0</span><span class="p">,(</span><span class="n">Rp</span><span class="o">+</span><span class="n">h</span><span class="p">)</span><span class="o">/</span><span class="n">c</span><span class="p">,</span><span class="n">pi</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="n">pi</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span>
+           <span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="o">-</span><span class="n">v</span><span class="o">/</span><span class="n">Rp</span><span class="p">])</span>
+
+<span class="c1">#Tiempo de integración</span>
+<span class="kn">from</span> <span class="nn">numpy</span> <span class="k">import</span> <span class="n">pi</span><span class="p">,</span><span class="n">linspace</span>
+<span class="n">ss</span><span class="o">=</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">T</span><span class="p">,</span><span class="mi">30</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s2">&quot;Condiciones iniciales = </span><span class="si">{Y0s}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Condiciones iniciales = [ 0.00000000e+00  2.12370000e-02  1.57079633e+00  1.57079633e+00
+  1.00000000e+00  0.00000000e+00  0.00000000e+00 -1.56961231e-03]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">matplotlib</span> inline
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Integra la ecuación de la geodésica</span>
+<span class="kn">from</span> <span class="nn">scipy.integrate</span> <span class="k">import</span> <span class="n">odeint</span>
+<span class="kn">from</span> <span class="nn">export</span> <span class="k">import</span> <span class="n">ecuacion_geodesica</span>
+<span class="n">N</span><span class="o">=</span><span class="mi">4</span>
+<span class="n">Ys</span><span class="o">=</span><span class="n">odeint</span><span class="p">(</span><span class="n">ecuacion_geodesica</span><span class="p">,</span><span class="n">Y0s</span><span class="p">,</span><span class="n">ss</span><span class="p">,</span><span class="n">args</span><span class="o">=</span><span class="p">(</span><span class="n">g_newtoniana_4d</span><span class="p">,(</span><span class="n">R</span><span class="o">/</span><span class="n">c</span><span class="p">,),</span><span class="n">N</span><span class="p">))</span>
+
+<span class="c1">#Convierte solución en coordenadas esféricas</span>
+<span class="n">ts</span><span class="o">=</span><span class="n">Ys</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">rs</span><span class="o">=</span><span class="n">Ys</span><span class="p">[:,</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">qs</span><span class="o">=</span><span class="n">Ys</span><span class="p">[:,</span><span class="mi">2</span><span class="p">]</span>
+<span class="n">fs</span><span class="o">=</span><span class="n">Ys</span><span class="p">[:,</span><span class="mi">3</span><span class="p">]</span>
+
+<span class="c1">#Convierte coordenadas esféricas en coordenadas cartesianas</span>
+<span class="kn">from</span> <span class="nn">numpy</span> <span class="k">import</span> <span class="n">sin</span><span class="p">,</span><span class="n">cos</span>
+<span class="n">xs</span><span class="o">=</span><span class="n">rs</span><span class="o">*</span><span class="n">sin</span><span class="p">(</span><span class="n">qs</span><span class="p">)</span><span class="o">*</span><span class="n">cos</span><span class="p">(</span><span class="n">fs</span><span class="p">)</span>
+<span class="n">ys</span><span class="o">=</span><span class="n">rs</span><span class="o">*</span><span class="n">sin</span><span class="p">(</span><span class="n">qs</span><span class="p">)</span><span class="o">*</span><span class="n">sin</span><span class="p">(</span><span class="n">fs</span><span class="p">)</span>
+<span class="n">zs</span><span class="o">=</span><span class="n">rs</span><span class="o">*</span><span class="n">cos</span><span class="p">(</span><span class="n">qs</span><span class="p">)</span>
+
+<span class="c1">#Gráfico</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="n">fig</span><span class="o">=</span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
+<span class="n">ax</span><span class="o">=</span><span class="n">fig</span><span class="o">.</span><span class="n">gca</span><span class="p">()</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">c</span><span class="o">*</span><span class="n">xs</span><span class="p">,</span><span class="n">c</span><span class="o">*</span><span class="n">ys</span><span class="o">-</span><span class="n">Rp</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s2">&quot;Geodésica&quot;</span><span class="p">)</span>
+
+<span class="c1">#Comparación con el movimiento parabólico</span>
+<span class="n">xs_par</span><span class="o">=</span><span class="n">v</span><span class="o">*</span><span class="n">ss</span>
+<span class="n">ys_par</span><span class="o">=</span><span class="n">h</span><span class="o">-</span><span class="mf">0.5</span><span class="o">*</span><span class="n">gp</span><span class="o">*</span><span class="n">ss</span><span class="o">**</span><span class="mi">2</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">xs_par</span><span class="p">,</span><span class="n">ys_par</span><span class="p">,</span><span class="s1">&#39;k+&#39;</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s2">&quot;Galileo&quot;</span><span class="p">)</span>
+
+<span class="c1">#Decoración</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;$x$&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;$y$&quot;</span><span class="p">)</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+
+<div class="output_png output_subarea ">
+<img src="data:image/png;base64,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
+"
+>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a id='fig:02.05.00.00.RelatividadGeneral.InerciaYGeodesicas_33'></a><center><b>Figura 2.33.</b> </center></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Que se corresponde con lo esperado: el cuerpo describe una trayectoria parabólica en el espacio.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="2.8.-Simetr&#237;as-y-cantidades-conservadas">2.8. Simetr&#237;as y cantidades conservadas<a class="anchor-link" href="#2.8.-Simetr&#237;as-y-cantidades-conservadas">&#182;</a></h2><p><a id='simetrias_conservacion'></a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Las ecuaciones geodésicas son funamentales en Relatividad general y como tal deben ser revisadas con sumo cuidado.  Como sucede en la mecánica clásica con las ecuaciones de movimiento de Newton o las ecuaciones de Lagrange, ellas representan las ecuaciones diferenciales más importantes de la relatividad general.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Existen distintas maneras de escribir las ecuaciones de la geodésica:</p>
+<ol>
+<li><p>Versión original:
+$$
+ \frac{\mathrm{d^2} x^\mu}{\mathrm{d}\tau^2} = - \Gamma^\mu_{\alpha\beta} \frac{\mathrm{d} x^\alpha}{\mathrm{d}\tau}\frac{\mathrm{d} x^\beta}{\mathrm{d}\tau}
+ $$
+que en notación de Newton es:
+$$
+\ddot{x}^\mu = - \Gamma^\mu_{\alpha\beta} \dot{x}^\alpha\dot{x}^\beta
+$$</p>
+</li>
+<li><p>Versión linearizada</p>
+<p>\begin{eqnarray}
+\nonumber
+\dot{x}^\mu &amp; = &amp; U^\mu\\
+\nonumber
+\dot{U}^\mu &amp; = &amp; - \Gamma^\mu_{\alpha\beta} U^\alpha U^\beta
+\end{eqnarray}</p>
+</li>
+<li><p>Versión variacional: si se define:
+$$
+L=\sqrt{g_{\mu\nu}\dot{x}^\mu\dot{x}^\nu}
+$$
+entonces la ecuación de la geodésica es:
+$$
+\frac{\mathrm{d}}{\mathrm{d}\tau}\left(\frac{\partial L}{\partial \dot x^\alpha}\right)-\frac{\partial L}{\partial x^\alpha}=0
+$$</p>
+</li>
+</ol>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Esta última manera de expresar la ecuación permite encontrar constantes de movimiento usando principios similares a los que se usaron en la mecánica clásica.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="2.8.1.-La-m&#233;trica-como-constante">2.8.1. La m&#233;trica como constante<a class="anchor-link" href="#2.8.1.-La-m&#233;trica-como-constante">&#182;</a></h3><p><a id='metrica_constante'></a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Como hemos visto antes si se escoge de manera apropiada el parámetro afin entonces el valor de $L$ resulta constante e igual a D.  De aquí resulta nuestra primera constante de movimiento o cuadratura:</p>
+$$
+\sqrt{g_{\mu\nu}\dot{x}^\mu\dot{x}^\nu}=D
+$$<p>que se puede escribir como:</p>
+$$
+g_{\mu\nu}U^\mu U^\nu=D^2
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>En el caso por ejemplo de una geodésica temporaloide, $D=c$ y $\sigma=\tau$ de modo que:</p>
+$$
+g_{\mu\nu}U^\mu U^\nu=c^2
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="2.8.2.-Coordenadas-c&#237;clicas-y-vectores-de-Killing">2.8.2. Coordenadas c&#237;clicas y vectores de Killing<a class="anchor-link" href="#2.8.2.-Coordenadas-c&#237;clicas-y-vectores-de-Killing">&#182;</a></h3><p><a id='vector_killing'></a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Si una métrica no depende de una de las coordenadas $x^\kappa$, entonces la ecuación de Euler (ecuación de la geodésica) se puede escribir como:</p>
+$$
+   \frac{\mathrm{d}}{\mathrm{d}\tau}\left(\frac{\partial L}{\partial \dot x^\kappa}\right)=0
+   $$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>De aquí se obtiene que la cuadratura:</p>
+$$
+\frac{\partial L}{\partial \dot x^\kappa}=\mathrm{cte}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Desarrollando esta ecuación obtenemos:</p>
+$$
+-g_{\kappa\nu}\frac{1}{L}\frac{\mathrm{d}x^\nu}{\mathrm{d}\sigma}=-g_{\kappa\nu}U^\nu=\mathrm{cte}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Si definimos el vector:</p>
+$$
+\xi^\mu:(0_0,...,1_\kappa,...,0_4)
+$$<p>donde la única componente distinta de 0 es la componente $\kappa$ entonces la constante encontrada se puede escribir como:</p>
+$$
+g_{\mu\nu}\xi^\mu U^\nu=\mathrm{cte}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Que no es otra cosa que el producto punto del cuadrivector $\xi^\mu$ y la cuadrivelocidad $U_\nu$:</p>
+$$
+\xi^\mu U_\mu=\mathrm{cte}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Al cuadrivector $\xi^\mu$ se lo llama el vector de <em>Killing</em> asociado con la simetría correspondiente<a href="#notaspie_1">$^1$</a>.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="2.8.3.-Ejemplo:-geod&#233;sicas-en-coordenadas-cil&#237;ndricas">2.8.3. Ejemplo: geod&#233;sicas en coordenadas cil&#237;ndricas<a class="anchor-link" href="#2.8.3.-Ejemplo:-geod&#233;sicas-en-coordenadas-cil&#237;ndricas">&#182;</a></h3><p><a id='ejemplo_geodesica_cilindricas'></a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Un ejemplo clásico consiste en calcular las geodésicas en un espacio plano cuya métrica es expresada en coordenadas cilíndricas:</p>
+$$
+\mathrm{d}l^2=\mathrm{d}r^2+r^2\mathrm{d}\phi^2+\mathrm{d}z^2
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Consideremos geodésicas sobre el plano $z=0$.  Podemos escribir la ecuación de la geodésica o escribir sus constantes:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ol>
+<li><p><strong>Constancia de la métrica</strong>:  En este caso podemos escoger un parámetro afin tal que $D=1$:</p>
+<p>$$
+ \sqrt{g_{\mu\nu}\dot{x}^\mu\dot{x}^\nu}=1
+ $$</p>
+<p>que se escribe explícitamente como:</p>
+<p>$$
+ \left(\frac{\mathrm{d}r}{\mathrm{d}\lambda}\right)^2+r^2\left(\frac{\mathrm{d}\phi}{\mathrm{d}\lambda}\right)^2=1
+ $$</p>
+</li>
+</ol>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ol>
+<li><p><strong>Variables cíclicas</strong>: En este caso $\phi$ no aparece en la métrica y por lo tanto el vector de Killing es $\xi^\mu:(0,1,0)$, de allí que la siguiente cantidad sea constante:</p>
+<p>$$
+\xi^\mu \dot{x}_\mu=h
+$$
+aquí hemos escogido llamar $h$ a la constante.  Explícitamente:</p>
+<p>$$
+g_{\mu\nu}\xi^\mu\dot{x}^\nu=h
+$$
+o lo que es lo mismo:</p>
+<p>$$
+g_{\phi\phi}\dot{\phi}=r^2\dot{\phi}=h
+$$</p>
+</li>
+</ol>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Dividiendo esta última ecuación por la primera obtenemos:</p>
+$$
+\frac{\mathrm{d}\phi}{\mathrm{d}r}=\frac{l}{r^2}\left(1-\frac{h^2}{r^2}\right)^{-1/2}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Que puede integrarse para dar:</p>
+$$
+\phi=\phi_0+\cos^{-1}\left(\frac{h}{r}\right)
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Despejando $r$ obtenemos la forma de las geodésicas:</p>
+$$
+r \cos(\phi-\phi_0)=h
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Desarrollando el coseno y teniendo en cuenta que $r\cos\phi=x$ y $r\sin\phi=y$:</p>
+$$
+x\cos\phi_0+y\sin\phi_0=h
+$$<p>que es la ecuación general de una línea recta y que es lo que estabamos esperando.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="2.8.4.-Ejemplo:-geod&#233;sicas-sobre-una-esfera">2.8.4. Ejemplo: geod&#233;sicas sobre una esfera<a class="anchor-link" href="#2.8.4.-Ejemplo:-geod&#233;sicas-sobre-una-esfera">&#182;</a></h3><p><a id='ejemplo_geodesica_esfera'></a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Un ejemplo clásico consiste en calcular las geodésicas sobre una esfera:</p>
+$$
+\mathrm{d}l^2=R^2\mathrm{d}\theta^2+R^2\sin^2\theta\;\mathrm{d}\phi^2
+$$<p>Ya habíamos hecho este cálculo numéricamente.  Hagámoslo ahora analíticamente.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ol>
+<li><p><strong>Constancia de la métrica</strong>:  En este caso podemos escoger un parámetro afin tal que $D=1$:</p>
+<p>$$
+ \sqrt{g_{\mu\nu}\dot{x}^\mu\dot{x}^\nu}=1
+ $$</p>
+<p>que se escribe explícitamente como:</p>
+<p>$$
+ R^{2}\left(\frac{\mathrm{d} \theta}{\mathrm{d} \lambda}\right)^{2}+R^{2} \sin^{2} \theta\left(\frac{\mathrm{d} \varphi}{\mathrm{d} \lambda}\right)^{2}=1
+ $$</p>
+</li>
+</ol>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ol>
+<li><p><strong>Variables cíclicas</strong>: En este caso $\phi$ no aparece en la métrica y por lo tanto el vector de Killing es $\xi^\mu:(0,1,0)$, de allí que la siguiente cantidad sea constante:</p>
+<p>$$
+g_{\phi\phi}\dot{\phi}=R^2\sin^2\theta\dot{\phi}=h
+$$</p>
+</li>
+</ol>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Dividiendo término a término la primera por el cuadrado de la segunda y reorganizando se produce:</p>
+$$
+\frac{1}{\sin^2\theta}\left(\frac{\mathrm{d} \theta}{\mathrm{d} \phi}\right)^{2}+1=h^2 R^2\sin^2\theta
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Llamando $\kappa=h^2R^2$, la integral y separando variables obtenemos:</p>
+$$
+\pm \int d \phi=\int \frac{d \theta}{\operatorname{sen} \theta \sqrt{\kappa \operatorname{sen}^{2} \theta-1}}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Por tablas de integrales:</p>
+$$
+\tan\left(\phi+\phi_{0}\right)=\mp \frac{\cos \theta}{\sqrt{\kappa \operatorname{sen}^{2} \theta-1}}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Que puede escribirse como:</p>
+$$
+\operatorname{sin}\left(\phi+\phi_{0}\right)=\frac{\cos \theta}{\sqrt{\kappa-1} \operatorname{sin} \theta}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Y que se puede desarrollar como:</p>
+$$
+\operatorname{sin} \phi_{0}(R \operatorname{sin} \theta \cos \phi)+\cos \phi_{0}(R \operatorname{sin} \theta \operatorname{sin} \varphi)=\frac{1}{\sqrt{\kappa-1}}(R \cos \theta)
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Que se puede escribir en coordenadas cartesianas como:</p>
+$$
+x\sin\phi_0+y\cos\phi_0-z\frac{1}{\sqrt{\kappa-1}}=0
+$$<p>que es la ecuación de un plano que pasa por el origen de coordenadas y cuyas coordenadas $x,y,z$ están sobre la superficie de la esfera.  Es decir, esta es la ecuación de una circunferencia máxima, que es lo que sabemos para una geodésica sobre una esfera.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="2.8.5.-Ejemplo:-geod&#233;sicas-en-la-m&#233;trica-de-Newton">2.8.5. Ejemplo: geod&#233;sicas en la m&#233;trica de Newton<a class="anchor-link" href="#2.8.5.-Ejemplo:-geod&#233;sicas-en-la-m&#233;trica-de-Newton">&#182;</a></h3><p><a id='ejemplo_geodesica_newton'></a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Estudiemos ahora el caso físico de la métrica de Newton:</p>
+$$
+\mathrm{d}s^2=A\;\mathrm{d}t_L^2-\;\mathrm{d}\vec{l}^2
+$$<p>donde</p>
+$$
+A\equiv\left(1+\frac{2\Phi}{c^2}\right)
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ol>
+<li><p><strong>Constancia de la métrica</strong>:  En este caso el parametro afin es $D=c$:</p>
+<p>$$
+ \sqrt{g_{\mu\nu}\dot{x}^\mu\dot{x}^\nu}=c
+ $$</p>
+<p>que se escribe explícitamente como:</p>
+<p>$$
+ A\left(c\frac{\mathrm{d} t}{\mathrm{d} \tau}\right)^{2}-\left(\frac{\mathrm{d}\vec{l}}{\mathrm{d} \tau}\right)^{2}=c^2
+ $$</p>
+</li>
+</ol>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ol>
+<li><p><strong>Variables cíclicas</strong>: En este caso $t$ no aparece en la métrica y por lo tanto el vector de Killing es $\xi^\mu:(1,0,0,0)$, de allí que la siguiente cantidad sea constante:</p>
+<p>$$
+A\frac{\mathrm{d} (ct)}{\mathrm{d} \tau}=\kappa
+$$</p>
+</li>
+</ol>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Elevando al cuadrado la última ecuación y dividiendo la primera por el resultado obtenemos:</p>
+$$
+\frac{1}{A}-\frac{1}{c^2 A^2}\left(\frac{\mathrm{d}\vec{l}}{\mathrm{d}t}\right)^{2}=\frac{c^2}{
+\kappa^2}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Si identificamos $v=\mathrm{d}\vec{l}/\mathrm{d}t$ y expandimos:</p>
+$$
+\frac{1}{A}=1-\frac{2\Phi}{c^2}
+$$<p>y 
+$$
+\frac{1}{A^2}=1-\frac{4\Phi}{c^2}
+$$</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>La siguiente relación resulta:</p>
+$$
+1-\frac{2\Phi}{c^2}-\frac{v^2}{c^2}\left(1-\frac{4\Phi}{c^2}\right)=\frac{c^2}{
+\kappa^2}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Si multiplicamos a ambos lados por $c^2$ y dividimos por 2 y despreciamos el término $\Phi/c^2$:</p>
+$$
+\frac{v^2}{2}+\Phi=\frac{c^2}{2}\left(1-\frac{c^2}{k^2}\right)
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Multiplicando a ambos lados por la masa de la partícula obtenemos:</p>
+$$
+\frac{1}{2}mv^2+U=E
+$$<p>donde</p>
+$$
+E\equiv\frac{mc^2}{2}\left(1-\frac{c^2}{k^2}\right)
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Ya sabíamos en la física Newtoniana de esta cuadratura.</p>
+
+</div>
+</div>
+</div><div style="font-size:0.8em;border-top:solid black 1px">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>NOTAS AL PIE:</strong></p>
+<p><a id='notaspie_1'></a></p>
+<ol start='1'>
+<li>El nombre de vector de Killing viene del matemático alemán Wilhelm Killing (1847-1923) y no de que sea un vector con una acción <em>asesina</em>.</li>
+</ol>
+
+</div>
+</div>
+</div>
+    </div><div style="background:lightgray">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a href="index.html">Indice</a> | Previo: <a href="02.04.00.00.RelatividadGeneral.Geodesicas.html">RelatividadGeneral.Geodesicas</a> | Siguiente: <a href="02.06.00.00.RelatividadGeneral.Curvatura.html">RelatividadGeneral.Curvatura</a></p>
+
+</div>
+</div>
+</div>
+    </div>
     </div>
   </div>
 </body>

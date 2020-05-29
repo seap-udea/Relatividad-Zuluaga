@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
-<title>index</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>02.09.00.00.RelatividadGeneral.EcuacionCampoMetrico</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 <style type="text/css">
@@ -13067,38 +13067,21 @@ div#notebook {
 <body>
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
-
+<div style="background:lightgray">
+    	 
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p style="margin:3em"></p>
-<p style="text-align:center;font-size:3em;font-weight:bold">Relatividad y Gravitación</p>
-<p style="text-align:center;font-size:2em">Teoría, algoritmos y problemas</p>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="./figures/portada.png" alt="Portada"></p>
+<p><a href="index.html">Indice</a> | Previo: <a href="02.08.00.00.RelatividadGeneral.TensorDeMomentumEnergia.html">RelatividadGeneral.TensorDeMomentumEnergia</a> | Siguiente: <a href="03.00.00.00.Aplicaciones.html">Aplicaciones</a></p>
 
 </div>
 </div>
 </div>
+    </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p style="text-align:center;font-size:2em;font-weight:bold">Jorge I. Zuluaga</p>
-<p style="text-align:center;font-size:1.2em">Profesor Titular de Física y Astronomía</p>
-<p style="text-align:center;font-size:1.2em">Instituto de Física, Facultad de Ciencias Exactas y Naturales</p>
-<p style="text-align:center;font-size:1.2em">Universidad de Antioquia</p>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<hr>
+<h2 id="2.12.-La-ecuaci&#243;n-de-campo-m&#233;trico">2.12. La ecuaci&#243;n de campo m&#233;trico<a class="anchor-link" href="#2.12.-La-ecuaci&#243;n-de-campo-m&#233;trico">&#182;</a></h2><p><a id='ecuacion_campo_metrico'></a></p>
 
 </div>
 </div>
@@ -13106,222 +13089,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p style="margin:1em"></p>
-<p style="text-align:center;font-size:2em;font-weight:bold">Tabla de Contenido</p>
-<p style="margin:1em"></p>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#205;ndice-de-materias">&#205;ndice de materias<a class="anchor-link" href="#&#205;ndice-de-materias">&#182;</a></h2><ul>
-<li><a href="01.00.00.00.RelatividadEspecial.html#relatividad_especial">Relatividad Especial</a>.<ul>
-<li><a href="01.00.00.00.RelatividadEspecial.html#respecial_motivacion">Motivación</a>.</li>
-<li><a href="01.01.00.00.RelatividadEspecial.ConceptosBasicos.html#respecial_conceptos">Conceptos básicos</a>.</li>
-<li><a href="01.01.00.00.RelatividadEspecial.ConceptosBasicos.html#ppio_homogeneidad">Principio de homogeneidad e isotropía del espacio-tiempo</a>.</li>
-<li><a href="01.01.00.00.RelatividadEspecial.ConceptosBasicos.html#relatividad_newtoniana">La relatividad Newtoniana</a>.</li>
-<li><a href="01.01.00.00.RelatividadEspecial.ConceptosBasicos.html#problema_electromagnetismo">El problema del electromagnetismo</a>.</li>
-<li><a href="01.02.00.00.RelatividadEspecial.TransformacionesLorentzEinstein.html#transformaciones_einstein">Las transformaciones de Lorentz-Einstein</a>.</li>
-<li><a href="01.02.01.00.RelatividadEspecial.TransformacionesLorentzEinstein.Propiedades.html#propiedades_tle">Propiedades de las TLE</a>.<ul>
-<li><a href="01.02.01.00.RelatividadEspecial.TransformacionesLorentzEinstein.Propiedades.html#unidades_luz">Unidades luz</a>.</li>
-<li><a href="01.02.01.00.RelatividadEspecial.TransformacionesLorentzEinstein.Propiedades.html#TLE_rotacion_hiperbolica">La TLE como una rotación hiperbólica</a>.</li>
-<li><a href="01.02.01.00.RelatividadEspecial.TransformacionesLorentzEinstein.Propiedades.html#notacion_einstein">Las TLE y la notación de Einstein</a>.</li>
-<li><a href="01.02.01.00.RelatividadEspecial.TransformacionesLorentzEinstein.Propiedades.html#TLE_generales">Las TLE generales</a>.</li>
-<li><a href="01.02.01.00.RelatividadEspecial.TransformacionesLorentzEinstein.Propiedades.html#valor_gama">El valor del factor de Lorentz-Einstein</a>.</li>
-<li><a href="01.02.01.00.RelatividadEspecial.TransformacionesLorentzEinstein.Propiedades.html#TLE_mapas">Mapas de la TLE</a>.</li>
-</ul>
-</li>
-<li><a href="01.02.02.00.RelatividadEspecial.TransformacionesLorentzEinstein.Consecuencias.html#consecuencias_tle">Consecuencias de las TLE</a>.<ul>
-<li><a href="01.02.02.00.RelatividadEspecial.TransformacionesLorentzEinstein.Consecuencias.html#transformacion_intervalos">Transformación de los intervalos y el gradiente</a>.</li>
-<li><a href="01.02.02.00.RelatividadEspecial.TransformacionesLorentzEinstein.Consecuencias.html#dilatacion_temporal">Dilatación temporal</a>.</li>
-<li><a href="01.02.02.00.RelatividadEspecial.TransformacionesLorentzEinstein.Consecuencias.html#postulado_relojes">El postulado de los relojes</a>.</li>
-<li><a href="01.02.02.00.RelatividadEspecial.TransformacionesLorentzEinstein.Consecuencias.html#contraccion_longitudes">Contracción de longitudes</a>.</li>
-<li><a href="01.02.02.00.RelatividadEspecial.TransformacionesLorentzEinstein.Consecuencias.html#adicion_velocidades">Adición de velocidades</a>.</li>
-<li><a href="01.02.02.00.RelatividadEspecial.TransformacionesLorentzEinstein.Consecuencias.html#transformacion_aceleraciones">Transformación de aceleraciones</a>.</li>
-</ul>
-</li>
-<li><a href="01.03.00.00.RelatividadEspecial.Minkowski.html#minkowski">El espacio-tiempo de Minkowski</a>.<ul>
-<li><a href="01.03.00.00.RelatividadEspecial.Minkowski.html#norma_minkowski">La norma de Minkowski</a>.</li>
-<li><a href="01.03.00.00.RelatividadEspecial.Minkowski.html#metrica_minkowski">Las variedades de Lorentz y la métrica de Minkowski</a>.</li>
-<li><a href="01.03.00.00.RelatividadEspecial.Minkowski.html#metrica_intervalos">Métrica y tipos de intervalos</a>.</li>
-<li><a href="01.03.00.00.RelatividadEspecial.Minkowski.html#tiempo_propio_minkowski">Métrica y tiempo propio</a>.</li>
-<li><a href="01.03.00.00.RelatividadEspecial.Minkowski.html#metrica_dilatacion_contraccion">Métrica, dilatación del tiempo y contracción de longitudes</a>.</li>
-<li><a href="01.03.00.00.RelatividadEspecial.Minkowski.html#vectores_minkowski">Vectores y cálculo en el espacio de Minkowski</a>.</li>
-<li><a href="01.03.00.00.RelatividadEspecial.Minkowski.html#minkowski_postulado_relojes">Minkowski y el postulado de los relojes</a>.</li>
-<li><a href="01.03.00.00.RelatividadEspecial.Minkowski.html#transformacion_cuadrivectores">Transformación general de cuadrivectores</a>.</li>
-</ul>
-</li>
-<li><a href="01.04.00.00.RelatividadEspecial.OpticaRelativista.html#optica_relativista">Óptica relativista</a>.<ul>
-<li><a href="01.04.00.00.RelatividadEspecial.OpticaRelativista.html#doppler_relativista">Efecto Doppler relativista</a>.</li>
-<li><a href="01.04.00.00.RelatividadEspecial.OpticaRelativista.html#aberración">Aberración de la luz</a>.</li>
-<li><a href="01.04.00.00.RelatividadEspecial.OpticaRelativista.html#enfoque_relativista">Enfoque relativista</a>.</li>
-</ul>
-</li>
-<li><a href="01.05.01.00.RelatividadEspecial.CinematicaRelativista.Definiciones.html#cinematica_relativistica">Cinemática relativistica</a>.<ul>
-<li><a href="01.05.01.00.RelatividadEspecial.CinematicaRelativista.Definiciones.html#cuadrivelocidad">Cuadrivelocidad</a>.</li>
-<li><a href="01.05.01.00.RelatividadEspecial.CinematicaRelativista.Definiciones.html#cuadriaceleracion">Cuadriaceleración</a>.</li>
-<li><a href="01.05.02.00.RelatividadEspecial.CinematicaRelativista.AceleracionPropiaConstante.html#cuadriaceleracion_constante">Movimiento con cuadriaceleración constante</a>.</li>
-<li><a href="01.05.02.00.RelatividadEspecial.CinematicaRelativista.AceleracionPropiaConstante.html#velocidad_limite">La velocidad límite</a>.</li>
-<li><a href="01.05.02.00.RelatividadEspecial.CinematicaRelativista.AceleracionPropiaConstante.html#nave_interestelar">Ejemplo: una nave interestelar</a>.</li>
-</ul>
-</li>
-<li><a href="01.06.01.00.RelatividadEspecial.DinamicaRelativista.EnergiaMomentum.html#dinamica_relativista">Dinámica relativista</a>.<ul>
-<li><a href="01.06.01.00.RelatividadEspecial.DinamicaRelativista.EnergiaMomentum.html#masa_invariante">Masa invariante</a>.</li>
-<li><a href="01.06.01.00.RelatividadEspecial.DinamicaRelativista.EnergiaMomentum.html#momentum_relativista">Momentum relativista</a>.</li>
-<li><a href="01.06.01.00.RelatividadEspecial.DinamicaRelativista.EnergiaMomentum.html#cuadrimomentum">Cuadrimomentum</a>.</li>
-<li><a href="01.06.01.00.RelatividadEspecial.DinamicaRelativista.EnergiaMomentum.html#magnitud_cuadrimomentum">Magnitud del cuadrimomentum y la simetría gauge</a>.</li>
-<li><a href="01.06.01.00.RelatividadEspecial.DinamicaRelativista.EnergiaMomentum.html#cuadrimomentum_minkowski">Cuadrimomentum en el espacio-tiempo</a>.</li>
-</ul>
-</li>
-<li><a href="01.06.02.00.RelatividadEspecial.DinamicaRelativista.ColisionesRelativistas.html#colisiones_relativistas">Colisiones relativistas</a>.<ul>
-<li><a href="01.06.02.00.RelatividadEspecial.DinamicaRelativista.ColisionesRelativistas.html#energia_cm">Energía en el centro de masa</a>.</li>
-<li><a href="01.06.02.00.RelatividadEspecial.DinamicaRelativista.ColisionesRelativistas.html#colisiones_interactivas">Colisiones relativistas interactivas</a>.</li>
-</ul>
-</li>
-<li><a href="01.06.03.00.RelatividadEspecial.DinamicaRelativista.Cuadrifuerza.html#cuadrifuerza">Cuadrifuerza</a>.<ul>
-<li><a href="01.06.03.00.RelatividadEspecial.DinamicaRelativista.Cuadrifuerza.html#transformacion_fuerza">Reglas de transformación de la fuerza</a>.</li>
-<li><a href="01.06.04.00.RelatividadEspecial.DinamicaRelativista.FuerzaDeLorentz.html#fuerza_lorentz">La fuerza de Lorentz</a>.</li>
-<li><a href="01.06.04.00.RelatividadEspecial.DinamicaRelativista.FuerzaDeLorentz.html#movimiento_circular">Movimiento circular bajo la fuerza de Lorentz</a>.</li>
-<li><a href="01.06.04.00.RelatividadEspecial.DinamicaRelativista.FuerzaDeLorentz.html#edm_relativista">Ecuación de movimiento relativista</a>.</li>
-</ul>
-</li>
-<li><a href="01.07.00.00.RelatividadEspecial.SintesisMecanicaRelativista.html#sintesis_mecanica">Síntesis de Mecánica Relativista</a>.<ul>
-<li><a href="01.07.00.00.RelatividadEspecial.SintesisMecanicaRelativista.html#sintesis_cinematica">Síntesis de cinemática relativista</a>.</li>
-<li><a href="01.07.00.00.RelatividadEspecial.SintesisMecanicaRelativista.html#sintesis_dinamica">Síntesis de dinámica relativista</a>.</li>
-</ul>
-</li>
-<li><a href="01.08.01.00.RelatividadEspecial.Electrodinamica.EcuacionesClasicas.html#electrodinamica">Electrodinamica manifiestamente covariante</a>.<ul>
-<li><a href="01.08.01.00.RelatividadEspecial.Electrodinamica.EcuacionesClasicas.html#ecuaciones_electrodinamica">Ecuaciones de la electrodinámica</a>.</li>
-<li><a href="01.08.02.00.RelatividadEspecial.Electrodinamica.CuadriCorrientePotencial.html#continuidad">La cuadricorriente</a>.</li>
-<li><a href="01.08.02.00.RelatividadEspecial.Electrodinamica.CuadriCorrientePotencial.html#maxwell_inhomogeneas">Ecuaciones de Maxwell inhomogéneas</a>.</li>
-<li><a href="01.08.03.00.RelatividadEspecial.Electrodinamica.TensorFaraday.html#campos_tensoriales">Los campos en términos tensoriales</a>.</li>
-<li><a href="01.08.03.00.RelatividadEspecial.Electrodinamica.TensorFaraday.html#tensor_faraday">El tensor de Faraday</a>.</li>
-<li><a href="01.08.03.00.RelatividadEspecial.Electrodinamica.TensorFaraday.html#maxwell_faraday">Ecuaciones de Maxwell y el tensor de Faraday</a>.</li>
-<li><a href="01.08.03.00.RelatividadEspecial.Electrodinamica.TensorFaraday.html#transformacion_campos">Transformación de los campos</a>.</li>
-<li><a href="01.08.03.00.RelatividadEspecial.Electrodinamica.TensorFaraday.html#fuerza_lorentz_covariante">La fuerza de Lorentz</a>.</li>
-<li><a href="01.08.03.00.RelatividadEspecial.Electrodinamica.TensorFaraday.html#geometria_F">Intrepretación geométrica del campo de Faraday</a>.</li>
-<li><a href="01.08.03.00.RelatividadEspecial.Electrodinamica.TensorFaraday.html#sintesis">Síntesis</a>.<ul>
-<li><a href="01.08.04.00.RelatividadEspecial.Electrodinamica.Ejemplos.html#campo_carga_movimiento">Campo producido por una carga en movimiento</a>.</li>
-<li><a href="01.08.04.00.RelatividadEspecial.Electrodinamica.Ejemplos.html#campo_alambre">Campo producido por un alambre recto</a>.</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="01.09.00.00.RelatividadEspecial.ProblemasSeleccionados.html#especial_problemas">Problemas Seleccionados</a>.</li>
-</ul>
-</li>
-<li><a href="02.00.00.00.RelatividadGeneral.html#relatividad_general">Relatividad General</a>.<ul>
-<li><a href="02.00.00.00.RelatividadGeneral.html#rgeneral_motivacion">Motivación</a>.</li>
-<li><a href="02.01.00.00.RelatividadGeneral.PostuladosBasicos.html#rgeneral_postulados">Principios y postulados básicos</a>.<ul>
-<li><a href="02.01.00.00.RelatividadGeneral.PostuladosBasicos.html#principio_equivalencia">Principio de Equivalencia</a>.<ul>
-<li><a href="02.01.00.00.RelatividadGeneral.PostuladosBasicos.html#principio_galileo">Principio de Galileo</a>.</li>
-<li><a href="02.01.00.00.RelatividadGeneral.PostuladosBasicos.html#principio_equivalencia_masas">Principio de igualdad de las masas</a>.</li>
-<li><a href="02.01.00.00.RelatividadGeneral.PostuladosBasicos.html#principio_equivalencia_einstein">Principio de equivalencia de Einstein</a>.</li>
-</ul>
-</li>
-<li><a href="02.01.00.00.RelatividadGeneral.PostuladosBasicos.html#principio_covarianza">Principio de covarianza general</a>.</li>
-<li><a href="02.01.00.00.RelatividadGeneral.PostuladosBasicos.html#tensores_generales">Tensores generales</a>.</li>
-</ul>
-</li>
-<li><a href="02.02.00.00.RelatividadGeneral.TransporteParalelo.html#transporte_paralelo">Transporte paralelo y derivada covariante</a>.<ul>
-<li><a href="02.02.00.00.RelatividadGeneral.TransporteParalelo.html#gradiente_notensor">El gradiente no es un tensor general</a>.</li>
-<li><a href="02.02.00.00.RelatividadGeneral.TransporteParalelo.html#transporte_paralelo_explicito">Transporte paralelo</a>.</li>
-<li><a href="02.02.00.00.RelatividadGeneral.TransporteParalelo.html#derivada_direccional">Derivada direccional general</a>.</li>
-<li><a href="02.03.00.00.RelatividadGeneral.SimbolosChristoffel.html#simbolos_christoffel">Los símbolos de Christoffel</a>.</li>
-<li><a href="02.03.00.00.RelatividadGeneral.SimbolosChristoffel.html#ejemplo_christoffel">Cálculo de los símbolos de Christoffel</a>.<ul>
-<li><a href="02.03.00.00.RelatividadGeneral.SimbolosChristoffel.html#christoffel_metrica_diagonal">Los símbolos de Christoffel de una métrica diagonal</a>.</li>
-<li><a href="02.03.00.00.RelatividadGeneral.SimbolosChristoffel.html#christoffel_plano">Símbolos de Christoffel del espacio-tiempo plano</a>.</li>
-<li><a href="02.03.00.00.RelatividadGeneral.SimbolosChristoffel.html#christoffel_esfera">Símbolos de Christoffel de una superficie esférica</a>.</li>
-<li><a href="02.03.00.00.RelatividadGeneral.SimbolosChristoffel.html#christoffel_general">Símbolos de Christoffel de una métrica general</a>.</li>
-<li><a href="02.03.00.00.RelatividadGeneral.SimbolosChristoffel.html#christoffel_numerico">Cálculo numérico</a>.</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="02.04.00.00.RelatividadGeneral.Geodesicas.html#dtotal_geodesicas">Derivada total general y geodésicas</a>.<ul>
-<li><a href="02.04.00.00.RelatividadGeneral.Geodesicas.html#derivada_total">Derivada total general</a>.</li>
-<li><a href="02.04.00.00.RelatividadGeneral.Geodesicas.html#dtotal_paralelo">Derivada total y transporte paralelo</a>.</li>
-<li><a href="02.04.00.00.RelatividadGeneral.Geodesicas.html#paralelo_bases">Transporte paralelo y bases vectoriales</a>.</li>
-<li><a href="02.04.00.00.RelatividadGeneral.Geodesicas.html#bases_componentes_vectoriales">Bases y componentes vectoriales en espacio curvo</a>.</li>
-<li><a href="02.04.00.00.RelatividadGeneral.Geodesicas.html#ejemplo_numerico_paralelo">Ejemplos numéricos de transporte paralelo</a>.<ul>
-<li><a href="02.04.00.00.RelatividadGeneral.Geodesicas.html#ejemplo_numerico_cilindricas">Transporte paralelo en coordenadas cilíndrica</a>.</li>
-<li><a href="02.04.00.00.RelatividadGeneral.Geodesicas.html#ejemplo_numerico_esfera">Transporte paralelo sobre una esfera</a>.</li>
-</ul>
-</li>
-<li><a href="02.04.00.00.RelatividadGeneral.Geodesicas.html#ecuacion_geodesica">Ecuación geodésica</a>.</li>
-<li><a href="02.04.00.00.RelatividadGeneral.Geodesicas.html#ejemplo_numerico_geodesicas">Ejemplos numéricos de geodésicas</a>.<ul>
-<li><a href="02.04.00.00.RelatividadGeneral.Geodesicas.html#geodesica_cilindricas_numerico">Geodésica en coordenadas cilíndricas</a>.</li>
-<li><a href="02.04.00.00.RelatividadGeneral.Geodesicas.html#geodesica_esfera">Geodésica sobre la superficie de una esfera</a>.</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="02.05.00.00.RelatividadGeneral.InerciaYGeodesicas.html#geodesica_variacional">La geodésica y un principio variacional</a>.</li>
-<li><a href="02.05.00.00.RelatividadGeneral.InerciaYGeodesicas.html#geodesicas_inercia">Geodésicas y movimiento inercial</a>.</li>
-<li><a href="02.05.00.00.RelatividadGeneral.InerciaYGeodesicas.html#geodesicas_campo_debil">Geodésicas en campo débil</a>.<ul>
-<li><a href="02.05.00.00.RelatividadGeneral.InerciaYGeodesicas.html#campo_debil_numerico">Un ejemplo numérico</a>.</li>
-</ul>
-</li>
-<li><a href="02.05.00.00.RelatividadGeneral.InerciaYGeodesicas.html#simetrias_conservacion">Simetrías y cantidades conservadas</a>.<ul>
-<li><a href="02.05.00.00.RelatividadGeneral.InerciaYGeodesicas.html#metrica_constante">La métrica como constante</a>.</li>
-<li><a href="02.05.00.00.RelatividadGeneral.InerciaYGeodesicas.html#vector_killing">Coordenadas cíclicas y vectores de Killing</a>.</li>
-<li><a href="02.05.00.00.RelatividadGeneral.InerciaYGeodesicas.html#ejemplo_geodesica_cilindricas">Ejemplo: geodésicas en coordenadas cilíndricas</a>.</li>
-<li><a href="02.05.00.00.RelatividadGeneral.InerciaYGeodesicas.html#ejemplo_geodesica_esfera">Ejemplo: geodésicas sobre una esfera</a>.</li>
-<li><a href="02.05.00.00.RelatividadGeneral.InerciaYGeodesicas.html#ejemplo_geodesica_newton">Ejemplo: geodésicas en la métrica de Newton</a>.</li>
-<li><a href="02.06.00.00.RelatividadGeneral.Curvatura.html#propiedades_riemann">Propiedades del tensor de Riemann</a>.</li>
-<li><a href="02.06.00.00.RelatividadGeneral.Curvatura.html#riemann_diagonal">Tensor de Riemann para métricas diagonales</a>.</li>
-<li><a href="02.06.00.00.RelatividadGeneral.Curvatura.html#desviacion_geodesica">Desviación geodésica</a>.</li>
-<li><a href="02.06.00.00.RelatividadGeneral.Curvatura.html#riemann_numerico">Tensor de Riemann numérico</a>.</li>
-<li><a href="02.06.00.00.RelatividadGeneral.Curvatura.html#desviacion_geodesica_numerica">Desviación geodésica numérica</a>.</li>
-</ul>
-</li>
-<li><a href="02.07.00.00.RelatividadGeneral.PrincipioConsistencia.html#principio_consistencia">Principio de consistencia</a>.</li>
-<li><a href="02.07.00.00.RelatividadGeneral.PrincipioConsistencia.html#ecuacion_campo_general">Una ecuación de campo general</a>.</li>
-<li><a href="02.08.00.00.RelatividadGeneral.TensorDeMomentumEnergia.html#tensor_momentum_energia">Tensor de momentum-energía</a>.<ul>
-<li><a href="02.08.00.00.RelatividadGeneral.TensorDeMomentumEnergia.html#Tmunu_nube">Tensor de momentum-energía para una nube de partículas</a>.</li>
-<li><a href="02.08.00.00.RelatividadGeneral.TensorDeMomentumEnergia.html#Tmunu_polvo">Tensor de momentum-energía para polvo</a>.</li>
-<li><a href="02.08.00.00.RelatividadGeneral.TensorDeMomentumEnergia.html#Tmunu_sigma_munu">Tensor $T^{\mu\nu}$ y el tensor de esfuerzos $\sigma^{\mu\nu}$</a>.</li>
-<li><a href="02.08.00.00.RelatividadGeneral.TensorDeMomentumEnergia.html#Tmunu_fluido_perfecto">Tensor de momentum-energía para fluído perfecto</a>.</li>
-<li><a href="02.08.00.00.RelatividadGeneral.TensorDeMomentumEnergia.html#conservacion_Tmunu">La conservación de $T^{\mu\nu}$ y la ecuación geodésica</a>.</li>
-</ul>
-</li>
-<li><a href="02.09.00.00.RelatividadGeneral.EcuacionCampoMetrico.html#ecuacion_campo_metrico">La ecuación de campo métrico</a>.<ul>
-<li><a href="02.09.00.00.RelatividadGeneral.EcuacionCampoMetrico.html#tensor_einstein">El tensor de Einstein</a>.</li>
-<li><a href="02.09.00.00.RelatividadGeneral.EcuacionCampoMetrico.html#ecuacion_campo_debil_general">Una ecuación de campo general</a>.</li>
-<li><a href="02.09.00.00.RelatividadGeneral.EcuacionCampoMetrico.html#ecuacion_campo_consistencia">La ecuación de campo y el principio de consistencia</a>.</li>
-<li><a href="02.09.00.00.RelatividadGeneral.EcuacionCampoMetrico.html#ecuacion_campo_fluido_perfecto">La ecuación de campo débil para fluido perfecto</a>.</li>
-<li><a href="02.09.00.00.RelatividadGeneral.EcuacionCampoMetrico.html#termino_cosmologico">El término cosmológico</a>.</li>
-<li><a href="02.09.00.00.RelatividadGeneral.EcuacionCampoMetrico.html#ecuacion_hilbert_einstein">La ecuación de Hilbert-Einstein</a>.</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="03.00.00.00.Aplicaciones.html#aplicaciones_rgeneral">Aplicaciones de la relatividad general</a>.<ul>
-<li><a href="03.01.00.00.Aplicaciones.OndasGravitacionales.html#ondas_gravitacionales">Ondas gravitacionales</a>.<ul>
-<li><a href="03.01.00.00.Aplicaciones.OndasGravitacionales.html#historia_gw">Historia de las ondas gravitacionales</a>.</li>
-<li><a href="03.01.00.00.Aplicaciones.OndasGravitacionales.html#programa_gw">Un programa de estudio</a>.</li>
-<li><a href="03.01.01.00.Aplicaciones.OndasGravitacionales.GravedadLinearizada.html#gravedad_linearizada">Gravedad linearizada</a>.<ul>
-<li><a href="03.01.01.00.Aplicaciones.OndasGravitacionales.GravedadLinearizada.html#inversa_metrica_linearizada">Inversa de la métrica linearizada</a>.</li>
-<li><a href="03.01.01.00.Aplicaciones.OndasGravitacionales.GravedadLinearizada.html#simbolo_christoffel_linearizado">Símbolo de Christoffel linearizado</a>.</li>
-<li><a href="03.01.01.00.Aplicaciones.OndasGravitacionales.GravedadLinearizada.html#riemann_gravedad_linearizado">El tensor de Riemann linearizado</a>.</li>
-<li><a href="03.01.01.00.Aplicaciones.OndasGravitacionales.GravedadLinearizada.html#riemann_linearizado">El tensor de Ricci linearizado</a>.</li>
-<li><a href="03.01.01.00.Aplicaciones.OndasGravitacionales.GravedadLinearizada.html#einstein_linearizado">El tensor de Einstein linearizado</a>.</li>
-<li><a href="03.01.01.00.Aplicaciones.OndasGravitacionales.GravedadLinearizada.html#Tmunu_linearizado">El tensor momentum-energía</a>.</li>
-</ul>
-</li>
-<li><a href="03.01.02.00.Aplicaciones.OndasGravitacionales.EcuacionOndaVacio.html#gw_vacio">Ecuación de campo linearizada en el vacío</a>.</li>
-<li><a href="03.01.02.00.Aplicaciones.OndasGravitacionales.EcuacionOndaVacio.html#libertad_gauge">Libertad gauge</a>.</li>
-<li><a href="03.01.02.00.Aplicaciones.OndasGravitacionales.EcuacionOndaVacio.html#gauge_armónico">El gauge armónico</a>.</li>
-<li><a href="03.01.02.00.Aplicaciones.OndasGravitacionales.EcuacionOndaVacio.html#ecuacion_de_ondas">La ecuación de campo o de ondas</a>.</li>
-<li><a href="03.01.02.00.Aplicaciones.OndasGravitacionales.EcuacionOndaVacio.html#ecuacion_fuentes">La ecuación de campo con fuentes</a>.</li>
-<li><a href="03.01.02.00.Aplicaciones.OndasGravitacionales.EcuacionOndaVacio.html#metrica_postnewtoniana">La métrica postnewtoniana</a>.</li>
-<li><a href="03.01.02.00.Aplicaciones.OndasGravitacionales.EcuacionOndaVacio.html#analogia_electromagnetica">Analogía electromagnética</a>.</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
+<p>Tenemos ya todos los elementos para encontrar la ecuación general que conecta el flujo de momentum y energía con la curvatura del espacio tiempo.</p>
 
 </div>
 </div>
@@ -13329,35 +13097,50 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#205;ndice-de-figuras">&#205;ndice de figuras<a class="anchor-link" href="#&#205;ndice-de-figuras">&#182;</a></h2><ul>
-<li>Figuras en <a href="01.04.00.00.RelatividadEspecial.OpticaRelativista.html">01.04.00.00.RelatividadEspecial.OpticaRelativista</a><ul>
-<li><a href="01.04.00.00.RelatividadEspecial.OpticaRelativista.html#fig:Figure_9">Figura 1.9</a>. Figura.</li>
-</ul>
-</li>
-<li>Figuras en <a href="01.05.02.00.RelatividadEspecial.CinematicaRelativista.AceleracionPropiaConstante.html">01.05.02.00.RelatividadEspecial.CinematicaRelativista.AceleracionPropiaConstante</a><ul>
-<li><a href="01.05.02.00.RelatividadEspecial.CinematicaRelativista.AceleracionPropiaConstante.html#fig:cuadriaceleracion">Figura 1.14</a>. Cambios en la cuadrivelocidad y la cuadriaceleración.</li>
-<li><a href="01.05.02.00.RelatividadEspecial.CinematicaRelativista.AceleracionPropiaConstante.html#fig:Figure_15">Figura 1.15</a>. Nave interestelar.</li>
-</ul>
-</li>
-<li>Figuras en <a href="01.08.03.00.RelatividadEspecial.Electrodinamica.TensorFaraday.html">01.08.03.00.RelatividadEspecial.Electrodinamica.TensorFaraday</a><ul>
-<li><a href="01.08.03.00.RelatividadEspecial.Electrodinamica.TensorFaraday.html#fig:tensor_esfuerzos">Figura 1.22</a>. Tensor de esfuerzos..</li>
-</ul>
-</li>
-<li>Figuras en <a href="02.02.00.00.RelatividadGeneral.TransporteParalelo.html">02.02.00.00.RelatividadGeneral.TransporteParalelo</a><ul>
-<li><a href="02.02.00.00.RelatividadGeneral.TransporteParalelo.html#fig:transporte_paralelo">Figura 2.24</a>. Transporte paralelo..</li>
-<li><a href="02.02.00.00.RelatividadGeneral.TransporteParalelo.html#fig:transporte_paralelo_derivada">Figura 2.25</a>. Derivada direccional..</li>
-</ul>
-</li>
-<li>Figuras en <a href="02.04.00.00.RelatividadGeneral.Geodesicas.html">02.04.00.00.RelatividadGeneral.Geodesicas</a><ul>
-<li><a href="02.04.00.00.RelatividadGeneral.Geodesicas.html#fig:geodesica">Figura 2.29</a>. Definición de geodésica en el espacio-tiempo plano y sobre la superficie de una esfera..</li>
-</ul>
-</li>
-<li>Figuras en <a href="02.06.00.00.RelatividadGeneral.Curvatura.html">02.06.00.00.RelatividadGeneral.Curvatura</a><ul>
-<li><a href="02.06.00.00.RelatividadGeneral.Curvatura.html#fig:Figure_34">Figura 2.34</a>. Figura.</li>
-<li><a href="02.06.00.00.RelatividadGeneral.Curvatura.html#fig:Figure_35">Figura 2.35</a>. Figura.</li>
-</ul>
-</li>
-</ul>
+<p>Hasta ahora hemos reunido las condiciones que requería el lado derecho de la ecuación general de campo que cumple el principio de consistencia.</p>
+$$
+{\cal G}(g_{\mu\nu,\alpha,\alpha})\equiv {\cal G}_{\mu\nu}=\frac{8\pi G}{c^4}E_{\mu\nu}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Construímos una cantidad que cumple la función de $E_{\mu\nu}$, el tensor momentum energía:</p>
+$$
+E_{\mu\nu}=T_{\mu\nu}=g_{\alpha\mu}g_{\beta\nu} T^{\alpha\beta}
+$$<p>que cumple la condición de que en campo débil:</p>
+$$
+E_{00}=\rho_0 c^2
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>De este modo la ecuación general queda:</p>
+$$
+{\cal G}_{\mu\nu}=\frac{8\pi G}{c^4}T_{\mu\nu}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Esta cantidad satisface un principio de conservación:</p>
+$$
+{T_{\mu\nu}}^{;\mu}=0
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Ahora debemos trabajar para obtener el tensor ${\cal G}_{\mu\nu}$ en el lado que sea una función lineal del D'Alambertiano de la métrica.</p>
 
 </div>
 </div>
@@ -13365,35 +13148,17 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#205;ndice-de-ecuaciones">&#205;ndice de ecuaciones<a class="anchor-link" href="#&#205;ndice-de-ecuaciones">&#182;</a></h2><ul>
-<li>Ecuaciones en <a href="01.02.00.00.RelatividadEspecial.TransformacionesLorentzEinstein.html">01.02.00.00.RelatividadEspecial.TransformacionesLorentzEinstein</a><ul>
-<li><a href="01.02.00.00.RelatividadEspecial.TransformacionesLorentzEinstein.html#mjx-eqn-eqtg_t">Ec. (1.1)</a>: tg_t.</li>
-<li><a href="01.02.00.00.RelatividadEspecial.TransformacionesLorentzEinstein.html#mjx-eqn-eqtg_x">Ec. (1.2)</a>: tg_x.</li>
-<li><a href="01.02.00.00.RelatividadEspecial.TransformacionesLorentzEinstein.html#mjx-eqn-eqtg_t_sim">Ec. (1.3)</a>: tg_t_sim.</li>
-<li><a href="01.02.00.00.RelatividadEspecial.TransformacionesLorentzEinstein.html#mjx-eqn-eqtg_x_sim">Ec. (1.4)</a>: tg_x_sim.</li>
-<li><a href="01.02.00.00.RelatividadEspecial.TransformacionesLorentzEinstein.html#mjx-eqn-eqdtg_t">Ec. (1.5)</a>: dtg_t.</li>
-<li><a href="01.02.00.00.RelatividadEspecial.TransformacionesLorentzEinstein.html#mjx-eqn-eqdtg_x">Ec. (1.6)</a>: dtg_x.</li>
-<li><a href="01.02.00.00.RelatividadEspecial.TransformacionesLorentzEinstein.html#mjx-eqn-eqdtg_y">Ec. (1.7)</a>: dtg_y.</li>
-<li><a href="01.02.00.00.RelatividadEspecial.TransformacionesLorentzEinstein.html#mjx-eqn-eqdtg_z">Ec. (1.8)</a>: dtg_z.</li>
-<li><a href="01.02.00.00.RelatividadEspecial.TransformacionesLorentzEinstein.html#mjx-eqn-eqLF_z">Ec. (1.9)</a>: LF_z.</li>
-<li><a href="01.02.00.00.RelatividadEspecial.TransformacionesLorentzEinstein.html#mjx-eqn-eqBz_LF">Ec. (1.10)</a>: Bz_LF.</li>
-<li><a href="01.02.00.00.RelatividadEspecial.TransformacionesLorentzEinstein.html#mjx-eqn-eqEy_LF">Ec. (1.11)</a>: Ey_LF.</li>
-<li><a href="01.02.00.00.RelatividadEspecial.TransformacionesLorentzEinstein.html#mjx-eqn-eqLAM_y">Ec. (1.12)</a>: LAM_y.</li>
-<li><a href="01.02.00.00.RelatividadEspecial.TransformacionesLorentzEinstein.html#mjx-eqn-eqBz_LAM">Ec. (1.13)</a>: Bz_LAM.</li>
-<li><a href="01.02.00.00.RelatividadEspecial.TransformacionesLorentzEinstein.html#mjx-eqn-eqEy_LAM">Ec. (1.14)</a>: Ey_LAM.</li>
-<li><a href="01.02.00.00.RelatividadEspecial.TransformacionesLorentzEinstein.html#mjx-eqn-eqBpz_tg">Ec. (1.15)</a>: Bpz_tg.</li>
-<li><a href="01.02.00.00.RelatividadEspecial.TransformacionesLorentzEinstein.html#mjx-eqn-eqEpy_tg">Ec. (1.16)</a>: Epy_tg.</li>
-<li><a href="01.02.00.00.RelatividadEspecial.TransformacionesLorentzEinstein.html#mjx-eqn-eqBz_tg">Ec. (1.17)</a>: Bz_tg.</li>
-<li><a href="01.02.00.00.RelatividadEspecial.TransformacionesLorentzEinstein.html#mjx-eqn-eqEy_tg">Ec. (1.18)</a>: Ey_tg.</li>
-<li><a href="01.02.00.00.RelatividadEspecial.TransformacionesLorentzEinstein.html#mjx-eqn-eqtrans_lorentz_x">Ec. (1.19)</a>: trans_lorentz_x.</li>
-</ul>
-</li>
-<li>Ecuaciones en <a href="02.04.00.00.RelatividadGeneral.Geodesicas.html">02.04.00.00.RelatividadGeneral.Geodesicas</a><ul>
-<li><a href="02.04.00.00.RelatividadGeneral.Geodesicas.html#mjx-eqn-eqderivada_e">Ec. (2.20)</a>: derivada_e.</li>
-<li><a href="02.04.00.00.RelatividadGeneral.Geodesicas.html#mjx-eqn-eqg_edote">Ec. (2.21)</a>: g_edote.</li>
-</ul>
-</li>
-</ul>
+<p>El principio de conservación del momentum y la energía exigen que se cumpla la condición:</p>
+$$
+{{\cal G}_{\mu\nu}}^{;\mu}=0
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="2.12.1.-El-tensor-de-Einstein">2.12.1. El tensor de Einstein<a class="anchor-link" href="#2.12.1.-El-tensor-de-Einstein">&#182;</a></h3><p><a id='tensor_einstein'></a></p>
 
 </div>
 </div>
@@ -13401,22 +13166,703 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#205;ndice-de-c&#243;digos">&#205;ndice de c&#243;digos<a class="anchor-link" href="#&#205;ndice-de-c&#243;digos">&#182;</a></h2><ul>
-<li>Código en <a href="01.02.01.00.RelatividadEspecial.TransformacionesLorentzEinstein.Propiedades.html">01.02.01.00.RelatividadEspecial.TransformacionesLorentzEinstein.Propiedades</a><ul>
-<li><a href="01.02.01.00.RelatividadEspecial.TransformacionesLorentzEinstein.Propiedades.html#code:TLE">Código (1.1)</a>: TLE.</li>
-<li><a href="01.02.01.00.RelatividadEspecial.TransformacionesLorentzEinstein.Propiedades.html#code:mapa_TLE">Código (1.2)</a>: mapa_TLE.</li>
-</ul>
-</li>
-<li>Código en <a href="02.04.00.00.RelatividadGeneral.Geodesicas.html">02.04.00.00.RelatividadGeneral.Geodesicas</a><ul>
-<li><a href="02.04.00.00.RelatividadGeneral.Geodesicas.html#code:transporte_paralelo">Código (2.3)</a>: transporte_paralelo.</li>
-<li><a href="02.04.00.00.RelatividadGeneral.Geodesicas.html#code:transporte_paralelo">Código (2.4)</a>: transporte_paralelo.</li>
-</ul>
-</li>
-</ul>
+<p>Conocemos un tensor que depende de la segunda derivada de la métrica, el tensor de Riemann:</p>
+$$
+{R^\alpha}_{\mu\nu\kappa}=g^{\alpha\lambda}R_{\lambda\mu\nu\kappa} = -\frac{1}{2} g^{\alpha\lambda}g_{\{\mu\nu,\lambda,\kappa\}}-g^{\alpha\lambda}g_{\alpha\beta}(\Gamma^\alpha_{\mu\nu}\Gamma^\beta_{\lambda\kappa}-\Gamma^\alpha_{\mu\kappa}\Gamma^\beta_{\lambda\nu})
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Un tensor que contiene el D'Alambertiano de la métrica $g_{\mu\nu,\alpha,\alpha}$ resulta de contraer todas las componentes con igual índices $\alpha$ y $\kappa$:</p>
+$$
+R_{\mu\nu}\equiv {R^\alpha}_{\mu\nu\alpha}= g^{\lambda\alpha} R_{\lambda\mu\nu\alpha}=R_{\mu\nu}(g_{\mu\nu,\alpha,\alpha})
+$$<p>llamamos a este el <strong>tensor de Ricci</strong>.</p>
+
+</div>
+</div>
+</div><div style="background:white;border:solid black 2px;pad:10px;margin-left:7em;margin-top:1em;margin-bottom:1em;">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Nota: Simetría y componentes del tensor de Ricci.</strong><a id=''></a> El tensor de Ricci será muy importante en lo sucesivo.  Por las propiedades del tensor de Riemann se puede probar que el tensor de Ricci es simétrico:</p>
+<blockquote>$$R_{\mu\nu}=R_{\nu\mu}$$<p>esto implica que solo tiene 10 componentes independientes.</p>
+</blockquote>
 
 </div>
 </div>
 </div>
+    </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>La derivada covariante de este tensor cumple tiene una interesante propiedad.  Comencemos con la identidad de Bianchi:</p>
+$$
+{R^{\alpha}}_{\beta[\mu\nu;\sigma]}=0\\
+{R^{\alpha}}_{\beta\mu\nu;\sigma}+{R^{\alpha}}_{\beta\nu\sigma;\mu}+{R^{\alpha}}_{\beta\sigma\mu;\nu}=0
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Si tomamos todos los términos con $\alpha=\nu$ y sumamos las identidades correspondientes obtenemos:</p>
+$$
+R_{\beta\mu;\sigma}-R_{\beta\sigma;\mu}+{R^{\alpha}}_{\beta\sigma\mu;\alpha}=0
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Si multiplicamos por $g^{\beta\mu}$ y sumamos sobre todos los $\mu$ y todos los $\beta$ obtenemos:</p>
+$$
+g^{\beta\mu}R_{\beta\mu;\sigma}-g^{\beta\mu}R_{\beta\sigma;\mu}+g^{\beta\mu}{R^{\alpha}}_{\beta\sigma\mu;\alpha}=0
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Definiendo:</p>
+$$
+R\equiv g^{\beta\mu}R_{\beta\mu}
+$$<p>como el <strong>escalar de curvatura</strong>, la anterior ecuación nos queda:</p>
+$$
+R_{;\sigma}-g^{\beta\mu}R_{\beta\sigma;\mu}+g^{\beta\mu}{R^{\alpha}}_{\beta\sigma\mu;\alpha}=0
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>El tensor de Riemann en el último término se puede escribir como ${R^{\alpha}}_{\beta\sigma\mu}=g^{\alpha\lambda}R_{\lambda\beta\sigma\mu}$ de modo que la ecuación queda:</p>
+$$
+R_{;\sigma}-g^{\beta\mu}R_{\beta\sigma;\mu}+g^{\beta\mu}g^{\alpha\lambda}R_{\lambda\beta\sigma\mu;\alpha}=0
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Por definición del tensor de Ricci:</p>
+$$
+g^{\beta\mu}R_{\beta\lambda\sigma\mu}=R_{\lambda\sigma}
+$$<p>de donde la ecuación se puede escribir como:</p>
+$$
+R_{;\sigma}-g^{\beta\mu}R_{\beta\sigma;\mu}-g^{\lambda\alpha}R_{\lambda\sigma;\alpha}=0
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Aquí se puede ver que los dos últimos términos son idénticos (se pueden poner los índices mudos iguales:</p>
+$$
+R_{;\sigma}-2 g^{\beta\mu}R_{\beta\sigma;\mu}=0
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Que se puede escribir como:</p>
+$$
+{R_{\beta\sigma}}^{;\beta}-\frac{1}{2}R_{;\sigma}=0
+$$<p>o como</p>
+$$
+\left(R_{\beta\sigma}-\frac{1}{2}g_{\beta\sigma}R\right)^{;\beta}=0
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Si definimos el vector:</p>
+$$
+G_{\mu\nu}\equiv R_{\mu\nu}-\frac{1}{2}g_{\mu\nu} R
+$$<p>que llamaremos, el <strong>tensor de Einstein</strong>, la identidad de Bianchi contraída resulta ser:</p>
+$$
+{G_{\mu\nu}}^{;\mu}=0
+$$
+</div>
+</div>
+</div><div style="background:white;border:solid black 2px;pad:10px;margin-left:7em;margin-top:1em;margin-bottom:1em;">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Nota: El signo de tensor de Einstein.</strong><a id=''></a> Nótese que existe una libertad en la manera en la que elegimos el signo del tensor de Einstein que no afecta sus propiedades.</p>
+
+</div>
+</div>
+</div>
+    </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="2.12.2.-Una-ecuaci&#243;n-de-campo-general">2.12.2. Una ecuaci&#243;n de campo general<a class="anchor-link" href="#2.12.2.-Una-ecuaci&#243;n-de-campo-general">&#182;</a></h3><p><a id='ecuacion_campo_debil_general'></a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Es posible demostrar que los únicos tensores de rango dos que son funciones lineales del D'Alambertiano de la métrica y que al mismo tiempo satisfacen la condición:</p>
+$$
+{{\cal G}_{\mu\nu}}^{;\mu}=0
+$$<p>se pueden escribir como:</p>
+$$
+{\cal G}_{\mu\nu}=k G_{\mu\nu}
+$$<p>donde $k$ es una constante.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>De allí que la ecuación más general que describe la relación entre el flujo de momentum y energía y el D'Alambertiano de la métrica será:</p>
+$$
+k(R_{\mu\nu}-\frac{1}{2}g_{\mu\nu} R)=\frac{8\pi G}{c^4}T_{\mu\nu}
+$$<p>o bien,</p>
+$$
+R_{\mu\nu}-\frac{1}{2}g_{\mu\nu} R=\frac{8\pi G}{kc^4}T_{\mu\nu}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Por la simetría el tensor de Ricci esta corresponde a 10 ecuaciones.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Nos restaría por determinar el valor de las constantes $a$.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Una propiedad interesante resulta al contraer los índices:</p>
+$$
+g^{\mu\nu}R_{\mu\nu}-\frac{1}{2}g^{\mu\nu}g_{\mu\nu} R=\frac{8\pi G}{kc^4}g^{\mu\nu}T_{\mu\nu}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Teniendo en cuenta que $g^{\mu\nu}g_{\mu\nu}=\delta^\mu_\mu=4$ y llamando $T^{\mu}_{\mu}=T$:</p>
+$$
+R=-\frac{8\pi G}{kc^4}T
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Reemplazando en la ecuación de campo queda:</p>
+$$
+R_{\mu\nu}=\frac{8\pi G}{kc^4}\left(T_{\mu\nu}-\frac{1}{2}g_{\mu\nu}T\right)
+$$<p>que es una versión alternativa de la ecuación.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="2.12.3.-La-ecuaci&#243;n-de-campo-y-el-principio-de-consistencia">2.12.3. La ecuaci&#243;n de campo y el principio de consistencia<a class="anchor-link" href="#2.12.3.-La-ecuaci&#243;n-de-campo-y-el-principio-de-consistencia">&#182;</a></h3><p><a id='ecuacion_campo_consistencia'></a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Ahora que tenemos una ecuación candidata volvamos al principio de consistencia.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Volvamos a comenzar con la métrica de campo débil:</p>
+$$
+g_{\mu\nu}=\eta_{\mu\nu}+h_{\mu\nu}
+$$<p>donde $h_{\mu\nu}\ll 1$.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Si escribimo la inversa de la métrica como:</p>
+$$
+g^{\mu\nu}=\eta^{\mu\nu}+b^{\mu\nu}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Puede probarse (ver Problemas al final del capítulo) que:</p>
+$$
+b^{\mu\nu}=-h^{\mu\nu}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Los símbolos de Christoffel serán:</p>
+$$
+\Gamma^\lambda_{\mu\nu}\approx\frac{1}{2}\eta^{\lambda\rho}(h_{\rho\mu,\nu}-
+h_{\mu\nu,\rho}+h_{\nu\rho,\mu})
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>El tensor de Riemann:</p>
+$$
+{R^{\rho}}_{\sigma\mu\nu} = \Gamma^\rho_{\sigma\mu,\nu} - \Gamma^\rho_{\sigma\nu,\mu}  + \Gamma_{\sigma\mu}^\delta \Gamma_{\nu\delta}^\rho - \Gamma_{\sigma\nu}^\delta \Gamma_{\mu\delta}^\rho 
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Dado que los símbolos de Christoffel son proporcionales a $h_{\mu\nu}$ los términos $\Gamma^2 \sim {\cal O}(h^2)$, de modo que el tensor de Riemann es:</p>
+$$
+{R^{\rho}}_{\sigma\mu\nu} \approx \Gamma^\rho_{\sigma\mu,\nu} - \Gamma^\rho_{\sigma\nu,\mu}  
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Alternativamente:</p>
+\begin{eqnarray}
+\nonumber
+R_{\lambda\mu\nu\kappa} &amp; = &amp; -\frac{1}{2}(g_{\mu\nu,\lambda,\kappa}-g_{\nu\lambda,\kappa,\mu}+g_{\lambda\kappa,\mu,\nu}-g_{\kappa\mu,\nu,\lambda})+\\
+\nonumber
+&amp; &amp; +g_{\sigma\xi}(\Gamma^\sigma_{\mu\kappa}\Gamma^\xi_{\lambda\nu}-\Gamma^\sigma_{\mu\nu}\Gamma^\xi_{\lambda\kappa})
+\end{eqnarray}
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Eliminando los términos cuadráticos en $h$, el tensor de Riemann queda:</p>
+$$
+R_{\lambda\mu\nu\kappa} \approx -\frac{1}{2}(h_{\mu\nu,\lambda,\kappa}-h_{\nu\lambda,\kappa,\mu}+h_{\lambda\kappa,\mu,\nu}-h_{\kappa\mu,\nu,\lambda})
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Por definición el tensor de Ricci es:</p>
+$$
+R_{\mu\nu}={R^\alpha}_{\mu\nu\alpha}\approx \Gamma^\alpha_{\mu\nu,\alpha} - \Gamma^\alpha_{\mu\alpha,\nu}  
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>O en términos de las derivadas de la métrica:</p>
+\begin{eqnarray}
+\nonumber
+R_{\mu\nu} &amp; = &amp; g^{\lambda\alpha} R_{\lambda\mu\nu\alpha}\\
+\nonumber
+&amp; \approx &amp; -\frac{1}{2}\eta^{\lambda\alpha}(h_{\mu\nu,\lambda,\alpha}-h_{\nu\lambda,\alpha,\mu}+h_{\lambda\alpha,\mu,\nu}-h_{\alpha\mu,\nu,\lambda})
+\end{eqnarray}
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Finalmente el tensor métrico:</p>
+\begin{eqnarray}
+\nonumber
+T_{\mu\nu} &amp; = &amp; g_{\alpha\mu}g_{\beta\nu} T^{\alpha\beta}\\
+&amp; \approx &amp; (\eta_{\alpha\mu}\eta_{\beta\nu} +\eta_{\alpha\mu}h_{\beta\nu} +h_{\alpha\mu}\eta_{\beta\nu}) T^{\alpha\beta}\\
+\end{eqnarray}
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Para aplicar el principio de consistencia asumamos que tenemos una nube de polvo, $T^{00}=\mathrm{diag}(\rho_0 c^2,0,0,0)$ y la métrica de Newton, $h_{00}=2\Phi/c^2$, $h_{ij}=h_{i0}=0$.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Tomemos la ecuación $00$:</p>
+$$
+R_{00}=\frac{8\pi G}{kc^4}\left(T_{00}-\frac{1}{2}g_{00}T\right)
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>La componente $T_{00}$ será:</p>
+$$
+T_{00}=g_{0\mu}g_{0\nu}T^{\mu\nu}\approx (g_{00})^2 T^{00}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>La traza de $T$ sera:</p>
+$$
+T=T^{\mu}_{\mu}=g_{\mu\nu}T^{\mu\nu}=g_{00}T^{00}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Por otro lado el tensor de Ricci $R_{\mu\nu}$:</p>
+$$
+R_{\mu\nu}\approx-\frac{1}{2}\eta^{\alpha\alpha}(h_{\mu\nu,\alpha,\alpha}-h_{\nu\alpha,\alpha,\mu}+h_{\alpha\alpha,\mu,\nu}-h_{\alpha\mu,\nu,\alpha})
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Como la métrica es estática, las únicas componentes no nulas del tensor son:</p>
+\begin{eqnarray}
+R_{00} \approx -\frac{1}{2}\eta^{ij}h_{00,i,j} = \frac{1}{c^2}\nabla^2 \Phi\\
+\end{eqnarray}
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Reemplazando en la ecuación tenemos:</p>
+$$
+\frac{1}{c^2}\nabla^2 \Phi=\frac{8\pi G}{kc^4}\left[(g_{00})^2 \rho_0 c^2-\frac{1}{2}(g_{00})^2 \rho_0 c^2\right]
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Haciendo $(g_{00})^2=(1+2\Phi/c^2)^2\approx 1$, la ecuación queda finalmente como:</p>
+$$
+\nabla^2 \Phi=\frac{4\pi G}{k}\rho_0
+$$<p>que es justamente la ecuación de Poisson si $k=1$.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>La conclusión de aplicar el principio de consistencia es que una ecuación de campo general es:</p>
+$$
+R_{\mu\nu}-\frac{1}{2}g_{\mu\nu} R=\frac{8\pi G}{c^4}T_{\mu\nu}
+$$<p>o más convenientemente:</p>
+$$
+R_{\mu\nu}=\frac{8\pi G}{c^4}\left(T_{\mu\nu}-\frac{1}{2}g_{\mu\nu}T\right)
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="2.12.4.-La-ecuaci&#243;n-de-campo-d&#233;bil-para-fluido-perfecto">2.12.4. La ecuaci&#243;n de campo d&#233;bil para fluido perfecto<a class="anchor-link" href="#2.12.4.-La-ecuaci&#243;n-de-campo-d&#233;bil-para-fluido-perfecto">&#182;</a></h3><p><a id='ecuacion_campo_fluido_perfecto'></a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Para un fluído perfecto $T^{\mu\nu}=\mathrm{diag}(\rho_0 c^2,p,p,p)$ donde $p$ es la presión.  En la aproximación de campo débil la traza del tensor de momentum energía es:</p>
+$$
+T=g_{\mu\nu}T^{\mu\nu}\approx T^{00}-T^{11}-T^{22}-T^{33} = \rho_0 c^2 - 3 p
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Por otro lado:</p>
+$$
+T_{00}=g_{0\mu}g_{0\nu} T^{\mu\nu}\approx(g_{00})^2 T^{00}\approx T^{00}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Mientras que la componente $00$ del tensor de Riemann habíamos demostrado es igual a:</p>
+$$
+R_{00} \approx \frac{1}{c^2}\nabla^2 \Phi\\
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Reemplazando en la ecuación de campo obtenemos una nueva versión de la ecuación de Poisson:</p>
+$$
+\nabla^2 \Phi = 4\pi G \left(\rho+\frac{3p}{c^2}\right)
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Esta es una predicción nueva de la relatividad general: la presión también produce gravitación.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="2.12.5.-El-t&#233;rmino-cosmol&#243;gico">2.12.5. El t&#233;rmino cosmol&#243;gico<a class="anchor-link" href="#2.12.5.-El-t&#233;rmino-cosmol&#243;gico">&#182;</a></h3><p><a id='termino_cosmologico'></a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Como vimos desde el principio, la manera en la que se deduce heurísticamente la ecuación de campo métrico es buscando un tensor que tenga divergencia covariante cero.  Demostramos que el tensor $G_{\mu\nu}$ tiene esa condición.  Pero hay otros tensores que pueden tener esa condición.  Por ejemplo el tensor métrico mismo tiene divergencia covariante cero:</p>
+$$
+{g_{\mu\nu}}^{;\mu}=0
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Por qué ibamos entonces a suponer que el tensor general del lado izquierdo de la ecuación es solo el tensor de Einstein y no algo más general de la forma:</p>
+$$
+{\cal G}_{\mu\nu}=G_{\mu\nu}+\lambda g_{\mu\nu}
+$$<p>donde $\lambda$ es una constante.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Una ecuación aún más general entonces sería:</p>
+$$
+R_{\mu\nu}-\frac{1}{2}g_{\mu\nu} R+\lambda g_{\mu\nu}=\frac{8\pi G}{c^4}T_{\mu\nu}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>El único inconveniente con esta ecuación es que en el límite de campo débil y para la métrica newtoniana, la ecuación resultante no es la ecuación de Poisson ¿o sí?. Una manera de reconciliar la nueva ecuación sería agregar el término en el lado derecho de la ecuación:</p>
+$$
+R_{\mu\nu}-\frac{1}{2}g_{\mu\nu} R=\frac{8\pi G}{c^4}T_{\mu\nu}+\Lambda g_{\mu\nu}
+$$<p>y agrupar el nuevo término con el tensor momentum energía:</p>
+$$
+R_{\mu\nu}-\frac{1}{2}g_{\mu\nu} R=\frac{8\pi G}{c^4}\left(T_{\mu\nu}+\rho_\Lambda c^2 g_{\mu\nu}\right)
+$$<p>donde</p>
+$$\rho_\Lambda=\frac{\Lambda c^2}{8\pi G}$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Si $\rho_\Lambda\ll\rho$ para la mayoría de las situaciones gravitacionales que vemos en astronomía, entonces la ecuación seguiría siendo válida.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Pero ¿qué es $\rho_\Lambda$?</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>A primera vista vemos que se trata de una densidad de materia que existiría incluso en la ausencia de otras formas de materia, es decir, podría interpretarse como una densidad de masa del vacío con tensor de momentum energía asociado:</p>
+$$
+T^\mathrm{vacio}_{\mu\nu}=\rho_\Lambda c^2 g_{\mu\nu}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Es decir, el vacío se comporta como un fluído perfecto con densidad y presión:</p>
+$$
+\begin{array}{rcl}
+\rho_\mathrm{vacio} &amp; = &amp; -\rho_\Lambda\\
+p_\mathrm{vacio} &amp; = &amp;  -\rho_\Lambda c^2
+\end{array}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>En una situación en la que no hay materia y asumiendo que $\rho_\Lambda$ es muy pequeña (campo débil) la ecuación de Poisson para el vacío será:</p>
+$$
+\nabla^2 \Phi = -8\pi G \rho_\Lambda=-\Lambda c^2
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Es decir el vacío producirá un efecto <em>repulsivo</em>.</p>
+
+</div>
+</div>
+</div><div style="background:#F5CBA7;border:solid black 2px;pad:10px;margin-left:7em;margin-top:1em;margin-bottom:1em;">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Un poco de historia: Einstein y el mayor error de su vida.</strong><a id=''></a> Einstein introdujo el término cosmológico en su ecuación porque pensaba que si no lo hacía el Universo podría colapsar por su propio peso.  Esto es que si aplicamos la ecuación de campo a un fluído homogéneo encontramos un potencial atractivo que tendería a hacer que la materia se atrayese y el universo habría terminado hace mucho.  En la época de Einstein todo parecía indicar que el Universo era eterno y estático.  Es por eso que el término $\Lambda g_{\mu\nu}$ que introdujimos en el lado derecho se conoce como el término cosmológico.</p>
+<blockquote><p>Después que se descubrió que el Universo en efecto se expandía Einstein reconocío que la introducción del término cosmológico había sido un gran error ("<em>my biggest blunder</em>").</p>
+<p>En 1998 astrónomos descubrieron que la expansión del Universo se estaba acelerando lo que implicaba que efectivamente el término cosmológico estaba presente en la ecuación.  Si bien durante todo el siglo XX la mayoría de los cosmólogos dejaron el término cosmológico en su lugar y lo estudiaron como una curiosidad, lo cierto es que para los 2000 ya habíamos incluso medido esta cantidad.</p>
+<p>Hoy se sabe que la densidad de masa debida al término cosmológico es del orden de 0.74 veces la densidad crítica, $\rho_\mathrm{crit}=8.5\times 10^{-27}$ kg m$^{-3}$, es decir $\rho_\Lambda=6.29\times 10^{-27}$ kg m$^{-3}$.  Teniendo en cuenta que:</p>
+$$\rho_\Lambda = \frac{\Lambda c^2}{8\pi G}$$<p>hoy sabemos que la constante cosmológica debe ser muy cercana a:</p>
+$$\Lambda\approx 1.2\times 10^{-52}\;\mathrm{m}^{-2}$$<p>Curiosamente el valor de la constante cosmológicamente coincide en orden de magnitud, con el inverso del cuadrado del Universo observable, $1/R^2_\mathrm{U}=1/(10$ Gal$)\sim 10^{-52}$ m$^{-2}$.</p>
+</blockquote>
+
+</div>
+</div>
+</div>
+    </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="2.12.6.-La-ecuaci&#243;n-de-Hilbert-Einstein">2.12.6. La ecuaci&#243;n de Hilbert-Einstein<a class="anchor-link" href="#2.12.6.-La-ecuaci&#243;n-de-Hilbert-Einstein">&#182;</a></h3><p><a id='ecuacion_hilbert_einstein'></a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>La deducción que hicimos de la ecuación de campo métrico es de naturaleza heurística.  Una deducción más rigurosa fue hecha de forma simultánea por el matemático alemán David Hilbert.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Esta deducción puede <a href="https://en.wikipedia.org/wiki/Einstein%E2%80%93Hilbert_action">encontrarse aquí</a> y parte de suponer que en el espacio-tiempo con materia se extremiza la denominada <strong>acción de Hilbert-Einstein</strong>:</p>
+$$
+S= \int \sqrt{g}\left[\frac{c^4}{16 \pi G
+}(R+2\Lambda)-{\cal L}_\mathrm{M}\right] \;\mathrm{d}^{4} x
+$$<p>donde $g$ es el determinante de la métrica $R$ es el escalar de curvatura y ${\cal L}_\mathrm{M}$ sería el equivalente a un <em>lagrangiano</em> correspondiente a la materia-energía presente en el espacio-tiempo.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Si se aplica la condición convencional de que:</p>
+$$
+\delta S = 0 
+$$<p>entonces la ecuación resultante es:</p>
+$$
+R_{\mu\nu}-\frac{1}{2}g_{\mu\nu} R-\Lambda g_{\mu\nu}=\frac{8\pi G}{c^4}T_{\mu\nu}
+$$<p>que se conoce por la misma razón como la <strong>ecuación de Hilbert-Einstein</strong> (HEE) o la <strong>ecuación de campo métrico de einstein</strong> (EFE).</p>
+
+</div>
+</div>
+</div><div style="background:white;border:solid black 2px;pad:10px;margin-left:7em;margin-top:1em;margin-bottom:1em;">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Nota: Sobre los signos en la ecuación de Einstein.</strong><a id=''></a> Es posible encontrar distintas versiones diferentes de la ecuación de Einstein y de la acción de Hilbert-Einstein, que dependen de la signatura que hayamos usado para la métrica y del signo que hayamos escogido para el tensor de Einstein o el tensor de Riemann.</p>
+
+</div>
+</div>
+</div>
+    </div><div style="background:lightgray">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a href="index.html">Indice</a> | Previo: <a href="02.08.00.00.RelatividadGeneral.TensorDeMomentumEnergia.html">RelatividadGeneral.TensorDeMomentumEnergia</a> | Siguiente: <a href="03.00.00.00.Aplicaciones.html">Aplicaciones</a></p>
+
+</div>
+</div>
+</div>
+    </div>
     </div>
   </div>
 </body>
