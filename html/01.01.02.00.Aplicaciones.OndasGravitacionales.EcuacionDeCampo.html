@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
-<title>index</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>01.01.02.00.Aplicaciones.OndasGravitacionales.EcuacionDeCampo</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 <style type="text/css">
@@ -13067,38 +13067,21 @@ div#notebook {
 <body>
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
-
+<div style="background:lightgray">
+    	 
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p style="margin:3em"></p>
-<p style="text-align:center;font-size:3em;font-weight:bold">Relatividad y Gravitación</p>
-<p style="text-align:center;font-size:2em">Teoría, algoritmos y problemas</p>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="./figures/portada.png" alt="Portada"></p>
+<p><a href="index.html">Indice</a> | Previo: <a href="01.01.01.00.Aplicaciones.OndasGravitacionales.GravedadLinearizada.html">Aplicaciones.OndasGravitacionales.GravedadLinearizada</a> | Siguiente: <a href="01.01.03.00.Aplicaciones.OndasGravitacionales.EcuacionDeOndas.html">Aplicaciones.OndasGravitacionales.EcuacionDeOndas</a></p>
 
 </div>
 </div>
 </div>
+    </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p style="text-align:center;font-size:2em;font-weight:bold">Jorge I. Zuluaga</p>
-<p style="text-align:center;font-size:1.2em">Profesor Titular de Física y Astronomía</p>
-<p style="text-align:center;font-size:1.2em">Instituto de Física, Facultad de Ciencias Exactas y Naturales</p>
-<p style="text-align:center;font-size:1.2em">Universidad de Antioquia</p>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<hr>
+<h3 id="1.1.4.-Ecuaci&#243;n-de-campo-linearizada-en-el-vac&#237;o">1.1.4. Ecuaci&#243;n de campo linearizada en el vac&#237;o<a class="anchor-link" href="#1.1.4.-Ecuaci&#243;n-de-campo-linearizada-en-el-vac&#237;o">&#182;</a></h3><p><a id='gw_vacio'></a></p>
 
 </div>
 </div>
@@ -13106,48 +13089,584 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p style="margin:1em"></p>
-<p style="text-align:center;font-size:2em;font-weight:bold">Tabla de Contenido</p>
-<p style="margin:1em"></p>
+<p>Tenemos hasta ahora todos los elementos para proceder a escribir la ecuación de campo métrico linearizada:</p>
+$$
+R_{\mu\nu}=\frac{8\pi G}{c^4}\left(T_{\mu\nu}-\frac{1}{2}g_{\mu\nu}T\right)
+$$
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#205;ndice-de-materias">&#205;ndice de materias<a class="anchor-link" href="#&#205;ndice-de-materias">&#182;</a></h2><ul>
-<li><a href="01.00.00.00.Aplicaciones.html#aplicaciones_rgeneral">Aplicaciones de la relatividad general</a>.<ul>
-<li><a href="01.01.00.00.Aplicaciones.OndasGravitacionales.html#ondas_gravitacionales">Ondas gravitacionales</a>.<ul>
-<li><a href="01.01.00.00.Aplicaciones.OndasGravitacionales.html#historia_gw">Historia de las ondas gravitacionales</a>.</li>
-<li><a href="01.01.00.00.Aplicaciones.OndasGravitacionales.html#programa_gw">Un programa de estudio</a>.</li>
-<li><a href="01.01.01.00.Aplicaciones.OndasGravitacionales.GravedadLinearizada.html#gravedad_linearizada">Gravedad linearizada</a>.<ul>
-<li><a href="01.01.01.00.Aplicaciones.OndasGravitacionales.GravedadLinearizada.html#inversa_metrica_linearizada">Inversa de la métrica linearizada</a>.</li>
-<li><a href="01.01.01.00.Aplicaciones.OndasGravitacionales.GravedadLinearizada.html#simbolo_christoffel_linearizado">Símbolo de Christoffel linearizado</a>.</li>
-<li><a href="01.01.01.00.Aplicaciones.OndasGravitacionales.GravedadLinearizada.html#riemann_gravedad_linearizado">El tensor de Riemann linearizado</a>.</li>
-<li><a href="01.01.01.00.Aplicaciones.OndasGravitacionales.GravedadLinearizada.html#riemann_linearizado">El tensor de Ricci linearizado</a>.</li>
-<li><a href="01.01.01.00.Aplicaciones.OndasGravitacionales.GravedadLinearizada.html#einstein_linearizado">El tensor de Einstein linearizado</a>.</li>
-<li><a href="01.01.01.00.Aplicaciones.OndasGravitacionales.GravedadLinearizada.html#Tmunu_linearizado">El tensor momentum-energía</a>.</li>
-</ul>
-</li>
-<li><a href="01.01.02.00.Aplicaciones.OndasGravitacionales.EcuacionDeCampo.html#gw_vacio">Ecuación de campo linearizada en el vacío</a>.</li>
-<li><a href="01.01.02.00.Aplicaciones.OndasGravitacionales.EcuacionDeCampo.html#libertad_gauge">Libertad gauge</a>.</li>
-<li><a href="01.01.02.00.Aplicaciones.OndasGravitacionales.EcuacionDeCampo.html#gauge_armónico">El gauge armónico</a>.</li>
-<li><a href="01.01.02.00.Aplicaciones.OndasGravitacionales.EcuacionDeCampo.html#ec_gauge_armonico">La ecuación de campo en el gauge armónico</a>.</li>
-<li><a href="01.01.02.00.Aplicaciones.OndasGravitacionales.EcuacionDeCampo.html#ecuacion_fuentes">La ecuación de campo con fuentes</a>.</li>
-<li><a href="01.01.02.00.Aplicaciones.OndasGravitacionales.EcuacionDeCampo.html#metrica_postnewtoniana">La métrica postnewtoniana</a>.</li>
-<li><a href="01.01.02.00.Aplicaciones.OndasGravitacionales.EcuacionDeCampo.html#analogia_electromagnetica">Analogía electromagnética</a>.</li>
-<li><a href="01.01.03.00.Aplicaciones.OndasGravitacionales.EcuacionDeOndas.html#ecuacion_onda_vacio">Ecuación de onda en el vacío</a>.</li>
-<li><a href="01.01.03.00.Aplicaciones.OndasGravitacionales.EcuacionDeOndas.html#solucion_ecuacion_onda">Solución general a la ecuación de onda</a>.</li>
-<li><a href="01.01.03.00.Aplicaciones.OndasGravitacionales.EcuacionDeOndas.html#gauge_transversal">El gauge transversal de traza cero</a>.</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
+<p>Donde ahora podemos usar el lenguaje para decir que la ecuación de campo dice que el tensor de Ricci es proporcional a la <em>traza invertida</em> del tensor momentum-energía.</p>
 
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Por ahora procederemos a estudiar el caso en el que la onda se propaga en una región vacía $T^{\mu\nu}=0$:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>En esta situación la ecuación de campo métrico queda:</p>
+$$
+R_{\mu\nu}=0
+$$<p>que es una importante ecuación en relatividad general que vamos a seguir viendo en lo sucesivo.</p>
+
+</div>
+</div>
+</div><div style="background:white;border:solid black 2px;pad:10px;margin-left:7em;margin-top:1em;margin-bottom:1em;">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Nota: Tensor de Ricii cero no significa curvatura cero.</strong><a id=''></a> Es interesante anotar que la ecuación de campo evaluada en el vacío:</p>
+<blockquote>$$R_{\mu\nu}=0$$<p>implica solamente que localmente en los puntos donde no haya materia todas las componentes del tensor de Ricci son 0.  Eso no significa sin embargo que la curvatura allí sea cero, en tanto el espacio-tiempo puede haber sido curvado por la presencia de materia que esta cerca de allí.  Esto conduce a una serie de implicaciones que son interesantes:</p>
+<ol>
+<li>Si ${R^\alpha}_{\beta\mu\nu}=0$ entonces el espacio-tiempo es plano.</li>
+<li>Si $R_{\mu\nu}=0$ no necesariamente el espacio-tiempo es plano.</li>
+<li>Si $R=0$ no necesariamente el espacio-tiempo es plano.</li>
+<li>Si el espacio-tiempo es curvo entonces al menos una ${R^\alpha}_{\beta\mu\nu}\neq 0$</li>
+<li>Si $R\neq 0$ entonces el espacio-tiempo es curvo.</li>
+<li>Si al menos una componente de $R_{\mu\nu}\neq 0$ entonces el espacio-tiempo es curvo.</li>
+<li>Si al menos una componente de ${R^{\alpha}}_{\beta\mu\nu}\neq 0$ entonces el espacio-tiempo es curvo.</li>
+</ol>
+</blockquote>
+
+</div>
+</div>
+</div>
+    </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>En terminos de la perturbación la ecuación de campo métrico queda:</p>
+$$
+\frac{1}{2}(-\Box h_{\mu\nu}+V_{\mu,\nu}+V_{\nu,\mu})=0
+$$<p>o lo que es lo mismo:</p>
+$$
+\Box h_{\mu\nu}-(V_{\mu,\nu}+V_{\nu,\mu})=0
+$$<p>o bien,</p>
+$$
+\Box h_{\mu\nu}=V_{\mu,\nu}+V_{\nu,\mu}
+$$<p>donde recordemos que:</p>
+$$
+V_\mu=h^\lambda_{\mu,\lambda}-\frac{1}{2}h_{,\mu}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="1.1.5.-Libertad-gauge">1.1.5. Libertad gauge<a class="anchor-link" href="#1.1.5.-Libertad-gauge">&#182;</a></h3><p><a id='libertad_gauge'></a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Antes de proceder a resolver hay un asunto que debemos discutir.  ¿Por qué la métrica no es plana?  Es posible tener una métrica que no es plana por muy diversas razones: 1) porque tenemos una perturbación real (con curvatura) del campo gravitacional o 2) por la particular elección del sistema de coordenadas.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Veamos como cambia $h$ y todo lo que hemos visto cuando se modifican sutilmente las coordenadas</p>
+$$
+x'^\mu=x^{\mu}+\xi^{\mu}(x)
+$$<p>donde $|\xi|={\cal O}(\epsilon)$.  Dada esta última convención, siempre será posible reemplazar $x'$ por $x$ donde sea necesario.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>La inversa de esta transformación será simplemente:</p>
+$$
+x^\mu=x'^{\mu}-\xi^{\mu}(x')
+$$<p>donde a primer orden $\xi^{\mu}(x')\approx \xi^{\mu}(x)$.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>La transformación de la métrica será:</p>
+$$
+g'_{\alpha\beta}(x')=\frac{\partial x^\mu}{\partial x'^{\alpha}}\frac{\partial x^\nu}{\partial x'^{\beta}} g_{\mu\nu}(x)
+$$<p></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Teniendo en cuenta que:</p>
+$$
+\frac{\partial x^\mu}{\partial x'^{\alpha}}\approx\delta^{\mu}_{\alpha}-\xi^\mu_{,\alpha}
+$$<p>donde $\xi^\mu_{,\alpha}=\partial \xi^\mu/\partial x^\alpha$.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>la métrica transforma como</p>
+$$
+\begin{aligned}
+g'_{\alpha \beta}\left(x^{\prime}\right) &amp;=\frac{\partial x^{\mu}}{\partial x^{\alpha}} \frac{\partial x^{\nu}}{\partial x^{\beta}} g_{\mu \nu}(x) \\
+&amp;=\left(\delta_{\alpha}^{\mu}-\xi^{\mu}_{,\alpha}\right)\left(\delta_{\beta}^{\nu}-\xi^{\nu}_{, \beta}\right)\left[g_{\mu \nu}\left(x^{\prime}\right)-g_{\mu \nu, \sigma}\left(x^{\prime}\right) \xi^{\sigma}\right] \\
+&amp;=g_{\alpha \beta}(x')-\xi_{, \mu}^{\alpha} g_{\mu \beta}-\xi^{\nu}_{,\beta}g_{\alpha \nu}-g_{\alpha \beta, \sigma} \xi^{\sigma}
+\end{aligned}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>La diferencia entonces en la métrica debido al pequeño desplazamiento es:</p>
+$$
+g'_{\alpha \beta}\left(x^{\prime}\right)-g_{\alpha\beta}(x')\equiv h'_{\alpha \beta}\left(x^{\prime}\right)-h_{\alpha\beta}(x')=-\xi_{\alpha,\beta}-\xi_{\beta,\alpha}
+$$<p>o lo que es lo mismo:</p>
+$$
+h'_{\alpha \beta}=h_{\alpha\beta}-\xi_{\alpha,\beta}-\xi_{\beta,\alpha}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Entonces, un simple cambio de coordenadas me cambia el $h$.  A esto es a lo que se conoce como <em>libertad gauge</em> en las perturbaciones.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="1.1.6.-El-gauge-arm&#243;nico">1.1.6. El gauge arm&#243;nico<a class="anchor-link" href="#1.1.6.-El-gauge-arm&#243;nico">&#182;</a></h3><p><a id='gauge_armónico'></a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>La libertad gauge es interesante porque nos permite identificar cuál podría ser el mejor sistema de coordenadas en el que se puede trabajar para que la ecuación de campo linearizada sea sencilla.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Si se escoge un conjunto e $\xi^\alpha$ tal que :</p>
+$$
+V'_{\mu}=h'^{\lambda}_{\mu,\lambda}-\frac{1}{2}h'_{,\mu}=0
+$$<p>entonces la ecuación de campo queda reducida a:</p>
+$$
+\Box h'_{\mu\nu}=0
+$$<p>y llamamos a este el <strong>gauge armónico</strong> por las evidentes implicaciones de la última ecuación.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Otra manera de escribir el gauge armónico es:</p>
+$$
+V'^{\nu}={h'^{\mu\nu}}_{,\mu}-\eta^{\mu\nu}\frac{1}{2}h'_{,\mu}=0
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Definiendo la traza-invertida de $h$ como:</p>
+$$
+\bar{h'}_{\mu\nu}\equiv h'_{\mu\nu}-\frac{1}{2}\eta_{\mu\nu} h'
+$$<p>el gauge armónico queda:</p>
+$$
+{\bar{h}'^{\mu\nu}}_{,\mu}=0
+$$
+</div>
+</div>
+</div><div style="background:white;border:solid black 2px;pad:10px;margin-left:7em;margin-top:1em;margin-bottom:1em;">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Nota: El gauge armónico para $\xi$.</strong><a id=''></a> Con la definición $\bar{h}$ podemos escribir la transformación de coordenadas como como:</p>
+<blockquote>$$\bar{h}'_{\alpha \beta}=\bar{h}_{\alpha\beta}-\xi_{\alpha,\beta}-\xi_{\beta,\alpha}+\xi^\lambda_{,\lambda}\eta_{\alpha\beta}$$<p>Sacando las componentes contravariantes y tomando la derivada tenemos:</p>
+$${\bar{h}'^{\mu\nu}}_{,\mu}={\bar{h}^{\mu \nu}}_{,\mu}-{\xi^{\mu,\nu}}_{,\mu}-{\xi^{\nu, \mu}}_{,\mu}+\xi^{\lambda}_{,\lambda\mu}\eta^{\mu\nu}={\bar{h}^{\mu\nu}}_{,\mu}-\Box\xi^\nu$$<p>de modo que en términos de la perturbación original el gauge armónico se puede escribir:</p>
+$$\Box\xi^\nu={\bar{h}^{\mu\nu}}_{,\mu}$$<p>El problema es que para cualquier función escalar $f$ siempre se puede encontrar una función escalar $F$ tal que $\Box F= f$, de modo que el gauge armónico lo satisfacen infinitas funciones $\xi$.  Si imponemos la condición adicional de que:</p>
+$$\Box\xi^\nu=0$$<p>esto completa nuestra condición para el gauge armónico.</p>
+</blockquote>
+
+</div>
+</div>
+</div>
+    </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="1.1.7.-La-ecuaci&#243;n-de-campo-en-el-gauge-arm&#243;nico">1.1.7. La ecuaci&#243;n de campo en el gauge arm&#243;nico<a class="anchor-link" href="#1.1.7.-La-ecuaci&#243;n-de-campo-en-el-gauge-arm&#243;nico">&#182;</a></h3><p><a id='ec_gauge_armonico'></a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>En lo sucesivo asumiremos que estamos trabajando en el <em>gauge armónico</em> y ya no haremos la distinción entre las componentes primadas y no primadas.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>En este gauge la ecuación de campo se escribe:</p>
+$$
+\Box h_{\mu\nu}=0
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Una ecuación equivalente se obtiene si se reconoce que una vez definido:</p>
+$$
+\bar{h}_{\mu\nu}\equiv h_{\mu\nu}-\frac{1}{2}\eta_{\mu\nu} h
+$$<p>entonces,</p>
+$$
+\Box \bar{h}_{\mu\nu}=\Box h_{\mu\nu}-\frac{1}{2}\eta_{\mu\nu}\Box h
+$$<p>pero</p>
+$$\Box h=\Box(\eta^{\mu\nu}h_{\mu\nu}) = \eta_{\mu\nu}\Box h_{\mu\nu}=0$$<p>de modo que:</p>
+$$
+\Box \bar{h}_{\mu\nu}=\Box h_{\mu\nu}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Así que una manera más conveniente de escribir la ecuación de campo métrico en el vacío será:</p>
+$$
+\Box \bar{h}_{\mu\nu}=0
+$$<p>con el gauge armónico</p>
+$$
+{\bar{h}^{\mu\nu}}_{,\mu}=0
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Una vez obtenida la solución siempre es posible regresar a la parametrización original usando:</p>
+$$
+h_{\mu\nu}=\bar{h}_{\mu\nu}-\frac{1}{2}\eta_{\mu\nu} \bar{h}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="1.1.8.-La-ecuaci&#243;n-de-campo-con-fuentes">1.1.8. La ecuaci&#243;n de campo con fuentes<a class="anchor-link" href="#1.1.8.-La-ecuaci&#243;n-de-campo-con-fuentes">&#182;</a></h3><p><a id='ecuacion_fuentes'></a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>¿Qué pasa ahora si tenemos en el espacio fuentes?</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>La ecuación de campo será ahora:</p>
+$$
+G_{\mu\nu}=\frac{8\pi G}{c^4}T_{\mu\nu}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Reemplazando el tensor de Einstein:</p>
+$$
+\delta G_{\mu \nu}=-\frac{1}{2} \square h_{\mu \nu}+\frac{1}{2}\left(\partial_{\mu} V_{\nu}+\partial_{\nu} V_{\mu}\right)+\frac{1}{4} \eta_{\mu\nu} \square h-\frac{1}{4} \eta_{\mu \nu} \eta^{\alpha \beta}\left(\partial_{\alpha} V_{\beta}+\partial_{\beta} V_{\alpha}\right)
+$$<p>la ecuación queda:</p>
+$$
+-\frac{1}{2} \square h_{\mu \nu}+\frac{1}{2}\left(\partial_{\mu} V_{\nu}+\partial_{\nu} V_{\mu}\right)+\frac{1}{4} \eta_{\mu\nu} \square h-\frac{1}{4} \eta_{\mu \nu} \eta^{\alpha \beta}\left(\partial_{\alpha} V_{\beta}+\partial_{\beta} V_{\alpha}\right)=\frac{8\pi G}{c^4}T_{\mu\nu}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Si aplicamos una transformación de coorenadas para quedar en el gauge armónico, i.e. $V_\mu=0$, obtenemos:</p>
+$$
+-\frac{1}{2}(\square h_{\mu \nu}-\frac{1}{2} \eta_{\mu\nu} \square h)=\frac{8\pi G}{c^4}T_{\mu\nu}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>En términos de la traza invertida de la variable de perturbación $\bar{h}_{\mu\nu}$ la ecuación queda finalmente:</p>
+$$
+\Box \bar{h}_{\mu\nu}=-\frac{16\pi G}{c^4}T_{\mu\nu}
+$$<p>que es la ecuación de campo con fuentes.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="1.1.9.-La-m&#233;trica-postnewtoniana">1.1.9. La m&#233;trica postnewtoniana<a class="anchor-link" href="#1.1.9.-La-m&#233;trica-postnewtoniana">&#182;</a></h3><p><a id='metrica_postnewtoniana'></a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>La versión linearizada de la ecuación de campo puede usarse para resolver el problema de la gravedad newtoniana.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Supongamos que tenemos una distribución de polvo con simetría radial $T^{\mu\nu}=\mathrm{diag}(\rho_0 c^2,0,0,0)$.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>La única componente de la ecuación de campo nos queda:</p>
+$$
+\Box \bar{h}_{00}=-\frac{16\pi G}{c^4} \rho_0 c^2
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>En campo estático, $\Box \bar{h}_{00}=-\nabla^2 \bar{h}_{00}$ así la ecuación queda:</p>
+$$
+\nabla^2 \bar{h}_{00}=\frac{16\pi G}{c^4} \rho_0 c^2
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Para que la ecuación coincida con la ecuación de Poisson se necesita que:</p>
+$$
+\bar{h}_{00}=\frac{4\Phi}{c^2}
+$$<p>donde $\Phi$ es el potencial gravitacional.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>La traza será naturalmente igual a $\bar{h}=4\Phi/c^2$</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>La perturbación original será por tanto:</p>
+$$
+h_{\mu\nu}=\bar{h}_{\mu\nu}-\frac{1}{2}\eta_{\mu\nu} \bar{h}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Por componentes:</p>
+$$
+\begin{array}{rcl}
+h_{00} &amp; = &amp; 2\Phi/c^2\\
+h_{ii} &amp; = &amp; -2\Phi/c^2
+\end{array}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>De donde la métrica resultante es:</p>
+$$
+\mathrm{d}s^2=\left(1+\frac{2\Phi}{c^2}\right)\mathrm{d}t^2-\left(1-\frac{2\Phi}{c^2}\right)\mathrm{d}\vec{r}_L^2
+$$<p>que llamaremos la <strong>métrica postnewtoniana</strong>.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Nótese que esta métrica difiere e la métrica de newton:</p>
+$$
+\mathrm{d}s^2=\left(1+\frac{2\Phi}{c^2}\right)\;\mathrm{d}t^2-\mathrm{d}\vec{r}_L^2
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="1.1.1.-Analog&#237;a-electromagn&#233;tica">1.1.1. Analog&#237;a electromagn&#233;tica<a class="anchor-link" href="#1.1.1.-Analog&#237;a-electromagn&#233;tica">&#182;</a></h3><p><a id='analogia_electromagnetica'></a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Existe una interesantísima analogía entre esta ecuación y la electrodinámica.  Recordemos que $h_{\mu\nu}$ en campo débil por ejemplo alrededor de un cuerpo con masa estaba asociado al potencial.  En electromagnetismo el cuadripotencial es $A_\mu$.  La ecuación inhomogénea de Maxwell se escribe:</p>
+$$
+\partial^\mu\partial_\mu A^\nu=\frac{4\pi}{c}J^\nu
+$$<p>que en un lugar donde no hay cargas se puede escribir como</p>
+$$
+\Box A^\nu = 0
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Pero debemos recordar que pudimos escribir esta expresión gracias al Gauge de Lorentz:</p>
+$$
+{A^\mu}_{,\mu}=0
+$$<p>una condición arbitraria sobre los potenciales que permitía escribir las ecuaciones inhomogeneas de forma simple como una función de onda.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Como vemos hay una analogía profunda entre las ecuaciones de Maxwell en espacio-tiempo plano y las ecuaciones de campo métrico donde el papel del cuadripotencial $A^\mu$ lo juega ahora el potencial tensorial $\bar{h}^{\mu\nu}$.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Paralelos:</p>
+<table>
+<thead><tr>
+<th>Aspecto</th>
+<th style="text-align:center">Electromagnetismo</th>
+<th style="text-align:center">Gravitación linearizada</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> Potenciales</td>
+<td style="text-align:center">$\phi$, $\vec A$</td>
+<td style="text-align:center">$h_{\mu\nu}$</td>
+</tr>
+<tr>
+<td>Cuadripotencial</td>
+<td style="text-align:center"> $A^\mu$</td>
+<td style="text-align:center"> $\bar{h}_{\mu\nu}$</td>
+</tr>
+<tr>
+<td>Transformación Gauge</td>
+<td style="text-align:center">$\phi'=\phi-\partial \psi/\partial t$, $\vec A'=\vec A+\vec{\nabla}\psi$</td>
+<td style="text-align:center">$$h_{\mu^{\prime} \nu^{\prime}}=h_{\mu \nu}-\xi_{\mu,\nu}-\xi_{\nu,\mu}$$</td>
+</tr>
+<tr>
+<td>Gauge</td>
+<td style="text-align:center"> $$A^\mu_{,\mu}=\vec{\nabla}\cdot\vec{A}+\partial \phi/\partial t=0$$</td>
+<td style="text-align:center">$${\bar{h}^{\mu\nu}}_{,\mu}={h^{\mu\nu}}_{,\mu}-\eta^{\mu\nu}\frac{1}{2}h_{,\mu}=0$$</td>
+</tr>
+<tr>
+<td>Ecuaciones en el vacío</td>
+<td style="text-align:center"> $\Box \vec{A}=0$, $\Box \phi=0$</td>
+<td style="text-align:center">$\Box h_{\mu\nu}=0$</td>
+</tr>
+<tr>
+<td></td>
+<td style="text-align:center"> $\Box A^\mu=0$</td>
+<td style="text-align:center">$\Box \bar{h}_{\mu\nu}=0$</td>
+</tr>
+<tr>
+<td>Fuentes</td>
+<td style="text-align:center">$J^\nu$</td>
+<td style="text-align:center">$T_{\mu\nu}$</td>
+</tr>
+<tr>
+<td>Ecuación con fuentes</td>
+<td style="text-align:center">$$\partial_\alpha \partial^\alpha {A^\nu}=\frac{4\pi}{c}J^\nu$$</td>
+<td style="text-align:center">$$\partial_\alpha \partial^\alpha \bar{h}_{\mu\nu}=\frac{-16\pi G}{c^4}T_{\mu\nu}$$</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div><div style="background:lightgray">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a href="index.html">Indice</a> | Previo: <a href="01.01.01.00.Aplicaciones.OndasGravitacionales.GravedadLinearizada.html">Aplicaciones.OndasGravitacionales.GravedadLinearizada</a> | Siguiente: <a href="01.01.03.00.Aplicaciones.OndasGravitacionales.EcuacionDeOndas.html">Aplicaciones.OndasGravitacionales.EcuacionDeOndas</a></p>
+
+</div>
+</div>
+</div>
+    </div>
     </div>
   </div>
 </body>

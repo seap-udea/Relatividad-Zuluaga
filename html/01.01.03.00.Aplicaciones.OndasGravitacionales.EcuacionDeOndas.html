@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
-<title>index</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>01.01.03.00.Aplicaciones.OndasGravitacionales.EcuacionDeOndas</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 <style type="text/css">
@@ -13067,38 +13067,21 @@ div#notebook {
 <body>
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
-
+<div style="background:lightgray">
+    	 
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p style="margin:3em"></p>
-<p style="text-align:center;font-size:3em;font-weight:bold">Relatividad y Gravitación</p>
-<p style="text-align:center;font-size:2em">Teoría, algoritmos y problemas</p>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="./figures/portada.png" alt="Portada"></p>
+<p><a href="index.html">Indice</a> | Previo: <a href="01.01.02.00.Aplicaciones.OndasGravitacionales.EcuacionDeCampo.html">Aplicaciones.OndasGravitacionales.EcuacionDeCampo</a> |</p>
 
 </div>
 </div>
 </div>
+    </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p style="text-align:center;font-size:2em;font-weight:bold">Jorge I. Zuluaga</p>
-<p style="text-align:center;font-size:1.2em">Profesor Titular de Física y Astronomía</p>
-<p style="text-align:center;font-size:1.2em">Instituto de Física, Facultad de Ciencias Exactas y Naturales</p>
-<p style="text-align:center;font-size:1.2em">Universidad de Antioquia</p>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<hr>
+<h3 id="1.1.11.-Ecuaci&#243;n-de-onda-en-el-vac&#237;o">1.1.11. Ecuaci&#243;n de onda en el vac&#237;o<a class="anchor-link" href="#1.1.11.-Ecuaci&#243;n-de-onda-en-el-vac&#237;o">&#182;</a></h3><p><a id='ecuacion_onda_vacio'></a></p>
 
 </div>
 </div>
@@ -13106,45 +13089,444 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p style="margin:1em"></p>
-<p style="text-align:center;font-size:2em;font-weight:bold">Tabla de Contenido</p>
-<p style="margin:1em"></p>
+<p>Estudiaremos otro caso particular de la ecuación de campo.</p>
+
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#205;ndice-de-materias">&#205;ndice de materias<a class="anchor-link" href="#&#205;ndice-de-materias">&#182;</a></h2><ul>
-<li><a href="01.00.00.00.Aplicaciones.html#aplicaciones_rgeneral">Aplicaciones de la relatividad general</a>.<ul>
-<li><a href="01.01.00.00.Aplicaciones.OndasGravitacionales.html#ondas_gravitacionales">Ondas gravitacionales</a>.<ul>
-<li><a href="01.01.00.00.Aplicaciones.OndasGravitacionales.html#historia_gw">Historia de las ondas gravitacionales</a>.</li>
-<li><a href="01.01.00.00.Aplicaciones.OndasGravitacionales.html#programa_gw">Un programa de estudio</a>.</li>
-<li><a href="01.01.01.00.Aplicaciones.OndasGravitacionales.GravedadLinearizada.html#gravedad_linearizada">Gravedad linearizada</a>.<ul>
-<li><a href="01.01.01.00.Aplicaciones.OndasGravitacionales.GravedadLinearizada.html#inversa_metrica_linearizada">Inversa de la métrica linearizada</a>.</li>
-<li><a href="01.01.01.00.Aplicaciones.OndasGravitacionales.GravedadLinearizada.html#simbolo_christoffel_linearizado">Símbolo de Christoffel linearizado</a>.</li>
-<li><a href="01.01.01.00.Aplicaciones.OndasGravitacionales.GravedadLinearizada.html#riemann_gravedad_linearizado">El tensor de Riemann linearizado</a>.</li>
-<li><a href="01.01.01.00.Aplicaciones.OndasGravitacionales.GravedadLinearizada.html#riemann_linearizado">El tensor de Ricci linearizado</a>.</li>
-<li><a href="01.01.01.00.Aplicaciones.OndasGravitacionales.GravedadLinearizada.html#einstein_linearizado">El tensor de Einstein linearizado</a>.</li>
-<li><a href="01.01.01.00.Aplicaciones.OndasGravitacionales.GravedadLinearizada.html#Tmunu_linearizado">El tensor momentum-energía</a>.</li>
-</ul>
-</li>
-<li><a href="01.01.02.00.Aplicaciones.OndasGravitacionales.EcuacionDeCampo.html#gw_vacio">Ecuación de campo linearizada en el vacío</a>.</li>
-<li><a href="01.01.02.00.Aplicaciones.OndasGravitacionales.EcuacionDeCampo.html#libertad_gauge">Libertad gauge</a>.</li>
-<li><a href="01.01.02.00.Aplicaciones.OndasGravitacionales.EcuacionDeCampo.html#gauge_armónico">El gauge armónico</a>.</li>
-<li><a href="01.01.02.00.Aplicaciones.OndasGravitacionales.EcuacionDeCampo.html#ec_gauge_armonico">La ecuación de campo en el gauge armónico</a>.</li>
-<li><a href="01.01.02.00.Aplicaciones.OndasGravitacionales.EcuacionDeCampo.html#ecuacion_fuentes">La ecuación de campo con fuentes</a>.</li>
-<li><a href="01.01.02.00.Aplicaciones.OndasGravitacionales.EcuacionDeCampo.html#metrica_postnewtoniana">La métrica postnewtoniana</a>.</li>
-<li><a href="01.01.02.00.Aplicaciones.OndasGravitacionales.EcuacionDeCampo.html#analogia_electromagnetica">Analogía electromagnética</a>.</li>
-<li><a href="01.01.03.00.Aplicaciones.OndasGravitacionales.EcuacionDeOndas.html#ecuacion_onda_vacio">Ecuación de onda en el vacío</a>.</li>
-<li><a href="01.01.03.00.Aplicaciones.OndasGravitacionales.EcuacionDeOndas.html#solucion_ecuacion_onda">Solución general a la ecuación de onda</a>.</li>
-<li><a href="01.01.03.00.Aplicaciones.OndasGravitacionales.EcuacionDeOndas.html#gauge_transversal">El gauge transversal de traza cero</a>.</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
+<p>Partamos de la ecuación de campo en el vacío:</p>
+$$
+\Box \bar{h}_{\mu\nu}=0
+$$<p>que se puede escribir en términos explícitos de la derivada como:</p>
+$$
+\frac{1}{c^2}\frac{\partial^2 \bar{h}_{\mu\nu}}{\partial t^2}-\nabla^2 \bar{h}_{\mu\nu}=0
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Esta ecuación es idéntica a una ecuación de ondas:</p>
+$$
+\nabla^2 \bar{h}_{\mu\nu}=\frac{1}{c^2}\frac{\partial^2 \bar{h}_{\mu\nu}}{\partial t^2}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Es decir si se perturba una región de un espacio-tiempo, la perturbación se propagará a otros lugares con la velocidad de la luz $c$.  Podemos decir también que la <strong>gravedad se propaga a la velocidad de la luz</strong> y con esto resolvemos el problema de Newton de la acción a distancia.</p>
 
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Esta es la esencia de la predicción que se hace de la existencia de ondas gravitacionales.</p>
+
+</div>
+</div>
+</div><div style="background:white;border:solid black 2px;pad:10px;margin-left:7em;margin-top:1em;margin-bottom:1em;">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Nota: ¿Son ondas reales u ondas de coordenadas?.</strong><a id=''></a> En nuestras notas históricas habíamos dicho que en el primer intento de Einstein de predecir las ondas gravitacionales, en realidad las ondas que predijo eran solo ondas de coordenadas, es decir ondas que se producían gracias a la elección de un sistema de coordenadas particular.  Dado que la ecuación que obtuvimos antes imponiendo el gauge armónico es una ecuación que se deriva justamente de usar un conjunto particular de coordenaas, ¿cómo sabemos que las ondas predichas aquí son efectivamente ondas físicas, ondas reales?.</p>
+<blockquote><p>Una manera de saberlo es ver si el único tensor que es distinto de cero independientemente de la elección del sistema de coordenadas, a saber el tensor de Riemann $R_{\lambda\mu\nu\kappa}$:</p>
+$$
+\delta R_{\lambda\mu\nu\kappa} \approx -\frac{1}{2}(h_{\mu\nu,\lambda,\kappa}-h_{\nu\lambda,\kappa,\mu}+h_{\lambda\kappa,\mu,\nu}-h_{\kappa\mu,\nu,\lambda})
+$$<p>también satisface una ecuación armónica.  Es claro que en el gauge armónico $\Box h_{\mu\nu}=0$ de modo que es trivial demostrar que en ese mismo gauge:</p>
+$$
+\Box \delta R_{\lambda\mu\nu\kappa}=0
+$$<p>Dado que lo que le pasa a este tensor en un sistema de coordenadas realmente repercute sobre la naturaleza del tensor en todos los sistemas de coordenadas, podemos decir que efectivamente las componentes de este tensor oscilan siguiendo una ecuación de ondas.  ¡Son ondas reales! (independientes del sistema de coordenadas).</p>
+</blockquote>
+
+</div>
+</div>
+</div>
+    </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="1.1.12.-Soluci&#243;n-general-a-la-ecuaci&#243;n-de-onda">1.1.12. Soluci&#243;n general a la ecuaci&#243;n de onda<a class="anchor-link" href="#1.1.12.-Soluci&#243;n-general-a-la-ecuaci&#243;n-de-onda">&#182;</a></h3><p><a id='solucion_ecuacion_onda'></a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Una cosa es escribir la ecuación de onda y otra encontrar una solución.  Si bien ya estamos acostumbrados a la ecuación de onda en otras áreas, existen ciertos aspectos de nuestro problema que hacen estas ondas muy especiales.  En particular la ecuación de onda escrita anteriormente sólo es válida en el gauge armónico.  ¿Qué implicaciones físicas tiene esto?</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Sabemos que una solución particular para la ecuación de ondas:</p>
+$$
+\nabla^2 \bar{h}_{\mu\nu}=\frac{1}{c^2}\frac{\partial^2 \bar{h}_{\mu\nu}}{\partial t^2}
+$$<p>es</p>
+$$
+\bar{h}_{\mu\nu}=A_{\mu\nu}\exp(-i \vec{k}\cdot\vec{r})\exp(i \omega t)=A_{\mu\nu}\exp(i k^\alpha x_\alpha)
+$$<p>siempre que se cumpla la condición:</p>
+$$
+k^\mu k_\mu=(k^0)^2-\vec{k}^2=0
+$$<p>o bien:</p>
+$$
+k^0=k
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Llamamos a $k^\mu$ el cuadrivector de onda (del que ya habíamos hablado antes en el curso) que como vemos tiene magnitud nula.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Para los propósitos que tenemos nos interesa la parte real esta cantidad que se puede escribir de la forma:</p>
+$$
+\bar{h}_{\mu\nu}=|A_{\mu\nu}|\cos(k^0 ct-\vec{k}\cdot\vec{r}+\varphi)\equiv a_{\mu\nu}\cos(k^0 ct-\vec{k}\cdot\vec{r}+\varphi)
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>De aquí podemos identificar $k^0=\omega_k/c$ y $|\vec{k}|=2\pi/\lambda$, con $\omega_k$ la frecuencia angular asociada con el modo $k$, $\lambda$ la longitud de onda del modo $k$. En términos de $\lambda$ el cuadrivector de onda se puede escribir como:</p>
+$$
+k^\mu:\frac{2\pi}{\lambda}(c,\hat k)
+$$<p>que era la manera en la que lo habíamos escrito antes.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Una solución general se puede escribir superponiendo las soluciones particulares así:</p>
+$$
+\bar{h}_{\mu\nu}=\mathrm{Re}\left(\int A_{\mu\nu}(\vec{k})\exp(i k^\mu x_\mu)\;\mathrm{d}^3k\right)
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="1.1.13.-El-gauge-transversal-de-traza-cero">1.1.13. El gauge transversal de traza cero<a class="anchor-link" href="#1.1.13.-El-gauge-transversal-de-traza-cero">&#182;</a></h3><p><a id='gauge_transversal'></a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Tomemos una onda armónica que se propaga en una dirección definida de $\vec k$ (onda plana).  En este caso el tenso $a_{\mu\nu}$ indica la amplitud que tienen cada una de las componentes espacio temporales de la onda.  En general habrán 10 amplitudes, que contrastan con la amplitud única que tiene una onda en una dimensión.  ¿Qué son esas 10 amplitudes?</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Las amplitudes $a_{\alpha\beta}$ de la onda determinaran su <em>polarización</em> a la manera como lo hacen por ejemplo en el caso de una onda electromagnética.  Es por eso que es conveniente llamar a $a_{\mu\nu}$ el <strong>tensor de polarización</strong>.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Sabemos que por el gauge armónico se debe cumplir la condición:</p>
+$$
+{\bar{h}^{\mu\alpha}}_{,\alpha}=a^{\mu\alpha}k_\alpha=0
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Estas son 4 ecuaciones que relacionan las componentes de la polarización.  Esta condición nos deja entonces con solo 6 componentes indepenientes del tensor de polarización.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Veamos cómo se relacionan esas componentes.  Para ello escribamos mejor el gauge armónico en su forma original:</p>
+$$
+V_\mu=\eta^{\alpha\alpha}\left(h_{\alpha\mu,\alpha}-\frac{1}{2}h_{\alpha\alpha,\mu}\right)=0
+$$<p>y la solución general:</p>
+$$
+h_{\mu\nu}=a_{\mu\nu}\cos(\omega t-\vec{k}\cdot\vec{r}+\varphi)
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Si escogemos el sistema de coordenadas de modo que la dirección del eje $z$ apunte hacia $\vec k$, la perturbación general queda:</p>
+$$
+h_{\mu\nu}=a_{\mu\nu}\cos(\Phi)
+$$<p>donde $\Phi\equiv \omega t-kz+\varphi$</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Nótese que la perturbación no depende de $x$, $y$ y por eso llamamos a esta una <em>onda plana</em>.  Las únicas derivadas distintas de cero serán entonces:</p>
+\begin{eqnarray}
+\nonumber
+h_{\mu\nu,0} &amp; = &amp; -a_{\mu\nu}\frac{\omega}{c}\sin(\Phi)\\
+\nonumber
+h_{\mu\nu,3} &amp; = &amp; a_{\mu\nu}k\sin(\Phi)\\
+\end{eqnarray}<p>donde hemos hecho $\partial_0=\partial_t /c$.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Esto implica que para una solución armónica:</p>
+$$
+h_{\mu\nu,0}=-h_{\mu\nu,3}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Reemplazando en la condición gauge para $\mu=0$ queda:</p>
+\begin{eqnarray}
+\nonumber
+\eta^{00}\left(h_{00,0}-\frac{1}{2}h_{00,0}\right)+\eta^{ii}\left(h_{i0,i}-\frac{1}{2}h_{ii,0}\right) &amp; = &amp; 0\\
+\nonumber
+-\frac{1}{2}k a_{tt}-\frac{1}{2}k a_{xx}-\frac{1}{2}k a_{yy}-\frac{1}{2}k a_{zz}+k a_{zt} &amp; = &amp; 0\\
+a_{tt}+a_{xx}+a_{yy}+a_{zz}+2a_{zt} &amp; = &amp; 0
+\end{eqnarray}
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Reemplazando en la condición gauge para $\mu=3$ queda:</p>
+\begin{eqnarray}
+\nonumber
+\eta^{00}\left(h_{03,0}-\frac{1}{2}h_{00,3}\right)+\eta^{ii}\left(h_{i3,i}-\frac{1}{2}h_{ii,3}\right) &amp; = &amp; 0\\
+\nonumber
+-k a_{zt} -\frac{1}{2}k a_{tt} + \frac{1}{2}k a_{xx} + \frac{1}{2}k a_{yy} - \frac{1}{2}k a_{zz}&amp; = &amp; 0 \\
+\nonumber
+a_{tt}-a_{xx}-a_{yy}+a_{zz}+2a_{zt} &amp; = &amp; 0
+\end{eqnarray}
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Sumando las ecuaciones anteriores queda:</p>
+$$
+a_{tz}=-\frac{1}{2}(a_{tt}+a_{zz})
+$$<p>y restando:</p>
+$$
+a_{xx}=-a_{yy}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Para las otras componentes obtenemos:</p>
+$$
+\begin{array}{rcl}
+a_{tx}+a_{zx} &amp; = &amp; 0\\
+a_{ty}+a_{zy} &amp; = &amp; 0
+\end{array}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>De modo que la matriz de polarización queda:</p>
+$$
+a_{\mu\nu}=
+\left(
+\begin{array}{cccc}
+a_{tt} &amp; a_{tx} &amp; a_{ty} &amp; -(a_{tt}+a_{zz})/2 \\
+a_{tx} &amp; a_{xx} &amp; a_{xy} &amp; -a_{tx} \\
+a_{ty} &amp; a_{xy} &amp; -a_{xx} &amp; -a_{ty} \\
+-(a_{tt}+a_{zz})/2 &amp; -a_{tx} &amp; -a_{ty} &amp; a_{zz} \\
+\end{array}
+\right)
+$$<p>donde las componentes independientes son: $a_{tt},a_{tx},a_{ty},a_{tz},a_{xx},a_{zz}$.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>¿Podemos precisar mejor esas componentes? Recordemos que la libertad gauge implica que:</p>
+$$
+h'_{\mu\nu}=h_{\mu\nu}-\xi_{\mu,\nu}-\xi_{\nu,\mu}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Dado que $\xi^\mu$ también cumple una ecuación del tipo:</p>
+$$
+\Box \xi^\mu=0
+$$<p>debe tener también forma armónica:</p>
+$$
+\xi^\mu=b_{\mu}\cos(\omega t-k z +\varphi_\xi)
+$$<p>con una fase $\varphi_\xi$ que no necesariamente coincide con la fase de la onda.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>La transformación de coordenadas implica, para la componentes temporales de la perturbación, la condición:</p>
+$$
+\begin{array}{rcl}
+h'_{00} &amp; = &amp; h_{00} - \dot{\xi}_{0}\\
+h'_{03} &amp; = &amp; h_{03} - \dot{\xi}_{3} + \dot{\xi}_{0}\\
+h'_{0i} &amp; = &amp; h_{0i} - \dot{\xi}_{i}\\
+\end{array}
+$$<p>y por otro lado</p>
+$$
+h'_{33} = h_{33}+2\dot{\xi}_3
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Se pueden escoger las funciones $\xi_\mu$tal que:</p>
+$$
+\begin{array}{rcl}
+h'_{0\mu} &amp; = &amp; 0\\
+h'_{33} &amp; = &amp; 0\\
+\end{array}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Con este gauge las componentes de la polarización se simplifican significativamente para ser igual a:</p>
+$$
+a'_{\mu\nu}=
+\left(
+\begin{array}{cccc}
+0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; a'_{xx} &amp; a'_{xy} &amp; 0 \\
+0 &amp; a'_{xy} &amp; -a'_{xx} &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 \\
+\end{array}
+\right)
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Una propiedad de este gauge particular es que tiene traza 0:</p>
+$$
+h'=h'^\mu_\mu=h'_{00}-h'_{11}-h'_{22}-h'_{33}=0
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Usando esta condición y escribiendo de nuevo la componente $i$ del gauge:</p>
+$$
+V_i=\eta^{\alpha\alpha}h'_{i\alpha,\alpha}=k^j a'_{ij}=0
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Esta última condición significa esencialmente que la onda resultante es transversal.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Es por eso que a este gauge lo llamamos el <strong>gauge transversal de traza cero</strong>.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>En síntesis en el gauge transversal de traza cero la perturbación métrica correspondiente a una onda plana que se propaga en una dirección arbitraria $z$ y que tiene longitud de onda $\lambda$, número de onda $k=2\pi/\lambda$ y frecuencia angular $\omega=k c = 2\pi c/\lambda$ es:</p>
+$$
+h^{TT}_{\mu\nu}=
+\left(
+\begin{array}{cccc}
+0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; a_{+} &amp; a_{\times} &amp; 0 \\
+0 &amp; a_{\times} &amp; -a_{+} &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 \\
+\end{array}
+\right) \cos(\omega t - k z + \varphi)
+$$<p>donde $a_{+}$ y $a_{\times}$ son las componentes de <em>polarización más</em> (<em>plus polarization</em>) y <em>polarización cruz</em> (<em>cross polarization</em>) respectivamente.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>La métrica en este gauge tendrá la forma general:</p>
+$$
+\mathrm{d}s_{TT}^2=c^2\mathrm{d}t^2
+-(1+a_{+})\cos(\omega t - k z + \varphi)\;\mathrm{d}x^2
+-(1-a_{+})\cos(\omega t - k z + \varphi)\;\mathrm{d}y^2
++2a_\times\;\mathrm{d}x\mathrm{d}y
+-\mathrm{d}z^2
+$$
 </div>
 </div>
 </div>
