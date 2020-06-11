@@ -13072,7 +13072,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><a href="index.html">Indice</a> | Previo: <a href="03.01.05.00.Aplicaciones.OndasGravitacionales.SimulacionSenal.html">Aplicaciones.OndasGravitacionales.SimulacionSenal</a> |</p>
+<p><a href="index.html">Indice</a> | Previo: <a href="03.01.05.00.Aplicaciones.OndasGravitacionales.SimulacionSenal.html">Aplicaciones.OndasGravitacionales.SimulacionSenal</a> | Siguiente: <a href="03.01.07.00.Aplicaciones.OndasGravitacionales.FuentesAstrofisicas.html">Aplicaciones.OndasGravitacionales.FuentesAstrofisicas</a></p>
 
 </div>
 </div>
@@ -13475,16 +13475,237 @@ $$
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Si definimos el <em>segundo momento de la distribución de masa</em> del sistema o <strong>tensor de momento cuadrupolar de masa</strong> $Q^{ij}$ como:</p>
+<p>Si definimos el <em>segundo momento de la distribución de masa</em> del sistema $I^{ij}$ como:</p>
 $$
-Q^{ij}(t)=\int \rho_0(t,\vec{r}') x'^i x'^j\;\mathrm{d}V'
+I^{ij}(t)=\int \rho_0(t,\vec{r}') x'^i x'^j\;\mathrm{d}V'
 $$<p>la solución a la ecuación de onda en el campo lejano y asumiendo gran longitud de onda será:</p>
 $$
-\bar{h}^{ij}_\mathrm{far}=\frac{2G}{c^4 r}\ddot{Q}^{ij}(ct-r)
+\bar{h}^{ij}_\mathrm{far}(t,\vec{r})=\frac{2G}{c^4 r}\ddot{I}^{ij}(ct-r)
 $$
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Si bien este resultado fue deducido bajo aproximaciones muy particulares, en realidad su forma general es válida en otras condiciones.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Una primera característica interesante de este resultado es que la perturbación inducida por la radiación gravitacional decae como $1/r$. Así, por ejemplo, para dos detectores localizados sobre el cono de luz de una onda a distancias $r$ y $r_0$:</p>
+$$
+\bar{h}^{ij}_\mathrm{far}(r)=\bar{h}^{ij}_\mathrm{far}(r_0)\left(\frac{r_0}{r}\right)
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="3.1.19.-Energ&#237;a-transportada-por-ondas-gravitacionales">3.1.19. Energ&#237;a transportada por ondas gravitacionales<a class="anchor-link" href="#3.1.19.-Energ&#237;a-transportada-por-ondas-gravitacionales">&#182;</a></h3><p><a id='densidad_energia_gw'></a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Calcular la energía transportada por ondas gravitacionales no es fácil.  Para empezar y como discutiremos más adelante no es posible asignar una energía local a un espacio-tiempo curvado.  El concepto de energía gravitacional es por tanto imposible de definir rigurosamente en relatividad general (lo que era de esperarse en tanto no hay <em>fuerzas</em> grabitacionales).</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>En el caso de gravedad linearizada, es posible calcular la energía transferida a una partícula de prueba (mejor, a un sistema formado por varias partículas) cuando pasa la onda gravitacional.  El argumento que se conoce históricamente como el <em>sticky bead argument</em> (cuenca pegajosa) fue ideado por Richard Feynmann en los años 50.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Imaginemos que sobre un alambre se ubican dos cuencas que pueden moverse libremente.  Cuando pasa una onda gravitacional las cuencas se separan y acercan periódicamente sobre el alambra.  Es cierto que también lo harían los átomos del alambre, pero dado que sobre ellos actúan fuerzas electromagnéticas muy poderosas, el efecto sobre las cuencas será mayor.  Si hay fricción en el alambre, es claro que con el tiempo la onda gravitacional terminará transfiriendo energía al alambre en la forma de calor.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Si la distancia entre las cuencas esta dada por (asumimos que el alambre está en la dirección de la polarización de la onda):</p>
+$$
+\Delta L = a_+ \cos(ku+\phi)
+$$<p>la velocidad de las cuencas será:</p>
+$$
+v=\frac{\mathrm{d}}{\mathrm{d}t}\Delta L=\omega a_+\sin(ku+\phi)
+$$<p>Su energía cinética será por otro lado proporcional a $\omega^2 a_+^2$.  Este argumento nos permite entender  una parte de la expresión rigurosa que se calcula usando la ecuación de campo.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>El flujo de energía (energía por unidad de área, por unidad de tiempo) transportado por la polarización de magnitud $a$ en dirección perpendicular a una onda plana será:</p>
+$$
+J_\mathrm{GW}=\left(\frac{c^2}{16\pi G}\right)\times \left(\frac{1}{2}a^2 \omega^2\right) \times c
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>En esta expresión reconocemos el primer término que es el inverso de la constante de la ecuación de campo en gravedad linearizada multiplicada por $c^2$.  El segundo término que viene del promedio de la energía cinética transferida a las partículas.  Estos dos términos producen una densidad de energía:</p>
+$$
+\varepsilon_\mathrm{GW}=\frac{c^2}{32\pi G}(a\omega)^2
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>El último término $c$ viene cuando queremos calcular la densidad de flujo de energía de una onda que se propaga con la velocidad de la luz, $J=\epsilon c$.  Todos los términos juntos producen finalmente:</p>
+$$
+J_\mathrm{GW}=\frac{c^3}{32\pi G}(a\omega)^2
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Si hay varias ondas y varias polarizaciones el flujo de energía total será la suma del término anterior calculada para cada una de ellas.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="3.1.2.-La-f&#243;rmula-del-cuadrupolo">3.1.2. La f&#243;rmula del cuadrupolo<a class="anchor-link" href="#3.1.2.-La-f&#243;rmula-del-cuadrupolo">&#182;</a></h3><p><a id='formula_cuadrupolo_gw'></a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Una de las más importantes deducciones realizadas por Einstein en su temprana teoría de la gravitación fue la de la potencia total radiada por una fuente. El resultado se conoce como la <strong>formula del cuadrupolo</strong> y aunque no la deduciremos rigurosamente aquí bastará con decir que no es difícil hacerlo (solo muy laborioso).</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>La fórmula establece que si definimos el <strong>tensor de momento cuadrupolar</strong> $Q^{ij}$ como:</p>
+$$
+Q^{ij}(t)\equiv I^{ij}(t)-\frac{1}{3}\delta^{ij}{I^k}_k(t)
+$$<p>entonces la potencial total radiada por una fuente es:</p>
+$$
+L_\mathrm{GW}=\frac{1}{5}\frac{G}{c^5}\langle \dddot{Q}^{ij}\dddot{Q}_{ij}\rangle
+$$<p>donde el promedio se debe realizar sobre un período de la onda.  Esta es justamente la que llamamos la <strong>formula del cuadrupolo</strong> y fue deducida por primera vez por Einstein en 1916.</p>
+
+</div>
+</div>
+</div><div style="background:white;border:solid black 2px;pad:10px;margin-left:7em;margin-top:1em;margin-bottom:1em;">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Nota: Solo hay radiación gravitacional si hay momento cuadrupolar.</strong><a id=''></a> A diferencia de lo que pasa con la radiación electromagnética que puede ser producida siempre que la distribución de carga tenga un momento dipolar variable (ver tabla al final de esta sección), la radiación gravitacional solo puede producirse si hay un momento cuadrupolar de masa y este cambia en el tiempo.  Esto explicará por qué solo ciertas distribuciones de materia pueden producir ondas gravitacionales (objetos en sistemas binarios, explosiones asimétricas, etc.) y otros no (estrellas en rotación, explosiones simétricas, etc.)</p>
+
+</div>
+</div>
+</div>
+    </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="3.1.21.-Analog&#237;a-con-el-electromagnetismo">3.1.21. Analog&#237;a con el electromagnetismo<a class="anchor-link" href="#3.1.21.-Analog&#237;a-con-el-electromagnetismo">&#182;</a></h3><p><a id='analogia_gw_em'></a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Como hicimos en una sección anterior, es posible hacer una analogía entre la emisión de ondas gravitacionales y la emisión de ondas electromagnéticas.  En la tabla a continuación se hace la analogía:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<table>
+<thead><tr>
+<th>Aspecto</th>
+<th style="text-align:center">Electromagnetismo</th>
+<th style="text-align:center">Gravitación linearizada</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cuadripotencial</td>
+<td style="text-align:center"> $A^\mu$</td>
+<td style="text-align:center"> $\bar{h}_{\mu\nu}$</td>
+</tr>
+<tr>
+<td>Fuentes</td>
+<td style="text-align:center">$J^\nu$</td>
+<td style="text-align:center">$T_{\mu\nu}$</td>
+</tr>
+<tr>
+<td>Ecuación con fuentes</td>
+<td style="text-align:center">$$\partial_\alpha \partial^\alpha {A^\nu}=\frac{4\pi}{c}J^\nu$$</td>
+<td style="text-align:center">$$\partial_\alpha \partial^\alpha \bar{h}_{\mu\nu}=\frac{-16\pi G}{c^4}T_{\mu\nu}$$</td>
+</tr>
+<tr>
+<td>Solución general</td>
+<td style="text-align:center">$$\bar{h}^{ij}(t,\vec r)=\frac{4G}{c^4}\int \frac{T^{ij}(t_r,\vec r')}{</td>
+<td style="text-align:center">\vec r-\vec{r}'</td>
+<td>}\mathrm{d}V'$$</td>
+<td> $$A^{i}(t,\vec r)=\frac{\mu}{4\pi}\int \frac{J^{i}(t_r,\vec r')}{</td>
+<td>\vec r-\vec{r}'</td>
+<td>}\mathrm{d}V' $$</td>
+</tr>
+<tr>
+<td>Campo lejano</td>
+<td style="text-align:center">$$\bar{h}^{ij}_\mathrm{far}(t,\vec r)=\frac{2G}{c^4}\frac{\ddot{Q}^{ij}}{r}$$</td>
+<td style="text-align:center">$$A^{i}_\mathrm{far}(t,\vec r)=\frac{\mu_0}{4\pi}\frac{\dot{P}^{i}}{r}$$</td>
+</tr>
+<tr>
+<td>Momentos</td>
+<td style="text-align:center">Segundo momento: $$I^{ij}(t)=\int \rho_0(t,\vec{r}') x'^i x'^j\;\mathrm{d}V'$$, Momento cuadrupolar: $$</td>
+</tr>
+</tbody>
+</table>
+<p>Q^{ij}(t)\equiv I^{ij}(t)-\frac{1}{3}\delta^{ij}{I^k}_k(t)
+$$ | Dipolar: $$P^{i}(t)=\int \rho<em>0(t,\vec{r}') x'^i \;\mathrm{d}V'$$ |
+| Potencia radiada | $$L</em>\mathrm{GW}=\frac{1}{5}\frac{G}{c^5}\langle \dddot{Q}^{ij}\dddot{Q}<em>{ij}\rangle$$ | $$L</em>\mathrm{EM}=\frac{\mu_0}{6\pi}\langle \ddot{P}^k\ddot{P}_k\rangle$$ |</p>
+
+</div>
+</div>
+</div><div style="background:lightgray">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a href="index.html">Indice</a> | Previo: <a href="03.01.05.00.Aplicaciones.OndasGravitacionales.SimulacionSenal.html">Aplicaciones.OndasGravitacionales.SimulacionSenal</a> | Siguiente: <a href="03.01.07.00.Aplicaciones.OndasGravitacionales.FuentesAstrofisicas.html">Aplicaciones.OndasGravitacionales.FuentesAstrofisicas</a></p>
+
+</div>
+</div>
+</div>
+    </div>
     </div>
   </div>
 </body>

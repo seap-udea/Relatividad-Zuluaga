@@ -287,3 +287,13 @@
 		* `#emision_gw_puntual`
 		* `#emision_gw_extendida`
 		* `#emision_gw_fuentes`
+		* `#densidad_energia_gw`
+		* `#formula_cuadrupolo_gw`
+		* `#analogia_gw_em`
+- Labels for '03.01.07.00.Aplicaciones.OndasGravitacionales.FuentesAstrofisicas.ipynb':
+	- Labels for 'section':
+		* `#fuentes_gw`
+		* `#estrellas_rotantes_gw`
+		* `#binarias_gw`
+		* `#decaimiento_binarias_gw`
+		* `#otras_fuentes_gw`
