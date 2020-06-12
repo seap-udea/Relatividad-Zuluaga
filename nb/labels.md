@@ -293,7 +293,9 @@
 - Labels for '03.01.07.00.Aplicaciones.OndasGravitacionales.FuentesAstrofisicas.ipynb':
 	- Labels for 'section':
 		* `#fuentes_gw`
-		* `#estrellas_rotantes_gw`
+		* `#estimaciones_intensidadf_gw`
+		* `#primera_fuente_gw`
+		* `#estimativos_binarias_gw`
 		* `#binarias_gw`
-		* `#decaimiento_binarias_gw`
-		* `#otras_fuentes_gw`
+	- Labels for 'figure':
+		* `fig:Figure_48`

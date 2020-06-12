@@ -13110,6 +13110,16 @@ $$
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p>Este resultado implica que en el caso de una fuente de ondas gravitacionales, la perturbación métrica varía predeciblemente como:</p>
+$$
+\bar{h}^{ij}_\mathrm{far}(r)=\bar{h}^{ij}_\mathrm{far}(r_0)\left(\frac{r_0}{r}\right)
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <p>Por otro lado, la potencia total raiada por un distema que tiene tensor de momento cuadrupolar $Q^{ij}$ esta dado por:</p>
 $$
 L_\mathrm{GW}=\frac{1}{5}\frac{G}{c^5}\langle \dddot{Q}^{ij}\dddot{Q}_{ij}\rangle
@@ -13144,7 +13154,7 @@ $$
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="3.1.23.-Radiaci&#243;n-gravitacional-de-estrellas-y-discos-rotantes">3.1.23. Radiaci&#243;n gravitacional de estrellas y discos rotantes<a class="anchor-link" href="#3.1.23.-Radiaci&#243;n-gravitacional-de-estrellas-y-discos-rotantes">&#182;</a></h3><p><a id='estrellas_rotantes_gw'></a></p>
+<h3 id="3.1.23.-Estimaciones-de-la-intensidad-y-la-frecuencia">3.1.23. Estimaciones de la intensidad y la frecuencia<a class="anchor-link" href="#3.1.23.-Estimaciones-de-la-intensidad-y-la-frecuencia">&#182;</a></h3><p><a id='estimaciones_intensidadf_gw'></a></p>
 
 </div>
 </div>
@@ -13152,7 +13162,629 @@ $$
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p>Uno de los problemas más interesantes para resolver en la astrofísica de las ondas gravitacionales es la estimación de la intensidad y la frecuencia que tendrán las ondas emitidas por distintas fuentes astrofísicas.</p>
 
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Después de la detección de las primeras ondas gravitacionales entre los años 2015 y 2016 pudimos hacernos a una idea de si nuestras estimaciones previas habían sido correctas o no.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="3.1.23.1.-Primera-fuente-de-radiaci&#243;n-gravitacional-detectada">3.1.23.1. Primera fuente de radiaci&#243;n gravitacional detectada<a class="anchor-link" href="#3.1.23.1.-Primera-fuente-de-radiaci&#243;n-gravitacional-detectada">&#182;</a></h4><p><a id='primera_fuente_gw'></a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Consideremos por ejemplo el caso de la primera fuente de radiación gravitacional que detectamos, GW150914.  Los análisis de la señal permitieron establecer que fue producida por la coalescencia de dos agujeros negros con una masa de alrededor de 30 masas solares y que la colisión tuvo lugar a 440 megaparsecs de nosotros.  La señal se dectectó con una frecuencia inicial de cerca de 35 Hz hasta la colisión final que alcanzo una frecuencia el orden de 250 Hz.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a id='fig:Figure_48'></a><img src="./figures/square_first_signal.png" alt="Primera señal de ondas electromagnéticas detectada GW150914."></p>
+<center><b>Figura 3.48</b>. Primera señal de ondas electromagnéticas detectada GW150914.</center>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Usando estos datos es posible derivar algunas propiedades interesantes.  A continuación recogemos algunos de los datos recabados de la señal:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Constantes</span>
+<span class="n">G</span><span class="o">=</span><span class="mf">6.67e-11</span> <span class="c1"># m^3/kg s^2</span>
+<span class="n">c</span><span class="o">=</span><span class="mf">3e8</span> <span class="c1"># m/s</span>
+<span class="n">pc</span><span class="o">=</span><span class="mf">3.26</span><span class="o">*</span><span class="mf">3e8</span><span class="o">*</span><span class="mf">365.25</span><span class="o">*</span><span class="mi">86400</span> <span class="c1"># 1 pc en metros</span>
+<span class="n">Msol</span><span class="o">=</span><span class="mf">1.98e30</span> <span class="c1"># kg</span>
+
+<span class="c1">#Distancia</span>
+<span class="n">r</span><span class="o">=</span><span class="mi">440</span> <span class="c1">#Mepgaparsecs</span>
+
+<span class="c1">#Amplitud promedio de la señal</span>
+<span class="n">hprom</span><span class="o">=</span><span class="mf">0.5e-21</span> <span class="c1">#Strain</span>
+
+<span class="c1">#Frecuencia de la señal</span>
+<span class="n">f1</span><span class="o">=</span><span class="mi">35</span> <span class="c1"># Hz</span>
+<span class="n">f2</span><span class="o">=</span><span class="mi">250</span> <span class="c1"># Hz</span>
+
+<span class="c1">#Duración</span>
+<span class="n">tdur</span><span class="o">=</span><span class="mf">0.2</span> <span class="c1"># segundos</span>
+
+<span class="c1">#Masa de los agujeros negros</span>
+<span class="n">M</span><span class="o">=</span><span class="mi">30</span><span class="o">*</span><span class="n">Msol</span> <span class="c1"># kg</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Podemos calcular la escala de longitud de los agujeros negros y de su órbita usando la masa y la frecuencia de los mismos y la tercera ley de Kepler $n^2 a^3=GM$:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Escala de longitud de los agujeros negros</span>
+<span class="n">R</span><span class="o">=</span><span class="mi">2</span><span class="o">*</span><span class="n">G</span><span class="o">*</span><span class="n">M</span><span class="o">/</span><span class="n">c</span><span class="o">**</span><span class="mi">2</span>
+
+<span class="c1"># Tamaño característico de la órbita</span>
+<span class="kn">from</span> <span class="nn">numpy</span> <span class="k">import</span> <span class="n">pi</span>
+<span class="n">a1</span><span class="o">=</span><span class="p">(</span><span class="n">G</span><span class="o">*</span><span class="n">M</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">pi</span><span class="o">*</span><span class="n">f1</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">**</span><span class="p">(</span><span class="mf">1.</span><span class="o">/</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">a2</span><span class="o">=</span><span class="p">(</span><span class="n">G</span><span class="o">*</span><span class="n">M</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">pi</span><span class="o">*</span><span class="n">f2</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">**</span><span class="p">(</span><span class="mf">1.</span><span class="o">/</span><span class="mi">3</span><span class="p">)</span>
+
+<span class="c1"># Velocidad orbital típica</span>
+<span class="n">v1</span><span class="o">=</span><span class="mi">2</span><span class="o">*</span><span class="n">pi</span><span class="o">*</span><span class="n">a1</span><span class="o">*</span><span class="n">f1</span>
+<span class="n">v2</span><span class="o">=</span><span class="mi">2</span><span class="o">*</span><span class="n">pi</span><span class="o">*</span><span class="n">a2</span><span class="o">*</span><span class="n">f2</span>
+
+<span class="c1"># Longitud de onda característica</span>
+<span class="n">lamb1</span><span class="o">=</span><span class="n">c</span><span class="o">/</span><span class="n">f1</span>
+<span class="n">lamb2</span><span class="o">=</span><span class="n">c</span><span class="o">/</span><span class="n">f2</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Escala de longitud agujeros negros: R = 88.044 km
+Escala orbital: a = [117.10016534072592,434.315655612506] km
+Velocidad orbital: v = [0.31837000370263285,0.6131350319476245] c
+Longitud de onda: a = [1200.0,8571.42857142857] km
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Como vemos la escala de longitud de las fuentes era del orden de unos cientos de kilómetros.  Sus velocidades en todo el proceso estuvieron entre 0.3 y 0.6$c$ lo que impediría que usaramos la aproximación de bajas velocidades para calcular la intensidad.  Sin embargo al calcular la longitud de onda nos damos cuenta que esta es entre 3 y 10 veces mayor que la escala de la fuente por lo que la aproximación no es tan mala.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Por ejemplo podemos estimar la intensidad que tenía la onda al abandonar la fuente.  Para ello podemos usar la aproximación de campo lejando y gran longitud de onda.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Distancia a la fuente</span>
+<span class="n">ro</span><span class="o">=</span><span class="mi">10000</span> <span class="c1"># km</span>
+
+<span class="c1"># Intensidad</span>
+<span class="n">ho</span><span class="o">=</span><span class="n">hprom</span><span class="o">*</span><span class="p">((</span><span class="n">r</span><span class="o">*</span><span class="mf">1e6</span><span class="o">*</span><span class="n">pc</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">ro</span><span class="o">*</span><span class="mf">1e3</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>ho ( ro = 10000 km) = 0.0006789933215999998
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Es decir, incluso a la increíblemente cercana distancia de 10000 km la perturbación métrica era muy pequeña.  Esto pone de relieve la magnitud real de las ondas gravitacionales y la rigidez del espacio-tiempo.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Podemos también hacer un <em>burdo</em> estimativo de la energía total producida por la fuente, usando para ello la expresión presentada para la densidad de flujo de la onda, que en términos astronómicos sería el brillo de la misma:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Densidad de flujo</span>
+<span class="n">fprom</span><span class="o">=</span><span class="p">(</span><span class="n">f1</span><span class="o">+</span><span class="n">f2</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span>
+<span class="n">J</span><span class="o">=</span><span class="n">c</span><span class="o">**</span><span class="mi">3</span><span class="o">/</span><span class="p">(</span><span class="mi">32</span><span class="o">*</span><span class="n">pi</span><span class="o">*</span><span class="n">G</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">hprom</span><span class="o">*</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">pi</span><span class="o">*</span><span class="n">fprom</span><span class="p">))</span><span class="o">**</span><span class="mi">2</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Flujo J promedio = 0.0008069888854914068 W/m^2 s
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Es importante entender que para el cálculo de este brillo asumimos que la intensidad medida <code>hprom</code> es la intensidad de la onda, como si incidiera normalmente en el detector.  Sin embargo por la configuración del detector en relación con la fuente ese día, sabemos que la intensidad era ciertamente mayor.  Es decir, este valor subestima el brillo de la fuente hasta por un factor de 10.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Este número contrasta con el brillo observado de algunas estrellas.  Por ejemplo, la estrella Vega, que es el referente de la escala de brillos usada en astronomía (magnitudes estelares), tiene un brillo de $3\times 10^{-8}$ W m$^{-2}$ s$^{-1}$.  Podemos usar el brillo medido y el de Vega y la ley de Pogson para estimar la magnitud estelar que hubiera tenido la explosión si la hubieramos percibido con nuestros ojos:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">numpy</span> <span class="k">import</span> <span class="n">log10</span>
+<span class="n">m</span><span class="o">=-</span><span class="mf">2.5</span><span class="o">*</span><span class="n">log10</span><span class="p">(</span><span class="n">J</span><span class="o">/</span><span class="mf">3e-8</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Magnitud equivalente = -11.074365746465153^m
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Es decir de haber sido visible habríamos visto la explosión con el brillo de la Luna llena.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Con este valor y la distancia podemos estimar (por debajo) la luminosidad total de la fuente:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">L</span><span class="o">=</span><span class="mi">4</span><span class="o">*</span><span class="n">pi</span><span class="o">*</span><span class="p">(</span><span class="n">r</span><span class="o">*</span><span class="mf">1e6</span><span class="o">*</span><span class="n">pc</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="o">*</span><span class="n">J</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>L = 1.8701154322511363e+48 j
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>De nuevo podemos usar la ley de Pogson para estimar la magnitud absoluta de la explosión.  Para ello usamos como referencia el Sol que tiene una magnitud absoluta bolométrica de $+4.75^\mathrm{m}$ y una luminosidad de $3.828\times 10^{26}$ J:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">numpy</span> <span class="k">import</span> <span class="n">log10</span>
+<span class="n">M</span><span class="o">=</span><span class="mf">4.75</span><span class="o">-</span><span class="mf">2.5</span><span class="o">*</span><span class="n">log10</span><span class="p">(</span><span class="n">L</span><span class="o">/</span><span class="mf">3.85e26</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Magnitud equivalente = -49.46601921134339^m
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>En contraste con las magnitudes típicas de las explosiones de supernova que tienen magnitudes absolutas del orden de $-19^\mathrm{m}$ a $-21^\mathrm{m}$.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Si comparamos la luminosidad de la explosión con la del Sol y calculamos la energía total emitida en <em>foe</em><a href="#notaspie_1">$^1$</a><strong>f</strong>ifty-<strong>o</strong>ne <strong>e</strong>rgs*.  En unidades del SI, 1 foe = $10^{44}$ J], el resultado es impresionante:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Luminosidades solares</span>
+<span class="n">Nstar</span> <span class="o">=</span> <span class="n">L</span><span class="o">/</span><span class="mf">3.828e26</span>
+
+<span class="c1"># Energía total:</span>
+<span class="n">E</span><span class="o">=</span><span class="n">L</span><span class="o">*</span><span class="n">tdur</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Equivalentes solares = 4.885359018419896e+21
+Energía total = 3.740230864502273e+47 J
+Energía total = 3740.2308645022727 foes
+Masa equivalente = 2.098894985691511 Msol
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Es decir por un centenar de milisegundos la explosión tuvo la potencia de todas las estrellas del universo juntas y emition 3000 veces más energía gravitacional que la supernova más potente registrada (1 foe)</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="3.1.23.2.-Estimativos-ondas-gravitacionales-de-sistemas-binarios">3.1.23.2. Estimativos ondas gravitacionales de sistemas binarios<a class="anchor-link" href="#3.1.23.2.-Estimativos-ondas-gravitacionales-de-sistemas-binarios">&#182;</a></h4><p><a id='estimativos_binarias_gw'></a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>En los resultados presentados en el apartado precedente hay un detalle que no precisamos.  ¿Cómo se determina la distancia a una fuente de ondas gravitacionales?.  En realidad la distancia se estima partiendo de el brillo medido de la onda y el brillo esperao de acuero con los modelos astrofísicos que ajustan los datos de la señal.  De modo que la distancia que usamos anteriormente para estimar todas las propiedades venía con una trampa: esta había sido determinada primero usando justamente la potencia estimada de la señal.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>¿Podemos hacer un estimativo a orden de magnitud de la potencia de la señal producida por un sistema binario?  La respuesta es un sí contundente.  Los detalles los estudiaremos en la siguiente sección:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Para determinar la intensidad de la onda producida a una gran distancia de la fuente es necesario usar la fórmula de campo lejano y longitud de onda larga:</p>
+$$
+\bar{h}^{ij}_\mathrm{far}(t,\vec{r})=\frac{2G}{c^4 r}\ddot{I}^{ij}(ct-r)
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Aquí nos interesa estimar la cantidad más relevante, la segunda derivada del segundo momento de masa.  Sabemos por definición que:</p>
+$$
+I^{ij}(t)=\int \rho_0(t,\vec{r}') x'^i x'^j\;\mathrm{d}V'
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Si las partículas del sistema están siempre a una distancia del origen del orden de $R$ (la distancia entre ellas), el segundo momento es del mismo orden que el momento de inercia
+$\int \rho_0 r'^2 \;\mathrm{d}V'$.  Un estimativo del momento de inercia es $I\sim MR^2$.  En realidad $I^{ij}$ no es el momento de inercia del sistema que se mantiene constante.  En realida esta cantidad cambia periódicamente con período $P$.  Podemos estimar la aceleración del cambio como:</p>
+$$
+\ddot{I}^{ij}\sim\frac{MR^2}{P^2}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Por la tercera ley de Kepler podemos relacionar la distancia orbtal con el período y la masa:</p>
+$$
+\left(\frac{2\pi}{P}\right)^2 R^3 = G M 
+$$<p>de donde:</p>
+$$
+R^2=\left(\frac{GM P^2}{2\pi}\right)^{2/3}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Reemplazando en la fórmula para el segundo momento obtenemos:</p>
+$$
+\ddot{I}^{ij}\sim\frac{G^{2/3} M^{5/3}}{P^{2/3}}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Reemplazando en la intensidad:</p>
+$$
+\bar{h}^{ij}_\mathrm{far}(t,\vec{r})\sim\frac{2G^{5/3}}{c^4 r}\frac{M^{5/3}}{P^{2/3}}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Usando esta expresión podemos encontrar por ejemplo la intensida de la radiación producida por un sistema formado por dos agujeros negros con una masa total de 100 masas solares a 100 Mpc, mientras se mueven en una órbita de 1 segundo de período:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">r</span><span class="o">=</span><span class="mi">100</span><span class="o">*</span><span class="mf">1e6</span><span class="o">*</span><span class="n">pc</span> <span class="c1"># m</span>
+<span class="n">M</span><span class="o">=</span><span class="mi">100</span><span class="o">*</span><span class="n">Msol</span> <span class="c1"># kg</span>
+<span class="n">P</span><span class="o">=</span><span class="mf">0.5</span> <span class="c1"># segundos</span>
+<span class="n">hfar</span><span class="o">=</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">G</span><span class="o">**</span><span class="p">(</span><span class="mi">5</span><span class="o">/</span><span class="mi">3</span><span class="p">)</span><span class="o">/</span><span class="n">c</span><span class="o">**</span><span class="mi">4</span><span class="p">)</span><span class="o">*</span><span class="n">M</span><span class="o">**</span><span class="p">(</span><span class="mi">5</span><span class="o">/</span><span class="mi">3</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">P</span><span class="o">**</span><span class="p">(</span><span class="mi">2</span><span class="o">/</span><span class="mi">3</span><span class="p">)</span><span class="o">*</span><span class="n">r</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>h estimado = 9.370739370992108e-22
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Que coincide orden de magnitud con la amplitud estimada para la primera fuente de ondas gravitacionales.  Podemos escribir este resultado en una forma útil usando:</p>
+$$
+h\sim 10^{-21}
+\left(\frac{M}{100\;M_\mathrm{\odot}}\right)^{5/3}
+\left(\frac{0.5\;\mathrm{s}}{P}\right)^{2/3}
+\left(\frac{100\;\mathrm{Mpc}}{r}\right)
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Usando esta fórmula podemos ver que en el caso de la primera fuente de ondas gravitacionales para la cuál $r=440$ Mpc, $M\approx 60 M_\mathrm{sol}$, $P=1/30$ s, entonces la amplitud sería $0.6^{5/3}15^{2/3}/4.4\approx 0.6$ que coincide esquisitamente con la intensidad promedio detectada de $h\approx 0.5\times 10^{-21}$.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Para sistemas gravitacionales más cercanos:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+$$
+h\sim 10^{-21}
+\left(\frac{M}{1\;M_\mathrm{\odot}}\right)^{5/3}
+\left(\frac{1\;\mathrm{h}}{P}\right)^{2/3}
+\left(\frac{100\;\mathrm{pc}}{r}\right)
+$$
 </div>
 </div>
 </div>
@@ -13167,6 +13799,7 @@ $$
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p>El cálculo anterior apenas si permite estimar la amplitud de la onda gravitacional producida por un sistema binario.  Pero ¿cuáles son las características específicas de las ondas producidas por el sistema? ¿que polarización tienen?</p>
 
 </div>
 </div>
@@ -13174,7 +13807,7 @@ $$
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="3.1.25.-Decaimiento-orbital-de-sistemas-binarios">3.1.25. Decaimiento orbital de sistemas binarios<a class="anchor-link" href="#3.1.25.-Decaimiento-orbital-de-sistemas-binarios">&#182;</a></h3><p><a id='decaimiento_binarias_gw'></a></p>
+<p>Consideremos un sistema formado por dos masas puntuales $M/2$ a una distancia relativa $R=a$ que se mueven en una órbita circular de radio $a$.</p>
 
 </div>
 </div>
@@ -13182,6 +13815,97 @@ $$
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p>Por la tercera ley de Kepler la frecuencia angular $n$ de las partículas es:</p>
+$$
+n=\sqrt{\frac{GM}{a^3}}
+$$<p>o el cuadrado del semieje mayor:</p>
+$$
+a^2=\left(\frac{GM}{n^2}\right)^{2/3}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Las coordenadas de ambas partículas serán:</p>
+$$
+\begin{array}{rcl}
+x_1(t)=-x_2(t) &amp; = &amp; (a/2)\cos(nt)\\
+y_1(t)=-y_2(t) &amp; = &amp; (a/2)\sin(nt)\\
+z_1=z_2 &amp; = &amp; 0
+\end{array}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Como el sistema esta formado por partículas puntuales podemos escribir las coordenadas de las partículas como:</p>
+$$
+\rho_0=\frac{M}{2}\delta^3(\vec r-\vec r_1)+\frac{M}{2}\delta^3(\vec r-\vec r_2)
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>El segundo momento de masa será:</p>
+\begin{eqnarray}
+\nonumber
+I^{ij} &amp; = &amp; \int \left[\frac{M}{2}\delta^3(\vec r-\vec r_1)+\frac{M}{2}\delta^3(\vec r-\vec r_2)\right] x'^i x'^j\;\mathrm{d}V'\\
+\nonumber
+&amp; = &amp; \frac{M}{2} (x_1^i x_1^j+x_2^i x_2^j)
+\end{eqnarray}
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Como vemos las componentes $j=3$ (componentes $z$) del segundo momento de masa son 0, $I^{i3}=0$ y las únicas componentes distintas de cero son aquellas que corresponden a $x,y$:</p>
+\begin{eqnarray}
+\nonumber
+I^{xx} =  \frac{1}{4}M a^2 \cos^2(nt) &amp; = &amp; \frac{1}{8}Ma^2[1+\cos(2nt)]\\
+\nonumber
+I^{yy} =  \frac{1}{4}M a^2 \sin^2(nt) &amp; = &amp; \frac{1}{8}Ma^2[1-\cos(2nt)]\\
+\nonumber
+I^{xy}  =  \frac{1}{4}M a^2 \cos(nt)\sin(nt) &amp; = &amp; \frac{1}{8} M a^2\sin(2nt)\\
+\end{eqnarray}
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Las segundas derivadas serán por otro lado:</p>
+\begin{eqnarray}
+\nonumber
+\ddot{I}^{xx} &amp; = &amp; -\frac{1}{2} n^2 M a^2\cos(2nt)\\
+\nonumber
+\ddot{I}^{yy} &amp; = &amp; +\frac{1}{2} n^2 M a^2\cos(2nt)\\
+\nonumber
+\ddot{I}^{xy} &amp; = &amp; -\frac{1}{2} n^2 M a^2\sin(2nt)\\
+\end{eqnarray}
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Usando la fórmula para la perturbación métrica podemos escribir finalmente:</p>
+$$
+\bar{h}^{ij}_\mathrm{far}(t)=\frac{G}{c^4 r} n^2 M a^2
+\left(
+\begin{array}{ccc}
+-\cos(2nt_r) &amp; -\sin(2nt_r) &amp; 0 \\
+-\sin(2nt_r) &amp; \cos(2nt_r) &amp; 0 \\
+0 &amp; 0 &amp; 0 \\
+\end{array}
+\right)
+$$<p>donde como es regular $t_r=t-r/c$.</p>
 
 </div>
 </div>
@@ -13189,7 +13913,136 @@ $$
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="3.1.26.-Frecuencias-y-amplitudes-de-otras-fuentes-astrof&#237;sica">3.1.26. Frecuencias y amplitudes de otras fuentes astrof&#237;sica<a class="anchor-link" href="#3.1.26.-Frecuencias-y-amplitudes-de-otras-fuentes-astrof&#237;sica">&#182;</a></h3><p><a id='otras_fuentes_gw'></a></p>
+<p>La perturbación métrica detectada a gran distancia será:</p>
+$$
+\bar{h}^{\mu\nu}_\mathrm{far}(t)=\frac{G}{c^4 r} n^2 M a^2
+\left(
+\begin{array}{cccc}
+0 &amp; 0 &amp; 0 &amp; 0 \\ 
+0 &amp; -\cos(2nt_r) &amp; -\sin(2nt_r) &amp; 0\\
+0 &amp; -\sin(2nt_r) &amp; \cos(2nt_r) &amp; 0\\
+0 &amp; 0 &amp; 0 &amp; 0 
+\end{array}
+\right)
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Nótese que esta onda plana no tiene una estructura exactamente del tipo:</p>
+$$
+h^{TT}_{\mu\nu}=
+\left(
+\begin{array}{cccc}
+0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; a_{+} &amp; a_{\times} &amp; 0 \\
+0 &amp; a_{\times} &amp; -a_{+} &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 \\
+\end{array}
+\right) \cos(\omega t - k z + \varphi)
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Pero es fácil ver que siempre es posible expresar una onda arbitraria:</p>
+$$
+h_{\mu\nu}=
+\left(
+\begin{array}{cccc}
+0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; h_{xx} &amp; h_{xy} &amp; 0 \\
+0 &amp; h_{yx} &amp; h_{yy} &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 \\
+\end{array}
+\right) 
+$$<p>como la suma de ondas en el gauge TT:</p>
+$$
+h_{\mu\nu}=
+\left(
+\begin{array}{cccc}
+0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; h^{(1)}_+ &amp; h^{(1)}_\times &amp; 0 \\
+0 &amp; h^{(1)}_\times &amp; -h^{(1)}_+ &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 \\
+\end{array}
+\right)
++
+\left(
+\begin{array}{cccc}
+0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; h^{(2)}_+ &amp; h^{(2)}_\times &amp; 0 \\
+0 &amp; h^{(2)}_\times &amp; -h^{(2)}_+ &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 \\
+\end{array}
+\right)
+$$<p>donde:</p>
+\begin{eqnarray}
+\nonumber
+h^{(1)}_+ &amp; = &amp; \frac{1}{2}(h_{xx}-h_{yy})\\
+h^{(2)}_+ &amp; = &amp; \frac{1}{2}(h_{xx}+h_{yy})\\
+h^{(1)}_\times + h^{(2)}_\times &amp; = &amp; h_{xy}\\
+\end{eqnarray}
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>La onda procedente de la binaria se puede considerar precisamente como la superposición de dos ondas planas con polarizaciones diferentes si se escribe:</p>
+$$
+\bar{h}^{\mu\nu}_\mathrm{far}(t)=\frac{G}{c^4 r} n^2 M a^2
+\left(
+\begin{array}{cccc}
+0 &amp; 0 &amp; 0 &amp; 0 \\ 
+0 &amp; \cos(2nt_r+\pi) &amp; \cos(2nt_r+\pi/2) &amp; 0\\
+0 &amp; \cos(2nt_r+\pi/2) &amp; -\cos(2nt_r+\pi) &amp; 0\\
+0 &amp; 0 &amp; 0 &amp; 0 
+\end{array}
+\right)
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+$$
+\bar{h}^{\mu\nu}_\mathrm{far}(t)=
+a_0
+\left(
+\begin{array}{cccc}
+0 &amp; 0 &amp; 0 &amp; 0 \\ 
+0 &amp; 1 &amp; 0 &amp; 0\\
+0 &amp; 0 &amp; -1&amp; 0\\
+0 &amp; 0 &amp; 0 &amp; 0 
+\end{array}
+\right)
+\cos(2nt_r+\pi) + 
+a_0
+\left(
+\begin{array}{cccc}
+0 &amp; 0 &amp; 0 &amp; 0 \\ 
+0 &amp; 0 &amp; 1 &amp; 0\\
+0 &amp; 1 &amp; 0&amp; 0\\
+0 &amp; 0 &amp; 0 &amp; 0 
+\end{array}
+\right)\cos(2nt_r+\pi/2) 
+$$<p>con:</p>
+$$
+a_0=\frac{G}{c^4 r} n^2 M a^2
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Es decir la onda producida por una binaria es la superposición de una onda con polarización $a_+=a_0$ con frecuencia igual al doble de la frecuencia orbital y en desfase $\pi$ respecto a la órbita y otra onda con polarización $a_\times=a_0$ con un desfase de $\pi/2$.  Se dice que la onda tiene polarización circular.</p>
 
 </div>
 </div>
@@ -13197,10 +14050,189 @@ $$
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p>Analicemos ahora la magnitud de la onda:</p>
+$$
+a_0=\frac{G}{c^4 r} n^2 M a^2
+$$<p>si reemplazamos $a^2=(GM/n^2)^{2/3}$ y $n=2\pi/P$, obtenemos:</p>
+$$
+a_0=\left(\frac{\pi^2}{2}\right)^{1/3} \frac{2G^{5/3}}{c^4 r}\frac{M^{5/3}}{P^{2/3}}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Vemos que increíblemente nuestro estimativo preciso de la amplitud de la onda difiere del estimativo <strong>exacto</strong> en un factor de $(\pi^2/2)^{1/3}\approx 1.7$ que no es muy grande para el nivel de aproximación tan grueso que habíamos utilizado en primer lugar.</p>
 
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Para calcular la potencia total radiada podemo usar la fórmula del cuadrupolo:</p>
+$$
+L_\mathrm{GW}=\frac{1}{5}\frac{G}{c^5}\langle \dddot{Q}^{ij}\dddot{Q}_{ij}\rangle
+$$<p>donde:</p>
+$$
+Q^{ij}(t)\equiv I^{ij}(t)-\frac{1}{3}\delta^{ij}{I^k}_k(t)
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Para ello primero debemos calcular la traza del segundo momento de masa:</p>
+$$
+I^{ij}=\frac{1}{8}M a^2
+\left(
+\begin{array}{ccc}
+[1+\cos(2nt)] &amp; -\sin(2nt) &amp; 0 \\
+-\sin(2nt) &amp; [1-\cos(2nt)] &amp; 0 \\
+0 &amp; 0 &amp; 0 \\
+\end{array}
+\right)
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>La traza es:</p>
+$$
+{I^k}_k=\frac{1}{4}M a^2
+$$<p>que no depende del tiempo.  Por lo tanto las derivadas del tensor de cuadrimomento de masa serán iguales a las del segundo momento de masa.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Derivando 3 veces queda:
+$$
+\dddot{Q}^{ij}=n^3M a^2
+\left(
+\begin{array}{ccc}
+-\sin(2nt) &amp; \cos(2nt) &amp; 0 \\
+\cos(2nt) &amp; \sin(2nt) &amp; 0 \\
+0 &amp; 0 &amp; 0 \\
+\end{array}
+\right)
+$$</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Con índices contravariantes $\dddot{Q}_{ij}=\eta_{ik}\eta_{jl}\dddot{Q}^{kl}=\dddot{Q}^{ij}$, de modo que</p>
+$$
+\dddot{Q}_{ij}\dddot{Q}^{ij}=\sum_{i,j} (\dddot{Q}_{ij})^2 =2 n^6 M^2 a^4 [\sin^2(2nt)+\cos^2(2nt)]=2 n^6 M^2 a^4
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>El producto:</p>
+$$
+\langle\dddot{Q}^{ij}\dddot{Q}_{ij}\rangle=2n^6 M^2 a^4
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>La luminosidad queda finalmente como</p>
+$$
+L_\mathrm{GW}=\frac{2G}{5c^5}n^6 M^2 a^4
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Reemplazando nuevamente $a^4=(GM/n^2)^{4/3}$ y $n=2\pi/P$ queda:</p>
+$$
+L_\mathrm{GW}=\frac{2^{13/3}\pi^{10/3}G^{7/3}}{5c^5}\left(\frac{M}{P}\right)^{10/3}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Si ponemos los datos de la primera fuente detectada obtenemos:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">M</span><span class="o">=</span><span class="mi">60</span><span class="o">*</span><span class="n">Msol</span> <span class="c1"># kg</span>
+<span class="n">P</span><span class="o">=</span><span class="mi">1</span><span class="o">/</span><span class="n">f1</span> <span class="c1"># segundos</span>
+<span class="n">L</span><span class="o">=</span><span class="p">(</span><span class="mi">2</span><span class="o">**</span><span class="p">(</span><span class="mi">13</span><span class="o">/</span><span class="mi">3</span><span class="p">)</span><span class="o">*</span><span class="n">pi</span><span class="o">**</span><span class="p">(</span><span class="mi">10</span><span class="o">/</span><span class="mi">3</span><span class="p">)</span><span class="o">*</span><span class="n">G</span><span class="o">**</span><span class="p">(</span><span class="mi">7</span><span class="o">/</span><span class="mi">3</span><span class="p">))</span><span class="o">/</span><span class="p">(</span><span class="mi">5</span><span class="o">*</span><span class="n">c</span><span class="o">**</span><span class="mi">5</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">M</span><span class="o">/</span><span class="n">P</span><span class="p">)</span><span class="o">**</span><span class="p">(</span><span class="mi">10</span><span class="o">/</span><span class="mi">3</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>L estimado = 1.571430487596547e+48
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Que es increiblemente cercano al valor que habíamos calculado.</p>
+
+</div>
+</div>
+</div><div style="font-size:0.8em;border-top:solid black 1px">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>NOTAS AL PIE:</strong></p>
+<p><a id='notaspie_1'></a></p>
+<ol start='1'>
+<li>El <em>foe</em> es una unidad diseñada para medir la energía producida en explosiones de supernova.  Equivale a $10^{51}$ ergs, de donde viene su nombre en inglés *[ten to the power of</li>
+</ol>
+
+</div>
+</div>
+</div>
+    </div>
     </div>
   </div>
 </body>
