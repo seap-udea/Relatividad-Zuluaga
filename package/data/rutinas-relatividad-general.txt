@@ -1,0 +1,91 @@
+(*
+Instrucciones:
+1) Abra una cuenta en https://lab.wolframcloud.com.
+2) Cree un nuevo Notebook.
+3) Copie el contenido de este archivo dentro del Notebook.
+4) Ejecute el código de ejemplo
+*)
+
+(*Variables básicas*)
+Clear[n,
+Inversa,Matriz,Tabla,
+Gama,Geodesica,Riemann,
+GeodesicaTabla ,ListaDos,ListaTres,ListaCuatro];
+n = 4;
+(*Genericos*)
+Inversa[g_]:=Simplify[Inverse[g]]
+(*Muestra*)
+Matriz[g_]:= g//MatrixForm
+Tabla[Lista_]:=TableForm[Partition[DeleteCases[Flatten[Lista], Null], 2],TableSpacing -> {2, 2}]
+GeodesicaTabla[geodesica_]:=TableForm[
+Table[{"d/d\[Tau]" ToString[u[i-1]], "=",geodesica[[i]]},
+{i, 1, n}], TableSpacing -> {2}]
+ListaDos[Tensor_,simbolo_,coords_]:=Table[
+If[UnsameQ[Tensor[[j, l]], 0],
+{ToString[simbolo[coords[[j]], coords[[l]]]]<>" = ",Tensor[[j, l]]}] ,
+{j, 1, n}, {l, 1, j}];
+ListaTres[Tensor_,simbolo_,coords_] := Table[
+If[UnsameQ[Tensor[[i, j, k]], 0],
+{ToString[simbolo[coords[[i]], coords[[j]],coords[[ k]]]]<>" = ", Tensor[[i, j, k]]}] ,
+{i, 1, n}, {j, 1, n}, {k, 1, j}];
+ListaCuatro[Tensor_,simbolo_,coords_]:=Table[
+If[UnsameQ[Tensor[[i, j, k, l]], 0],
+{ToString[simbolo[coords[[i]], coords[[j]],coords[[ k]],coords[[ l]]]]<>" = ",Tensor[[i, j, k, l]]}] ,
+{i, 1, n}, {j, 1, n}, {k, 1, n}, {l, 1,n}];
+(*Relatividad General*)
+Gama[g_,gi_,coord_] := Simplify[
+Table[(1/2)*Sum[(gi[[i, s]])*
+       (D[g[[s, j]], coord[[k]] ] +
+         D[g[[s, k]], coord[[j]] ] -
+         D[g[[j, k]], coord[[s]] ]), {s, 1, n}],
+    {i, 1, n}, {j, 1, n}, {k, 1, n}] ];
+Riemann[G_,coord_] := Simplify[Table[D[G[[i, j, k]],coord[[l]] ] - D[G[[i, j, l]], coord[[k]] ] +
+     Sum[G[[s, j, k]]G[[i, l, s]] -  G[[s, j, l]]G[[i, k, s]],  {s, 1, n}],
+    {i, 1, n}, {j, 1, n}, {k, 1, n}, {l, 1, n}] ]
+Ricci[Rm_]:=Simplify[Table[
+  Sum[Rm[[i, j, i, l]], {i, 1, n}], {j, 1, n}, {l, 1, n}] ]
+Scalar[gi_,Ri_]:= Simplify[ Sum[gi[[i, j]] Ri[[i, j]], {i, 1, n}, {j, 1, n}] ]
+Einstein[Ri_,R_,g_] :=Simplify[Ri - (1/2) R*g]
+Geodesica[G_] := Simplify[Table[-Sum[G[[i, j, k]] u[j-1] u[k-1], {j, 1, n}, {k, 1, n}], {i, 1, n}]]
+(*
+--------------------------------------------------------------------------
+Ejemplo agujero de gusano:
+coords = {T,r, \[Theta], \[Phi]};
+gij = {{1,0,0,0},-{0, 1, 0, 0}, -{0,0, r^2 + b^2, 0}, -{0,0,
+   0, (r^2 + b^2) Sin[\[Theta]]^2}};
+nij = Inversa[gij];
+Gijk=Gama[gij,nij,coords];
+Rijkl=Riemann[Gijk,coords];
+Rij=Ricci[Rijkl];
+Rs=Scalar[nij,Rij];
+Gij=Einstein[Rij,Rs,gij];
+dxidt=Geodesica[Gijk];
+Matriz[gij]
+Matriz[nij]
+Tabla[ListaTres[Gijk,\[CapitalGamma],coords]]
+Tabla[ListaCuatro[Rijkl,Riemann,coords]]
+Tabla[ListaDos[Rij,Ricci,coords]]
+Rs
+Tabla[ListaDos[Gij,G,coords]]
+GeodesicaTabla[dxidt]
+--------------------------------------------------------------------------
+Ejemplo métrica simétrica:
+coords = {T,r, \[Theta], \[Phi]};
+gij = {{Exp[2A[r]],0,0,0},-{0, Exp[2B[r]], 0, 0}, -{0,0, r^2 , 0}, -{0,0,
+   0, r^2 Sin[\[Theta]]^2}};
+nij = Inversa[gij];
+Gijk=Gama[gij,nij,coords];
+Rijkl=Riemann[Gijk,coords];
+Rij=Ricci[Rijkl];
+Rs=Scalar[nij,Rij];
+Gij=Einstein[Rij,Rs,gij];
+dxidt=Geodesica[Gijk];
+Matriz[gij]
+Matriz[nij]
+Tabla[ListaTres[Gijk,\[CapitalGamma],coords]]
+Tabla[ListaCuatro[Rijkl,Riemann,coords]]
+Tabla[ListaDos[Rij,Ricci,coords]]
+Rs
+Tabla[ListaDos[Gij,G,coords]]
+GeodesicaTabla[dxidt]
+*)
