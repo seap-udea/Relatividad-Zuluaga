@@ -13072,7 +13072,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><a href="index.html">Indice</a> | Previo: <a href="01.01.01.00.Aplicaciones.AgujerosNegros.MetricaSchwarzschild.html">Aplicaciones.AgujerosNegros.MetricaSchwarzschild</a> | Siguiente: <a href="02.01.00.00.Apendices.CodigosUtiles.html">Apendices.CodigosUtiles</a></p>
+<p><a href="index.html">Indice</a> | Previo: <a href="01.01.01.00.Aplicaciones.AgujerosNegros.MetricaSchwarzschild.html">Aplicaciones.AgujerosNegros.MetricaSchwarzschild</a> | Siguiente: <a href="01.01.03.00.Aplicaciones.AgujerosNegros.GeodesicasYSingularidad.html">Aplicaciones.AgujerosNegros.GeodesicasYSingularidad</a></p>
 
 </div>
 </div>
@@ -13809,12 +13809,201 @@ z\approx \frac{\Phi(\rho_2)-\Phi(\rho_1)}{c^2}
 $$
 </div>
 </div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="1.1.9.-Contracci&#243;n-de-longitudes">1.1.9. Contracci&#243;n de longitudes<a class="anchor-link" href="#1.1.9.-Contracci&#243;n-de-longitudes">&#182;</a></h3><p><a id='contraccione_longitudes'></a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Otro interesante pero muy sutil efecto geométrico en un espacio con la métrica de Schwarzschild es el que es conocido como la contracción gravitacional de longitudes.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Para introducir este efecto tomemos eventos en las vecindades del cuerpo que comparten la misma coordenada temporal. Así por ejemplo podemos tomar dos eventos con coordenadas  $E_1:(t,r,\theta,\phi)$ y $E_2:(t,r,\theta+\mathrm{d}\theta,\phi+\mathrm{d}\phi)$.  La distancia entre estos eventos será:</p>
+$$
+\mathrm{d}s^2=-\mathrm{d}\ell^2
+$$<p>donde:</p>
+$$
+\mathrm{d}\ell^2=r^2\mathrm{d}\theta^2+r^2\sin^2\theta \mathrm{d}\phi^2
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Es decir los puntos se encuentran ubicados sobre una triesfera.  La distancia entre esos puntos obedecera las reglas habituales de la trigonometría esférica.  Es decir en superficies de $t$ y $r$ constantes en el espacio de Shcwarzschild la geomtería es convencional.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>En particular podemos calcular la longitud $C$ de una circunferencia máxima y obtenemos el resultado habitual:</p>
+$$
+C=2\pi r
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Todo parece muy normal para ser cierto.  ¿Dónde esta la sutileza?.  La sutileza está en pensar que $r_0$ es la distancia al centro de la distribución de materia.  Recordemos que $r_0$ es solo una de las partes de la etiqueta que usamos para indicar la posición de eventos alrededor del cuerpo y no corresponde con una cantidad medida realmente.  Sin embargo $C$ si que es una cantidad real, medible: podemos usar reglas en el sistema de referencia en reposo, orientadas en dirección perpendicular a la "fuerza" de gravedad para medir $C$.  Aquí aparece un resultado interesante y es que midiendo $C$ podemos determinar $r$:</p>
+$$
+r=\frac{C}{2\pi}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Imaginemos ahora dos eventos $E_1:(t,r,\theta,\phi)$, $E_2:(t,r+\mathrm{d}r,\theta,\phi)$ situados en una misma dirección radial. La distancia espacio temporal entre los eventos es ahora:</p>
+$$
+\mathrm{d}s^2=-\left(1-\frac{R_S}{r}\right)^{-1}\mathrm{d}r^2
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>El observador en reposo al lado de los dos eventos y situado en $r$ la <em>distancia</em> entre los eventos será, $\mathrm{d}s^2=-\mathrm{d}r_\mathrm{st}^2$ donde $r_\mathrm{st}$ es una coordenada radial usada localmente por el observador a lo largo de la dirección radial:</p>
+$$
+\mathrm{d}r_\mathrm{st}=\frac{\mathrm{d}r}{\sqrt{1-\frac{R_S}{r}}}
+$$<p>es decir:</p>
+$$
+\mathrm{d}r=\sqrt{1-\frac{R_S}{r}}\mathrm{d}r_\mathrm{st}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Es decir, si muchos observadores se ponen de acuerdo para poner una barra de longitud igual $\mathrm{d}r_\mathrm{st}$ en dirección radial entre ellos, la separación en la coordenada radial entre los observadores no será uniforme.  Cerca $R_S$ será menor y muy lejos de él será mayor.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>El observador remoto puede realizar una tarea similar.  Conociendo donde esta la fuente de materia, construye un sistema de coordenadas cuyo origen coincide con la distribución de materia y usa también coordenadas esféricas. Ese observador aplica sobre el espacio tiempo de todo el universo (incorrectamente) la métrica de Minkowski (el juzga que todo puede medirse con sus estándares).  De nuevo, la distancia entre esos dos eventos las juzga igual a $\mathrm{d}s^2=-\mathrm{d}r_\mathrm{\infty}^2$.  Dado que la distancia espacio-temporal debe coincidir:</p>
+$$
+\mathrm{d}r_\mathrm{\infty}=\frac{\mathrm{d}r}{\sqrt{1-\frac{R_S}{r}}}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>La distancia finita $\Delta r_\infty$, medida por el observador remoto, entre dos circunferencias concentricas con coordenadas de Schwarzschild $r_1$ y $r_2$ se obtiene integrando:</p>
+$$
+\Delta \rho_\infty=\left\{\rho\sqrt{1-\frac{1}{\rho}}+\frac{1}{2} \log \left[2 \rho\left(\sqrt{1-\frac{1}{\rho}}+1\right)-1\right]\right\}_{\rho_{1}}^{\rho_{2}}
+$$<p>donde hemos usado aquí la variable radial normalizada $\rho=r/R_S$</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>De aquí vemos que la distancia medida desde $\rho_1=1$ a cualquier coordenada $\rho_2=\rho$ es:</p>
+$$
+\Delta \rho_\infty=\rho\sqrt{1-\frac{1}{\rho}}+\frac{1}{2} \log \left[2 \rho\left(\sqrt{1-\frac{1}{\rho}}+1\right)-1\right]
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Ciertamente esta es una expresión mucho más complicada que $\Delta \rho_\infty$.  Para entenderla mejor hagamos un gráfico:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">numpy</span> <span class="k">import</span> <span class="n">linspace</span><span class="p">,</span><span class="n">sqrt</span><span class="p">,</span><span class="n">log</span>
+<span class="n">rho</span><span class="o">=</span><span class="n">linspace</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">1000</span><span class="p">)</span>
+<span class="n">drho_inf</span><span class="o">=</span><span class="n">rho</span><span class="o">*</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="mi">1</span><span class="o">/</span><span class="n">rho</span><span class="p">)</span><span class="o">+</span><span class="mf">0.5</span><span class="o">*</span><span class="n">log</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">rho</span><span class="o">*</span><span class="p">(</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="mi">1</span><span class="o">/</span><span class="n">rho</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+    
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="n">fig</span><span class="o">=</span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
+<span class="n">ax</span><span class="o">=</span><span class="n">fig</span><span class="o">.</span><span class="n">gca</span><span class="p">()</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">rho</span><span class="p">,</span><span class="n">drho_inf</span><span class="p">)</span>
+
+<span class="c1">#Decoración</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;$r/R_S$&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;$\Delta r_\infty/R_S$&quot;</span><span class="p">)</span>
+
+<span class="n">rang</span><span class="o">=</span><span class="nb">max</span><span class="p">(</span><span class="n">drho_inf</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">((</span><span class="mi">1</span><span class="p">,</span><span class="n">rang</span><span class="o">+</span><span class="mi">1</span><span class="p">))</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span><span class="n">rang</span><span class="p">))</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+
+<div class="output_png output_subarea ">
+<img src="data:image/png;base64,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
+"
+>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a id='fig:01.01.02.00.Aplicaciones.AgujerosNegros.FenomenologiaBasica_8'></a><center><b>Figura 1.8.</b> </center></p>
+
+</div>
+</div>
 </div><div style="background:lightgray">
     	 
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><a href="index.html">Indice</a> | Previo: <a href="01.01.01.00.Aplicaciones.AgujerosNegros.MetricaSchwarzschild.html">Aplicaciones.AgujerosNegros.MetricaSchwarzschild</a> | Siguiente: <a href="02.01.00.00.Apendices.CodigosUtiles.html">Apendices.CodigosUtiles</a></p>
+<p><a href="index.html">Indice</a> | Previo: <a href="01.01.01.00.Aplicaciones.AgujerosNegros.MetricaSchwarzschild.html">Aplicaciones.AgujerosNegros.MetricaSchwarzschild</a> | Siguiente: <a href="01.01.03.00.Aplicaciones.AgujerosNegros.GeodesicasYSingularidad.html">Aplicaciones.AgujerosNegros.GeodesicasYSingularidad</a></p>
 
 </div>
 </div>

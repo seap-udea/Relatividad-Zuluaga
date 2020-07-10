@@ -4,11 +4,11 @@ This is free software with ABSOLUTELY NO WARRANTY (use option --warranty)
 
 Reading mybook.bib...ok (2 entries).
 calling BibTeX...This is BibTeX, Version 0.99d (TeX Live 2015)
-The top-level auxiliary file: bib2html8aab32.aux
+The top-level auxiliary file: bib2htmlb3dbe0.aux
 The style file: ../..//extras/mybook.bst
 Database file #1: mybook.bib
 
-Reading bib2html8aab32.bbl...ok (2 entries)
+Reading bib2htmlb3dbe0.bbl...ok (2 entries)
 Sorting...ok.
 Making HTML document (mybook.html)...ok
 Making HTML list of BibTeX entries (mybook_bib.html)...ok
