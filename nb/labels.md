@@ -20,14 +20,19 @@
 		* `#dilatacion_gravitacional_tiempo`
 		* `#grav_redshift`
 		* `#contraccione_longitudes`
-- Labels for '01.01.03.00.Aplicaciones.AgujerosNegros.GeodesicasYSingularidad.ipynb':
+- Labels for '01.01.03.00.Aplicaciones.AgujerosNegros.Geodesicas.ipynb':
 	- Labels for 'section':
 		* `#geodesica_schw`
 		* `#constantes_schw`
 		* `#caida_libre_schw`
+- Labels for '01.01.04.00.Aplicaciones.AgujerosNegros.Coordenadas.ipynb':
+	- Labels for 'section':
 		* `#eddington_finkelstein`
+		* `#painleve_gullstrand`
+		* `#kruskal_szekeres`
 	- Labels for 'figure':
 		* `fig:Figure_11`
+		* `fig:Figure_12`
 - Labels for '02.01.00.00.Apendices.CodigosUtiles.ipynb':
 	- Labels for 'section':
 		* `#apendices`
