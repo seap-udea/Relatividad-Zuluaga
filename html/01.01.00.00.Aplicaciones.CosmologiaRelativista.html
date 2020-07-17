@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
-<title>01.00.00.00.Aplicaciones</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>01.01.00.00.Aplicaciones.CosmologiaRelativista</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 <style type="text/css">
@@ -13067,20 +13067,12 @@ div#notebook {
 <body>
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
-
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="1.-Aplicaciones-de-la-relatividad-general">1. Aplicaciones de la relatividad general<a class="anchor-link" href="#1.-Aplicaciones-de-la-relatividad-general">&#182;</a></h1><p><a id='aplicaciones_rgeneral'></a></p>
-
-</div>
-</div>
-</div><div style="background:lightgray;border:solid black 2px;pad:10px;margin-left:7em;margin-top:1em;margin-bottom:1em;">
+<div style="background:lightgray">
     	 
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Resumen:</strong><a id=''></a> Después de deducir el formalismo básico de la relatividad general, procederemos en este capítulo a usarlo para estudiar problemas concretos y hacer las predicciones más importantes de la teoría general de la relatividad.</p>
+<p><a href="index.html">Indice</a> | Previo: <a href="01.00.00.00.Aplicaciones.html">Aplicaciones</a> | Siguiente: <a href="01.01.01.00.Aplicaciones.CosmologiaRelativista.MetricaUniverso.html">Aplicaciones.CosmologiaRelativista.MetricaUniverso</a></p>
 
 </div>
 </div>
@@ -13089,10 +13081,31 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Nos concentraremos aquí en tres aplicaciones importantes:</p>
-<ul>
-<li><strong>Ondas gravitacionales</strong>. La predicción de la existencia de ondas gravitacionales y la descripción de algunas de sus propiedades básicas es una de las más interesantes y poco triviales predicciones de la teoría general de la relatividad.  Aquí estudiaremos algunos aspectos básicos de la teoría (un tratamiento riguroso y en detalle esta más allá del nivel de este curso), concentrándonos en ofrecer las bases para un estudio más detallado y para predecir las propiedades específicas de sistemas que emiten ondas gravitacionales en el universo.</li>
-</ul>
+<h2 id="1.1.-Cosmolog&#237;a-relativista">1.1. Cosmolog&#237;a relativista<a class="anchor-link" href="#1.1.-Cosmolog&#237;a-relativista">&#182;</a></h2><p><a id='cosmologia_relativista'></a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Una de las más tempranas y más fértiles aplicaciones de la teoría general de la relatividad es fue la descripción de la geometría del espacio-tiempo del Universo como un todo.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>La descripción del espacio-tiempo de cuatro dimensiones que contiene toda la materia y la energía (el universo), su evolución y dinámica, sumado a la fenomenología resultante (el comportamiento de la materia y la energía en ese espacio-tiempo), así como la relación entre la geometría y las observaciones realizadas desde algún lugar del universo es lo que llamamos actualmente la <strong>cosmología relativista</strong>.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="1.1.1.-Plan-de-temas">1.1.1. Plan de temas<a class="anchor-link" href="#1.1.1.-Plan-de-temas">&#182;</a></h3><p><a id='plan_temas'></a></p>
 
 </div>
 </div>
@@ -13101,7 +13114,11 @@ div#notebook {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li><strong>Solución de Schwarzschild y agujeros negros</strong>. La métrica de Schwarzschild es una de las únicas soluciones analíticas que se conocen de la ecuación de campo métrico.  Describe la geometría del espacio-tiempo en el exterior de un objeto con simetría esférica.  Deduciremos aquí la métrica y estudiaremos el movimiento de partículas de prueba en este espacio-tiempo.  En particular con estos datos predeciremos las propiedades de los agujeros negros.</li>
+<li>Propiedades del Universo.</li>
+<li>La métrica de Friedmann-Robertson-Walker (FRW).</li>
+<li>Observaciones en un universo con la métrica FRW.</li>
+<li>Las ecuaciones FRW.</li>
+<li>Modelos de universo</li>
 </ul>
 
 </div>
@@ -13110,9 +13127,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li><strong>La métrica de Friedmann-Robertson-Walker</strong>.  Otra de las soluciones analíticas a la ecuación de campo métrico es la que describe un universo homogéneo e isotrópico.  Esta solución fue también obtenida muy poco tiempo después del surgimiento de la relatividad.  Aquí deduciremos esta solución y un conjunto muy importante de ecuaciones relacionadas que se conocen como las ecuaciones de Friedmann y que describen la dinámica del universo en expansión y su relación con el contenido (y tipo) de masa energía. Estudiaremos las propiedades de la métrica y sus predicciones respecto al Universo.</li>
-</ul>
+<h3 id="1.1.2.-Propiedades-del-universo">1.1.2. Propiedades del universo<a class="anchor-link" href="#1.1.2.-Propiedades-del-universo">&#182;</a></h3><p><a id='propiedades_universo'></a></p>
 
 </div>
 </div>
@@ -13120,16 +13135,152 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>El orden que seguiremos no es el orden convencional.  Hemos decidido concentrarnos en los temas de mayor actualidad en el momento.</p>
+<p>Antes de describir con la relatividad el universo es necesario entender algunas propiedades globales básicas que conocemos.</p>
 
 </div>
 </div>
-</div><div style="background:lightgray">
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Desde tiempos históricos se sabe que el espacio entre las estrellas es mucho mayor que su tamaño y por lo tanto que la mayor parte del universo esta vacío.  En los años 1930 descubrimos el medio interestelar (gases y polvo) pero sabemos que su densidad es muchos ordenes de magnitud menor que el de cualquier cuerpo astronómico.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>En los 1700 Newton especulaba que el universo no podía tener ningún límite porque de lo contrario habría también un centro y por lo tanto la materia habría colapsado en él.  Esta idea de entrada ya implicaba la intuición de que el universo era a gran escala homogéneo.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>En los 1700 y 1800 se escubrió que las estrellas en el cielo hacían parte de la Vía Láctea, una estructura en forma de disco que hoy sabemos tiene un diámetro de unos 30 kpc (1 pc = $3.26$ al = $3.08\times 10^{13}$ km).</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>En los años 1920 escubrimos que algunas "nebulosas" que habían descubierto los astrónomos a lo largo de 200 años de observaciones telescópicas eran realmente estructuras externas de estrellas a la Vía Láctea.  Eso demostraba que la materia en el Universo se reunía en la forma de "islas de estrellas" o galaxias repartidas sin un patrón definido por el espacio de tres dimensiones.  Hoy sabemos que hay miles de millones de galaxias (las últimas estimaciones las cifran en 2 billones incluyendo las más pequeñas) distribuídas de forma más o menos homogénea.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Aunque las galaxias se mueven por efecto de su interacción local (la velocidad relativa entre las galaxias es del orden de 100-1000 km/s) la observación más importante hecha en los 1920 es que todas las galaxias parecen exhibir un corrimiento al rojo espectral $z$ que varía en proporción directa a la distancia luminosa $d_L$ a la que las galaxias se encuentran:</p>
+$$
+z\approx \frac{H_0}{c}d_L
+$$<p>donde el símbolo $\approx$ se debe a que la ley fue establecida unicamente para Galaxias a una distancia relativamente pequeña de la Vía Lactea.  A este resultado se lo conoce como la <strong>ley de Hubble-Lemaitre</strong>.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a id='fig:Figure_1'></a><img src="./figures/square_ley_hubble_lemaitre_zm.png" alt="Ley de Hubble Lemaitre.  En el eje vertical se muestra el módulo de distancia $\mu=m-M=5\log_{10}(d)-5$ donde la distancia esta en pc.  Una distancia de 1 Gpc corresponde a un módulo de distancias de 40.  Fuente: https://physics.stackexchange.com/questions/361438/interpretation-of-hubble-diagram."></p>
+<center><b>Figura 1.1</b>. Ley de Hubble Lemaitre.  En el eje vertical se muestra el módulo de distancia $</center>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Aquí la cantidad $H_0$ se conoce como el parámetro de Hubble y su valor se parametriza normalmente como:</p>
+$$
+H_0=70 h_{70}\;\;\mathrm{km}\;\mathrm{s}^{-1}\mathrm{Mpc}^{-1} = 2.27\times 10^{-18}h_{70}\;\mathrm{s}^{-1}
+$$<p>donde $h$ es un parámetro adimensional.  Según las últimas estimaciones astrofísicas $h=70.5$ km/s.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>El valor de $H_0$ todavía no se conoce con precisión. Según la <a href="https://en.wikipedia.org/wiki/Hubble%27s_law#Measured_values_of_the_Hubble_constant">última estimación de 2020</a> es $h_{70}=1.056\pm 0.04$.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a id='fig:Figure_2'></a><img src="./figures/horizontal_parametro_hubble.png" alt="Parámetro de Hubble"></p>
+<center><b>Figura 1.2</b>. Parámetro de Hubble</center>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>El espacio entre las galaxias no esta completamente vacío.  Esta lleno de lo que se conoce como gas intracúmulos.  Usando la emisión de radiación del gas entre cúmulos y otros métodos astrofísicos, se ha estimado que la densidad promedio de materia bariónica (protones, neutrones y electrones) es igual a<a href="#notaspie_1">$^1$</a>:</p>
+$$
+\rho_B=4.46\times 10^{-28}h_{70}^2\;\mathrm{kg}\;\mathrm{m}^{-3}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>De esta densidad, tan solo el 6% es la materia que forma estrellas, planetas y nubes de gas visibles.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Distintas líneas de evidencia incluyendo la dispersión de velocidades de las galaxias en cúmulos ricos, la curva de rotación de las galaxias de disco y medidas de lentes y microlentes gravitacionales han permitido establecer la existencia de una forma de materia de composición todavía desconocida y de la cual existe una densidad promedio igual a:</p>
+$$
+\rho_{DM}=2.38\times 10^{-27}h_{70}^2\;\mathrm{kg}\;\mathrm{m}^{-3}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a id='fig:Figure_3'></a><img src="./figures/square_bullet_cluster.png" alt="Imagen del cúmulo de la bala mostrando la distribución reconstruída de materia oscura"></p>
+<center><b>Figura 1.3</b>. Imagen del cúmulo de la bala mostrando la distribución reconstruída de materia oscura</center>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>En los años 1960 se descubrió que todos los sitios del universo son bañados por una radiación que tiene el espectro de cuerpo negro con una temperatura característica de 2.731 K. Esta radiación es isotrópica dentro de una precisión de 1 parte en 100.000.</p>
+
+</div>
+</div>
+</div><div style="font-size:0.8em;border-top:solid black 1px">
     	 
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><a href="index.html">Indice</a> | Siguiente: <a href="01.01.00.00.Aplicaciones.CosmologiaRelativista.html">Aplicaciones.CosmologiaRelativista</a></p>
+<p><strong>NOTAS AL PIE:</strong></p>
+<p><a id='notaspie_1'></a></p>
+<ol start='1'>
+<li>Para ello se asume que el parámetro cosmológico $\Omega_B=0.0484$.</li>
+</ol>
+
+</div>
+</div>
+</div>
+    </div><div style="background:lightgray">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a href="index.html">Indice</a> | Previo: <a href="01.00.00.00.Aplicaciones.html">Aplicaciones</a> | Siguiente: <a href="01.01.01.00.Aplicaciones.CosmologiaRelativista.MetricaUniverso.html">Aplicaciones.CosmologiaRelativista.MetricaUniverso</a></p>
 
 </div>
 </div>
