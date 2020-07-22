@@ -13072,7 +13072,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><a href="index.html">Indice</a> | Previo: <a href="01.01.00.00.Aplicaciones.CosmologiaRelativista.html">Aplicaciones.CosmologiaRelativista</a> | Siguiente: <a href="02.01.00.00.Apendices.CodigosUtiles.html">Apendices.CodigosUtiles</a></p>
+<p><a href="index.html">Indice</a> | Previo: <a href="01.01.00.00.Aplicaciones.CosmologiaRelativista.html">Aplicaciones.CosmologiaRelativista</a> | Siguiente: <a href="01.01.02.00.Aplicaciones.CosmologiaRelativista.EcuacionesFriedmann.html">Aplicaciones.CosmologiaRelativista.EcuacionesFriedmann</a></p>
 
 </div>
 </div>
@@ -13182,16 +13182,526 @@ div#notebook {
 <p>Con las condiciones anteriores la métrica más general que podemos escribir que satisfaga estas condiciones es:</p>
 $$
 \mathrm{d}s^2=c\mathrm{d}t^2-S(t)^2\mathrm{d}\ell^2
-$$<p>donde $t$ es el tiempo cósmico, $S(t)$ es una función arbitraria que depende del tiempo y $\mathrm{d}\ell^2$ es el elemento de línea en las hipersuperficies de tiempo cósmico constante.</p>
+$$<p>donde $t$ es el tiempo cósmico, $S(t)$ es una función arbitraria que depende del tiempo cósmico y $\mathrm{d}\ell^2$ es el elemento de línea en las hipersuperficies de tiempo cósmico constante.</p>
 
 </div>
 </div>
-</div><div style="background:lightgray">
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Llamamos a está la <strong>métrica de Robertson-Walker</strong>.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>¿Cuál es la métrica de la hipersuperficie espacial en este universo?.  Existen tres posibilidades:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="1.1.4.1.-Espacio-plano">1.1.4.1. Espacio plano<a class="anchor-link" href="#1.1.4.1.-Espacio-plano">&#182;</a></h4><p><a id='espacio_plano'></a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>En este caso la métrica espacial es sencillamente la métrica euclidiana:</p>
+$$
+\mathrm{d}\ell^2=\mathrm{d}x^2+\mathrm{d}y^2+\mathrm{d}z^2
+$$<p>o en coordenadas esféricas:</p>
+$$
+\mathrm{d}\ell^2=\mathrm{d}r^2+r^2\mathrm{d}\theta^2+r^2\sin^2\theta\mathrm{d}\phi^2
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Es importante aclarar que en esta métrica las coordenadas $(x,y,z)$ o $(r,\theta,\phi)$ son <strong>coordenadas coomoviles</strong>, es decir son aquellas en las cuales si se expresa la posición de los observadores fundamentales entonces esta posición no cambia.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>La distancia espacial entre dos puntos con coorenadas coomoviles es usando la métrica RW será:</p>
+$$
+\mathrm{d}\sigma^2=-\mathrm{d}s^2=S(t)^2\mathrm{d}\ell^2=S(t)^2(\mathrm{d}x^2+\mathrm{d}y^2+\mathrm{d}z^2)
+$$<p>o integrando en el espacio ($S$ no depende de las coordenadas):</p>
+$$
+D = S(t) d
+$$<p>donde $D$ es la distancia efectiva, instantánea, medida entre los observadores y $d$ su distancia comovil.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>De aquí vemos que en general en un universo homogéneo e isotrópico la distancia entre dos observadores fundamentales $D$ puede cambiar en general de acuerdo con el factor $S(t)$.  Es por esa razón que a la cantidad $S(t)$ la llamamos <strong>factor de escala</strong>.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="1.1.4.2.-Espacio-curvo-cerrado">1.1.4.2. Espacio curvo cerrado<a class="anchor-link" href="#1.1.4.2.-Espacio-curvo-cerrado">&#182;</a></h4><p><a id='espacio_curvo_cerrado'></a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Un segundo tipo de geometría de curvatura constante es la que corresponde a una <strong>hiperesfera</strong>, es decir el equivalente tetradimensional a una esfera.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>En 3 dimensiones los puntos sobre la superficie de una esfera $(x,y)$ obedecen la ecuación:</p>
+$$
+x^2+y^2+z^2=R^2
+$$<p>donde $R$ es el radio y $z$ es una dimensión auxiliar usada para describir la superficie.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Esta ecuación puede usarse para escribir la métrica de la superficie de la esfera si se introducen por ejemplo coordenadas esféricas para describir la posición de cada punto:</p>
+$$
+\begin{array}{rl}
+x &amp; = R\sin\theta\cos\phi\\
+y &amp; = R\sin\theta\sin\phi\\
+z &amp; = R\cos\theta\\
+\end{array}
+$$<p>las coordenaas $\theta$ y $\phi$ especifican cada punto sobre la superficie de la esfera.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>El cambio en las coordenadas cartesianas entre dos puntos infinitesimalmente vecinos en la superficie de la esfera será:</p>
+$$
+\begin{array}{rl}
+\mathrm{d}x &amp; = R(
+\cos\theta\cos\phi\mathrm{d}\theta-
+\sin\theta\sin\phi\mathrm{d}\phi)\\
+\mathrm{d}y &amp; = R(
+\cos\theta\sin\phi\mathrm{d}\theta+
+\sin\theta\cos\phi\mathrm{d}\phi)\\
+\mathrm{d}z &amp; = -R\sin\theta\mathrm{d}\theta\\
+\end{array}
+$$<p>donde $0\le\theta\le\pi$ y $0\le\phi\le2\pi$.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>De donde la distancia (métrica) en la esfera se puede escribir como:</p>
+$$
+\mathrm{d}\ell^2 = R^2(\mathrm{d}\theta^2+\sin^2\theta\mathrm{d}\phi^2)
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Hay cosas interesantes escritas en esta métrica.  La primera es que dado que las coordenadas de la superficie tienen unos rangos definidos, la distancia máxima entre dos puntos se producira por ejemplo si se hace $\phi=\mathrm{cte}$:</p>
+$$
+d_\mathrm{max}=\pi R
+$$<p>decimos que este espacio es <em>cerrado</em> en el sentido de que dos observadores no pueden estar separados por una distancia mayor que esa.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Si $\theta=\mathrm{cte}$ la distancia máxima entre dos puntos será:</p>
+$$
+d_\mathrm{max}(\theta)=\pi R \sin\theta
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Otra propiedad es el área.  Por definición:</p>
+$$
+\mathrm{d}S=\sqrt{g_{11} g_{22}}\mathrm{d}x^1\mathrm{d}x^2
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Integrando obtenemos:</p>
+$$
+S=\int_0^\pi \int_0^{2\pi} R^2 \sin\theta \mathrm{d}\theta\mathrm{d}\phi=4\pi R^2
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>¿Qué pasa ahora si consideramos una hiperesfera de radio unitario?. En este caso la ecuación será:</p>
+$$
+x^2+y^2+z^2+w^2=R^2
+$$<p>donde hemos introducido la dimensión auxiliar $w$.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Cada punto en la superficie de la hiperesfera puede ser descrito ahora con 3 coordenadas angulares $(\chi,\theta,\phi)$ tal que:</p>
+$$
+\begin{array}{rl}
+x &amp; = R\sin\chi\sin\theta\cos\phi\\
+y &amp; = R\sin\chi\sin\theta\sin\phi\\
+z &amp; = R\sin\chi\cos\theta\\
+w &amp; = R\cos\chi\\
+\end{array}
+$$<p>donde $0\le\chi\le\pi$, $0\le\theta\le\pi$ y $0\le\phi\le2\pi$.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Realizando un procedimiento similar al que hicimos con la esfera se puede probar que la métrica de esta superficie es:</p>
+$$
+\mathrm{d}\ell^2=R^2[\mathrm{d}\chi^2+\sin^2\chi(\mathrm{d}\theta^2+\sin^2\theta\mathrm{d}\phi^2)]
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>De nuevo dado que las coordenadas están acotadas, el espacio es cerrado.  La máxima distancia que pueden alejarse dos observadores, asumiendo que tienen $\theta=\mathrm{cte}$ y $\phi=\mathrm{cte}$ será:</p>
+$$
+d_\mathrm{max}=\pi R
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>El volumen de esta hipersuperficie, por otro lado será:</p>
+$$
+\mathrm{d}V=\sqrt{g_{11} g_{22} g_{33}}\mathrm{d}x^1\mathrm{d}x^2\mathrm{d}x^3
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Integrando:</p>
+$$
+V=\int_0^\pi\int_0^\pi \int_0^{2\pi} R^3 \sin\theta \sin^2\chi \mathrm{d}\chi\mathrm{d}\theta\mathrm{d}\phi=2\pi R^3
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Pero ¿qué demonios es la variable $\chi$ en la realidad?.  Una manera de entender el significado de esta variable es construir un <strong>diagrama embebido</strong> de esta geometría.  Por un diagrama embebido entendemos la representación en un espacio tridimensional plano de la superficie obtenida al hacer constantes una de las coordenadas del espacio.  Si hacemos $\theta=\pi/2$ la métrica queda:</p>
+$$
+\mathrm{d}\Sigma^2=R^2(\mathrm{d}\chi^2+\sin^2\chi\mathrm{d}\phi^2)
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>En el espacio plano y en coordenadas cilíndricas la métrica es:</p>
+$$
+\mathrm{d}\Sigma^2=\mathrm{d}\rho^2+\rho^2\mathrm{d}\varphi^2+\mathrm{d}z^2
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>La superficie embebida estará dada por los puntos</p>
+$$
+\rho=\rho(\chi,\phi),\;\varphi=\varphi(\chi,\phi),\;z=z(\chi,\phi)
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>La superficie embebida descrita por la métrica tiene una simetría en $\phi$, en el sentido en que la elección del origen para $\phi$ es irrelevante en la métrica.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Si hacemos $\varphi=\phi$ y suponemos que las coordenadas $\rho$ y $z$ de puntos sobre la superficie embebida son independiente de la variable $\phi$, entonces:</p>
+$$
+\rho=\rho(\chi),\;\varphi=\phi,\;z=z(\chi)
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>La métrica en el espacio plano quedará:</p>
+$$
+\mathrm{d}\Sigma^2=\left[\left(\frac{\mathrm{d}\rho}{\mathrm{d}\chi}\right)^2+\left(\frac{\mathrm{d}z}{\mathrm{d}\chi}\right)^2\right]\mathrm{d}\chi^2
++\rho^2\mathrm{d}\phi^2
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Para que estas métricas coincidan debe darse que:</p>
+$$
+\rho=R\sin\chi
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Es decir la hipersuperficie con $\theta=\pi/2$ tendrá una métrica:</p>
+$$
+\mathrm{d}\Sigma^2=\frac{1}{1-(\rho/R)^2}\mathrm{d}\rho^2+\rho^2\mathrm{d}\phi^2
+$$<p>que es la métrica de una esfera de radio $R$ en coordenadas cilíndricas.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Nótese que en este caso la coordenada radial $\rho$ esta restringida entre $0\le \rho\le R$.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Podemos expresar la métrica de la hipersuperficie del Universo cerrado, introduciendo la variable $\rho\equiv R\sin\chi$ finalmente como:</p>
+$$
+\mathrm{d}\ell^2=\frac{\mathrm{d}\rho^2}{1-(\rho/R)^2}+\rho^2(\mathrm{d}\theta^2+\sin^2\theta \mathrm{d}\phi^2)
+$$
+</div>
+</div>
+</div><div style="background:white;border:solid black 2px;pad:10px;margin-left:7em;margin-top:1em;margin-bottom:1em;">
     	 
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><a href="index.html">Indice</a> | Previo: <a href="01.01.00.00.Aplicaciones.CosmologiaRelativista.html">Aplicaciones.CosmologiaRelativista</a> | Siguiente: <a href="02.01.00.00.Apendices.CodigosUtiles.html">Apendices.CodigosUtiles</a></p>
+<p><strong>Nota: ¿El radio del Universo?.</strong><a id=''></a> ¿Qué es exactamente el parámetro $R$?.  Como hemos visto anteriormente el radio de la superficie embebida del universo cerrado es $\rho=R\sin\chi$.  De aquí se ve que cuando $\xi=\pi/2$ se alcanza el radio máximo $R$.  Esto quiere decir que en un Universo cerrado la máxima esfera que se puede construir tiene un radio $R$.  No es posible tener puntos que estén más lejos que esto.  ¿Este es el radio del universo?.  No necesariamente en tanto por radio entendemos nosotros el tamaño de algo que esta limitado.  Este universo no esta limitado.</p>
+
+</div>
+</div>
+</div>
+    </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="1.1.4.3.-Espacio-curvo-abierto">1.1.4.3. Espacio curvo abierto<a class="anchor-link" href="#1.1.4.3.-Espacio-curvo-abierto">&#182;</a></h4><p><a id='espacio_curvo_abierto'></a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Un razonamiento similar puede hacerse para el caso de un hiperespacio de curvatura constante pero con una diferencia crucial:</p>
+$$
+x^2+y^2+z^2-w^2=R^2
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>En este caso los puntos en la hipersuperficie pueden parametrizarse como:</p>
+$$
+\begin{array}{rl}
+x &amp; = R\sinh\chi\sin\theta\cos\phi\\
+y &amp; = R\sinh\chi\sin\theta\sin\phi\\
+z &amp; = R\sinh\chi\cos\theta\\
+w &amp; = R\cosh\chi\\
+\end{array}
+$$<p>donde $0\le\chi\le\infty$, $0\le\theta\le\pi$ y $0\le\phi\le2\pi$.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>La métrica será ahora:</p>
+$$
+\mathrm{d}\ell^2=R^2[\mathrm{d}\chi^2+\sinh^2\chi(\mathrm{d}\theta^2+\sin^2\theta\mathrm{d}\phi^2)]
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>En este caso dado que la variable $\chi$ no esta acotada, la distancia entre los puntos en este espacio puede ser arbitrariamente grande.  Esta es la razón por la que llamamos a esta una <strong>hipersuperficie abierta</strong>.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Siguiendo un procedimiento similar al que se uso en el caso de una hipersuperficie cerrada podemos escribir la métrica de este espacio tiempo como:</p>
+$$
+\mathrm{d}\ell^2=\frac{\mathrm{d}\rho^2}{1+(\rho/R)^2}+\rho^2(\mathrm{d}\theta^2+\sin^2\theta \mathrm{d}\phi^2)
+$$<p>donde $\rho\equiv R\sinh\chi$.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="1.1.5.-La-m&#233;trica-de-Robertson-Walker">1.1.5. La m&#233;trica de Robertson-Walker<a class="anchor-link" href="#1.1.5.-La-m&#233;trica-de-Robertson-Walker">&#182;</a></h3><p><a id='metrica_RW'></a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Recogiendo los resultados de la sección anterior podemos decir en muy pocas líneas que la métrica de un universo homogéneo e isotrópico se puede escribir como:</p>
+$$
+\mathrm{d}s^2=c^2\mathrm{d}t^2-a^2(t)\left[\frac{\mathrm{d}r^2}{1-kr^2}+r^2(\mathrm{d}\theta^2+\sin^2\theta \mathrm{d}\phi^2)\right]
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Los parámetros de esta métrica son:</p>
+<ul>
+<li><strong>Factor de escala</strong>.  Hemos reemplazado el factor adimensional $S(t)$ por un factor que tiene unidades de longitud:
+$$
+a(t)=S(t)R
+$$
+En lo sucesivo nos referiremos a $a(t)$ como el factor de escala.</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li><p><strong>Parámetro de curvatura</strong>.  En la métrica aparece un parámetro adimensional $k$ que distingue los tres casos:</p>
+<p>$$
+k=
+\left\{
+\begin{array}{ll}
+0 &amp; \mathrm{Plano}\\
++1 &amp; \mathrm{Cerrado}\\
+-1 &amp; \mathrm{Abierto}\\
+\end{array}
+\right.
+$$</p>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li><p><strong>Coordenada radial adimensional</strong>.  Para simplificar la escritura de la métrica hemos introducido la <em>coordenada radial adimensional</em> $r$ definida como: 
+$$
+r=\frac{\rho}{R}
+$$
+Esta coordenada a su vez depende de la coordenada angular $\chi$ original como:</p>
+<p>$$
+r=
+\left\{
+\begin{array}{ll}
+\chi &amp; k=0,\;0\le\chi\le\infty\\
+\sin\chi &amp; k=+1,\;0\le\chi\le\pi\\
+\sinh\chi &amp; k=-1,\;0\le\chi\le\infty\\
+\end{array}
+\right.
+$$</p>
+</li>
+</ul>
+
+</div>
+</div>
+</div><div style="background:white;border:solid black 2px;pad:10px;margin-left:7em;margin-top:1em;margin-bottom:1em;">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Nota: Singularidad en la métrica RW.</strong><a id=''></a> Como sucede con la métrica de Schwarzschild, la métrica de Robertson-Walker tiene una singularidad en $r=1$ cuando $k=+1$.  Esta singularidad sin embargo es artificial y puede eliminarse si se escribe la métrica en términos de la coordenada $\chi$:</p>
+<blockquote>$$
+\mathrm{d}s^2=c^2\mathrm{d}t^2-a^2(t)\left[\mathrm{d}\chi^2+\sin\chi^2(\mathrm{d}\theta^2+\sin^2\theta \mathrm{d}\phi^2)\right]
+  $$
+</blockquote>
+
+</div>
+</div>
+</div>
+    </div><div style="background:lightgray">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a href="index.html">Indice</a> | Previo: <a href="01.01.00.00.Aplicaciones.CosmologiaRelativista.html">Aplicaciones.CosmologiaRelativista</a> | Siguiente: <a href="01.01.02.00.Aplicaciones.CosmologiaRelativista.EcuacionesFriedmann.html">Aplicaciones.CosmologiaRelativista.EcuacionesFriedmann</a></p>
 
 </div>
 </div>

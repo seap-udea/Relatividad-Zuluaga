@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
-<title>02.01.00.00.Apendices.CodigosUtiles</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>01.01.02.00.Aplicaciones.CosmologiaRelativista.EcuacionesFriedmann</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 <style type="text/css">
@@ -13072,7 +13072,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><a href="index.html">Indice</a> | Previo: <a href="01.01.02.00.Aplicaciones.CosmologiaRelativista.EcuacionesFriedmann.html">Aplicaciones.CosmologiaRelativista.EcuacionesFriedmann</a> |</p>
+<p><a href="index.html">Indice</a> | Previo: <a href="01.01.01.00.Aplicaciones.CosmologiaRelativista.MetricaUniverso.html">Aplicaciones.CosmologiaRelativista.MetricaUniverso</a> | Siguiente: <a href="02.01.00.00.Apendices.CodigosUtiles.html">Apendices.CodigosUtiles</a></p>
 
 </div>
 </div>
@@ -13081,7 +13081,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="2.-Ap&#233;ndices">2. Ap&#233;ndices<a class="anchor-link" href="#2.-Ap&#233;ndices">&#182;</a></h1><p><a id='apendices'></a></p>
+<h3 id="1.1.6.-Las-ecuaciones-de-Friedmann">1.1.6. Las ecuaciones de Friedmann<a class="anchor-link" href="#1.1.6.-Las-ecuaciones-de-Friedmann">&#182;</a></h3><p><a id='ecuacion_friedmann'></a></p>
 
 </div>
 </div>
@@ -13089,7 +13089,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="2.1.-C&#243;digos-&#250;tiles">2.1. C&#243;digos &#250;tiles<a class="anchor-link" href="#2.1.-C&#243;digos-&#250;tiles">&#182;</a></h2><p><a id='apendice_codigos_utiles'></a></p>
+<p>Nótese que hasta ahora no hemos usado en ningún momento las ecuaciones de campo.  ¿Por qué?.  Básicamente hemos construído la métrica sobre argumentos y principios de simetría.  Sin embargo los parámetros libres de la métrica, a saber la función $a(t)$ y el parámetro $k$ solo podrán determinarse si usamos las ecuaciones de campo.</p>
 
 </div>
 </div>
@@ -13097,7 +13097,45 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>A continuación encontrarán algunos códigos útiles usados en el curso.</p>
+<p>Primero necesitamos asumir un tensor de momentum-energía para el Universo.  Vamos a asumir un fluído perfecto, para el cuál el tensor de momentum energía es el que habíamos escrito en la sección correspondiente:</p>
+$$
+T^{\mu\nu}_\mathrm{perfecto}=\left(\rho_0+\frac{p}{c^2}\right)U^\mu U^\nu-pg^{\mu\nu}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Si nos paramos en el sistema de referencia del observador fundamental done el fluído esta en reposo pero su densidad propia $\rho_0(t)$ puede cambiar en el tiempo, lo mismo que su presión $p(t)$ el tensor es entonces:</p>
+$$
+T_{00}=\rho_0(t)c^2 g_{00},\;T_{ii}=-pg_{ii}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Ahora necesitamos calcular las componentes de los tensores relevantes.  Para ello usamos el programa en Wolfram Lab poniendo como coeficientes métricos:</p>
+$$
+g_{\mu\nu}
+=\left(
+\begin{array}{cccc}
+c^2 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; -a(t)^2(1-kr^2)^{-1} &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; -a(t)^2r^2 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; -a(t)^2 r^2\sin^2\theta \\
+\end{array}
+\right)
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>El tensor que nos interesa es el tensor de Riemann y el escalar de Ricci.</p>
 
 </div>
 </div>
@@ -13105,7 +13143,44 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="2.1.1.-C&#225;lculo-anal&#237;tico-de-tensores-en-relatividad-general">2.1.1. C&#225;lculo anal&#237;tico de tensores en relatividad general<a class="anchor-link" href="#2.1.1.-C&#225;lculo-anal&#237;tico-de-tensores-en-relatividad-general">&#182;</a></h3><p><a id='calculo_analitico_rg'></a></p>
+<p>Las únicas componentes distintas de cero del tensor de Ricci son:</p>
+\begin{eqnarray}
+\nonumber
+R_{tt} &amp; = &amp; -3\frac{\ddot{a}}{a}\\
+\nonumber
+c^2 R_{rr} &amp; = &amp; \frac{2c^2 k}{1-kr^2}+\frac{2\dot{a}^2}{1-kr^2}+\frac{\dot{a}\ddot{a}}{1-kr^2}\\
+\nonumber
+c^2 R_{\theta\theta} &amp; = &amp; r^2 a\ddot{a}-2r^2\dot{a}^2+2c^2 k r^2\\
+\nonumber
+c^2 R_{\phi\phi} &amp; = &amp; r^2 \sin^2\theta a\ddot{a}+2r^2\sin^2\theta \dot{a}^2+2c^2 k r^2\sin^2\theta\\
+\end{eqnarray}
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Este último resultado se puede escribir como:</p>
+$$
+c^2 R_{ii}=-\frac{g_{ii}}{a^2}(a\ddot{a}+2\dot{a}^2+2c^2k)
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Mientras que el escalar de curvatura es:</p>
+$$
+c^2R=-6 c^2 \frac{k}{a^2}-6\left(\frac{\dot{a}}{a}\right)^2-6\frac{\ddot{a}}{a}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>La ecuación de campo es:</p>
 
 </div>
 </div>
@@ -13113,7 +13188,57 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>El código a continuación fue adaptado de Hartle y sirve para el cálculo de las cantidades geométricas y tensoriales útiles en relatividad general.</p>
+$$
+R_{\mu\nu}-\frac{1}{2}g_{\mu\nu} R-\Lambda g_{\mu\nu}=\frac{8\pi G}{c^4}T_{\mu\nu}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Dado que solo las componentes a lo largo de la diagonal del tensor de momentum energía son distintas de cero:</p>
+\begin{eqnarray}
+R_{tt}-\frac{1}{2}g_{tt} R-\Lambda g_{tt} &amp; = &amp; \frac{8\pi G}{c^4}T_{tt}\\
+R_{ii}-\frac{1}{2}g_{ii} R-\Lambda g_{ii} &amp; = &amp; \frac{8\pi G}{c^4}T_{ii}
+\end{eqnarray}
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>La componente temporal se puede escribir como:</p>
+$$
+-3\frac{\ddot{a}}{a}-\frac{1}{2}\left(-6 c^2 \frac{k}{a^2}-6\left(\frac{\dot{a}}{a}\right)^2-6\frac{\ddot{a}}{a}\right)-\Lambda c^2=\frac{8\pi G}{c^4}\rho_0 c^4
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Que se puede escribir como:</p>
+$$
+\left(\frac{\dot{a}}{a}\right)^2=\frac{8\pi G}{3}\rho_0(t)+\frac{\Lambda c^2}{3}-\frac{kc^2}{a^2}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Por otro lado la componente espacial es:</p>
+$$
+-\frac{g_{ii}}{a^2}(a\ddot{a}+2\dot{a}^2+2c^2k)-\frac{1}{2}Rg_{ii}-\Lambda g_{ii} = \frac{8\pi G}{c^4}(-p c^2 g_{ii})
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Vemos que el resultado es la misma ecuación independientemente de la componente espacial considerada.</p>
 
 </div>
 </div>
@@ -13121,102 +13246,44 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-
-<pre><code>(*
-Instrucciones:
-1) Abra una cuenta en https://lab.wolframcloud.com.
-2) Cree un nuevo Notebook.
-3) Copie el contenido de este archivo dentro del Notebook.
-4) Ejecute el código de ejemplo
-*)
-
-(*Variables básicas*)
-Clear[n,
-Inversa,Matriz,Tabla,
-Gama,Geodesica,Riemann,
-GeodesicaTabla ,ListaDos,ListaTres,ListaCuatro];
-n = 4;
-(*Genericos*)
-Inversa[g_]:=Simplify[Inverse[g]]
-(*Muestra*)
-Matriz[g_]:= g//MatrixForm
-Tabla[Lista_]:=TableForm[Partition[DeleteCases[Flatten[Lista], Null], 2],TableSpacing -&gt; {2, 2}]
-GeodesicaTabla[geodesica_]:=TableForm[
-Table[{"d/d\[Tau]" ToString[u[i-1]], "=",geodesica[[i]]},
-{i, 1, n}], TableSpacing -&gt; {2}]
-ListaDos[Tensor_,simbolo_,coords_]:=Table[
-If[UnsameQ[Tensor[[j, l]], 0],
-{ToString[simbolo[coords[[j]], coords[[l]]]]&lt;&gt;" = ",Tensor[[j, l]]}] ,
-{j, 1, n}, {l, 1, j}];
-ListaTres[Tensor_,simbolo_,coords_] := Table[
-If[UnsameQ[Tensor[[i, j, k]], 0],
-{ToString[simbolo[coords[[i]], coords[[j]],coords[[ k]]]]&lt;&gt;" = ", Tensor[[i, j, k]]}] ,
-{i, 1, n}, {j, 1, n}, {k, 1, j}];
-ListaCuatro[Tensor_,simbolo_,coords_]:=Table[
-If[UnsameQ[Tensor[[i, j, k, l]], 0],
-{ToString[simbolo[coords[[i]], coords[[j]],coords[[ k]],coords[[ l]]]]&lt;&gt;" = ",Tensor[[i, j, k, l]]}] ,
-{i, 1, n}, {j, 1, n}, {k, 1, n}, {l, 1,n}];
-(*Relatividad General*)
-Gama[g_,gi_,coord_] := Simplify[
-Table[(1/2)*Sum[(gi[[i, s]])*
-       (D[g[[s, j]], coord[[k]] ] +
-         D[g[[s, k]], coord[[j]] ] -
-         D[g[[j, k]], coord[[s]] ]), {s, 1, n}],
-    {i, 1, n}, {j, 1, n}, {k, 1, n}] ];
-Riemann[G_,coord_] := -Simplify[Table[D[G[[i, j, k]],coord[[l]] ] - D[G[[i, j, l]], coord[[k]] ] +
-     Sum[G[[s, j, k]]G[[i, l, s]] -  G[[s, j, l]]G[[i, k, s]],  {s, 1, n}],
-    {i, 1, n}, {j, 1, n}, {k, 1, n}, {l, 1, n}] ]
-Ricci[Rm_]:=Simplify[Table[
-  Sum[Rm[[i, j, i, l]], {i, 1, n}], {j, 1, n}, {l, 1, n}] ]
-Scalar[gi_,Ri_]:= Simplify[ Sum[gi[[i, j]] Ri[[i, j]], {i, 1, n}, {j, 1, n}] ]
-Einstein[Ri_,R_,g_] :=Simplify[Ri - (1/2) R*g]
-Geodesica[G_] := Simplify[Table[-Sum[G[[i, j, k]] u[j-1] u[k-1], {j, 1, n}, {k, 1, n}], {i, 1, n}]]
-(*
---------------------------------------------------------------------------
-Ejemplo agujero de gusano:
-coords = {T,r, \[Theta], \[Phi]};
-gij = {{1,0,0,0},-{0, 1, 0, 0}, -{0,0, r^2 + b^2, 0}, -{0,0,
-   0, (r^2 + b^2) Sin[\[Theta]]^2}};
-nij = Inversa[gij];
-Gijk=Gama[gij,nij,coords];
-Rijkl=Riemann[Gijk,coords];
-Rij=Ricci[Rijkl];
-Rs=Scalar[nij,Rij];
-Gij=Einstein[Rij,Rs,gij];
-dxidt=Geodesica[Gijk];
-Matriz[gij]
-Matriz[nij]
-Tabla[ListaTres[Gijk,\[CapitalGamma],coords]]
-Tabla[ListaCuatro[Rijkl,Riemann,coords]]
-Tabla[ListaDos[Rij,Ricci,coords]]
-Rs
-Tabla[ListaDos[Gij,G,coords]]
-GeodesicaTabla[dxidt]
---------------------------------------------------------------------------
-Ejemplo métrica simétrica:
-coords = {T,r, \[Theta], \[Phi]};
-gij = {{Exp[2A[r]],0,0,0},-{0, Exp[2B[r]], 0, 0}, -{0,0, r^2 , 0}, -{0,0,
-   0, r^2 Sin[\[Theta]]^2}};
-nij = Inversa[gij];
-Gijk=Gama[gij,nij,coords];
-Rijkl=Riemann[Gijk,coords];
-Rij=Ricci[Rijkl];
-Rs=Scalar[nij,Rij];
-Gij=Einstein[Rij,Rs,gij];
-dxidt=Geodesica[Gijk];
-Matriz[gij]
-Matriz[nij]
-Tabla[ListaTres[Gijk,\[CapitalGamma],coords]]
-Tabla[ListaCuatro[Rijkl,Riemann,coords]]
-Tabla[ListaDos[Rij,Ricci,coords]]
-Rs
-Tabla[ListaDos[Gij,G,coords]]
-GeodesicaTabla[dxidt]
-*)</code></pre>
+<p>La ecuación resultante es:
+$$
+-\frac{\ddot{a}}{a}-2\left(\frac{\dot{a}}{a}\right)^2-2\frac{kc^2}{a^2}-\frac{1}{2}\left(-6 c^2 \frac{k}{a^2}-6\left(\frac{\dot{a}}{a}\right)^2-6\frac{\ddot{a}}{a}\right)-\Lambda=-\frac{8\pi G}{c^2}p
+$$</p>
 
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Que se puede simplificar como:</p>
+$$
+\frac{\ddot{a}}{a}+\frac{1}{2}\left(\frac{\dot{a}}{a}\right)^2=-\frac{4\pi G}{c^2} p+\frac{\Lambda}{2}-\frac{kc^2}{2a^2}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Nótese que es posible combinar la ecuación inicial con esta ecuación para obtener una ecuación más simple:</p>
+$$
+\frac{\ddot{a}}{a}=-\frac{4\pi G}{c^2}[\rho_0(t)+3p(t)]+\frac{\Lambda}{3}
+$$
+</div>
+</div>
+</div><div style="background:lightgray">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a href="index.html">Indice</a> | Previo: <a href="01.01.01.00.Aplicaciones.CosmologiaRelativista.MetricaUniverso.html">Aplicaciones.CosmologiaRelativista.MetricaUniverso</a> | Siguiente: <a href="02.01.00.00.Apendices.CodigosUtiles.html">Apendices.CodigosUtiles</a></p>
+
+</div>
+</div>
+</div>
+    </div>
     </div>
   </div>
 </body>
