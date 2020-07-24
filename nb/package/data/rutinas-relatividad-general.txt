@@ -39,7 +39,7 @@ Table[(1/2)*Sum[(gi[[i, s]])*
          D[g[[s, k]], coord[[j]] ] -
          D[g[[j, k]], coord[[s]] ]), {s, 1, n}],
     {i, 1, n}, {j, 1, n}, {k, 1, n}] ];
-Riemann[G_,coord_] := Simplify[Table[D[G[[i, j, k]],coord[[l]] ] - D[G[[i, j, l]], coord[[k]] ] +
+Riemann[G_,coord_] := -Simplify[Table[D[G[[i, j, k]],coord[[l]] ] - D[G[[i, j, l]], coord[[k]] ] +
      Sum[G[[s, j, k]]G[[i, l, s]] -  G[[s, j, l]]G[[i, k, s]],  {s, 1, n}],
     {i, 1, n}, {j, 1, n}, {k, 1, n}, {l, 1, n}] ]
 Ricci[Rm_]:=Simplify[Table[
