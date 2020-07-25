@@ -2,23 +2,6 @@
 # coding: utf-8
 
 # ########################################
-#  .//Prefacio.ipynb
-# ########################################
-
-# ########################################
-#  .//Agradecimientos.ipynb
-# ########################################
-
-# ########################################
-#  .//Introduccion.ipynb
-# ########################################
-
-def calcula_discriminante(a,b,c):
-    disc=b**2-4*a*c
-    return disc
-
-
-# ########################################
 #  .//RelatividadEspecial.ipynb
 # ########################################
 
@@ -424,4 +407,96 @@ def g_newtoniana_4d(xmu,mu,R=1):
 
 # ########################################
 #  .//RelatividadGeneral.Curvatura.ipynb
+# ########################################
+
+# ########################################
+#  .//RelatividadGeneral.PrincipioConsistencia.ipynb
+# ########################################
+
+# ########################################
+#  .//RelatividadGeneral.TensorDeMomentumEnergia.ipynb
+# ########################################
+
+# ########################################
+#  .//RelatividadGeneral.EcuacionCampoMetrico.ipynb
+# ########################################
+
+# ########################################
+#  .//Aplicaciones.ipynb
+# ########################################
+
+# ########################################
+#  .//Aplicaciones.OndasGravitacionales.ipynb
+# ########################################
+
+# ########################################
+#  .//Aplicaciones.OndasGravitacionales.GravedadLinearizada.ipynb
+# ########################################
+
+# ########################################
+#  .//Aplicaciones.OndasGravitacionales.EcuacionDeCampo.ipynb
+# ########################################
+
+# ########################################
+#  .//Aplicaciones.OndasGravitacionales.EcuacionDeOndas.ipynb
+# ########################################
+
+# ########################################
+#  .//Aplicaciones.OndasGravitacionales.Deteccion.ipynb
+# ########################################
+
+# ########################################
+#  .//Aplicaciones.OndasGravitacionales.SimulacionSenal.ipynb
+# ########################################
+
+# ########################################
+#  .//Aplicaciones.OndasGravitacionales.Emision.ipynb
+# ########################################
+
+# ########################################
+#  .//Aplicaciones.OndasGravitacionales.FuentesAstrofisicas.ipynb
+# ########################################
+
+# ########################################
+#  .//Aplicaciones.AgujerosNegros.ipynb
+# ########################################
+
+# ########################################
+#  .//Aplicaciones.AgujerosNegros.MetricaSchwarzschild.ipynb
+# ########################################
+
+# ########################################
+#  .//Aplicaciones.AgujerosNegros.FenomenologiaBasica.ipynb
+# ########################################
+
+# ########################################
+#  .//Aplicaciones.AgujerosNegros.Geodesicas.ipynb
+# ########################################
+
+# ########################################
+#  .//Aplicaciones.AgujerosNegros.Coordenadas.ipynb
+# ########################################
+
+# ########################################
+#  .//Aplicaciones.CosmologiaRelativista.ipynb
+# ########################################
+
+# ########################################
+#  .//Aplicaciones.CosmologiaRelativista.MetricaUniverso.ipynb
+# ########################################
+
+# ########################################
+#  .//Aplicaciones.CosmologiaRelativista.EcuacionesFriedmann.ipynb
+# ########################################
+
+# ########################################
+#  .//Aplicaciones.CosmologiaRelativista.DensidadCosmica.ipynb
+# ########################################
+
+# ########################################
+#  .//Aplicaciones.CosmologiaRelativista.LeyHubbleLemaitre.ipynb
+# ########################################
+
+# ########################################
+#  .//Apendices.CodigosUtiles.ipynb
 # ########################################
