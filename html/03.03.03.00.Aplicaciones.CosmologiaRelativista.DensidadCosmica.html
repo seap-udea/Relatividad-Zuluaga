@@ -13261,7 +13261,7 @@ $$
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Usando los parámetros $\Omega$ medidos en el presente la ecuación de Friedmann se escribe:</p>
 $$
-H(a)=H_0\sqrt{\Omega_{M0}(1+\alpha)^{-3}+\Omega_{R0}(1+\alpha)^{-4}+\Omega_{k0}(1+\alpha)^{-2}+\Omega_{\Lambda}}
+H(a)=H_0\sqrt{\Omega_{M0}\alpha^{-3}+\Omega_{R0}\alpha^{-4}+\Omega_{k0}\alpha^{-2}+\Omega_{\Lambda}}
 $$<p>donde $\alpha=a/a_0$</p>
 
 </div>
@@ -13290,7 +13290,7 @@ $$
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>La ecuación de Friedmann escrita en términos de a puede ser separada para encontrar el tiempo de expansión desde cualquier valor de $\alpha$ hasta el presente:</p>
 $$
-t_{LB}=t_{H0} \int_\alpha^1 \frac{\mathrm{d}\alpha}{\sqrt{\Omega_{M0}(1+\alpha)^{-3}+\Omega_{R0}(1+\alpha)^{-4}+\Omega_{k0}(1+\alpha)^{-2}+\Omega_{\Lambda}}}
+t_{LB}=t_{H0} \int_\alpha^1 \frac{\mathrm{d}\alpha}{\sqrt{\Omega_{M0}\alpha^{-1}+\Omega_{R0}\alpha^{-2}+\Omega_{k0}+\Omega_{\Lambda}\alpha^{2}}}
 $$<p>donde</p>
 $$t_{H0}=\frac{1}{H_0}=13960\;h_{70}^{-1}\;\mathrm{Myr}$$<p>es el denominado <strong>tiempo de Hubble</strong>.</p>
 
@@ -13310,7 +13310,7 @@ $$t_{H0}=\frac{1}{H_0}=13960\;h_{70}^{-1}\;\mathrm{Myr}$$<p>es el denominado <st
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Como sabemos que $\alpha=1/(1+z)$ entonces $\mathrm{d}\alpha=-\mathrm{d}z/(1+z)^2$ y la integral se puede escribir también como:</p>
 $$
-t_{LB}=t_{H0} \int_0^{z} \frac{\mathrm{d}z}{(1+z)^2\sqrt{\Omega_{M0}(1+z)^{3}+\Omega_{R0}(1+z)^{4}+\Omega_{k0}(1+z)^{2}+\Omega_{\Lambda}}}
+t_{LB}=t_{H0} \int_0^{z} \frac{\mathrm{d}z}{(1+z)\sqrt{\Omega_{M0}(1+z)^{3}+\Omega_{R0}(1+z)^{4}+\Omega_{k0}(1+z)^{2}+\Omega_{\Lambda}}}
 $$
 </div>
 </div>
