@@ -8,6 +8,7 @@
 		* `#ppio_homogeneidad`
 		* `#relatividad_newtoniana`
 		* `#problema_electromagnetismo`
+		* `#covarianza_ME`
 - Labels for '01.02.00.00.RelatividadEspecial.TransformacionesLorentzEinstein.ipynb':
 	- Labels for 'section':
 		* `#transformaciones_einstein`

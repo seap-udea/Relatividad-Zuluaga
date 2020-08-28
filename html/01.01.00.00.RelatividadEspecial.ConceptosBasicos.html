@@ -13303,21 +13303,71 @@ $$<blockquote><p>donde $\vec u$ es la velocidad relativa en el espacio entre los
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Tomemos el caso por ejemplo de dos leyes básicas del electromagnetismo:</p>
-<ul>
-<li>La ley de Faraday (ley de inducción en el vacío):</li>
-</ul>
+<h3 id="Las-ecuaciones-de-Maxwell">Las ecuaciones de Maxwell<a class="anchor-link" href="#Las-ecuaciones-de-Maxwell">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Aparte de la mecánica una de las más importantes teorías de la física clásica es la teoría electromagnética.  En su forma matemática unificada la teoría fue formulada por James Clerk Maxwell y presentada en una serie de trabajos incluyendo su artículo muy influyente <em>A Dynamical Theory of the Electromagnetic Field</em> de 1864 [REFERENCIA] en el que predice la existencia de las ondas electromagnéticas.  El electromagnetismo fue desarrollado posteriormente por contemporáneos de Maxwell y otros que le sucedieron como Oliver Heaviside, J.J. Thomson, Hendrik Lorentz entre otros.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>La teoría electromagnética de Maxwell establece una relación entre las propiedades eléctricas de la materia, cuantificadas en dos cantidades, la densidad espacial de carga eléctrica $\rho$ y la densidad de corriente eléctriac $J$, con las propiedades del <em>campo electromagnético</em>, cuantificadas por la intensidad del campo eléctrico $\vec E$ y la intensidad del campo magnético $\vec H$.  Otras cantidades auxiliares son la densidad de flujo de campo eléctrico $\vec D$ y la densidad de flujo magnético $\vec B$, que se relacionan además con propiedades <em>macroscópicas</em> de la materia tales como la polarización $\vec P$ y la magnetización $\vec M$.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Uno de los logros más increíbles del electromagnetismo clásico fue el de reducir todas las relaciones entre estas cantidades en cuatro ecuaciones diferenciales relativamente simples, conocidas universalmente como las ecuacione de Maxwell. Las ecuaciones permiten encontrar el campo eléctrico $\vec E$ o su densidad de flujo $\vec D$ y el campo magnético $\vec H$ o su densidad de flujo $\vec B$ en cada punto del espacio dentro de un medio en el que hay una densidad de carga libre $\rho$ y de corriente libre $\vec J$ y una polarización $\vec P$ y magnetización $\vec M$.  Las ecuaciones en su <strong>forma canónica macroscópica</strong> son:</p>
+\begin{eqnarray}
+\nonumber
+\vec{\nabla}\cdot \vec D &amp; = &amp; \rho\\
+\nonumber
+\vec{\nabla}\cdot \vec B &amp; = &amp; 0\\
+\nonumber
+\vec\nabla\times\vec E &amp; = &amp; -\frac{\partial \vec B}{\partial t}\\
+\nonumber
+\vec\nabla\times\vec H &amp; = &amp; \vec J + \frac{\partial \vec D}{\partial t}
+\end{eqnarray}<p>donde $\vec D=\epsilon_0 \vec E + \vec P$ y $\vec B=\mu_0(\vec H+\vec M)$.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Nos concentraremos aquí en las ecuaciones escritas para sistemas de partículas, es decir en situaciones en las que fenómenos como la polarización y la magnetización son colectivos y deben <em>emerger</em> de la dinámica de todas las partículas.   Llamamos a esa <strong>la descripción microscópica</strong> y las ecuaciones resultantes son:</p>
+\begin{eqnarray}
+\nonumber
+\vec{\nabla}\cdot \vec E &amp; = &amp; \frac{\rho}{\epsilon_0}\\
+\nonumber
+\vec{\nabla}\cdot \vec B &amp; = &amp; 0\\
+\nonumber
+\vec\nabla\times\vec E &amp; = &amp; -\frac{\partial \vec B}{\partial t}\\
+\nonumber
+\vec\nabla\times\vec B &amp; = &amp; \mu_0 \vec J + \frac{1}{c^2} \frac{\partial \vec E}{\partial t}
+\end{eqnarray}<p>donde $c\equiv 1/\sqrt{\mu_0\epsilon_0}$ es la velocidad de la luz.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Para hacer más clara la conexión entre los campos eléctrico y magnético los físicos teóricos acostumbran usar en electromagnetismo un conjunto de unidades particulares conocidas como <strong>unidades gaussianas</strong>.  La fundamental de estas unidades, es que la ley de Coulomb (que inspira la primera ecuación de Maxwell o se deriva de ella), que en un sistema de unidades convencional se escribe como:</p>
 $$
-\frac{1}{c}\frac{\partial}{\partial t}\int \vec B\cdot \mathrm{d}\vec S=-\oint \vec E\cdot \mathrm{d}\vec l
-$$$$
-\frac{1}{c}\frac{\partial \vec B}{\partial t}=-\vec\nabla\times\vec E
-$$<ul>
-<li>La ley de Ampere-Maxwell (en el vacío y sin corrientes):</li>
-</ul>
+\vec F = \frac{Q_1 Q_2}{4\pi\epsilon_0 r^2}\hat r
+$$<p>en el nuevo sistema se escribe como:</p>
 $$
-\frac{1}{c}\frac{\partial}{\partial t}\int \vec E\cdot \mathrm{d}\vec S=-\oint \vec B\cdot \mathrm{d}\vec l
-$$$$
-\frac{1}{c}\frac{\partial \vec E}{\partial t}=-\vec\nabla\times\vec B
+\vec F = \frac{Q^G_1 Q^G_2}{r^2}\hat r
 $$
 </div>
 </div>
@@ -13325,7 +13375,260 @@ $$
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Verifiquemos si son las mismas bajo las transformaciones de Galileo-Newton:</p>
+<p>En unidades gaussianas las cantidades mecánicas, como $\vec F$ y $r$ se miden en el sistema <em>cgs</em> (centímetros, gramos y segundos).</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Las unidades gaussianas esencialmente corresponden a una elección conveniente de las unidades de carga que permiten: 1) absorber el factor constante $4\pi$ y 2) hacer la constante $\epsilon^G_0=1$.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Una situación similar se produce con la ley de Biot-Savart, que en un sistema convencional de unidades es:</p>
+$$
+\vec B=\frac{\mu_0}{4\pi}\oint \frac{\vec I\times\hat r}{r^2}\;\mathrm{d}\vec \ell 
+$$<p>pero en unidades gaussianas se convierte en:</p>
+$$
+\vec B^G=\frac{1}{c}\oint \frac{\vec I^G\times\hat r}{r^2}\;\mathrm{d}\vec \ell 
+$$<p>donde debemos mantener presente que $c\approx 3\times 10^{10}$ cm/s.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Con el cambio de unidades, las ecuaciones microscópicas de Maxwell se convierten en:</p>
+\begin{eqnarray}
+\nonumber
+\vec{\nabla}\cdot \vec E^G &amp; = &amp; 4\pi\rho^G\\
+\nonumber
+\vec{\nabla}\cdot \vec B^G &amp; = &amp; 0\\
+\nonumber
+\vec\nabla\times\vec E^G &amp; = &amp; -\frac{1}{c}\frac{\partial \vec B^G}{\partial t}\\
+\nonumber
+\vec\nabla\times\vec B^G &amp; = &amp; \frac{4\pi}{c} \vec J^G + \frac{1}{c} \frac{\partial \vec E^G}{\partial t}
+\end{eqnarray}<p>Nótese que la introducción de las unidades gaussianas hace desaparecer el factor $4\pi$ de las leyes de Coulomb y Biot-Savart pero las traslada a las ecuaciones de Maxwell.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>En lo sucesivo en este libro suaremos las unidades gaussianas para describir los fenómenos electromagnéticos.  Por la misma razón no haremos la distinción $\vec E^G, \vec \rho^G$, etc. y escribiremos las ecuaciones simplemente como:</p>
+\begin{eqnarray}
+\vec{\nabla}\cdot \vec E &amp; = &amp; 4\pi\rho\\
+\vec{\nabla}\cdot \vec B &amp; = &amp; 0\\
+\vec\nabla\times\vec E &amp; = &amp; -\frac{1}{c}\frac{\partial \vec B}{\partial t}\\
+\vec\nabla\times\vec B &amp; = &amp; \frac{4\pi}{c} \vec J + \frac{1}{c} \frac{\partial \vec E}{\partial t}
+\end{eqnarray}
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="1.6.-&#191;Son-covariantes-las-ecuaciones-de-Maxwell?">1.6. &#191;Son covariantes las ecuaciones de Maxwell?<a class="anchor-link" href="#1.6.-&#191;Son-covariantes-las-ecuaciones-de-Maxwell?">&#182;</a></h2><p><a id='covarianza_ME'></a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Hemos contado antes que las leyes de Newton son covariantes bajo las TGN. Pero, ¿son las ecuaciones de Maxwell también covariantes bajo este conjunto de transformaciones?.  Para ilustrar, tomemos el caso de las ecuaciones microscópicas de Maxwell en el vacío ($\rho=0$, $\vec J=\vec o$) y en particular analicemos las denominadas <em>ecuaciones inhomogéneas</em>, correspondientes a las leyes de Maxwell-Faraday y de Ampere-Maxwell respectivamente:</p>
+\begin{eqnarray}
+\vec\nabla\times\vec E &amp; = &amp; -\frac{1}{c}\frac{\partial \vec B}{\partial t}\\
+\vec\nabla\times\vec B &amp; = &amp; \frac{1}{c} \frac{\partial \vec E}{\partial t}
+\end{eqnarray}
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Para verificar la covarianza escojamos las componentes $z$ de la primera ecuación y la componente $y$ de la segunda ecuación:</p>
+\begin{eqnarray}
+\partial_x E_y -\partial_y E_x &amp; = &amp; -\frac{1}{c}\partial_t B_z\\
+\partial_x B_z -\partial_z B_x &amp; = &amp; \frac{1}{c} \partial_t E_y
+\end{eqnarray}<p>donde en lo sucesivo usaremos la notación $\partial_q\equiv\partial/\partial q$.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Necesitamos saber como convierten las derivadas parciales bajo las TGN. Para ello usaremos una convención que será muy común en lo sucesivo.  Escojeremos la dirección de los ejes de tal manera que el eje $x$ va en la dirección de la velocidad relativa de los sistemas de referencia $\vec u$.  De este modo las TGN, correspodientes al espacio y el tiempo se reducen a:</p>
+$$
+\begin{array}{rcl}
+t' &amp; = &amp; t\\
+x' &amp; = &amp; x - u t\\
+y' &amp; = &amp; y\\
+z' &amp; = &amp; z
+\end{array}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>La transformación se puede escribir de modo más general como:</p>
+$$
+\begin{array}{rcl}
+t' &amp; = &amp; a_{tt} t\\
+x' &amp; = &amp; a_{xt} t+a_{xx} x\\
+y' &amp; = &amp; a_{yy} y\\
+z' &amp; = &amp; a_{zz} z
+\end{array}
+$$<p>donde $a_{tt}=a_{xx}=a_{yy}=a_{zz}=1$ y $a_{xt}=-u$.  Llamamos a esta una <strong>transformación lineal con coeficientes constantes</strong>.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Los coeficientes de la transformación constituyen una matriz $\cal G$ que puede escribirse como:</p>
+$$
+\cal G=
+\left(
+\begin{array}{cccc}
+a_{tt} &amp; a_{tx} &amp; a_{ty} &amp; a_{tz}\\
+a_{xt} &amp; a_{xx} &amp; a_{xy} &amp; a_{xz}\\
+a_{yt} &amp; a_{yx} &amp; a_{yy} &amp; a_{yz}\\
+a_{zt} &amp; a_{zx} &amp; a_{zy} &amp; a_{zz}\\
+\end{array}
+\right)
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Las derivadas parciales se pueden escribir usando la regla de la cadena:</p>
+$$
+\begin{array}{rcl}
+\partial_t &amp; = &amp; (\partial_t t') \partial_{t'} + (\partial_t x') \partial_{x'} + (\partial_t y') \partial_{y'} + (\partial_t z') \partial_{z'}\\
+\partial_x &amp; = &amp; (\partial_x t') \partial_{t'} + (\partial_x x') \partial_{x'} + (\partial_x y') \partial_{y'} + (\partial_x z') \partial_{z'}\\
+\partial_y &amp; = &amp; (\partial_y t') \partial_{t'} + (\partial_y x') \partial_{x'} + (\partial_y y') \partial_{y'} + (\partial_y z') \partial_{z'}\\
+\partial_z &amp; = &amp; (\partial_z t') \partial_{t'} + (\partial_z x') \partial_{x'} + (\partial_z y') \partial_{y'} + (\partial_z
+z') \partial_{z'}\\
+\end{array}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Usando los coeficientes de la transformación queda:</p>
+$$
+\begin{array}{rcl}
+\partial_t &amp; = &amp; a_{tt} \partial_{t'} + a_{xt} \partial_{x'} + a_{yt} \partial_{y'} + a_{zt} \partial_{z'}\\
+\partial_x &amp; = &amp; a_{tx} \partial_{t'} + a_{xx} \partial_{x'} + a_{yx} \partial_{y'} + a_{zx} \partial_{z'}\\
+\partial_y &amp; = &amp; a_{ty} \partial_{t'} + a_{xy} \partial_{x'} + a_{yy} \partial_{y'} + a_{zy} \partial_{z'}\\
+\partial_z &amp; = &amp; a_{tz} \partial_{t'} + a_{xz} \partial_{x'} + a_{yz} \partial_{y'} + a_{zz} \partial_{z'}\\
+\end{array}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Nótese que la transformación de las derivadas parciales usa la <em>transpuesta</em> de la matriz de transformación $\cal G$.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Para el caso particular de las reglas de transformación de las TGN la transformación de las derivada queda:</p>
+$$
+\begin{array}{rcl}
+\partial_t &amp; = &amp; \partial_{t'}-u\partial_{x'}\\
+\partial_x &amp; = &amp; \partial_{x'}\\
+\partial_y &amp; = &amp; \partial_{y'}\\
+\partial_z &amp; = &amp; \partial_{z'}\\
+\end{array}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Reemplazando en las ecuaciones de Maxwell obtenemos:</p>
+$$
+\partial_{x'} E_y -\partial_{y'} E_x = -\frac{1}{c}(\partial_{t'}-u\partial_{x'}) B_z\\
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Reuniendo términos iguales en la derivada:</p>
+$$
+\partial_{x'} \left(E_y - \frac{u}{c}B_z\right) - \partial_{y'} E_x = -\frac{1}{c}\partial_{t'} B_z\\
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Para que haya covarianza los campos deben relacionarse así:</p>
+$$
+E_y'=E_y-\frac{u}{c}B_z
+$$<p>y</p>
+$$
+B_z'=\frac{c'}{c}B_z
+$$<p>donde hemos admitido la posibilidad de que la velocidad de la luz medida por los dos observadores sea diferente.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Un procedimiento similar sobre la ecuación de Ampère-Maxwell conduce a que para que haya covarianza debe cumplirse que:</p>
+$$
+B_z'=B_z-\frac{u}{c}E_y
+$$<p>y</p>
+$$
+E_y'=\frac{c'}{c}E_y
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Estos dos conjuntos de ecuaciones deben ser consistentes uno con otro.  Al hacer el algebra obtenemos el siguienete resultado:</p>
+$$
+c'=c-v
+$$<p>es decir, para que las ecuaciones de Maxwell sean covariantes debemos admitir que la velocidad de la luz sea relativa, es decir que cambie obedeciendo la ley de adiciones de velocidades clásica.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>En los años 1890 se realizaron experimentos muy sensibles en el laboratorio para percibir este cambio usando el hecho de que la Tierra se mueve respecto al baricentro del sistema solar.  Los resultados fueron contundentes.  La velocidad de la luz parecía ser la misma medida en todas direcciones. ¡Algo esta mal con el electromagnetismo!</p>
 
 </div>
 </div>
