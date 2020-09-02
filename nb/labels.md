@@ -38,6 +38,8 @@
 		* `#unidades_luz`
 		* `#TLE_rotacion_hiperbolica`
 		* `#notacion_einstein`
+		* `#TLE_inversa`
+		* `#TLE_tensores`
 		* `#TLE_generales`
 		* `#valor_gama`
 		* `#TLE_mapas`

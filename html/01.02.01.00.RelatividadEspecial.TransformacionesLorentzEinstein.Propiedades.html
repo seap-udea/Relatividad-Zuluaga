@@ -13142,7 +13142,7 @@ $$<p>donde $[x_L]=$sl (segundos luz).</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Menos frecuente es usar unidades de distancia para referirse al tiempo.  De manera análoga a como medimos 1 segundo-luz (sl), podemos definir 1 metro-luz como el tiempo que le toma a la luz recorrer un metro.  El tiempo $t_L$ en metros luz se calcula como:</p>
+<p>Menos frecuente es usar unidades de distancia para referirse al tiempo.  De manera análoga a como medimos 1 segundo-luz (sl), podemos definir 1 metro-luz (ml) como el tiempo que le toma a la luz recorrer un metro.  El tiempo $t_L$ en metros luz se calcula como:</p>
 $$
 t_L=ct
 $$
@@ -13152,10 +13152,29 @@ $$
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p>¿Cuál de estos dos usar? Por razones que comprenderemos más adelante, nos inclinaremos por usar el sistema de unidades luz en el que la distancia se mide en segundos(luz).  De ese modo, al menos para el espacio-tiempo, todas las cantidades involucradas quedaran definidas con unidades de tiempo.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <p>En unidades luz, la velocidad (la rapidez o cualquier componente) es:</p>
 $$
 v_L=\frac{\mathrm{d}x_L}{\mathrm{d}t}=\frac{1}{c}\frac{\mathrm{d}x}{\mathrm{d}t}=\frac{v}{c}
-$$<p></p>
+$$<p>
+es decir, esta cantidad es adimensional y de acuerdo con la proposición que se sigue de las transformaciones de Lorentz-Einstein, para cualquier sistema de referencia estará siempre en el rango:</p>
+$$
+0\le v_L&lt;1
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Durante este capítulo usaremos las <em>unidades luz</em> para escribir el mayor número de cantidades física, cinemáticas y dinámicas.</p>
 
 </div>
 </div>
@@ -13177,12 +13196,6 @@ $$<p></p>
 t' &amp; = &amp; \gamma\left(t - u_L x_L \right)\\
 \nonumber
 x'_L &amp; = &amp; \gamma\left(- u_L t + x_L\right)
-\end{eqnarray}<p>o bien:</p>
-\begin{eqnarray}
-\nonumber
-t'_L &amp; = &amp; \gamma\left(t_L - u_L x \right)\\
-\nonumber
-x' &amp; = &amp; \gamma\left(- u_L t_L + x\right)
 \end{eqnarray}
 </div>
 </div>
@@ -13190,7 +13203,7 @@ x' &amp; = &amp; \gamma\left(- u_L t_L + x\right)
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>En ambos casos podemos si definimos $u_L\equiv u/c$, que no es otra cosa que la rapidez medida en unidades luz, las TLE se pueden escribir de forma:</p>
+<p>Matricialmente:</p>
 $$
 \left(
 \begin{array}{c}
@@ -13235,7 +13248,7 @@ R(\theta)\equiv\left(
 \sin\theta &amp; \cos\theta
 \end{array}
 \right)
-$$<p>lo que sugiere que podemos considerarla como tal.  Pero hay un inconveniente.  Los signos de la diagonal de la matriz TLE no son contrarios.  Pero hay una solución para ello y es usar una matriz de rotación hiperbólica:</p>
+$$<p>lo que sugiere que podemos considerarla como tal.  Pero hay un inconveniente.  Los signos de la diagonal de la matriz TLE no son contrarios.  Una solución para ello es usar una matriz de <em>rotación hiperbólica</em>:</p>
 $$
 R_h(\phi)\equiv\left(
 \begin{array}{cc}
@@ -13254,7 +13267,7 @@ $$<p>donde $\phi$ más que un ángulo, es un parámetro de rotación.</p>
 <p>Si hacemos la identificación:</p>
 $$
 \cos\phi\equiv \gamma
-$$<p>es fácil probar que</p>
+$$<p>es fácil probar entonces que</p>
 $$
 \sin\phi=\gamma u_L
 $$<p>por lo que concluímos que la transformación que relaciona las coordenadas espacio-tiempo de dos observadores inerciales con velocidad relativa $u_L$ es una rotación hiperbólica con parámetro $\cos\phi=\gamma(u_L)$.</p>
@@ -13266,9 +13279,9 @@ $$<p>por lo que concluímos que la transformación que relaciona las coordenadas
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Definición 4.3. Vector posición en el espacio-tiempo.</strong><a id=''></a> Al vector:</p>
+<p><strong>Definición 4.3. Cuadrivector posición y gradiente en el espacio-tiempo.</strong><a id=''></a> Al vector:</p>
 <blockquote>$$
-  x^\mu=
+  \tilde x:
   \left(
   \begin{array}{c}
   t\\
@@ -13277,13 +13290,38 @@ $$<p>por lo que concluímos que la transformación que relaciona las coordenadas
   z_L\\
   \end{array}
   \right)
-  $$<p>lo llamaremos el vector posición en el espacio-tiempo.</p>
+  $$<p>lo llamaremos el vector posición o <strong>cuadrivector</strong> posición en el espacio-tiempo.  En lo sucesivo usaremos la notación $\tilde x$ para denotar los objetos vectoriales abstractos en cuatro dimensiones.</p>
+<p>Por su parte el gradiente será:
+  $$
+  \tilde \partial:
+  \left(
+  \begin{array}{c}
+  \partial_t\\
+  \partial_{x_L}\\
+  \partial_{y_L}\\
+  \partial_{z_L}\\
+  \end{array}
+  \right)
+  $$</p>
 </blockquote>
 
 </div>
 </div>
 </div>
     </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>En términos del cuadrivector posición podemos escribir las TLE como:</p>
+$$
+\tilde x' = \Lambda \tilde x
+$$<p>y las transfromaciones de las derivadas parciales como:</p>
+$$
+\tilde\partial = \Lambda^\mathrm{T} \tilde\partial'
+$$
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13295,9 +13333,9 @@ $$<p>por lo que concluímos que la transformación que relaciona las coordenadas
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Otra manera de escribir la TLE aprovechando que puede expresarse matricialmente es:</p>
+<p>Otra manera de escribir la TLE expresando explícitamente las componentes de la matriz es:</p>
 $$
-x'_\mu=\sum_\nu \Lambda_{\mu\nu} x_\nu
+{x'}_L^{\mu}=\sum_\nu \Lambda_{\mu\nu} x_L^\nu
 $$<p>donde $\mu,\nu: 0 (t), 1(x), 2 (y), 3 (z)$ y $\Lambda_{\mu\nu}$ son las componentes de la matriz de rotación.</p>
 
 </div>
@@ -13306,7 +13344,18 @@ $$<p>donde $\mu,\nu: 0 (t), 1(x), 2 (y), 3 (z)$ y $\Lambda_{\mu\nu}$ son las com
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Con lo común que será manipular expresiones como estas, estar escribiendo sumatorias por todas partes se hace muy incómodo.  Para evitarlo Einstein invento una notación que se vale de una importante propiedad matemática.</p>
+<p>Con lo común que será manipular expresiones como estas, estar escribiendo sumatorias por todas partes se hace muy incómodo.  Para evitarlo Einstein invento la notación:</p>
+$$
+{x'}_L^{\mu}=\Lambda_{\mu\nu} x_L^\nu
+$$<p>donde la sumatoria queda indicada por el hecho que el índice $\nu$ a la derecha esta repetido en los dos términos.  Siempre que encontremos un índice repetido indicará que existe una suma no explícita sobre ese índice.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Está última expresión aunque en principio correcta desde el punto de vista aritmético, todavía no es rigurosa desde el punto de vista del manejo de los índices. Una de las características más conocidas del formalismo matemático de la teoría de la relatividad, que naturalmente hereda de las áreas de las matemáticas que lo soportan (análisis tensorial y álgebra multilineal) es el manejo riguroso de los índices.  Para precisar esto debemos introducir unas definiciones "nuevas".</p>
 
 </div>
 </div>
@@ -13315,22 +13364,22 @@ $$<p>donde $\mu,\nu: 0 (t), 1(x), 2 (y), 3 (z)$ y $\Lambda_{\mu\nu}$ son las com
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Definición 4.4. componentes covariantes y contravariantes de un vector.</strong><a id=''></a> Dado un espacio coordenado de 4 dimensiones, y un conjunto de 4 vectores $\vec e_0$, $\vec e_1$, $\vec e_2$, $\vec e_3$ no paralelos entre sí (que llamaremos base).  Cualquier vector $\vec v$ en el espacio tiene asociados 4 números que llamamos sus componentes, definidos de la siguiente maneral:</p>
+<p><strong>Definición 4.4. componentes covariantes y contravariantes de un vector.</strong><a id=''></a> Dado un espacio coordenado de $n$ dimensiones, y un conjunto de $n$ vectores de base (no necesariamente unitarios) $\tilde e_0$, $\tilde e_1$, $\ldots$, $\tilde e_n$.  Cualquier vector $\tilde v$ en el espacio tiene asociados $n$ números que llamamos sus componentes, definidos de la siguiente maneral:</p>
 <blockquote><ol>
-<li><p><strong>Componentes contravariantes</strong>, $\vec v:(v^0,v^1,v^2,v^3)$, que son tales que:
+<li><p><strong>Componentes covariantes</strong>, $\tilde v:(v_0,v_1,v_2,v_3)$, que son tales que:
 $$
-\vec v=v^0 \vec e_0+v^1 \vec e_1+v^2 \vec e_2+v^3 \vec e_3
+v_0=\tilde v\cdot\tilde e_0,\;v_1=\tilde v\cdot\tilde e_1,\;v_2=\tilde v\cdot\tilde e_2,\;v_3=\tilde v\cdot\tilde e_3
 $$
-Los llamamos <em>contravariantes</em> porque si un cambio de escala modifica las longitudes de $\vec e_\mu$ por un factor $k$, las componentes $v^\mu$ se modificaran por un factor $1/k$ (<em>contrario</em> a los vectores de base).</p>
+Los llamamos <em>covariantes</em> porque si un cambio de escala modifica las longitudes de $\tilde e_\mu$ por un factor $k$, las componentes $v_\mu$ se modificaran también por el mismo factor $k$ (<em>en el mismo sentido</em> de los vectores de base).</p>
 </li>
-<li><p><strong>Componentes covariantes</strong>, $\vec v:(v_0,v_1,v_2,v_3)$, que son tales que:
+<li><p><strong>Componentes contravariantes</strong>, que se denotan como $\tilde v:(v^0,v^1,v^2,\ldots,v^n)$ y se definen en términos de la combinación lineal:
 $$
-v_0=\vec v\cdot\vec e_0,\;v_1=\vec v\cdot\vec e_1,\;v_2=\vec v\cdot\vec e_2,\;v_3=\vec v\cdot\vec e_3
+\tilde v=v^0 \tilde e_0+v^1 \tilde e_1+v^2 \tilde e_2+\ldots+v^n \tilde e_n
 $$
-Los llamamos <em>covariantes</em> porque si un cambio de escala modifica las longitudes de $\vec e_\mu$ por un factor $k$, las componentes $v^\mu$ se modificaran por un factor $k$ (<em>contrario</em> a los vectores de base).</p>
+y que llamaremos <em>contravariantes</em> porque si un cambio de escala modifica las longitudes de $\tilde e_\mu$ por un factor $k$, las componentes $v^\mu$ se modificaran por un factor $1/k$ (<em>contrario</em> a los vectores de base).</p>
 </li>
 </ol>
-<p>Las componentes contravariantes y covariantes de un vector coinciden si: 1) El producto punto es el definido en el espacio euclidiano y 2) si los vectores de la base son ortogonales<a href="03.03.00.00.Aplicaciones.CosmologiaRelativista.html#notaspie_1">$^1$</a>.</p>
+<p>Las componentes contravariantes y covariantes de un vector coinciden si: 1) El <strong>producto punto</strong> es igual el definido en espacios euclidianos o pseudoeuclidiano y 2) si los <strong>vectores de base son ortogonales</strong>.<a href="03.03.00.00.Aplicaciones.CosmologiaRelativista.html#notaspie_1">$^1$</a>(<a href="https://www.youtube.com/watch?v=CliW7kSxxWU">https://www.youtube.com/watch?v=CliW7kSxxWU</a>)].</p>
 </blockquote>
 
 </div>
@@ -13340,37 +13389,43 @@ Los llamamos <em>covariantes</em> porque si un cambio de escala modifica las lon
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Nótese que en términos compactos cualquier vector se puede escribir en términos de sus componentes contravariantes como:</p>
+<p>Usando la notación de Einstein, un vector en $n$ dimensiones se puede escribir en términos de una base y sus componentes contravariantes como:</p>
 $$
-\vec v=\sum_\mu v^\mu \vec e_\mu
+\tilde v=v^\mu \tilde e_\mu
+$$<p>Dado que el índice repetido $\mu$ solo juega aquí el papel de indicar la existencia de una sumatoria que no se escribe, podría ser reemplazado por cualquier otra letra:</p>
 $$
+\tilde v=v^\nu \tilde e_\nu=v^\alpha \tilde e_\alpha
+$$<p>y lo llamaremos por tánto un <strong>índice mudo</strong>.</p>
+
 </div>
 </div>
-</div>
+</div><div style="background:white;border:solid black 2px;pad:10px;margin-left:7em;margin-top:1em;margin-bottom:1em;">
+    	 
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Para abreviar la expresión anterior usaremos en lo sucesivo la convención de que cuándo en una suma, los índices se repiten (normalmente en posiciones covariantes y contravariantes) entonces, la sumatoria correspondiente al índice se puede eliminar.  Al índice lo llamamos también un <em>índice mudo</em> y su nombre puede cambiarse a voluntad.  Así:</p>
-$$
-\vec v=\sum_\mu v^\mu \vec e_\mu=v^\mu \vec e_\mu=v^\nu \vec e_\nu
-$$
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>En lo sucesivo y en un espíritu similar, usaremos la expresion $v^\mu$ para referirnos al vector $\vec v$ mismo.</p>
+<p><strong>NOTA: Notación intercambiable.</strong><a id=''></a> En lo sucesivo usaremos la expresion $v^\mu$ para referirnos de forma intercambiable al cuadrivector mismo $\tilde v$ y a la componente contravariante $\mu$.  Cuándo $v^\mu$ será el cuadrivector y cuándo su componente dependerá del contexto.</p>
 
 </div>
 </div>
 </div>
+    </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>En términos de la notación de Einstein y de las componentes contravariantes del vector posición en el espacio tiempo $x^\mu$ las TLE se pueden escribir como:</p>
+<p>Nótese que las componentes del vector gradiente $\partial/\partial x^\mu$ son covariantes: al multiplicar por un factor $k$ los vectores de base, las componentes $x^\mu$ se reducen en un factor $k$ pero las derivadas <em>aumentan</em> en el mismo factor.  Por lo tanto podemos escribir:</p>
 $$
-x^{\mu'}=\Lambda^{\mu'}_\nu x^{\nu}
+\tilde \partial : \left(\frac{\partial}{\partial x^0},\frac{\partial}{\partial x^1},\frac{\partial}{\partial x^2},\frac{\partial}{\partial x^3}\right) \equiv \partial_\mu
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>En términos de la notación de Einstein y de las componentes contravariantes del vector posición $x^\mu$ las TLE se pueden escribir como:</p>
+$$
+x^{\mu'}={\Lambda^{\mu'}}_\nu\;x^{\nu}
 $$<p>aquí $\nu$ es un índice mudo y $\mu'$ es el índice de la ecuación.</p>
 
 </div>
@@ -13379,12 +13434,47 @@ $$<p>aquí $\nu$ es un índice mudo y $\mu'$ es el índice de la ecuación.</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Las componentes explícitas de la matriz $\Lambda^{\mu'}_\nu$ son, cuando la velocidad va en la dirección del eje $x$:</p>
+<p>Esta expresión tiene dos novedades:</p>
+<ul>
+<li><p>El apóstrofe, que indica que las componentes son aquellas medidas por el observador primado, se aplica al índice y no a la letra del cuadrivector.  Esto tiene dos propósitos: el primero es respetar el hecho que el vector abstracto $\tilde x$, en realidad no se modifica con la transformación; el segundo tiene que ver con la notación para la matriz de transformación.</p>
+</li>
+<li><p>Los índices de la matriz de transformación.  Hemos puesto los índices de modo que a ambos lados de la expresión estén equilibrados.  Por eso cambiamos a una <em>posición contravariante</em> el primer índice de la matriz (sin que eso necesariamente signifique que esa sea estrictamente una componente contravariante de una entidad que no es <em>vectorial</em>).</p>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>EL uso de los apóstrofes en los índices tiene la ventaja adicional de permitirnos escribir expresiones mucho más económicas como:</p>
+$$
+x^{\mu'}={\Lambda^{\mu'}}_\mu\;x^{\mu}
+$$<p>donde los índices $\mu'$ y $\mu$ son claramente índices diferentes.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Teniendo en cuenta que en la <em>configuración estándar</em> (eje x apuntando en la dirección de $\vec u$):</p>
+$$
+\Lambda(u_L)\equiv\left(
+\begin{array}{cccc}
+\gamma &amp; -\gamma u_L &amp; 0 &amp; 0 \\
+-\gamma u_L &amp; \gamma &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1 \\
+\end{array}
+\right)
+$$<p>las componentes explícitas de la matriz ${\Lambda^{\mu'}}_\nu$ se pueden escribir como:</p>
 $$
 \begin{array}{c}
-\Lambda^{0'}_0=\Lambda^{1'}_1=\gamma\\
-\Lambda^{2'}_2=\Lambda^{3'}_3=1\\
-\Lambda^{0'}_1=\Lambda^{1'}_0=-u_L\gamma\\
+{\Lambda^{0'}}_0={\Lambda^{1'}}_1=\gamma\\
+{\Lambda^{0'}}_1={\Lambda^{1'}}_0=-u_L\gamma\\
+{\Lambda^{2'}}_2={\Lambda^{3'}}_3=1\\
 \end{array}
 $$
 </div>
@@ -13393,7 +13483,7 @@ $$
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="1.8.4.-Las-TLE-generales">1.8.4. Las TLE generales<a class="anchor-link" href="#1.8.4.-Las-TLE-generales">&#182;</a></h3><p><a id='TLE_generales'></a></p>
+<h3 id="1.8.4.-Inversa-y-transpuesta-de-las-TLE">1.8.4. Inversa y transpuesta de las TLE<a class="anchor-link" href="#1.8.4.-Inversa-y-transpuesta-de-las-TLE">&#182;</a></h3><p><a id='TLE_inversa'></a></p>
 
 </div>
 </div>
@@ -13401,7 +13491,194 @@ $$
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Las transformaciones deducidas hasta aquí asumían que la velocidad relativa entre los sistemas de referencia inerciales iba en la dirección del eje x.  Aunque siempre es posible hacer esa elección, puede ser también común que otras direcciones sean más importantes para definir nuestro sistema de coordenadas.  Por tal razón tiene mucho interés escribir las TLE cuando $\vec u$ es arbitraria.</p>
+<p>Aunque ya habíamos visto en un contexto más físico, cómo se determina la inversa y qué uso tiene la transpuesta de la TLE (para el cálculo de las derivadas), la introducción de la notación de Einstein y los índices covariantes y contravariantes de los cuadrivectores, hacen interesante revisar nuevamente esas cantidades en la nueva notación.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Partiendo de la TLE original:</p>
+$$
+x^{\mu'}={\Lambda^{\mu'}}_{\mu} x^{\mu}
+$$<p>la inversa se escribe como:</p>
+$$
+{\Lambda_{\mu'}}^{\mu} x^{\mu'}=x^\mu
+$$<p>donde:</p>
+$$
+{\Lambda_{\mu'}}^{\mu}=({\Lambda^{\mu'}}_{\mu})^{-1}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Por razones físicas sabemos que:</p>
+$$
+{\Lambda_{\mu'}}^{\mu}(u_L)={\Lambda^{\mu'}}_{\mu}(-u_L)
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Por otro lado habíamos probado que:</p>
+$$
+\partial_\mu=({\Lambda^{\mu'}}_{\mu})^\mathrm{T}\partial_{\mu'}
+$$<p>que se puede escribir más convenientemente como:</p>
+$$
+\partial_\mu={\Lambda_{\mu}}^{\mu'}\partial_{\mu'}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Podemos resumir entonces la notación de la transformación así:</p>
+<ul>
+<li>${\Lambda^{\mu'}}_\mu$, <strong>transformación original</strong>: el índice $\mu'$ denota las filas.</li>
+<li>${\Lambda_{\mu'}}^\mu$, <strong>transformación inversa</strong>: se cambian de posición los índices pero $\mu'$ siguen siendo las filas.</li>
+<li>${\Lambda_{\mu}}^{\mu'}$, <strong>transformación transpuesta</strong>: , se transponen los índices y ahora el índice $\mu$ son las filas.</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="1.8.5.-De-las-TLE-a-los-tensores">1.8.5. De las TLE a los tensores<a class="anchor-link" href="#1.8.5.-De-las-TLE-a-los-tensores">&#182;</a></h3><p><a id='TLE_tensores'></a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Las TLE hacen parte de un conjunto muy general de transformaciones de la forma</p>
+$$
+x^{\mu'}=x^{\mu'}(x^{\mu})
+$$<p>Nótese que en esta <em>confusa expresión</em> la $x^{\mu'}$ a la izquierda y la $x^\mu$ a la derecha, denotan el <em>valor</em> de las componentes de los cuadrivector posición en el sistema primado y no primado (respectivamente), pero la $x^{\mu'}$ en el lado derecho es una <em>función escalar</em>.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Una transformación general inversa se escribe como:
+$$
+x^{\mu}=x^{\mu}(x^{\mu'})
+$$</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Reconociendo este hecho y usando la notación de Einstein, la transformación del gradiente se puede escribir con la regla de la cadena como:</p>
+$$
+\frac{\partial}{\partial x^{\mu}}=\frac{\partial x^{\mu'}}{\partial x^{\mu}}\frac{\partial}{\partial x^{\mu'}}
+$$<p>o bien:</p>
+$$
+\partial_\mu=\frac{\partial x^{\mu'}}{\partial x^{\mu}}\partial_{\mu'}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>En el caso de las TLE, terminamos reconociendo que:</p>
+$$
+{\Lambda_\mu}^{\mu'}=\frac{\partial x^{\mu'}}{\partial x^{\mu}}
+$$<p>y por lo tanto:</p>
+$$
+{\Lambda^{\mu'}}_{\mu}=\frac{\partial x^{\mu}}{\partial x^{\mu'}}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Estas ideas nos permiten introducir una definición general que será de mucha utilidad en lo sucesivo:</p>
+
+</div>
+</div>
+</div><div style="background:lightgray;border:solid black 2px;pad:10px;margin-left:7em;margin-top:1em;margin-bottom:1em;">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Definición 4.5. Tensor de primer rango</strong>. Una cantiad $\tilde A$, elemento de un espacio vectorial geométrico, es un <strong>tensor de primer rango.</strong><a id=''></a> , si bajo una transformación de las coordenadas del espacio $x^{\mu'}(x^{\mu})$, sus componentes contravariantes transforman como:</p>
+<blockquote>$$
+  A^{\mu'}=\frac{\partial x^{\mu'}}{\partial x^{\mu}} A^{\mu}
+  $$<p>y sus componentes covariantes lo hacen siguiendo la regla:</p>
+</blockquote>
+<p>$$
+  A_{\mu'}=\frac{\partial x^{\mu}}{\partial x^{\mu'}} A_{\mu}
+  $$</p>
+
+</div>
+</div>
+</div>
+    </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>De acuerdo a la definición anterior, la cuadriposición y el cuadrigradiente son tensores de primer rango bajo las TLE.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>No es difícil generalizar este resultado para definir cantidades más generales:</p>
+
+</div>
+</div>
+</div><div style="background:lightgray;border:solid black 2px;pad:10px;margin-left:7em;margin-top:1em;margin-bottom:1em;">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Definición 4.6. Tensor.</strong><a id=''></a> Una cantidad $A$ se llama un tensor, si bajo una transformación de las coordenadas del espacio $x^{\mu'}(x^{\mu})$, sus componentes:</p>
+<blockquote>$$
+  A^{\mu'\nu'\cdots(n)}_{\alpha'\beta'\cdots(m)}=\frac{\partial x^{\mu'}}{\partial x^{\mu}}\frac{\partial x^{\nu'}}{\partial x^{\nu}}\cdots\frac{\partial x^{\alpha}}{\partial x^{\alpha'}}\frac{\partial x^{\beta}}{\partial x^{\beta'}}\cdots A^{\mu\nu\cdots(n)}_{\alpha\beta\cdots(m)}
+  $$<p>decimos que es un tensor de rango $n+m$, $n$ veces contravariante y $m$ veces covariante.</p>
+</blockquote>
+
+</div>
+</div>
+</div>
+    </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Es importante anotar que esta definición de tensor, es una definición informal muy propia de la física.  Si bien es válida para los casos particulares que usamos en la teoría de la relatividad, en casos más generales debe precirsa mejor.  Una definición rigura y más general puede encontrarse en textos de álgebra multilineal.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="1.8.6.-Las-TLE-generales">1.8.6. Las TLE generales<a class="anchor-link" href="#1.8.6.-Las-TLE-generales">&#182;</a></h3><p><a id='TLE_generales'></a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Las transformaciones deducidas hasta aquí asumían que la velocidad relativa entre los sistemas de referencia inerciales iba en la dirección del eje x (configuración estándar).  Aunque siempre es posible hacer esa elección, puede ser también común que otras direcciones sean comparativamente importantes para definir nuestro sistema de coordenadas.  Por tal razón tiene mucho interés escribir las TLE cuando $\vec u$ es arbitraria.</p>
 
 </div>
 </div>
@@ -13425,13 +13702,13 @@ t' &amp; = &amp; \gamma\left(t-\vec{u}_L\cdot \vec{r}_L\right) \\
 <p>Esta transformación general puede entenderse si se escribe $\vec r=r_\parallel \hat u+r_\bot \hat v$, donde $\hat v\cdot \hat u = 0$.  Remplazando, la transformación queda:</p>
 \begin{eqnarray}
 \nonumber
-t' &amp; = &amp; \gamma\left(t-u_L r_\parallel\right) \\
+t' &amp; = &amp; \gamma\left(t-u_L r_{L\parallel}\right) \\
 \nonumber
-r'_\parallel &amp; = &amp; r_\parallel+\left(\frac{\gamma-1}{u_L^2} u_L r_\parallel - \gamma t\right)u_L \\
+r'_{L\parallel} &amp; = &amp; r_{L\parallel}+\left(\frac{\gamma-1}{u_L^2} u_L r_{L\parallel} - \gamma t\right)u_L \\
 \nonumber
- &amp; = &amp; \gamma(-u_L t + r_\parallel)\\
+ &amp; = &amp; \gamma(-u_L t + r_{L\parallel})\\
 \nonumber
-r'_\bot &amp; = &amp; r_\bot \\
+r'_{L\bot} &amp; = &amp; r_{L\bot} \\
 \end{eqnarray}<p>que es exactamente la TLE original.</p>
 
 </div>
@@ -13442,9 +13719,18 @@ r'_\bot &amp; = &amp; r_\bot \\
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Es posible probar que las componentes de la matriz de rotación del TLE en el caso general son:</p>
 $$
-\Lambda^{0'}_0=\gamma\\
-\Lambda^{0'}_i=\Lambda^{i'}_0=-\gamma u_L^i\\
-\Lambda^{i'}_j=\delta_{ij}+(\gamma-1)u_L^i u_L^j / u_L^2\\
+{\Lambda^{0'}}_0=\gamma\\
+{\Lambda^{0'}}_i={\Lambda^{i'}}_0=-\gamma u_L^i\\
+{\Lambda^{i'}}_j=\delta_{ij}+(\gamma-1)u_L^i u_L^j / u_L^2\\
+$$<p>donde $\delta_{ij}$ es el delta de Kroenecker:</p>
+$$
+\delta_{ij}=
+\left\{
+\begin{array}{ll}
+1 &amp; \mathrm{Si}\;i=j\\
+0 &amp; \mathrm{Si}\;i\neq j\\
+\end{array}
+\right.
 $$
 </div>
 </div>
@@ -13452,7 +13738,7 @@ $$
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="1.8.5.-El-valor-del-factor-de-Lorentz-Einstein">1.8.5. El valor del factor de Lorentz-Einstein<a class="anchor-link" href="#1.8.5.-El-valor-del-factor-de-Lorentz-Einstein">&#182;</a></h3><p><a id='valor_gama'></a></p>
+<h3 id="1.8.7.-El-valor-del-factor-de-Lorentz-Einstein">1.8.7. El valor del factor de Lorentz-Einstein<a class="anchor-link" href="#1.8.7.-El-valor-del-factor-de-Lorentz-Einstein">&#182;</a></h3><p><a id='valor_gama'></a></p>
 
 </div>
 </div>
@@ -13526,12 +13812,14 @@ $$
 
 <span class="n">ax</span><span class="o">.</span><span class="n">set_xscale</span><span class="p">(</span><span class="s2">&quot;log&quot;</span><span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">set_yscale</span><span class="p">(</span><span class="s2">&quot;log&quot;</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">((</span><span class="mf">1e-5</span><span class="p">,</span><span class="mf">1e0</span><span class="p">))</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">((</span><span class="mf">1e-11</span><span class="p">,</span><span class="mf">1e1</span><span class="p">))</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">((</span><span class="mf">1e-2</span><span class="p">,</span><span class="mf">1e0</span><span class="p">))</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">((</span><span class="mf">1e-5</span><span class="p">,</span><span class="mf">1e1</span><span class="p">))</span>
 
 <span class="n">ax</span><span class="o">.</span><span class="n">set_label</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;$u/c$&quot;</span><span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;$\gamma-1$&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
 </pre></div>
 
     </div>
@@ -13550,7 +13838,7 @@ $$
 
 
 <div class="output_png output_subarea ">
-<img src="data:image/png;base64,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
+<img src="data:image/png;base64,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
 "
 >
 </div>
@@ -13572,7 +13860,7 @@ $$
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Nótese que la aproximación $\gamma=u_L^2/2$ es suficientemente buena (error relativo menor a 1%) hasta $u_L\approx 0.2$</p>
+<p>Nótese que la aproximación $\gamma-1=u_L^2/2$ es suficientemente buena (error relativo menor a 1%) hasta $u_L\approx 0.2$</p>
 
 </div>
 </div>
@@ -13580,7 +13868,7 @@ $$
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="1.8.6.-Mapas-de-la-TLE">1.8.6. Mapas de la TLE<a class="anchor-link" href="#1.8.6.-Mapas-de-la-TLE">&#182;</a></h3><p><a id='TLE_mapas'></a></p>
+<h3 id="1.8.8.-Mapas-de-la-TLE">1.8.8. Mapas de la TLE<a class="anchor-link" href="#1.8.8.-Mapas-de-la-TLE">&#182;</a></h3><p><a id='TLE_mapas'></a></p>
 
 </div>
 </div>
@@ -13788,7 +14076,7 @@ $$
 <p><strong>NOTAS AL PIE:</strong></p>
 <p><a id='notaspie_1'></a></p>
 <ol start='1'>
-<li>Un video con una explicación de la diferencia entre componentes contravariantes y covariantes puede encontrarse aquí: <a href="https://www.youtube.com/watch?v=CliW7kSxxWU">https://www.youtube.com/watch?v=CliW7kSxxWU</a></li>
+<li>Un video con una explicación de la diferencia entre componentes contravariantes y covariantes puede encontrarse [aquí</li>
 </ol>
 
 </div>
