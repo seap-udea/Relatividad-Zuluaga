@@ -74,28 +74,24 @@
 		* `#vectores_minkowski`
 		* `#minkowski_postulado_relojes`
 		* `#transformacion_cuadrivectores`
-- Labels for '01.04.00.00.RelatividadEspecial.OpticaRelativista.ipynb':
-	- Labels for 'section':
-		* `#optica_relativista`
-		* `#doppler_relativista`
-		* `#aberración`
-		* `#enfoque_relativista`
-	- Labels for 'figure':
-		* `fig:Figure_11`
-- Labels for '01.05.01.00.RelatividadEspecial.CinematicaRelativista.Definiciones.ipynb':
+- Labels for '01.04.01.00.RelatividadEspecial.CinematicaRelativista.Definiciones.ipynb':
 	- Labels for 'section':
 		* `#cinematica_relativistica`
+		* `#motivacion`
+		* `#linea_universo`
 		* `#cuadrivelocidad`
 		* `#cuadriaceleracion`
-- Labels for '01.05.02.00.RelatividadEspecial.CinematicaRelativista.AceleracionPropiaConstante.ipynb':
+	- Labels for 'figure':
+		* `fig:Figure_11`
+- Labels for '01.04.02.00.RelatividadEspecial.CinematicaRelativista.AceleracionPropiaConstante.ipynb':
 	- Labels for 'section':
 		* `#cuadriaceleracion_constante`
 		* `#velocidad_limite`
 		* `#nave_interestelar`
 	- Labels for 'figure':
 		* `fig:cuadriaceleracion`
-		* `fig:Figure_17`
-- Labels for '01.06.01.00.RelatividadEspecial.DinamicaRelativista.EnergiaMomentum.ipynb':
+		* `fig:Figure_16`
+- Labels for '01.05.01.00.RelatividadEspecial.DinamicaRelativista.EnergiaMomentum.ipynb':
 	- Labels for 'section':
 		* `#dinamica_relativista`
 		* `#masa_invariante`
@@ -103,25 +99,33 @@
 		* `#cuadrimomentum`
 		* `#magnitud_cuadrimomentum`
 		* `#cuadrimomentum_minkowski`
-- Labels for '01.06.02.00.RelatividadEspecial.DinamicaRelativista.ColisionesRelativistas.ipynb':
+- Labels for '01.05.02.00.RelatividadEspecial.DinamicaRelativista.ColisionesRelativistas.ipynb':
 	- Labels for 'section':
 		* `#colisiones_relativistas`
 		* `#energia_cm`
 		* `#colisiones_interactivas`
-- Labels for '01.06.03.00.RelatividadEspecial.DinamicaRelativista.Cuadrifuerza.ipynb':
+- Labels for '01.05.03.00.RelatividadEspecial.DinamicaRelativista.Cuadrifuerza.ipynb':
 	- Labels for 'section':
 		* `#cuadrifuerza`
 		* `#transformacion_fuerza`
-- Labels for '01.06.04.00.RelatividadEspecial.DinamicaRelativista.FuerzaDeLorentz.ipynb':
+- Labels for '01.05.04.00.RelatividadEspecial.DinamicaRelativista.FuerzaDeLorentz.ipynb':
 	- Labels for 'section':
 		* `#fuerza_lorentz`
 		* `#movimiento_circular`
 		* `#edm_relativista`
-- Labels for '01.07.00.00.RelatividadEspecial.SintesisMecanicaRelativista.ipynb':
+- Labels for '01.06.00.00.RelatividadEspecial.SintesisMecanicaRelativista.ipynb':
 	- Labels for 'section':
 		* `#sintesis_mecanica`
 		* `#sintesis_cinematica`
 		* `#sintesis_dinamica`
+- Labels for '01.07.00.00.RelatividadEspecial.OpticaRelativista.ipynb':
+	- Labels for 'section':
+		* `#optica_relativista`
+		* `#doppler_relativista`
+		* `#aberración`
+		* `#enfoque_relativista`
+	- Labels for 'figure':
+		* `fig:Figure_23`
 - Labels for '01.08.01.00.RelatividadEspecial.Electrodinamica.EcuacionesClasicas.ipynb':
 	- Labels for 'section':
 		* `#electrodinamica`
@@ -220,8 +224,8 @@
 		* `#riemann_numerico`
 		* `#desviacion_geodesica_numerica`
 	- Labels for 'figure':
-		* `fig:Figure_36`
 		* `fig:Figure_37`
+		* `fig:Figure_38`
 - Labels for '02.07.00.00.RelatividadGeneral.PrincipioConsistencia.ipynb':
 	- Labels for 'section':
 		* `#principio_consistencia`
@@ -281,11 +285,11 @@
 		* `#detectores_gw`
 		* `#sensibilidad_detectores`
 	- Labels for 'figure':
-		* `fig:Figure_39`
-		* `fig:Figure_43`
+		* `fig:Figure_40`
 		* `fig:Figure_44`
-		* `fig:Figure_46`
+		* `fig:Figure_45`
 		* `fig:Figure_47`
+		* `fig:Figure_48`
 - Labels for '03.01.05.00.Aplicaciones.OndasGravitacionales.SimulacionSenal.ipynb':
 	- Labels for 'section':
 		* `#simulacion_senal`
@@ -309,15 +313,15 @@
 		* `#estimativos_binarias_gw`
 		* `#binarias_gw`
 	- Labels for 'figure':
-		* `fig:Figure_50`
+		* `fig:Figure_51`
 - Labels for '03.02.00.00.Aplicaciones.AgujerosNegros.ipynb':
 	- Labels for 'section':
 		* `#agujeros_negros`
 		* `#historia_an`
 		* `#temario_an`
 	- Labels for 'figure':
-		* `fig:Figure_51`
 		* `fig:Figure_52`
+		* `fig:Figure_53`
 - Labels for '03.02.01.00.Aplicaciones.AgujerosNegros.MetricaSchwarzschild.ipynb':
 	- Labels for 'section':
 		* `#metrica_schw`
@@ -340,17 +344,17 @@
 		* `#painleve_gullstrand`
 		* `#kruskal_szekeres`
 	- Labels for 'figure':
-		* `fig:Figure_61`
 		* `fig:Figure_62`
+		* `fig:Figure_63`
 - Labels for '03.03.00.00.Aplicaciones.CosmologiaRelativista.ipynb':
 	- Labels for 'section':
 		* `#cosmologia_relativista`
 		* `#plan_temas`
 		* `#propiedades_universo`
 	- Labels for 'figure':
-		* `fig:Figure_63`
 		* `fig:Figure_64`
 		* `fig:Figure_65`
+		* `fig:Figure_66`
 - Labels for '03.03.01.00.Aplicaciones.CosmologiaRelativista.MetricaUniverso.ipynb':
 	- Labels for 'section':
 		* `#principios_basicos`
@@ -360,7 +364,7 @@
 		* `#espacio_curvo_abierto`
 		* `#metrica_RW`
 	- Labels for 'figure':
-		* `fig:Figure_66`
+		* `fig:Figure_67`
 - Labels for '03.03.02.00.Aplicaciones.CosmologiaRelativista.EcuacionesFriedmann.ipynb':
 	- Labels for 'section':
 		* `#ecuacion_friedmann`
@@ -383,7 +387,7 @@
 		* `#hubble_lemaitre`
 		* `#densidad_critica`
 	- Labels for 'figure':
-		* `fig:Figure_67`
+		* `fig:Figure_68`
 - Labels for '04.01.00.00.Apendices.CodigosUtiles.ipynb':
 	- Labels for 'section':
 		* `#apendices`
