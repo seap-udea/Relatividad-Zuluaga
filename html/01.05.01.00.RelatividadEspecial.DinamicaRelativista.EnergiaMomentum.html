@@ -13415,17 +13415,22 @@ $$
 <p><strong>Nota: cambio de mayúsculas por minúsculas en mecánica relativista.</strong><a id=''></a> Es corriente cambiar las letras que usamos para las cantidades mecánica de acuerdo a si son las clásicas (newtonianas) o las relativísticas.  Normalmente, si una cantidad se representa con una letra minúscula en la mecánica newtoniana, se representará con una letra mayúscula en la mecánica relativista y viceversa.  Existen, naturalmente, algunas excepciones notables.  A continuación se enumeran estas <em>transformaciones</em> de notación:</p>
 <blockquote>$$
   \begin{array}{rcl}
-  \mathrm{Mecánica\;Newtoniana} &amp; \rightarrow &amp; \mathrm{Mecánica\;Relativista}\\
-  \vec v &amp; \rightarrow &amp; U^\mu\;\mathrm{(cuadrivelocidad)} \\
-  \vec a &amp; \rightarrow &amp; A^\mu\;\mathrm{(cuadriaceleración)} \\
-  m &amp; \rightarrow &amp; m\;\mathrm{(masa\;invariante)} \\
-  \vec p &amp; \rightarrow &amp; \vec p\;\mathrm{(trimomentum)}\\
-  \vec p &amp; \rightarrow &amp; P^\mu\;\mathrm{(cuadrimomentum)}\\
-  K &amp; \rightarrow &amp; k\;\mathrm{(energía\;cinética\;relativista)}\\
-  E &amp; \rightarrow &amp; E\;\mathrm{(energía\;total\;relativista)}\\
-  \vec F &amp; \rightarrow &amp; f^\mu\;\mathrm{(cuadrifuerza)}\\
+  \mathrm{Mecánica\;Newtoniana} &amp; \rightarrow &amp; \mathrm{Mecánica\;Relativista\;[Factor\;luz,\;Unidades]} \\
+  \mathrm{d}t &amp; \rightarrow &amp; \mathrm{d}\tau\;\mathrm{(tiempo)}\;[1/\gamma,\mathrm{s}] \\
+  \mathrm{d}\vec r &amp; \rightarrow &amp; \mathrm{d}\tilde x\;\mathrm{(cuadridesplazamiento)}\;[1/c,\mathrm{sl}] \\
+  \vec v &amp; \rightarrow &amp; \tilde U\;\mathrm{(cuadrivelocidad)}\;[1/c,\mathrm{adim.}] \\
+  \vec a &amp; \rightarrow &amp; \tilde A\;\mathrm{(cuadriaceleración)}\;[1/c,1/\mathrm{sl}] \\
+  m &amp; \rightarrow &amp; m\;\mathrm{(masa\;invariante)}\;[1,\mathrm{kg}] \\
+  \vec p &amp; \rightarrow &amp; \vec p\;\mathrm{(trimomentum)}\;[1/c,\mathrm{kgl}]\\
+  \vec p &amp; \rightarrow &amp; \tilde P\;\mathrm{(cuadrimomentum)}\;[1/c,\mathrm{kgl}]\\
+  K &amp; \rightarrow &amp; k\;\mathrm{(energía\;cinética\;relativista)}\;[1/c^2,\mathrm{kgl}]\\
+  E &amp; \rightarrow &amp; E\;\mathrm{(energía\;total\;relativista)}\;[1/c^2,\mathrm{kgl}]\\
+  \vec F &amp; \rightarrow &amp; \tilde f\;\mathrm{(cuadrifuerza)}\;[1/c,\mathrm{kgl}]\\
   \end{array}
-  $$
+  $$<p>Por el <em>factor luz</em> entendemos el factor de conversión entre la cantidad en unidades convencionales y unidades-luz.  Así por ejemplo:</p>
+$$
+  E_L=\frac{E}{c^2}
+  $$<p>Las unidades "sl" (segundos-luz, 1 sl = $c$ km) y "kgl" (kilogramos-luz, 1 kgl = $c^2$ kg) son unidades especiales usadas aquí para hacer consistentes las unidades en todas las expresiones.</p>
 </blockquote>
 
 </div>
@@ -13563,7 +13568,7 @@ $$E_L \equiv \sum_i \gamma (v_{Li}) m_i$$</p>
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>¿Podrían estas dos cantidades usarse para definir una única cantidad conservada en 4 dimensiones?.  Es fácil ver que si definimos la cantidad:</p>
 $$
-P_L^\mu : (E_L,\vec p_L)
+\tilde P_L : (E_L,\vec p_L)
 $$<p>las componentes de esta cantidad serán conservadas y por lo tanto la cantidad cuadrivectorial será conservada también.</p>
 
 </div>
@@ -13574,10 +13579,13 @@ $$<p>las componentes de esta cantidad serán conservadas y por lo tanto la canti
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>En términos de la masa invariante y la velocidad la cantidad se escribe:</p>
 $$
-P_L^\mu : m \gamma (1,\vec v_L)
-$$<p>pero identificamos aquí a la cuadrivelocidad $U_L^\mu :\gamma(1,\vec v_L)$ y por lo tanto podemos escribir:</p>
+\tilde P_L : m \gamma (1,\vec v_L)
+$$<p>pero identificamos aquí a la cuadrivelocidad $\tilde U_L :\gamma(1,\vec v_L)$ y por lo tanto podemos escribir:</p>
 $$
-P_L^\mu = m U_L^\mu
+\tilde P_L = m \tilde U_L
+$$<p>o en general:</p>
+$$
+\tilde P = m \tilde U
 $$
 </div>
 </div>
@@ -13586,10 +13594,10 @@ $$
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <blockquote><p><strong>Proposición: Conservación del cuadrimomentum</strong>.  Si en un sistema aislado definimos el cuadrimomentum como:</p>
-$$P^\mu_L \equiv \sum_i m_i U^\mu_{iL}$$<p>entonces esta cantidad se mantiene constante.  El cuadrimomentum de cada partícula tiene componentes:
-$$P^\mu_{iL}:(E_{iL},\vec p_{iL})$$
+$$\tilde P \equiv \sum_i m_i \tilde U_i$$<p>entonces esta cantidad se mantiene constante.  El cuadrimomentum de cada partícula tiene componentes:
+$$\tilde P_{iL}:(E_{iL},\vec p_{iL})$$
 o en unidades convencionales:
-$$P^\mu_i:(E/c,\vec{p}_i)$$</p>
+$$\tilde P_i:(E/c,\vec{p}_i)$$</p>
 </blockquote>
 
 </div>
@@ -13608,10 +13616,10 @@ $$P^\mu_i:(E/c,\vec{p}_i)$$</p>
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>¿Cuál era la simetría de la que hablabamos antes?.  La magnitud del cuadrimomentum es por definición:</p>
 $$
-|P^\mu_L|^2=|m U^\mu_L|^2=m^2
+|\tilde P_L|^2=|m U^\mu_L|^2=m^2
 $$<p>y por componentes:</p>
 $$
-|P^\mu_L|^2=E_L^2 - p_L^2
+|\tilde P_L|^2=E_L^2 - p_L^2
 $$
 </div>
 </div>
