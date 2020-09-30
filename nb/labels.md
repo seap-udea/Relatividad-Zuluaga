@@ -141,6 +141,7 @@
 		* `#campos_tensoriales`
 		* `#tensor_faraday`
 		* `#maxwell_faraday`
+		* `#algebra_faraday`
 		* `#transformacion_campos`
 		* `#fuerza_lorentz_covariante`
 		* `#geometria_F`

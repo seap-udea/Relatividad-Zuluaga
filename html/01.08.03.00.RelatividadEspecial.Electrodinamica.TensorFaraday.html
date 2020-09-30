@@ -13239,7 +13239,7 @@ $$
   $$\partial^{[\alpha}F^{\mu\nu]}=F^{[\mu\nu,\alpha]}\equiv\partial^\alpha F^{\mu\nu}+\partial^\mu F^{\nu\alpha}+\partial^\nu F^{\alpha\mu}=0$$
  donde en lo sucesivo $[\alpha\beta\gamma]=\alpha\beta\gamma,\beta\gamma\alpha,\gamma\alpha\beta$ es la permutación cíclica de los índices.</li>
 <li><strong>Determinante invariante</strong>: $\det F^{\mu\nu}=(\vec E\cdot \vec B)^2$</li>
-<li><strong>Escalar</strong>: $F^{\mu\nu}F_{\mu\nu}=2(E^2-B^2)$.</li>
+<li><strong>Escalar</strong>: $F^{\mu\nu}F_{\mu\nu}=2(B^2-E^2)$.</li>
 </ul>
 </blockquote>
 
@@ -13367,7 +13367,331 @@ $$
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="1.17.7.-Transformaci&#243;n-de-los-campos">1.17.7. Transformaci&#243;n de los campos<a class="anchor-link" href="#1.17.7.-Transformaci&#243;n-de-los-campos">&#182;</a></h3><p><a id='transformacion_campos'></a></p>
+<h3 id="1.17.7.-&#193;lgebra-computacional-del-Tensor-de-Faraday">1.17.7. &#193;lgebra computacional del Tensor de Faraday<a class="anchor-link" href="#1.17.7.-&#193;lgebra-computacional-del-Tensor-de-Faraday">&#182;</a></h3><p><a id='algebra_faraday'></a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Algunas de las propiedades mencionadas antes se pueden expresar y desarrollar en sistemas de álgebra computacional como <code>SymPy</code>.  Para hacerlo primero debermos definir las componentes de los campos:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">sympy</span> <span class="k">as</span> <span class="nn">sp</span>
+<span class="n">Ex</span><span class="p">,</span><span class="n">Ey</span><span class="p">,</span><span class="n">Ez</span><span class="p">,</span><span class="n">Bx</span><span class="p">,</span><span class="n">By</span><span class="p">,</span><span class="n">Bz</span><span class="o">=</span><span class="n">sp</span><span class="o">.</span><span class="n">symbols</span><span class="p">(</span><span class="s2">&quot;E_x,E_y,E_z,B_x,B_y,B_z&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>La representación matricial del tensor electromagnético será:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">F</span><span class="o">=</span><span class="n">sp</span><span class="o">.</span><span class="n">Matrix</span><span class="p">([[</span><span class="mi">0</span><span class="p">,</span><span class="o">-</span><span class="n">Ex</span><span class="p">,</span><span class="o">-</span><span class="n">Ey</span><span class="p">,</span><span class="o">-</span><span class="n">Ez</span><span class="p">],[</span><span class="n">Ex</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="o">-</span><span class="n">Bz</span><span class="p">,</span><span class="n">By</span><span class="p">],[</span><span class="n">Ey</span><span class="p">,</span><span class="n">Bz</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="o">-</span><span class="n">Bx</span><span class="p">],[</span><span class="n">Ez</span><span class="p">,</span><span class="o">-</span><span class="n">By</span><span class="p">,</span><span class="o">+</span><span class="n">Bx</span><span class="p">,</span><span class="mi">0</span><span class="p">]])</span>
+<span class="n">F</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[2]:</div>
+
+
+
+
+<div class="output_latex output_subarea output_execute_result">
+$\displaystyle \left[\begin{matrix}0 & - E_{x} & - E_{y} & - E_{z}\\E_{x} & 0 & - B_{z} & B_{y}\\E_{y} & B_{z} & 0 & - B_{x}\\E_{z} & - B_{y} & B_{x} & 0\end{matrix}\right]$
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Con esta representación podemos obtener el tensor de Faraday completamente covariante usando:</p>
+$$
+F_{\mu\nu}=\eta_{\mu\alpha}\eta_{\nu\beta}F^{\alpha\beta}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>¿Cómo puede calcularse esta operación matricialmente? El producto de dos matrices $A$ y $B$ se puede escribir como:</p>
+$$
+(AB)_{ij}=\sum_n A_{in}B_{nj}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Usando la representación matricial de los tensores como:</p>
+$$
+F_c = \eta F \eta^\mathrm{T}
+$$
+</div>
+</div>
+</div><div class="box_theorem">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Proposición: Transformación de tensores de segundo rango.</strong><a id=''></a> Si $A^{\mu\nu}$ es un tensor de segundo rango y $A$ es su representación matricial (una matriz $4\times 4$ con entradas iguales a las componentes del tensor en una base dada) en el sistema de referencia del laboratorio, la representación matricial del tensor en el sistema de referencia vijero es:</p>
+<blockquote>$$A'=\Lambda A \Lambda^\mathrm{T}$$
+</blockquote>
+
+</div>
+</div>
+</div>
+    </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Para calcular la representación matricial del tensor de Faraday covariante, debemos introducir el tensor métrico:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">eta</span><span class="o">=</span><span class="n">sp</span><span class="o">.</span><span class="n">Matrix</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],[</span><span class="mi">0</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">],[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">]])</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Y hacer el producto matricial:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">Fcov</span><span class="o">=</span><span class="n">eta</span><span class="o">*</span><span class="n">F</span><span class="o">*</span><span class="n">sp</span><span class="o">.</span><span class="n">transpose</span><span class="p">(</span><span class="n">eta</span><span class="p">)</span>
+<span class="n">Fcov</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[4]:</div>
+
+
+
+
+<div class="output_latex output_subarea output_execute_result">
+$\displaystyle \left[\begin{matrix}0 & E_{x} & E_{y} & E_{z}\\- E_{x} & 0 & - B_{z} & B_{y}\\- E_{y} & B_{z} & 0 & - B_{x}\\- E_{z} & - B_{y} & B_{x} & 0\end{matrix}\right]$
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>En términos de las componentes matriciales del tensor el producto del tensor de Faraday contravariante y covariante se puede escribir como:</p>
+$$
+F^{\mu\nu}F_{\mu\nu}=-\sum_\mu \left(\sum_\nu F^{\mu\nu}F_{\nu\mu}\right)
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>El producto entre paréntesis se puede considerar las diagonales de la matriz:</p>
+$$
+A=FF_c
+$$<p>que a su vez es la representación matricial del tensor ${A^\mu}_\nu=F^{\mu\alpha}F_{\alpha\nu}$.  Así el escalar buscado es la traza, es decir la <em>suma de las componentes en la diagonal</em>, de la matriz A:</p>
+$$
+F^{\mu\nu}F_{\mu\nu}=-\sum_\mu{A^\mu}_\mu=-{A^\mu}_\mu\equiv -\mathrm{tr}({A^\mu}_\nu)
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>O en términos matriciales:</p>
+$$
+FF_c=-\mathrm{tr}(A)
+$$
+</div>
+</div>
+</div><div class="box_theorem">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Proposición: Módulo de un tensor de segundo rango.</strong><a id=''></a> Si $A^{\mu\nu}$ es un tensor de segundo rango y $A$ es su representación matricial (una matriz $4\times 4$ con entradas iguales a las componentes del tensor en una base dada), $A_{\mu\nu}$ es el correspondiente tensor covariante con $A_c$ su representación matricial, el módulo del tensor se define como:</p>
+<blockquote>$$|A|\equiv A^{\mu\nu}A_{\mu\nu}$$<p>Si definimos el tensor ${\bar{A}^\mu}_\nu=A^{\mu\alpha}A_{\alpha\nu}$, con representación matricial $\bar{A}=AA_c$, la magnitud de un tensor simétrico sera:
+$$|A|=\mathrm{tr}(\bar{A})$$
+y si es antisimétrico:
+$$|A|=-\mathrm{tr}(\bar{A})$$</p>
+</blockquote>
+
+</div>
+</div>
+</div>
+    </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>En <code>SymPy</code>:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">A</span><span class="o">=-</span><span class="p">(</span><span class="n">F</span><span class="o">*</span><span class="n">Fcov</span><span class="p">)</span><span class="o">.</span><span class="n">trace</span><span class="p">()</span>
+<span class="n">A</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[5]:</div>
+
+
+
+
+<div class="output_latex output_subarea output_execute_result">
+$\displaystyle 2 B_{x}^{2} + 2 B_{y}^{2} + 2 B_{z}^{2} - 2 E_{x}^{2} - 2 E_{y}^{2} - 2 E_{z}^{2}$
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Que es justamente lo que habíamos calculado previamente.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>¿Cómo calcular ahora el determinante del tensor de Faraday?</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">sp</span><span class="o">.</span><span class="n">factor</span><span class="p">(</span><span class="n">F</span><span class="o">.</span><span class="n">det</span><span class="p">())</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[6]:</div>
+
+
+
+
+<div class="output_latex output_subarea output_execute_result">
+$\displaystyle \left(B_{x} E_{x} + B_{y} E_{y} + B_{z} E_{z}\right)^{2}$
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Que es justamente la propiedad que habíamos visto antes.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="1.17.8.-Transformaci&#243;n-de-los-campos">1.17.8. Transformaci&#243;n de los campos<a class="anchor-link" href="#1.17.8.-Transformaci&#243;n-de-los-campos">&#182;</a></h3><p><a id='transformacion_campos'></a></p>
 
 </div>
 </div>
@@ -13386,16 +13710,6 @@ $$
 <p>Siendo el tensor de Faraday, un tensor, al pasar de un sistema de referencia inercial a otro  a través de las transformaciones de Lorentz-Einstein $\Lambda^{\mu'}_\nu$ el tensor transforma como:</p>
 $$
 F^{\mu'\nu'}={\Lambda^{\mu'}}_\mu {\Lambda^{\nu'}}_\nu F^{\mu\nu}
-$$
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>¿Cómo puede calcularse esta operación matricialmente? El producto de dos matrices $A$ y $B$ se puede escribir como:</p>
-$$
-(AB)_{ij}=\sum_n A_{in}B_{nj}
 $$
 </div>
 </div>
@@ -13435,35 +13749,104 @@ F'=\Lambda F \Lambda^\mathrm{T}
 $$
 </div>
 </div>
-</div><div class="box_theorem">
-    	 
+</div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Proposición: Transformación de tensores de segundo rango.</strong><a id=''></a> Si $A^{\mu\nu}$ es un tensor de segundo rango y $A$ es su representación matricial (una matriz $2\times 2$ con entradas iguales a las componentes del tensor en una base dada) en el sistema de referencia del laboratorio, la representación matricial del tensor en el sistema de referencia vijero es:</p>
-<blockquote>$$A'=\Lambda A \Lambda^\mathrm{T}$$
-</blockquote>
+<p>Podemos intentar realizar estas operaciones usando SymPy.  Para ello definamos los símbolos que usaremos:</p>
 
 </div>
 </div>
 </div>
-    </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Si usamos la configuración estándar:</p>
-$$
-\Lambda=
-\gamma
-\left(
-\begin{array}{cccc}
-1 &amp; -u_L &amp; 0 &amp; 0 \\
--u_L &amp; 1 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 1 &amp; 0\\
-0 &amp; 0 &amp; 0 &amp; 1
-\end{array}
-\right)
-$$<p>puede probarse (ver Problemas al final del capítulo) que las reglas de transformación de los campos eléctricos se pueden escribir como:</p>
+<p>Ahora veamos como es la transformación.  Para ello introduzcamos primero la TLE en la configuración estándar:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">u</span><span class="o">=</span><span class="n">sp</span><span class="o">.</span><span class="n">symbols</span><span class="p">(</span><span class="s2">&quot;u_L&quot;</span><span class="p">)</span>
+<span class="n">g</span><span class="o">=</span><span class="mi">1</span><span class="o">/</span><span class="n">sp</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">u</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">D</span><span class="o">=</span><span class="n">sp</span><span class="o">.</span><span class="n">Matrix</span><span class="p">([[</span><span class="n">g</span><span class="p">,</span><span class="o">-</span><span class="n">g</span><span class="o">*</span><span class="n">u</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],[</span><span class="o">-</span><span class="n">g</span><span class="o">*</span><span class="n">u</span><span class="p">,</span><span class="n">g</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">],[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]])</span>
+<span class="n">D</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[7]:</div>
+
+
+
+
+<div class="output_latex output_subarea output_execute_result">
+$\displaystyle \left[\begin{matrix}\frac{1}{\sqrt{1 - u_{L}^{2}}} & - \frac{u_{L}}{\sqrt{1 - u_{L}^{2}}} & 0 & 0\\- \frac{u_{L}}{\sqrt{1 - u_{L}^{2}}} & \frac{1}{\sqrt{1 - u_{L}^{2}}} & 0 & 0\\0 & 0 & 1 & 0\\0 & 0 & 0 & 1\end{matrix}\right]$
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>La transformacion nos quedará:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">sp</span><span class="o">.</span><span class="n">simplify</span><span class="p">(</span><span class="n">D</span><span class="o">*</span><span class="n">F</span><span class="o">*</span><span class="n">sp</span><span class="o">.</span><span class="n">transpose</span><span class="p">(</span><span class="n">D</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[8]:</div>
+
+
+
+
+<div class="output_latex output_subarea output_execute_result">
+$\displaystyle \left[\begin{matrix}0 & - E_{x} & \frac{B_{z} u_{L} - E_{y}}{\sqrt{1 - u_{L}^{2}}} & - \frac{B_{y} u_{L} + E_{z}}{\sqrt{1 - u_{L}^{2}}}\\E_{x} & 0 & \frac{- B_{z} + E_{y} u_{L}}{\sqrt{1 - u_{L}^{2}}} & \frac{B_{y} + E_{z} u_{L}}{\sqrt{1 - u_{L}^{2}}}\\\frac{- B_{z} u_{L} + E_{y}}{\sqrt{1 - u_{L}^{2}}} & \frac{B_{z} - E_{y} u_{L}}{\sqrt{1 - u_{L}^{2}}} & 0 & - B_{x}\\\frac{B_{y} u_{L} + E_{z}}{\sqrt{1 - u_{L}^{2}}} & - \frac{B_{y} + E_{z} u_{L}}{\sqrt{1 - u_{L}^{2}}} & B_{x} & 0\end{matrix}\right]$
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>De donde resulta entonces que en la transformación estándar las reglas de transformación de los campos eléctricos se pueden escribir como:</p>
 $$
 \begin{array}{rcl}
 E'_x &amp; = &amp; E_x\\
@@ -13513,7 +13896,7 @@ $$<p>donde $\vec{E}_\perp$ y  $\vec{B}_\perp$ son los vectores de campo eléctri
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="1.17.8.-La-fuerza-de-Lorentz">1.17.8. La fuerza de Lorentz<a class="anchor-link" href="#1.17.8.-La-fuerza-de-Lorentz">&#182;</a></h3><p><a id='fuerza_lorentz_covariante'></a></p>
+<h3 id="1.17.9.-La-fuerza-de-Lorentz">1.17.9. La fuerza de Lorentz<a class="anchor-link" href="#1.17.9.-La-fuerza-de-Lorentz">&#182;</a></h3><p><a id='fuerza_lorentz_covariante'></a></p>
 
 </div>
 </div>
@@ -13635,7 +14018,7 @@ $$f_L^0=\gamma\vec F\cdot \vec v_L$$<p>que es justamente lo que sabíamos sobre 
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="1.17.9.-Intrepretaci&#243;n-geom&#233;trica-del-campo-de-Faraday">1.17.9. Intrepretaci&#243;n geom&#233;trica del campo de Faraday<a class="anchor-link" href="#1.17.9.-Intrepretaci&#243;n-geom&#233;trica-del-campo-de-Faraday">&#182;</a></h3><p><a id='geometria_F'></a></p>
+<h3 id="1.17.1.-Intrepretaci&#243;n-geom&#233;trica-del-campo-de-Faraday">1.17.1. Intrepretaci&#243;n geom&#233;trica del campo de Faraday<a class="anchor-link" href="#1.17.1.-Intrepretaci&#243;n-geom&#233;trica-del-campo-de-Faraday">&#182;</a></h3><p><a id='geometria_F'></a></p>
 
 </div>
 </div>
@@ -13837,7 +14220,7 @@ $$<p>de modo que podríamos interpretar la proyección temporal del vector de Fa
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="1.17.1.-S&#237;ntesis">1.17.1. S&#237;ntesis<a class="anchor-link" href="#1.17.1.-S&#237;ntesis">&#182;</a></h3><p><a id='sintesis'></a></p>
+<h3 id="1.17.11.-S&#237;ntesis">1.17.11. S&#237;ntesis<a class="anchor-link" href="#1.17.11.-S&#237;ntesis">&#182;</a></h3><p><a id='sintesis'></a></p>
 
 </div>
 </div>
