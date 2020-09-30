@@ -13116,7 +13116,24 @@ $$
 B^i &amp; = &amp; \sum_{j,k} \epsilon_{ijk} \partial_j A^k\\
 E^i &amp; = &amp; -\partial_i A^0-\partial_0 A^i
 \end{array}
-$$<p>donde $\epsilon_{ijk}$ es el símbolo de Levi-Civita.</p>
+$$<p>donde $\epsilon_{ijk}$ es el símbolo de Levi-Civita:</p>
+$$
+\epsilon_{ijk}=
+\left\{
+\begin{array}{ll}
+0 &amp; \mathrm{Si\;hay\;un\;índice\;repetido}\\
++1 &amp; \mathrm{Si}\;ijk\;\mathrm{es\; permutación\;par}\\
+-1 &amp; \mathrm{Si}\;ijk\;\mathrm{es\; permutación\;impar}
+\end{array}
+\right.
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="1.17.5.-El-tensor-de-Faraday">1.17.5. El tensor de Faraday<a class="anchor-link" href="#1.17.5.-El-tensor-de-Faraday">&#182;</a></h3><p><a id='tensor_faraday'></a></p>
 
 </div>
 </div>
@@ -13137,14 +13154,6 @@ $$
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="1.17.5.-El-tensor-de-Faraday">1.17.5. El tensor de Faraday<a class="anchor-link" href="#1.17.5.-El-tensor-de-Faraday">&#182;</a></h3><p><a id='tensor_faraday'></a></p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
 <p>Si usamos las componentes contravariantes de la derivada (que implican simplemente un cambio en el signo de las componentes espaciales de las derivadas) podemos escribir:</p>
 $$
 \begin{array}{rcl}
@@ -13158,6 +13167,14 @@ B^1 &amp; = &amp; -(\partial^2 A^3-\partial^2 A^2)\\
 E^1 &amp; = &amp; -(\partial^0 A^1-\partial^1 A^0)
 \end{array}
 $$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Estas relaciones dejan adivinar que la combinación de cantidades $\partial^mu A^\nu$ parece jugar un papel unificador en la nueva formulación de la teoría electromagnética, de la misma manera que los campos eléctrico y magnético lo jugaron en el tiempo de Maxwell.  Esta nueva cantidad es tensorial y tiene segundo rango (es la combinación simultánea del tensor derivada y el tensor potencial).</p>
+
 </div>
 </div>
 </div>
@@ -13219,7 +13236,8 @@ $$
 <li><strong>Antisimetría</strong>: $F^{\mu\nu}=-F^{\nu\mu}$</li>
 <li><strong>Traza nula</strong>: $\sum_\mu F^{\mu\mu}=0$</li>
 <li><strong>Propiedad cíclica de la derivada contravariante</strong>: 
-  $$\partial^{[\alpha}F^{\mu\nu]}\equiv\partial^\alpha F^{\mu\nu}+\partial^\mu F^{\nu\alpha}+\partial^\nu F^{\alpha\mu}=0$$</li>
+  $$\partial^{[\alpha}F^{\mu\nu]}=F^{[\mu\nu,\alpha]}\equiv\partial^\alpha F^{\mu\nu}+\partial^\mu F^{\nu\alpha}+\partial^\nu F^{\alpha\mu}=0$$
+ donde en lo sucesivo $[\alpha\beta\gamma]=\alpha\beta\gamma,\beta\gamma\alpha,\gamma\alpha\beta$ es la permutación cíclica de los índices.</li>
 <li><strong>Determinante invariante</strong>: $\det F^{\mu\nu}=(\vec E\cdot \vec B)^2$</li>
 <li><strong>Escalar</strong>: $F^{\mu\nu}F_{\mu\nu}=2(E^2-B^2)$.</li>
 </ul>
@@ -13241,7 +13259,7 @@ $$
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Las ecuaciones de Maxwell inhomogenéas las habíamos escrito como:</p>
 $$
-\partial_\nu \partial^\mu A^\nu = \frac{4\pi}{c} J^\nu
+\partial_\mu \partial^\mu A^\nu = \frac{4\pi}{c} J^\nu
 $$
 </div>
 </div>
@@ -13259,18 +13277,7 @@ $$
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Ahora bien, por el gauge de Lorenz:</p>
-$$
-\frac{1}{c}\frac{\partial\phi}{\partial t}+\vec{\nabla}\cdot\vec{A}=\partial_\mu A^\mu 
-$$<p>y por lo tanto el segundo término en el lado izquierdo es cero.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Con esto las ecuaciones de Maxwell inhomogeneas se pueden escribir en términos del tensor de Faraday como:</p>
+<p>Como para escribir la ecuación anterior asumimos el Gauge de Lorentz, $\partial_\mu^\mu A^\nu=0$  las ecuaciones de Maxwell inhomogeneas se pueden escribir en términos del tensor de Faraday como:</p>
 $$
 {F^{\mu\nu}}_{,\mu}=\frac{4\pi}{c}J^\nu
 $$
@@ -13349,6 +13356,17 @@ $$
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p>En síntesis, en términos explícitamente covariantes, las ecuaciones de Maxwell se pueden escribir como:</p>
+\begin{eqnarray}
+{F^{\mu\nu}}_{,\mu} &amp; = &amp; \frac{4\pi}{c}J^\nu\;\;\mathrm{(Gauss-E)\;y\;(Ampère-Maxwell)}\\
+\partial^{[\alpha}F^{\mu\nu]} &amp; = &amp; 0\;\;\mathrm{(Gauss-B)\;y\;(Maxwell-Faraday)}\\
+\end{eqnarray}
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="1.17.7.-Transformaci&#243;n-de-los-campos">1.17.7. Transformaci&#243;n de los campos<a class="anchor-link" href="#1.17.7.-Transformaci&#243;n-de-los-campos">&#182;</a></h3><p><a id='transformacion_campos'></a></p>
 
 </div>
@@ -13367,7 +13385,7 @@ $$
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Siendo el tensor de Faraday, un tensor, al pasar de un sistema de referencia inercial a otro  a través de las transformaciones de Lorentz-Einstein $\Lambda^{\mu'}_\nu$ el tensor transforma como:</p>
 $$
-F^{\mu'\nu'}=\Lambda^{\mu'}_\alpha \Lambda^{\nu'}_\beta F^{\alpha\beta}
+F^{\mu'\nu'}={\Lambda^{\mu'}}_\mu {\Lambda^{\nu'}}_\nu F^{\mu\nu}
 $$
 </div>
 </div>
@@ -13387,8 +13405,8 @@ $$
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Si definimos la matriz $\bar{F}$ como:</p>
 $$
-\bar{F}^{\mu'\beta}=\sum_\alpha \Lambda^{\mu'}_\alpha F^{\alpha\beta}
-$$<p>o bien:</p>
+\bar{F}^{\mu'\nu}=\sum_\mu {\Lambda^{\mu'}}_\mu F^{\mu\nu}
+$$<p>o bien, matricialmente:</p>
 $$
 \bar{F} = \Lambda F
 $$
@@ -13398,9 +13416,9 @@ $$
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Entonces:</p>
+<p>Entonces la transformación original es:</p>
 $$
-F^{\mu'\nu'}=\bar{F}^{\mu'\beta} \Lambda^{\nu'}_\beta 
+F^{\mu'\nu'}=\sum_\nu \bar{F}^{\mu'\nu} {\Lambda^{\nu'}}_\nu
 $$
 </div>
 </div>
@@ -13410,22 +13428,26 @@ $$
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Por la simetría de la transformación de Lorentz-Einstein:</p>
 $$
-F^{\mu'\nu'}=\bar{F}^{\mu'\beta} (\Lambda^\mathrm{T})^{\beta}_{\nu'} 
+F^{\mu'\nu'}=\sum_\nu \bar{F}^{\mu'\nu} {\Lambda_{\nu}}^{\nu'}
 $$<p>que en términos matriciales se puede escribir como:</p>
 $$
 F'=\Lambda F \Lambda^\mathrm{T}
 $$
 </div>
 </div>
-</div>
+</div><div class="box_theorem">
+    	 
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Así es como transforman las componentes de un tensor de segundo rango.</p>
+<p><strong>Proposición: Transformación de tensores de segundo rango.</strong><a id=''></a> Si $A^{\mu\nu}$ es un tensor de segundo rango y $A$ es su representación matricial (una matriz $2\times 2$ con entradas iguales a las componentes del tensor en una base dada) en el sistema de referencia del laboratorio, la representación matricial del tensor en el sistema de referencia vijero es:</p>
+<blockquote>$$A'=\Lambda A \Lambda^\mathrm{T}$$
+</blockquote>
 
 </div>
 </div>
 </div>
+    </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13573,6 +13595,9 @@ $$
 <p>Multiplicando por $\gamma$ a ambos lados podemos escribir:</p>
 $$
 \frac{\mathrm{d}P^1}{\mathrm{d}\tau}=\frac{q}{c} (U^0 F^{10} - U^2 F^{12} - U^3 F^{13})
+$$<p>o en términos de las componentes covariantes de la cuadrivelocidad,</p>
+$$
+\frac{\mathrm{d}P^1}{\mathrm{d}\tau}=\frac{q}{c} (U^0 F^{10} + U_2 F^{12} + U_3 F^{13})
 $$
 </div>
 </div>
@@ -13582,10 +13607,10 @@ $$
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>De donde podemos proponer la generalización para calcular la cuadrifuerza:</p>
 $$
-f^\mu=\frac{q}{c}F^{\mu\nu}U_\nu
+f^\mu=\frac{q}{c}U_\nu F^{\mu\nu}
 $$<p>que llevada a un conjunto de cargas se puede escribir como:</p>
 $$
-K^\mu=F^{\mu\nu}J_\nu
+K^\mu=J_\nu F^{\mu\nu}
 $$<p>donde en esta última expresión $K^\mu$ representa una densidad de fuerza (fuerza por unidad de volumen).</p>
 
 </div>
@@ -13596,8 +13621,8 @@ $$<p>donde en esta última expresión $K^\mu$ representa una densidad de fuerza 
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Nota: La componente temporal de la fuerza de Lorentz.</strong><a id=''></a> La generalización presentada en el párrafo anterior apareció simplemente como un ejercicio de inducción, pero no lo es estrictamente.  Si bien las componentes espaciales de la cuadrifuerza siquen la misma regla:</p>
-<blockquote>$$f^i=\frac{q}{c}F^{i\nu}U_\nu$$<p>la componente temporal no tiene porque seguirla.  ¿De dónde viene la idea de que podemos generalizarla a esta componente.  Hagamos el ejercicio uinverso e intentemos determinar en términos de cantidaes convencionales que significa esta componente:</p>
-$$f^0=\frac{q}{c}F^{0\nu}U_\nu=\frac{q}{c}(F^{01} U_1+F^{02} U_2+F^{03} U_3$$<p>Si recordamos que $E^i=-F^{i0}$ y $U_i=-U^i$ entonces:</p>
+<blockquote>$$f^i=\frac{q}{c}F^{i\nu}U_\nu$$<p>la componente temporal no tiene porque seguirla.  ¿De dónde viene la idea de que podemos generalizarla a esta componente?.  Hagamos el ejercicio inverso e intentemos determinar en términos de cantidaes convencionales que significa esta componente:</p>
+$$f^0=\frac{q}{c}F^{0\nu}U_\nu=\frac{q}{c}(F^{01} U_1+F^{02} U_2+F^{03} U_3)$$<p>Si recordamos que $E^i=-F^{i0}$ y $U_i=-U^i$ entonces:</p>
 $$f^0=\gamma\frac{q}{c}\vec E\cdot \vec v$$<p>en unidades luz y reconociendo que la trifuerza experimentada por una carga en presencia de un campo eléctrico es $\vec F=q\vec E$ obtenemos:</p>
 $$f_L^0=\gamma\vec F\cdot \vec v_L$$<p>que es justamente lo que sabíamos sobre la componente temporal de la fuerza.  Es decir la componente temporal de la fuerza de Lorentz no es otra cosa que la componente temporal de la cuadrifuerza de un campo eléctrico.</p>
 <p>Ahora bien, sabemos también que $f_L^0=\mathrm{d}E/\mathrm{d}t$, siendo $E$ en este contexto, la energía total de la partícula.  De allí que la componente cero de la fuerza de Lorentz es simplemente la potencia de la fuerza de Lorentz, la tasa a la cual se transfiere o remueve energía de la partícula.</p>
@@ -13727,10 +13752,10 @@ F_{Lz}
 q
 \left(
 \begin{array}{cccc}
-0 &amp; (-v_{Lx})(-E_x) &amp; (-v_{Ly})(-E_y) &amp; (-v_{Lz})(-E_z)\\
-E_x &amp; 0 &amp; (-v_{Ly})(-B_z) &amp; +(-v_{Lz})B_y \\
-E_y &amp; +(-v_{Lx})B_z &amp; 0 &amp; (-v_{Lz})(-B_x) \\
-E_z &amp; (-v_{Lx})(-B_{Ly}) &amp; +(-v_{Ly})B_x &amp; 0 \\
+0+ &amp; (-v_{Lx})(-E_x)+ &amp; (-v_{Ly})(-E_y) +&amp; (-v_{Lz})(-E_z)\\
+E_x+ &amp; 0+ &amp; (-v_{Ly})(-B_z)+ &amp; (-v_{Lz})(+B_y) \\
+E_y+ &amp; (-v_{Lx})(+B_z)+ &amp; 0+ &amp; (-v_{Lz})(-B_x) \\
+E_z+ &amp; (-v_{Lx})(-B_y)+ &amp; (-v_{Ly})(+B_x)+ &amp; 0 \\
 \end{array}
 \right)
 $$<p>donde asumimos que sumamos sobre las filas de la matriz anterior (abusando de la notación).</p>
@@ -13776,7 +13801,7 @@ $$
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Es decir, si se proyecta el vector de Faraday sobre una dirección de la velocidad específica el negativo de la columna de correspondiente a la velocidad nos dará las componentes de la fuerza espacial magnética experimentada por la partícula.  Es como si la proyección espacial del tensor de Faraday produjera las fuerzas magnéticas.</p>
+<p>Es decir, si se proyecta el vector de Faraday sobre una dirección de la velocidad específica el negativo de la columna de correspondiente a la velocidad nos dará las componentes de la fuerza espacial magnética experimentada por la partícula.  Es como si la proyección espacial del tensor de Faraday produjera las fuerzas electromagnéticas.</p>
 
 </div>
 </div>
@@ -13822,10 +13847,10 @@ $$<p>de modo que podríamos interpretar la proyección temporal del vector de Fa
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>En síntesis la dinámica de cargas y campos electromagnéticos clásicos se describen con:</p>
 \begin{eqnarray}
-F^{[\mu\nu,\alpha]} &amp; = &amp; 0\\
-{F^{\mu\nu}}_{,\mu} &amp; = &amp; \frac{4\pi}{c}J^\mu\\
-{J^\mu}_{,\nu} &amp; = &amp; 0\\
-f^\mu &amp; = &amp; F^{\mu\nu} J_\nu
+{F^{\mu\nu}}_{,\mu} &amp; = &amp; \frac{4\pi}{c}J^\nu \;\; \mathrm{(Gauss-E)\;y\;(Ampère-Maxwell)}\\
+F^{[\mu\nu,\alpha]} &amp; = &amp; 0 \;\; \mathrm{(Gauss-B)\;y\;(Maxwell-Faraday)}\\
+{J^\mu}_{,\mu} &amp; = &amp; 0 \;\; \mathrm{(Continuidad)}\\
+K^\mu &amp; = &amp; F^{\mu\nu} J_\nu  \;\; \mathrm{(Fuerza\;de\;Lorentz)}
 \end{eqnarray}<p>donde $F^{\mu\nu}\equiv\partial^\mu A^\nu-\partial^\nu A^\mu$ y el cuadripotencial cumple ${A^\mu}_{,\mu}=0$ (gauge de Lorenz).</p>
 
 </div>

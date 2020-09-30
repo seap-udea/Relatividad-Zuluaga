@@ -13129,10 +13129,7 @@ $$
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Al comparar las cantidades anteriores con el cuadrivector velocidad podemos ver que tanto $\rho$ como $\vec J$ se pueden considerar las componentes temporal y espacial del cuadrivector:</p>
 $$
-J_L^\mu=\rho_0 U_L^\mu:\gamma\rho_0(1,\vec{v}_L):(\rho,\vec{J}_L)
-$$<p>o en unidades convencionales:</p>
-$$
-J^\mu:(c\rho,\vec{J})
+J^\mu=\rho_0 U^\mu:\gamma\rho_0(c,\vec{v}):(c\rho,\vec{J})
 $$
 </div>
 </div>
@@ -13145,9 +13142,9 @@ $$
 \nonumber
 \frac{\partial\rho}{\partial t}+\vec{\nabla}\cdot\vec J&amp;=&amp;0\\
 \nonumber
-\frac{\partial\rho}{\partial t}+\sum_i\frac{\partial J_{Li}}{\partial x_{Li}}&amp;=&amp;0\\
+\frac{\partial\rho}{\partial t}+\sum_i\frac{\partial J_{i}}{\partial x_{i}}&amp;=&amp;0\\
 \nonumber
-\frac{\partial J_L^0}{\partial x^0}+\sum_i\frac{\partial J_{Li}}{\partial x^i_{L}}&amp;=&amp;0
+\frac{\partial J^0}{\partial x^0}+\sum_i\frac{\partial J_{i}}{\partial x^i}&amp;=&amp;0
 \end{eqnarray}<p>y usando la notación de Einstein:</p>
 $$
 \partial_\mu J^\mu=0
@@ -13172,7 +13169,7 @@ $$
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Usando la notación de la derivada coma, la ecuación de continuidad se escribe finalmente como:</p>
 $$
-J^\mu_{,\mu}=0
+{J^\mu}_{,\mu}=0
 $$<p>Esta es la forma <strong>manifiestamente covariante</strong> de la ecuación de continudad.</p>
 
 </div>
@@ -13189,7 +13186,7 @@ $$<p>Esta es la forma <strong>manifiestamente covariante</strong> de la ecuació
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Habíamos escrito las ecuaciones inhomogéneas en la forma:</p>
+<p>Habíamos escrito las ecuaciones $\mathrm{(Gauss-E)}$ y $\mathrm{(Ampère-Maxwell)}$ como:</p>
 \begin{eqnarray}
 \nonumber
 \frac{1}{c^2}\frac{\partial^2\phi}{\partial t^2}-\vec{\nabla}^2\phi &amp; = &amp; 4\pi\rho\\
@@ -13206,10 +13203,11 @@ $$<p>Esta es la forma <strong>manifiestamente covariante</strong> de la ecuació
 <ul>
 <li><p>El operador diferencial en las dos ecuaciones se puede escribir en términos de la derivada covariante como:</p>
 <p>$$
-\frac{1}{c^2}\frac{\partial^2}{\partial t^2}-\vec{\nabla}^2=\partial_\mu \partial^\mu
-$$</p>
+\Box\equiv\frac{1}{c^2}\frac{\partial^2}{\partial t^2}-\vec{\nabla}^2=\eta^{\mu\nu}\partial_\mu\partial_\nu=\partial_\mu \partial^\mu
+$$
+donde $\eta^{\mu\nu}=\eta_{\mu\nu}$ es la inversa de la métrica de Minkowski que es igual a ella misma.  Llamamos a este el <strong>operador d'Alambertiano</strong>.</p>
 </li>
-<li><p>El lado derecho de las dos ecuaciones son las componentes de la cuadricorriente.</p>
+<li><p>El lado derecho de las dos ecuaciones son las componentes de la cuadricorriente $\tilde J$.</p>
 </li>
 </ul>
 
@@ -13222,7 +13220,7 @@ $$</p>
 <p>De este modo las ecuaciones se pueden escribir como:</p>
 \begin{eqnarray}
 \nonumber
-\partial_\mu \partial^\mu \phi &amp; = &amp; \frac{4\pi}{c} J^0\\
+\partial_\mu \partial^\mu \left(\frac{\phi}{c}\right) &amp; = &amp; \frac{4\pi}{c} J^0\\
 \nonumber
 \partial_\mu \partial^\mu \vec A &amp; = &amp; \frac{4\pi}{c} \vec{J}\\
 \end{eqnarray}
@@ -13234,7 +13232,7 @@ $$</p>
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Es decir si definimos la cantidad:</p>
 $$
-A^\mu:(\phi,\vec A)
+A^\mu:(\phi/c,\vec A)
 $$<p>las ecuaciones inhomogéneas de Maxwell se pueden escribir de forma manifiestamente covariantes como:</p>
 $$
 \partial_\mu \partial^\mu A^\nu = \frac{4\pi}{c} J^\nu
@@ -13246,12 +13244,32 @@ $$<p>y de la naturaleza tensorial de las cantidades involucrados podemos deducir
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p>O usando la notación <em>coma</em>:</p>
+$$
+{{A^\nu}_{,\mu}}^{,\mu}=\frac{4\pi}{c} J^\nu
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <p>Nótese que el cuadripotencial se puede obtener mediante la integral:</p>
 $$
-A^\mu(x^\nu)=\frac{1}{c}\int_\Omega\frac{J^\mu(x'^\nu)\mathrm{d}^3\vec{r}'}{|\vec{r}-\vec{r}'|}
-$$<p>donde imponemos adicionalmente la condición que el intervalo entre los evento $x'^\nu$ con respecto al evento $x^\nu$ debe ser luminoide:</p>
-$$x^\nu x'_\nu=0$$<p>que es el equivalente a la condición de retraso en la formulación clásica.</p>
+A^\mu(\tilde x)=\frac{1}{c}\int_\Omega\frac{J^\mu(\tilde x')\mathrm{d}^3\vec{r}'}{|\vec{r}-\vec{r}'|}
+$$<p>donde imponemos adicionalmente la condición que el intervalo entre los evento $\tilde x'$ con respecto al evento $\tilde x$, $\Delta \tilde x=\tilde x-\tilde x'$ debe ser luminoide:</p>
+$$|\Delta \tilde x|=0$$<p>que es el equivalente a la condición de retraso en la formulación clásica.</p>
 
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Ahora bien, por el gauge de Lorenz:</p>
+$$
+\frac{1}{c}\frac{\partial\phi}{\partial t}+\vec{\nabla}\cdot\vec{A}=\partial_\mu A^\mu=0
+$$
 </div>
 </div>
 </div><div style="background:lightgray">

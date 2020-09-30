@@ -13126,14 +13126,14 @@ E_y'&amp;=&amp;\gamma\left(E_y-\frac{u}{c}B_z\right)
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Las ecuaciones que necesitamos escribir de forma manifiestamente covariantes son:</p>
+<p>Las ecuaciones de Maxwell microscópicas y en unidades gaussianas y que necesitamos escribir de forma manifiestamente covariantes, las introducimos en una sección anterior y se pueden escribir como:</p>
 <ul>
 <li><p><strong>Ecuaciones de Maxwell</strong>:</p>
 <p>\begin{eqnarray}
-\vec{\nabla}\cdot\vec{E}&amp;=&amp;4\pi\rho\\
-\vec{\nabla}\cdot\vec{B}&amp;=&amp;0\\
-\vec{\nabla}\times\vec{E}+\frac{1}{c}\frac{\partial\vec B}{\partial t}&amp;=&amp;0\\
-\vec{\nabla}\times\vec{B}-\frac{1}{c}\frac{\partial\vec E}{\partial t}&amp;=&amp;\frac{4\pi}{c}\vec{J}\\  
+\vec{\nabla}\cdot\vec{E}&amp;=&amp;4\pi\rho\;\;\mathrm{(Gauss-E)}\\
+\vec{\nabla}\cdot\vec{B}&amp;=&amp;0\;\;\mathrm{(Gauss-B)}\\
+\vec{\nabla}\times\vec{E}+\frac{1}{c}\frac{\partial\vec B}{\partial t}&amp;=&amp;0\;\;\mathrm{(Maxwell-Faraday)}\\
+\vec{\nabla}\times\vec{B}-\frac{1}{c}\frac{\partial\vec E}{\partial t}&amp;=&amp;\frac{4\pi}{c}\vec{J}\;\;\mathrm{(Ampère-Maxwell)}\\  
 \end{eqnarray}</p>
 </li>
 </ul>
@@ -13144,8 +13144,16 @@ E_y'&amp;=&amp;\gamma\left(E_y-\frac{u}{c}B_z\right)
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p>Pero estas ecuaciones por sí solas no expresan todas las posibles relaciones entre las cantidades de la teoría.  A continuación presentamos una síntesis de otras relaciones y cantidades complementarias importantes, bien reconocidas en la teoría electromagnética.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li><p><strong>Conservación de la carga eléctrica</strong>:</p>
+<li><p><strong>Conservación de la carga eléctrica</strong>:  La carga eléctrica es una cantidad clave en el universo.  Como la masa, la carga de una partícula o de un sistema en su totalidad, es indepeniente del sistema de referencia en el que se mida (esto debemos elevarlo a la categoría de un postulado).  Esta idea se expresa, clásicamente en la forma de la ecuación de continuidad que se escribe:</p>
 <p>$$
 \frac{\partial\rho}{\partial t}=-\vec{\nabla}\cdot\vec J
 $$</p>
@@ -13159,70 +13167,14 @@ $$</p>
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li><p><strong>Ley de Lorentz</strong>:</p>
-<p>Sobre una carga individual:
-$$
-\vec F = q (\vec E + \frac{1}{c}q\vec v\times \vec B)
-$$</p>
-<p>Sobre una corriente de carga:
-$$
-\vec f = \rho \vec E + \frac{1}{c}\vec J\times \vec B
-$$</p>
-</li>
-</ul>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Donde las cantidades implicadas son:</p>
-<ul>
-<li><strong>Campo eléctrico ${\vec E}$</strong>. Es una cantidad fundamental.  En la teoría clásica es producido por cargas individuales (a través de la primera ecuación) o en simultánea con campos magnéticos variables (tercera ecuación). Las unidades del campo eléctrico son: $[E]=$V/m (1 V = 1 J/C).</li>
-</ul>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li><strong>Densidad de flujo magnético ${\vec B}$</strong>.  Esta relacionada con el campo magnético $\vec H$.  En el vacío $\vec H=\mu_0 \vec B$, donde $\mu_0=4\pi\times 10^{-7}$ N m A$^{-1}$ (1 A = 1 C/s).  Las unidades de la densidad de flujo magnético son: $[B]=$T (Tesla, 1 T = N m$^{-1}$ A$^{-1}$).</li>
-</ul>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li><strong>Densidad de carga eléctrica $\rho$</strong>.  La carga eléctrica es una propiedad fundamental de algunas partículas elementales en la naturaleza.  La carga de una partícula se <em>asume</em> un invariante en la relatividad.  Las unidades de densidad de carga son $[\rho]$=C m$^{-3}$.</li>
-</ul>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li><strong>Densidad de flujo de corriente $\vec J$</strong>. Cuando en el espacio hay cargas en movimiento se puede definir el clujo de carga somo la tasa a la que pasa carga eléctrica por unidad de área.  Las unidades de la densidad de flujo de corriente es $[J]$=A m$^{-2}$.</li>
-</ul>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li><p><strong>Veclocidad de la luz $c$</strong>.  Es una constante de la naturaleza $c=2.999792458\times 10^8$ m s$^{-1}$.  Se relaciona con otra constante que no aparece explícitamente en la versión de las ecuaciones escritas arriba, la permeabilidad eléctrica del vacío, $\epsilon_0=8.854\times 10^{-12}$ C$^2$ m$^{-2}$ N$^{-1}$.  Usando $\epsilon_0$, la velocidad se escribe:</p>
+<li><p><strong>Ley de Lorentz</strong>:  Una de las consecuencias tardías de la teoría electromagnética de Maxwell fue la descripción de la fuerza que experimenta una carga eléctrica que se mueve en presencia de un campo eléctrico y un campo magnético.  En unidades gaussianas la fuerza es:</p>
 <p>$$
-  c=\frac{1}{\sqrt{\mu_0\epsilon_0}}
-  $$</p>
+\vec F = q (\vec E + \frac{1}{c}\vec v\times \vec B)
+$$</p>
+<p>Si lo que tenemos es un flujo de corriente con densidad $\vec J$ la denisdad de fuerza $\vec{\cal F}$ será:
+$$
+\vec{\cal F} = \rho \vec E + \frac{1}{c}\vec J\times \vec B
+$$</p>
 </li>
 </ul>
 
@@ -13233,14 +13185,13 @@ $$</p>
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li><p><strong>Potencial escalar eléctrico $\phi$ y vectorial magnético $\vec A$</strong>.  Las ecuaciones de Maxwell pueden escribirse también en términos de funciones potenciales, que permiten escribir los campos de forma alternativa como:</p>
+<li><p><strong>Potencial escalar eléctrico $\phi$ y vectorial magnético $\vec A$</strong>. Las fuerzas eléctrica y magnética son consercvativas.  Esto significa que pueden escribirse en términos de funciones de potencial o simplemente potenciales.  Los potenciales escalar eléctrico $\phi$ y vectorial magnético $\vec A$ permiten expresar los campos y sus relaciones de formas alternativas.  En unidades gaussianas los campos eléctrico y magnético se obtienen a partir de los potenciales con las relaciones:</p>
 <p>\begin{eqnarray}
   \nonumber
   \vec B &amp; = &amp; \vec{\nabla}\times\vec A\\
   \nonumber
   \vec E &amp; = &amp; -\vec{\nabla}\phi-\frac{1}{c}\frac{\partial\vec A}{\partial t}
   \end{eqnarray}</p>
-<p>Los potenciales eléctrico y magnético son cantidades auxiliares y no físicas.  Aún así con muy útiles y es bueno tenerlas en el radar.</p>
 </li>
 </ul>
 
@@ -13251,7 +13202,7 @@ $$</p>
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li><p><strong>Libertad Gauge</strong>.  Los potenciales pueden escogerse de una diversidad muy amplia de familias.  En particular:</p>
+<li><p><strong>Libertad Gauge</strong>.   Es importante tener en cuenta que los potenciales eléctrico y magnético son cantidades matemáticas auxiliares.  Su valor puntual no es físicamente significativo.  Así por ejemplo, en el caso el potencial escalar eléctrico, sabemos que sumar o restar una constante no afecta el campo eléctrico.  Decimos que son las <em>diferencias e potencial</em> lo que es físicamente medible.  Estas ideas se expresan diciendo que hay una <em>libertad</em> en la elección de los potenciales.  Llamamos a esta la <em>libertad gauge</em> (libertad de calibración).  Puede probarse que la forma más general de escribir la libertad gauge es suponiendo que existe una función arbitraria del $\chi(t)$.  Dados un potenciales escalar $\phi$ y uno vectorial $\vec A$, los siguientes potenciales también describiran los campos en una situación dada:</p>
 <p>\begin{eqnarray}</p>
 
 <pre><code>\nonumber
@@ -13261,7 +13212,7 @@ $$</p>
 \end{eqnarray}
 
 </code></pre>
-<p>también son potenciales validos.  ¿Qué funciones de potencial elegir?.</p>
+<p>La elección de $\chi(t)$ será cuestión de conveniencia.</p>
 </li>
 </ul>
 
@@ -13272,15 +13223,16 @@ $$</p>
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li><p><strong>Gauge de Coulomb</strong>.  Si se reemplaza la definición del campo eléctrico en la primera ecuación de Maxwell se obtiene:</p>
+<li><p><strong>Gauge de Coulomb</strong>.  Si se reemplaza la definición del campo eléctrico en la ecuación $\mathrm{(Gauss-E)}$ se obtiene:</p>
 <p>$$
-\frac{1}{c}\frac{\partial}{\partial t}(\vec{\nabla}\cdot\vec{A})+\vec{\nabla}^2\phi=-4\pi\rho
+-\vec{\nabla}^2\phi+\frac{1}{c}\frac{\partial}{\partial t}(\vec{\nabla}\cdot\vec{A})=4\pi\rho
 $$
 Esta ecuación adopta la forma de la ley de Coulomb si se escoge arbitrariamente que el potencial vectorial magnético cumpla la condición:</p>
 <p>$$
 \vec{\nabla}\cdot\vec{A}=0
-$$
-que se conoce como <strong>gauge de Coulomb</strong>.  Esta condición sin embargo no es covariante (no involucra tensores, ni invariantes) y por lo tanto no es apropiada para la relatividad.</p>
+$$</p>
+<p>Es decir, debemos escoger la función de libertad gauge $\chi(t)$ tal que en todos los puntos del espacio se cumpla esta condición.  Llamamos a este el <strong>gauge de Coulomb</strong>.</p>
+<p>Es de anotarse, sin embargo, que esta condición no es covariante bajo TLE (no involucra tensores, ni cantidades invariantes como veremos) y por lo tanto no es apropiada para la relatividad.</p>
 </li>
 </ul>
 
@@ -13291,20 +13243,53 @@ que se conoce como <strong>gauge de Coulomb</strong>.  Esta condición sin embar
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li><p><strong>Gauge de Lorentz</strong>.  Un gauge que resulta covariante puede escribirse como:</p>
+<li><p><strong>Gauge de Lorentz</strong>.  Un gauge que si resulta ser covariante bajo las TLE puede escribirse como:</p>
 <p>$$
 \frac{1}{c}\frac{\partial\phi}{\partial t}+\vec{\nabla}\cdot\vec{A}=0
 $$</p>
-<p>Cuando los potenciales se escriben con esta condición se dice que se usa el gauge de Lorenz.</p>
-<p>Nótese que si se usa el gauge de Lorentz la primera ecuación inhomogénea de Maxwell es equivalente a la ecuación:</p>
+<p>Llamamos a este el <strong>gauge de Lorentz</strong>.  Bajo el gauge de Lorentz la ecuación $\mathrm{(Gauss-E)}$ adopta una interesante forma:</p>
 <p>$$
 \frac{1}{c^2}\frac{\partial^2\phi}{\partial t^2}-\vec{\nabla}^2\phi=4\pi\rho
 $$</p>
-<p>Puede probarse, de la misma manera, que la ecuación inhomogénea del campo magnético se puede escribir de forma análoga como:</p>
+<p>Por otro lado la ecuación $\mathrm{(Ampère-Maxwell)}$ puede probarse, se puede escribir de forma análoga como:</p>
 <p>$$
 \frac{1}{c^2}\frac{\partial^2\vec A}{\partial t^2}-\vec{\nabla}^2\vec A=\frac{4\pi}{c}\vec J
 $$</p>
-<p>Estas dos ecuaciones son ecuaciones de onda con fuentes $\rho$ y $\vec J$.  El gauge de Lorenz entonces, físicamente, representa la acción de los campos mediada por ondas electromagnéticas, mientras que el gauge de Coulomb representa la acción del campo a distancia, instantáneamente.</p>
+<p>Estas dos ecuaciones son ecuaciones de onda para los potenciales escalar y vectorial con fuentes $\rho$ y $\vec J$, respectivamente.</p>
+<p>El gauge de Lorenz entonces, no solo es covariante, sino que dadas las condiciones de frontera apropiadas, predice la existencia de ondas electromagnéticas.  Estas ondas transportan los campos en tiempos finitos de unos puntos a otros del espacio-tiempo.  Es interesante anotar, en contraste, que el gauge de Coulomb y la ley de Coulomb derivada de él asume la existencia de una acción a distancia.  Su falta de covarianza es evidencia de la falta de consistencia de esta ley con la idea del espacio-tiempo y de un límite para la propagación de información.  Podríamos decir que la teoría electromagnética, incluso antes del descubrimiento de la relatividad, ya lo sabía todo.</p>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li><p><strong>Solución de ondas planas</strong>. Una solución central a la ecuación de ondas en el vacio y bajo unas condiciones de frontera, es la de ondas planas.  Bajo estas condiciones el campo escalar y vectorial se puede escribir como:</p>
+<p>\begin{eqnarray}
+\phi(\vec r,t) &amp; = &amp; \phi_0 e^{i(\vec k\cdot \vec r-\omega t)}\\
+\vec A(\vec r,t) &amp; = &amp; \vec A_0 e^{i(\vec k\cdot \vec r-\omega t)}
+\end{eqnarray}
+donde:</p>
+<p>$$
+\vec k = \frac{2\pi}{\lambda} \hat k
+$$
+es el vector de ondas, $\lambda$ es la longitud de onda y $\hat k$ es la dirección de propagación.</p>
+<p>Por otro lado</p>
+<p>$$
+\omega = 2\pi f = \frac{2\pi}{P}
+$$
+es la frecuencia angular siendo $f$ la frecuencia de la onda y $P$ su período.</p>
+<p>En el vacío, el número de onda (la longitud de onda) y la frecuencia angular (la frecuencia) se relacionan a través de la relación de dispersión:</p>
+<p>$$
+\omega = c k
+$$
+que equivale a:</p>
+<p>$$
+\lambda f = c
+$$</p>
 </li>
 </ul>
 
@@ -13317,11 +13302,11 @@ $$</p>
 <ul>
 <li><p><strong>Cálculo de los potenciales</strong>.  En el Gauge de Lorenz los potenciales vectorial y escalar pueden calcularse usando las ecuaciones:</p>
 <p>$$
-  \vec A(\vec r,t)=\frac{\mu_0}{4\pi}\int_\Omega\frac{\vec{J}(\vec r',t')\mathrm{d}^3\vec{r}'}{|\vec{r}-\vec{r}'|}
+  \vec A(\vec r,t)=\frac{1}{c}\int_\Omega\frac{\vec{J}(\vec r',t')\mathrm{d}^3\vec{r}'}{|\vec{r}-\vec{r}'|}
   $$
   y</p>
 <p>$$
-  \phi(\vec r,t)=\frac{1}{4\pi\epsilon_0}\int_\Omega\frac{\rho(\vec r',t')\mathrm{d}^3\vec{r}'}{|\vec{r}-\vec{r}'|}
+  \phi(\vec r,t)=\int_\Omega\frac{\rho(\vec r',t')\mathrm{d}^3\vec{r}'}{|\vec{r}-\vec{r}'|}
   $$
   donde el tiempo $t'$ usado en las expresiones anteriores se conoce como el tiempo retardado:</p>
 <p>$$
