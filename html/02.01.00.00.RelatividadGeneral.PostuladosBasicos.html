@@ -13371,16 +13371,24 @@ $$\vec g = \frac{GM}{r^3}\vec r$$<p>Por este último hecho a este también se lo
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Postulado: Principio de equivalencia.</strong><a id=''></a> En cualquier evento $x^\nu$ de un espacio-tiempo arbitrario, donde la métrica sea $g_{\mu\nu}(x^\nu)$ es posible encontrar un sistema de coordenadas $x^{\mu'}(x^\nu)$ (transformación general no lineal) tal que se cumplan simultáneamente:</p>
-<blockquote>$$g_{\mu'\nu'}\left.\right|_{x^\nu} =\eta_{\mu'\nu'}$$<p>y 
-$$\partial_{\alpha'} g_{\mu'\nu'}|_{x^\nu}= 0$$</p>
-<p>En este sistema de coordenadas las ecuaciones manifiestamente covariantes que describen toas las leyes de la física en el espacio-tiempo plano son válidas.  Llamamos al sistema de coordenadas donde se cumple esto un <strong>sistema de referencia inercial local</strong> o un <strong>sistema de coordenadas geodésico</strong>.</p>
+<p><strong>Postulado: Principio de equivalencia..</strong><a id=''></a> En cualquier evento $\tilde x$ de un espacio-tiempo arbitrario, donde la métrica sea $g_{\mu\nu}(\tilde x)$ es posible encontrar un sistema de coordenadas $\tilde x'(\tilde x)$ (transformación general no lineal) tal que se cumplan simultáneamente:</p>
+<blockquote>$$g_{\mu'\nu'}\left.\right|_{\tilde x} =\eta_{\mu'\nu'}$$<p>y 
+$$\partial_{\alpha'} g_{\mu'\nu'}|_{\tilde x}= 0$$</p>
+<p>En este sistema de coordenadas las ecuaciones manifiestamente covariantes que describen todas las leyes de la física en el espacio-tiempo plano son válidas.  Llamamos al sistema de coordenadas donde se cumple esto un <strong>sistema de referencia inercial local</strong> con un <strong>sistema de coordenadas geodésico</strong>.</p>
 </blockquote>
 
 </div>
 </div>
 </div>
     </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>El principio de equivalencia se puede interpretar también diciendo que en cada punto de un espacio-tiempo general siempre es posible definir un sistema de ejes tal que la métrica sea localmente la métrica de Minkowski.  Nótese que este resultado es similar al que habíamos mencionado antes de que para un observador acelerado siempre es posible elegir una base (la <strong>base física</strong>) en la cuál la métrica sea la métrica de Minkowski y en la que se definan las cantidades físicas.  En otras palabras, usando el lenguaje del principio de equivalencia geométrico, la base en la que se hacen las medidas en el espacio tiempo curvo es la del sistema de coordenadas geodésico.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13393,7 +13401,7 @@ $$\partial_{\alpha'} g_{\mu'\nu'}|_{x^\nu}= 0$$</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Nota: Gravedad no es lo mismo que aceleración.</strong><a id=''></a> El principio de equivalencia moderno formulado anteriormente tiene una importante y sutil diferencia con el principio de equivalencia de Einstein de 1907.  Según ese principio un campo gravitacional es equivalente a un sistema de referencia acelerado.  Si bien en su momento este principio fue de utilidad para Einstein para realizar sus primeras predicciones asombrosas sobre las implicaciones de la teoría de la relatividad, en realidad, como lo probó el mismo Einstein en su versión final de la teoría.</p>
+<p><strong>Nota: Gravedad no es lo mismo que aceleración.</strong><a id=''></a> El principio de equivalencia moderno formulado anteriormente tiene una importante y sutil diferencia con el principio de equivalencia de Einstein de 1907.  Según ese principio un campo gravitacional es equivalente a un sistema de referencia acelerado.  Si bien en su momento este principio fue de utilidad para Einstein para realizar sus primeras predicciones asombrosas sobre las implicaciones de la teoría de la relatividad, en realidad, como lo probó el mismo Einstein en su versión final de la teoría, el principio no es estrictamente correcto.</p>
 <blockquote><p>Lo explicaremos más adelante pero bastará con decir por ahora que el principio de equivalencia solo supone la anulación de las primeras derivadas de la métrica en el sistema geodésico, pero en un campo gravitacional las segundas derivadas de la métrica son realmente las más importantes y son diferentes de cero.  Esto no se puede conseguir solo con aceleración.</p>
 <p>Puesto en otros términos, con sistemas acelerados es imposible <em>imitar</em> los efectos de las mareas gravitacionales (que dependen de las segundas derivadas de la métrica).</p>
 <p>Una manifestación concreta del hecho de que un sistema de referencia acelerado no es equivalente a un campo gravitacional tiene que ver con el fenómeno de dilatación temporal.  Habíamos visto en el postulado de los relojes que la aceleración <strong>no produce atraso presente</strong>, solo se produce atraso a lo largo del tiempo.  En cambio, como veremos, la gravedad <strong>produce atraso presente</strong>.</p>
@@ -13431,7 +13439,7 @@ $$\partial_{\alpha'} g_{\mu'\nu'}|_{x^\nu}= 0$$</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Postulado: Principio de covarianza general.</strong><a id=''></a> Las leyes de la física son covariantes bajo  transformaciones de coordenadas generales $x^{\mu'}$, es decir cualquier regularidad física que pueda expresarse como relaciones entre <em>cantidades tensoriales generales</em> puede elevarse a la categoría de una ley física.</p>
+<p><strong>Postulado: Principio de covarianza general.</strong><a id=''></a> Las leyes de la física son covariantes bajo  transformaciones de coordenadas generales $x^{\mu'}(x^{\mu})$, es decir cualquier regularidad física que pueda expresarse como relaciones entre <em>cantidades tensoriales generales</em> puede elevarse a la categoría de una ley física.</p>
 
 </div>
 </div>
@@ -13496,8 +13504,8 @@ $$
 \mathrm{d}x^{\mu'} = \frac{\partial x^{\mu'}}{\partial x^\mu} \mathrm{d}x^\mu
 $$<p>que podemos escribir también como:</p>
 $$
-\mathrm{d}x^{\mu'} = {\cal G}^{\mu'}_\mu \mathrm{d}x^\mu
-$$<p>donde la matriz ${\cal G}^{\mu'}_\mu$ (que también podemos identificar como el Jacobiano de la transformación) jugará ahora el papel que en la relatividad especial jugo $\Lambda^{\mu'}_\mu$, con la diferencia que esta matriz es ahora distinta en cada punto del espacio.</p>
+\mathrm{d}x^{\mu'} = {{\cal G}^{\mu'}}_\mu(\tilde x)\;\mathrm{d}x^\mu
+$$<p>donde la matriz ${{\cal G}^{\mu'}}_\mu(\tilde x)$ (que también podemos identificar como el Jacobiano de la transformación) jugará ahora el papel que en la relatividad especial jugo $\Lambda^{\mu'}_\mu$, con la diferencia que esta matriz es ahora distinta en cada punto del espacio.</p>
 
 </div>
 </div>
@@ -13507,7 +13515,7 @@ $$<p>donde la matriz ${\cal G}^{\mu'}_\mu$ (que también podemos identificar com
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Justamente en términos de la nueva matriz de transformación definimos lo que llamaremos un <strong>tensor general</strong>, que será cualquier cantidad que transforme como lo hace el intervalo:</p>
 $$
-A^{\mu'} = {\cal G}^{\mu'}_\mu A^\mu
+A^{\mu'} = {{\cal G}^{\mu'}}_\mu(\tilde x) A^\mu
 $$
 </div>
 </div>
@@ -13527,7 +13535,7 @@ $$
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>La cantidad $g_{\mu\nu}$ es en sí misma un tensor general y transforma entonces de la forma:</p>
 $$
-g_{\mu'\nu'} = {\cal G}^{\mu}_{\mu'}{\cal G}^{\nu}_{\nu'} g_{\mu\nu}
+g_{\mu'\nu'} = {{\cal G}^{\mu}}_{\mu'}{{\cal G}^{\nu}}_{\nu'} g_{\mu\nu}
 $$<p>de modo que $\mathrm{d}s^2$ sigue siendo una cantidad invariante bajo estas transformaciones.</p>
 
 </div>

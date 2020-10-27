@@ -13290,6 +13290,36 @@ $$<p>que se conoce como el efecto Doppler transversal.</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p>Si introducimos el denominado <em>factor Doppler</em>:</p>
+$$
+D(u_L,\theta)\equiv\frac{1}{\gamma(1-u_L\cos\theta)}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Las ecuaciones anteriores se pueden escribir como:</p>
+\begin{eqnarray}
+\cos\theta &amp; = &amp;  \gamma D'(\cos\theta'+u_L)\\
+\sin\theta &amp; = &amp;  D' \sin\theta'
+\end{eqnarray}<p>donde $D'=D(-u_L,\theta')$.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="1.16.3.-Aberraci&#243;n-de-la-luz">1.16.3. Aberraci&#243;n de la luz<a class="anchor-link" href="#1.16.3.-Aberraci&#243;n-de-la-luz">&#182;</a></h3><p><a id='aberracion_luz'></a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <p>¿Qué pasa cuando $\cos\theta'=0$?.  En este caso en el sistema del Observador se ve:</p>
 $$
 \cos\theta=u_L
@@ -13301,7 +13331,128 @@ $$<p>Es decir, la luz que debería llegar al observador de la vertical aparece e
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="1.16.3.-Enfoque-relativista">1.16.3. Enfoque relativista<a class="anchor-link" href="#1.16.3.-Enfoque-relativista">&#182;</a></h3><p><a id='enfoque_relativista'></a></p>
+<p><a id='fig:Figure_25'></a><img src="./figures/vertical-stellar-aberration.png" alt="Aberración de la luz estelar"></p>
+<center><b>Figura 1.25</b>. Aberración de la luz estelar</center>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>La aberración de la luz es un fenómeno bien conocido en astronomía desde los 1800 cuando se descubrió por observaciones cuidadosas de la posición de las estrellas y en busca del paralaje estelar.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>El ángulo de paralaje $\phi$ (que sería el $\theta$ en nuestras expresiones previas) se calcula combinando las expresiones obtenidas antes, donde de acuerdo con la figura ahora $\theta'$ es el que llamamos $\theta$ (ángulo de emisión en el sistema de referencia en reposo):</p>
+$$
+\tan\phi=\frac{\sin\theta}{\gamma(u_L+\cos\theta)}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>La aberración máxima se produce cuando $\theta=90^\circ$ en cuyo caso:</p>
+$$
+\tan\phi_\mathrm{max}=\frac{1}{\gamma u_L}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>En el caso por ejemplo de la Tierra y para una fuente que debería encontrarse en el cenit ($\theta=90^\circ$), lo que nos interesará será la diferencia entre este ángulo y 90 grados:</p>
+$$
+\kappa=\pi/2-\phi_\mathrm{max}
+$$<p>que se conoce en astronomía como la <strong>constante de aberración</strong>.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">c</span><span class="o">=</span><span class="mf">299792.458</span> <span class="c1">#km/s, Velocidad de la luz</span>
+<span class="n">u</span><span class="o">=</span><span class="mf">29.78</span> <span class="c1">#km/s, Velocidad de la Tierra</span>
+<span class="n">uL</span><span class="o">=</span><span class="n">u</span><span class="o">/</span><span class="n">c</span>
+<span class="kn">from</span> <span class="nn">numpy</span> <span class="k">import</span> <span class="n">arctan</span><span class="p">,</span><span class="n">sin</span><span class="p">,</span><span class="n">cos</span><span class="p">,</span><span class="n">sqrt</span><span class="p">,</span><span class="n">pi</span>
+<span class="n">gamma</span><span class="o">=</span><span class="mi">1</span><span class="o">/</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">uL</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">phi</span><span class="o">=</span><span class="n">arctan</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="p">(</span><span class="n">gamma</span><span class="o">*</span><span class="n">uL</span><span class="p">))</span>
+<span class="n">k</span><span class="o">=</span><span class="n">pi</span><span class="o">/</span><span class="mi">2</span><span class="o">-</span><span class="n">phi</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s2">&quot;Aberración máxima en la Tierra: {k*180/pi*3600} arcsec&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Aberración máxima en la Tierra: 20.48939450014929 arcsec
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>El valor estándar en astronomía es $\kappa=20.49552$ arcsec.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>La aberración real de una estrella debenderá de su posición en el cielo y de la época del año en la que se la observe, pero nunca supera el máximo arriba.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a id='fig:Figure_26'></a><img src="./figures/horizontal-bradley-aberration.jpg" alt="Aberración de dos estrellas"></p>
+<center><b>Figura 1.26</b>. Aberración de dos estrellas</center>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="1.16.4.-Enfoque-relativista">1.16.4. Enfoque relativista<a class="anchor-link" href="#1.16.4.-Enfoque-relativista">&#182;</a></h3><p><a id='enfoque_relativista'></a></p>
 
 </div>
 </div>
@@ -13340,7 +13491,7 @@ $$
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><a id='fig:01.07.00.00.RelatividadEspecial.OpticaRelativista_25'></a><center><b>Figura 1.25.</b> </center></p>
+<p><a id='fig:01.07.00.00.RelatividadEspecial.OpticaRelativista_27'></a><center><b>Figura 1.27.</b> </center></p>
 
 </div>
 </div>
@@ -13348,8 +13499,16 @@ $$
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>%%latex</p>
+<p>El efecto del beaming relativistico puede observarse especialmente en sistemas astrofísicos tales como las explosiones de rayos gamma o los jets relativistas emitidos por discos de acreción alrededor de agujeros negros.</p>
 
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a id='fig:Figure_28'></a><img src="./figures/square-m87-beaming.png" alt="Jet de M87"></p>
+<center><b>Figura 1.28</b>. Jet de M87</center>
 </div>
 </div>
 </div><div style="background:lightgray">

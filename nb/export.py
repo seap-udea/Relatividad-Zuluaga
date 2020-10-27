@@ -17,8 +17,22 @@
 #  .//RelatividadEspecial.TransformacionesLorentzEinstein.Propiedades.ipynb
 # ########################################
 
+# ########################################
+#  .//RelatividadEspecial.TransformacionesLorentzEinstein.Numericas.ipynb
+# ########################################
+
+from numpy import zeros
 def Lambda_TLE(u):
-    from numpy import zeros
+    """
+    Calcula la matriz de transformación de Lorentz-Einstein 
+    para una velocidad relativa arbitraria.
+    
+    Entradas:
+       u (arreglo de 4 dimensiones): velocidad relativa
+    
+    Salidas:
+       Lambda (matriz de 4x4): TLE.
+    """
     Lambda=zeros((4,4))
     
     #Factor de Lorentz
@@ -33,7 +47,9 @@ def Lambda_TLE(u):
         for j in range(1,4):
             dij=0
             if i==j:dij=1
+            #i-1,j-1 en la velocidad porque sus índices empiezan en 0
             Lambda[i,j]=dij+(gamma-1)*u[i-1]*u[j-1]/umag**2
+    
     return Lambda
 
 
@@ -43,36 +59,37 @@ def mapa_TLE(ux=0.0,uy=0.0,uz=0.0,
     from numpy import array
     u=array([ux,uy,uz])
     Lambda=Lambda_TLE(-u)
-
-    #Escoge valores de x:
+    
+    #Red de valores de t' y x'
     from numpy import linspace
-    xs=linspace(0,rmax,ngrid+1,endpoint=True)
-    ts=linspace(0,rmax,ngrid+1,endpoint=True)
+    xps=linspace(0,rmax,nticks+1,endpoint=True)
+    tps=linspace(0,rmax,nticks+1,endpoint=True)
 
-    #Calcula valores de t' y x' usando la matriz:
+    #Iniciamos en cero los valores
     from numpy import zeros_like
-    tps=zeros_like(xs)
-    xps=zeros_like(xs)
-
-    from numpy import matmul
+    ts=zeros_like(tps)
+    xs=zeros_like(xps)
 
     import matplotlib.pyplot as plt
-    fig=plt.figure(figsize=(5,5))
+    fig=plt.figure(figsize=(4,4))
     ax=fig.gca()
 
-    for t in xs:
-        for i,x in enumerate(xs):
-            tps[i],xps[i],yp,zp=matmul(Lambda,[t,x,0,0])
-        ax.plot(tps,xps,'r-',alpha=0.5)
+    #Por cada fila calculamos los valores de t,x y graficamos el resultado
+    from numpy import matmul
+    for xp in xps:
+        for i,tp in enumerate(tps):
+            ts[i],xs[i],y,z=matmul(Lambda,[tp,xp,0,0])
+        ax.plot(ts,xs,'r-')
 
-    for x in xs:
-        for i,t in enumerate(ts):
-            tps[i],xps[i],yp,zp=matmul(Lambda,[t,x,0,0])
-        ax.plot(tps,xps,'r-',alpha=0.5)
+    #Por cada columna calculamos los valores de t,x y graficamos el resultado
+    for tp in xps:
+        for i,xp in enumerate(xps):
+            ts[i],xs[i],y,z=matmul(Lambda,[tp,xp,0,0])
+        ax.plot(ts,xs,'r-')
 
     #Decoración
-    ax.set_xticks(linspace(0,rmax,nticks+1,endpoint=True))
-    ax.set_yticks(linspace(0,rmax,nticks+1,endpoint=True))
+    ax.set_xticks(xps)
+    ax.set_yticks(xps)
     ax.set_xlabel("$t$")
     ax.set_ylabel("$x$")
     ax.set_xlim((0,rmax))
@@ -89,10 +106,6 @@ def mapa_TLE(ux=0.0,uy=0.0,uz=0.0,
 
 # ########################################
 #  .//RelatividadEspecial.Minkowski.ipynb
-# ########################################
-
-# ########################################
-#  .//RelatividadEspecial.OpticaRelativista.ipynb
 # ########################################
 
 # ########################################
@@ -121,6 +134,10 @@ def mapa_TLE(ux=0.0,uy=0.0,uz=0.0,
 
 # ########################################
 #  .//RelatividadEspecial.SintesisMecanicaRelativista.ipynb
+# ########################################
+
+# ########################################
+#  .//RelatividadEspecial.OpticaRelativista.ipynb
 # ########################################
 
 # ########################################
@@ -163,122 +180,36 @@ def mapa_TLE(ux=0.0,uy=0.0,uz=0.0,
 #  .//RelatividadGeneral.SimbolosChristoffel.ipynb
 # ########################################
 
-def Gamma(xmu,gfun,gargs=(),N=4,dxmax=1e-6,alpha=-1,mu=0,nu=0):
-    """
-    Calcula todos los símbolos de Christoffel
-    gfun: función métrica
-    xmu: evento
-    """
-    from scipy.misc import derivative
-    from numpy import where,arange
-    from numpy import zeros
-    #Indices
-    index=arange(N)
-
-    #Gamma
-    G=zeros((N,N,N))
-    
-    for pi in range(N):
-        for nu in range(N):
-            #Inversa
-            gpipi=1/gfun(xmu,pi,*gargs) #g^pipi
-            #Coeficientes diagonales
-            xd=xmu[pi] #Punto en el que estoy derivando
-            dx=max(dxmax,dxmax*abs(xd))
-            gnunu_pi=derivative(lambda x:gfun(where(index==pi,x,xmu),nu,*gargs),xd,dx)
-            G[pi,nu,nu]=-0.5*gpipi*gnunu_pi
-            #Coeficientes mixtos
-            if nu==pi:continue
-            xd=xmu[nu] #Punto en el que estoy derivando
-            dx=max(dxmax,dxmax*abs(xd))
-            gpipi_nu=derivative(lambda x:gfun(where(index==nu,x,xmu),pi,*gargs),xd,dx)
-            G[pi,pi,nu]=0.5*gpipi*gpipi_nu
-            G[pi,nu,pi]=G[pi,pi,nu]
-    return G if alpha<0 else G[alpha,mu,nu]
-
-
-from numpy import array
-def g_cilindricas_4d(xmu,mu):
-    """
-    Coeficiente métrico g_mumu calculados en el evento xmu 
-    para espacio-tiempo plano con coordenadas cilíndricas.
-    
-    g_munu=diag(1,-1,-r^2,-1)
-    """
-    from numpy import sin
-    t,r,teta,z=xmu
-    if mu==0:
-        g=1
-    elif mu==1:
-        g=-1
-    elif mu==2:
-        g=-r**2
-    elif mu==3:
-        g=-1
-    return g
+def Gamma_sym(gcomp,symbols):
+    from einsteinpy.symbolic import MetricTensor,ChristoffelSymbols
+    g=MetricTensor(gcomp.tolist(),symbols)
+    G=ChristoffelSymbols.from_metric(g)
+    var,Gfun=G.tensor_lambdify()
+    return Gfun
 
 
 # ########################################
 #  .//RelatividadGeneral.Geodesicas.ipynb
 # ########################################
 
-def A_parallel(A,u,xfun,gfun,fargs=(),gargs=(),N=4):
-    """
-    Calcula la derivada de las componentes de un vector A 
-    respecto al parámetro u de una función xfun
-    
-    Parametros:
-        A: Arreglo con componentes coordenadas del vector
-        u: Valor del parámetro
-    
-    Opciones:
-        xfun: función de la trayectoria (posición y derivada)
-        gfun: función da la métrica
-        fargs: argumentos de la función de la trayectoria
-        gargs: argumentos de la función de la métrica
-        N: Número de dimensiones
-    """
-    from export import Gamma
-    from numpy import zeros
-    dAdu=zeros(N)
-    xmu,dxmudu=xfun(u,*fargs)
-    G=Gamma(xmu,gfun,gargs,N)
-    for pi in range(N):
-        for mu in range(N):
-            for nu in range(N):
-                dAdu[pi]+=-G[pi,mu,nu]*A[mu]*dxmudu[nu]
-    return dAdu
+def Gfun_cil2d():
+    from export import Gamma_sym
+    from sympy import symbols,diag
+    s=symbols('r,theta')
+    r,q=s
+    gcomp=diag(1,r**2)
+    Gfun=Gamma_sym(gcomp,s)
+    return Gfun
 
 
-def g_cilindricas_2d(xmu,mu):
-    """
-    Coeficiente métrico g_mumu calculados en el evento xmu 
-    para espacio-tiempo plano con coordenadas cilíndricas.
-    
-    g_munu=diag(1,r^2)
-    """
-    r,teta=xmu
-    if mu==0:
-        g=1
-    elif mu==1:
-        g=r**2
-    return g
-
-
-def g_esfera_2d(xmu,mu,R=1):
-    """
-    Coeficiente métrico g_mumu calculados sobre la
-    superficie de una esfera de radio R.
-    
-    g_munu=diag(1,r^2)
-    """
-    from numpy import cos
-    fi,lamb=xmu
-    if mu==0:
-        g=R**2
-    elif mu==1:
-        g=R**2*cos(fi)**2
-    return g
+def Gfun_esf2d(R):
+    from export import Gamma_sym
+    from sympy import symbols,diag,cos
+    s=symbols('f,l')
+    f,l=s
+    gcomp=diag(R**2,R**2*cos(f)**2)
+    Gfun=Gamma_sym(gcomp,s)
+    return Gfun
 
 
 def transporte_paralelo_esferico(lat_0=0.0,alfa=0.0,
@@ -292,14 +223,14 @@ def transporte_paralelo_esferico(lat_0=0.0,alfa=0.0,
     from numpy import pi,linspace
     us=linspace(0,float(umax)*pi/180,int(npuntos))
     
-    
     #Vector a ser transportado
     #Parámetros de la trayectoria
     #Integración
     from scipy.integrate import odeint
     R=1
+    Gfun=Gfun_esf2d(R)
     lon_0=0
-    As=odeint(A_parallel,A0,us,args=(x_fun_esfera,g_esfera_2d,(lat_0,lon_0,tipo),(R,),N))
+    As=odeint(A_parallel,A0,us,args=(x_fun_esfera,Gfun,(lat_0,lon_0,tipo),N))
     #Gráfico
     import matplotlib.pyplot as plt
     plt.close("all")
@@ -358,7 +289,7 @@ def transporte_paralelo_esferico(lat_0=0.0,alfa=0.0,
     fig.tight_layout()
 
 
-def ecuacion_geodesica(Y,s,gfun,gargs,N=4):
+def ecuacion_geodesica(Y,s,Gfun,N=4):
     """
     Opciones:
         gfun: función que da la métrica
@@ -371,11 +302,11 @@ def ecuacion_geodesica(Y,s,gfun,gargs,N=4):
     dxds=Y[N:]
 
     dYds[:N]=dxds
-    G=Gamma(x,gfun,gargs,N)
+    G=array(Gfun(*x))
     for pi in range(N):
         for mu in range(N):
             for nu in range(N):
-                dYds[N+pi]+=-G[pi,mu,nu]*dxds[mu]*dxds[nu]
+                dYds[N+pi]+=-G[pi][mu][nu]*dxds[mu]*dxds[nu]
     return dYds
 
 
@@ -383,26 +314,15 @@ def ecuacion_geodesica(Y,s,gfun,gargs,N=4):
 #  .//RelatividadGeneral.InerciaYGeodesicas.ipynb
 # ########################################
 
-from numpy import array
-def g_newtoniana_4d(xmu,mu,R=1):
-    """
-    Coeficiente métrico g_mumu calculados en el evento xmu 
-    para espacio-tiempo plano con coordenadas cilíndricas.
-    
-    g_munu=diag(A,-1,-r^2,-r^2 sin^2 teta)
-    """
-    from numpy import sin
-    t,r,teta,fi=xmu
-    A=(1-R/r)
-    if mu==0:
-        g=A
-    elif mu==1:
-        g=-1
-    elif mu==2:
-        g=-r**2
-    elif mu==3:
-        g=-r**2*sin(teta)**2
-    return g
+#Metrica Newtoniana: g_munu=diag(A,-1,-r^2,-r^2 sin^2 teta)
+def Gfun_newton(R):
+    from export import Gamma_sym
+    from sympy import symbols,diag,sin
+    s=symbols('t r q f')
+    t,r,q,f=s
+    gcomp=diag((1-R/r),-1,-r**2,-r**2*sin(q)**2)
+    Gfun=Gamma_sym(gcomp,s)
+    return Gfun
 
 
 # ########################################
@@ -500,3 +420,132 @@ def g_newtoniana_4d(xmu,mu,R=1):
 # ########################################
 #  .//Apendices.CodigosUtiles.ipynb
 # ########################################
+
+def Gamma(xmu,gfun,gargs=(),N=4,dxmax=1e-6,alpha=-1,mu=0,nu=0):
+    """
+    Calcula todos los símbolos de Christoffel
+    gfun: función métrica
+    xmu: evento
+    """
+    from scipy.misc import derivative
+    from numpy import where,arange
+    from numpy import zeros
+    #Indices
+    index=arange(N)
+
+    #Gamma
+    G=zeros((N,N,N))
+    
+    for pi in range(N):
+        for nu in range(N):
+            #Inversa
+            gpipi=1/gfun(xmu,pi,*gargs) #g^pipi
+            #Coeficientes diagonales
+            xd=xmu[pi] #Punto en el que estoy derivando
+            dx=max(dxmax,dxmax*abs(xd))
+            gnunu_pi=derivative(lambda x:gfun(where(index==pi,x,xmu),nu,*gargs),xd,dx)
+            G[pi,nu,nu]=-0.5*gpipi*gnunu_pi
+            #Coeficientes mixtos
+            if nu==pi:continue
+            xd=xmu[nu] #Punto en el que estoy derivando
+            dx=max(dxmax,dxmax*abs(xd))
+            gpipi_nu=derivative(lambda x:gfun(where(index==nu,x,xmu),pi,*gargs),xd,dx)
+            G[pi,pi,nu]=0.5*gpipi*gpipi_nu
+            G[pi,nu,pi]=G[pi,pi,nu]
+    return G if alpha<0 else G[alpha,mu,nu]
+
+
+from numpy import array
+def g_cilindricas_4d(xmu,mu):
+    """
+    Coeficiente métrico g_mumu calculados en el evento xmu 
+    para espacio-tiempo plano con coordenadas cilíndricas.
+    
+    g_munu=diag(1,-1,-r^2,-1)
+    """
+    from numpy import sin
+    t,r,teta,z=xmu
+    if mu==0:
+        g=1
+    elif mu==1:
+        g=-1
+    elif mu==2:
+        g=-r**2
+    elif mu==3:
+        g=-1
+    return g
+
+
+def g_cilindricas_2d(xmu,mu):
+    """
+    Coeficiente métrico g_mumu calculados en el evento xmu 
+    para espacio-tiempo plano con coordenadas cilíndricas.
+    
+    g_munu=diag(1,r^2)
+    """
+    r,teta=xmu
+    if mu==0:
+        g=1
+    elif mu==1:
+        g=r**2
+    return g
+
+
+def g_esfera_2d(xmu,mu,R=1):
+    """
+    Coeficiente métrico g_mumu calculados sobre la
+    superficie de una esfera de radio R.
+    
+    g_munu=diag(1,r^2)
+    """
+    from numpy import cos
+    fi,lamb=xmu
+    if mu==0:
+        g=R**2
+    elif mu==1:
+        g=R**2*cos(fi)**2
+    return g
+
+
+from numpy import array
+def g_newtoniana_4d(xmu,mu,R=1):
+    """
+    Coeficiente métrico g_mumu calculados en el evento xmu 
+    para espacio-tiempo plano con coordenadas cilíndricas.
+    
+    g_munu=diag(A,-1,-r^2,-r^2 sin^2 teta)
+    """
+    from numpy import sin
+    t,r,teta,fi=xmu
+    A=(1-R/r)
+    if mu==0:
+        g=A
+    elif mu==1:
+        g=-1
+    elif mu==2:
+        g=-r**2
+    elif mu==3:
+        g=-r**2*sin(teta)**2
+    return g
+
+
+def ecuacion_geodesica_num(Y,s,gfun,gargs,N=4):
+    """
+    Opciones:
+        gfun: función que da la métrica
+        N: Número de dimensiones
+    """
+    from export import Gamma
+    from numpy import zeros
+    dYds=zeros(2*N)
+    x=Y[:N]
+    dxds=Y[N:]
+
+    dYds[:N]=dxds
+    G=Gamma(x,gfun,gargs,N)
+    for pi in range(N):
+        for mu in range(N):
+            for nu in range(N):
+                dYds[N+pi]+=-G[pi,mu,nu]*dxds[mu]*dxds[nu]
+    return dYds
+

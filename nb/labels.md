@@ -125,9 +125,13 @@
 		* `#optica_relativista`
 		* `#doppler_relativista`
 		* `#aberración`
+		* `#aberracion_luz`
 		* `#enfoque_relativista`
 	- Labels for 'figure':
 		* `fig:Figure_24`
+		* `fig:Figure_25`
+		* `fig:Figure_26`
+		* `fig:Figure_28`
 - Labels for '01.08.01.00.RelatividadEspecial.Electrodinamica.EcuacionesClasicas.ipynb':
 	- Labels for 'section':
 		* `#electrodinamica`
@@ -185,7 +189,10 @@
 		* `#christoffel_plano`
 		* `#christoffel_esfera`
 		* `#christoffel_general`
-		* `#christoffel_numerico`
+		* `#christoffel_computacional`
+		* `#relatividad_numerica`
+	- Labels for 'figure':
+		* `fig:Figure_33`
 - Labels for '02.04.00.00.RelatividadGeneral.Geodesicas.ipynb':
 	- Labels for 'section':
 		* `#dtotal_geodesicas`
@@ -227,8 +234,8 @@
 		* `#riemann_numerico`
 		* `#desviacion_geodesica_numerica`
 	- Labels for 'figure':
-		* `fig:Figure_38`
-		* `fig:Figure_39`
+		* `fig:Figure_43`
+		* `fig:Figure_44`
 - Labels for '02.07.00.00.RelatividadGeneral.PrincipioConsistencia.ipynb':
 	- Labels for 'section':
 		* `#principio_consistencia`
@@ -288,11 +295,11 @@
 		* `#detectores_gw`
 		* `#sensibilidad_detectores`
 	- Labels for 'figure':
-		* `fig:Figure_41`
-		* `fig:Figure_45`
 		* `fig:Figure_46`
-		* `fig:Figure_48`
-		* `fig:Figure_49`
+		* `fig:Figure_50`
+		* `fig:Figure_51`
+		* `fig:Figure_53`
+		* `fig:Figure_54`
 - Labels for '03.01.05.00.Aplicaciones.OndasGravitacionales.SimulacionSenal.ipynb':
 	- Labels for 'section':
 		* `#simulacion_senal`
@@ -316,15 +323,15 @@
 		* `#estimativos_binarias_gw`
 		* `#binarias_gw`
 	- Labels for 'figure':
-		* `fig:Figure_52`
+		* `fig:Figure_57`
 - Labels for '03.02.00.00.Aplicaciones.AgujerosNegros.ipynb':
 	- Labels for 'section':
 		* `#agujeros_negros`
 		* `#historia_an`
 		* `#temario_an`
 	- Labels for 'figure':
-		* `fig:Figure_53`
-		* `fig:Figure_54`
+		* `fig:Figure_58`
+		* `fig:Figure_59`
 - Labels for '03.02.01.00.Aplicaciones.AgujerosNegros.MetricaSchwarzschild.ipynb':
 	- Labels for 'section':
 		* `#metrica_schw`
@@ -347,17 +354,17 @@
 		* `#painleve_gullstrand`
 		* `#kruskal_szekeres`
 	- Labels for 'figure':
-		* `fig:Figure_63`
-		* `fig:Figure_64`
+		* `fig:Figure_68`
+		* `fig:Figure_69`
 - Labels for '03.03.00.00.Aplicaciones.CosmologiaRelativista.ipynb':
 	- Labels for 'section':
 		* `#cosmologia_relativista`
 		* `#plan_temas`
 		* `#propiedades_universo`
 	- Labels for 'figure':
-		* `fig:Figure_65`
-		* `fig:Figure_66`
-		* `fig:Figure_67`
+		* `fig:Figure_70`
+		* `fig:Figure_71`
+		* `fig:Figure_72`
 - Labels for '03.03.01.00.Aplicaciones.CosmologiaRelativista.MetricaUniverso.ipynb':
 	- Labels for 'section':
 		* `#principios_basicos`
@@ -367,7 +374,7 @@
 		* `#espacio_curvo_abierto`
 		* `#metrica_RW`
 	- Labels for 'figure':
-		* `fig:Figure_68`
+		* `fig:Figure_73`
 - Labels for '03.03.02.00.Aplicaciones.CosmologiaRelativista.EcuacionesFriedmann.ipynb':
 	- Labels for 'section':
 		* `#ecuacion_friedmann`
@@ -390,9 +397,11 @@
 		* `#hubble_lemaitre`
 		* `#densidad_critica`
 	- Labels for 'figure':
-		* `fig:Figure_69`
+		* `fig:Figure_74`
 - Labels for '04.01.00.00.Apendices.CodigosUtiles.ipynb':
 	- Labels for 'section':
 		* `#apendices`
 		* `#apendice_codigos_utiles`
+		* `#calculo_numerico_christoffel`
+		* `#ecuacion_geodesica_numerica`
 		* `#calculo_analitico_rg`

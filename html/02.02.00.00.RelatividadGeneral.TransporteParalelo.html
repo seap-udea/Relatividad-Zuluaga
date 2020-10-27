@@ -13117,7 +13117,7 @@ $$
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Bajo transformaciones generales, la derivada covariante $\partial_{\mu'} A^{\alpha'}$ en el nuevo sistema será:</p>
 $$
-\partial_{\mu'} A^{\alpha'}=\left(\frac{\partial x^{\mu}}{\partial x^{\mu'}}\partial_{\mu}\right)\left(\frac{\partial x^{\alpha'}}{\partial x^{\alpha}}A^\alpha\right)={{\cal G}^\mu}_{\mu'}\partial_{\mu}\left({{\cal G}^{\alpha'}}_{\alpha}A^\alpha\right)
+\partial_{\mu'} A^{\alpha'}=\left(\frac{\partial x^{\mu}}{\partial x^{\mu'}}\partial_{\mu}\right)\left(\frac{\partial x^{\alpha'}}{\partial x^{\alpha}}A^\alpha\right)={{\cal G}^\mu}_{\mu'}(\tilde x)\;\partial_{\mu}\left[{{\cal G}^{\alpha'}}_{\alpha}(\tilde x)A^\alpha\right]
 $$<p>donde para la expresión en el primer paréntesis hemos usado la regla de la cadena.</p>
 
 </div>
@@ -13126,7 +13126,7 @@ $$<p>donde para la expresión en el primer paréntesis hemos usado la regla de l
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>La diferencia respecto al caso que habíamos estudiado en el capítulo anterior es que ahora las componentes de la matriz de transformación general ${{\cal G}^{\alpha'}}$ no son constantes y por lo tanto no es posible escribir esta expresión de la forma simple:</p>
+<p>La diferencia respecto al caso que habíamos estudiado en el capítulo anterior es que ahora las componentes de la matriz de transformación general ${{\cal G}^{\alpha'}}_\beta$ no son constantes y por lo tanto no es posible escribir esta expresión de la forma simple:</p>
 $$
 \partial_{\mu'} A^{\alpha'}\neq{{\cal G}^\mu}_{\mu'}{{\cal G}^{\alpha'}}_{\alpha}\;\partial_\mu A^\alpha
 $$
@@ -13173,7 +13173,7 @@ $$
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><a id='fig:transporte_paralelo'></a><img src="./figures/horizontal-transporte-paralelo.png" alt="Transporte paralelo." width="50.0%"></p>
-<center><b>Figura 2.28</b>. Transporte paralelo.</center>
+<center><b>Figura 2.31</b>. Transporte paralelo.</center>
 </div>
 </div>
 </div>
@@ -13239,7 +13239,7 @@ $$<p>donde $\mathrm{d}x^\alpha=\epsilon t^\alpha$ y $A^\mu_\parallel(x^\alpha+\m
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><a id='fig:transporte_paralelo_derivada'></a><img src="./figures/square-transporte-paralelo.png" alt="Derivada direccional." width="50.0%"></p>
-<center><b>Figura 2.29</b>. Derivada direccional.</center>
+<center><b>Figura 2.32</b>. Derivada direccional.</center>
 </div>
 </div>
 </div><div style="background:white;border:solid black 2px;pad:10px;margin-left:7em;margin-top:1em;margin-bottom:1em;">
@@ -13247,7 +13247,7 @@ $$<p>donde $\mathrm{d}x^\alpha=\epsilon t^\alpha$ y $A^\mu_\parallel(x^\alpha+\m
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Nota: ¿Es la derivada direccional general una cantidad tensorial?.</strong><a id=''></a> Nótese que esta definición es una definición geométrica rigurosa y en principio esperaría uno que al definirse de esta manera la cantidad resultante tuviera las propiedades de una cantidad geométrica, i.e. tensorial.</p>
+<p><strong>Nota: ¿Es la derivada direccional general una cantidad tensorial?.</strong><a id=''></a> Nótese que esta definición es una definición geométrica rigurosa y en principio esperaría uno que al definirse de esta manera la cantidad resultante tuviera las propiedades de una cantidad geométrica, i.e. tensorialm, independiente del sistema de coordenadas que utilice.</p>
 
 </div>
 </div>
@@ -13261,6 +13261,14 @@ $$
 A^\mu_\parallel(x^\alpha+\mathrm{d}x^\alpha) = A^\mu(x^\alpha+\mathrm{d}x^\alpha) + C^\mu_{\gamma\delta} A^\gamma(x^\alpha+\mathrm{d}x^\alpha) \mathrm{d}x^\delta
 $$
 donde $C^\mu_{\gamma\delta}$ son en general coeficientes que permiten expresar el cambio en las componentes del cuadrivector transportado en función de las componentes de ambos, el cuadrivector original y el cuadrivector de la dirección de transporte.  Llamamos a estos coeficientes <strong>los coeficientes de conexión</strong>. En el caso más general habrán 64 coeficientes ($4^3$) de conexión distintos de cero.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Dene tenerse en cuenta que hemos usado una notación con índices arriba y abajo para estos coeficientes que no implican que asumamos que la cantidad es tensorial (transforma como un tensor general).  Es solo por comodidad y para respetar la regla de la suma de Einstein que se ha escogido representar estas cantidades de esa manera.  Sobre la naturaleza no tensorial de esta cantidad hablaremos más adelante.</p>
 
 </div>
 </div>
