@@ -13107,6 +13107,22 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p>Más allá de eso, inclusive, el vetor transportado por dos caminos diferentes no es el mismo al finalizar el camino como se muestra en la figura:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a id='fig:Figure_44'></a><img src="./figures/horizontal-curvatura-transporte-paralelo.png" alt="Transporte paralelo sobre una esfera"></p>
+<center><b>Figura 2.44</b>. Transporte paralelo sobre una esfera</center>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <p>¿Por qué ocurre esto? ¿de qué depende?</p>
 
 </div>
@@ -13123,8 +13139,8 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><a id='fig:Figure_44'></a><img src="./figures/square-diferencia-curvatura.png" alt="Figura"></p>
-<center><b>Figura 2.44</b>. Figura</center>
+<p><a id='fig:Figure_45'></a><img src="./figures/square-diferencia-curvatura.png" alt="Figura"></p>
+<center><b>Figura 2.45</b>. Figura</center>
 </div>
 </div>
 </div>
@@ -13149,7 +13165,7 @@ $$
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Ror otro lado es transporte de $S$ a $Q$ es:</p>
+<p>Ror otro lado es transporte de $R$ a $Q$ es:</p>
 $$
 A^\mu_{\parallel,\mathrm{RQ}}=A^\mu_{\parallel,\mathrm{R}}+\mathrm{D}_\alpha A^\mu_{\parallel,\mathrm{R}} \mathrm{d}x^\alpha
 $$<p>reemplazando lo obtenido antes obtenemos:</p>
@@ -13184,7 +13200,7 @@ $$
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Por otro lado podemos suponer que la diferencia entre el vector transportado por los dos caminos se puede expresar como:</p>
 $$
-\mathrm{d}^2 A^\mu\equiv R^\mu_{\delta\alpha\beta}A^\delta \mathrm{d}x^\alpha\mathrm{d}x^\beta
+\mathrm{d}^2 A^\mu\equiv {R^\mu}_{\delta\alpha\beta}A^\delta \mathrm{d}x^\alpha\mathrm{d}x^\beta
 $$<p>donde los nuevos coeficientes $R^\mu_{\delta\alpha\beta}$ juegan el papel que en el transporte paralelo convencional jugaban los coeficientes de conexión.</p>
 
 </div>
@@ -13195,7 +13211,7 @@ $$<p>donde los nuevos coeficientes $R^\mu_{\delta\alpha\beta}$ juegan el papel q
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Comparando encontramos que la manera de cálcular los coeficientes es:</p>
 $$
-R^\mu_{\delta\alpha\beta}A^\delta=-(\mathrm{D}_{\alpha\beta}-\mathrm{D}_{\beta\alpha}) A^\mu 
+{R^\mu}_{\delta\alpha\beta}A^\delta=-(\mathrm{D}_{\alpha\beta}-\mathrm{D}_{\beta\alpha}) A^\mu 
 $$
 </div>
 </div>
@@ -13205,7 +13221,7 @@ $$
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>O en la notación punto y coma de la derivada covariante:</p>
 $$
-R^\mu_{\delta\alpha\beta}A^\delta=-(A^\mu_{;\alpha;\beta}- A^\mu_{;\beta;\alpha}) 
+{R^\mu}_{\delta\alpha\beta}A^\delta=-(A^\mu_{;\alpha;\beta}- A^\mu_{;\beta;\alpha}) 
 $$
 </div>
 </div>
@@ -13263,16 +13279,34 @@ $$
 
 </div>
 </div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>De acuerdo a lo que habíamos dicho antes, el tensor de Riemann establece si un espacio es curvo o no.  Esta condición puede expresarse de dos maneras:</p>
+<ul>
+<li><p>Si <strong>al menos una</strong> de las componentes del tensor de Riemann es distinta de cero, <strong>el espacio es curvo</strong>.</p>
+</li>
+<li><p>Si <strong>todas</strong> las componentes del tensor de Riemann son cero, <strong>el espacio es plano</strong>.</p>
+</li>
+</ul>
+
+</div>
+</div>
 </div><div style="background:white;border:solid black 2px;pad:10px;margin-left:7em;margin-top:1em;margin-bottom:1em;">
     	 
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Nota: El tensor de Riemann y la curvatura.</strong><a id=''></a> De acuerdo a lo que habíamos dicho antes, el tensor de Riemann establece si un espacio es curvo o no.  Esta condición puede expresarse de dos maneras:</p>
-<blockquote><ul>
-<li>Si <strong>al menos una</strong> de las componentes del tensor de Riemann es distinta de cero, <strong>el espacio es curvo</strong>.</li>
-<li>Si <strong>todas</strong> las componentes del tensor de Riemann son cero, <strong>el espacio es plano</strong>.</li>
-</ul>
+<p><strong>Nota: La arbitrariedad en la elección del signo del tensor de Riemann.</strong><a id=''></a> Nótese que en la definición del tensor de Riemann que hemos hecho aquí la elección de como comparamos un vector transportado de forma paralela por un camino o por otro ha sido más bien arbitraria.  Por esta misma razón el signo del tensor de Riemann es también arbitrario y depende de la elección que haga cada autor.</p>
+<blockquote><p>Hay dos posibilidades: la que hemos usado aquí,</p>
+$$
+  {R^\rho}_{\sigma\mu\nu}=\{\Gamma^\rho_{\sigma\mu,\nu} + \Gamma_{\sigma\mu}^\delta  \Gamma_{\nu\delta}^\rho \}-\{\mu\leftrightarrow\nu\}
+  $$<p>esta elección tiene la ventaja de que el orden de los índices en el tensor de Riemann y en el primer término al lado derecho es exactamente la misma.  Eso ayuda a recordar el tensor.</p>
+<p>O bien la que usan muchos otros autores:</p>
+$$
+  {{\cal R}^\rho}_{\sigma\mu\nu}=\{\Gamma^\rho_{\sigma\nu,\mu} + \Gamma_{\sigma\nu}^\delta  \Gamma_{\mu\delta}^\rho \}-\{\mu\leftrightarrow\nu\}
+  $$
 </blockquote>
 
 </div>
@@ -13377,7 +13411,25 @@ $$
 
 </div>
 </div>
+</div><div style="background:white;border:solid black 2px;pad:10px;margin-left:7em;margin-top:1em;margin-bottom:1em;">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Nota: Recordando los índices del tensor de Riemann.</strong><a id=''></a> Existen dos maneras de escribir los índices del tensor de Riemann para recordar más fácil su definición: $\lambda\mu\nu\kappa$ y $\alpha\beta\mu\nu$.  Aquí los índices $\mu\nu$ juegan el papel de índices de referencia para recordar las posiciones de los índices en la expresión final.</p>
+<blockquote><p>Para la definición y el cálculo, es más conveniente escribirlos en el orden $\lambda\mu\nu\kappa$.  Con esta convención se puede recordar que las derivadas de la métrica inicialmente son con respecto a los índices $\lambda$ y $\kappa$:</p>
+$$
+  R_{\lambda\mu\nu\kappa} = -\frac{1}{2} g_{\{\mu\nu,\lambda,\kappa\}}-\ldots 
+  $$<p>Sin embargo, para probar algunas de las identidades más interesantes del tensor, es mejor el orden $\alpha\beta\mu\nu$:</p>
+$$
+  R_{\alpha\beta\mu\nu} = -\frac{1}{2} g_{\{\beta\mu,\alpha,\nu\}}-g_{\sigma\gamma}(\Gamma^\sigma_{\beta\mu}\Gamma^\gamma_{\alpha\nu}-\Gamma^\sigma_{\beta\nu}\Gamma^\gamma_{\alpha\mu})
+  $$
+</blockquote>
+
 </div>
+</div>
+</div>
+    </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13438,7 +13490,7 @@ $$
 <p><strong>Proposición: Identidades de Bianchi.</strong><a id=''></a> Hay dos propiedades adicionales del tensor de Riemann que pueden llegar a ser de alguna utilidad:</p>
 <blockquote><ol>
 <li><strong>Primera identidad de Bianchi</strong>: $R_{\alpha[\beta\mu\nu]}=0$</li>
-<li><strong>Segunda identidad de Bianchi</strong>: $R^{\alpha}_{\beta[\mu\nu;\sigma]}=0$</li>
+<li><strong>Segunda identidad de Bianchi</strong>: ${R^{\alpha}}_{\beta[\mu\nu;\sigma]}=0$</li>
 </ol>
 </blockquote>
 
@@ -13506,7 +13558,483 @@ $$
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="2.8.8.-Desviaci&#243;n-geod&#233;sica">2.8.8. Desviaci&#243;n geod&#233;sica<a class="anchor-link" href="#2.8.8.-Desviaci&#243;n-geod&#233;sica">&#182;</a></h3><p><a id='desviacion_geodesica'></a></p>
+<h3 id="2.8.8.-C&#225;lculo-del-tensor-de-Riemann">2.8.8. C&#225;lculo del tensor de Riemann<a class="anchor-link" href="#2.8.8.-C&#225;lculo-del-tensor-de-Riemann">&#182;</a></h3><p><a id='calculo_riemann'></a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Como sucede con los símbolos de Christoffel, el cálculo del tensor de Riemann puede llegar a ser un verdadero suplicio.  Para ello se han diseñado herramientas para facilitar el cálculo numérico como <code>EinsteinPy</code>:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">sympy</span> <span class="k">as</span> <span class="nn">sp</span>
+<span class="kn">from</span> <span class="nn">einsteinpy.symbolic</span> <span class="k">import</span> <span class="o">*</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div><div style="background:white;border:solid black 2px;pad:10px;margin-left:7em;margin-top:1em;margin-bottom:1em;">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Nota: Problema en el paquete <code>EinsteinPy</code>.</strong><a id=''></a> El paquete EinsteinPy tiene un error en el cálculo del tensor de Riemann.  Para corregirlo se ha hecho un archivo de parche que esta incluido con estas notas en <code>package/data/riemann.py.patch</code>.  Cambien el archivo <code>riemann.py</code> en el paquete en su instalación por este archivo.</p>
+
+</div>
+</div>
+</div>
+    </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Miremos un ejemplo con la métrica de Minkowski en coordenadas esféricas:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Símboos usados</span>
+<span class="n">s</span><span class="o">=</span><span class="n">sp</span><span class="o">.</span><span class="n">symbols</span><span class="p">(</span><span class="s1">&#39;t,r,theta,phi&#39;</span><span class="p">)</span>
+<span class="c1">#Letras con las que se abreviaran los símbolos</span>
+<span class="n">t</span><span class="p">,</span><span class="n">r</span><span class="p">,</span><span class="n">q</span><span class="p">,</span><span class="n">f</span><span class="o">=</span><span class="n">s</span>
+<span class="c1">#Índices de los símbolos</span>
+<span class="n">t_</span><span class="p">,</span><span class="n">r_</span><span class="p">,</span><span class="n">q_</span><span class="p">,</span><span class="n">f_</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span>
+
+<span class="c1">#La matriz debe definirse como una lista</span>
+<span class="n">gcomp</span><span class="o">=</span><span class="n">sp</span><span class="o">.</span><span class="n">diag</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="n">r</span><span class="o">**</span><span class="mi">2</span><span class="p">,</span><span class="o">-</span><span class="n">r</span><span class="o">**</span><span class="mi">2</span><span class="o">*</span><span class="n">sp</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">q</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
+
+<span class="c1">#Este comando crea el objeto tensorial</span>
+<span class="n">g</span><span class="o">=</span><span class="n">MetricTensor</span><span class="p">(</span><span class="n">gcomp</span><span class="p">,</span><span class="n">s</span><span class="p">)</span>
+
+<span class="c1">#Esta es la representación matricial del tensor</span>
+<span class="n">gij</span><span class="o">=</span><span class="n">g</span><span class="o">.</span><span class="n">tensor</span><span class="p">()</span>
+<span class="n">gij</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[2]:</div>
+
+
+
+
+<div class="output_latex output_subarea output_execute_result">
+$\displaystyle \left[\begin{matrix}1 & 0 & 0 & 0\\0 & -1 & 0 & 0\\0 & 0 & - r^{2} & 0\\0 & 0 & 0 & - r^{2} \sin^{2}{\left(\theta \right)}\end{matrix}\right]$
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>El tensor de Riemann se calcula así:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">Rijkl</span><span class="o">=</span><span class="n">RiemannCurvatureTensor</span><span class="o">.</span><span class="n">from_metric</span><span class="p">(</span><span class="n">g</span><span class="p">)</span>
+<span class="o">-</span><span class="n">Rijkl</span><span class="o">.</span><span class="n">tensor</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[3]:</div>
+
+
+
+
+<div class="output_latex output_subarea output_execute_result">
+$\displaystyle \left[\begin{matrix}\left[\begin{matrix}0 & 0 & 0 & 0\\0 & 0 & 0 & 0\\0 & 0 & 0 & 0\\0 & 0 & 0 & 0\end{matrix}\right] & \left[\begin{matrix}0 & 0 & 0 & 0\\0 & 0 & 0 & 0\\0 & 0 & 0 & 0\\0 & 0 & 0 & 0\end{matrix}\right] & \left[\begin{matrix}0 & 0 & 0 & 0\\0 & 0 & 0 & 0\\0 & 0 & 0 & 0\\0 & 0 & 0 & 0\end{matrix}\right] & \left[\begin{matrix}0 & 0 & 0 & 0\\0 & 0 & 0 & 0\\0 & 0 & 0 & 0\\0 & 0 & 0 & 0\end{matrix}\right]\\\left[\begin{matrix}0 & 0 & 0 & 0\\0 & 0 & 0 & 0\\0 & 0 & 0 & 0\\0 & 0 & 0 & 0\end{matrix}\right] & \left[\begin{matrix}0 & 0 & 0 & 0\\0 & 0 & 0 & 0\\0 & 0 & 0 & 0\\0 & 0 & 0 & 0\end{matrix}\right] & \left[\begin{matrix}0 & 0 & 0 & 0\\0 & 0 & 0 & 0\\0 & 0 & 0 & 0\\0 & 0 & 0 & 0\end{matrix}\right] & \left[\begin{matrix}0 & 0 & 0 & 0\\0 & 0 & 0 & 0\\0 & 0 & 0 & 0\\0 & 0 & 0 & 0\end{matrix}\right]\\\left[\begin{matrix}0 & 0 & 0 & 0\\0 & 0 & 0 & 0\\0 & 0 & 0 & 0\\0 & 0 & 0 & 0\end{matrix}\right] & \left[\begin{matrix}0 & 0 & 0 & 0\\0 & 0 & 0 & 0\\0 & 0 & 0 & 0\\0 & 0 & 0 & 0\end{matrix}\right] & \left[\begin{matrix}0 & 0 & 0 & 0\\0 & 0 & 0 & 0\\0 & 0 & 0 & 0\\0 & 0 & 0 & 0\end{matrix}\right] & \left[\begin{matrix}0 & 0 & 0 & 0\\0 & 0 & 0 & 0\\0 & 0 & 0 & 0\\0 & 0 & 0 & 0\end{matrix}\right]\\\left[\begin{matrix}0 & 0 & 0 & 0\\0 & 0 & 0 & 0\\0 & 0 & 0 & 0\\0 & 0 & 0 & 0\end{matrix}\right] & \left[\begin{matrix}0 & 0 & 0 & 0\\0 & 0 & 0 & 0\\0 & 0 & 0 & 0\\0 & 0 & 0 & 0\end{matrix}\right] & \left[\begin{matrix}0 & 0 & 0 & 0\\0 & 0 & 0 & 0\\0 & 0 & 0 & 0\\0 & 0 & 0 & 0\end{matrix}\right] & \left[\begin{matrix}0 & 0 & 0 & 0\\0 & 0 & 0 & 0\\0 & 0 & 0 & 0\\0 & 0 & 0 & 0\end{matrix}\right]\end{matrix}\right]$
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Como era de esperarse el tensor de Riemann es cero para un espacio plano.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Probemos ahora con un espacio curvo:</p>
+$$
+\mathrm{d}l^2=R^2\mathrm{d}\phi^2+R^2\cos^2\phi\;\mathrm{d}\lambda^2
+$$<p>con coeficientes métricos:</p>
+$$
+g_{ij}:\mathrm{diag}(R^2,R^2\cos^2\phi)
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">s</span><span class="o">=</span><span class="n">sp</span><span class="o">.</span><span class="n">symbols</span><span class="p">(</span><span class="s1">&#39;phi lambda&#39;</span><span class="p">)</span>
+<span class="n">f</span><span class="p">,</span><span class="n">l</span><span class="o">=</span><span class="n">s</span>
+<span class="n">f_</span><span class="p">,</span><span class="n">l_</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span>
+<span class="n">R</span><span class="o">=</span><span class="n">sp</span><span class="o">.</span><span class="n">symbols</span><span class="p">(</span><span class="s2">&quot;R&quot;</span><span class="p">)</span>
+<span class="n">gcomp</span><span class="o">=</span><span class="n">sp</span><span class="o">.</span><span class="n">diag</span><span class="p">(</span><span class="n">R</span><span class="o">**</span><span class="mi">2</span><span class="p">,</span><span class="n">R</span><span class="o">**</span><span class="mi">2</span><span class="o">*</span><span class="n">sp</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">f</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
+<span class="n">g</span><span class="o">=</span><span class="n">MetricTensor</span><span class="p">(</span><span class="n">gcomp</span><span class="p">,</span><span class="n">s</span><span class="p">)</span>
+<span class="n">Riemann</span><span class="o">=</span><span class="n">RiemannCurvatureTensor</span><span class="o">.</span><span class="n">from_metric</span><span class="p">(</span><span class="n">g</span><span class="p">)</span><span class="o">.</span><span class="n">change_config</span><span class="p">(</span><span class="s2">&quot;ulll&quot;</span><span class="p">)</span>
+<span class="n">Rijkl</span><span class="o">=</span><span class="n">Riemann</span><span class="o">.</span><span class="n">tensor</span><span class="p">()</span>
+<span class="o">-</span><span class="n">Rijkl</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[4]:</div>
+
+
+
+
+<div class="output_latex output_subarea output_execute_result">
+$\displaystyle \left[\begin{matrix}\left[\begin{matrix}0 & 0\\0 & 0\end{matrix}\right] & \left[\begin{matrix}0 & - \cos^{2}{\left(\phi \right)}\\\cos^{2}{\left(\phi \right)} & 0\end{matrix}\right]\\\left[\begin{matrix}0 & 1\\-1 & 0\end{matrix}\right] & \left[\begin{matrix}0 & 0\\0 & 0\end{matrix}\right]\end{matrix}\right]$
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div><div style="background:white;border:solid black 2px;pad:10px;margin-left:7em;margin-top:1em;margin-bottom:1em;">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Nota: El valor del tensor de Riemann y la rotación de los vectores.</strong><a id=''></a> Un interesante resultado puede verse del tensor de Riemann en una superficie esférica.  Nótese que las componentes $R_{\phi\phi\lambda\lambda}$ y $R_{\phi\lambda\phi\lambda}$ dependen del $\cos\phi$ de modo son máximas en el ecuador y van disminuyendo a medida que nos alejamos de él.  Esta propiedad tiene que ver con el ángulo que parece rotar el vector al darle una vuelta a lo largo de una trayectoria cerrada.  En el ecuador, el vector rota 360 grados, mientras que cerca al polo rota apenas un ángulo pequeño.</p>
+
+</div>
+</div>
+</div>
+    </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Esta métrica tiene componentes del tensor que son distintos de cero, por lo tanto sabemos que el espacio es curvo.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Hay que tener cuidado por la configuración con la que el tensor es calculado:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">Riemann</span><span class="o">.</span><span class="n">config</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[5]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&#39;ulll&#39;</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Si se cambia la configuración:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">Rijkl</span><span class="o">=-</span><span class="n">Riemann</span><span class="o">.</span><span class="n">change_config</span><span class="p">(</span><span class="s2">&quot;llll&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">tensor</span><span class="p">()</span>
+<span class="n">Rijkl</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[6]:</div>
+
+
+
+
+<div class="output_latex output_subarea output_execute_result">
+$\displaystyle \left[\begin{matrix}\left[\begin{matrix}0 & 0\\0 & 0\end{matrix}\right] & \left[\begin{matrix}0 & - R^{2} \cos^{2}{\left(\phi \right)}\\R^{2} \cos^{2}{\left(\phi \right)} & 0\end{matrix}\right]\\\left[\begin{matrix}0 & R^{2} \cos^{2}{\left(\phi \right)}\\- R^{2} \cos^{2}{\left(\phi \right)} & 0\end{matrix}\right] & \left[\begin{matrix}0 & 0\\0 & 0\end{matrix}\right]\end{matrix}\right]$
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Podemos probar las propiedades de simetría y antisimetría:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">Rijkl</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">],</span><span class="n">Rijkl</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[7]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>(-R**2*cos(phi)**2, R**2*cos(phi)**2)</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">Rijkl</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">],</span><span class="n">Rijkl</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[8]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>(R**2*cos(phi)**2, R**2*cos(phi)**2)</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>La generalización de una esfera en 3 dimensiones:</p>
+$$
+\mathrm{d}\ell^2=\frac{\mathrm{d}\rho^2}{1-(\rho/R)^2}+\rho^2(\mathrm{d}\theta^2+\sin^2\theta \mathrm{d}\phi^2)
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">s</span><span class="o">=</span><span class="n">sp</span><span class="o">.</span><span class="n">symbols</span><span class="p">(</span><span class="s1">&#39;rho theta phi&#39;</span><span class="p">)</span>
+<span class="n">r</span><span class="p">,</span><span class="n">t</span><span class="p">,</span><span class="n">f</span><span class="o">=</span><span class="n">s</span>
+<span class="n">r_</span><span class="p">,</span><span class="n">t_</span><span class="p">,</span><span class="n">f_</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span>
+<span class="n">R</span><span class="o">=</span><span class="n">sp</span><span class="o">.</span><span class="n">symbols</span><span class="p">(</span><span class="s2">&quot;R&quot;</span><span class="p">)</span>
+<span class="n">gcomp</span><span class="o">=</span><span class="n">sp</span><span class="o">.</span><span class="n">diag</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">r</span><span class="o">**</span><span class="mi">2</span><span class="o">/</span><span class="n">R</span><span class="o">**</span><span class="mi">2</span><span class="p">),</span><span class="n">r</span><span class="o">**</span><span class="mi">2</span><span class="p">,</span><span class="n">r</span><span class="o">**</span><span class="mi">2</span><span class="o">*</span><span class="n">sp</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">t</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
+<span class="n">g</span><span class="o">=</span><span class="n">MetricTensor</span><span class="p">(</span><span class="n">gcomp</span><span class="p">,</span><span class="n">s</span><span class="p">)</span>
+<span class="n">Riemann</span><span class="o">=</span><span class="n">RiemannCurvatureTensor</span><span class="o">.</span><span class="n">from_metric</span><span class="p">(</span><span class="n">g</span><span class="p">)</span><span class="o">.</span><span class="n">change_config</span><span class="p">(</span><span class="s2">&quot;ulll&quot;</span><span class="p">)</span>
+<span class="n">Rijkl</span><span class="o">=-</span><span class="n">Riemann</span><span class="o">.</span><span class="n">tensor</span><span class="p">()</span>
+<span class="n">Rijkl</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[9]:</div>
+
+
+
+
+<div class="output_latex output_subarea output_execute_result">
+$\displaystyle \left[\begin{matrix}\left[\begin{matrix}0 & 0 & 0\\0 & 0 & 0\\0 & 0 & 0\end{matrix}\right] & \left[\begin{matrix}0 & - \frac{\rho^{2}}{R^{2}} & 0\\\frac{\rho^{2}}{R^{2}} & 0 & 0\\0 & 0 & 0\end{matrix}\right] & \left[\begin{matrix}0 & 0 & - \frac{\rho^{2} \sin^{2}{\left(\theta \right)}}{R^{2}}\\0 & 0 & 0\\\frac{\rho^{2} \sin^{2}{\left(\theta \right)}}{R^{2}} & 0 & 0\end{matrix}\right]\\\left[\begin{matrix}0 & \frac{1}{R^{2} - \rho^{2}} & 0\\- \frac{1}{R^{2} - \rho^{2}} & 0 & 0\\0 & 0 & 0\end{matrix}\right] & \left[\begin{matrix}0 & 0 & 0\\0 & 0 & 0\\0 & 0 & 0\end{matrix}\right] & \left[\begin{matrix}0 & 0 & 0\\0 & 0 & - \frac{\rho^{2} \sin^{2}{\left(\theta \right)}}{R^{2}}\\0 & \frac{\rho^{2} \sin^{2}{\left(\theta \right)}}{R^{2}} & 0\end{matrix}\right]\\\left[\begin{matrix}0 & 0 & \frac{1}{R^{2} - \rho^{2}}\\0 & 0 & 0\\- \frac{1}{R^{2} - \rho^{2}} & 0 & 0\end{matrix}\right] & \left[\begin{matrix}0 & 0 & 0\\0 & 0 & \frac{\rho^{2}}{R^{2}}\\0 & - \frac{\rho^{2}}{R^{2}} & 0\end{matrix}\right] & \left[\begin{matrix}0 & 0 & 0\\0 & 0 & 0\\0 & 0 & 0\end{matrix}\right]\end{matrix}\right]$
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>En el caso de la métrica de Newton:</p>
+$$
+\mathrm{d}s^2=\left(1-\frac{\cal R}{r}\right)\;\mathrm{d}t_L^2-\mathrm{d}r^2-r^2\mathrm{d}\theta^2-r^2\sin^2\theta\;\mathrm{d}\phi^2
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">s</span><span class="o">=</span><span class="n">sp</span><span class="o">.</span><span class="n">symbols</span><span class="p">(</span><span class="s1">&#39;t r theta phi&#39;</span><span class="p">)</span>
+<span class="n">t</span><span class="p">,</span><span class="n">r</span><span class="p">,</span><span class="n">q</span><span class="p">,</span><span class="n">f</span><span class="o">=</span><span class="n">s</span>
+<span class="n">R</span><span class="o">=</span><span class="n">sp</span><span class="o">.</span><span class="n">symbols</span><span class="p">(</span><span class="s2">&quot;R&quot;</span><span class="p">)</span>
+<span class="n">gcomp</span><span class="o">=</span><span class="n">sp</span><span class="o">.</span><span class="n">diag</span><span class="p">((</span><span class="mi">1</span><span class="o">-</span><span class="n">R</span><span class="o">/</span><span class="n">r</span><span class="p">),</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="n">r</span><span class="o">**</span><span class="mi">2</span><span class="p">,</span><span class="o">-</span><span class="n">r</span><span class="o">**</span><span class="mi">2</span><span class="o">*</span><span class="n">sp</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">q</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
+<span class="n">g</span><span class="o">=</span><span class="n">MetricTensor</span><span class="p">(</span><span class="n">gcomp</span><span class="p">,</span><span class="n">s</span><span class="p">)</span>
+<span class="n">Riemann</span><span class="o">=</span><span class="n">RiemannCurvatureTensor</span><span class="o">.</span><span class="n">from_metric</span><span class="p">(</span><span class="n">g</span><span class="p">)</span><span class="o">.</span><span class="n">change_config</span><span class="p">(</span><span class="s2">&quot;llll&quot;</span><span class="p">)</span>
+<span class="n">Rijkl</span><span class="o">=</span><span class="n">sp</span><span class="o">.</span><span class="n">factor</span><span class="p">(</span><span class="o">-</span><span class="n">Riemann</span><span class="o">.</span><span class="n">tensor</span><span class="p">())</span>
+<span class="n">Rijkl</span><span class="p">[</span><span class="mi">1</span><span class="p">:,</span><span class="mi">0</span><span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[10]:</div>
+
+
+
+
+<div class="output_latex output_subarea output_execute_result">
+$\displaystyle \left[\begin{matrix}\left[\begin{matrix}0 & \frac{R \left(- 3 R + 4 r\right)}{4 r^{3} \left(- R + r\right)} & 0 & 0\\- \frac{R \left(- 3 R + 4 r\right)}{4 r^{3} \left(- R + r\right)} & 0 & 0 & 0\\0 & 0 & 0 & 0\\0 & 0 & 0 & 0\end{matrix}\right] & \left[\begin{matrix}0 & 0 & - \frac{R}{2 r} & 0\\0 & 0 & 0 & 0\\\frac{R}{2 r} & 0 & 0 & 0\\0 & 0 & 0 & 0\end{matrix}\right] & \left[\begin{matrix}0 & 0 & 0 & - \frac{R \sin^{2}{\left(\theta \right)}}{2 r}\\0 & 0 & 0 & 0\\0 & 0 & 0 & 0\\\frac{R \sin^{2}{\left(\theta \right)}}{2 r} & 0 & 0 & 0\end{matrix}\right]\end{matrix}\right]$
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="2.8.9.-Desviaci&#243;n-geod&#233;sica">2.8.9. Desviaci&#243;n geod&#233;sica<a class="anchor-link" href="#2.8.9.-Desviaci&#243;n-geod&#233;sica">&#182;</a></h3><p><a id='desviacion_geodesica'></a></p>
 
 </div>
 </div>
@@ -13593,6 +14121,16 @@ $$
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p>Esta ecuación es muy compleja pero se puede simplificar si introducimos la derivada total covariante:</p>
+$$
+\frac{\mathrm{D}A^\mu}{\mathrm{D}\lambda}\equiv A^\mu_{;\alpha} \frac{\mathrm{d}x^\alpha}{\mathrm{d}\lambda}=\frac{\mathrm{d}A^\mu}{\mathrm{d}\lambda}+\Gamma^{\mu}_{\alpha\beta}A^\beta \frac{\mathrm{d}x^\alpha}{\mathrm{d}\lambda}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <p>Por otro lado tenemos la segunda derivada total covariante de un campo tensorial (ver Problemas propuestos al final del capítulo):</p>
 \begin{eqnarray}
 \frac{D^{2} A^{\mu}}{D \lambda^{2}} &amp; = &amp; \frac{d^{2} A^{\mu}}{d \lambda^{2}} +\Gamma_{\alpha \beta}^{\mu},_{\nu} A^{\alpha} \frac{d x^{\nu}}{d \lambda} \frac{d x^{\beta}}{d \lambda}+2 \Gamma_{\alpha \beta}^{\mu} \frac{d A^{\alpha}}{d \lambda} \frac{d x^{\beta}}{d \lambda} \\
@@ -13609,7 +14147,7 @@ $$
 \frac{D^{2} \xi^{\mu}}{D \lambda^{2}}=-\left(\Gamma^{\mu}_{\beta \alpha, \sigma}-\Gamma_{\beta \sigma,\alpha}^{\mu}+\Gamma_{\beta \alpha}^{\omega} \Gamma_{\omega \sigma}^{\mu}-\Gamma_{\beta \sigma}^{\omega} \Gamma_{\omega \alpha}^{\mu}\right) \xi^{\sigma} \frac{d x^{\beta}}{d \lambda} \frac{d x^{\alpha}}{d \lambda}
 $$<p>donde reconocemos precisamente el tensor de Riemann:</p>
 $$
-\frac{D^{2} \xi^{\mu}}{D \lambda^{2}}=R_{\alpha \sigma \beta}^{\mu} \xi^{\sigma} \frac{d x^{\alpha}}{d \lambda} \frac{d x^{\beta}}{d \lambda}
+\frac{D^{2} \xi^{\mu}}{D \lambda^{2}}={R^{\mu}}_{\alpha \sigma \beta} \xi^{\sigma} \frac{d x^{\alpha}}{d \lambda} \frac{d x^{\beta}}{d \lambda}
 $$
 </div>
 </div>
@@ -13637,7 +14175,7 @@ $$
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="2.8.9.-Tensor-de-Riemann-num&#233;rico">2.8.9. Tensor de Riemann num&#233;rico<a class="anchor-link" href="#2.8.9.-Tensor-de-Riemann-num&#233;rico">&#182;</a></h3><p><a id='riemann_numerico'></a></p>
+<h3 id="2.8.1.-Ejemplo-num&#233;rico">2.8.1. Ejemplo num&#233;rico<a class="anchor-link" href="#2.8.1.-Ejemplo-num&#233;rico">&#182;</a></h3><p><a id='desviacion_geodesica_numerico'></a></p>
 
 </div>
 </div>
@@ -13645,885 +14183,61 @@ $$
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Con las reglas simplificadas de más arriba podemos diseñar una rutina para calcular el tensor de Riemann numérico.</p>
+<p>Para ilustrar el concepto de desviación geodésica consideremos el siguiente ejemplo.  Imagine que dos partículas se mueven siguiendo geodésicas sobre la superficie de una esfera.  En un momento dado las partículas coinciden en el mismo punto pero una de ellas tiene una velocidad sutilmente diferente de a otra.  ¿Cuál es la magnitud de la desviación que las partículas sufren en su movimiento?</p>
 
 </div>
 </div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">GammaRiemann</span><span class="p">(</span><span class="n">xmu</span><span class="p">,</span><span class="n">gfun</span><span class="p">,</span><span class="n">gargs</span><span class="p">,</span><span class="n">N</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span><span class="n">dxmax</span><span class="o">=</span><span class="mf">1e-6</span><span class="p">,</span><span class="n">verbose</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
-    <span class="kn">from</span> <span class="nn">scipy.misc</span> <span class="k">import</span> <span class="n">derivative</span>
-    <span class="kn">from</span> <span class="nn">numpy</span> <span class="k">import</span> <span class="n">zeros</span><span class="p">,</span><span class="n">where</span><span class="p">,</span><span class="n">arange</span>
-    <span class="n">R</span><span class="o">=</span><span class="n">zeros</span><span class="p">((</span><span class="n">N</span><span class="p">,</span><span class="n">N</span><span class="p">,</span><span class="n">N</span><span class="p">,</span><span class="n">N</span><span class="p">))</span>
-    <span class="c1">#Indices</span>
-    <span class="n">index</span><span class="o">=</span><span class="n">arange</span><span class="p">(</span><span class="n">N</span><span class="p">)</span>
-    
-    <span class="c1">#Calcula gamma</span>
-    <span class="kn">from</span> <span class="nn">export</span> <span class="k">import</span> <span class="n">Gamma</span>
-    <span class="n">G</span><span class="o">=</span><span class="n">Gamma</span><span class="p">(</span><span class="n">xmu</span><span class="p">,</span><span class="n">gfun</span><span class="p">,</span><span class="n">gargs</span><span class="p">,</span><span class="n">N</span><span class="p">)</span>
-    <span class="k">if</span> <span class="n">verbose</span><span class="p">:</span><span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s2">&quot;G = </span><span class="se">\n</span><span class="si">{G}</span><span class="s2">&quot;</span><span class="p">)</span>
-    <span class="k">for</span> <span class="n">mu</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">N</span><span class="p">):</span>
-        <span class="k">if</span> <span class="n">verbose</span><span class="p">:</span><span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s2">&quot;mu = </span><span class="si">{mu}</span><span class="s2">&quot;</span><span class="p">)</span>
-        <span class="k">for</span> <span class="n">pi</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">N</span><span class="p">):</span>
-            <span class="k">if</span> <span class="n">pi</span><span class="o">==</span><span class="n">mu</span><span class="p">:</span><span class="k">continue</span>
-            <span class="k">if</span> <span class="n">verbose</span><span class="p">:</span><span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s2">&quot;</span><span class="se">\t</span><span class="s2">pi = </span><span class="si">{pi}</span><span class="s2">&quot;</span><span class="p">)</span>
-            <span class="k">for</span> <span class="n">xi</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">N</span><span class="p">):</span>
-                <span class="k">if</span> <span class="n">xi</span><span class="o">==</span><span class="n">mu</span><span class="p">:</span><span class="k">continue</span>
-                <span class="k">if</span> <span class="n">verbose</span><span class="p">:</span><span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s2">&quot;</span><span class="se">\t\t</span><span class="s2">xi = </span><span class="si">{xi}</span><span class="s2">&quot;</span><span class="p">)</span>
-                <span class="c1">#pi = xi</span>
-                <span class="k">if</span> <span class="n">pi</span><span class="o">==</span><span class="n">xi</span><span class="p">:</span>
-                    <span class="k">if</span> <span class="n">verbose</span><span class="p">:</span><span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s2">&quot;</span><span class="se">\t\t\t</span><span class="s2">pi = xi&quot;</span><span class="p">)</span>
-                    <span class="c1">#g_mumu,pi,pi</span>
-                    <span class="n">xd</span><span class="o">=</span><span class="n">xmu</span><span class="p">[</span><span class="n">pi</span><span class="p">]</span> <span class="c1">#Punto de derivación</span>
-                    <span class="n">dx</span><span class="o">=</span><span class="nb">max</span><span class="p">(</span><span class="n">dxmax</span><span class="p">,</span><span class="n">dxmax</span><span class="o">*</span><span class="nb">abs</span><span class="p">(</span><span class="n">xd</span><span class="p">))</span>
-                    <span class="n">gmumu</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span><span class="n">gfun</span><span class="p">(</span><span class="n">where</span><span class="p">(</span><span class="n">index</span><span class="o">==</span><span class="n">pi</span><span class="p">,</span><span class="n">x</span><span class="p">,</span><span class="n">xmu</span><span class="p">),</span>
-                                        <span class="n">mu</span><span class="p">,</span><span class="o">*</span><span class="n">gargs</span><span class="p">)</span>
-                    <span class="n">gmumu_pi_pi</span><span class="o">=</span><span class="n">derivative</span><span class="p">(</span><span class="n">gmumu</span><span class="p">,</span><span class="n">xd</span><span class="p">,</span><span class="n">dx</span><span class="p">,</span><span class="n">n</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
-                    <span class="k">if</span> <span class="n">verbose</span><span class="p">:</span><span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s2">&quot;</span><span class="se">\t\t\t</span><span class="s2">g_</span><span class="si">{mu}{mu}</span><span class="s2">,</span><span class="si">{pi}</span><span class="s2">,</span><span class="si">{pi}</span><span class="s2"> = </span><span class="si">{gmumu_pi_pi}</span><span class="s2">&quot;</span><span class="p">)</span>
-                    <span class="c1">#g_pipi,mu,mu</span>
-                    <span class="n">xd</span><span class="o">=</span><span class="n">xmu</span><span class="p">[</span><span class="n">mu</span><span class="p">]</span> <span class="c1">#Punto de derivación</span>
-                    <span class="n">dx</span><span class="o">=</span><span class="nb">max</span><span class="p">(</span><span class="n">dxmax</span><span class="p">,</span><span class="n">dxmax</span><span class="o">*</span><span class="nb">abs</span><span class="p">(</span><span class="n">xd</span><span class="p">))</span>
-                    <span class="n">gpipi</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span><span class="n">gfun</span><span class="p">(</span><span class="n">where</span><span class="p">(</span><span class="n">index</span><span class="o">==</span><span class="n">mu</span><span class="p">,</span><span class="n">x</span><span class="p">,</span><span class="n">xmu</span><span class="p">),</span>
-                                        <span class="n">pi</span><span class="p">,</span><span class="o">*</span><span class="n">gargs</span><span class="p">)</span>
-                    <span class="n">gpipi_mu_mu</span><span class="o">=</span><span class="n">derivative</span><span class="p">(</span><span class="n">gpipi</span><span class="p">,</span><span class="n">xd</span><span class="p">,</span><span class="n">dx</span><span class="p">,</span><span class="n">n</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
-                    <span class="k">if</span> <span class="n">verbose</span><span class="p">:</span><span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s2">&quot;</span><span class="se">\t\t\t</span><span class="s2">g_</span><span class="si">{pi}{pi}</span><span class="s2">,</span><span class="si">{mu}</span><span class="s2">,</span><span class="si">{mu}</span><span class="s2"> = </span><span class="si">{gpipi_mu_mu}</span><span class="s2">&quot;</span><span class="p">)</span>
-                    <span class="c1">#Terminos</span>
-                    <span class="n">termino1</span><span class="o">=-</span><span class="mf">0.5</span><span class="o">*</span><span class="p">(</span><span class="n">gmumu_pi_pi</span><span class="o">+</span><span class="n">gpipi_mu_mu</span><span class="p">)</span>
-                    <span class="n">termino2</span><span class="o">=</span><span class="mi">0</span>
-                    <span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="n">arange</span><span class="p">(</span><span class="n">N</span><span class="p">):</span>
-                        <span class="k">if</span> <span class="n">verbose</span><span class="p">:</span><span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s2">&quot;</span><span class="se">\t\t\t\t</span><span class="s2">g_</span><span class="si">{a}{a}</span><span class="s2"> = {gfun(xmu,a,*gargs)}&quot;</span><span class="p">)</span>
-                        <span class="k">if</span> <span class="n">verbose</span><span class="p">:</span><span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s2">&quot;</span><span class="se">\t\t\t\t</span><span class="s2">G^</span><span class="si">{a}</span><span class="s2">_</span><span class="si">{mu}{mu}</span><span class="s2"> = </span><span class="si">{G[a,mu,mu]}</span><span class="s2">&quot;</span><span class="p">)</span>
-                        <span class="k">if</span> <span class="n">verbose</span><span class="p">:</span><span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s2">&quot;</span><span class="se">\t\t\t\t</span><span class="s2">G^</span><span class="si">{a}</span><span class="s2">_</span><span class="si">{pi}{pi}</span><span class="s2"> = </span><span class="si">{G[a,pi,pi]}</span><span class="s2">&quot;</span><span class="p">)</span>
-                        <span class="n">termino2</span><span class="o">-=</span><span class="n">gfun</span><span class="p">(</span><span class="n">xmu</span><span class="p">,</span><span class="n">a</span><span class="p">,</span><span class="o">*</span><span class="n">gargs</span><span class="p">)</span><span class="o">*</span><span class="n">G</span><span class="p">[</span><span class="n">a</span><span class="p">,</span><span class="n">mu</span><span class="p">,</span><span class="n">mu</span><span class="p">]</span><span class="o">*</span><span class="n">G</span><span class="p">[</span><span class="n">a</span><span class="p">,</span><span class="n">pi</span><span class="p">,</span><span class="n">pi</span><span class="p">]</span>
-                    <span class="n">termino3</span><span class="o">=</span><span class="n">gfun</span><span class="p">(</span><span class="n">xmu</span><span class="p">,</span><span class="n">pi</span><span class="p">,</span><span class="o">*</span><span class="n">gargs</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="o">*</span><span class="n">G</span><span class="p">[</span><span class="n">pi</span><span class="p">,</span><span class="n">pi</span><span class="p">,</span><span class="n">mu</span><span class="p">]</span><span class="o">**</span><span class="mi">2</span>
-                    <span class="n">termino4</span><span class="o">=</span><span class="n">gfun</span><span class="p">(</span><span class="n">xmu</span><span class="p">,</span><span class="n">mu</span><span class="p">,</span><span class="o">*</span><span class="n">gargs</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="o">*</span><span class="n">G</span><span class="p">[</span><span class="n">mu</span><span class="p">,</span><span class="n">mu</span><span class="p">,</span><span class="n">pi</span><span class="p">]</span><span class="o">**</span><span class="mi">2</span>
-                    <span class="k">if</span> <span class="n">verbose</span><span class="p">:</span><span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s2">&quot;</span><span class="se">\t\t\t</span><span class="s2">Termino 1 = </span><span class="si">{termino1}</span><span class="s2">&quot;</span><span class="p">)</span>
-                    <span class="k">if</span> <span class="n">verbose</span><span class="p">:</span><span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s2">&quot;</span><span class="se">\t\t\t</span><span class="s2">Termino 2 = </span><span class="si">{termino2}</span><span class="s2">&quot;</span><span class="p">)</span>
-                    <span class="k">if</span> <span class="n">verbose</span><span class="p">:</span><span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s2">&quot;</span><span class="se">\t\t\t</span><span class="s2">Termino 3 = </span><span class="si">{termino3}</span><span class="s2">&quot;</span><span class="p">)</span>
-                    <span class="k">if</span> <span class="n">verbose</span><span class="p">:</span><span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s2">&quot;</span><span class="se">\t\t\t</span><span class="s2">Termino 4 = </span><span class="si">{termino4}</span><span class="s2">&quot;</span><span class="p">)</span>
-                    <span class="n">R</span><span class="p">[</span><span class="n">pi</span><span class="p">,</span><span class="n">mu</span><span class="p">,</span><span class="n">mu</span><span class="p">,</span><span class="n">xi</span><span class="p">]</span><span class="o">=</span><span class="n">termino1</span><span class="o">+</span><span class="n">termino2</span><span class="o">+</span><span class="n">termino3</span><span class="o">+</span><span class="n">termino4</span>
-                    <span class="k">if</span> <span class="n">verbose</span><span class="p">:</span><span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s2">&quot;</span><span class="se">\t\t\t</span><span class="s2">R_</span><span class="si">{pi}{mu}{mu}{xi}</span><span class="s2"> = </span><span class="si">{R[pi,mu,mu,xi]}</span><span class="s2">&quot;</span><span class="p">)</span>
-                <span class="c1">#pi != xi</span>
-                <span class="k">else</span><span class="p">:</span>
-                    <span class="c1">#g_mumu,pi</span>
-                    <span class="k">if</span> <span class="n">verbose</span><span class="p">:</span><span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s2">&quot;</span><span class="se">\t\t\t</span><span class="s2">pi != xi&quot;</span><span class="p">)</span>
-                    <span class="k">def</span> <span class="nf">dgdxpi</span><span class="p">(</span><span class="n">xmu_local</span><span class="p">):</span>
-                        <span class="n">x1d</span><span class="o">=</span><span class="n">xmu_local</span><span class="p">[</span><span class="n">pi</span><span class="p">]</span> <span class="c1">#Punto de derivación</span>
-                        <span class="n">dx1</span><span class="o">=</span><span class="nb">max</span><span class="p">(</span><span class="n">dxmax</span><span class="p">,</span><span class="n">dxmax</span><span class="o">*</span><span class="nb">abs</span><span class="p">(</span><span class="n">x1d</span><span class="p">))</span>
-                        <span class="n">g</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span><span class="n">gfun</span><span class="p">(</span><span class="n">where</span><span class="p">(</span><span class="n">index</span><span class="o">==</span><span class="n">pi</span><span class="p">,</span><span class="n">x</span><span class="p">,</span><span class="n">xmu_local</span><span class="p">),</span>
-                                            <span class="n">mu</span><span class="p">,</span><span class="o">*</span><span class="n">gargs</span><span class="p">)</span>
-                        <span class="n">g_pi</span><span class="o">=</span><span class="n">derivative</span><span class="p">(</span><span class="n">g</span><span class="p">,</span><span class="n">x1d</span><span class="p">,</span><span class="n">dx1</span><span class="p">,</span><span class="n">n</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-                        <span class="k">return</span> <span class="n">g_pi</span>
-                    <span class="c1">#g_mumu,pi,xi</span>
-                    <span class="n">x2d</span><span class="o">=</span><span class="n">xmu</span><span class="p">[</span><span class="n">xi</span><span class="p">]</span> <span class="c1">#Punto de derivación</span>
-                    <span class="n">dx2</span><span class="o">=</span><span class="nb">max</span><span class="p">(</span><span class="n">dxmax</span><span class="p">,</span><span class="n">dxmax</span><span class="o">*</span><span class="nb">abs</span><span class="p">(</span><span class="n">x2d</span><span class="p">))</span>
-                    <span class="n">gmumu_pi</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span><span class="n">dgdxpi</span><span class="p">(</span><span class="n">where</span><span class="p">(</span><span class="n">index</span><span class="o">==</span><span class="n">xi</span><span class="p">,</span><span class="n">x</span><span class="p">,</span><span class="n">xmu</span><span class="p">))</span>
-                    <span class="n">gmumu_pi_xi</span><span class="o">=</span><span class="n">derivative</span><span class="p">(</span><span class="n">gmumu_pi</span><span class="p">,</span><span class="n">x2d</span><span class="p">,</span><span class="n">dx2</span><span class="p">,</span><span class="n">n</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-                    <span class="k">if</span> <span class="n">verbose</span><span class="p">:</span><span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s2">&quot;</span><span class="se">\t\t\t</span><span class="s2">g_</span><span class="si">{mu}{mu}</span><span class="s2">,</span><span class="si">{pi}</span><span class="s2">,</span><span class="si">{xi}</span><span class="s2"> = </span><span class="si">{gmumu_pi_xi}</span><span class="s2">&quot;</span><span class="p">)</span>
-                    <span class="c1">#Terminos</span>
-                    <span class="n">termino1</span><span class="o">=-</span><span class="mf">0.5</span><span class="o">*</span><span class="n">gmumu_pi_xi</span>
-                    <span class="n">termino2</span><span class="o">=-</span><span class="n">gfun</span><span class="p">(</span><span class="n">xmu</span><span class="p">,</span><span class="n">pi</span><span class="p">,</span><span class="o">*</span><span class="n">gargs</span><span class="p">)</span><span class="o">*</span><span class="n">G</span><span class="p">[</span><span class="n">pi</span><span class="p">,</span><span class="n">mu</span><span class="p">,</span><span class="n">mu</span><span class="p">]</span><span class="o">*</span><span class="n">G</span><span class="p">[</span><span class="n">pi</span><span class="p">,</span><span class="n">pi</span><span class="p">,</span><span class="n">xi</span><span class="p">]</span>
-                    <span class="n">termino3</span><span class="o">=-</span><span class="n">gfun</span><span class="p">(</span><span class="n">xmu</span><span class="p">,</span><span class="n">xi</span><span class="p">,</span><span class="o">*</span><span class="n">gargs</span><span class="p">)</span><span class="o">*</span><span class="n">G</span><span class="p">[</span><span class="n">xi</span><span class="p">,</span><span class="n">mu</span><span class="p">,</span><span class="n">mu</span><span class="p">]</span><span class="o">*</span><span class="n">G</span><span class="p">[</span><span class="n">xi</span><span class="p">,</span><span class="n">xi</span><span class="p">,</span><span class="n">pi</span><span class="p">]</span>
-                    <span class="n">termino4</span><span class="o">=-</span><span class="n">gfun</span><span class="p">(</span><span class="n">xmu</span><span class="p">,</span><span class="n">mu</span><span class="p">,</span><span class="o">*</span><span class="n">gargs</span><span class="p">)</span><span class="o">*</span><span class="n">G</span><span class="p">[</span><span class="n">mu</span><span class="p">,</span><span class="n">mu</span><span class="p">,</span><span class="n">pi</span><span class="p">]</span><span class="o">*</span><span class="n">G</span><span class="p">[</span><span class="n">mu</span><span class="p">,</span><span class="n">mu</span><span class="p">,</span><span class="n">xi</span><span class="p">]</span>
-                    <span class="n">R</span><span class="p">[</span><span class="n">pi</span><span class="p">,</span><span class="n">mu</span><span class="p">,</span><span class="n">mu</span><span class="p">,</span><span class="n">xi</span><span class="p">]</span><span class="o">=</span><span class="n">termino1</span><span class="o">+</span><span class="n">termino2</span><span class="o">+</span><span class="n">termino3</span><span class="o">+</span><span class="n">termino4</span>
-                <span class="c1">#print(f&quot;Filling: {pi},{mu},{mu},{xi}&quot;)</span>
-                <span class="n">R</span><span class="p">[</span><span class="n">mu</span><span class="p">,</span><span class="n">pi</span><span class="p">,</span><span class="n">mu</span><span class="p">,</span><span class="n">xi</span><span class="p">]</span><span class="o">=-</span><span class="n">R</span><span class="p">[</span><span class="n">pi</span><span class="p">,</span><span class="n">mu</span><span class="p">,</span><span class="n">mu</span><span class="p">,</span><span class="n">xi</span><span class="p">]</span>
-                <span class="n">R</span><span class="p">[</span><span class="n">mu</span><span class="p">,</span><span class="n">pi</span><span class="p">,</span><span class="n">xi</span><span class="p">,</span><span class="n">mu</span><span class="p">]</span><span class="o">=-</span><span class="n">R</span><span class="p">[</span><span class="n">pi</span><span class="p">,</span><span class="n">mu</span><span class="p">,</span><span class="n">mu</span><span class="p">,</span><span class="n">xi</span><span class="p">]</span>
-                <span class="n">R</span><span class="p">[</span><span class="n">mu</span><span class="p">,</span><span class="n">xi</span><span class="p">,</span><span class="n">mu</span><span class="p">,</span><span class="n">pi</span><span class="p">]</span><span class="o">=+</span><span class="n">R</span><span class="p">[</span><span class="n">pi</span><span class="p">,</span><span class="n">mu</span><span class="p">,</span><span class="n">mu</span><span class="p">,</span><span class="n">xi</span><span class="p">]</span>
-                <span class="n">R</span><span class="p">[</span><span class="n">xi</span><span class="p">,</span><span class="n">mu</span><span class="p">,</span><span class="n">pi</span><span class="p">,</span><span class="n">mu</span><span class="p">]</span><span class="o">=-</span><span class="n">R</span><span class="p">[</span><span class="n">pi</span><span class="p">,</span><span class="n">mu</span><span class="p">,</span><span class="n">mu</span><span class="p">,</span><span class="n">xi</span><span class="p">]</span>
-                <span class="n">R</span><span class="p">[</span><span class="n">mu</span><span class="p">,</span><span class="n">xi</span><span class="p">,</span><span class="n">pi</span><span class="p">,</span><span class="n">mu</span><span class="p">]</span><span class="o">=-</span><span class="n">R</span><span class="p">[</span><span class="n">pi</span><span class="p">,</span><span class="n">mu</span><span class="p">,</span><span class="n">mu</span><span class="p">,</span><span class="n">xi</span><span class="p">]</span>
-                <span class="n">R</span><span class="p">[</span><span class="n">xi</span><span class="p">,</span><span class="n">mu</span><span class="p">,</span><span class="n">mu</span><span class="p">,</span><span class="n">pi</span><span class="p">]</span><span class="o">=+</span><span class="n">R</span><span class="p">[</span><span class="n">pi</span><span class="p">,</span><span class="n">mu</span><span class="p">,</span><span class="n">mu</span><span class="p">,</span><span class="n">xi</span><span class="p">]</span>
-    <span class="k">return</span> <span class="n">G</span><span class="p">,</span><span class="n">R</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Probemósla con la esfera:</p>
+<p>En el código a continuación calculamos a trayectoria de las partículas:</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">export</span> <span class="k">import</span> <span class="n">g_esfera_2d</span>
-<span class="kn">from</span> <span class="nn">numpy</span> <span class="k">import</span> <span class="n">pi</span>
-<span class="n">xmu</span><span class="o">=</span><span class="p">[</span><span class="n">pi</span><span class="o">/</span><span class="mi">6</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span>
-<span class="n">R</span><span class="o">=</span><span class="mi">1</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">export</span> <span class="k">import</span> <span class="n">Gfun_esf2d</span><span class="p">,</span><span class="n">ecuacion_geodesica</span>
+<span class="kn">from</span> <span class="nn">numpy</span> <span class="k">import</span> <span class="n">mod</span><span class="p">,</span><span class="n">array</span><span class="p">,</span><span class="n">pi</span><span class="p">,</span><span class="n">linspace</span>
+<span class="kn">from</span> <span class="nn">scipy.integrate</span> <span class="k">import</span> <span class="n">odeint</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
 <span class="n">N</span><span class="o">=</span><span class="mi">2</span>
-<span class="n">Gama</span><span class="p">,</span><span class="n">Riemann</span><span class="o">=</span><span class="n">GammaRiemann</span><span class="p">(</span><span class="n">xmu</span><span class="p">,</span><span class="n">g_esfera_2d</span><span class="p">,(</span><span class="n">R</span><span class="p">,),</span><span class="n">N</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>G = 
-[[[-0.          0.        ]
-  [ 0.          0.4330127 ]]
-
- [[-0.         -0.57735027]
-  [-0.57735027 -0.        ]]]
-mu = 0
-	pi = 1
-		xi = 1
-			pi = xi
-			g_00,1,1 = 0.0
-			g_11,0,0 = -1.000088900582341
-				g_00 = 1
-				G^0_00 = -0.0
-				G^0_11 = 0.4330127019169794
-				g_11 = 0.7500000000000001
-				G^1_00 = -0.0
-				G^1_11 = -0.0
-			Termino 1 = 0.5000444502911705
-			Termino 2 = 0.0
-			Termino 3 = 0.18750000002144285
-			Termino 4 = 0.0
-			R_1001 = 0.6875444503126134
-mu = 1
-	pi = 0
-		xi = 0
-			pi = xi
-			g_11,0,0 = -1.000088900582341
-			g_00,1,1 = 0.0
-				g_00 = 1
-				G^0_11 = 0.4330127019169794
-				G^0_00 = -0.0
-				g_11 = 0.7500000000000001
-				G^1_11 = -0.0
-				G^1_00 = -0.0
-			Termino 1 = 0.5000444502911705
-			Termino 2 = 0.0
-			Termino 3 = 0.0
-			Termino 4 = 0.18750000002144285
-			R_0110 = 0.6875444503126134
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">Riemann</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[3]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>array([[[[ 0.        ,  0.        ],
-         [ 0.        ,  0.        ]],
-
-        [[ 0.        , -0.68754445],
-         [ 0.68754445,  0.        ]]],
-
-
-       [[[ 0.        , -0.68754445],
-         [ 0.68754445,  0.        ]],
-
-        [[ 0.        ,  0.        ],
-         [ 0.        ,  0.        ]]]])</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Ahora probémoslo con el espacio tiempo plano:</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">export</span> <span class="k">import</span> <span class="n">g_cilindricas_4d</span>
-<span class="n">xmu</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span>
-<span class="n">N</span><span class="o">=</span><span class="mi">4</span>
-<span class="n">Gama</span><span class="p">,</span><span class="n">Riemann</span><span class="o">=</span><span class="n">GammaRiemann</span><span class="p">(</span><span class="n">xmu</span><span class="p">,</span><span class="n">g_cilindricas_4d</span><span class="p">,(),</span><span class="n">N</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>G = 
-[[[-0.   0.   0.   0. ]
-  [ 0.  -0.   0.   0. ]
-  [ 0.   0.  -0.   0. ]
-  [ 0.   0.   0.  -0. ]]
-
- [[ 0.  -0.   0.   0. ]
-  [-0.   0.  -0.  -0. ]
-  [ 0.  -0.  -2.   0. ]
-  [ 0.  -0.   0.   0. ]]
-
- [[ 0.   0.  -0.   0. ]
-  [ 0.   0.   0.5  0. ]
-  [-0.   0.5  0.  -0. ]
-  [ 0.   0.  -0.   0. ]]
-
- [[ 0.   0.   0.  -0. ]
-  [ 0.   0.   0.  -0. ]
-  [ 0.   0.   0.  -0. ]
-  [-0.  -0.  -0.   0. ]]]
-mu = 0
-	pi = 1
-		xi = 1
-			pi = xi
-			g_00,1,1 = 0.0
-			g_11,0,0 = 0.0
-				g_00 = 1
-				G^0_00 = -0.0
-				G^0_11 = -0.0
-				g_11 = -1
-				G^1_00 = 0.0
-				G^1_11 = 0.0
-				g_22 = -4
-				G^2_00 = 0.0
-				G^2_11 = 0.0
-				g_33 = -1
-				G^3_00 = 0.0
-				G^3_11 = 0.0
-			Termino 1 = -0.0
-			Termino 2 = 0.0
-			Termino 3 = 0.0
-			Termino 4 = 0.0
-			R_1001 = 0.0
-		xi = 2
-			pi != xi
-			g_00,1,2 = 0.0
-		xi = 3
-			pi != xi
-			g_00,1,3 = 0.0
-	pi = 2
-		xi = 1
-			pi != xi
-			g_00,2,1 = 0.0
-		xi = 2
-			pi = xi
-			g_00,2,2 = 0.0
-			g_22,0,0 = 0.0
-				g_00 = 1
-				G^0_00 = -0.0
-				G^0_22 = -0.0
-				g_11 = -1
-				G^1_00 = 0.0
-				G^1_22 = -2.000000000002
-				g_22 = -4
-				G^2_00 = 0.0
-				G^2_22 = 0.0
-				g_33 = -1
-				G^3_00 = 0.0
-				G^3_22 = 0.0
-			Termino 1 = -0.0
-			Termino 2 = 0.0
-			Termino 3 = 0.0
-			Termino 4 = 0.0
-			R_2002 = 0.0
-		xi = 3
-			pi != xi
-			g_00,2,3 = 0.0
-	pi = 3
-		xi = 1
-			pi != xi
-			g_00,3,1 = 0.0
-		xi = 2
-			pi != xi
-			g_00,3,2 = 0.0
-		xi = 3
-			pi = xi
-			g_00,3,3 = 0.0
-			g_33,0,0 = 0.0
-				g_00 = 1
-				G^0_00 = -0.0
-				G^0_33 = -0.0
-				g_11 = -1
-				G^1_00 = 0.0
-				G^1_33 = 0.0
-				g_22 = -4
-				G^2_00 = 0.0
-				G^2_33 = 0.0
-				g_33 = -1
-				G^3_00 = 0.0
-				G^3_33 = 0.0
-			Termino 1 = -0.0
-			Termino 2 = 0.0
-			Termino 3 = 0.0
-			Termino 4 = 0.0
-			R_3003 = 0.0
-mu = 1
-	pi = 0
-		xi = 0
-			pi = xi
-			g_11,0,0 = 0.0
-			g_00,1,1 = 0.0
-				g_00 = 1
-				G^0_11 = -0.0
-				G^0_00 = -0.0
-				g_11 = -1
-				G^1_11 = 0.0
-				G^1_00 = 0.0
-				g_22 = -4
-				G^2_11 = 0.0
-				G^2_00 = 0.0
-				g_33 = -1
-				G^3_11 = 0.0
-				G^3_00 = 0.0
-			Termino 1 = -0.0
-			Termino 2 = 0.0
-			Termino 3 = 0.0
-			Termino 4 = 0.0
-			R_0110 = 0.0
-		xi = 2
-			pi != xi
-			g_11,0,2 = 0.0
-		xi = 3
-			pi != xi
-			g_11,0,3 = 0.0
-	pi = 2
-		xi = 0
-			pi != xi
-			g_11,2,0 = 0.0
-		xi = 2
-			pi = xi
-			g_11,2,2 = 0.0
-			g_22,1,1 = -1.999733711954832
-				g_00 = 1
-				G^0_11 = -0.0
-				G^0_22 = -0.0
-				g_11 = -1
-				G^1_11 = 0.0
-				G^1_22 = -2.000000000002
-				g_22 = -4
-				G^2_11 = 0.0
-				G^2_22 = 0.0
-				g_33 = -1
-				G^3_11 = 0.0
-				G^3_22 = 0.0
-			Termino 1 = 0.999866855977416
-			Termino 2 = 0.0
-			Termino 3 = 4.000000000008001
-			Termino 4 = 0.0
-			R_2112 = 4.999866855985417
-		xi = 3
-			pi != xi
-			g_11,2,3 = 0.0
-	pi = 3
-		xi = 0
-			pi != xi
-			g_11,3,0 = 0.0
-		xi = 2
-			pi != xi
-			g_11,3,2 = 0.0
-		xi = 3
-			pi = xi
-			g_11,3,3 = 0.0
-			g_33,1,1 = 0.0
-				g_00 = 1
-				G^0_11 = -0.0
-				G^0_33 = -0.0
-				g_11 = -1
-				G^1_11 = 0.0
-				G^1_33 = 0.0
-				g_22 = -4
-				G^2_11 = 0.0
-				G^2_33 = 0.0
-				g_33 = -1
-				G^3_11 = 0.0
-				G^3_33 = 0.0
-			Termino 1 = -0.0
-			Termino 2 = 0.0
-			Termino 3 = 0.0
-			Termino 4 = 0.0
-			R_3113 = 0.0
-mu = 2
-	pi = 0
-		xi = 0
-			pi = xi
-			g_22,0,0 = 0.0
-			g_00,2,2 = 0.0
-				g_00 = 1
-				G^0_22 = -0.0
-				G^0_00 = -0.0
-				g_11 = -1
-				G^1_22 = -2.000000000002
-				G^1_00 = 0.0
-				g_22 = -4
-				G^2_22 = 0.0
-				G^2_00 = 0.0
-				g_33 = -1
-				G^3_22 = 0.0
-				G^3_00 = 0.0
-			Termino 1 = -0.0
-			Termino 2 = 0.0
-			Termino 3 = 0.0
-			Termino 4 = 0.0
-			R_0220 = 0.0
-		xi = 1
-			pi != xi
-			g_22,0,1 = 0.0
-		xi = 3
-			pi != xi
-			g_22,0,3 = 0.0
-	pi = 1
-		xi = 0
-			pi != xi
-			g_22,1,0 = 0.0
-		xi = 1
-			pi = xi
-			g_22,1,1 = -1.999733711954832
-			g_11,2,2 = 0.0
-				g_00 = 1
-				G^0_22 = -0.0
-				G^0_11 = -0.0
-				g_11 = -1
-				G^1_22 = -2.000000000002
-				G^1_11 = 0.0
-				g_22 = -4
-				G^2_22 = 0.0
-				G^2_11 = 0.0
-				g_33 = -1
-				G^3_22 = 0.0
-				G^3_11 = 0.0
-			Termino 1 = 0.999866855977416
-			Termino 2 = 0.0
-			Termino 3 = 0.0
-			Termino 4 = 4.000000000008001
-			R_1221 = 4.999866855985417
-		xi = 3
-			pi != xi
-			g_22,1,3 = 0.0
-	pi = 3
-		xi = 0
-			pi != xi
-			g_22,3,0 = 0.0
-		xi = 1
-			pi != xi
-			g_22,3,1 = 0.0
-		xi = 3
-			pi = xi
-			g_22,3,3 = 0.0
-			g_33,2,2 = 0.0
-				g_00 = 1
-				G^0_22 = -0.0
-				G^0_33 = -0.0
-				g_11 = -1
-				G^1_22 = -2.000000000002
-				G^1_33 = 0.0
-				g_22 = -4
-				G^2_22 = 0.0
-				G^2_33 = 0.0
-				g_33 = -1
-				G^3_22 = 0.0
-				G^3_33 = 0.0
-			Termino 1 = -0.0
-			Termino 2 = 0.0
-			Termino 3 = 0.0
-			Termino 4 = 0.0
-			R_3223 = 0.0
-mu = 3
-	pi = 0
-		xi = 0
-			pi = xi
-			g_33,0,0 = 0.0
-			g_00,3,3 = 0.0
-				g_00 = 1
-				G^0_33 = -0.0
-				G^0_00 = -0.0
-				g_11 = -1
-				G^1_33 = 0.0
-				G^1_00 = 0.0
-				g_22 = -4
-				G^2_33 = 0.0
-				G^2_00 = 0.0
-				g_33 = -1
-				G^3_33 = 0.0
-				G^3_00 = 0.0
-			Termino 1 = -0.0
-			Termino 2 = 0.0
-			Termino 3 = 0.0
-			Termino 4 = 0.0
-			R_0330 = 0.0
-		xi = 1
-			pi != xi
-			g_33,0,1 = 0.0
-		xi = 2
-			pi != xi
-			g_33,0,2 = 0.0
-	pi = 1
-		xi = 0
-			pi != xi
-			g_33,1,0 = 0.0
-		xi = 1
-			pi = xi
-			g_33,1,1 = 0.0
-			g_11,3,3 = 0.0
-				g_00 = 1
-				G^0_33 = -0.0
-				G^0_11 = -0.0
-				g_11 = -1
-				G^1_33 = 0.0
-				G^1_11 = 0.0
-				g_22 = -4
-				G^2_33 = 0.0
-				G^2_11 = 0.0
-				g_33 = -1
-				G^3_33 = 0.0
-				G^3_11 = 0.0
-			Termino 1 = -0.0
-			Termino 2 = 0.0
-			Termino 3 = 0.0
-			Termino 4 = 0.0
-			R_1331 = 0.0
-		xi = 2
-			pi != xi
-			g_33,1,2 = 0.0
-	pi = 2
-		xi = 0
-			pi != xi
-			g_33,2,0 = 0.0
-		xi = 1
-			pi != xi
-			g_33,2,1 = 0.0
-		xi = 2
-			pi = xi
-			g_33,2,2 = 0.0
-			g_22,3,3 = 0.0
-				g_00 = 1
-				G^0_33 = -0.0
-				G^0_22 = -0.0
-				g_11 = -1
-				G^1_33 = 0.0
-				G^1_22 = -2.000000000002
-				g_22 = -4
-				G^2_33 = 0.0
-				G^2_22 = 0.0
-				g_33 = -1
-				G^3_33 = 0.0
-				G^3_22 = 0.0
-			Termino 1 = -0.0
-			Termino 2 = 0.0
-			Termino 3 = 0.0
-			Termino 4 = 0.0
-			R_2332 = 0.0
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Todos los términos del tensor de Riemann en este caso deberían dar cero:</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">Riemann</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[5]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>array([[[[ 0.        ,  0.        ,  0.        ,  0.        ],
-         [ 0.        ,  0.        ,  0.        ,  0.        ],
-         [ 0.        ,  0.        ,  0.        ,  0.        ],
-         [ 0.        ,  0.        ,  0.        ,  0.        ]],
-
-        [[ 0.        , -0.        ,  0.        , -0.        ],
-         [ 0.        ,  0.        ,  0.        ,  0.        ],
-         [-0.        , -0.        ,  0.        ,  0.        ],
-         [ 0.        , -0.        ,  0.        ,  0.        ]],
-
-        [[ 0.        , -0.        , -0.        , -0.        ],
-         [-0.        ,  0.        , -0.        ,  0.        ],
-         [ 0.        ,  0.        ,  0.        ,  0.        ],
-         [ 0.        ,  0.        , -0.        ,  0.        ]],
-
-        [[ 0.        ,  0.        ,  0.        , -0.        ],
-         [ 0.        ,  0.        ,  0.        , -0.        ],
-         [ 0.        ,  0.        ,  0.        , -0.        ],
-         [ 0.        ,  0.        ,  0.        ,  0.        ]]],
-
-
-       [[[ 0.        , -0.        ,  0.        , -0.        ],
-         [ 0.        ,  0.        ,  0.        ,  0.        ],
-         [-0.        , -0.        ,  0.        ,  0.        ],
-         [ 0.        , -0.        ,  0.        ,  0.        ]],
-
-        [[ 0.        ,  0.        ,  0.        ,  0.        ],
-         [ 0.        ,  0.        ,  0.        ,  0.        ],
-         [ 0.        ,  0.        ,  0.        ,  0.        ],
-         [ 0.        ,  0.        ,  0.        ,  0.        ]],
-
-        [[ 0.        , -0.        , -0.        ,  0.        ],
-         [-0.        ,  0.        , -4.99986686,  0.        ],
-         [ 0.        ,  4.99986686,  0.        ,  0.        ],
-         [ 0.        , -0.        , -0.        ,  0.        ]],
-
-        [[ 0.        , -0.        ,  0.        , -0.        ],
-         [-0.        ,  0.        , -0.        , -0.        ],
-         [ 0.        , -0.        ,  0.        , -0.        ],
-         [ 0.        ,  0.        ,  0.        ,  0.        ]]],
-
-
-       [[[ 0.        ,  0.        , -0.        , -0.        ],
-         [-0.        ,  0.        , -0.        ,  0.        ],
-         [ 0.        ,  0.        ,  0.        ,  0.        ],
-         [ 0.        ,  0.        , -0.        ,  0.        ]],
-
-        [[ 0.        , -0.        , -0.        ,  0.        ],
-         [ 0.        ,  0.        , -4.99986686,  0.        ],
-         [-0.        ,  4.99986686,  0.        ,  0.        ],
-         [ 0.        , -0.        , -0.        ,  0.        ]],
-
-        [[ 0.        ,  0.        ,  0.        ,  0.        ],
-         [ 0.        ,  0.        ,  0.        ,  0.        ],
-         [ 0.        ,  0.        ,  0.        ,  0.        ],
-         [ 0.        ,  0.        ,  0.        ,  0.        ]],
-
-        [[ 0.        ,  0.        , -0.        , -0.        ],
-         [ 0.        ,  0.        , -0.        , -0.        ],
-         [-0.        , -0.        ,  0.        , -0.        ],
-         [ 0.        ,  0.        ,  0.        ,  0.        ]]],
-
-
-       [[[ 0.        , -0.        , -0.        , -0.        ],
-         [ 0.        ,  0.        ,  0.        , -0.        ],
-         [ 0.        ,  0.        ,  0.        , -0.        ],
-         [ 0.        ,  0.        ,  0.        ,  0.        ]],
-
-        [[ 0.        , -0.        ,  0.        , -0.        ],
-         [ 0.        ,  0.        ,  0.        , -0.        ],
-         [ 0.        , -0.        ,  0.        , -0.        ],
-         [-0.        ,  0.        ,  0.        ,  0.        ]],
-
-        [[ 0.        ,  0.        , -0.        , -0.        ],
-         [ 0.        ,  0.        , -0.        , -0.        ],
-         [ 0.        ,  0.        ,  0.        , -0.        ],
-         [-0.        , -0.        ,  0.        ,  0.        ]],
-
-        [[ 0.        ,  0.        ,  0.        ,  0.        ],
-         [ 0.        ,  0.        ,  0.        ,  0.        ],
-         [ 0.        ,  0.        ,  0.        ,  0.        ],
-         [ 0.        ,  0.        ,  0.        ,  0.        ]]]])</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="2.8.1.-Desviaci&#243;n-geod&#233;sica-num&#233;rica">2.8.1. Desviaci&#243;n geod&#233;sica num&#233;rica<a class="anchor-link" href="#2.8.1.-Desviaci&#243;n-geod&#233;sica-num&#233;rica">&#182;</a></h3><p><a id='desviacion_geodesica_numerica'></a></p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Podemos poner a prueba los conceptos vistos en esta sección usando la desviación geodésica.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Tomemos el caso de la métrica de Newton:</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Usemos las mismas condiciones iniciales que habíamos visto:</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Constantes</span>
-<span class="n">c</span><span class="o">=</span><span class="mf">3e8</span> <span class="c1"># m/s</span>
-<span class="n">G</span><span class="o">=</span><span class="mf">6.67e-11</span> <span class="c1"># m^3 kg^-1 s^-2</span>
-
-<span class="c1">#Propiedades del planeta</span>
-<span class="n">Mp</span><span class="o">=</span><span class="mf">5.98e24</span> <span class="c1"># kg</span>
-<span class="n">Rp</span><span class="o">=</span><span class="mf">6.371e6</span> <span class="c1"># m</span>
-<span class="n">gp</span><span class="o">=</span><span class="n">G</span><span class="o">*</span><span class="n">Mp</span><span class="o">/</span><span class="n">Rp</span><span class="o">**</span><span class="mi">2</span>
-<span class="n">R</span><span class="o">=</span><span class="mi">2</span><span class="o">*</span><span class="n">G</span><span class="o">*</span><span class="n">Mp</span><span class="o">/</span><span class="n">c</span><span class="o">**</span><span class="mi">2</span>
-
-<span class="c1">#Altura y velocidad</span>
-<span class="n">h</span><span class="o">=</span><span class="mf">100.0</span> <span class="c1"># m</span>
-<span class="n">v</span><span class="o">=</span><span class="mf">10000.0</span> <span class="c1"># m/s</span>
-<span class="kn">from</span> <span class="nn">numpy</span> <span class="k">import</span> <span class="n">sqrt</span>
-<span class="n">T</span><span class="o">=</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">h</span><span class="o">/</span><span class="n">gp</span><span class="p">)</span>
-
-<span class="c1">#Tiempo de integración</span>
-<span class="kn">from</span> <span class="nn">numpy</span> <span class="k">import</span> <span class="n">pi</span><span class="p">,</span><span class="n">linspace</span>
-<span class="n">ss</span><span class="o">=</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">T</span><span class="p">,</span><span class="mi">30</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Pero vamos a estudiar lo que pasa sobre dos geodésicas vecinas</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Condiciones iniciales</span>
-<span class="kn">from</span> <span class="nn">numpy</span> <span class="k">import</span> <span class="n">array</span><span class="p">,</span><span class="n">pi</span>
-<span class="n">Y1_0s</span><span class="o">=</span><span class="n">array</span><span class="p">([</span><span class="mf">0.0</span><span class="p">,(</span><span class="n">Rp</span><span class="o">+</span><span class="n">h</span><span class="p">)</span><span class="o">/</span><span class="n">c</span><span class="p">,</span><span class="n">pi</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="n">pi</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span>
-             <span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="o">-</span><span class="mi">0</span><span class="o">*</span><span class="n">v</span><span class="o">/</span><span class="n">Rp</span><span class="p">])</span>
-
-<span class="n">Y2_0s</span><span class="o">=</span><span class="n">array</span><span class="p">([</span><span class="mf">0.0</span><span class="p">,(</span><span class="n">Rp</span><span class="o">+</span><span class="n">h</span><span class="o">+</span><span class="mf">0.1</span><span class="p">)</span><span class="o">/</span><span class="n">c</span><span class="p">,</span><span class="n">pi</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="n">pi</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span>
-             <span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="o">-</span><span class="mi">0</span><span class="o">*</span><span class="n">v</span><span class="o">/</span><span class="n">Rp</span><span class="p">])</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Resolvamos las ecuaciones geodésicas:</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.integrate</span> <span class="k">import</span> <span class="n">odeint</span>
-<span class="kn">from</span> <span class="nn">export</span> <span class="k">import</span> <span class="n">ecuacion_geodesica_num</span><span class="p">,</span><span class="n">g_newtoniana_4d</span>
-<span class="n">N</span><span class="o">=</span><span class="mi">4</span>
-<span class="n">Y1s</span><span class="o">=</span><span class="n">odeint</span><span class="p">(</span><span class="n">ecuacion_geodesica_num</span><span class="p">,</span><span class="n">Y1_0s</span><span class="p">,</span><span class="n">ss</span><span class="p">,</span><span class="n">args</span><span class="o">=</span><span class="p">(</span><span class="n">g_newtoniana_4d</span><span class="p">,(</span><span class="n">R</span><span class="o">/</span><span class="n">c</span><span class="p">,),</span><span class="n">N</span><span class="p">))</span>
-<span class="n">Y2s</span><span class="o">=</span><span class="n">odeint</span><span class="p">(</span><span class="n">ecuacion_geodesica_num</span><span class="p">,</span><span class="n">Y2_0s</span><span class="p">,</span><span class="n">ss</span><span class="p">,</span><span class="n">args</span><span class="o">=</span><span class="p">(</span><span class="n">g_newtoniana_4d</span><span class="p">,(</span><span class="n">R</span><span class="o">/</span><span class="n">c</span><span class="p">,),</span><span class="n">N</span><span class="p">))</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Grafiquemos:</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">matplotlib</span> inline
+<span class="n">R</span><span class="o">=</span><span class="mi">1</span>
+<span class="n">ss</span><span class="o">=</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mf">1.5</span><span class="p">,</span><span class="mi">100</span><span class="p">)</span>
+<span class="n">Gfun</span><span class="o">=</span><span class="n">Gfun_esf2d</span><span class="p">(</span><span class="n">R</span><span class="p">)</span>
+
+<span class="c1">#Primera geodésica</span>
+<span class="n">Y0s</span><span class="o">=</span><span class="n">array</span><span class="p">([</span><span class="mi">6</span><span class="o">*</span><span class="n">pi</span><span class="o">/</span><span class="mi">180</span><span class="p">,</span><span class="o">-</span><span class="mi">75</span><span class="o">*</span><span class="n">pi</span><span class="o">/</span><span class="mi">180</span><span class="p">,</span><span class="mf">0.5</span><span class="p">,</span><span class="mf">0.3</span><span class="p">])</span>
+<span class="n">Ys</span><span class="o">=</span><span class="n">odeint</span><span class="p">(</span><span class="n">ecuacion_geodesica</span><span class="p">,</span><span class="n">Y0s</span><span class="p">,</span><span class="n">ss</span><span class="p">,</span><span class="n">args</span><span class="o">=</span><span class="p">(</span><span class="n">Gfun</span><span class="p">,</span><span class="n">N</span><span class="p">))</span>
+<span class="n">lons</span><span class="o">=</span><span class="n">mod</span><span class="p">(</span><span class="n">Ys</span><span class="p">[:,</span><span class="mi">1</span><span class="p">]</span><span class="o">*</span><span class="mi">180</span><span class="o">/</span><span class="n">pi</span><span class="p">,</span><span class="mi">360</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span><span class="n">lon</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">lons</span><span class="p">):</span>
+    <span class="n">lons</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">=</span><span class="n">lon</span> <span class="k">if</span> <span class="n">lon</span><span class="o">&lt;</span><span class="mi">180</span> <span class="k">else</span> <span class="n">lon</span><span class="o">-</span><span class="mi">360</span>
+<span class="n">lats</span><span class="o">=</span><span class="n">Ys</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span><span class="o">*</span><span class="mi">180</span><span class="o">/</span><span class="n">pi</span>
+
+<span class="c1">#Segunda geodésica</span>
+<span class="n">Y0s</span><span class="o">=</span><span class="n">array</span><span class="p">([</span><span class="mi">6</span><span class="o">*</span><span class="n">pi</span><span class="o">/</span><span class="mi">180</span><span class="p">,</span><span class="o">-</span><span class="mi">75</span><span class="o">*</span><span class="n">pi</span><span class="o">/</span><span class="mi">180</span><span class="p">,</span><span class="mf">0.505</span><span class="p">,</span><span class="mf">0.3</span><span class="p">])</span>
+<span class="n">Ys</span><span class="o">=</span><span class="n">odeint</span><span class="p">(</span><span class="n">ecuacion_geodesica</span><span class="p">,</span><span class="n">Y0s</span><span class="p">,</span><span class="n">ss</span><span class="p">,</span><span class="n">args</span><span class="o">=</span><span class="p">(</span><span class="n">Gfun</span><span class="p">,</span><span class="n">N</span><span class="p">))</span>
+<span class="n">lons2</span><span class="o">=</span><span class="n">mod</span><span class="p">(</span><span class="n">Ys</span><span class="p">[:,</span><span class="mi">1</span><span class="p">]</span><span class="o">*</span><span class="mi">180</span><span class="o">/</span><span class="n">pi</span><span class="p">,</span><span class="mi">360</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span><span class="n">lon</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">lons2</span><span class="p">):</span>
+    <span class="n">lons2</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">=</span><span class="n">lon</span> <span class="k">if</span> <span class="n">lon</span><span class="o">&lt;</span><span class="mi">180</span> <span class="k">else</span> <span class="n">lon</span><span class="o">-</span><span class="mi">360</span>
+<span class="n">lats2</span><span class="o">=</span><span class="n">Ys</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span><span class="o">*</span><span class="mi">180</span><span class="o">/</span><span class="n">pi</span>
+
+<span class="c1">#Grafica</span>
+<span class="n">fig</span><span class="o">=</span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
+<span class="n">ax</span><span class="o">=</span><span class="n">fig</span><span class="o">.</span><span class="n">gca</span><span class="p">()</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">lons</span><span class="p">,</span><span class="n">lats</span><span class="p">,</span><span class="s1">&#39;r-&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">lons2</span><span class="p">,</span><span class="n">lats2</span><span class="p">,</span><span class="s1">&#39;b-&#39;</span><span class="p">)</span>
+
+<span class="c1">#Decoracion</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">((</span><span class="o">-</span><span class="mi">180</span><span class="p">,</span><span class="mi">180</span><span class="p">))</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">((</span><span class="o">-</span><span class="mi">90</span><span class="p">,</span><span class="mi">90</span><span class="p">))</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
 </pre></div>
 
     </div>
@@ -14563,44 +14277,37 @@ The animation.avconv_args rcparam was deprecated in Matplotlib 3.3 and will be r
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a id='fig:02.06.00.00.RelatividadGeneral.Curvatura_46'></a><center><b>Figura 2.46.</b> </center></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Las partículas parecen estar viajando sobre la misma trayectoria pero en realidad descubrimos que hay una pequeña diferencia en sus coordenadas, es decir una desviación entre las geodésicas.  La desviación se grafica a continuación:</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Convierte solución en coordenadas esféricas</span>
-<span class="kn">from</span> <span class="nn">numpy</span> <span class="k">import</span> <span class="n">sin</span><span class="p">,</span><span class="n">cos</span>
-<span class="c1">#Geodésica 1</span>
-<span class="n">t1s</span><span class="o">=</span><span class="n">Y1s</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span>
-<span class="n">r1s</span><span class="o">=</span><span class="n">Y1s</span><span class="p">[:,</span><span class="mi">1</span><span class="p">]</span>
-<span class="n">q1s</span><span class="o">=</span><span class="n">Y1s</span><span class="p">[:,</span><span class="mi">2</span><span class="p">]</span>
-<span class="n">f1s</span><span class="o">=</span><span class="n">Y1s</span><span class="p">[:,</span><span class="mi">3</span><span class="p">]</span>
-<span class="n">x1s</span><span class="o">=</span><span class="n">r1s</span><span class="o">*</span><span class="n">sin</span><span class="p">(</span><span class="n">q1s</span><span class="p">)</span><span class="o">*</span><span class="n">cos</span><span class="p">(</span><span class="n">f1s</span><span class="p">)</span>
-<span class="n">y1s</span><span class="o">=</span><span class="n">r1s</span><span class="o">*</span><span class="n">sin</span><span class="p">(</span><span class="n">q1s</span><span class="p">)</span><span class="o">*</span><span class="n">sin</span><span class="p">(</span><span class="n">f1s</span><span class="p">)</span>
-<span class="n">z1s</span><span class="o">=</span><span class="n">r1s</span><span class="o">*</span><span class="n">cos</span><span class="p">(</span><span class="n">q1s</span><span class="p">)</span>
-<span class="c1">#Geodésica 2</span>
-<span class="n">t2s</span><span class="o">=</span><span class="n">Y2s</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span>
-<span class="n">r2s</span><span class="o">=</span><span class="n">Y2s</span><span class="p">[:,</span><span class="mi">1</span><span class="p">]</span>
-<span class="n">q2s</span><span class="o">=</span><span class="n">Y2s</span><span class="p">[:,</span><span class="mi">2</span><span class="p">]</span>
-<span class="n">f2s</span><span class="o">=</span><span class="n">Y2s</span><span class="p">[:,</span><span class="mi">3</span><span class="p">]</span>
-<span class="n">x2s</span><span class="o">=</span><span class="n">r2s</span><span class="o">*</span><span class="n">sin</span><span class="p">(</span><span class="n">q2s</span><span class="p">)</span><span class="o">*</span><span class="n">cos</span><span class="p">(</span><span class="n">f2s</span><span class="p">)</span>
-<span class="n">y2s</span><span class="o">=</span><span class="n">r2s</span><span class="o">*</span><span class="n">sin</span><span class="p">(</span><span class="n">q2s</span><span class="p">)</span><span class="o">*</span><span class="n">sin</span><span class="p">(</span><span class="n">f2s</span><span class="p">)</span>
-<span class="n">z2s</span><span class="o">=</span><span class="n">r2s</span><span class="o">*</span><span class="n">cos</span><span class="p">(</span><span class="n">q2s</span><span class="p">)</span>
-
-<span class="c1">#Desviación geodésica</span>
-<span class="n">xi_x</span><span class="o">=</span><span class="n">x1s</span><span class="o">-</span><span class="n">x2s</span>
-<span class="n">xi_y</span><span class="o">=</span><span class="n">y1s</span><span class="o">-</span><span class="n">y2s</span>
-<span class="n">xi_z</span><span class="o">=</span><span class="n">z1s</span><span class="o">-</span><span class="n">z2s</span>
-
-<span class="c1">#Gráfico</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Grafica</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="n">fig</span><span class="p">,</span><span class="n">axs</span><span class="o">=</span><span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
-<span class="n">axs</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ss</span><span class="p">,</span><span class="n">c</span><span class="o">*</span><span class="n">xi_x</span><span class="p">)</span>
-<span class="n">axs</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;$\tau$&quot;</span><span class="p">)</span>
-<span class="n">axs</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;$\xi_x$&quot;</span><span class="p">)</span>
-<span class="n">axs</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ss</span><span class="p">,</span><span class="n">c</span><span class="o">*</span><span class="n">xi_y</span><span class="p">)</span>
-<span class="n">axs</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;$\tau$&quot;</span><span class="p">)</span>
-<span class="n">axs</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;$\xi_y$&quot;</span><span class="p">)</span>
+<span class="n">fig</span><span class="o">=</span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
+<span class="n">ax</span><span class="o">=</span><span class="n">fig</span><span class="o">.</span><span class="n">gca</span><span class="p">()</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ss</span><span class="p">,</span><span class="n">lats</span><span class="o">-</span><span class="n">lats2</span><span class="p">,</span><span class="s1">&#39;r.&#39;</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="sa">r</span><span class="s2">&quot;Desviación de $\phi$&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ss</span><span class="p">,</span><span class="n">lons</span><span class="o">-</span><span class="n">lons2</span><span class="p">,</span><span class="s1">&#39;b.&#39;</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="sa">r</span><span class="s2">&quot;Desviación de $\lambda$&quot;</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;$s$&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;$\xi^\mu$&quot;</span><span class="p">)</span>
 <span class="n">fig</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
 </pre></div>
 
@@ -14620,7 +14327,7 @@ The animation.avconv_args rcparam was deprecated in Matplotlib 3.3 and will be r
 
 
 <div class="output_png output_subarea ">
-<img src="data:image/png;base64,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
+<img src="data:image/png;base64,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ostzfu973+OBBx4A4LXXXmP9+vU8+eSTnHXWWRx00EEADB06dJ+2/PrXv+aMM85g//33B+ALX/gCjz76KKeddhpjxozZMyB39NFH8/LLL3c599FHH+WMM85g0KBBAJx22ml79q1atSrye8y2YsUKJk+ezGGHHcaBBx7IoYceysCBA9m9e3fRP1OpUrkDczt2QGcnrFwJjz5aFRM2FIB7K7tgvIz5p5deeomGhgaGDh3K7NmzWbhw4T7HrF69mp///Od8/etfZ/r06XzjG98A4KyzzmLZsmW8+eabnHPOOV3OaW1tZeXKlbS1tTFo0CCmTZsWy7TdAQMG7Lnf0NDAtm3bCj7X3fN+jxnPPPMMEydO5Nlnn2XSpEls3ryZwYMH7/lnIHUk8ze4YEEQfDs795aopTwAqwoiDpmC8TL9srds2cKll17KFVdcwfTp01m2bBmbNwcTBd9++21eeeUV3njjDQYNGsT555/P1VdfzerVq/ecf84557B06VKWLVvGWWed1eW5t27dypAhQxg0aBC/+93vePzxx4FgYO0nP/kJHR0de14n13HHHceDDz7IBx98wPvvv88DDzywp+fdk+OPP54HH3yQbdu28e677/Kv//qve/bl+x6zDR48mN/97nc888wzTJo0ieuuu44vf/nLBb221KDm5iAADxgQlKf17w/DhqX++hHqAafUtm3bmDJlCh9++CF9+/blggsu4KqrrqJPnz7ccMMNnHTSSXR2dtKvXz/uuOMOtm7dytVXX02fPn3o168fd955557namxs5N133+Xwww9nxIgRXV7n5JNP5vvf/z7jxo3jz//8z/nkJz+555xrrrmGz372szQ0NHDUUUdx7733djl36tSpXHjhhRx77LEAzJkzh6OOOmqfdEOUqVOncs455zB58mQOOeSQPekGgPHjx0d+j0ceeeSeY84//3zOOOMM/uVf/oUhQ4Zw7rnnqhSt3mV/Gh02DK68cm9qMKXpCAvyw/WpqanJ29u7Xj74v//7vxk3blxCLZJiTZkyhZUrV+7JVeej32udWbgwmK68e3fQI7744uAKawmVqZnZU+7elLtdPWCpWjt27GDr1q09Bl+pQ1VyNTXlgKVqDRgwgA0bNiTdDEmjfNeP2LEjyBWnJC+sACwitSn3amp9+uwtU0vJ9GUFYBGpbZne8IwZe4NwSlbZUA5Y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
 "
 >
 </div>
@@ -14634,8 +14341,105 @@ The animation.avconv_args rcparam was deprecated in Matplotlib 3.3 and will be r
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><a id='fig:02.06.00.00.RelatividadGeneral.Curvatura_45'></a><center><b>Figura 2.45.</b> </center></p>
+<p><a id='fig:02.06.00.00.RelatividadGeneral.Curvatura_47'></a><center><b>Figura 2.47.</b> </center></p>
 
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Podemos predecir a magnitud de la desviación geodésica si calculamos el tensor de Riemann para la métrica:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">sympy</span> <span class="k">as</span> <span class="nn">sp</span>
+<span class="n">sp</span><span class="o">.</span><span class="n">init_printing</span><span class="p">(</span><span class="n">use_unicode</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="kn">from</span> <span class="nn">einsteinpy.symbolic</span> <span class="k">import</span> <span class="o">*</span>
+<span class="n">s</span><span class="o">=</span><span class="n">sp</span><span class="o">.</span><span class="n">symbols</span><span class="p">(</span><span class="s1">&#39;phi lambda&#39;</span><span class="p">)</span>
+<span class="n">f</span><span class="p">,</span><span class="n">l</span><span class="o">=</span><span class="n">s</span>
+<span class="n">f_</span><span class="p">,</span><span class="n">l_</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span>
+<span class="n">R</span><span class="o">=</span><span class="n">sp</span><span class="o">.</span><span class="n">symbols</span><span class="p">(</span><span class="s2">&quot;R&quot;</span><span class="p">)</span>
+<span class="n">gcomp</span><span class="o">=</span><span class="n">sp</span><span class="o">.</span><span class="n">diag</span><span class="p">(</span><span class="n">R</span><span class="o">**</span><span class="mi">2</span><span class="p">,</span><span class="n">R</span><span class="o">**</span><span class="mi">2</span><span class="o">*</span><span class="n">sp</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">f</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
+<span class="n">g</span><span class="o">=</span><span class="n">MetricTensor</span><span class="p">(</span><span class="n">gcomp</span><span class="p">,</span><span class="n">s</span><span class="p">)</span>
+<span class="n">G</span><span class="o">=</span><span class="n">ChristoffelSymbols</span><span class="o">.</span><span class="n">from_metric</span><span class="p">(</span><span class="n">g</span><span class="p">)</span>
+<span class="n">Riemann</span><span class="o">=</span><span class="n">RiemannCurvatureTensor</span><span class="o">.</span><span class="n">from_metric</span><span class="p">(</span><span class="n">g</span><span class="p">)</span>
+<span class="n">Gijk</span><span class="o">=</span><span class="n">sp</span><span class="o">.</span><span class="n">simplify</span><span class="p">(</span><span class="n">G</span><span class="o">.</span><span class="n">tensor</span><span class="p">())</span>
+<span class="n">Rijkl</span><span class="o">=-</span><span class="n">sp</span><span class="o">.</span><span class="n">simplify</span><span class="p">(</span><span class="n">Riemann</span><span class="o">.</span><span class="n">tensor</span><span class="p">())</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">Gijk</span><span class="p">,</span><span class="n">Rijkl</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[14]:</div>
+
+
+
+
+<div class="output_latex output_subarea output_execute_result">
+$\displaystyle \left( \left[\begin{matrix}\left[\begin{matrix}0 & 0\\0 & \frac{\sin{\left(2 \phi \right)}}{2}\end{matrix}\right] & \left[\begin{matrix}0 & - \tan{\left(\phi \right)}\\- \tan{\left(\phi \right)} & 0\end{matrix}\right]\end{matrix}\right], \  \left[\begin{matrix}\left[\begin{matrix}0 & 0\\0 & 0\end{matrix}\right] & \left[\begin{matrix}0 & - \cos^{2}{\left(\phi \right)}\\\cos^{2}{\left(\phi \right)} & 0\end{matrix}\right]\\\left[\begin{matrix}0 & 1\\-1 & 0\end{matrix}\right] & \left[\begin{matrix}0 & 0\\0 & 0\end{matrix}\right]\end{matrix}\right]\right)$
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Es decir las únicas componentes no cero son: ${R^\phi}_{\theta\phi\theta}$, ${R^\theta}_{\phi\phi\theta}$</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Las ecuaciones de desviación geodésica se pueden escibrir como:</p>
+$$
+\frac{D^{2} \xi^{\mu}}{D \lambda^{2}}={R^{\mu}}_{\alpha \sigma \beta} \xi^{\sigma} \frac{d x^{\alpha}}{d \lambda} \frac{d x^{\beta}}{d \lambda}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Que en términos del tensor de Riemann serán:</p>
+\begin{eqnarray}
+\nonumber
+\frac{D^{2} \xi^{\phi}}{D \lambda^{2}} &amp; = &amp; {R^{\phi}}_{\theta \phi \theta} \xi^{\phi} U^{\theta}U^{\theta}+{R^{\phi}}_{\theta \theta \phi} \xi^{\theta} U^{\theta} U^{\phi} \\
+\nonumber
+ &amp; = &amp; -\cos^2\theta U^{\theta}(\xi^{\phi} U^{\theta}-U^{\phi}) \\
+\end{eqnarray}
 </div>
 </div>
 </div><div style="background:lightgray">

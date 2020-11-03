@@ -230,12 +230,13 @@
 	- Labels for 'section':
 		* `#propiedades_riemann`
 		* `#riemann_diagonal`
+		* `#calculo_riemann`
 		* `#desviacion_geodesica`
-		* `#riemann_numerico`
-		* `#desviacion_geodesica_numerica`
+		* `#desviacion_geodesica_numerico`
 	- Labels for 'figure':
 		* `fig:Figure_43`
 		* `fig:Figure_44`
+		* `fig:Figure_45`
 - Labels for '02.07.00.00.RelatividadGeneral.PrincipioConsistencia.ipynb':
 	- Labels for 'section':
 		* `#principio_consistencia`
@@ -295,11 +296,11 @@
 		* `#detectores_gw`
 		* `#sensibilidad_detectores`
 	- Labels for 'figure':
-		* `fig:Figure_46`
-		* `fig:Figure_50`
-		* `fig:Figure_51`
+		* `fig:Figure_48`
+		* `fig:Figure_52`
 		* `fig:Figure_53`
-		* `fig:Figure_54`
+		* `fig:Figure_55`
+		* `fig:Figure_56`
 - Labels for '03.01.05.00.Aplicaciones.OndasGravitacionales.SimulacionSenal.ipynb':
 	- Labels for 'section':
 		* `#simulacion_senal`
@@ -323,15 +324,15 @@
 		* `#estimativos_binarias_gw`
 		* `#binarias_gw`
 	- Labels for 'figure':
-		* `fig:Figure_57`
+		* `fig:Figure_59`
 - Labels for '03.02.00.00.Aplicaciones.AgujerosNegros.ipynb':
 	- Labels for 'section':
 		* `#agujeros_negros`
 		* `#historia_an`
 		* `#temario_an`
 	- Labels for 'figure':
-		* `fig:Figure_58`
-		* `fig:Figure_59`
+		* `fig:Figure_60`
+		* `fig:Figure_61`
 - Labels for '03.02.01.00.Aplicaciones.AgujerosNegros.MetricaSchwarzschild.ipynb':
 	- Labels for 'section':
 		* `#metrica_schw`
@@ -354,17 +355,17 @@
 		* `#painleve_gullstrand`
 		* `#kruskal_szekeres`
 	- Labels for 'figure':
-		* `fig:Figure_68`
-		* `fig:Figure_69`
+		* `fig:Figure_70`
+		* `fig:Figure_71`
 - Labels for '03.03.00.00.Aplicaciones.CosmologiaRelativista.ipynb':
 	- Labels for 'section':
 		* `#cosmologia_relativista`
 		* `#plan_temas`
 		* `#propiedades_universo`
 	- Labels for 'figure':
-		* `fig:Figure_70`
-		* `fig:Figure_71`
 		* `fig:Figure_72`
+		* `fig:Figure_73`
+		* `fig:Figure_74`
 - Labels for '03.03.01.00.Aplicaciones.CosmologiaRelativista.MetricaUniverso.ipynb':
 	- Labels for 'section':
 		* `#principios_basicos`
@@ -374,7 +375,7 @@
 		* `#espacio_curvo_abierto`
 		* `#metrica_RW`
 	- Labels for 'figure':
-		* `fig:Figure_73`
+		* `fig:Figure_75`
 - Labels for '03.03.02.00.Aplicaciones.CosmologiaRelativista.EcuacionesFriedmann.ipynb':
 	- Labels for 'section':
 		* `#ecuacion_friedmann`
@@ -397,7 +398,7 @@
 		* `#hubble_lemaitre`
 		* `#densidad_critica`
 	- Labels for 'figure':
-		* `fig:Figure_74`
+		* `fig:Figure_76`
 - Labels for '04.01.00.00.Apendices.CodigosUtiles.ipynb':
 	- Labels for 'section':
 		* `#apendices`
