@@ -13072,7 +13072,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><a href="index.html">Indice</a> | Previo: <a href="02.08.00.00.RelatividadGeneral.TensorDeMomentumEnergia.html">RelatividadGeneral.TensorDeMomentumEnergia</a> | Siguiente: <a href="03.00.00.00.Aplicaciones.html">Aplicaciones</a></p>
+<p><a href="index.html">Indice</a> | Previo: <a href="02.08.00.00.RelatividadGeneral.TensorDeMomentumEnergia.html">RelatividadGeneral.TensorDeMomentumEnergia</a> | Siguiente: <a href="02.10.00.00.RelatividadGeneral.GravedadLinearizada.html">RelatividadGeneral.GravedadLinearizada</a></p>
 
 </div>
 </div>
@@ -13355,8 +13355,10 @@ $$
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Nos restaría por determinar el valor de las constantes $a$.</p>
-
+<p>Nos restaría por determinar el valor de las constantes $k$.  En la sección de gravedad linearizada demostraremos que por el principio de consistencia esta constante es exactamente igual a 1, de modo que la ecuación de campo métrico será:</p>
+$$
+R_{\mu\nu}-\frac{1}{2}g_{\mu\nu} R=\frac{8\pi G}{kc^4}T_{\mu\nu}
+$$
 </div>
 </div>
 </div>
@@ -13365,7 +13367,7 @@ $$
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Una propiedad interesante resulta al contraer los índices:</p>
 $$
-g^{\mu\nu}R_{\mu\nu}-\frac{1}{2}g^{\mu\nu}g_{\mu\nu} R=\frac{8\pi G}{kc^4}g^{\mu\nu}T_{\mu\nu}
+g^{\mu\nu}R_{\mu\nu}-\frac{1}{2}g^{\mu\nu}g_{\mu\nu} R=\frac{8\pi G}{c^4}g^{\mu\nu}T_{\mu\nu}
 $$
 </div>
 </div>
@@ -13375,7 +13377,7 @@ $$
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Teniendo en cuenta que $g^{\mu\nu}g_{\mu\nu}=\delta^\mu_\mu=4$ y llamando $T^{\mu}_{\mu}=T$:</p>
 $$
-R=-\frac{8\pi G}{kc^4}T
+R=-\frac{8\pi G}{c^4}T
 $$
 </div>
 </div>
@@ -13385,7 +13387,7 @@ $$
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Reemplazando en la ecuación de campo queda:</p>
 $$
-R_{\mu\nu}=\frac{8\pi G}{kc^4}\left(T_{\mu\nu}-\frac{1}{2}g_{\mu\nu}T\right)
+R_{\mu\nu}=\frac{8\pi G}{c^4}\left(T_{\mu\nu}-\frac{1}{2}g_{\mu\nu}T\right)
 $$<p>que es una versión alternativa de la ecuación.</p>
 
 </div>
@@ -13394,7 +13396,7 @@ $$<p>que es una versión alternativa de la ecuación.</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="2.12.3.-La-ecuaci&#243;n-de-campo-y-el-principio-de-consistencia">2.12.3. La ecuaci&#243;n de campo y el principio de consistencia<a class="anchor-link" href="#2.12.3.-La-ecuaci&#243;n-de-campo-y-el-principio-de-consistencia">&#182;</a></h3><p><a id='ecuacion_campo_consistencia'></a></p>
+<h3 id="2.12.3.-El-t&#233;rmino-cosmol&#243;gico">2.12.3. El t&#233;rmino cosmol&#243;gico<a class="anchor-link" href="#2.12.3.-El-t&#233;rmino-cosmol&#243;gico">&#182;</a></h3><p><a id='termino_cosmologico'></a></p>
 
 </div>
 </div>
@@ -13402,291 +13404,7 @@ $$<p>que es una versión alternativa de la ecuación.</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Ahora que tenemos una ecuación candidata volvamos al principio de consistencia.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Volvamos a comenzar con la métrica de campo débil:</p>
-$$
-g_{\mu\nu}=\eta_{\mu\nu}+h_{\mu\nu}
-$$<p>donde $h_{\mu\nu}\ll 1$.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Si escribimo la inversa de la métrica como:</p>
-$$
-g^{\mu\nu}=\eta^{\mu\nu}+b^{\mu\nu}
-$$
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Puede probarse (ver Problemas al final del capítulo) que:</p>
-$$
-b^{\mu\nu}=-h^{\mu\nu}
-$$
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Los símbolos de Christoffel serán:</p>
-$$
-\Gamma^\lambda_{\mu\nu}\approx\frac{1}{2}\eta^{\lambda\rho}(h_{\rho\mu,\nu}-
-h_{\mu\nu,\rho}+h_{\nu\rho,\mu})
-$$
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>El tensor de Riemann:</p>
-$$
-{R^{\rho}}_{\sigma\mu\nu} = \Gamma^\rho_{\sigma\mu,\nu} - \Gamma^\rho_{\sigma\nu,\mu}  + \Gamma_{\sigma\mu}^\delta \Gamma_{\nu\delta}^\rho - \Gamma_{\sigma\nu}^\delta \Gamma_{\mu\delta}^\rho 
-$$
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Dado que los símbolos de Christoffel son proporcionales a $h_{\mu\nu}$ los términos $\Gamma^2 \sim {\cal O}(h^2)$, de modo que el tensor de Riemann es:</p>
-$$
-{R^{\rho}}_{\sigma\mu\nu} \approx \Gamma^\rho_{\sigma\mu,\nu} - \Gamma^\rho_{\sigma\nu,\mu}  
-$$
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Alternativamente:</p>
-\begin{eqnarray}
-\nonumber
-R_{\lambda\mu\nu\kappa} &amp; = &amp; -\frac{1}{2}(g_{\mu\nu,\lambda,\kappa}-g_{\nu\lambda,\kappa,\mu}+g_{\lambda\kappa,\mu,\nu}-g_{\kappa\mu,\nu,\lambda})+\\
-\nonumber
-&amp; &amp; +g_{\sigma\xi}(\Gamma^\sigma_{\mu\kappa}\Gamma^\xi_{\lambda\nu}-\Gamma^\sigma_{\mu\nu}\Gamma^\xi_{\lambda\kappa})
-\end{eqnarray}
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Eliminando los términos cuadráticos en $h$, el tensor de Riemann queda:</p>
-$$
-R_{\lambda\mu\nu\kappa} \approx -\frac{1}{2}(h_{\mu\nu,\lambda,\kappa}-h_{\nu\lambda,\kappa,\mu}+h_{\lambda\kappa,\mu,\nu}-h_{\kappa\mu,\nu,\lambda})
-$$
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Por definición el tensor de Ricci es:</p>
-$$
-R_{\mu\nu}={R^\alpha}_{\mu\nu\alpha}\approx \Gamma^\alpha_{\mu\nu,\alpha} - \Gamma^\alpha_{\mu\alpha,\nu}  
-$$
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>O en términos de las derivadas de la métrica:</p>
-\begin{eqnarray}
-\nonumber
-R_{\mu\nu} &amp; = &amp; g^{\lambda\alpha} R_{\lambda\mu\nu\alpha}\\
-\nonumber
-&amp; \approx &amp; -\frac{1}{2}\eta^{\lambda\alpha}(h_{\mu\nu,\lambda,\alpha}-h_{\nu\lambda,\alpha,\mu}+h_{\lambda\alpha,\mu,\nu}-h_{\alpha\mu,\nu,\lambda})
-\end{eqnarray}
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Finalmente el tensor métrico:</p>
-\begin{eqnarray}
-\nonumber
-T_{\mu\nu} &amp; = &amp; g_{\alpha\mu}g_{\beta\nu} T^{\alpha\beta}\\
-&amp; \approx &amp; (\eta_{\alpha\mu}\eta_{\beta\nu} +\eta_{\alpha\mu}h_{\beta\nu} +h_{\alpha\mu}\eta_{\beta\nu}) T^{\alpha\beta}\\
-\end{eqnarray}
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Para aplicar el principio de consistencia asumamos que tenemos una nube de polvo, $T^{00}=\mathrm{diag}(\rho_0 c^2,0,0,0)$ y la métrica de Newton, $h_{00}=2\Phi/c^2$, $h_{ij}=h_{i0}=0$.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Tomemos la ecuación $00$:</p>
-$$
-R_{00}=\frac{8\pi G}{kc^4}\left(T_{00}-\frac{1}{2}g_{00}T\right)
-$$
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>La componente $T_{00}$ será:</p>
-$$
-T_{00}=g_{0\mu}g_{0\nu}T^{\mu\nu}\approx (g_{00})^2 T^{00}
-$$
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>La traza de $T$ sera:</p>
-$$
-T=T^{\mu}_{\mu}=g_{\mu\nu}T^{\mu\nu}=g_{00}T^{00}
-$$
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Por otro lado el tensor de Ricci $R_{\mu\nu}$:</p>
-$$
-R_{\mu\nu}\approx-\frac{1}{2}\eta^{\alpha\alpha}(h_{\mu\nu,\alpha,\alpha}-h_{\nu\alpha,\alpha,\mu}+h_{\alpha\alpha,\mu,\nu}-h_{\alpha\mu,\nu,\alpha})
-$$
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Como la métrica es estática, las únicas componentes no nulas del tensor son:</p>
-\begin{eqnarray}
-R_{00} \approx -\frac{1}{2}\eta^{ij}h_{00,i,j} = \frac{1}{c^2}\nabla^2 \Phi\\
-\end{eqnarray}
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Reemplazando en la ecuación tenemos:</p>
-$$
-\frac{1}{c^2}\nabla^2 \Phi=\frac{8\pi G}{kc^4}\left[(g_{00})^2 \rho_0 c^2-\frac{1}{2}(g_{00})^2 \rho_0 c^2\right]
-$$
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Haciendo $(g_{00})^2=(1+2\Phi/c^2)^2\approx 1$, la ecuación queda finalmente como:</p>
-$$
-\nabla^2 \Phi=\frac{4\pi G}{k}\rho_0
-$$<p>que es justamente la ecuación de Poisson si $k=1$.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>La conclusión de aplicar el principio de consistencia es que una ecuación de campo general es:</p>
-$$
-R_{\mu\nu}-\frac{1}{2}g_{\mu\nu} R=\frac{8\pi G}{c^4}T_{\mu\nu}
-$$<p>o más convenientemente:</p>
-$$
-R_{\mu\nu}=\frac{8\pi G}{c^4}\left(T_{\mu\nu}-\frac{1}{2}g_{\mu\nu}T\right)
-$$
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="2.12.4.-La-ecuaci&#243;n-de-campo-d&#233;bil-para-fluido-perfecto">2.12.4. La ecuaci&#243;n de campo d&#233;bil para fluido perfecto<a class="anchor-link" href="#2.12.4.-La-ecuaci&#243;n-de-campo-d&#233;bil-para-fluido-perfecto">&#182;</a></h3><p><a id='ecuacion_campo_fluido_perfecto'></a></p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Para un fluído perfecto $T^{\mu\nu}=\mathrm{diag}(\rho_0 c^2,p,p,p)$ donde $p$ es la presión.  En la aproximación de campo débil la traza del tensor de momentum energía es:</p>
-$$
-T=g_{\mu\nu}T^{\mu\nu}\approx T^{00}-T^{11}-T^{22}-T^{33} = \rho_0 c^2 - 3 p
-$$
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Por otro lado:</p>
-$$
-T_{00}=g_{0\mu}g_{0\nu} T^{\mu\nu}\approx(g_{00})^2 T^{00}\approx T^{00}
-$$
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Mientras que la componente $00$ del tensor de Riemann habíamos demostrado es igual a:</p>
-$$
-R_{00} \approx \frac{1}{c^2}\nabla^2 \Phi\\
-$$
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Reemplazando en la ecuación de campo obtenemos una nueva versión de la ecuación de Poisson:</p>
-$$
-\nabla^2 \Phi = 4\pi G \left(\rho+\frac{3p}{c^2}\right)
-$$
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Esta es una predicción nueva de la relatividad general: la presión también produce gravitación.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="2.12.5.-El-t&#233;rmino-cosmol&#243;gico">2.12.5. El t&#233;rmino cosmol&#243;gico<a class="anchor-link" href="#2.12.5.-El-t&#233;rmino-cosmol&#243;gico">&#182;</a></h3><p><a id='termino_cosmologico'></a></p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Como vimos desde el principio, la manera en la que se deduce heurísticamente la ecuación de campo métrico es buscando un tensor que tenga divergencia covariante cero.  Demostramos que el tensor $G_{\mu\nu}$ tiene esa condición.  Pero hay otros tensores que pueden tener esa condición.  Por ejemplo el tensor métrico mismo tiene divergencia covariante cero:</p>
+<p>Como vimos desde el principio, la manera en la que se deduce heurísticamente la ecuación de campo métrico es buscando un tensor que tenga divergencia covariante cero.  Demostramos que el tensor $G_{\mu\nu}$ (o un múltiplo de él) tiene esa condición.  Pero hay otros tensores que pueden tener esa condición.  Por ejemplo el tensor métrico mismo tiene divergencia covariante cero:</p>
 $$
 {g_{\mu\nu}}^{;\mu}=0
 $$
@@ -13760,7 +13478,7 @@ $$
 <p>Es decir, el vacío se comporta como un fluído perfecto con densidad y presión:</p>
 $$
 \begin{array}{rcl}
-\rho_\mathrm{vacio} &amp; = &amp; -\rho_\Lambda\\
+\rho_\mathrm{vacio} &amp; = &amp; \rho_\Lambda\\
 p_\mathrm{vacio} &amp; = &amp;  -\rho_\Lambda c^2
 \end{array}
 $$
@@ -13804,7 +13522,7 @@ $$\Lambda\approx 1.2\times 10^{-52}\;\mathrm{m}^{-2}$$<p>Curiosamente el valor d
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="2.12.6.-La-ecuaci&#243;n-de-Hilbert-Einstein">2.12.6. La ecuaci&#243;n de Hilbert-Einstein<a class="anchor-link" href="#2.12.6.-La-ecuaci&#243;n-de-Hilbert-Einstein">&#182;</a></h3><p><a id='ecuacion_hilbert_einstein'></a></p>
+<h3 id="2.12.4.-La-ecuaci&#243;n-de-Hilbert-Einstein">2.12.4. La ecuaci&#243;n de Hilbert-Einstein<a class="anchor-link" href="#2.12.4.-La-ecuaci&#243;n-de-Hilbert-Einstein">&#182;</a></h3><p><a id='ecuacion_hilbert_einstein'></a></p>
 
 </div>
 </div>
@@ -13857,7 +13575,7 @@ $$<p>que se conoce por la misma razón como la <strong>ecuación de Hilbert-Eins
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><a href="index.html">Indice</a> | Previo: <a href="02.08.00.00.RelatividadGeneral.TensorDeMomentumEnergia.html">RelatividadGeneral.TensorDeMomentumEnergia</a> | Siguiente: <a href="03.00.00.00.Aplicaciones.html">Aplicaciones</a></p>
+<p><a href="index.html">Indice</a> | Previo: <a href="02.08.00.00.RelatividadGeneral.TensorDeMomentumEnergia.html">RelatividadGeneral.TensorDeMomentumEnergia</a> | Siguiente: <a href="02.10.00.00.RelatividadGeneral.GravedadLinearizada.html">RelatividadGeneral.GravedadLinearizada</a></p>
 
 </div>
 </div>

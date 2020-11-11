@@ -254,19 +254,9 @@
 		* `#ecuacion_campo_metrico`
 		* `#tensor_einstein`
 		* `#ecuacion_campo_debil_general`
-		* `#ecuacion_campo_consistencia`
-		* `#ecuacion_campo_fluido_perfecto`
 		* `#termino_cosmologico`
 		* `#ecuacion_hilbert_einstein`
-- Labels for '03.00.00.00.Aplicaciones.ipynb':
-	- Labels for 'section':
-		* `#aplicaciones_rgeneral`
-- Labels for '03.01.00.00.Aplicaciones.OndasGravitacionales.ipynb':
-	- Labels for 'section':
-		* `#ondas_gravitacionales`
-		* `#historia_gw`
-		* `#programa_gw`
-- Labels for '03.01.01.00.Aplicaciones.OndasGravitacionales.GravedadLinearizada.ipynb':
+- Labels for '02.10.00.00.RelatividadGeneral.GravedadLinearizada.ipynb':
 	- Labels for 'section':
 		* `#gravedad_linearizada`
 		* `#inversa_metrica_linearizada`
@@ -275,39 +265,47 @@
 		* `#riemann_linearizado`
 		* `#einstein_linearizado`
 		* `#Tmunu_linearizado`
-- Labels for '03.01.02.00.Aplicaciones.OndasGravitacionales.EcuacionDeCampo.ipynb':
+- Labels for '02.10.01.00.RelatividadGeneral.GravedadLinearizada.EcuacionDeCampo.ipynb':
 	- Labels for 'section':
-		* `#gw_vacio`
+		* `#gravedad_linearizada_vacio`
 		* `#libertad_gauge`
 		* `#gauge_armónico`
 		* `#ec_gauge_armonico`
 		* `#ecuacion_fuentes`
 		* `#metrica_postnewtoniana`
 		* `#analogia_electromagnetica`
-- Labels for '03.01.03.00.Aplicaciones.OndasGravitacionales.EcuacionDeOndas.ipynb':
+- Labels for '03.00.00.00.Aplicaciones.ipynb':
+	- Labels for 'section':
+		* `#aplicaciones_rgeneral`
+- Labels for '03.01.00.00.Aplicaciones.OndasGravitacionales.ipynb':
+	- Labels for 'section':
+		* `#ondas_gravitacionales`
+		* `#historia_gw`
+		* `#programa_gw`
+- Labels for '03.01.01.00.Aplicaciones.OndasGravitacionales.EcuacionDeOndas.ipynb':
 	- Labels for 'section':
 		* `#ecuacion_onda_vacio`
 		* `#solucion_ecuacion_onda`
 		* `#gauge_transversal`
-- Labels for '03.01.04.00.Aplicaciones.OndasGravitacionales.Deteccion.ipynb':
+- Labels for '03.01.02.00.Aplicaciones.OndasGravitacionales.Deteccion.ipynb':
 	- Labels for 'section':
 		* `#geodesicas_gw`
 		* `#distancias_gw`
 		* `#detectores_gw`
 		* `#sensibilidad_detectores`
 	- Labels for 'figure':
-		* `fig:Figure_48`
-		* `fig:Figure_52`
-		* `fig:Figure_53`
+		* `fig:Figure_50`
+		* `fig:Figure_54`
 		* `fig:Figure_55`
-		* `fig:Figure_56`
-- Labels for '03.01.05.00.Aplicaciones.OndasGravitacionales.SimulacionSenal.ipynb':
+		* `fig:Figure_57`
+		* `fig:Figure_58`
+- Labels for '03.01.03.00.Aplicaciones.OndasGravitacionales.SimulacionSenal.ipynb':
 	- Labels for 'section':
 		* `#simulacion_senal`
 		* `#detector_arbitrario`
 		* `#suma_ondas`
 		* `#implementacion_numerica`
-- Labels for '03.01.06.00.Aplicaciones.OndasGravitacionales.Emision.ipynb':
+- Labels for '03.01.04.00.Aplicaciones.OndasGravitacionales.Emision.ipynb':
 	- Labels for 'section':
 		* `#emision_gw`
 		* `#emision_gw_puntual`
@@ -316,7 +314,7 @@
 		* `#densidad_energia_gw`
 		* `#formula_cuadrupolo_gw`
 		* `#analogia_gw_em`
-- Labels for '03.01.07.00.Aplicaciones.OndasGravitacionales.FuentesAstrofisicas.ipynb':
+- Labels for '03.01.05.00.Aplicaciones.OndasGravitacionales.FuentesAstrofisicas.ipynb':
 	- Labels for 'section':
 		* `#fuentes_gw`
 		* `#estimaciones_intensidadf_gw`
@@ -324,15 +322,15 @@
 		* `#estimativos_binarias_gw`
 		* `#binarias_gw`
 	- Labels for 'figure':
-		* `fig:Figure_59`
+		* `fig:Figure_61`
 - Labels for '03.02.00.00.Aplicaciones.AgujerosNegros.ipynb':
 	- Labels for 'section':
 		* `#agujeros_negros`
 		* `#historia_an`
 		* `#temario_an`
 	- Labels for 'figure':
-		* `fig:Figure_60`
-		* `fig:Figure_61`
+		* `fig:Figure_62`
+		* `fig:Figure_63`
 - Labels for '03.02.01.00.Aplicaciones.AgujerosNegros.MetricaSchwarzschild.ipynb':
 	- Labels for 'section':
 		* `#metrica_schw`
@@ -355,17 +353,17 @@
 		* `#painleve_gullstrand`
 		* `#kruskal_szekeres`
 	- Labels for 'figure':
-		* `fig:Figure_70`
-		* `fig:Figure_71`
+		* `fig:Figure_72`
+		* `fig:Figure_73`
 - Labels for '03.03.00.00.Aplicaciones.CosmologiaRelativista.ipynb':
 	- Labels for 'section':
 		* `#cosmologia_relativista`
 		* `#plan_temas`
 		* `#propiedades_universo`
 	- Labels for 'figure':
-		* `fig:Figure_72`
-		* `fig:Figure_73`
 		* `fig:Figure_74`
+		* `fig:Figure_75`
+		* `fig:Figure_76`
 - Labels for '03.03.01.00.Aplicaciones.CosmologiaRelativista.MetricaUniverso.ipynb':
 	- Labels for 'section':
 		* `#principios_basicos`
@@ -375,7 +373,7 @@
 		* `#espacio_curvo_abierto`
 		* `#metrica_RW`
 	- Labels for 'figure':
-		* `fig:Figure_75`
+		* `fig:Figure_77`
 - Labels for '03.03.02.00.Aplicaciones.CosmologiaRelativista.EcuacionesFriedmann.ipynb':
 	- Labels for 'section':
 		* `#ecuacion_friedmann`
@@ -398,7 +396,7 @@
 		* `#hubble_lemaitre`
 		* `#densidad_critica`
 	- Labels for 'figure':
-		* `fig:Figure_76`
+		* `fig:Figure_78`
 - Labels for '04.01.00.00.Apendices.CodigosUtiles.ipynb':
 	- Labels for 'section':
 		* `#apendices`
